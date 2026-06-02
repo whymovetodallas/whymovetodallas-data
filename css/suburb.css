@@ -56,18 +56,39 @@
 .kc-divider { border: none; border-top: 1px solid var(--stone); margin: 0; opacity: 0.4; }
 
 /* ── Hero ─── */
-/* background is set entirely via each page's own inline <style> block.
-   Do NOT define background here — this stylesheet loads after the inline
-   styles and any value here will win the cascade and override the page image. */
+/* Hero image is now an <img class="kc-hero-img"> element inside .kc-hero.
+   The gradient overlay is applied via ::before so the browser can treat the
+   <img> as the LCP element and apply fetchpriority="high" natively.
+   Background-color is the navy fallback shown while the image loads. */
 .kc-hero {
+  background-color: #1F2D3D;
   color: var(--white);
   padding: clamp(4rem, 10vw, 7rem) 1.5rem;
   text-align: center;
   position: relative;
   overflow: hidden;
 }
-.kc-hero::before { display: none; }
-.kc-hero-inner { position: relative; z-index: 1; max-width: 800px; margin: 0 auto; }
+/* Full-bleed hero photo — positioned behind the overlay and content */
+.kc-hero-img {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 0;
+  display: block;
+  pointer-events: none;
+}
+/* Gradient overlay — keeps text legible over any hero photo */
+.kc-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(31,45,61,.52) 0%, rgba(31,45,61,.36) 50%, rgba(31,45,61,.48) 100%);
+  z-index: 1;
+}
+/* Inner content sits above the overlay */
+.kc-hero-inner { position: relative; z-index: 2; max-width: 800px; margin: 0 auto; }
 .kc-hero h1 { color: var(--white); margin-bottom: 1rem; text-shadow: 0 2px 12px rgba(0,0,0,0.45); }
 .kc-hero-sub { font-size: 1.15rem; color: rgba(255,255,255,0.85); margin-bottom: 0.5rem; text-shadow: 0 1px 6px rgba(0,0,0,0.35); }
 .kc-hero-location { font-size: 0.9rem; font-weight: 700; color: var(--gold); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 2rem; text-shadow: 0 0 16px rgba(0,0,0,0.9), 0 2px 6px rgba(0,0,0,0.95); }

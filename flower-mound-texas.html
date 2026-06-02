@@ -522,7 +522,6 @@ gtag('consent','default',{
 <!-- ── STYLES ──────────────────────────────────────────────────────────────── -->
 
 <!-- ── PAGE WRAPPER ──────────────────────────────────────────────────────── -->
-<style>.kc-hero{background-color:#1F2D3D;background:linear-gradient(135deg,rgba(31,45,61,.52) 0%,rgba(31,45,61,.36) 50%,rgba(31,45,61,.48) 100%),url('/images/flower-mound-hero.webp') center/cover no-repeat;}</style>
 <div class="kc-suburb">
 
 <!-- Breadcrumb -->
@@ -538,6 +537,13 @@ gtag('consent','default',{
 
 <!-- ── HERO ──────────────────────────────────────────────────────────────── -->
 <section class="kc-hero">
+  <img src="/images/flower-mound-hero.webp"
+       alt="Flower Mound, Texas"
+       class="kc-hero-img"
+       width="1920" height="700"
+       fetchpriority="high"
+       loading="eager"
+       decoding="async">
   <div class="kc-hero-inner">
     <p class="kc-hero-location">Denton County · Northwest DFW · 10 Min to DFW Airport</p>
     <h1>Living in Flower Mound, Texas</h1>
@@ -743,14 +749,13 @@ gtag('consent','default',{
   </div>
 
   <div style="margin:1.5rem 0 0;border-radius:8px;overflow:hidden;border:1px solid var(--stone);box-shadow:0 2px 8px rgba(0,0,0,0.07);">
-    <iframe class="kc-lazy-map"
-      data-src="https://www.openstreetmap.org/export/embed.html?bbox=-97.1964,32.9146,-96.9964,33.1146&layer=mapnik&marker=33.0146,-97.0964"
+    <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-97.1964,32.9146,-96.9964,33.1146&layer=mapnik&marker=33.0146,-97.0964"
       width="100%"
       height="220"
       style="border:0;display:block;"
       loading="lazy"
       allowfullscreen=""
-      title="Flower Mound, Texas, location map"
+      title="Flower Mound, Texas — location map"
     ></iframe>
   </div>
 
