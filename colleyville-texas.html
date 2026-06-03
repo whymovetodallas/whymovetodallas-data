@@ -17,6 +17,8 @@
 <meta property="og:image:height" content="787" />
 <meta name="twitter:card"        content="summary_large_image" />
 <meta name="twitter:image"       content="https://whymovetodallas.com/images/social-og-image.webp" />
+<link rel="preload" as="image" href="/images/colleyville-hero-mobile.webp" fetchpriority="high" media="(max-width: 768px)">
+<link rel="preload" as="image" href="/images/colleyville-hero.webp" fetchpriority="high" media="(min-width: 769px)">
 <link rel="stylesheet" href="/css/global.css">
 <link rel="stylesheet" href="/css/suburb.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -471,18 +473,24 @@ gtag('consent','default',{
 </div>
 
 <!-- ── SECTION 2: HERO ─────────────────────────────────────────────────────── -->
-<div class="kc-hero">
+<section class="kc-hero">
+  <img src="/images/colleyville-hero.webp"
+       alt="Colleyville, Texas"
+       class="kc-hero-img"
+       width="1920" height="700"
+       fetchpriority="high"
+       loading="eager"
+       decoding="async">
   <div class="kc-hero-inner">
     <p class="kc-hero-location">Tarrant County · Texas · DFW Metroplex</p>
     <h1>Living in Colleyville, Texas</h1>
     <p class="kc-hero-sub">GCISD schools. Quiet luxury. DFW Airport at your doorstep, here's what relocating families need to know about one of DFW's most established and sought-after suburbs.</p>
     <div class="kc-hero-btns">
       <a href="https://kristencarpentier.expportal.com/idx/search/listings?city=Colleyville&state=TX&neighborhood=Timarron" class="kc-btn kc-btn--gold" target="_blank" rel="noopener">Search Colleyville Homes</a>
-      
-      <a href="#kc-contact" class="kc-btn kc-btn--outline">Talk to Kristen</a>
+      <a href="https://whymovetodallas.com/living-in-dallas-texas-contact-me" class="kc-btn kc-btn--outline">Talk to Kristen First</a>
     </div>
   </div>
-</div>
+</section>
 
 <!-- ── SECTION 3: STATS BAR ────────────────────────────────────────────────── -->
 <div class="kc-stats" aria-label="Colleyville at a glance">

@@ -17,6 +17,8 @@
 <meta property="og:image:height" content="787" />
 <meta name="twitter:card"        content="summary_large_image" />
 <meta name="twitter:image"       content="https://whymovetodallas.com/images/social-og-image.webp" />
+<link rel="preload" as="image" href="/images/highland-village-hero-mobile.webp" fetchpriority="high" media="(max-width: 768px)">
+<link rel="preload" as="image" href="/images/highland-village-hero.webp" fetchpriority="high" media="(min-width: 769px)">
 <link rel="stylesheet" href="/css/global.css">
 <link rel="stylesheet" href="/css/suburb.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -444,18 +446,24 @@ gtag('consent','default',{
 </div>
 
 <!-- 2: HERO -->
-<div class="kc-hero">
+<section class="kc-hero">
+  <img src="/images/highland-village-hero.webp"
+       alt="Highland Village, Texas"
+       class="kc-hero-img"
+       width="1920" height="700"
+       fetchpriority="high"
+       loading="eager"
+       decoding="async">
   <div class="kc-hero-inner">
     <p class="kc-hero-location">Denton County · Lake Lewisville · Small-Town Luxury</p>
     <h1>Living in Highland Village, Texas</h1>
     <p class="kc-hero-sub">An intimate lakeside enclave with A-rated schools, 17,000 residents, and a private-community feel, without the gates.</p>
     <div class="kc-hero-btns">
       <a href="https://kristencarpentier.expportal.com/highland-village-texas-homes-for-sale" class="kc-btn kc-btn--gold" target="_blank" rel="noopener">Search Highland Village Homes</a>
-      
-      <a href="#kc-contact" class="kc-btn kc-btn--outline">Talk to Kristen</a>
+      <a href="https://whymovetodallas.com/living-in-dallas-texas-contact-me" class="kc-btn kc-btn--outline">Talk to Kristen First</a>
     </div>
   </div>
-</div>
+</section>
 
 <!-- 3: STATS BAR -->
 <div class="kc-stats" aria-label="Highland Village at a glance">

@@ -17,6 +17,8 @@
 <meta property="og:image:height" content="787" />
 <meta name="twitter:card"        content="summary_large_image" />
 <meta name="twitter:image"       content="https://whymovetodallas.com/images/social-og-image.webp" />
+<link rel="preload" as="image" href="/images/duncanville-hero-mobile.webp" fetchpriority="high" media="(max-width: 768px)">
+<link rel="preload" as="image" href="/images/duncanville-hero.webp" fetchpriority="high" media="(min-width: 769px)">
 <link rel="stylesheet" href="/css/global.css">
 <link rel="stylesheet" href="/css/suburb.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -434,30 +436,34 @@ gtag('consent','default',{
 
 <!-- ── 1. BREADCRUMB ──────────────────────────────────────────────────────── -->
 <div style="background:var(--white);border-bottom:1px solid #eee;">
-  <div style="padding-top:0.75rem;padding-bottom:0.75rem;">
-    <nav aria-label="Breadcrumb" style="font-size:0.78rem;color:#888;">
-      <a href="/" style="color:var(--gold);text-decoration:none;">Home</a>
-      <span style="margin:0 0.4rem;">›</span>
-      <a href="/dallas-fort-worth-suburbs" style="color:var(--gold);text-decoration:none;">DFW Suburbs</a>
-      <span style="margin:0 0.4rem;">›</span>
-      <span style="color:#555;">Duncanville</span>
-    </nav>
-  </div>
+  <nav class="kc-breadcrumb" aria-label="Breadcrumb">
+    <a href="https://whymovetodallas.com">Home</a>
+    <span>›</span>
+    <a href="https://whymovetodallas.com/dallas-fort-worth-suburbs">DFW Suburbs</a>
+    <span>›</span>
+    Duncanville, Texas
+  </nav>
 </div>
 
 <!-- ── 2. HERO ──────────────────────────────────────────────────────────────── -->
-<div class="kc-hero">
+<section class="kc-hero">
+  <img src="/images/duncanville-hero.webp"
+       alt="Duncanville, Texas"
+       class="kc-hero-img"
+       width="1920" height="700"
+       fetchpriority="high"
+       loading="eager"
+       decoding="async">
   <div class="kc-hero-inner">
     <p class="kc-hero-location">Dallas County · Southwest DFW</p>
     <h1>Living in Duncanville, Texas</h1>
     <p class="kc-hero-sub">Affordable Dallas County access · Walk Score 83 · 12 miles to downtown · Duncanville ISD</p>
     <div class="kc-hero-btns">
       <a href="https://kristencarpentier.expportal.com/duncanville-texas-homes-for-sale" class="kc-btn kc-btn--gold" target="_blank" rel="noopener">Search Duncanville Homes</a>
-      <a href="#kc-contact" class="kc-btn kc-btn--gold">Talk to Kristen →</a>
-      <a href="https://whymovetodallas.com/dfw-family-relocation-guide" class="kc-btn kc-btn--outline">Get the Free Relocation Guide</a>
+      <a href="https://whymovetodallas.com/living-in-dallas-texas-contact-me" class="kc-btn kc-btn--outline">Talk to Kristen First</a>
     </div>
   </div>
-</div>
+</section>
 
 
 <!-- ── DATA STRIP: Scores · Niche Grades · Sub-scores ────────────────────── -->

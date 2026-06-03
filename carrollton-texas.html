@@ -17,6 +17,8 @@
 <meta property="og:image:height" content="787" />
 <meta name="twitter:card"        content="summary_large_image" />
 <meta name="twitter:image"       content="https://whymovetodallas.com/images/social-og-image.webp" />
+<link rel="preload" as="image" href="/images/carrollton-hero-mobile.webp" fetchpriority="high" media="(max-width: 768px)">
+<link rel="preload" as="image" href="/images/carrollton-hero.webp" fetchpriority="high" media="(min-width: 769px)">
 <link rel="stylesheet" href="/css/global.css">
 <link rel="stylesheet" href="/css/suburb.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -446,17 +448,24 @@ gtag('consent','default',{
 </div>
 
 <!-- 2. HERO -->
-<div class="kc-hero">
+<section class="kc-hero">
+  <img src="/images/carrollton-hero.webp"
+       alt="Carrollton, Texas"
+       class="kc-hero-img"
+       width="1920" height="700"
+       fetchpriority="high"
+       loading="eager"
+       decoding="async">
   <div class="kc-hero-inner">
     <p class="kc-hero-location">Dallas &amp; Denton County · Texas · DFW Metroplex</p>
     <h1>Living in Carrollton, Texas</h1>
     <p class="kc-hero-sub">Everything relocating families need to know, schools, neighborhoods, DART access, cost of living, and what life is really like here.</p>
     <div class="kc-hero-btns">
       <a href="https://kristencarpentier.expportal.com/search?city=Carrollton&state=TX" class="kc-btn kc-btn--gold" target="_blank" rel="noopener">View Homes for Sale</a>
-      <a href="#kc-contact" class="kc-btn kc-btn--outline">Talk to Kristen</a>
+      <a href="https://whymovetodallas.com/living-in-dallas-texas-contact-me" class="kc-btn kc-btn--outline">Talk to Kristen First</a>
     </div>
   </div>
-</div>
+</section>
 
 <!-- 3. STATS BAR -->
 <!--

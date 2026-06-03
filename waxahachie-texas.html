@@ -17,6 +17,8 @@
 <meta property="og:image:height" content="787" />
 <meta name="twitter:card"        content="summary_large_image" />
 <meta name="twitter:image"       content="https://whymovetodallas.com/images/social-og-image.webp" />
+<link rel="preload" as="image" href="/images/waxahachie-hero-mobile.webp" fetchpriority="high" media="(max-width: 768px)">
+<link rel="preload" as="image" href="/images/waxahachie-hero.webp" fetchpriority="high" media="(min-width: 769px)">
 <link rel="stylesheet" href="/css/global.css">
 <link rel="stylesheet" href="/css/suburb.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -455,17 +457,24 @@ gtag('consent','default',{
 
 <!-- ── SECTION 2: HERO ────────────────────────────────────────────────────── -->
 <!-- UPDATE: Replace CSS background with actual hero image URL once uploaded -->
-<div class="kc-hero">
+<section class="kc-hero">
+  <img src="/images/waxahachie-hero.webp"
+       alt="Waxahachie, Texas"
+       class="kc-hero-img"
+       width="1920" height="700"
+       fetchpriority="high"
+       loading="eager"
+       decoding="async">
   <div class="kc-hero-inner">
     <p class="kc-hero-location">Ellis County · Texas · DFW Metroplex</p>
     <h1>Living in Waxahachie, Texas</h1>
     <p class="kc-hero-sub">Victorian charm, top schools with specialty programs, and more home for your money, one of DFW's fastest-growing southern suburbs, 30 miles from downtown Dallas.</p>
     <div class="kc-hero-btns">
       <a href="https://kristencarpentier.expportal.com/waxahachie-texas-homes-for-sale" class="kc-btn kc-btn--gold" target="_blank" rel="noopener">View Homes for Sale</a>
-      <a href="#kc-contact" class="kc-btn kc-btn--outline">Talk to Kristen</a>
+      <a href="https://whymovetodallas.com/living-in-dallas-texas-contact-me" class="kc-btn kc-btn--outline">Talk to Kristen First</a>
     </div>
   </div>
-</div>
+</section>
 
 <!-- ── STATS BAR ──────────────────────────────────────────────────────────── -->
 <div class="kc-stats" aria-label="Waxahachie at a glance">

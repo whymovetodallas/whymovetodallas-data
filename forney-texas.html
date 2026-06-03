@@ -17,6 +17,8 @@
 <meta property="og:image:height" content="787" />
 <meta name="twitter:card"        content="summary_large_image" />
 <meta name="twitter:image"       content="https://whymovetodallas.com/images/social-og-image.webp" />
+<link rel="preload" as="image" href="/images/forney-hero-mobile.webp" fetchpriority="high" media="(max-width: 768px)">
+<link rel="preload" as="image" href="/images/forney-hero.webp" fetchpriority="high" media="(min-width: 769px)">
 <link rel="stylesheet" href="/css/global.css">
 <link rel="stylesheet" href="/css/suburb.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -468,29 +470,33 @@ gtag('consent','default',{
      SECTION 1 — BREADCRUMB
      ═══════════════════════════════════════════════════════ -->
 <div style="background:var(--white);border-bottom:1px solid #eee;">
-  <div  style="padding-top:0.6rem;padding-bottom:0.6rem;">
-    <nav aria-label="Breadcrumb" style="font-size:0.78rem;color:#888;">
-      <a href="/" style="color:#888;text-decoration:none;">Home</a>
-      <span style="margin:0 0.4rem;">›</span>
-      <a href="/dallas-fort-worth-suburbs" style="color:#888;text-decoration:none;">DFW Suburbs</a>
-      <span style="margin:0 0.4rem;">›</span>
-      <span style="color:var(--charcoal);">Forney, Texas</span>
-    </nav>
-  </div>
+  <nav class="kc-breadcrumb" aria-label="Breadcrumb">
+    <a href="https://whymovetodallas.com">Home</a>
+    <span>›</span>
+    <a href="https://whymovetodallas.com/dallas-fort-worth-suburbs">DFW Suburbs</a>
+    <span>›</span>
+    Forney, Texas
+  </nav>
 </div>
 
 <!-- ═══════════════════════════════════════════════════════
      SECTION 2 — HERO
      ═══════════════════════════════════════════════════════ -->
 <section class="kc-hero" aria-label="Forney Texas hero">
-  <div >
+  <img src="/images/forney-hero.webp"
+       alt="Forney, Texas"
+       class="kc-hero-img"
+       width="1920" height="700"
+       fetchpriority="high"
+       loading="eager"
+       decoding="async">
+  <div class="kc-hero-inner">
     <p class="kc-hero-location">Kaufman County · East DFW · US-80 &amp; I-20 Corridor</p>
     <h1>Living in Forney, Texas</h1>
     <p class="kc-hero-sub">A family relocation guide, schools, neighborhoods, cost of living &amp; everything relocating parents need to know</p>
     <div class="kc-hero-btns">
       <a href="https://kristencarpentier.expportal.com/search?city=Forney&state=TX" class="kc-btn kc-btn--gold" target="_blank" rel="noopener">Search Forney Homes</a>
-      <a href="#kc-contact" class="kc-btn">Talk to Kristen</a>
-      <a href="/dfw-family-relocation-guide" class="kc-btn kc-btn--outline">Get the Free Relocation Guide</a>
+      <a href="https://whymovetodallas.com/living-in-dallas-texas-contact-me" class="kc-btn kc-btn--outline">Talk to Kristen First</a>
     </div>
   </div>
 </section>

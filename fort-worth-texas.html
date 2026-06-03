@@ -17,6 +17,8 @@
 <meta property="og:image:height" content="787" />
 <meta name="twitter:card"        content="summary_large_image" />
 <meta name="twitter:image"       content="https://whymovetodallas.com/images/social-og-image.webp" />
+<link rel="preload" as="image" href="/images/fort-worth-hero-mobile.webp" fetchpriority="high" media="(max-width: 768px)">
+<link rel="preload" as="image" href="/images/fort-worth-hero.webp" fetchpriority="high" media="(min-width: 769px)">
 <link rel="stylesheet" href="/css/global.css">
 <link rel="stylesheet" href="/css/suburb.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -463,29 +465,35 @@ gtag('consent','default',{
 
 <!-- ── SECTION 1: BREADCRUMB ─────────────────────────────────────────────── -->
 <div style="background:var(--white);border-bottom:1px solid #eee;">
-  <div style="max-width:900px;margin:0 auto;padding:0.6rem 1.5rem;">
-    <p style="font-size:0.75rem;color:#888;">
-      <a href="/" style="color:#888;text-decoration:none;">Home</a>
-      <span style="margin:0 0.4rem;">›</span>
-      <a href="/dallas-fort-worth-suburbs" style="color:#888;text-decoration:none;">DFW Suburbs</a>
-      <span style="margin:0 0.4rem;">›</span>
-      <span style="color:var(--navy);font-weight:600;">Fort Worth, Texas</span>
-    </p>
-  </div>
+  <nav class="kc-breadcrumb" aria-label="Breadcrumb">
+    <a href="https://whymovetodallas.com">Home</a>
+    <span>›</span>
+    <a href="https://whymovetodallas.com/dallas-fort-worth-suburbs">DFW Suburbs</a>
+    <span>›</span>
+    Fort Worth, Texas
+  </nav>
 </div>
 
 <!-- ── SECTION 2: HERO ────────────────────────────────────────────────────── -->
-<div class="kc-hero">
+<section class="kc-hero">
+  <img src="/images/fort-worth-hero.webp"
+       alt="Fort Worth, Texas"
+       class="kc-hero-img"
+       width="1920" height="700"
+       fetchpriority="high"
+       loading="eager"
+       decoding="async">
   <div class="kc-hero-inner">
     <p class="kc-hero-location">Tarrant County · DFW Metroplex</p>
     <h1>Living in Fort Worth, Texas</h1>
+    <p class="kc-hero-sub">The complete family relocation guide — schools, neighborhoods, property taxes, commutes, and everything a relocating family needs to decide.</p>
+    
     <div class="kc-hero-btns">
       <a href="https://kristencarpentier.expportal.com/fort-worth-texas-homes-for-sale" class="kc-btn kc-btn--gold" target="_blank" rel="noopener">Search Fort Worth Homes</a>
-      <a href="#kc-contact" class="kc-btn kc-btn--gold">Talk to Kristen</a>
-      <a href="#kc-neighborhoods" class="kc-btn kc-btn--outline">Explore Neighborhoods</a>
+      <a href="https://whymovetodallas.com/living-in-dallas-texas-contact-me" class="kc-btn kc-btn--outline">Talk to Kristen First</a>
     </div>
   </div>
-</div>
+</section>
 
 <!-- ── SECTION 3: STATS BAR ─────────────────────────────────────────────────── -->
 <div class="kc-stats" aria-label="Fort Worth at a glance">
