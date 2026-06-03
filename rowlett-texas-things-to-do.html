@@ -563,6 +563,37 @@ gtag('consent','default',{
 .kc-act-jumpnav-list a { display:block;padding:.85rem 1rem;font-family:'Jost',sans-serif;font-size:.78rem;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--act-charcoal);text-decoration:none;border-bottom:2px solid transparent;transition:border-color .15s,color .15s; }
 .kc-act-jumpnav-list a:hover { border-bottom-color:var(--act-gold);color:var(--act-gold); }
 @media (max-width:768px) { .kc-act-jumpnav{padding:0 .5rem;} .kc-act-jumpnav-list a{padding:.65rem .6rem;font-size:.68rem;} }
+
+/* ── Upcoming Events (auto-generated — Section 8) ───────────────────────── */
+.kc-act-upcoming-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.1rem;
+}
+.kc-act-ue-card {
+  background: var(--act-white);
+  border: 1px solid var(--act-border);
+  border-radius: 8px;
+  padding: 1.25rem 1.25rem 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  transition: border-color .2s, box-shadow .2s;
+}
+.kc-act-ue-card:hover { border-color: var(--act-gold); box-shadow: 0 3px 14px rgba(31,45,61,.08); }
+.kc-act-ue-date {
+  flex-shrink: 0; display: flex; flex-direction: column; align-items: center;
+  background: var(--act-navy); border-radius: 6px; padding: .4rem .65rem; min-width: 46px;
+}
+.kc-act-ue-month { font-family:'Jost',sans-serif; font-size:.65rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--act-gold); line-height:1; }
+.kc-act-ue-day { font-family:'Cormorant Garamond',Georgia,serif; font-size:1.5rem; font-weight:600; color:var(--act-white); line-height:1.1; }
+.kc-act-ue-info { flex:1; min-width:0; }
+.kc-act-ue-title { font-family:'Jost',sans-serif; font-size:.95rem; font-weight:600; color:var(--act-navy); margin:0 0 .25rem; line-height:1.35; }
+.kc-act-ue-meta { font-family:'Jost',sans-serif; font-size:.8rem; color:#777; margin:0 0 .4rem; line-height:1.45; }
+.kc-act-ue-link { font-family:'Jost',sans-serif; font-size:.8rem; font-weight:600; color:var(--act-gold); text-decoration:none; letter-spacing:.03em; }
+.kc-act-ue-link:hover { text-decoration:underline; }
+.kc-act-ue-none { font-family:'Jost',sans-serif; font-size:.95rem; color:#888; font-style:italic; padding:1rem 0; }
+.kc-act-ue-updated { font-family:'Jost',sans-serif; font-size:.78rem; color:#aaa; margin-top:1.5rem; text-align:right; }
 </style>
 
 <!-- BREADCRUMB -->
