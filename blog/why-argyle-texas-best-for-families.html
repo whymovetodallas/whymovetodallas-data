@@ -12,7 +12,7 @@
 <meta property="og:title" content="Why Argyle, Texas Is One of DFW's Best-Kept Secrets for Families">
 <meta property="og:description" content="Argyle, TX: top-ranked Argyle ISD, spacious lots, and a tight-knit community. An honest look at schools, home prices, safety, and what families need to know before moving.">
 <meta property="og:url" content="https://whymovetodallas.com/blog/why-argyle-texas-best-for-families">
-<meta property="og:image" content="https://whymovetodallas.com/images/blog/why-argyle-texas-best-for-families_OG.webp">
+<meta property="og:image" content="https://whymovetodallas.com/images/blog/why-argyle-texas-best-for-families-hero.webp">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:site_name" content="Why Move to Dallas">
@@ -23,7 +23,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Why Argyle, Texas Is One of DFW's Best-Kept Secrets for Families">
 <meta name="twitter:description" content="Argyle, TX: top-ranked Argyle ISD, spacious lots, and a tight-knit community. An honest look at schools, home prices, safety, and what families need to know before moving.">
-<meta name="twitter:image" content="https://whymovetodallas.com/images/blog/why-argyle-texas-best-for-families_OG.webp">
+<meta name="twitter:image" content="https://whymovetodallas.com/images/blog/why-argyle-texas-best-for-families-hero.webp">
 
 <!-- Schema -->
 <script type="application/ld+json">
@@ -63,7 +63,7 @@
       },
       "image": {
         "@type": "ImageObject",
-        "url": "https://whymovetodallas.com/images/blog/why-argyle-texas-best-for-families_OG.webp",
+        "url": "https://whymovetodallas.com/images/blog/why-argyle-texas-best-for-families-hero.webp",
         "width": 1200,
         "height": 630
       },
@@ -73,7 +73,18 @@
       },
       "articleSection": "Suburb Guide",
       "inLanguage": "en-US",
-      "wordCount": 1600
+      "wordCount": 1600,
+      "video": {
+        "@type": "VideoObject",
+        "name": "Argyle Texas Tour — Dallas Country Living Suburb for Your Family",
+        "description": "A full tour of Argyle, Texas — exploring the community feel, Argyle ISD, housing options, and why families keep choosing this DFW hidden gem.",
+        "thumbnailUrl": "https://img.youtube.com/vi/hbFeT8COp8M/maxresdefault.jpg",
+        "uploadDate": "2025-01-30T00:00:00+00:00",
+        "duration": "PT25M0S",
+        "contentUrl": "https://www.youtube.com/watch?v=hbFeT8COp8M",
+        "embedUrl": "https://www.youtube.com/embed/hbFeT8COp8M",
+        "publisher": { "@id": "https://whymovetodallas.com/#agent" }
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -190,6 +201,13 @@
 .kc-blog-stat-num { display:block; font-family:'Cormorant Garamond',Georgia,serif; font-size:2rem; font-weight:700; color:var(--gold,#B08D57); line-height:1; margin-bottom:0.4rem; }
 .kc-blog-stat-label { display:block; font-size:0.75rem; font-weight:600; color:var(--navy,#1F2D3D); letter-spacing:0.03em; text-transform:uppercase; }
 @media(max-width:640px){.kc-blog-stats{gap:0.75rem;} .kc-blog-stat{min-width:calc(50% - 0.375rem);}}
+.kc-video-wrap { position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:12px; background:#000; margin:2rem 0; box-shadow:0 8px 28px rgba(0,0,0,0.18); }
+.kc-video-wrap iframe { position:absolute; top:0; left:0; width:100%; height:100%; border:none; }
+.kc-yt-facade { cursor:pointer; }
+.kc-yt-facade img { position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; border-radius:12px; }
+.kc-yt-play { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:68px; height:48px; background:#ff0000; border:none; border-radius:12px; cursor:pointer; display:flex; align-items:center; justify-content:center; transition:background 0.15s,transform 0.15s; box-shadow:0 4px 16px rgba(0,0,0,0.4); }
+.kc-yt-facade:hover .kc-yt-play { background:#cc0000; transform:translate(-50%,-50%) scale(1.08); }
+.kc-yt-play svg { width:24px; height:24px; fill:#fff; }
 .kc-blog-callout { background:var(--ivory,#F7F4EE); border-left:4px solid var(--gold,#B08D57); border-radius:0 10px 10px 0; padding:1.25rem 1.5rem; margin:2rem 0; }
 .kc-blog-callout-label { font-size:0.7rem; font-weight:700; letter-spacing:0.13em; text-transform:uppercase; color:var(--gold,#B08D57); margin-bottom:0.5rem; }
 .kc-blog-callout p { margin:0; font-size:1rem; color:var(--charcoal,#232323); line-height:1.7; }
@@ -492,6 +510,20 @@ gtag('consent','default',{
 
     <div class="kc-post-content" itemprop="articleBody">
 
+      <!-- YouTube facade — loads thumbnail only, iframe on click -->
+      <div class="kc-video-wrap kc-yt-facade"
+           data-videoid="hbFeT8COp8M"
+           data-title="Argyle Texas Tour — Dallas Country Living Suburb for Your Family"
+           role="button" tabindex="0"
+           aria-label="Play video: Argyle Texas Tour — Dallas Country Living Suburb for Your Family">
+        <img src="https://img.youtube.com/vi/hbFeT8COp8M/maxresdefault.jpg"
+             alt="Argyle Texas suburb tour — community feel, Argyle ISD, and homes for families"
+             loading="lazy" width="1280" height="720">
+        <button class="kc-yt-play" aria-label="Play video" tabindex="-1">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="5,3 19,12 5,21"/></svg>
+        </button>
+      </div>
+
       <p>When families ask me for a DFW suburb that still feels like a small town but has a top-ranked school district and easy reach to everything North Texas offers, Argyle is the name I keep coming back to. It does not get the headlines that Frisco or Southlake do, and honestly that is part of the appeal. Tucked into southern Denton County, Argyle gives families room to spread out, a genuinely rural feel, and an ISD that consistently ranks at the very top of the county. If you are weighing a move and want a community that prioritizes space, schools, and a slower pace without giving up access, here is an honest look at what living in <a href="/argyle-texas">Argyle, Texas</a> is really like.</p>
 
       <p class="kc-blog-quick-answer"><strong>Quick answer:</strong> Argyle, TX is ideal for families who want the #1-ranked school district in Denton County (Argyle ISD, 97/100 TEA score), spacious lots, and a tight-knit rural feel — entry prices start in the mid $400Ks in the 76226 ZIP, with median prices around $720K in Argyle proper.</p>
@@ -700,6 +732,25 @@ gtag('consent','default',{
   </article>
 
 </main>
+
+<script>
+(function() {
+  function activateFacade(el) {
+    var id = el.dataset.videoid, title = el.dataset.title || 'YouTube video';
+    var iframe = document.createElement('iframe');
+    iframe.src = 'https://www.youtube.com/embed/' + id + '?autoplay=1&rel=0&modestbranding=1&showinfo=0';
+    iframe.title = title;
+    iframe.allow = 'autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+    iframe.allowFullscreen = true;
+    iframe.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:100%;border:none;';
+    el.innerHTML = ''; el.appendChild(iframe); el.classList.remove('kc-yt-facade');
+  }
+  document.querySelectorAll('.kc-yt-facade').forEach(function(el) {
+    el.addEventListener('click', function() { activateFacade(el); });
+    el.addEventListener('keydown', function(e) { if (e.key==='Enter'||e.key===' ') { e.preventDefault(); activateFacade(el); } });
+  });
+})();
+</script>
 
 <script>
 (function() {

@@ -73,7 +73,18 @@
       },
       "articleSection": "City Comparisons",
       "inLanguage": "en-US",
-      "wordCount": 1800
+      "wordCount": 1800,
+      "video": {
+        "@type": "VideoObject",
+        "name": "Dallas vs Houston? Is Dallas or Houston Right for You?",
+        "description": "A side-by-side comparison of Dallas and Houston for families weighing a Texas move — covering schools, housing costs, jobs, climate, and lifestyle.",
+        "thumbnailUrl": "https://img.youtube.com/vi/Zw3ae6uwHXk/maxresdefault.jpg",
+        "uploadDate": "2023-07-15T00:00:00+00:00",
+        "duration": "PT16M6S",
+        "contentUrl": "https://www.youtube.com/watch?v=Zw3ae6uwHXk",
+        "embedUrl": "https://www.youtube.com/embed/Zw3ae6uwHXk",
+        "publisher": { "@id": "https://whymovetodallas.com/#agent" }
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -542,6 +553,15 @@
 }
 .kc-post-trec a { color: #999; text-decoration: underline; }
 
+/* YouTube embed */
+.kc-video-wrap { position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:12px; background:#000; margin:2rem 0; box-shadow:0 8px 28px rgba(0,0,0,0.18); }
+.kc-video-wrap iframe { position:absolute; top:0; left:0; width:100%; height:100%; border:none; }
+.kc-yt-facade { cursor:pointer; }
+.kc-yt-facade img { position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; border-radius:12px; }
+.kc-yt-play { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:68px; height:48px; background:#ff0000; border:none; border-radius:12px; cursor:pointer; display:flex; align-items:center; justify-content:center; transition:background 0.15s,transform 0.15s; box-shadow:0 4px 16px rgba(0,0,0,0.4); }
+.kc-yt-facade:hover .kc-yt-play { background:#cc0000; transform:translate(-50%,-50%) scale(1.08); }
+.kc-yt-play svg { width:24px; height:24px; fill:#fff; }
+
 /* CTA button */
 .kc-blog-cta-btn {
   display: inline-block;
@@ -816,6 +836,20 @@ gtag('consent','default',{
 
     <div class="kc-post-content" itemprop="articleBody">
 
+      <!-- YouTube facade — loads thumbnail only, iframe on click -->
+      <div class="kc-video-wrap kc-yt-facade"
+           data-videoid="Zw3ae6uwHXk"
+           data-title="Dallas vs Houston? Is Dallas or Houston Right for You?"
+           role="button" tabindex="0"
+           aria-label="Play video: Dallas vs Houston? Is Dallas or Houston Right for You?">
+        <img src="https://img.youtube.com/vi/Zw3ae6uwHXk/maxresdefault.jpg"
+             alt="Dallas vs Houston comparison for families — which Texas city is right for you?"
+             loading="lazy" width="1280" height="720">
+        <button class="kc-yt-play" aria-label="Play video" tabindex="-1">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="5,3 19,12 5,21"/></svg>
+        </button>
+      </div>
+
       <p>Dallas and Houston are the two giants of Texas, and if your family is weighing a move to the Lone Star State, you are probably trying to figure out which one fits. I help families relocate into the Dallas-Fort Worth area every week, and the honest truth is that both cities are excellent — for different reasons. Houston tends to win on raw affordability and proximity to the coast. Dallas tends to win on suburban schools, a drier climate, and a sprawl of family-friendly communities to the north. This comparison walks through the real numbers — cost of living, housing, jobs, schools, weather, and lifestyle — so you can decide based on your family rather than a brochure.</p>
 
       <p class="kc-blog-quick-answer"><strong>Quick answer:</strong> For families prioritizing top-rated suburban school districts and a drier climate, Dallas-Fort Worth is typically the better fit; Houston edges ahead on raw affordability and offers coastal access, but DFW's concentration of A-rated ISDs within a short commute is hard to match.</p>
@@ -1044,6 +1078,26 @@ gtag('consent','default',{
   </article>
 
 </main>
+
+<script>
+// YouTube facade — load iframe only on click
+(function() {
+  function activateFacade(el) {
+    var id = el.dataset.videoid, title = el.dataset.title || 'YouTube video';
+    var iframe = document.createElement('iframe');
+    iframe.src = 'https://www.youtube.com/embed/' + id + '?autoplay=1&rel=0&modestbranding=1&showinfo=0';
+    iframe.title = title;
+    iframe.allow = 'autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+    iframe.allowFullscreen = true;
+    iframe.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:100%;border:none;';
+    el.innerHTML = ''; el.appendChild(iframe); el.classList.remove('kc-yt-facade');
+  }
+  document.querySelectorAll('.kc-yt-facade').forEach(function(el) {
+    el.addEventListener('click', function() { activateFacade(el); });
+    el.addEventListener('keydown', function(e) { if (e.key==='Enter'||e.key===' ') { e.preventDefault(); activateFacade(el); } });
+  });
+})();
+</script>
 
 <script>
 // Reading progress bar

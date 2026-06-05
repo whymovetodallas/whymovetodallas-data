@@ -12,7 +12,7 @@
 <meta property="og:title" content="Moving from California to DFW: What Your Money Actually Buys">
 <meta property="og:description" content="Moving from California to DFW? A parent-to-parent look at what your California budget actually buys in Dallas-Fort Worth — real housing math, no-income-tax savings, and where families land.">
 <meta property="og:url" content="https://whymovetodallas.com/blog/moving-from-california-to-dfw-families">
-<meta property="og:image" content="https://whymovetodallas.com/images/blog/moving-from-california-to-dfw-families_OG.webp">
+<meta property="og:image" content="https://whymovetodallas.com/images/blog/moving-from-california-to-dfw-families-hero.webp">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:site_name" content="Why Move to Dallas">
@@ -23,7 +23,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Moving from California to DFW: What Your Money Actually Buys">
 <meta name="twitter:description" content="Moving from California to DFW? A parent-to-parent look at what your California budget actually buys in Dallas-Fort Worth — real housing math, no-income-tax savings, and where families land.">
-<meta name="twitter:image" content="https://whymovetodallas.com/images/blog/moving-from-california-to-dfw-families_OG.webp">
+<meta name="twitter:image" content="https://whymovetodallas.com/images/blog/moving-from-california-to-dfw-families-hero.webp">
 
 <!-- Schema -->
 <script type="application/ld+json">
@@ -63,7 +63,7 @@
       },
       "image": {
         "@type": "ImageObject",
-        "url": "https://whymovetodallas.com/images/blog/moving-from-california-to-dfw-families_OG.webp",
+        "url": "https://whymovetodallas.com/images/blog/moving-from-california-to-dfw-families-hero.webp",
         "width": 1200,
         "height": 630
       },
@@ -73,7 +73,18 @@
       },
       "articleSection": "Moving to DFW",
       "inLanguage": "en-US",
-      "wordCount": 1600
+      "wordCount": 1600,
+      "video": {
+        "@type": "VideoObject",
+        "name": "Why Californians Are Moving to Texas (and It's Not the BBQ)",
+        "description": "Why families are leaving California for Texas — the real financial math, housing comparison, and what life actually looks like after the move.",
+        "thumbnailUrl": "https://img.youtube.com/vi/xuICDuIz_pw/maxresdefault.jpg",
+        "uploadDate": "2024-09-08T00:00:00+00:00",
+        "duration": "PT32M24S",
+        "contentUrl": "https://www.youtube.com/watch?v=xuICDuIz_pw",
+        "embedUrl": "https://www.youtube.com/embed/xuICDuIz_pw",
+        "publisher": { "@id": "https://whymovetodallas.com/#agent" }
+      }
     },
     {
       "@type": "BreadcrumbList",
@@ -253,6 +264,13 @@
 .kc-blog-stat-num { display:block; font-family:'Cormorant Garamond',Georgia,serif; font-size:2rem; font-weight:700; color:var(--gold,#B08D57); line-height:1; margin-bottom:0.4rem; }
 .kc-blog-stat-label { display:block; font-size:0.75rem; font-weight:600; color:var(--navy,#1F2D3D); letter-spacing:0.03em; text-transform:uppercase; }
 @media(max-width:640px){.kc-blog-stats{gap:0.75rem;} .kc-blog-stat{min-width:calc(50% - 0.375rem);}}
+.kc-video-wrap { position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:12px; background:#000; margin:2rem 0; box-shadow:0 8px 28px rgba(0,0,0,0.18); }
+.kc-video-wrap iframe { position:absolute; top:0; left:0; width:100%; height:100%; border:none; }
+.kc-yt-facade { cursor:pointer; }
+.kc-yt-facade img { position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; border-radius:12px; }
+.kc-yt-play { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:68px; height:48px; background:#ff0000; border:none; border-radius:12px; cursor:pointer; display:flex; align-items:center; justify-content:center; transition:background 0.15s,transform 0.15s; box-shadow:0 4px 16px rgba(0,0,0,0.4); }
+.kc-yt-facade:hover .kc-yt-play { background:#cc0000; transform:translate(-50%,-50%) scale(1.08); }
+.kc-yt-play svg { width:24px; height:24px; fill:#fff; }
 .kc-blog-callout { background:var(--ivory,#F7F4EE); border-left:4px solid var(--gold,#B08D57); border-radius:0 10px 10px 0; padding:1.25rem 1.5rem; margin:2rem 0; }
 .kc-blog-callout-label { font-size:0.7rem; font-weight:700; letter-spacing:0.13em; text-transform:uppercase; color:var(--gold,#B08D57); margin-bottom:0.5rem; }
 .kc-blog-callout p { margin:0; font-size:1rem; color:var(--charcoal,#232323); line-height:1.7; }
@@ -562,6 +580,20 @@ gtag('consent','default',{
 
     <div class="kc-post-content" itemprop="articleBody">
 
+      <!-- YouTube facade — loads thumbnail only, iframe on click -->
+      <div class="kc-video-wrap kc-yt-facade"
+           data-videoid="xuICDuIz_pw"
+           data-title="Why Californians Are Moving to Texas (and It's Not the BBQ)"
+           role="button" tabindex="0"
+           aria-label="Play video: Why Californians Are Moving to Texas">
+        <img src="https://img.youtube.com/vi/xuICDuIz_pw/maxresdefault.jpg"
+             alt="Why California families are moving to Texas — real financial math and what life looks like after the move"
+             loading="lazy" width="1280" height="720">
+        <button class="kc-yt-play" aria-label="Play video" tabindex="-1">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="5,3 19,12 5,21"/></svg>
+        </button>
+      </div>
+
       <p>More of the families I help relocate come from California than anywhere else, and the conversation almost always starts the same way: <em>"We love a lot about California, but we cannot make the math work for our kids anymore."</em> If that sounds familiar, this guide is for you. I am not here to talk you out of California or sell you a fantasy about Texas. I am here to show you, in real numbers, what your California budget actually buys in Dallas-Fort Worth, where the savings come from, and the trade-offs you should understand before you list your house.</p>
 
       <p class="kc-blog-quick-answer"><strong>Quick answer:</strong> For a family earning $150,000, moving from California to DFW commonly produces $25,000–$40,000 in annual savings from no state income tax and lower housing costs — with the four-bedroom you are stretching to afford in California often becoming a newer, larger home in a top-ranked DFW school district.</p>
@@ -787,6 +819,25 @@ gtag('consent','default',{
   </article>
 
 </main>
+
+<script>
+(function() {
+  function activateFacade(el) {
+    var id = el.dataset.videoid, title = el.dataset.title || 'YouTube video';
+    var iframe = document.createElement('iframe');
+    iframe.src = 'https://www.youtube.com/embed/' + id + '?autoplay=1&rel=0&modestbranding=1&showinfo=0';
+    iframe.title = title;
+    iframe.allow = 'autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+    iframe.allowFullscreen = true;
+    iframe.style.cssText = 'position:absolute;top:0;left:0;width:100%;height:100%;border:none;';
+    el.innerHTML = ''; el.appendChild(iframe); el.classList.remove('kc-yt-facade');
+  }
+  document.querySelectorAll('.kc-yt-facade').forEach(function(el) {
+    el.addEventListener('click', function() { activateFacade(el); });
+    el.addEventListener('keydown', function(e) { if (e.key==='Enter'||e.key===' ') { e.preventDefault(); activateFacade(el); } });
+  });
+})();
+</script>
 
 <script>
 (function() {
