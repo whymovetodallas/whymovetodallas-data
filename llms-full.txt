@@ -75,7 +75,7 @@ Every page covers schools, home prices, commute data, parks, pros/cons, new cons
 - Westlake, Texas: https://whymovetodallas.com/westlake-texas
 - Wylie, Texas: https://whymovetodallas.com/wylie-texas
 
-## School District Profiles (38 pages)
+## School District Profiles (40 pages)
 
 Every page covers TEA accountability information where available, Niche grade, enrollment, notable campuses, and relocation context. Verify school information directly with the district before enrollment decisions.
 
@@ -85,6 +85,7 @@ Every page covers TEA accountability information where available, Niche grade, e
 - Arlington ISD: https://whymovetodallas.com/arlington-isd-texas
 - Aubrey ISD: https://whymovetodallas.com/aubrey-isd-texas
 - Azle ISD: https://whymovetodallas.com/azle-isd-texas
+- Birdville ISD: https://whymovetodallas.com/birdville-isd-texas
 - Burleson ISD: https://whymovetodallas.com/burleson-isd-texas
 - Carroll ISD: https://whymovetodallas.com/carroll-isd-texas
 - Carrollton-Farmers Branch ISD: https://whymovetodallas.com/carrollton-fb-isd-texas
@@ -116,6 +117,7 @@ Every page covers TEA accountability information where available, Niche grade, e
 - Princeton ISD: https://whymovetodallas.com/princeton-isd-texas
 - Prosper ISD: https://whymovetodallas.com/prosper-isd-texas
 - Richardson ISD: https://whymovetodallas.com/richardson-isd-texas
+- White Settlement ISD: https://whymovetodallas.com/white-settlement-isd-texas
 - Wylie ISD: https://whymovetodallas.com/wylie-isd-texas
 
 ## Blog Posts (80 articles)
