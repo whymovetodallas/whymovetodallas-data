@@ -1484,6 +1484,7 @@ function kcFaq(btn) {
   fetch(DATA_URL)
     .then(function(r) { return r.json(); })
     .then(function(profiles) {
+      profiles = profiles.suburbs || profiles;
       var d = profiles[SUBURB_KEY];
       if (!d) return;
 

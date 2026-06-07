@@ -1462,12 +1462,8 @@ function kcLoadSuburbData() {
   fetch(DATA_URL)
     .then(function(r){ return r.json(); })
     .then(function(data){
-      var suburb = null;
-      for (var i = 0; i < data.length; i++) {
-        if (data[i].slug === SUBURB_KEY || (data[i].display_name && data[i].display_name.toLowerCase() === SUBURB_NAME.toLowerCase())) {
-          suburb = data[i]; break;
-        }
-      }
+      var _suburbs = data.suburbs || data;
+      var suburb = _suburbs[SUBURB_KEY] || null;
       if (!suburb) return;
       var m = suburb.market && suburb.market.sfr ? suburb.market.sfr : null;
       if (m) {

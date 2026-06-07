@@ -1581,6 +1581,7 @@ gtag('consent','default',{
     fetch('https://raw.githubusercontent.com/whymovetodallas/whymovetodallas-data/main/suburb-profiles.json')
       .then(function(r){ return r.json(); })
       .then(function(data) {
+        data = data.suburbs || data;
         var d = data[SUBURB_KEY];
         if (!d) return;
 

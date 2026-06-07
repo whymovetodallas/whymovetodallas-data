@@ -1596,6 +1596,7 @@ function kcLoadSuburbData() {
   fetch(DATA_URL)
     .then(function(r) { return r.json(); })
     .then(function(data) {
+      data = data.suburbs || data;
       /* ── Market stats for this suburb ── */
       var s = data[SUBURB_KEY];
       if (s && s.market && s.market.sfr) {
