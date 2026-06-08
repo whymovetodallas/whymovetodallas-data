@@ -518,7 +518,7 @@ gtag('consent','default',{
     <div class="kc-stat">
       <span class="kc-stat-val">B</span>
       <span class="kc-stat-label">Safety Grade</span>
-      <span class="kc-stat-source">Niche Crime &amp; Safety 2025</span>
+      <span style="font-size:0.72rem;color:#aaa;display:block;margin-top:0.2rem;">Niche Crime &amp; Safety 2025</span>
     </div>
   </div>
 </div>
@@ -563,7 +563,7 @@ gtag('consent','default',{
 <nav class="kc-jumpnav" aria-label="Page sections">
   <ul class="kc-jumpnav-list">
     <li><a href="#kc-intro">About</a></li>
-    <li><a href="#kc-yt-farmers-branch-texas">Video Tour</a></li>
+
     <li><a href="#kc-location">Location</a></li>
     <li><a href="#kc-schools">Schools</a></li>
     <li><a href="#kc-neighborhoods">Neighborhoods</a></li>
@@ -854,14 +854,17 @@ gtag('consent','default',{
   </div>
   <p>Farmers Branch has a surprisingly varied housing stock for a city of 40,000 — from mixed-use urban developments near DART stations to established 1970s ranch homes on tree-lined streets to new townhome construction aimed at commuters. Prices generally run $50–$100K below comparable neighborhoods in Addison or North Dallas, which is what draws families who want Dallas-area location without Dallas-area prices.</p>
 
-  <div class="kc-grid kc-grid--2" style="margin-top:1.5rem;">
+  <p style="margin-bottom:1.5rem;">
+    <a href="https://kristencarpentier.expportal.com/farmers-branch-texas-homes-for-sale" class="kc-btn kc-btn--gold" target="_blank" rel="noopener">Search Current Farmers Branch Listings &#8594;</a>
+  </p>
+
+  <div class="kc-grid kc-grid--2" style="margin-top:0.5rem;">
 
     <div class="kc-card kc-card--gold">
       <span class="kc-card-price">$400K–$600K · New Construction</span>
       <h3>Mercer Crossing</h3>
       <p>The city's newest master-planned community, anchored by Mercer Crossing Towne Center retail and Luna Road access. First Texas Homes has active inventory here — townhomes and single-family from the mid-$400s. Walkable to restaurants and DART adjacency makes this a hit with commuter couples and families who want a fresh-start home without driving 45 minutes north to Frisco.</p>
       <div><span class="kc-tag">New Construction</span><span class="kc-tag">Townhomes Available</span><span class="kc-tag">Retail Walkable</span><span class="kc-tag">CFBISD</span></div>
-      <p style="margin-top:0.75rem;margin-bottom:0;"><a href="https://kristencarpentier.expportal.com/farmers-branch-texas-homes-for-sale" target="_blank" rel="noopener" class="kc-btn kc-btn--gold kc-btn--sm">View Listings</a></p>
     </div>
 
     <div class="kc-card kc-card--gold">
@@ -869,7 +872,6 @@ gtag('consent','default',{
       <h3>Midway Hills &amp; Stonebrook</h3>
       <p>The heart of residential Farmers Branch — established 1960s–80s neighborhoods with mature trees, oversized lots, and quiet cul-de-sacs. These are the streets that defined the "City in a Park" reputation. Buyers often land 2,000–2,800 sq ft homes at prices that would be impossible in nearby Addison or Preston Hollow for comparable square footage.</p>
       <div><span class="kc-tag">Established Trees</span><span class="kc-tag">Large Lots</span><span class="kc-tag">Park Access</span><span class="kc-tag">CFBISD</span></div>
-      <p style="margin-top:0.75rem;margin-bottom:0;"><a href="https://kristencarpentier.expportal.com/farmers-branch-texas-homes-for-sale" target="_blank" rel="noopener" class="kc-btn kc-btn--gold kc-btn--sm">View Listings</a></p>
     </div>
 
     <div class="kc-card kc-card--gold">
@@ -877,7 +879,6 @@ gtag('consent','default',{
       <h3>Country Club Estates</h3>
       <p>A quiet pocket of well-maintained ranchers and traditional two-stories south of Mercer Road, with easy access to both I-35E and the city's park system. The price point is some of the best in the northwest Dallas corridor — comparable to what you'd pay for a townhome in Oak Lawn. Community feel is strong; long-term residents and newcomers mix easily here.</p>
       <div><span class="kc-tag">Single-Family Homes</span><span class="kc-tag">Low Traffic Streets</span><span class="kc-tag">Park Proximity</span><span class="kc-tag">CFBISD</span></div>
-      <p style="margin-top:0.75rem;margin-bottom:0;"><a href="https://kristencarpentier.expportal.com/farmers-branch-texas-homes-for-sale" target="_blank" rel="noopener" class="kc-btn kc-btn--gold kc-btn--sm">View Listings</a></p>
     </div>
 
     <div class="kc-card kc-card--gold">
@@ -885,7 +886,6 @@ gtag('consent','default',{
       <h3>Downtown Farmers Branch Area</h3>
       <p>The city's urban center has been revitalized with restaurants, breweries, and mixed-use residential around the historic John F. Kennedy Memorial Corridor. Close to the Farmers Branch DART Green Line station, making it the most transit-oriented neighborhood in the city. Ideal for dual-income households where one partner commutes into Dallas and the other works locally.</p>
       <div><span class="kc-tag">DART Green Line</span><span class="kc-tag">Walkable Dining</span><span class="kc-tag">Urban Feel</span><span class="kc-tag">CFBISD</span></div>
-      <p style="margin-top:0.75rem;margin-bottom:0;"><a href="https://kristencarpentier.expportal.com/farmers-branch-texas-homes-for-sale" target="_blank" rel="noopener" class="kc-btn kc-btn--gold kc-btn--sm">View Listings</a></p>
     </div>
 
   </div>
@@ -1718,6 +1718,38 @@ document.querySelectorAll('.kc-jumpnav-list a').forEach(function(a) {
             tableEl.innerHTML = '<div class="kc-table-wrap"><table class="kc-table">' + thead + tbody + '</table></div>';
           }
         }
+      }
+      // ── Amenity rank narratives ─────────────────────────────────────────
+      var ranks = (suburb.scores && suburb.scores.amenity_ranks) || null;
+      if (ranks) {
+        var _n = SUBURB_NAME;
+        function _vi(rank, mod) { return (rank && mod) ? Math.abs(rank) % mod : 0; }
+        function kcParksNarr(rank, pct, count, total) {
+          if (!rank || !total) return null;
+          var rStr = '<strong>#' + rank + ' of ' + total + '</strong> DFW suburbs';
+          var cNote = count ? ' — ' + count + ' parks and green spaces mapped within city limits' : '';
+          var v = _vi(rank, 4);
+          if (rank === 1) return 'No suburb in DFW packs in more park space per resident. ' + _n + ' ranks ' + rStr + ' for parks per capita' + cNote + '.';
+          if (pct >= 90) return _n + ' ranks ' + rStr + ' for parks per resident (top ' + pct + '%)' + cNote + '. Trails, playgrounds, and sports fields are never far from home.';
+          if (pct >= 75) return _n + ' ranks ' + rStr + ' for parks per resident, top ' + pct + '% in DFW' + cNote + '. Green space is well-distributed across the city.';
+          if (pct >= 50) return _n + ' lands ' + rStr + ' for parks per resident (top ' + pct + '%)' + cNote + '. Major parks and trail corridors cover most of the city.';
+          return _n + ' ranks ' + rStr + ' for parks per resident' + cNote + '. Green space exists but is less evenly distributed than higher-ranked suburbs.';
+        }
+        function kcDiningShopNarr(rRank, rPct, rTotal, sRank, sPct, sTotal) {
+          var hasR = rRank && rTotal, hasS = sRank && sTotal;
+          if (!hasR && !hasS) return null;
+          var rStr = hasR ? '<strong>#' + rRank + ' of ' + rTotal + '</strong>' : null;
+          var sStr = hasS ? '<strong>#' + sRank + ' of ' + sTotal + '</strong>' : null;
+          if (hasR && hasS) return _n + ' ranks ' + rStr + ' for restaurants and ' + sStr + ' for retail per resident. Day-to-day dining and shopping needs are covered; specialty options are a short drive to Addison or Carrollton.';
+          if (hasR) return _n + ' ranks ' + rStr + ' for restaurants per resident. Weeknight dining variety is available locally.';
+          return _n + ' ranks ' + sStr + ' for retail per resident. Everyday shopping and errands are well-covered locally.';
+        }
+        var parksNarr = kcParksNarr(ranks.parks_rank, ranks.parks_percentile, ranks.parks_count, ranks.parks_total_suburbs);
+        var dsNarr = kcDiningShopNarr(ranks.restaurants_rank, ranks.restaurants_percentile, ranks.restaurants_total_suburbs, ranks.shopping_rank, ranks.shopping_percentile, ranks.shopping_total_suburbs);
+        var pBanner = document.getElementById('kc-amenity-parks-rank');
+        if (pBanner && parksNarr) { pBanner.innerHTML = parksNarr; pBanner.style.display = 'block'; }
+        var dsBanner = document.getElementById('kc-amenity-dining-shop-rank');
+        if (dsBanner && dsNarr) { dsBanner.innerHTML = dsNarr; dsBanner.style.display = 'block'; }
       }
     })
     .catch(function() { /* silently fail; hardcoded fallback values remain */ });

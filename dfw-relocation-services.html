@@ -523,6 +523,23 @@ gtag('consent','default',{
   transition: color 0.15s;
 }
 .rs-hero-tel a:hover { color: var(--gold); }
+.rs-hero-photo-wrap {
+  display: inline-block;
+  margin-bottom: 1.75rem;
+  position: relative;
+}
+.rs-hero-photo {
+  width: 160px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 6px;
+  border: 3px solid var(--gold);
+  display: block;
+}
+@media (max-width: 480px) {
+  .rs-hero-photo { width: 130px; height: 165px; }
+}
 
 /* ════════════════════════════════
    Section 2 — How I Help
@@ -928,6 +945,16 @@ gtag('consent','default',{
      ═════════════════════════════════════════════════════ -->
 <section class="rs-hero">
   <div class="rs-inner rs-hero-inner">
+    <div class="rs-hero-photo-wrap">
+      <img
+        src="/images/kristen-headshot-04.png"
+        alt="Kristen Carpentier — DFW Family Relocation Specialist and Licensed Texas Realtor"
+        class="rs-hero-photo"
+        loading="eager"
+        width="160"
+        height="200"
+      >
+    </div>
     <span class="rs-eyebrow">DFW Family Relocation Specialist</span>
     <h1>DFW Family Relocation Services</h1>
     <p class="rs-hero-sub">From suburb shortlist to closing day — expert guidance for families moving to Dallas–Fort Worth</p>
