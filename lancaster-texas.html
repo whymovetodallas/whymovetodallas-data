@@ -446,6 +446,17 @@ gtag('consent','default',{
 
 <div class="kc-suburb">
 
+<!-- Breadcrumb -->
+<div style="background:var(--white);border-bottom:1px solid #eee;">
+  <nav class="kc-breadcrumb" aria-label="Breadcrumb">
+    <a href="https://whymovetodallas.com">Home</a>
+    <span>›</span>
+    <a href="https://whymovetodallas.com/dallas-fort-worth-suburbs">DFW Suburbs</a>
+    <span>›</span>
+    Lancaster, Texas
+  </nav>
+</div>
+
 <!-- ── HERO ──────────────────────────────────────────────────────────────── -->
 <section class="kc-hero">
   <img class="kc-hero-img"
@@ -507,25 +518,39 @@ gtag('consent','default',{
 <!-- ── DATA STRIP: Scores · Niche Grades · Sub-scores ────────────────────── -->
 <div id="kc-data-strip" style="background:var(--ivory);border-bottom:1px solid #e0ddd6;">
   <div class="kc-section" style="padding-top:1.5rem;padding-bottom:1.5rem;">
-    <div style="display:flex;flex-wrap:wrap;gap:2rem;align-items:flex-start;">
-      <div>
-        <div style="font-size:0.67rem;text-transform:uppercase;letter-spacing:0.08em;color:#999;margin-bottom:0.2rem;">Family Score</div>
-        <div style="display:flex;align-items:baseline;gap:0.2rem;">
-          <span id="kc-family-score" style="font-size:2.5rem;font-weight:700;color:var(--gold);font-family:'Cormorant Garamond',serif;line-height:1;">-</span>
-          <span style="font-size:0.72rem;color:#bbb;">&thinsp;/100</span>
+    <div class="kc-data-top-inner" style="display:flex;flex-wrap:wrap;gap:1.5rem;align-items:flex-start;margin-bottom:1.25rem;">
+      <!-- Score meters -->
+      <div style="display:flex;gap:2rem;flex-shrink:0;">
+        <div>
+          <div style="font-size:0.67rem;text-transform:uppercase;letter-spacing:0.08em;color:#999;margin-bottom:0.2rem;">Family Score</div>
+          <div style="display:flex;align-items:baseline;gap:0.2rem;">
+            <span id="kc-family-score" style="font-size:2.5rem;font-weight:700;color:var(--gold);font-family:'Cormorant Garamond',serif;line-height:1;">-</span>
+            <span style="font-size:0.72rem;color:#bbb;">&thinsp;/100</span>
+          </div>
+          <div class="kc-score-bar" style="width:100px;"><div id="kc-family-score-fill" class="kc-score-bar-fill" style="width:0"></div></div>
         </div>
-        <div class="kc-score-bar" style="width:100px;"><div id="kc-family-score-fill" class="kc-score-bar-fill" style="width:0"></div></div>
-      </div>
-      <div>
-        <div style="font-size:0.67rem;text-transform:uppercase;letter-spacing:0.08em;color:#999;margin-bottom:0.2rem;">Affordability Score</div>
-        <div style="display:flex;align-items:baseline;gap:0.2rem;">
-          <span id="kc-value-score" style="font-size:2.5rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;line-height:1;">-</span>
-          <span style="font-size:0.72rem;color:#bbb;">&thinsp;/100</span>
+        <div>
+          <div style="font-size:0.67rem;text-transform:uppercase;letter-spacing:0.08em;color:#999;margin-bottom:0.2rem;">Affordability Score</div>
+          <div style="display:flex;align-items:baseline;gap:0.2rem;">
+            <span id="kc-value-score" style="font-size:2.5rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;line-height:1;">-</span>
+            <span style="font-size:0.72rem;color:#bbb;">&thinsp;/100</span>
+          </div>
+          <div class="kc-score-bar" style="width:100px;"><div id="kc-value-score-fill" class="kc-score-bar-fill kc-score-bar-fill--navy" style="width:0"></div></div>
         </div>
-        <div class="kc-score-bar" style="width:100px;"><div id="kc-value-score-fill" class="kc-score-bar-fill kc-score-bar-fill--navy" style="width:0"></div></div>
       </div>
-      <div id="kc-niche-grades" style="display:flex;flex-wrap:wrap;gap:0.75rem 1.5rem;"></div>
+      <!-- Vertical divider -->
+      <div class="kc-data-divider" style="width:1px;height:52px;background:#ddd;flex-shrink:0;align-self:center;"></div>
+      <!-- Niche grade chips -->
+      <div style="flex:1;min-width:200px;">
+        <div style="font-size:0.67rem;text-transform:uppercase;letter-spacing:0.08em;color:#999;margin-bottom:0.45rem;">Niche.com City Grades &middot; <span id="kc-grades-date">–</span></div>
+        <div id="kc-grade-chips" style="display:flex;flex-wrap:wrap;gap:0.35rem;"><!-- populated by JS --></div>
+      </div>
     </div>
+    <!-- Sub-score bars -->
+    <div id="kc-data-subscores" style="display:grid;grid-template-columns:repeat(5,1fr);gap:0.65rem 1.25rem;padding-top:1rem;border-top:1px solid #e5e2db;">
+      <!-- populated by JS -->
+    </div>
+    <p style="font-size:0.65rem;color:#c0bdb6;margin:0.7rem 0 0;">Family Score = schools (35%) + safety (30%) + community (10%) + commute (15%) + market stability (10%), normalized 0–100 for readability &middot; Affordability Score = price-to-income ratio + school quality per dollar + price vs. metro avg &middot; Sub-scores on a 0–10 scale &middot; Niche grades refreshed annually each fall</p>
   </div>
 </div>
 
@@ -549,8 +574,9 @@ gtag('consent','default',{
 </nav>
 
 <!-- ── INTRO ──────────────────────────────────────────────────────────────── -->
-<section id="kc-intro" class="kc-section">
-  <div class="kc-intro-box">
+<div id="kc-intro" style="background:var(--white);">
+  <div class="kc-section" style="padding-top:3rem;padding-bottom:3rem;">
+    <div class="kc-intro-box">
     <img class="kc-intro-avatar"
          src="/images/kristen-headshot-02.jpg"
          alt="Kristen Carpentier, DFW Family Relocation Specialist"
@@ -596,7 +622,8 @@ gtag('consent','default',{
     </div>
   </div>
   <p style="font-size:0.75rem;color:#aaa;margin-top:0.5rem;">Source: U.S. Census Bureau ACS 5-Year Estimates · City of Lancaster CIP Data · Updated 2025</p>
-</section>
+  </div>
+</div>
 
 
 <hr class="kc-divider">
@@ -1125,7 +1152,7 @@ gtag('consent','default',{
     <span class="kc-eyebrow">Side-by-Side</span>
     <h2>How Does Lancaster Compare?</h2>
   </div>
-  <div id="kc-compare-widget" data-suburbs="lancaster,desoto,cedar-hill,duncanville,glenn-heights"></div>
+  <div id="kc-compare-table"></div>
   <noscript>
     <p>Enable JavaScript to see the side-by-side comparison widget.</p>
     <p>Key comparisons: <a href="https://whymovetodallas.com/desoto-texas">DeSoto, TX</a> · <a href="https://whymovetodallas.com/cedar-hill-texas">Cedar Hill, TX</a> · <a href="https://whymovetodallas.com/duncanville-texas">Duncanville, TX</a></p>
@@ -1301,6 +1328,7 @@ gtag('consent','default',{
     var schools_data = raw.schools   || {};
     var mkt_raw  = raw; // market data now read from suburb-profiles.json
     var sfr  = raw.market || {};
+    var sc   = raw.scores  || {};
 
     /* Flat accessors the rest of this code uses */
     var p = {
@@ -1316,6 +1344,8 @@ gtag('consent','default',{
       nicheFamiliesGrade:  niche_data.families,
       nicheSafetyGrade:    niche_data.crime,
       nicheSchoolsGrade:   schools_data.overall_grade,
+      familyScore:         sc.family_score,
+      valueScore:          sc.value_score,
       parksRankNarrative:  null,
       diningShopRankNarrative: null,
       medianHomePrice:     raw.market && raw.market.sfr_median_price ? raw.market.sfr_median_price : (demo.median_home_value_census || null),
@@ -1388,24 +1418,59 @@ gtag('consent','default',{
     kcParksNarr();
     kcDiningShopNarr();
 
-    /* Niche data strip */
-    if (p.nicheOverallGrade || p.nicheScore) {
-      var strip = document.getElementById('kc-data-strip');
-      if (strip) {
-        var items = [];
-        if (p.nicheOverallGrade)  { items.push('<div style="min-width:80px;"><div style="font-size:0.67rem;text-transform:uppercase;letter-spacing:0.07em;color:#999;">Niche Overall</div><div style="font-size:1.15rem;font-weight:700;color:var(--navy);font-family:\'Cormorant Garamond\',serif;">' + p.nicheOverallGrade + '</div></div>'); }
-        if (p.nicheFamiliesGrade) { items.push('<div style="min-width:80px;"><div style="font-size:0.67rem;text-transform:uppercase;letter-spacing:0.07em;color:#999;">Families</div><div style="font-size:1.15rem;font-weight:700;color:var(--navy);font-family:\'Cormorant Garamond\',serif;">' + p.nicheFamiliesGrade + '</div></div>'); }
-        if (p.nicheSafetyGrade)   { items.push('<div style="min-width:80px;"><div style="font-size:0.67rem;text-transform:uppercase;letter-spacing:0.07em;color:#999;">Safety</div><div style="font-size:1.15rem;font-weight:700;color:var(--navy);font-family:\'Cormorant Garamond\',serif;">' + p.nicheSafetyGrade + '</div></div>'); }
-        if (p.nicheSchoolsGrade)  { items.push('<div style="min-width:80px;"><div style="font-size:0.67rem;text-transform:uppercase;letter-spacing:0.07em;color:#999;">Schools</div><div style="font-size:1.15rem;font-weight:700;color:var(--navy);font-family:\'Cormorant Garamond\',serif;">' + p.nicheSchoolsGrade + '</div></div>'); }
-        if (items.length) { strip.innerHTML = '<div style="display:flex;flex-wrap:wrap;gap:0.75rem 1.5rem;">' + items.join('') + '</div>'; }
-      }
+    /* Score meters */
+    if (p.familyScore != null) {
+      var fsEl = document.getElementById('kc-family-score');
+      if (fsEl) { fsEl.textContent = p.familyScore; }
+      var fsFill = document.getElementById('kc-family-score-fill');
+      if (fsFill) { setTimeout(function() { fsFill.style.width = p.familyScore + '%'; }, 80); }
+    }
+    if (p.valueScore != null) {
+      var vsEl = document.getElementById('kc-value-score');
+      if (vsEl) { vsEl.textContent = p.valueScore; }
+      var vsFill = document.getElementById('kc-value-score-fill');
+      if (vsFill) { setTimeout(function() { vsFill.style.width = p.valueScore + '%'; }, 80); }
+    }
+
+    /* Sub-score bars */
+    var ssEl = document.getElementById('kc-data-subscores');
+    if (ssEl && sc.sub_scores) {
+      var ssOrder = ['education', 'safety', 'family_community', 'commute', 'market_stability'];
+      var ssNames = { education: 'Education', safety: 'Safety', family_community: 'Family & Community', commute: 'Commute', market_stability: 'Market Stability' };
+      var ssHtml = '';
+      ssOrder.forEach(function(key) {
+        var v = sc.sub_scores[key];
+        var disp = (v != null) ? v : '—';
+        var pct  = (v != null) ? v : 0;
+        ssHtml += '<div class="kc-subscore-item"><div class="kc-subscore-item-label">' + ssNames[key] + '</div><div class="kc-subscore-item-track"><div class="kc-subscore-item-fill" style="width:' + pct + '%"></div></div><span class="kc-subscore-item-val">' + disp + '</span></div>';
+      });
+      ssEl.innerHTML = ssHtml;
+    }
+
+    /* Niche grade chips */
+    var ncity = raw.niche_city || {};
+    var gradeOrder = ['overall', 'families', 'public_schools', 'crime', 'housing', 'jobs', 'diversity', 'cost_of_living', 'health_fitness', 'outdoor_activities', 'nightlife', 'weather', 'commute'];
+    var gradeNames = { overall: 'Overall', families: 'Families', public_schools: 'Schools', crime: 'Crime & Safety', housing: 'Housing', jobs: 'Jobs', diversity: 'Diversity', cost_of_living: 'Cost of Living', health_fitness: 'Health', outdoor_activities: 'Outdoors', nightlife: 'Nightlife', weather: 'Weather', commute: 'Commute' };
+    var chipsEl = document.getElementById('kc-grade-chips');
+    if (chipsEl) {
+      var chHtml = '';
+      var gradeDate = ncity.year || '';
+      if (gradeDate) { var gdEl = document.getElementById('kc-grades-date'); if (gdEl) gdEl.textContent = gradeDate; }
+      gradeOrder.forEach(function(key) {
+        var g = ncity[key];
+        if (!g) return;
+        var bg = g.startsWith('A') ? '#d4f4e2' : g.startsWith('B') ? '#d4e8f8' : '#fef3cd';
+        var fg = g.startsWith('A') ? 'var(--green)' : g.startsWith('B') ? 'var(--blue)' : '#856404';
+        chHtml += '<span style="background:' + bg + ';color:' + fg + ';padding:0.25rem 0.6rem;border-radius:20px;font-size:0.78rem;font-weight:700;">' + gradeNames[key] + ' ' + g + '</span>';
+      });
+      if (chHtml) chipsEl.innerHTML = chHtml;
     }
   }).catch(function (err) {
     console.warn('[Lancaster page] Data fetch error:', err);
   });
 
   /* ── Suburb comparison widget ───────────────────────────────────────────── */
-  var compareEl = document.getElementById('kc-compare-widget');
+  var compareEl = document.getElementById('kc-compare-table');
   if (compareEl) {
     var suburbList = [SUBURB_KEY].concat(COMPARE_SUBURBS);
     fetch(PROFILES_URL)
