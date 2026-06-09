@@ -1355,6 +1355,7 @@ gtag('consent','default',{
       medianPrice:   sfr.sfr_median_price,
       daysOnMarket:  sfr.sfr_days_on_market,
       monthsSupply:  sfr.sfr_months_supply,
+      closedSales:   sfr.sfr_closed_sales_12mo || null,
       pricePerSqFt:  sfr.price_per_sqft || null
     };
 
@@ -1397,9 +1398,9 @@ gtag('consent','default',{
       var msiEl = document.getElementById('kc-mkt-msi');
       if (msiEl) { msiEl.textContent = '~' + m.monthsSupply.toFixed(1) + ' mo'; }
     }
-    if (m.pricePerSqFt) {
-      var ppsfEl = document.getElementById('kc-mkt-cs');
-      if (ppsfEl) { ppsfEl.textContent = '$' + Math.round(m.pricePerSqFt); }
+    if (m.closedSales != null) {
+      var csEl = document.getElementById('kc-mkt-cs');
+      if (csEl) { csEl.textContent = m.closedSales.toLocaleString(); }
     }
 
     /* Amenity rank banners */
