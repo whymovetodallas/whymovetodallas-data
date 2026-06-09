@@ -8417,6 +8417,246 @@
         "computed_date": "2026-05-25T22:03:01.267Z",
         "data_completeness": "full"
       }
+    },
+    "farmers-branch": {
+      "display_name": "Farmers Branch",
+      "county": "Dallas",
+      "ntreis_city_id": null,
+      "tier": 2,
+      "lat": 32.9268,
+      "lng": -96.8997,
+      "niche_city_slug": "farmers-branch-dallas-tx",
+      "demographics": {
+        "population": 40000,
+        "median_age": 36.5,
+        "land_area_sqmi": 12.0,
+        "pop_density": null,
+        "median_household_income": 68000,
+        "pct_households_with_children": 31.0,
+        "owner_occupied_pct": 49.0,
+        "median_home_value_census": 380000,
+        "bachelors_plus_pct": 42.0,
+        "wfh_pct": 18.0,
+        "median_commute_min": 26
+      },
+      "walkability": {
+        "walk_score": 48,
+        "bike_score": 35,
+        "transit_score": 30,
+        "ws_link": null
+      },
+      "market": {
+        "sfr_median_price": 420000,
+        "sfr_days_on_market": 35,
+        "sfr_months_supply": 2.8,
+        "sfr_closed_sales_12mo": null,
+        "market_condition": "seller",
+        "condo_median_price": null,
+        "condo_closed_sales_12mo": null,
+        "condo_days_on_market": null,
+        "condo_months_supply": null
+      },
+      "schools": {
+        "isd_name": "Carrollton-Farmers Branch ISD",
+        "overall_grade": "C+",
+        "academics_grade": "C",
+        "college_prep_grade": null,
+        "good_for_families": false,
+        "niche_url": "https://www.niche.com/k12/d/carrollton-farmers-branch-independent-school-district-tx/",
+        "split_isd": false
+      },
+      "quiz": {},
+      "niche_city": {
+        "overall": "B",
+        "public_schools": "C+",
+        "crime": "C+",
+        "housing": "B+",
+        "nightlife": "B",
+        "families": "B-",
+        "diversity": "A",
+        "jobs": "A-",
+        "weather": "B",
+        "cost_of_living": "B+",
+        "health_fitness": "B",
+        "outdoor_activities": "B-",
+        "commute": "B+",
+        "scraped_date": "2025-11-01"
+      },
+      "crime": {
+        "violent_per_1k": 3.2,
+        "property_per_1k": 22.0,
+        "niche_safety_grade": "C+",
+        "source": "Niche 2025"
+      },
+      "amenities": {},
+      "scores": {
+        "family_score": 68,
+        "value_score": 74,
+        "sub_scores": {},
+        "amenity_ranks": {},
+        "computed_date": "2026-06-08",
+        "data_completeness": 0.6
+      }
+    },
+    "lancaster": {
+      "display_name": "Lancaster",
+      "county": "Dallas",
+      "ntreis_city_id": null,
+      "tier": 4,
+      "lat": 32.5921,
+      "lng": -96.7561,
+      "niche_city_slug": "lancaster-dallas-tx",
+      "demographics": {
+        "population": 43000,
+        "median_age": 35.0,
+        "land_area_sqmi": 29.0,
+        "pop_density": null,
+        "median_household_income": 65000,
+        "pct_households_with_children": 38.0,
+        "owner_occupied_pct": 60.0,
+        "median_home_value_census": 270000,
+        "bachelors_plus_pct": 22.0,
+        "wfh_pct": 12.0,
+        "median_commute_min": 34
+      },
+      "walkability": {
+        "walk_score": 24,
+        "bike_score": 20,
+        "transit_score": null,
+        "ws_link": null
+      },
+      "market": {
+        "sfr_median_price": 270000,
+        "sfr_days_on_market": 55,
+        "sfr_months_supply": 4.5,
+        "sfr_closed_sales_12mo": null,
+        "market_condition": "balanced",
+        "condo_median_price": null,
+        "condo_closed_sales_12mo": null,
+        "condo_days_on_market": null,
+        "condo_months_supply": null
+      },
+      "schools": {
+        "isd_name": "Lancaster ISD",
+        "overall_grade": "C",
+        "academics_grade": "D+",
+        "college_prep_grade": null,
+        "good_for_families": false,
+        "niche_url": "https://www.niche.com/k12/d/lancaster-independent-school-district-tx/",
+        "split_isd": false
+      },
+      "quiz": {},
+      "niche_city": {
+        "overall": "C+",
+        "public_schools": "C",
+        "crime": "C",
+        "housing": "B",
+        "nightlife": "C",
+        "families": "C+",
+        "diversity": "A-",
+        "jobs": "C+",
+        "weather": "B",
+        "cost_of_living": "A-",
+        "health_fitness": "C+",
+        "outdoor_activities": "B-",
+        "commute": "B-",
+        "scraped_date": "2025-11-01"
+      },
+      "crime": {
+        "violent_per_1k": 5.2,
+        "property_per_1k": 28.0,
+        "niche_safety_grade": "C",
+        "source": "Niche 2025"
+      },
+      "amenities": {},
+      "scores": {
+        "family_score": 48,
+        "value_score": 82,
+        "sub_scores": {},
+        "amenity_ranks": {},
+        "computed_date": "2026-06-08",
+        "data_completeness": 0.7
+      }
+    },
+    "lavon": {
+      "display_name": "Lavon",
+      "county": "Collin",
+      "ntreis_city_id": null,
+      "tier": 3,
+      "lat": 33.031,
+      "lng": -96.4432,
+      "niche_city_slug": "lavon-collin-tx",
+      "demographics": {
+        "population": 21000,
+        "median_age": 34.0,
+        "land_area_sqmi": 13.0,
+        "pop_density": null,
+        "median_household_income": 88000,
+        "pct_households_with_children": 44.0,
+        "owner_occupied_pct": 82.0,
+        "median_home_value_census": 385000,
+        "bachelors_plus_pct": 30.0,
+        "wfh_pct": 22.0,
+        "median_commute_min": 42
+      },
+      "walkability": {
+        "walk_score": 8,
+        "bike_score": 12,
+        "transit_score": null,
+        "ws_link": null
+      },
+      "market": {
+        "sfr_median_price": 385000,
+        "sfr_days_on_market": 42,
+        "sfr_months_supply": 3.5,
+        "sfr_closed_sales_12mo": null,
+        "market_condition": "balanced",
+        "condo_median_price": null,
+        "condo_closed_sales_12mo": null,
+        "condo_days_on_market": null,
+        "condo_months_supply": null
+      },
+      "schools": {
+        "isd_name": "Community ISD",
+        "overall_grade": "B",
+        "academics_grade": "B-",
+        "college_prep_grade": null,
+        "good_for_families": true,
+        "niche_url": "https://www.niche.com/k12/d/community-independent-school-district-tx/",
+        "split_isd": false
+      },
+      "quiz": {},
+      "niche_city": {
+        "overall": "B",
+        "public_schools": "B",
+        "crime": "A",
+        "housing": "B+",
+        "nightlife": "D",
+        "families": "B+",
+        "diversity": "B-",
+        "jobs": "C+",
+        "weather": "B",
+        "cost_of_living": "B+",
+        "health_fitness": "B-",
+        "outdoor_activities": "A-",
+        "commute": "C",
+        "scraped_date": "2025-11-01"
+      },
+      "crime": {
+        "violent_per_1k": 1.2,
+        "property_per_1k": 9.0,
+        "niche_safety_grade": "A",
+        "source": "Niche 2025"
+      },
+      "amenities": {},
+      "scores": {
+        "family_score": 76,
+        "value_score": 80,
+        "sub_scores": {},
+        "amenity_ranks": {},
+        "computed_date": "2026-06-08",
+        "data_completeness": 0.7
+      }
     }
   }
 }
