@@ -1539,11 +1539,6 @@ gtag('consent','default',{
     .then(function (res) { return res.json(); })
     .then(function (data) {
       if (data.success) {
-        navEl.style.display     = 'none';
-        document.querySelectorAll('.gs-step').forEach(function (el) { el.classList.remove('active'); });
-        document.querySelector('.gs-progress').style.display = 'none';
-        successEl.classList.add('show');
-        window.scrollTo({ top: 0, behavior: 'smooth' });
         window.location.href = '/get-started-thank-you';
       } else {
         showErr(data.error || 'Something went wrong — please try again.');
