@@ -1,9 +1,9 @@
 {
   "_meta": {
-    "last_updated": "2026-06-09T03:01:39.400Z",
+    "last_updated": "2026-06-09T03:14:34.490Z",
     "sources": [
       "Census ACS 2023",
-      "WalkScore (2026-05-19)",
+      "WalkScore (2026-06-09)",
       "NTREIS (2026-06-09)",
       "Niche ISD (2026-06-09)",
       "Google Places (2026-05-19)",
@@ -142,7 +142,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -267,7 +267,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -392,7 +392,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -517,7 +517,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "estimate"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -642,7 +642,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -767,7 +767,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -798,7 +798,7 @@
         "walk_description": "Somewhat Walkable",
         "transit_score": null,
         "transit_description": "Unknown",
-        "bike_score": 40,
+        "bike_score": 41,
         "bike_description": "Somewhat Bikeable",
         "logo_url": "https://cdn.walk.sc/images/api-logo.png",
         "ws_link": "https://www.walkscore.com/score/Azle-TX/lat=32.8957/lng=-97.5447/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
@@ -830,7 +830,7 @@
         "pct_households_with_children": 37.3,
         "walk_score": 52,
         "transit_score": null,
-        "bike_score": 40,
+        "bike_score": 41,
         "median_household_income": 81200,
         "owner_occupied_pct": 71.1,
         "wfh_pct": 16.3
@@ -892,7 +892,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -1017,7 +1017,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -1142,7 +1142,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -1267,7 +1267,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -1392,7 +1392,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -1517,7 +1517,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -1642,7 +1642,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -1767,7 +1767,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -1892,7 +1892,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -2017,7 +2017,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -2044,7 +2044,7 @@
         "acs_vintage": "2023"
       },
       "walkability": {
-        "walk_score": 23,
+        "walk_score": 30,
         "walk_description": "Car-Dependent",
         "transit_score": null,
         "transit_description": "Unknown",
@@ -2078,7 +2078,7 @@
         "overall_isd_grade": 7,
         "academics_isd_grade": 8,
         "pct_households_with_children": 41.3,
-        "walk_score": 23,
+        "walk_score": 30,
         "transit_score": null,
         "bike_score": 34,
         "median_household_income": 105556,
@@ -2123,7 +2123,7 @@
         "sub_scores": {
           "education": 77,
           "safety": 77,
-          "family_community": 47,
+          "family_community": 50,
           "commute": 45,
           "market_stability": 100
         },
@@ -2142,7 +2142,7 @@
           "shopping_total_suburbs": 65,
           "population_source": null
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -2267,7 +2267,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -2392,7 +2392,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -2423,7 +2423,7 @@
         "walk_description": "Very Walkable",
         "transit_score": null,
         "transit_description": "Unknown",
-        "bike_score": 45,
+        "bike_score": 46,
         "bike_description": "Somewhat Bikeable",
         "logo_url": "https://cdn.walk.sc/images/api-logo.png",
         "ws_link": "https://www.walkscore.com/score/DeSoto-TX/lat=32.5896/lng=-96.8572/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
@@ -2455,7 +2455,7 @@
         "pct_households_with_children": 31.5,
         "walk_score": 71,
         "transit_score": null,
-        "bike_score": 45,
+        "bike_score": 46,
         "median_household_income": 83256,
         "owner_occupied_pct": 70.5,
         "wfh_pct": 15.6
@@ -2517,7 +2517,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -2548,7 +2548,7 @@
         "walk_description": "Very Walkable",
         "transit_score": 0,
         "transit_description": "No Nearby Transit",
-        "bike_score": 58,
+        "bike_score": 59,
         "bike_description": "Bikeable",
         "logo_url": "https://cdn.walk.sc/images/api-logo.png",
         "ws_link": "https://www.walkscore.com/score/Duncanville-TX/lat=32.6518/lng=-96.9083/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
@@ -2580,7 +2580,7 @@
         "pct_households_with_children": 36.1,
         "walk_score": 83,
         "transit_score": 0,
-        "bike_score": 58,
+        "bike_score": 59,
         "median_household_income": 71381,
         "owner_occupied_pct": 65.3,
         "wfh_pct": 10.2
@@ -2642,7 +2642,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -2767,7 +2767,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -2798,7 +2798,7 @@
         "walk_description": "Car-Dependent",
         "transit_score": null,
         "transit_description": "Unknown",
-        "bike_score": 15,
+        "bike_score": 26,
         "bike_description": "Somewhat Bikeable",
         "logo_url": "https://cdn.walk.sc/images/api-logo.png",
         "ws_link": "https://www.walkscore.com/score/Fairview-TX/lat=33.1626/lng=-96.6178/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
@@ -2830,7 +2830,7 @@
         "pct_households_with_children": 24.2,
         "walk_score": 0,
         "transit_score": null,
-        "bike_score": 15,
+        "bike_score": 26,
         "median_household_income": 107308,
         "owner_occupied_pct": 73.2,
         "wfh_pct": 33.4
@@ -2892,7 +2892,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -2905,7 +2905,16 @@
       "lng": -96.8996,
       "niche_city_slug": "farmers-branch-dallas-tx",
       "demographics": null,
-      "walkability": null,
+      "walkability": {
+        "walk_score": 49,
+        "walk_description": "Car-Dependent",
+        "transit_score": 42,
+        "transit_description": "Some Transit",
+        "bike_score": 62,
+        "bike_description": "Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/Farmers-Branch-TX/lat=32.9293/lng=-96.8996/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
       "market": {
         "sfr_median_price": 429641.7,
         "sfr_days_on_market": 32.6,
@@ -2931,9 +2940,9 @@
         "overall_isd_grade": 10,
         "academics_isd_grade": 9,
         "pct_households_with_children": null,
-        "walk_score": null,
-        "transit_score": null,
-        "bike_score": null,
+        "walk_score": 49,
+        "transit_score": 42,
+        "bike_score": 62,
         "median_household_income": null,
         "owner_occupied_pct": null,
         "wfh_pct": null
@@ -2967,7 +2976,7 @@
         "sub_scores": {
           "education": 77,
           "safety": 72,
-          "family_community": 65,
+          "family_community": 62,
           "commute": null,
           "market_stability": 100
         },
@@ -2986,7 +2995,7 @@
           "shopping_total_suburbs": 65,
           "population_source": null
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "partial"
       }
     },
@@ -3111,7 +3120,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -3236,7 +3245,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -3361,7 +3370,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -3390,7 +3399,7 @@
       "walkability": {
         "walk_score": 87,
         "walk_description": "Very Walkable",
-        "transit_score": 65,
+        "transit_score": 68,
         "transit_description": "Good Transit",
         "bike_score": 82,
         "bike_description": "Very Bikeable",
@@ -3423,7 +3432,7 @@
         "academics_isd_grade": 7,
         "pct_households_with_children": 36.1,
         "walk_score": 87,
-        "transit_score": 65,
+        "transit_score": 68,
         "bike_score": 82,
         "median_household_income": 76602,
         "owner_occupied_pct": 56.7,
@@ -3486,7 +3495,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -3611,7 +3620,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -3736,7 +3745,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -3861,7 +3870,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -3986,7 +3995,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -4111,7 +4120,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "estimate"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -4236,7 +4245,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -4361,7 +4370,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -4486,7 +4495,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -4611,7 +4620,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -4736,7 +4745,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -4861,7 +4870,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -4874,7 +4883,16 @@
       "lng": -96.7561,
       "niche_city_slug": "lancaster-dallas-tx",
       "demographics": null,
-      "walkability": null,
+      "walkability": {
+        "walk_score": 40,
+        "walk_description": "Car-Dependent",
+        "transit_score": null,
+        "transit_description": "Unknown",
+        "bike_score": 39,
+        "bike_description": "Somewhat Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/Lancaster-TX/lat=32.5921/lng=-96.7561/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
       "market": {
         "sfr_median_price": 281654,
         "sfr_days_on_market": 37.4,
@@ -4900,9 +4918,9 @@
         "overall_isd_grade": 8,
         "academics_isd_grade": 7,
         "pct_households_with_children": null,
-        "walk_score": null,
+        "walk_score": 40,
         "transit_score": null,
-        "bike_score": null,
+        "bike_score": 39,
         "median_household_income": null,
         "owner_occupied_pct": null,
         "wfh_pct": null
@@ -4931,12 +4949,12 @@
       },
       "amenities": null,
       "scores": {
-        "family_score": 62,
+        "family_score": 61,
         "value_score": 90,
         "sub_scores": {
           "education": 73,
           "safety": 69,
-          "family_community": 58,
+          "family_community": 54,
           "commute": null,
           "market_stability": 100
         },
@@ -4955,7 +4973,7 @@
           "shopping_total_suburbs": 65,
           "population_source": null
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "partial"
       }
     },
@@ -5080,7 +5098,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -5093,7 +5111,16 @@
       "lng": -96.4432,
       "niche_city_slug": "lavon-collin-county-tx",
       "demographics": null,
-      "walkability": null,
+      "walkability": {
+        "walk_score": 14,
+        "walk_description": "Car-Dependent",
+        "transit_score": null,
+        "transit_description": "Unknown",
+        "bike_score": 29,
+        "bike_description": "Somewhat Bikeable",
+        "logo_url": "https://cdn.walk.sc/images/api-logo.png",
+        "ws_link": "https://www.walkscore.com/score/Lavon-TX/lat=33.031/lng=-96.4432/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
+      },
       "market": {
         "sfr_median_price": 347792.4,
         "sfr_days_on_market": 75.3,
@@ -5119,9 +5146,9 @@
         "overall_isd_grade": 7,
         "academics_isd_grade": 7,
         "pct_households_with_children": null,
-        "walk_score": null,
+        "walk_score": 14,
         "transit_score": null,
-        "bike_score": null,
+        "bike_score": 29,
         "median_household_income": null,
         "owner_occupied_pct": null,
         "wfh_pct": null
@@ -5150,12 +5177,12 @@
       },
       "amenities": null,
       "scores": {
-        "family_score": 83,
+        "family_score": 80,
         "value_score": 94,
         "sub_scores": {
           "education": 83,
           "safety": 79,
-          "family_community": 78,
+          "family_community": 65,
           "commute": null,
           "market_stability": 100
         },
@@ -5174,7 +5201,7 @@
           "shopping_total_suburbs": 65,
           "population_source": null
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "partial"
       }
     },
@@ -5299,7 +5326,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -5424,7 +5451,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -5549,7 +5576,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -5674,7 +5701,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -5799,7 +5826,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -5924,7 +5951,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -6049,7 +6076,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -6174,7 +6201,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -6299,7 +6326,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -6424,7 +6451,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -6549,7 +6576,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -6674,7 +6701,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -6799,7 +6826,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -6924,7 +6951,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -7049,7 +7076,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -7174,7 +7201,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -7299,7 +7326,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -7330,7 +7357,7 @@
         "walk_description": "Somewhat Walkable",
         "transit_score": 42,
         "transit_description": "Some Transit",
-        "bike_score": 42,
+        "bike_score": 44,
         "bike_description": "Somewhat Bikeable",
         "logo_url": "https://cdn.walk.sc/images/api-logo.png",
         "ws_link": "https://www.walkscore.com/score/Rowlett-TX/lat=32.9029/lng=-96.5636/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
@@ -7362,7 +7389,7 @@
         "pct_households_with_children": 37.8,
         "walk_score": 58,
         "transit_score": 42,
-        "bike_score": 42,
+        "bike_score": 44,
         "median_household_income": 113600,
         "owner_occupied_pct": 75.9,
         "wfh_pct": 15.4
@@ -7424,7 +7451,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -7549,7 +7576,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -7674,7 +7701,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -7799,7 +7826,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -7924,7 +7951,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -8049,7 +8076,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -8174,7 +8201,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -8299,7 +8326,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -8424,7 +8451,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -8549,7 +8576,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "estimate"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     },
@@ -8674,7 +8701,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-09T03:01:39.384Z",
+        "computed_date": "2026-06-09T03:14:34.473Z",
         "data_completeness": "full"
       }
     }
