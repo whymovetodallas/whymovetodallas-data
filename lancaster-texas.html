@@ -801,7 +801,7 @@ gtag('consent','default',{
         <tr><th>Suburb</th><th>Median Home Price</th><th>ISD</th><th class="kc-col-hide-mobile">Tax Rate (est.)</th></tr>
       </thead>
       <tbody>
-        <tr style="font-weight:700;background:var(--ivory);"><th class="kc-hl">Lancaster</th><td>~$270K</td><td>Lancaster ISD (C)</td><td class="kc-col-hide-mobile">~2.31%</td></tr>
+        <tr style="font-weight:700;background:var(--ivory);"><td class="kc-hl" style="font-weight:700;">Lancaster</td><td>~$270K</td><td>Lancaster ISD (C)</td><td class="kc-col-hide-mobile">~2.31%</td></tr>
         <tr><td>DeSoto</td><td>~$330K</td><td>DeSoto ISD (B)</td><td class="kc-col-hide-mobile">~2.30%</td></tr>
         <tr><td>Cedar Hill</td><td>~$340K</td><td>Cedar Hill ISD (B)</td><td class="kc-col-hide-mobile">~2.25%</td></tr>
         <tr><td>Glenn Heights</td><td>~$310K</td><td>Lancaster / Red Oak ISD</td><td class="kc-col-hide-mobile">~2.20%</td></tr>
@@ -1043,7 +1043,7 @@ gtag('consent','default',{
 <section id="kc-market" class="kc-section">
   <div class="kc-section-header">
     <span class="kc-eyebrow">Real Estate</span>
-    <h2>Lancaster, TX Real Estate Market — 2025</h2>
+    <h2>Lancaster, TX Real Estate Market</h2>
   </div>
 
   <div class="kc-grid kc-grid--4" style="margin-bottom:1.5rem;">
@@ -1269,8 +1269,8 @@ gtag('consent','default',{
 
   var SUBURB_KEY  = 'lancaster';
   var COMPARE_SUBURBS = ['desoto', 'cedar-hill', 'duncanville', 'glenn-heights'];
-  var PROFILES_URL = 'https://raw.githubusercontent.com/whymovetodallas/whymovetodallas.com/main/data/suburb-profiles.json';
-  var MARKET_URL   = 'https://raw.githubusercontent.com/whymovetodallas/whymovetodallas.com/main/data/market-data.json';
+  var PROFILES_URL = 'https://raw.githubusercontent.com/whymovetodallas/whymovetodallas-data/main/suburb-profiles.json';
+  var MARKET_URL   = 'https://raw.githubusercontent.com/whymovetodallas/whymovetodallas-data/main/suburb-profiles.json'; // market data embedded in suburb-profiles.json
 
   /* ── Lazy-load OSM iframes ──────────────────────────────────────────────── */
   if ('IntersectionObserver' in window) {
@@ -1299,8 +1299,8 @@ gtag('consent','default',{
     var demo = raw.demographics || {};
     var niche_data  = raw.niche_city  || {};
     var schools_data = raw.schools   || {};
-    var mkt_raw  = (_mkt.suburbs || _mkt)[SUBURB_KEY] || {};
-    var sfr  = mkt_raw.sfr || {};
+    var mkt_raw  = raw; // market data now read from suburb-profiles.json
+    var sfr  = raw.market || {};
 
     /* Flat accessors the rest of this code uses */
     var p = {
@@ -1322,9 +1322,9 @@ gtag('consent','default',{
       isdName:             schools_data.isd_name
     };
     var m = {
-      medianPrice:   sfr.median_sale_price,
-      daysOnMarket:  sfr.days_on_market,
-      monthsSupply:  sfr.months_supply,
+      medianPrice:   sfr.sfr_median_price,
+      daysOnMarket:  sfr.sfr_days_on_market,
+      monthsSupply:  sfr.sfr_months_supply,
       pricePerSqFt:  sfr.price_per_sqft || null
     };
 

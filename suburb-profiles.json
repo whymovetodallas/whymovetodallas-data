@@ -1,17 +1,17 @@
 {
   "_meta": {
-    "last_updated": "2026-05-27T20:36:50.536Z",
+    "last_updated": "2026-06-09T03:01:39.400Z",
     "sources": [
       "Census ACS 2023",
       "WalkScore (2026-05-19)",
-      "NTREIS (2026-05-19)",
-      "Niche ISD (2026-05-19)",
+      "NTREIS (2026-06-09)",
+      "Niche ISD (2026-06-09)",
       "Google Places (2026-05-19)",
-      "Niche City (2026-05-19)"
+      "Niche City (2026-05-27)"
     ],
-    "suburbs_total": 67,
+    "suburbs_total": 70,
     "suburbs_complete": 67,
-    "suburbs_partial": 0,
+    "suburbs_partial": 3,
     "schema_version": "1.0",
     "note": "Run build-suburb-profiles.js after any source data refresh.",
     "niche_city_scraped": "2026-05-27",
@@ -54,15 +54,15 @@
         "ws_link": "https://www.walkscore.com/score/Addison-TX/lat=32.9612/lng=-96.8331/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 599354.2,
-        "sfr_days_on_market": 32.8,
-        "sfr_months_supply": 4.3,
-        "sfr_closed_sales_12mo": 61,
+        "sfr_median_price": 601125,
+        "sfr_days_on_market": 32.6,
+        "sfr_months_supply": 4.2,
+        "sfr_closed_sales_12mo": 68,
         "market_condition": "balanced",
-        "condo_median_price": 300312.5,
+        "condo_median_price": 286479.2,
         "condo_closed_sales_12mo": 25,
-        "condo_days_on_market": 61.8,
-        "condo_months_supply": 4.9
+        "condo_days_on_market": 70.3,
+        "condo_months_supply": 5.3
       },
       "schools": {
         "isd_name": "Carrollton-Farmers Branch ISD",
@@ -74,7 +74,7 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 599354.2,
+        "sfr_median_price": 601125,
         "overall_isd_grade": 10,
         "academics_isd_grade": 9,
         "pct_households_with_children": 12.2,
@@ -119,7 +119,7 @@
       },
       "scores": {
         "family_score": 75,
-        "value_score": 68,
+        "value_score": 67,
         "sub_scores": {
           "education": 87,
           "safety": 77,
@@ -142,7 +142,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -179,15 +179,15 @@
         "ws_link": "https://www.walkscore.com/score/Allen-TX/lat=33.1032/lng=-96.6706/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 519735.4,
+        "sfr_median_price": 516277.1,
         "sfr_days_on_market": 33.4,
         "sfr_months_supply": 3.4,
-        "sfr_closed_sales_12mo": 1008,
+        "sfr_closed_sales_12mo": 986,
         "market_condition": "balanced",
-        "condo_median_price": 379466.3,
-        "condo_closed_sales_12mo": 17,
-        "condo_days_on_market": 124,
-        "condo_months_supply": 5.9
+        "condo_median_price": 371762.1,
+        "condo_closed_sales_12mo": 15,
+        "condo_days_on_market": 126.7,
+        "condo_months_supply": 6.1
       },
       "schools": {
         "isd_name": "Allen ISD",
@@ -199,7 +199,7 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 519735.4,
+        "sfr_median_price": 516277.1,
         "overall_isd_grade": 13,
         "academics_isd_grade": 12,
         "pct_households_with_children": 42.4,
@@ -244,7 +244,7 @@
       },
       "scores": {
         "family_score": 85,
-        "value_score": 93,
+        "value_score": 94,
         "sub_scores": {
           "education": 97,
           "safety": 83,
@@ -267,7 +267,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -304,10 +304,10 @@
         "ws_link": "https://www.walkscore.com/score/Anna-TX/lat=33.3526/lng=-96.5472/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 358832.4,
-        "sfr_days_on_market": 55.9,
+        "sfr_median_price": 356651.6,
+        "sfr_days_on_market": 56.9,
         "sfr_months_supply": 6,
-        "sfr_closed_sales_12mo": 791,
+        "sfr_closed_sales_12mo": 783,
         "market_condition": "balanced",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -321,11 +321,10 @@
         "college_prep_grade": "B+",
         "good_for_families": "B",
         "niche_url": "https://www.niche.com/k12/d/anna-independent-school-district-tx/",
-        "split_isd": false,
-        "niche_city_schools_grade": "B"
+        "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 358832.4,
+        "sfr_median_price": 356651.6,
         "overall_isd_grade": 8,
         "academics_isd_grade": 9,
         "pct_households_with_children": 49.5,
@@ -393,7 +392,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -430,10 +429,10 @@
         "ws_link": "https://www.walkscore.com/score/Argyle-TX/lat=33.1268/lng=-97.1836/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 569414.1,
-        "sfr_days_on_market": 52.9,
-        "sfr_months_supply": 4.7,
-        "sfr_closed_sales_12mo": 462,
+        "sfr_median_price": 567039.1,
+        "sfr_days_on_market": 53.9,
+        "sfr_months_supply": 4.8,
+        "sfr_closed_sales_12mo": 446,
         "market_condition": "balanced",
         "condo_median_price": 402982,
         "condo_closed_sales_12mo": 0,
@@ -450,7 +449,7 @@
         "split_isd": true
       },
       "quiz": {
-        "sfr_median_price": 569414.1,
+        "sfr_median_price": 567039.1,
         "overall_isd_grade": 13,
         "academics_isd_grade": 13,
         "pct_households_with_children": 39,
@@ -518,7 +517,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -555,15 +554,15 @@
         "ws_link": "https://www.walkscore.com/score/Arlington-TX/lat=32.7357/lng=-97.1081/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 333885.4,
-        "sfr_days_on_market": 31.8,
+        "sfr_median_price": 334005.8,
+        "sfr_days_on_market": 32,
         "sfr_months_supply": 3.1,
-        "sfr_closed_sales_12mo": 2832,
+        "sfr_closed_sales_12mo": 2812,
         "market_condition": "balanced",
-        "condo_median_price": 145528.7,
-        "condo_closed_sales_12mo": 112,
-        "condo_days_on_market": 75.8,
-        "condo_months_supply": 8.8
+        "condo_median_price": 146695.3,
+        "condo_closed_sales_12mo": 117,
+        "condo_days_on_market": 75.1,
+        "condo_months_supply": 8.7
       },
       "schools": {
         "isd_name": "Arlington ISD",
@@ -572,11 +571,10 @@
         "college_prep_grade": "A-",
         "good_for_families": "B+",
         "niche_url": "https://www.niche.com/k12/d/arlington-independent-school-district-tx/",
-        "split_isd": false,
-        "niche_city_schools_grade": "B"
+        "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 333885.4,
+        "sfr_median_price": 334005.8,
         "overall_isd_grade": 9,
         "academics_isd_grade": 8,
         "pct_households_with_children": 34.6,
@@ -644,7 +642,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -681,10 +679,10 @@
         "ws_link": "https://www.walkscore.com/score/Aubrey-TX/lat=33.3029/lng=-96.9836/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 350404.6,
-        "sfr_days_on_market": 47.8,
-        "sfr_months_supply": 6,
-        "sfr_closed_sales_12mo": 927,
+        "sfr_median_price": 346682.9,
+        "sfr_days_on_market": 47.3,
+        "sfr_months_supply": 5.9,
+        "sfr_closed_sales_12mo": 970,
         "market_condition": "balanced",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -701,7 +699,7 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 350404.6,
+        "sfr_median_price": 346682.9,
         "overall_isd_grade": 9,
         "academics_isd_grade": 10,
         "pct_households_with_children": 39.3,
@@ -746,13 +744,13 @@
       },
       "scores": {
         "family_score": 67,
-        "value_score": 94,
+        "value_score": 95,
         "sub_scores": {
           "education": 87,
           "safety": 77,
           "family_community": 42,
           "commute": 59,
-          "market_stability": 88
+          "market_stability": 89
         },
         "amenity_ranks": {
           "parks_count": 5,
@@ -769,7 +767,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -806,10 +804,10 @@
         "ws_link": "https://www.walkscore.com/score/Azle-TX/lat=32.8957/lng=-97.5447/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 337551.6,
-        "sfr_days_on_market": 43.8,
+        "sfr_median_price": 338599.8,
+        "sfr_days_on_market": 43.9,
         "sfr_months_supply": 4.7,
-        "sfr_closed_sales_12mo": 579,
+        "sfr_closed_sales_12mo": 570,
         "market_condition": "balanced",
         "condo_median_price": 312000,
         "condo_closed_sales_12mo": 0,
@@ -826,7 +824,7 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 337551.6,
+        "sfr_median_price": 338599.8,
         "overall_isd_grade": 9,
         "academics_isd_grade": 9,
         "pct_households_with_children": 37.3,
@@ -894,7 +892,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -931,15 +929,15 @@
         "ws_link": "https://www.walkscore.com/score/Bedford-TX/lat=32.844/lng=-97.1431/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 383158.3,
-        "sfr_days_on_market": 20.5,
-        "sfr_months_supply": 2.4,
-        "sfr_closed_sales_12mo": 469,
+        "sfr_median_price": 385450,
+        "sfr_days_on_market": 20.8,
+        "sfr_months_supply": 2.5,
+        "sfr_closed_sales_12mo": 460,
         "market_condition": "seller",
-        "condo_median_price": 255244.5,
-        "condo_closed_sales_12mo": 8,
-        "condo_days_on_market": 43.9,
-        "condo_months_supply": 1.8
+        "condo_median_price": 256919.1,
+        "condo_closed_sales_12mo": 10,
+        "condo_days_on_market": 45.3,
+        "condo_months_supply": 1.7
       },
       "schools": {
         "isd_name": "HEB ISD",
@@ -948,11 +946,10 @@
         "college_prep_grade": "A+",
         "good_for_families": "A",
         "niche_url": "https://www.niche.com/k12/d/hurst-euless-bedford-independent-school-district-tx/",
-        "split_isd": false,
-        "niche_city_schools_grade": "A"
+        "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 383158.3,
+        "sfr_median_price": 385450,
         "overall_isd_grade": 13,
         "academics_isd_grade": 12,
         "pct_households_with_children": 26.7,
@@ -996,14 +993,14 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 79,
-        "value_score": 89,
+        "family_score": 80,
+        "value_score": 88,
         "sub_scores": {
           "education": 93,
           "safety": 77,
           "family_community": 77,
           "commute": 54,
-          "market_stability": 98
+          "market_stability": 100
         },
         "amenity_ranks": {
           "parks_count": 292,
@@ -1020,7 +1017,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -1057,10 +1054,10 @@
         "ws_link": "https://www.walkscore.com/score/Burleson-TX/lat=32.5421/lng=-97.3208/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 350919.4,
-        "sfr_days_on_market": 43.7,
+        "sfr_median_price": 353414.2,
+        "sfr_days_on_market": 41.8,
         "sfr_months_supply": 3.9,
-        "sfr_closed_sales_12mo": 954,
+        "sfr_closed_sales_12mo": 946,
         "market_condition": "balanced",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -1077,7 +1074,7 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 350919.4,
+        "sfr_median_price": 353414.2,
         "overall_isd_grade": 10,
         "academics_isd_grade": 10,
         "pct_households_with_children": 42.6,
@@ -1145,7 +1142,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -1182,15 +1179,15 @@
         "ws_link": "https://www.walkscore.com/score/Carrollton-TX/lat=32.9537/lng=-96.8903/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 425975,
-        "sfr_days_on_market": 23.9,
+        "sfr_median_price": 425729.2,
+        "sfr_days_on_market": 23.5,
         "sfr_months_supply": 2.9,
-        "sfr_closed_sales_12mo": 1060,
+        "sfr_closed_sales_12mo": 1100,
         "market_condition": "seller",
-        "condo_median_price": 252166.7,
-        "condo_closed_sales_12mo": 41,
-        "condo_days_on_market": 62.5,
-        "condo_months_supply": 9.8
+        "condo_median_price": 233416.7,
+        "condo_closed_sales_12mo": 37,
+        "condo_days_on_market": 60.4,
+        "condo_months_supply": 9.9
       },
       "schools": {
         "isd_name": "Carrollton-Farmers Branch ISD",
@@ -1199,11 +1196,10 @@
         "college_prep_grade": "A",
         "good_for_families": "A",
         "niche_url": "https://www.niche.com/k12/d/carrollton-farmers-branch-independent-school-district-tx/",
-        "split_isd": true,
-        "niche_city_schools_grade": "A+"
+        "split_isd": true
       },
       "quiz": {
-        "sfr_median_price": 425975,
+        "sfr_median_price": 425729.2,
         "overall_isd_grade": 10,
         "academics_isd_grade": 9,
         "pct_households_with_children": 30.2,
@@ -1271,7 +1267,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -1308,10 +1304,10 @@
         "ws_link": "https://www.walkscore.com/score/Cedar-Hill-TX/lat=32.5885/lng=-96.9561/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 346140.6,
-        "sfr_days_on_market": 33.2,
+        "sfr_median_price": 347869.8,
+        "sfr_days_on_market": 32.3,
         "sfr_months_supply": 4.2,
-        "sfr_closed_sales_12mo": 482,
+        "sfr_closed_sales_12mo": 469,
         "market_condition": "balanced",
         "condo_median_price": 153125,
         "condo_closed_sales_12mo": 0,
@@ -1325,11 +1321,10 @@
         "college_prep_grade": "B",
         "good_for_families": "B+",
         "niche_url": "https://www.niche.com/k12/d/cedar-hill-independent-school-district-tx/",
-        "split_isd": false,
-        "niche_city_schools_grade": "C"
+        "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 346140.6,
+        "sfr_median_price": 347869.8,
         "overall_isd_grade": 6,
         "academics_isd_grade": 7,
         "pct_households_with_children": 37.5,
@@ -1397,7 +1392,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -1434,10 +1429,10 @@
         "ws_link": "https://www.walkscore.com/score/Celina-TX/lat=33.3254/lng=-96.7855/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 531662.4,
-        "sfr_days_on_market": 69.2,
-        "sfr_months_supply": 6.7,
-        "sfr_closed_sales_12mo": 1627,
+        "sfr_median_price": 528912.4,
+        "sfr_days_on_market": 70.1,
+        "sfr_months_supply": 6.6,
+        "sfr_closed_sales_12mo": 1633,
         "market_condition": "buyer",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -1454,7 +1449,7 @@
         "split_isd": true
       },
       "quiz": {
-        "sfr_median_price": 531662.4,
+        "sfr_median_price": 528912.4,
         "overall_isd_grade": 10,
         "academics_isd_grade": 11,
         "pct_households_with_children": 55.3,
@@ -1505,7 +1500,7 @@
           "safety": 80,
           "family_community": 70,
           "commute": 47,
-          "market_stability": 82
+          "market_stability": 83
         },
         "amenity_ranks": {
           "parks_count": 24,
@@ -1522,7 +1517,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -1559,10 +1554,10 @@
         "ws_link": "https://www.walkscore.com/score/Cleburne-TX/lat=32.3499/lng=-97.3842/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 288263.8,
-        "sfr_days_on_market": 60.1,
+        "sfr_median_price": 288472.1,
+        "sfr_days_on_market": 60.3,
         "sfr_months_supply": 5.1,
-        "sfr_closed_sales_12mo": 800,
+        "sfr_closed_sales_12mo": 802,
         "market_condition": "balanced",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -1576,11 +1571,10 @@
         "college_prep_grade": "B+",
         "good_for_families": "A-",
         "niche_url": "https://www.niche.com/k12/d/cleburne-independent-school-district-tx/",
-        "split_isd": false,
-        "niche_city_schools_grade": "B-"
+        "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 288263.8,
+        "sfr_median_price": 288472.1,
         "overall_isd_grade": 8,
         "academics_isd_grade": 8,
         "pct_households_with_children": 36.2,
@@ -1648,7 +1642,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -1685,15 +1679,15 @@
         "ws_link": "https://www.walkscore.com/score/Colleyville-TX/lat=32.8887/lng=-97.1503/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 1002479.2,
-        "sfr_days_on_market": 19.1,
-        "sfr_months_supply": 2.8,
-        "sfr_closed_sales_12mo": 342,
+        "sfr_median_price": 1001645.8,
+        "sfr_days_on_market": 19,
+        "sfr_months_supply": 2.6,
+        "sfr_closed_sales_12mo": 338,
         "market_condition": "seller",
         "condo_median_price": 440979.2,
         "condo_closed_sales_12mo": 10,
         "condo_days_on_market": 55,
-        "condo_months_supply": 3.5
+        "condo_months_supply": 3.7
       },
       "schools": {
         "isd_name": "Grapevine-Colleyville ISD",
@@ -1705,7 +1699,7 @@
         "split_isd": true
       },
       "quiz": {
-        "sfr_median_price": 1002479.2,
+        "sfr_median_price": 1001645.8,
         "overall_isd_grade": 13,
         "academics_isd_grade": 13,
         "pct_households_with_children": 37.1,
@@ -1750,7 +1744,7 @@
       },
       "scores": {
         "family_score": 83,
-        "value_score": 56,
+        "value_score": 55,
         "sub_scores": {
           "education": 97,
           "safety": 87,
@@ -1773,7 +1767,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -1810,14 +1804,14 @@
         "ws_link": "https://www.walkscore.com/score/Coppell-TX/lat=32.9543/lng=-97.015/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 625166.7,
-        "sfr_days_on_market": 23.6,
-        "sfr_months_supply": 2.5,
-        "sfr_closed_sales_12mo": 340,
+        "sfr_median_price": 629583.3,
+        "sfr_days_on_market": 23.3,
+        "sfr_months_supply": 2.4,
+        "sfr_closed_sales_12mo": 346,
         "market_condition": "seller",
-        "condo_median_price": 258729.2,
-        "condo_closed_sales_12mo": 6,
-        "condo_days_on_market": 29.5,
+        "condo_median_price": 251229.2,
+        "condo_closed_sales_12mo": 7,
+        "condo_days_on_market": 36,
         "condo_months_supply": 1.2
       },
       "schools": {
@@ -1830,7 +1824,7 @@
         "split_isd": true
       },
       "quiz": {
-        "sfr_median_price": 625166.7,
+        "sfr_median_price": 629583.3,
         "overall_isd_grade": 13,
         "academics_isd_grade": 13,
         "pct_households_with_children": 41.7,
@@ -1875,13 +1869,13 @@
       },
       "scores": {
         "family_score": 83,
-        "value_score": 85,
+        "value_score": 84,
         "sub_scores": {
           "education": 97,
           "safety": 83,
           "family_community": 63,
           "commute": 53,
-          "market_stability": 100
+          "market_stability": 98
         },
         "amenity_ranks": {
           "parks_count": 35,
@@ -1898,7 +1892,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -1935,10 +1929,10 @@
         "ws_link": "https://www.walkscore.com/score/Corinth-TX/lat=33.1454/lng=-97.0641/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 451927.4,
-        "sfr_days_on_market": 50.7,
-        "sfr_months_supply": 3.4,
-        "sfr_closed_sales_12mo": 394,
+        "sfr_median_price": 449800.3,
+        "sfr_days_on_market": 49.9,
+        "sfr_months_supply": 3.3,
+        "sfr_closed_sales_12mo": 383,
         "market_condition": "balanced",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -1955,7 +1949,7 @@
         "split_isd": true
       },
       "quiz": {
-        "sfr_median_price": 451927.4,
+        "sfr_median_price": 449800.3,
         "overall_isd_grade": 9,
         "academics_isd_grade": 9,
         "pct_households_with_children": 37,
@@ -2023,7 +2017,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -2060,10 +2054,10 @@
         "ws_link": "https://www.walkscore.com/score/Crandall-TX/lat=32.6335/lng=-96.4633/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 262220.5,
-        "sfr_days_on_market": 34.5,
-        "sfr_months_supply": 3.4,
-        "sfr_closed_sales_12mo": 824,
+        "sfr_median_price": 263540.5,
+        "sfr_days_on_market": 36.8,
+        "sfr_months_supply": 3.3,
+        "sfr_closed_sales_12mo": 781,
         "market_condition": "balanced",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -2080,7 +2074,7 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 262220.5,
+        "sfr_median_price": 263540.5,
         "overall_isd_grade": 7,
         "academics_isd_grade": 8,
         "pct_households_with_children": 41.3,
@@ -2148,7 +2142,7 @@
           "shopping_total_suburbs": 65,
           "population_source": null
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -2185,14 +2179,14 @@
         "ws_link": "https://www.walkscore.com/score/Dallas-TX/lat=32.7767/lng=-96.797/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 492384.3,
-        "sfr_days_on_market": 31.3,
-        "sfr_months_supply": 4.5,
-        "sfr_closed_sales_12mo": 7813,
+        "sfr_median_price": 497675.9,
+        "sfr_days_on_market": 31.1,
+        "sfr_months_supply": 4.4,
+        "sfr_closed_sales_12mo": 7763,
         "market_condition": "balanced",
-        "condo_median_price": 268594,
-        "condo_closed_sales_12mo": 1506,
-        "condo_days_on_market": 53.3,
+        "condo_median_price": 269302.3,
+        "condo_closed_sales_12mo": 1497,
+        "condo_days_on_market": 53.5,
         "condo_months_supply": 8.7
       },
       "schools": {
@@ -2205,7 +2199,7 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 492384.3,
+        "sfr_median_price": 497675.9,
         "overall_isd_grade": 9,
         "academics_isd_grade": 8,
         "pct_households_with_children": 28.1,
@@ -2250,7 +2244,7 @@
       },
       "scores": {
         "family_score": 59,
-        "value_score": 72,
+        "value_score": 71,
         "sub_scores": {
           "education": 80,
           "safety": 70,
@@ -2273,7 +2267,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -2310,15 +2304,15 @@
         "ws_link": "https://www.walkscore.com/score/Denton-TX/lat=33.2148/lng=-97.1331/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 370073.4,
-        "sfr_days_on_market": 46.4,
+        "sfr_median_price": 368031.8,
+        "sfr_days_on_market": 46.8,
         "sfr_months_supply": 4.5,
-        "sfr_closed_sales_12mo": 1768,
+        "sfr_closed_sales_12mo": 1743,
         "market_condition": "balanced",
-        "condo_median_price": 230656.3,
+        "condo_median_price": 216218.8,
         "condo_closed_sales_12mo": 8,
-        "condo_days_on_market": 84.8,
-        "condo_months_supply": 5.5
+        "condo_days_on_market": 83.3,
+        "condo_months_supply": 5.6
       },
       "schools": {
         "isd_name": "Denton ISD",
@@ -2330,7 +2324,7 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 370073.4,
+        "sfr_median_price": 368031.8,
         "overall_isd_grade": 11,
         "academics_isd_grade": 10,
         "pct_households_with_children": 27.5,
@@ -2375,7 +2369,7 @@
       },
       "scores": {
         "family_score": 71,
-        "value_score": 85,
+        "value_score": 86,
         "sub_scores": {
           "education": 87,
           "safety": 73,
@@ -2398,7 +2392,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -2435,10 +2429,10 @@
         "ws_link": "https://www.walkscore.com/score/DeSoto-TX/lat=32.5896/lng=-96.8572/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 356040.8,
-        "sfr_days_on_market": 42.7,
-        "sfr_months_supply": 4.5,
-        "sfr_closed_sales_12mo": 446,
+        "sfr_median_price": 355839.2,
+        "sfr_days_on_market": 42,
+        "sfr_months_supply": 4.4,
+        "sfr_closed_sales_12mo": 435,
         "market_condition": "balanced",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -2452,11 +2446,10 @@
         "college_prep_grade": "B-",
         "good_for_families": "B-",
         "niche_url": "https://www.niche.com/k12/d/desoto-independent-school-district-tx/",
-        "split_isd": false,
-        "niche_city_schools_grade": "C"
+        "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 356040.8,
+        "sfr_median_price": 355839.2,
         "overall_isd_grade": 6,
         "academics_isd_grade": 6,
         "pct_households_with_children": 31.5,
@@ -2524,7 +2517,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -2561,15 +2554,15 @@
         "ws_link": "https://www.walkscore.com/score/Duncanville-TX/lat=32.6518/lng=-96.9083/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 296625,
-        "sfr_days_on_market": 30.8,
+        "sfr_median_price": 299166.7,
+        "sfr_days_on_market": 31.4,
         "sfr_months_supply": 3.8,
-        "sfr_closed_sales_12mo": 255,
+        "sfr_closed_sales_12mo": 240,
         "market_condition": "balanced",
         "condo_median_price": 175211.1,
         "condo_closed_sales_12mo": 2,
         "condo_days_on_market": 84.2,
-        "condo_months_supply": 2.4
+        "condo_months_supply": 2.5
       },
       "schools": {
         "isd_name": "Duncanville ISD",
@@ -2578,11 +2571,10 @@
         "college_prep_grade": "A-",
         "good_for_families": "B",
         "niche_url": "https://www.niche.com/k12/d/duncanville-independent-school-district-tx/",
-        "split_isd": false,
-        "niche_city_schools_grade": "C+"
+        "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 296625,
+        "sfr_median_price": 299166.7,
         "overall_isd_grade": 8,
         "academics_isd_grade": 7,
         "pct_households_with_children": 36.1,
@@ -2650,7 +2642,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -2687,14 +2679,14 @@
         "ws_link": "https://www.walkscore.com/score/Euless-TX/lat=32.8371/lng=-97.0822/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 374232.9,
-        "sfr_days_on_market": 21.6,
+        "sfr_median_price": 375962.1,
+        "sfr_days_on_market": 21.8,
         "sfr_months_supply": 2.4,
-        "sfr_closed_sales_12mo": 375,
+        "sfr_closed_sales_12mo": 402,
         "market_condition": "seller",
-        "condo_median_price": 250816.7,
-        "condo_closed_sales_12mo": 1,
-        "condo_days_on_market": 39.7,
+        "condo_median_price": 279975,
+        "condo_closed_sales_12mo": 2,
+        "condo_days_on_market": 44,
         "condo_months_supply": 1
       },
       "schools": {
@@ -2704,11 +2696,10 @@
         "college_prep_grade": "A+",
         "good_for_families": "A",
         "niche_url": "https://www.niche.com/k12/d/hurst-euless-bedford-independent-school-district-tx/",
-        "split_isd": false,
-        "niche_city_schools_grade": "A+"
+        "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 374232.9,
+        "sfr_median_price": 375962.1,
         "overall_isd_grade": 13,
         "academics_isd_grade": 12,
         "pct_households_with_children": 32,
@@ -2776,7 +2767,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -2813,10 +2804,10 @@
         "ws_link": "https://www.walkscore.com/score/Fairview-TX/lat=33.1626/lng=-96.6178/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 749450,
-        "sfr_days_on_market": 37.1,
+        "sfr_median_price": 716329.2,
+        "sfr_days_on_market": 38.7,
         "sfr_months_supply": 4.4,
-        "sfr_closed_sales_12mo": 141,
+        "sfr_closed_sales_12mo": 148,
         "market_condition": "balanced",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -2833,7 +2824,7 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 749450,
+        "sfr_median_price": 716329.2,
         "overall_isd_grade": 13,
         "academics_isd_grade": 13,
         "pct_households_with_children": 24.2,
@@ -2878,7 +2869,7 @@
       },
       "scores": {
         "family_score": 81,
-        "value_score": 61,
+        "value_score": 65,
         "sub_scores": {
           "education": 97,
           "safety": 83,
@@ -2901,8 +2892,102 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
+      }
+    },
+    "farmers-branch": {
+      "display_name": "Farmers Branch",
+      "county": "Dallas",
+      "ntreis_city_id": 32482,
+      "tier": 2,
+      "lat": 32.9293,
+      "lng": -96.8996,
+      "niche_city_slug": "farmers-branch-dallas-tx",
+      "demographics": null,
+      "walkability": null,
+      "market": {
+        "sfr_median_price": 429641.7,
+        "sfr_days_on_market": 32.6,
+        "sfr_months_supply": 2.9,
+        "sfr_closed_sales_12mo": 252,
+        "market_condition": "seller",
+        "condo_median_price": 223679.2,
+        "condo_closed_sales_12mo": 29,
+        "condo_days_on_market": 85.9,
+        "condo_months_supply": 5.7
+      },
+      "schools": {
+        "isd_name": "Carrollton-Farmers Branch ISD",
+        "overall_grade": "B+",
+        "academics_grade": "B",
+        "college_prep_grade": "A",
+        "good_for_families": "A",
+        "niche_url": "https://www.niche.com/k12/d/carrollton-farmers-branch-independent-school-district-tx/",
+        "split_isd": false
+      },
+      "quiz": {
+        "sfr_median_price": 429641.7,
+        "overall_isd_grade": 10,
+        "academics_isd_grade": 9,
+        "pct_households_with_children": null,
+        "walk_score": null,
+        "transit_score": null,
+        "bike_score": null,
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
+      },
+      "niche_city": {
+        "overall": "B",
+        "public_schools": "C+",
+        "crime": "C+",
+        "housing": "B+",
+        "nightlife": "B",
+        "families": "B-",
+        "diversity": "A",
+        "jobs": "A-",
+        "weather": "B",
+        "cost_of_living": "B+",
+        "health_fitness": "B",
+        "outdoor_activities": "B-",
+        "commute": "B+",
+        "scraped_date": "2025-11-01"
+      },
+      "crime": {
+        "violent_per_1k": 3.2,
+        "property_per_1k": 22,
+        "niche_safety_grade": "C+",
+        "source": "Niche 2025"
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 69,
+        "value_score": 92,
+        "sub_scores": {
+          "education": 77,
+          "safety": 72,
+          "family_community": 65,
+          "commute": null,
+          "market_stability": 100
+        },
+        "amenity_ranks": {
+          "parks_count": null,
+          "restaurants_count": null,
+          "shopping_count": null,
+          "parks_rank": null,
+          "restaurants_rank": null,
+          "shopping_rank": null,
+          "parks_percentile": null,
+          "restaurants_percentile": null,
+          "shopping_percentile": null,
+          "parks_total_suburbs": 65,
+          "restaurants_total_suburbs": 65,
+          "shopping_total_suburbs": 65,
+          "population_source": null
+        },
+        "computed_date": "2026-06-09T03:01:39.384Z",
+        "data_completeness": "partial"
       }
     },
     "fate": {
@@ -2938,10 +3023,10 @@
         "ws_link": "https://www.walkscore.com/score/Fate-TX/lat=32.9418/lng=-96.3822/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 383033.3,
-        "sfr_days_on_market": 57.5,
+        "sfr_median_price": 381786.1,
+        "sfr_days_on_market": 58.4,
         "sfr_months_supply": 4.4,
-        "sfr_closed_sales_12mo": 470,
+        "sfr_closed_sales_12mo": 444,
         "market_condition": "balanced",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -2958,7 +3043,7 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 383033.3,
+        "sfr_median_price": 381786.1,
         "overall_isd_grade": 12,
         "academics_isd_grade": 12,
         "pct_households_with_children": 58.8,
@@ -3026,7 +3111,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -3063,10 +3148,10 @@
         "ws_link": "https://www.walkscore.com/score/Flower-Mound-TX/lat=33.0146/lng=-97.0964/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 619458.3,
+        "sfr_median_price": 621958.3,
         "sfr_days_on_market": 23.8,
         "sfr_months_supply": 2.8,
-        "sfr_closed_sales_12mo": 897,
+        "sfr_closed_sales_12mo": 914,
         "market_condition": "seller",
         "condo_median_price": 1524375,
         "condo_closed_sales_12mo": 1,
@@ -3083,7 +3168,7 @@
         "split_isd": true
       },
       "quiz": {
-        "sfr_median_price": 619458.3,
+        "sfr_median_price": 621958.3,
         "overall_isd_grade": 12,
         "academics_isd_grade": 12,
         "pct_households_with_children": 40.7,
@@ -3128,7 +3213,7 @@
       },
       "scores": {
         "family_score": 85,
-        "value_score": 88,
+        "value_score": 87,
         "sub_scores": {
           "education": 97,
           "safety": 87,
@@ -3151,7 +3236,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -3188,10 +3273,10 @@
         "ws_link": "https://www.walkscore.com/score/Forney-TX/lat=32.7474/lng=-96.4697/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 326291.3,
-        "sfr_days_on_market": 62.3,
+        "sfr_median_price": 325370,
+        "sfr_days_on_market": 62,
         "sfr_months_supply": 5.4,
-        "sfr_closed_sales_12mo": 1742,
+        "sfr_closed_sales_12mo": 1694,
         "market_condition": "balanced",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -3208,7 +3293,7 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 326291.3,
+        "sfr_median_price": 325370,
         "overall_isd_grade": 9,
         "academics_isd_grade": 9,
         "pct_households_with_children": 48.8,
@@ -3276,7 +3361,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -3313,15 +3398,15 @@
         "ws_link": "https://www.walkscore.com/score/Fort-Worth-TX/lat=32.7555/lng=-97.3308/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 339833.8,
-        "sfr_days_on_market": 36.5,
+        "sfr_median_price": 339708.6,
+        "sfr_days_on_market": 36.8,
         "sfr_months_supply": 3.9,
-        "sfr_closed_sales_12mo": 10366,
+        "sfr_closed_sales_12mo": 10415,
         "market_condition": "balanced",
-        "condo_median_price": 279596.6,
-        "condo_closed_sales_12mo": 209,
-        "condo_days_on_market": 57.8,
-        "condo_months_supply": 8.4
+        "condo_median_price": 280763.3,
+        "condo_closed_sales_12mo": 202,
+        "condo_days_on_market": 61.3,
+        "condo_months_supply": 8.3
       },
       "schools": {
         "isd_name": "Fort Worth ISD",
@@ -3333,7 +3418,7 @@
         "split_isd": true
       },
       "quiz": {
-        "sfr_median_price": 339833.8,
+        "sfr_median_price": 339708.6,
         "overall_isd_grade": 8,
         "academics_isd_grade": 7,
         "pct_households_with_children": 36.1,
@@ -3401,7 +3486,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -3438,15 +3523,15 @@
         "ws_link": "https://www.walkscore.com/score/Frisco-TX/lat=33.1507/lng=-96.8236/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 680751.9,
-        "sfr_days_on_market": 37.7,
+        "sfr_median_price": 679371.3,
+        "sfr_days_on_market": 38.4,
         "sfr_months_supply": 4.5,
-        "sfr_closed_sales_12mo": 2151,
+        "sfr_closed_sales_12mo": 2196,
         "market_condition": "balanced",
         "condo_median_price": 736446.8,
         "condo_closed_sales_12mo": 3,
         "condo_days_on_market": 164,
-        "condo_months_supply": 3.5
+        "condo_months_supply": 3.1
       },
       "schools": {
         "isd_name": "Frisco ISD",
@@ -3458,7 +3543,7 @@
         "split_isd": true
       },
       "quiz": {
-        "sfr_median_price": 680751.9,
+        "sfr_median_price": 679371.3,
         "overall_isd_grade": 13,
         "academics_isd_grade": 13,
         "pct_households_with_children": 47.3,
@@ -3503,7 +3588,7 @@
       },
       "scores": {
         "family_score": 83,
-        "value_score": 80,
+        "value_score": 79,
         "sub_scores": {
           "education": 97,
           "safety": 80,
@@ -3526,7 +3611,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -3563,15 +3648,15 @@
         "ws_link": "https://www.walkscore.com/score/Garland-TX/lat=32.9126/lng=-96.6389/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 304712.5,
-        "sfr_days_on_market": 32.9,
+        "sfr_median_price": 305966.7,
+        "sfr_days_on_market": 32.1,
         "sfr_months_supply": 3.9,
-        "sfr_closed_sales_12mo": 1686,
+        "sfr_closed_sales_12mo": 1668,
         "market_condition": "balanced",
-        "condo_median_price": 148152.1,
-        "condo_closed_sales_12mo": 31,
-        "condo_days_on_market": 83.8,
-        "condo_months_supply": 12.2
+        "condo_median_price": 146527.1,
+        "condo_closed_sales_12mo": 30,
+        "condo_days_on_market": 84.4,
+        "condo_months_supply": 11.7
       },
       "schools": {
         "isd_name": "Garland ISD",
@@ -3580,11 +3665,10 @@
         "college_prep_grade": "A",
         "good_for_families": "B+",
         "niche_url": "https://www.niche.com/k12/d/garland-independent-school-district-tx/",
-        "split_isd": false,
-        "niche_city_schools_grade": "B+"
+        "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 304712.5,
+        "sfr_median_price": 305966.7,
         "overall_isd_grade": 11,
         "academics_isd_grade": 10,
         "pct_households_with_children": 37.9,
@@ -3652,7 +3736,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -3689,15 +3773,15 @@
         "ws_link": "https://www.walkscore.com/score/Grand-Prairie-TX/lat=32.746/lng=-96.9978/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 353327.3,
-        "sfr_days_on_market": 30.3,
+        "sfr_median_price": 353285.7,
+        "sfr_days_on_market": 30.4,
         "sfr_months_supply": 3.5,
-        "sfr_closed_sales_12mo": 1110,
+        "sfr_closed_sales_12mo": 1122,
         "market_condition": "balanced",
         "condo_median_price": 155408.3,
-        "condo_closed_sales_12mo": 7,
+        "condo_closed_sales_12mo": 6,
         "condo_days_on_market": 120,
-        "condo_months_supply": 5.4
+        "condo_months_supply": 5
       },
       "schools": {
         "isd_name": "Grand Prairie ISD",
@@ -3706,11 +3790,10 @@
         "college_prep_grade": "A-",
         "good_for_families": "B+",
         "niche_url": "https://www.niche.com/k12/d/grand-prairie-independent-school-district-tx/",
-        "split_isd": true,
-        "niche_city_schools_grade": "B"
+        "split_isd": true
       },
       "quiz": {
-        "sfr_median_price": 353327.3,
+        "sfr_median_price": 353285.7,
         "overall_isd_grade": 9,
         "academics_isd_grade": 9,
         "pct_households_with_children": 39.1,
@@ -3778,7 +3861,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -3815,13 +3898,13 @@
         "ws_link": "https://www.walkscore.com/score/Grapevine-TX/lat=32.9343/lng=-97.078/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 593567.6,
-        "sfr_days_on_market": 20.6,
-        "sfr_months_supply": 2.2,
-        "sfr_closed_sales_12mo": 478,
+        "sfr_median_price": 600900.9,
+        "sfr_days_on_market": 20.9,
+        "sfr_months_supply": 2.3,
+        "sfr_closed_sales_12mo": 450,
         "market_condition": "seller",
         "condo_median_price": 462083.3,
-        "condo_closed_sales_12mo": 5,
+        "condo_closed_sales_12mo": 4,
         "condo_days_on_market": 57.6,
         "condo_months_supply": 6.2
       },
@@ -3835,7 +3918,7 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 593567.6,
+        "sfr_median_price": 600900.9,
         "overall_isd_grade": 13,
         "academics_isd_grade": 13,
         "pct_households_with_children": 28.2,
@@ -3880,13 +3963,13 @@
       },
       "scores": {
         "family_score": 83,
-        "value_score": 82,
+        "value_score": 80,
         "sub_scores": {
           "education": 97,
           "safety": 80,
           "family_community": 63,
           "commute": 61,
-          "market_stability": 93
+          "market_stability": 95
         },
         "amenity_ranks": {
           "parks_count": 35,
@@ -3903,7 +3986,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -3940,10 +4023,10 @@
         "ws_link": "https://www.walkscore.com/score/Haslet-TX/lat=32.9679/lng=-97.3467/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 506212.9,
+        "sfr_median_price": 500886.3,
         "sfr_days_on_market": 52.8,
         "sfr_months_supply": 4.8,
-        "sfr_closed_sales_12mo": 396,
+        "sfr_closed_sales_12mo": 406,
         "market_condition": "balanced",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -3957,11 +4040,10 @@
         "college_prep_grade": "A",
         "good_for_families": "B+",
         "niche_url": "https://www.niche.com/k12/d/eagle-mountain-saginaw-independent-school-district-tx/",
-        "split_isd": true,
-        "niche_city_schools_grade": "A-"
+        "split_isd": true
       },
       "quiz": {
-        "sfr_median_price": 506212.9,
+        "sfr_median_price": 500886.3,
         "overall_isd_grade": 11,
         "academics_isd_grade": 10,
         "pct_households_with_children": 37.3,
@@ -4005,11 +4087,11 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 73,
+        "family_score": 74,
         "value_score": 95,
         "sub_scores": {
           "education": 90,
-          "safety": 83,
+          "safety": 85,
           "family_community": 71,
           "commute": 33,
           "market_stability": 98
@@ -4029,7 +4111,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -4066,10 +4148,10 @@
         "ws_link": "https://www.walkscore.com/score/Heath-TX/lat=32.8346/lng=-96.4683/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 751049.4,
-        "sfr_days_on_market": 70.3,
-        "sfr_months_supply": 9.3,
-        "sfr_closed_sales_12mo": 238,
+        "sfr_median_price": 760662.1,
+        "sfr_days_on_market": 69.8,
+        "sfr_months_supply": 9.1,
+        "sfr_closed_sales_12mo": 233,
         "market_condition": "buyer",
         "condo_median_price": 318626.3,
         "condo_closed_sales_12mo": 2,
@@ -4086,7 +4168,7 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 751049.4,
+        "sfr_median_price": 760662.1,
         "overall_isd_grade": 12,
         "academics_isd_grade": 12,
         "pct_households_with_children": 41.2,
@@ -4130,14 +4212,14 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 77,
-        "value_score": 82,
+        "family_score": 78,
+        "value_score": 80,
         "sub_scores": {
           "education": 97,
           "safety": 83,
           "family_community": 77,
           "commute": 50,
-          "market_stability": 62
+          "market_stability": 63
         },
         "amenity_ranks": {
           "parks_count": 19,
@@ -4154,7 +4236,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -4191,14 +4273,14 @@
         "ws_link": "https://www.walkscore.com/score/Highland-Park-TX/lat=32.837/lng=-96.7988/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 3712327.6,
-        "sfr_days_on_market": 49.9,
-        "sfr_months_supply": 3.7,
-        "sfr_closed_sales_12mo": 75,
+        "sfr_median_price": 3586494.3,
+        "sfr_days_on_market": 44.9,
+        "sfr_months_supply": 3.9,
+        "sfr_closed_sales_12mo": 74,
         "market_condition": "balanced",
-        "condo_median_price": 1221164.8,
-        "condo_closed_sales_12mo": 10,
-        "condo_days_on_market": 33.3,
+        "condo_median_price": 1233833.3,
+        "condo_closed_sales_12mo": 11,
+        "condo_days_on_market": 30.4,
         "condo_months_supply": 2.7
       },
       "schools": {
@@ -4211,7 +4293,7 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 3712327.6,
+        "sfr_median_price": 3586494.3,
         "overall_isd_grade": 13,
         "academics_isd_grade": 13,
         "pct_households_with_children": 36.5,
@@ -4279,7 +4361,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -4316,10 +4398,10 @@
         "ws_link": "https://www.walkscore.com/score/Highland-Village-TX/lat=33.0918/lng=-97.0558/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 618075.5,
-        "sfr_days_on_market": 25.7,
-        "sfr_months_supply": 2.8,
-        "sfr_closed_sales_12mo": 191,
+        "sfr_median_price": 618700.6,
+        "sfr_days_on_market": 25.9,
+        "sfr_months_supply": 2.7,
+        "sfr_closed_sales_12mo": 196,
         "market_condition": "seller",
         "condo_median_price": 537500,
         "condo_closed_sales_12mo": 0,
@@ -4336,7 +4418,7 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 618075.5,
+        "sfr_median_price": 618700.6,
         "overall_isd_grade": 12,
         "academics_isd_grade": 12,
         "pct_households_with_children": 43.6,
@@ -4381,7 +4463,7 @@
       },
       "scores": {
         "family_score": 87,
-        "value_score": 90,
+        "value_score": 89,
         "sub_scores": {
           "education": 97,
           "safety": 87,
@@ -4404,7 +4486,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -4441,15 +4523,15 @@
         "ws_link": "https://www.walkscore.com/score/Hurst-TX/lat=32.8232/lng=-97.1883/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 360024.8,
-        "sfr_days_on_market": 24.3,
+        "sfr_median_price": 358566.5,
+        "sfr_days_on_market": 23.7,
         "sfr_months_supply": 2.4,
-        "sfr_closed_sales_12mo": 410,
+        "sfr_closed_sales_12mo": 398,
         "market_condition": "seller",
-        "condo_median_price": 181648.3,
-        "condo_closed_sales_12mo": 7,
-        "condo_days_on_market": 50,
-        "condo_months_supply": 2.9
+        "condo_median_price": 180189.9,
+        "condo_closed_sales_12mo": 9,
+        "condo_days_on_market": 53.4,
+        "condo_months_supply": 2.7
       },
       "schools": {
         "isd_name": "HEB ISD",
@@ -4458,11 +4540,10 @@
         "college_prep_grade": "A+",
         "good_for_families": "A",
         "niche_url": "https://www.niche.com/k12/d/hurst-euless-bedford-independent-school-district-tx/",
-        "split_isd": false,
-        "niche_city_schools_grade": "A"
+        "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 360024.8,
+        "sfr_median_price": 358566.5,
         "overall_isd_grade": 13,
         "academics_isd_grade": 12,
         "pct_households_with_children": 31.1,
@@ -4530,7 +4611,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -4567,15 +4648,15 @@
         "ws_link": "https://www.walkscore.com/score/Irving-TX/lat=32.814/lng=-96.9489/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 383095.8,
-        "sfr_days_on_market": 27.4,
+        "sfr_median_price": 385058.3,
+        "sfr_days_on_market": 27.7,
         "sfr_months_supply": 3.9,
-        "sfr_closed_sales_12mo": 897,
+        "sfr_closed_sales_12mo": 919,
         "market_condition": "balanced",
-        "condo_median_price": 272821.7,
-        "condo_closed_sales_12mo": 108,
-        "condo_days_on_market": 53.3,
-        "condo_months_supply": 8.4
+        "condo_median_price": 272488.3,
+        "condo_closed_sales_12mo": 115,
+        "condo_days_on_market": 51.1,
+        "condo_months_supply": 8.3
       },
       "schools": {
         "isd_name": "Irving ISD",
@@ -4584,11 +4665,10 @@
         "college_prep_grade": "B+",
         "good_for_families": "A-",
         "niche_url": "https://www.niche.com/k12/d/irving-independent-school-district-tx/",
-        "split_isd": false,
-        "niche_city_schools_grade": "B+"
+        "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 383095.8,
+        "sfr_median_price": 385058.3,
         "overall_isd_grade": 8,
         "academics_isd_grade": 7,
         "pct_households_with_children": 36.7,
@@ -4656,7 +4736,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -4693,14 +4773,14 @@
         "ws_link": "https://www.walkscore.com/score/Keller-TX/lat=32.9343/lng=-97.2294/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 674079.2,
-        "sfr_days_on_market": 25.4,
+        "sfr_median_price": 683329.2,
+        "sfr_days_on_market": 25.7,
         "sfr_months_supply": 3,
-        "sfr_closed_sales_12mo": 553,
+        "sfr_closed_sales_12mo": 539,
         "market_condition": "balanced",
-        "condo_median_price": 544762.4,
-        "condo_closed_sales_12mo": 2,
-        "condo_days_on_market": 24.1,
+        "condo_median_price": 549554.1,
+        "condo_closed_sales_12mo": 3,
+        "condo_days_on_market": 21.7,
         "condo_months_supply": 1
       },
       "schools": {
@@ -4713,7 +4793,7 @@
         "split_isd": true
       },
       "quiz": {
-        "sfr_median_price": 674079.2,
+        "sfr_median_price": 683329.2,
         "overall_isd_grade": 12,
         "academics_isd_grade": 12,
         "pct_households_with_children": 40.3,
@@ -4758,7 +4838,7 @@
       },
       "scores": {
         "family_score": 77,
-        "value_score": 85,
+        "value_score": 83,
         "sub_scores": {
           "education": 97,
           "safety": 83,
@@ -4781,8 +4861,102 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
+      }
+    },
+    "lancaster": {
+      "display_name": "Lancaster",
+      "county": "Dallas",
+      "ntreis_city_id": 32609,
+      "tier": 4,
+      "lat": 32.5921,
+      "lng": -96.7561,
+      "niche_city_slug": "lancaster-dallas-tx",
+      "demographics": null,
+      "walkability": null,
+      "market": {
+        "sfr_median_price": 281654,
+        "sfr_days_on_market": 37.4,
+        "sfr_months_supply": 3.4,
+        "sfr_closed_sales_12mo": 299,
+        "market_condition": "balanced",
+        "condo_median_price": null,
+        "condo_closed_sales_12mo": 0,
+        "condo_days_on_market": null,
+        "condo_months_supply": null
+      },
+      "schools": {
+        "isd_name": "Lancaster ISD",
+        "overall_grade": "B-",
+        "academics_grade": "C+",
+        "college_prep_grade": "B",
+        "good_for_families": "B-",
+        "niche_url": "https://www.niche.com/k12/d/lancaster-independent-school-district-tx/",
+        "split_isd": false
+      },
+      "quiz": {
+        "sfr_median_price": 281654,
+        "overall_isd_grade": 8,
+        "academics_isd_grade": 7,
+        "pct_households_with_children": null,
+        "walk_score": null,
+        "transit_score": null,
+        "bike_score": null,
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
+      },
+      "niche_city": {
+        "overall": "C+",
+        "public_schools": "C",
+        "crime": "C",
+        "housing": "B",
+        "nightlife": "C",
+        "families": "C+",
+        "diversity": "A-",
+        "jobs": "C+",
+        "weather": "B",
+        "cost_of_living": "A-",
+        "health_fitness": "C+",
+        "outdoor_activities": "B-",
+        "commute": "B-",
+        "scraped_date": "2025-11-01"
+      },
+      "crime": {
+        "violent_per_1k": 5.2,
+        "property_per_1k": 28,
+        "niche_safety_grade": "C",
+        "source": "Niche 2025"
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 62,
+        "value_score": 90,
+        "sub_scores": {
+          "education": 73,
+          "safety": 69,
+          "family_community": 58,
+          "commute": null,
+          "market_stability": 100
+        },
+        "amenity_ranks": {
+          "parks_count": null,
+          "restaurants_count": null,
+          "shopping_count": null,
+          "parks_rank": null,
+          "restaurants_rank": null,
+          "shopping_rank": null,
+          "parks_percentile": null,
+          "restaurants_percentile": null,
+          "shopping_percentile": null,
+          "parks_total_suburbs": 65,
+          "restaurants_total_suburbs": 65,
+          "shopping_total_suburbs": 65,
+          "population_source": null
+        },
+        "computed_date": "2026-06-09T03:01:39.384Z",
+        "data_completeness": "partial"
       }
     },
     "lantana": {
@@ -4818,10 +4992,10 @@
         "ws_link": "https://www.walkscore.com/score/Lantana-TX/lat=33.0893/lng=-97.1311/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 650458.3,
-        "sfr_days_on_market": 33.6,
-        "sfr_months_supply": 2.9,
-        "sfr_closed_sales_12mo": 172,
+        "sfr_median_price": 654833.3,
+        "sfr_days_on_market": 33.4,
+        "sfr_months_supply": 2.8,
+        "sfr_closed_sales_12mo": 171,
         "market_condition": "seller",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -4838,7 +5012,7 @@
         "split_isd": true
       },
       "quiz": {
-        "sfr_median_price": 650458.3,
+        "sfr_median_price": 654833.3,
         "overall_isd_grade": 13,
         "academics_isd_grade": 13,
         "pct_households_with_children": 55.3,
@@ -4883,7 +5057,7 @@
       },
       "scores": {
         "family_score": 90,
-        "value_score": 90,
+        "value_score": 89,
         "sub_scores": {
           "education": 97,
           "safety": 89,
@@ -4906,8 +5080,102 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
+      }
+    },
+    "lavon": {
+      "display_name": "Lavon",
+      "county": "Collin",
+      "ntreis_city_id": 32612,
+      "tier": 3,
+      "lat": 33.031,
+      "lng": -96.4432,
+      "niche_city_slug": "lavon-collin-county-tx",
+      "demographics": null,
+      "walkability": null,
+      "market": {
+        "sfr_median_price": 347792.4,
+        "sfr_days_on_market": 75.3,
+        "sfr_months_supply": 3.7,
+        "sfr_closed_sales_12mo": 761,
+        "market_condition": "balanced",
+        "condo_median_price": null,
+        "condo_closed_sales_12mo": 0,
+        "condo_days_on_market": null,
+        "condo_months_supply": null
+      },
+      "schools": {
+        "isd_name": "Community ISD",
+        "overall_grade": "C+",
+        "academics_grade": "C+",
+        "college_prep_grade": "B",
+        "good_for_families": "B-",
+        "niche_url": "https://www.niche.com/k12/d/community-independent-school-district-tx/",
+        "split_isd": false
+      },
+      "quiz": {
+        "sfr_median_price": 347792.4,
+        "overall_isd_grade": 7,
+        "academics_isd_grade": 7,
+        "pct_households_with_children": null,
+        "walk_score": null,
+        "transit_score": null,
+        "bike_score": null,
+        "median_household_income": null,
+        "owner_occupied_pct": null,
+        "wfh_pct": null
+      },
+      "niche_city": {
+        "overall": "B",
+        "public_schools": "B",
+        "crime": "A",
+        "housing": "B+",
+        "nightlife": "D",
+        "families": "B+",
+        "diversity": "B-",
+        "jobs": "C+",
+        "weather": "B",
+        "cost_of_living": "B+",
+        "health_fitness": "B-",
+        "outdoor_activities": "A-",
+        "commute": "C",
+        "scraped_date": "2025-11-01"
+      },
+      "crime": {
+        "violent_per_1k": 1.2,
+        "property_per_1k": 9,
+        "niche_safety_grade": "A",
+        "source": "Niche 2025"
+      },
+      "amenities": null,
+      "scores": {
+        "family_score": 83,
+        "value_score": 94,
+        "sub_scores": {
+          "education": 83,
+          "safety": 79,
+          "family_community": 78,
+          "commute": null,
+          "market_stability": 100
+        },
+        "amenity_ranks": {
+          "parks_count": null,
+          "restaurants_count": null,
+          "shopping_count": null,
+          "parks_rank": null,
+          "restaurants_rank": null,
+          "shopping_rank": null,
+          "parks_percentile": null,
+          "restaurants_percentile": null,
+          "shopping_percentile": null,
+          "parks_total_suburbs": 65,
+          "restaurants_total_suburbs": 65,
+          "shopping_total_suburbs": 65,
+          "population_source": null
+        },
+        "computed_date": "2026-06-09T03:01:39.384Z",
+        "data_completeness": "partial"
       }
     },
     "lewisville": {
@@ -4943,14 +5211,14 @@
         "ws_link": "https://www.walkscore.com/score/Lewisville-TX/lat=33.0462/lng=-96.9942/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 399933.3,
-        "sfr_days_on_market": 27.1,
-        "sfr_months_supply": 3.3,
-        "sfr_closed_sales_12mo": 773,
+        "sfr_median_price": 397329.2,
+        "sfr_days_on_market": 27.2,
+        "sfr_months_supply": 3.2,
+        "sfr_closed_sales_12mo": 759,
         "market_condition": "balanced",
-        "condo_median_price": 340217.2,
+        "condo_median_price": 336804.7,
         "condo_closed_sales_12mo": 15,
-        "condo_days_on_market": 61.7,
+        "condo_days_on_market": 63.8,
         "condo_months_supply": 3.6
       },
       "schools": {
@@ -4963,7 +5231,7 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 399933.3,
+        "sfr_median_price": 397329.2,
         "overall_isd_grade": 12,
         "academics_isd_grade": 12,
         "pct_households_with_children": 33.1,
@@ -5031,7 +5299,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -5068,10 +5336,10 @@
         "ws_link": "https://www.walkscore.com/score/Little-Elm-TX/lat=33.1629/lng=-96.9375/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 406214.6,
-        "sfr_days_on_market": 53.2,
+        "sfr_median_price": 404744.6,
+        "sfr_days_on_market": 53.8,
         "sfr_months_supply": 5,
-        "sfr_closed_sales_12mo": 1164,
+        "sfr_closed_sales_12mo": 1143,
         "market_condition": "balanced",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -5088,7 +5356,7 @@
         "split_isd": true
       },
       "quiz": {
-        "sfr_median_price": 406214.6,
+        "sfr_median_price": 404744.6,
         "overall_isd_grade": 8,
         "academics_isd_grade": 8,
         "pct_households_with_children": 51.4,
@@ -5156,7 +5424,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -5193,10 +5461,10 @@
         "ws_link": "https://www.walkscore.com/score/Lucas-TX/lat=33.1079/lng=-96.5742/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 1054228.8,
-        "sfr_days_on_market": 67.8,
-        "sfr_months_supply": 4.6,
-        "sfr_closed_sales_12mo": 155,
+        "sfr_median_price": 1071728.8,
+        "sfr_days_on_market": 62.4,
+        "sfr_months_supply": 4.8,
+        "sfr_closed_sales_12mo": 145,
         "market_condition": "balanced",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -5213,7 +5481,7 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 1054228.8,
+        "sfr_median_price": 1071728.8,
         "overall_isd_grade": 13,
         "academics_isd_grade": 13,
         "pct_households_with_children": 36.1,
@@ -5257,14 +5525,14 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 81,
-        "value_score": 46,
+        "family_score": 82,
+        "value_score": 44,
         "sub_scores": {
           "education": 97,
-          "safety": 87,
+          "safety": 89,
           "family_community": 52,
           "commute": 46,
-          "market_stability": 99
+          "market_stability": 98
         },
         "amenity_ranks": {
           "parks_count": 13,
@@ -5281,7 +5549,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -5318,14 +5586,14 @@
         "ws_link": "https://www.walkscore.com/score/Mansfield-TX/lat=32.5632/lng=-97.1411/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 475644.5,
-        "sfr_days_on_market": 43.9,
+        "sfr_median_price": 477713.7,
+        "sfr_days_on_market": 44.2,
         "sfr_months_supply": 3.8,
-        "sfr_closed_sales_12mo": 1169,
+        "sfr_closed_sales_12mo": 1153,
         "market_condition": "balanced",
-        "condo_median_price": 431376.7,
-        "condo_closed_sales_12mo": 9,
-        "condo_days_on_market": 86.2,
+        "condo_median_price": 440920.3,
+        "condo_closed_sales_12mo": 10,
+        "condo_days_on_market": 86.5,
         "condo_months_supply": 3.4
       },
       "schools": {
@@ -5338,7 +5606,7 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 475644.5,
+        "sfr_median_price": 477713.7,
         "overall_isd_grade": 12,
         "academics_isd_grade": 11,
         "pct_households_with_children": 44.5,
@@ -5406,7 +5674,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -5443,15 +5711,15 @@
         "ws_link": "https://www.walkscore.com/score/McKinney-TX/lat=33.1972/lng=-96.6397/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 496149.7,
-        "sfr_days_on_market": 41.9,
-        "sfr_months_supply": 3.9,
-        "sfr_closed_sales_12mo": 3462,
+        "sfr_median_price": 498023.8,
+        "sfr_days_on_market": 42,
+        "sfr_months_supply": 3.8,
+        "sfr_closed_sales_12mo": 3455,
         "market_condition": "balanced",
-        "condo_median_price": 434458.3,
-        "condo_closed_sales_12mo": 36,
-        "condo_days_on_market": 70,
-        "condo_months_supply": 4.6
+        "condo_median_price": 450708.3,
+        "condo_closed_sales_12mo": 35,
+        "condo_days_on_market": 67.9,
+        "condo_months_supply": 4.4
       },
       "schools": {
         "isd_name": "McKinney ISD",
@@ -5463,7 +5731,7 @@
         "split_isd": true
       },
       "quiz": {
-        "sfr_median_price": 496149.7,
+        "sfr_median_price": 498023.8,
         "overall_isd_grade": 12,
         "academics_isd_grade": 12,
         "pct_households_with_children": 42.8,
@@ -5531,7 +5799,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -5568,10 +5836,10 @@
         "ws_link": "https://www.walkscore.com/score/Melissa-TX/lat=33.2843/lng=-96.57/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 456222.8,
-        "sfr_days_on_market": 51.7,
+        "sfr_median_price": 449263.3,
+        "sfr_days_on_market": 51.1,
         "sfr_months_supply": 5.1,
-        "sfr_closed_sales_12mo": 430,
+        "sfr_closed_sales_12mo": 440,
         "market_condition": "balanced",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -5585,11 +5853,10 @@
         "college_prep_grade": "A",
         "good_for_families": "A+",
         "niche_url": "https://www.niche.com/k12/d/melissa-independent-school-district-tx/",
-        "split_isd": false,
-        "niche_city_schools_grade": "A+"
+        "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 456222.8,
+        "sfr_median_price": 449263.3,
         "overall_isd_grade": 12,
         "academics_isd_grade": 12,
         "pct_households_with_children": 58.4,
@@ -5657,7 +5924,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -5694,15 +5961,15 @@
         "ws_link": "https://www.walkscore.com/score/Mesquite-TX/lat=32.7668/lng=-96.5992/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 289057.5,
-        "sfr_days_on_market": 42,
-        "sfr_months_supply": 4.9,
-        "sfr_closed_sales_12mo": 1411,
+        "sfr_median_price": 287990.8,
+        "sfr_days_on_market": 41.9,
+        "sfr_months_supply": 4.8,
+        "sfr_closed_sales_12mo": 1380,
         "market_condition": "balanced",
         "condo_median_price": 130410.4,
         "condo_closed_sales_12mo": 3,
         "condo_days_on_market": 41.5,
-        "condo_months_supply": 1.7
+        "condo_months_supply": 1.6
       },
       "schools": {
         "isd_name": "Mesquite ISD",
@@ -5711,11 +5978,10 @@
         "college_prep_grade": "A-",
         "good_for_families": "B",
         "niche_url": "https://www.niche.com/k12/d/mesquite-independent-school-district-tx/",
-        "split_isd": false,
-        "niche_city_schools_grade": "B"
+        "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 289057.5,
+        "sfr_median_price": 287990.8,
         "overall_isd_grade": 9,
         "academics_isd_grade": 9,
         "pct_households_with_children": 38.7,
@@ -5759,14 +6025,14 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 59,
-        "value_score": 90,
+        "family_score": 60,
+        "value_score": 91,
         "sub_scores": {
           "education": 83,
           "safety": 73,
           "family_community": 51,
           "commute": 40,
-          "market_stability": 97
+          "market_stability": 98
         },
         "amenity_ranks": {
           "parks_count": 97,
@@ -5783,7 +6049,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -5820,10 +6086,10 @@
         "ws_link": "https://www.walkscore.com/score/Midlothian-TX/lat=32.4824/lng=-97.0058/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 495753.1,
-        "sfr_days_on_market": 72.5,
+        "sfr_median_price": 495973.3,
+        "sfr_days_on_market": 71.4,
         "sfr_months_supply": 4.3,
-        "sfr_closed_sales_12mo": 998,
+        "sfr_closed_sales_12mo": 988,
         "market_condition": "balanced",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -5840,7 +6106,7 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 495753.1,
+        "sfr_median_price": 495973.3,
         "overall_isd_grade": 11,
         "academics_isd_grade": 11,
         "pct_households_with_children": 48,
@@ -5908,7 +6174,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -5945,10 +6211,10 @@
         "ws_link": "https://www.walkscore.com/score/Murphy-TX/lat=33.0151/lng=-96.6111/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 596375,
-        "sfr_days_on_market": 42,
+        "sfr_median_price": 593787.5,
+        "sfr_days_on_market": 41.2,
         "sfr_months_supply": 4.3,
-        "sfr_closed_sales_12mo": 154,
+        "sfr_closed_sales_12mo": 156,
         "market_condition": "balanced",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -5965,7 +6231,7 @@
         "split_isd": true
       },
       "quiz": {
-        "sfr_median_price": 596375,
+        "sfr_median_price": 593787.5,
         "overall_isd_grade": 12,
         "academics_isd_grade": 12,
         "pct_households_with_children": 57.5,
@@ -6033,7 +6299,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -6070,15 +6336,15 @@
         "ws_link": "https://www.walkscore.com/score/North-Richland-Hills-TX/lat=32.8343/lng=-97.2289/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 386245.8,
+        "sfr_median_price": 388329.2,
         "sfr_days_on_market": 26.8,
-        "sfr_months_supply": 3,
-        "sfr_closed_sales_12mo": 749,
-        "market_condition": "balanced",
+        "sfr_months_supply": 2.9,
+        "sfr_closed_sales_12mo": 733,
+        "market_condition": "seller",
         "condo_median_price": 274799.5,
         "condo_closed_sales_12mo": 1,
         "condo_days_on_market": 105.5,
-        "condo_months_supply": null
+        "condo_months_supply": 1
       },
       "schools": {
         "isd_name": "Birdville ISD",
@@ -6087,11 +6353,10 @@
         "college_prep_grade": "A",
         "good_for_families": "B-",
         "niche_url": "https://www.niche.com/k12/d/birdville-independent-school-district-tx/",
-        "split_isd": true,
-        "niche_city_schools_grade": "A"
+        "split_isd": true
       },
       "quiz": {
-        "sfr_median_price": 386245.8,
+        "sfr_median_price": 388329.2,
         "overall_isd_grade": 10,
         "academics_isd_grade": 10,
         "pct_households_with_children": 30.8,
@@ -6159,7 +6424,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -6196,10 +6461,10 @@
         "ws_link": "https://www.walkscore.com/score/Northlake-TX/lat=33.1082/lng=-97.2772/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 556847.1,
-        "sfr_days_on_market": 62.7,
+        "sfr_median_price": 561763.8,
+        "sfr_days_on_market": 64.2,
         "sfr_months_supply": 5,
-        "sfr_closed_sales_12mo": 416,
+        "sfr_closed_sales_12mo": 410,
         "market_condition": "balanced",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -6216,7 +6481,7 @@
         "split_isd": true
       },
       "quiz": {
-        "sfr_median_price": 556847.1,
+        "sfr_median_price": 561763.8,
         "overall_isd_grade": 11,
         "academics_isd_grade": 11,
         "pct_households_with_children": 51.2,
@@ -6261,7 +6526,7 @@
       },
       "scores": {
         "family_score": 83,
-        "value_score": 88,
+        "value_score": 87,
         "sub_scores": {
           "education": 93,
           "safety": 83,
@@ -6284,7 +6549,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -6321,15 +6586,15 @@
         "ws_link": "https://www.walkscore.com/score/Plano-TX/lat=33.0198/lng=-96.6989/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 525231.3,
-        "sfr_days_on_market": 30.1,
-        "sfr_months_supply": 3.4,
-        "sfr_closed_sales_12mo": 2230,
+        "sfr_median_price": 526022.9,
+        "sfr_days_on_market": 29.9,
+        "sfr_months_supply": 3.3,
+        "sfr_closed_sales_12mo": 2246,
         "market_condition": "balanced",
-        "condo_median_price": 343902.1,
-        "condo_closed_sales_12mo": 62,
-        "condo_days_on_market": 41.4,
-        "condo_months_supply": 6.2
+        "condo_median_price": 334568.8,
+        "condo_closed_sales_12mo": 58,
+        "condo_days_on_market": 39.4,
+        "condo_months_supply": 6.5
       },
       "schools": {
         "isd_name": "Plano ISD",
@@ -6341,7 +6606,7 @@
         "split_isd": true
       },
       "quiz": {
-        "sfr_median_price": 525231.3,
+        "sfr_median_price": 526022.9,
         "overall_isd_grade": 12,
         "academics_isd_grade": 12,
         "pct_households_with_children": 32.8,
@@ -6409,7 +6674,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -6446,10 +6711,10 @@
         "ws_link": "https://www.walkscore.com/score/Princeton-TX/lat=33.1818/lng=-96.4997/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 301724.4,
-        "sfr_days_on_market": 36.8,
+        "sfr_median_price": 300142.9,
+        "sfr_days_on_market": 37.5,
         "sfr_months_supply": 3.7,
-        "sfr_closed_sales_12mo": 2207,
+        "sfr_closed_sales_12mo": 2212,
         "market_condition": "balanced",
         "condo_median_price": 288666.7,
         "condo_closed_sales_12mo": 0,
@@ -6463,11 +6728,10 @@
         "college_prep_grade": "A-",
         "good_for_families": "B",
         "niche_url": "https://www.niche.com/k12/d/princeton-independent-school-district-tx/",
-        "split_isd": false,
-        "niche_city_schools_grade": "B+"
+        "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 301724.4,
+        "sfr_median_price": 300142.9,
         "overall_isd_grade": 10,
         "academics_isd_grade": 10,
         "pct_households_with_children": 49.7,
@@ -6512,7 +6776,7 @@
       },
       "scores": {
         "family_score": 72,
-        "value_score": 96,
+        "value_score": 97,
         "sub_scores": {
           "education": 87,
           "safety": 73,
@@ -6535,7 +6799,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -6572,10 +6836,10 @@
         "ws_link": "https://www.walkscore.com/score/Prosper-TX/lat=33.2362/lng=-96.8012/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 845429.2,
-        "sfr_days_on_market": 58.1,
-        "sfr_months_supply": 5.4,
-        "sfr_closed_sales_12mo": 796,
+        "sfr_median_price": 854012.5,
+        "sfr_days_on_market": 56.9,
+        "sfr_months_supply": 5.6,
+        "sfr_closed_sales_12mo": 779,
         "market_condition": "balanced",
         "condo_median_price": 524000,
         "condo_closed_sales_12mo": 0,
@@ -6592,7 +6856,7 @@
         "split_isd": true
       },
       "quiz": {
-        "sfr_median_price": 845429.2,
+        "sfr_median_price": 854012.5,
         "overall_isd_grade": 12,
         "academics_isd_grade": 12,
         "pct_households_with_children": 57.7,
@@ -6636,14 +6900,14 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 85,
-        "value_score": 69,
+        "family_score": 84,
+        "value_score": 68,
         "sub_scores": {
           "education": 97,
           "safety": 87,
           "family_community": 75,
           "commute": 46,
-          "market_stability": 93
+          "market_stability": 91
         },
         "amenity_ranks": {
           "parks_count": 35,
@@ -6660,7 +6924,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -6697,15 +6961,15 @@
         "ws_link": "https://www.walkscore.com/score/Richardson-TX/lat=32.9483/lng=-96.7299/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 463825,
-        "sfr_days_on_market": 27.4,
+        "sfr_median_price": 462537.5,
+        "sfr_days_on_market": 27.6,
         "sfr_months_supply": 3,
-        "sfr_closed_sales_12mo": 955,
+        "sfr_closed_sales_12mo": 949,
         "market_condition": "balanced",
-        "condo_median_price": 209214.8,
-        "condo_closed_sales_12mo": 35,
-        "condo_days_on_market": 85,
-        "condo_months_supply": 8.8
+        "condo_median_price": 205589.8,
+        "condo_closed_sales_12mo": 38,
+        "condo_days_on_market": 89.4,
+        "condo_months_supply": 9.2
       },
       "schools": {
         "isd_name": "Richardson ISD",
@@ -6714,11 +6978,10 @@
         "college_prep_grade": "A",
         "good_for_families": "A+",
         "niche_url": "https://www.niche.com/k12/d/richardson-independent-school-district-tx/",
-        "split_isd": false,
-        "niche_city_schools_grade": "A"
+        "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 463825,
+        "sfr_median_price": 462537.5,
         "overall_isd_grade": 11,
         "academics_isd_grade": 10,
         "pct_households_with_children": 28.3,
@@ -6786,7 +7049,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -6823,10 +7086,10 @@
         "ws_link": "https://www.walkscore.com/score/Roanoke-TX/lat=33.0032/lng=-97.2272/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 593280.1,
-        "sfr_days_on_market": 47.1,
-        "sfr_months_supply": 4.8,
-        "sfr_closed_sales_12mo": 126,
+        "sfr_median_price": 590363.4,
+        "sfr_days_on_market": 47.2,
+        "sfr_months_supply": 4.5,
+        "sfr_closed_sales_12mo": 132,
         "market_condition": "balanced",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -6843,7 +7106,7 @@
         "split_isd": true
       },
       "quiz": {
-        "sfr_median_price": 593280.1,
+        "sfr_median_price": 590363.4,
         "overall_isd_grade": 11,
         "academics_isd_grade": 11,
         "pct_households_with_children": 44.6,
@@ -6888,13 +7151,13 @@
       },
       "scores": {
         "family_score": 87,
-        "value_score": 79,
+        "value_score": 78,
         "sub_scores": {
           "education": 97,
           "safety": 83,
           "family_community": 82,
           "commute": 52,
-          "market_stability": 98
+          "market_stability": 100
         },
         "amenity_ranks": {
           "parks_count": 24,
@@ -6911,7 +7174,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -6948,15 +7211,15 @@
         "ws_link": "https://www.walkscore.com/score/Rockwall-TX/lat=32.929/lng=-96.4597/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 556882.4,
-        "sfr_days_on_market": 59.8,
-        "sfr_months_supply": 6.3,
-        "sfr_closed_sales_12mo": 881,
+        "sfr_median_price": 552616.8,
+        "sfr_days_on_market": 60.9,
+        "sfr_months_supply": 6.1,
+        "sfr_closed_sales_12mo": 878,
         "market_condition": "buyer",
         "condo_median_price": 241847.9,
-        "condo_closed_sales_12mo": 37,
+        "condo_closed_sales_12mo": 32,
         "condo_days_on_market": 49.1,
-        "condo_months_supply": 7.4
+        "condo_months_supply": 7.9
       },
       "schools": {
         "isd_name": "Rockwall ISD",
@@ -6968,7 +7231,7 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 556882.4,
+        "sfr_median_price": 552616.8,
         "overall_isd_grade": 12,
         "academics_isd_grade": 12,
         "pct_households_with_children": 40,
@@ -7013,13 +7276,13 @@
       },
       "scores": {
         "family_score": 81,
-        "value_score": 88,
+        "value_score": 87,
         "sub_scores": {
           "education": 97,
           "safety": 80,
           "family_community": 70,
           "commute": 55,
-          "market_stability": 86
+          "market_stability": 87
         },
         "amenity_ranks": {
           "parks_count": 41,
@@ -7036,7 +7299,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -7073,10 +7336,10 @@
         "ws_link": "https://www.walkscore.com/score/Rowlett-TX/lat=32.9029/lng=-96.5636/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 379787.5,
-        "sfr_days_on_market": 44.7,
-        "sfr_months_supply": 4.9,
-        "sfr_closed_sales_12mo": 762,
+        "sfr_median_price": 379186.7,
+        "sfr_days_on_market": 44.3,
+        "sfr_months_supply": 5,
+        "sfr_closed_sales_12mo": 741,
         "market_condition": "balanced",
         "condo_median_price": 316666.7,
         "condo_closed_sales_12mo": 0,
@@ -7090,11 +7353,10 @@
         "college_prep_grade": "A",
         "good_for_families": "B+",
         "niche_url": "https://www.niche.com/k12/d/garland-independent-school-district-tx/",
-        "split_isd": true,
-        "niche_city_schools_grade": "B+"
+        "split_isd": true
       },
       "quiz": {
-        "sfr_median_price": 379787.5,
+        "sfr_median_price": 379186.7,
         "overall_isd_grade": 11,
         "academics_isd_grade": 10,
         "pct_households_with_children": 37.8,
@@ -7145,7 +7407,7 @@
           "safety": 80,
           "family_community": 38,
           "commute": 40,
-          "market_stability": 97
+          "market_stability": 96
         },
         "amenity_ranks": {
           "parks_count": 26,
@@ -7162,7 +7424,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -7199,10 +7461,10 @@
         "ws_link": "https://www.walkscore.com/score/Royse-City-TX/lat=32.9754/lng=-96.3322/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 329865.6,
-        "sfr_days_on_market": 74.3,
+        "sfr_median_price": 327773.1,
+        "sfr_days_on_market": 73.4,
         "sfr_months_supply": 6.5,
-        "sfr_closed_sales_12mo": 830,
+        "sfr_closed_sales_12mo": 838,
         "market_condition": "buyer",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -7219,7 +7481,7 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 329865.6,
+        "sfr_median_price": 327773.1,
         "overall_isd_grade": 10,
         "academics_isd_grade": 10,
         "pct_households_with_children": 41.4,
@@ -7287,7 +7549,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -7324,10 +7586,10 @@
         "ws_link": "https://www.walkscore.com/score/Sachse-TX/lat=32.976/lng=-96.5897/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 441256.1,
-        "sfr_days_on_market": 38.3,
+        "sfr_median_price": 442922.8,
+        "sfr_days_on_market": 37,
         "sfr_months_supply": 4.3,
-        "sfr_closed_sales_12mo": 246,
+        "sfr_closed_sales_12mo": 253,
         "market_condition": "balanced",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -7341,11 +7603,10 @@
         "college_prep_grade": "A+",
         "good_for_families": "A",
         "niche_url": "https://www.niche.com/k12/d/wylie-independent-school-district-wylie-tx/",
-        "split_isd": true,
-        "niche_city_schools_grade": "B+"
+        "split_isd": true
       },
       "quiz": {
-        "sfr_median_price": 441256.1,
+        "sfr_median_price": 442922.8,
         "overall_isd_grade": 13,
         "academics_isd_grade": 12,
         "pct_households_with_children": 39.8,
@@ -7413,7 +7674,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -7450,10 +7711,10 @@
         "ws_link": "https://www.walkscore.com/score/Saginaw-TX/lat=32.8596/lng=-97.3636/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 308986.7,
-        "sfr_days_on_market": 32.3,
-        "sfr_months_supply": 3.2,
-        "sfr_closed_sales_12mo": 266,
+        "sfr_median_price": 306904.2,
+        "sfr_days_on_market": 34.1,
+        "sfr_months_supply": 3.1,
+        "sfr_closed_sales_12mo": 273,
         "market_condition": "balanced",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -7467,11 +7728,10 @@
         "college_prep_grade": "A",
         "good_for_families": "B+",
         "niche_url": "https://www.niche.com/k12/d/eagle-mountain-saginaw-independent-school-district-tx/",
-        "split_isd": false,
-        "niche_city_schools_grade": "A-"
+        "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 308986.7,
+        "sfr_median_price": 306904.2,
         "overall_isd_grade": 11,
         "academics_isd_grade": 10,
         "pct_households_with_children": 37.1,
@@ -7539,7 +7799,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -7576,15 +7836,15 @@
         "ws_link": "https://www.walkscore.com/score/Southlake-TX/lat=32.944/lng=-97.1344/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 1352687.5,
-        "sfr_days_on_market": 23.2,
-        "sfr_months_supply": 4.2,
-        "sfr_closed_sales_12mo": 398,
+        "sfr_median_price": 1355958.3,
+        "sfr_days_on_market": 22.8,
+        "sfr_months_supply": 4.1,
+        "sfr_closed_sales_12mo": 412,
         "market_condition": "balanced",
-        "condo_median_price": 666567.8,
+        "condo_median_price": 612567.8,
         "condo_closed_sales_12mo": 13,
-        "condo_days_on_market": 85.8,
-        "condo_months_supply": 3.2
+        "condo_days_on_market": 79,
+        "condo_months_supply": 3.5
       },
       "schools": {
         "isd_name": "Carroll ISD",
@@ -7596,7 +7856,7 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 1352687.5,
+        "sfr_median_price": 1355958.3,
         "overall_isd_grade": 13,
         "academics_isd_grade": 13,
         "pct_households_with_children": 50,
@@ -7641,7 +7901,7 @@
       },
       "scores": {
         "family_score": 85,
-        "value_score": 48,
+        "value_score": 47,
         "sub_scores": {
           "education": 97,
           "safety": 83,
@@ -7664,7 +7924,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -7701,10 +7961,10 @@
         "ws_link": "https://www.walkscore.com/score/The-Colony-TX/lat=33.0918/lng=-96.8883/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 429265.8,
-        "sfr_days_on_market": 36.2,
+        "sfr_median_price": 433515.8,
+        "sfr_days_on_market": 36.3,
         "sfr_months_supply": 3.5,
-        "sfr_closed_sales_12mo": 486,
+        "sfr_closed_sales_12mo": 476,
         "market_condition": "balanced",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -7721,7 +7981,7 @@
         "split_isd": true
       },
       "quiz": {
-        "sfr_median_price": 429265.8,
+        "sfr_median_price": 433515.8,
         "overall_isd_grade": 12,
         "academics_isd_grade": 12,
         "pct_households_with_children": 29.8,
@@ -7789,7 +8049,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -7826,10 +8086,10 @@
         "ws_link": "https://www.walkscore.com/score/Trophy-Club-TX/lat=33.0032/lng=-97.1797/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 797287.5,
-        "sfr_days_on_market": 23.2,
-        "sfr_months_supply": 2.3,
-        "sfr_closed_sales_12mo": 212,
+        "sfr_median_price": 807912.5,
+        "sfr_days_on_market": 21.9,
+        "sfr_months_supply": 2.2,
+        "sfr_closed_sales_12mo": 215,
         "market_condition": "seller",
         "condo_median_price": 650000,
         "condo_closed_sales_12mo": 0,
@@ -7846,7 +8106,7 @@
         "split_isd": true
       },
       "quiz": {
-        "sfr_median_price": 797287.5,
+        "sfr_median_price": 807912.5,
         "overall_isd_grade": 11,
         "academics_isd_grade": 11,
         "pct_households_with_children": 42.6,
@@ -7891,13 +8151,13 @@
       },
       "scores": {
         "family_score": 87,
-        "value_score": 75,
+        "value_score": 73,
         "sub_scores": {
           "education": 97,
           "safety": 90,
           "family_community": 62,
           "commute": 55,
-          "market_stability": 95
+          "market_stability": 93
         },
         "amenity_ranks": {
           "parks_count": 15,
@@ -7914,7 +8174,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -7951,15 +8211,15 @@
         "ws_link": "https://www.walkscore.com/score/University-Park-TX/lat=32.851/lng=-96.7952/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 2760227.1,
-        "sfr_days_on_market": 36.4,
+        "sfr_median_price": 2836850,
+        "sfr_days_on_market": 33.8,
         "sfr_months_supply": 2.6,
-        "sfr_closed_sales_12mo": 179,
+        "sfr_closed_sales_12mo": 162,
         "market_condition": "seller",
-        "condo_median_price": 663200,
-        "condo_closed_sales_12mo": 21,
-        "condo_days_on_market": 37.4,
-        "condo_months_supply": 3.7
+        "condo_median_price": 727366.7,
+        "condo_closed_sales_12mo": 23,
+        "condo_days_on_market": 23.9,
+        "condo_months_supply": 3.6
       },
       "schools": {
         "isd_name": "Highland Park ISD",
@@ -7971,7 +8231,7 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 2760227.1,
+        "sfr_median_price": 2836850,
         "overall_isd_grade": 13,
         "academics_isd_grade": 13,
         "pct_households_with_children": 49.4,
@@ -8039,7 +8299,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -8077,9 +8337,9 @@
       },
       "market": {
         "sfr_median_price": 417371.4,
-        "sfr_days_on_market": 46.3,
-        "sfr_months_supply": 5.2,
-        "sfr_closed_sales_12mo": 1112,
+        "sfr_days_on_market": 45.9,
+        "sfr_months_supply": 5.1,
+        "sfr_closed_sales_12mo": 1146,
         "market_condition": "balanced",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -8147,7 +8407,7 @@
           "safety": 80,
           "family_community": 52,
           "commute": 61,
-          "market_stability": 94
+          "market_stability": 95
         },
         "amenity_ranks": {
           "parks_count": 31,
@@ -8164,7 +8424,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -8201,10 +8461,10 @@
         "ws_link": "https://www.walkscore.com/score/Westlake-TX/lat=32.9982/lng=-97.1994/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 4892752.3,
-        "sfr_days_on_market": 96.1,
-        "sfr_months_supply": 16.5,
-        "sfr_closed_sales_12mo": 24,
+        "sfr_median_price": 5055252.3,
+        "sfr_days_on_market": 97.8,
+        "sfr_months_supply": 15.8,
+        "sfr_closed_sales_12mo": 26,
         "market_condition": "buyer",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -8221,7 +8481,7 @@
         "split_isd": true
       },
       "quiz": {
-        "sfr_median_price": 4892752.3,
+        "sfr_median_price": 5055252.3,
         "overall_isd_grade": 13,
         "academics_isd_grade": 13,
         "pct_households_with_children": 39,
@@ -8265,11 +8525,11 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 73,
+        "family_score": 77,
         "value_score": 44,
         "sub_scores": {
           "education": 97,
-          "safety": 83,
+          "safety": 89,
           "family_community": 83,
           "commute": 47,
           "market_stability": 40
@@ -8289,7 +8549,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "estimate"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
       }
     },
@@ -8326,10 +8586,10 @@
         "ws_link": "https://www.walkscore.com/score/Wylie-TX/lat=33.0151/lng=-96.5388/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 437256.5,
-        "sfr_days_on_market": 47.1,
-        "sfr_months_supply": 4.5,
-        "sfr_closed_sales_12mo": 689,
+        "sfr_median_price": 440569,
+        "sfr_days_on_market": 48.1,
+        "sfr_months_supply": 4.4,
+        "sfr_closed_sales_12mo": 706,
         "market_condition": "balanced",
         "condo_median_price": 269500,
         "condo_closed_sales_12mo": 0,
@@ -8346,7 +8606,7 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 437256.5,
+        "sfr_median_price": 440569,
         "overall_isd_grade": 13,
         "academics_isd_grade": 12,
         "pct_households_with_children": 51.6,
@@ -8391,7 +8651,7 @@
       },
       "scores": {
         "family_score": 73,
-        "value_score": 94,
+        "value_score": 93,
         "sub_scores": {
           "education": 93,
           "safety": 80,
@@ -8414,248 +8674,8 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-05-25T22:03:01.267Z",
+        "computed_date": "2026-06-09T03:01:39.384Z",
         "data_completeness": "full"
-      }
-    },
-    "farmers-branch": {
-      "display_name": "Farmers Branch",
-      "county": "Dallas",
-      "ntreis_city_id": null,
-      "tier": 2,
-      "lat": 32.9268,
-      "lng": -96.8997,
-      "niche_city_slug": "farmers-branch-dallas-tx",
-      "demographics": {
-        "population": 40000,
-        "median_age": 36.5,
-        "land_area_sqmi": 12.0,
-        "pop_density": null,
-        "median_household_income": 68000,
-        "pct_households_with_children": 31.0,
-        "owner_occupied_pct": 49.0,
-        "median_home_value_census": 380000,
-        "bachelors_plus_pct": 42.0,
-        "wfh_pct": 18.0,
-        "median_commute_min": 26
-      },
-      "walkability": {
-        "walk_score": 48,
-        "bike_score": 35,
-        "transit_score": 30,
-        "ws_link": null
-      },
-      "market": {
-        "sfr_median_price": 420000,
-        "sfr_days_on_market": 35,
-        "sfr_months_supply": 2.8,
-        "sfr_closed_sales_12mo": null,
-        "market_condition": "seller",
-        "condo_median_price": null,
-        "condo_closed_sales_12mo": null,
-        "condo_days_on_market": null,
-        "condo_months_supply": null
-      },
-      "schools": {
-        "isd_name": "Carrollton-Farmers Branch ISD",
-        "overall_grade": "C+",
-        "academics_grade": "C",
-        "college_prep_grade": null,
-        "good_for_families": false,
-        "niche_url": "https://www.niche.com/k12/d/carrollton-farmers-branch-independent-school-district-tx/",
-        "split_isd": false
-      },
-      "quiz": {},
-      "niche_city": {
-        "overall": "B",
-        "public_schools": "C+",
-        "crime": "C+",
-        "housing": "B+",
-        "nightlife": "B",
-        "families": "B-",
-        "diversity": "A",
-        "jobs": "A-",
-        "weather": "B",
-        "cost_of_living": "B+",
-        "health_fitness": "B",
-        "outdoor_activities": "B-",
-        "commute": "B+",
-        "scraped_date": "2025-11-01"
-      },
-      "crime": {
-        "violent_per_1k": 3.2,
-        "property_per_1k": 22.0,
-        "niche_safety_grade": "C+",
-        "source": "Niche 2025"
-      },
-      "amenities": {},
-      "scores": {
-        "family_score": 68,
-        "value_score": 74,
-        "sub_scores": {},
-        "amenity_ranks": {},
-        "computed_date": "2026-06-08",
-        "data_completeness": 0.6
-      }
-    },
-    "lancaster": {
-      "display_name": "Lancaster",
-      "county": "Dallas",
-      "ntreis_city_id": null,
-      "tier": 4,
-      "lat": 32.5921,
-      "lng": -96.7561,
-      "niche_city_slug": "lancaster-dallas-tx",
-      "demographics": {
-        "population": 43000,
-        "median_age": 35.0,
-        "land_area_sqmi": 29.0,
-        "pop_density": null,
-        "median_household_income": 65000,
-        "pct_households_with_children": 38.0,
-        "owner_occupied_pct": 60.0,
-        "median_home_value_census": 270000,
-        "bachelors_plus_pct": 22.0,
-        "wfh_pct": 12.0,
-        "median_commute_min": 34
-      },
-      "walkability": {
-        "walk_score": 24,
-        "bike_score": 20,
-        "transit_score": null,
-        "ws_link": null
-      },
-      "market": {
-        "sfr_median_price": 270000,
-        "sfr_days_on_market": 55,
-        "sfr_months_supply": 4.5,
-        "sfr_closed_sales_12mo": null,
-        "market_condition": "balanced",
-        "condo_median_price": null,
-        "condo_closed_sales_12mo": null,
-        "condo_days_on_market": null,
-        "condo_months_supply": null
-      },
-      "schools": {
-        "isd_name": "Lancaster ISD",
-        "overall_grade": "C",
-        "academics_grade": "D+",
-        "college_prep_grade": null,
-        "good_for_families": false,
-        "niche_url": "https://www.niche.com/k12/d/lancaster-independent-school-district-tx/",
-        "split_isd": false
-      },
-      "quiz": {},
-      "niche_city": {
-        "overall": "C+",
-        "public_schools": "C",
-        "crime": "C",
-        "housing": "B",
-        "nightlife": "C",
-        "families": "C+",
-        "diversity": "A-",
-        "jobs": "C+",
-        "weather": "B",
-        "cost_of_living": "A-",
-        "health_fitness": "C+",
-        "outdoor_activities": "B-",
-        "commute": "B-",
-        "scraped_date": "2025-11-01"
-      },
-      "crime": {
-        "violent_per_1k": 5.2,
-        "property_per_1k": 28.0,
-        "niche_safety_grade": "C",
-        "source": "Niche 2025"
-      },
-      "amenities": {},
-      "scores": {
-        "family_score": 48,
-        "value_score": 82,
-        "sub_scores": {},
-        "amenity_ranks": {},
-        "computed_date": "2026-06-08",
-        "data_completeness": 0.7
-      }
-    },
-    "lavon": {
-      "display_name": "Lavon",
-      "county": "Collin",
-      "ntreis_city_id": null,
-      "tier": 3,
-      "lat": 33.031,
-      "lng": -96.4432,
-      "niche_city_slug": "lavon-collin-tx",
-      "demographics": {
-        "population": 21000,
-        "median_age": 34.0,
-        "land_area_sqmi": 13.0,
-        "pop_density": null,
-        "median_household_income": 88000,
-        "pct_households_with_children": 44.0,
-        "owner_occupied_pct": 82.0,
-        "median_home_value_census": 385000,
-        "bachelors_plus_pct": 30.0,
-        "wfh_pct": 22.0,
-        "median_commute_min": 42
-      },
-      "walkability": {
-        "walk_score": 8,
-        "bike_score": 12,
-        "transit_score": null,
-        "ws_link": null
-      },
-      "market": {
-        "sfr_median_price": 385000,
-        "sfr_days_on_market": 42,
-        "sfr_months_supply": 3.5,
-        "sfr_closed_sales_12mo": null,
-        "market_condition": "balanced",
-        "condo_median_price": null,
-        "condo_closed_sales_12mo": null,
-        "condo_days_on_market": null,
-        "condo_months_supply": null
-      },
-      "schools": {
-        "isd_name": "Community ISD",
-        "overall_grade": "B",
-        "academics_grade": "B-",
-        "college_prep_grade": null,
-        "good_for_families": true,
-        "niche_url": "https://www.niche.com/k12/d/community-independent-school-district-tx/",
-        "split_isd": false
-      },
-      "quiz": {},
-      "niche_city": {
-        "overall": "B",
-        "public_schools": "B",
-        "crime": "A",
-        "housing": "B+",
-        "nightlife": "D",
-        "families": "B+",
-        "diversity": "B-",
-        "jobs": "C+",
-        "weather": "B",
-        "cost_of_living": "B+",
-        "health_fitness": "B-",
-        "outdoor_activities": "A-",
-        "commute": "C",
-        "scraped_date": "2025-11-01"
-      },
-      "crime": {
-        "violent_per_1k": 1.2,
-        "property_per_1k": 9.0,
-        "niche_safety_grade": "A",
-        "source": "Niche 2025"
-      },
-      "amenities": {},
-      "scores": {
-        "family_score": 76,
-        "value_score": 80,
-        "sub_scores": {},
-        "amenity_ranks": {},
-        "computed_date": "2026-06-08",
-        "data_completeness": 0.7
       }
     }
   }

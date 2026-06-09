@@ -772,7 +772,7 @@ gtag('consent','default',{
         </tr>
       </thead>
       <tbody>
-        <tr><th class="kc-hl">Lavon</th><td>~$385K</td><td>~2.0%</td><td>~$7,700</td><td>Community ISD</td></tr>
+        <tr><td class="kc-hl" style="font-weight:700;">Lavon</td><td>~$385K</td><td>~2.0%</td><td>~$7,700</td><td>Community ISD</td></tr>
         <tr><td>Wylie</td><td>~$400K</td><td>~2.1%</td><td>~$8,400</td><td>Wylie ISD</td></tr>
         <tr><td>Rockwall</td><td>~$480K</td><td>~2.0%</td><td>~$9,600</td><td>Rockwall ISD</td></tr>
         <tr><td>Heath</td><td>~$620K</td><td>~1.9%</td><td>~$11,800</td><td>Rockwall ISD</td></tr>
@@ -1171,8 +1171,8 @@ gtag('consent','default',{
 
   var SUBURB_KEY  = 'lavon';
   var COMPARE_SUBURBS = ['wylie', 'rockwall', 'royse-city', 'heath'];
-  var PROFILES_URL = 'https://raw.githubusercontent.com/whymovetodallas/whymovetodallas.com/main/data/suburb-profiles.json';
-  var MARKET_URL   = 'https://raw.githubusercontent.com/whymovetodallas/whymovetodallas.com/main/data/market-data.json';
+  var PROFILES_URL = 'https://raw.githubusercontent.com/whymovetodallas/whymovetodallas-data/main/suburb-profiles.json';
+  var MARKET_URL   = 'https://raw.githubusercontent.com/whymovetodallas/whymovetodallas-data/main/suburb-profiles.json'; // market data embedded in suburb-profiles.json
 
   /* ── Lazy-load OSM iframes ──────────────────────────────────────────────── */
   if ('IntersectionObserver' in window) {
@@ -1202,8 +1202,8 @@ gtag('consent','default',{
     var niche_data   = raw.niche_city  || {};
     var schools_data = raw.schools     || {};
     var sc           = raw.scores      || {};
-    var mkt_raw  = (_mkt.suburbs || _mkt)[SUBURB_KEY] || {};
-    var sfr  = mkt_raw.sfr || {};
+    var mkt_raw  = raw; // market data now read from suburb-profiles.json
+    var sfr  = raw.market || {};
 
     /* Flat accessors the rest of this code uses */
     var p = {
