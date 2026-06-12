@@ -1,0 +1,27 @@
+Blog hero image intake folder — whymovetodallas.com image pipeline
+
+DROP your source image here, named using the image base slug:
+
+  GOOD:  where-to-work-dfw.jpg
+  GOOD:  best-dallas-school-districts.jpg
+  GOOD:  dallas-good-for-families.jpg
+  BAD:   IMG_4521.jpg        ← generic camera name, script will skip
+  BAD:   photo.png           ← too generic
+
+Then run from the project root:
+  python3 tools/process-blog-images.py
+
+Output (three files per source image):
+  public/images/[base]-hero.webp         ← 1920px desktop hero
+  public/images/[base]-hero-mobile.webp  ← 768px mobile hero
+  public/images/blog/[base]-og.webp      ← 1200×630 OG / social image
+
+After processing, the original is renamed DELETE_[name].[ext] — verify the
+WebP outputs look correct, then delete the DELETE_ files manually.
+
+Requirements:
+  pip install Pillow
+  (HEIC files also need macOS sips — already installed on Mac)
+
+This folder is gitignored for originals (*.jpg, *.png, *.heic).
+The DROP-IMAGES-HERE.txt placeholder keeps the folder tracked in git.
