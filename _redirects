@@ -28,7 +28,8 @@
 # ── 2. Blog URL canonicalization ─────────────────────────────────────────────
 # Old Squarespace blog path → new canonical /blog/ path.
 # The wildcard handles all inbound links, bookmarks, and GSC-indexed URLs.
-# Must come AFTER any specific /living-in-dallas-texas-blog/[slug] rules below.
+# Specific rules MUST come BEFORE the wildcard below.
+/living-in-dallas-texas-blog/plano-texas-pros-and-cons-for-familes  /plano-texas  301
 /living-in-dallas-texas-blog/*  /blog/:splat  301
 /living-in-dallas-texas-blog    /blog          301
 
@@ -222,8 +223,11 @@
 # ── 11. Stale market/economics pages — not blog posts ─────────────────────────
 # Standalone Squarespace pages (not under /living-in-dallas-texas-blog/).
 # Not captured by Section 4 wildcard since that targets /blog/ paths.
-/dallas-tx-housing-market-updates                         /blog                      301
-/economic-indicators-that-affect-housing-market           /blog                      301
+/dallas-tx-housing-market-updates                              /blog                 301
+/economic-indicators-that-affect-housing-market               /blog                 301
+/rockwall-texas-housing-market-trends                          /rockwall-texas       301
+/mansfield-texas-housing-market-trends-and-homes-for-sale     /mansfield-texas      301
+/highland-park-texas-housing-market-trends                    /highland-park-texas  301
 
 
 # ── 12. Sub-blog paths — old per-suburb blog index pages ──────────────────────
