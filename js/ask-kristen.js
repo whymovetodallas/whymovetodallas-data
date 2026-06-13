@@ -27,11 +27,11 @@
   var CSS =
     "#ak-root{--ak-navy:#1F2D3D;--ak-gold:#B08D57;--ak-ivory:#F7F4EE;--ak-stone:#C8C1B6;--ak-char:#232323;" +
     "font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;}" +
-    "#ak-bubble{position:fixed;bottom:24px;right:24px;width:60px;height:60px;border-radius:50%;background:var(--ak-navy);" +
-    "border:none;cursor:pointer;box-shadow:0 6px 22px rgba(31,45,61,.34);z-index:2147483000;display:flex;" +
-    "align-items:center;justify-content:center;transition:transform .18s ease,box-shadow .18s ease;}" +
+    "#ak-bubble{position:fixed;bottom:24px;right:24px;width:62px;height:62px;border-radius:50%;background:var(--ak-navy);" +
+    "border:2px solid var(--ak-gold);box-sizing:border-box;cursor:pointer;box-shadow:0 6px 22px rgba(31,45,61,.34);z-index:2147483000;display:flex;" +
+    "align-items:center;justify-content:center;transition:transform .18s ease,box-shadow .18s ease;padding:0;}" +
     "#ak-bubble:hover{transform:translateY(-2px);box-shadow:0 10px 28px rgba(31,45,61,.42);}" +
-    "#ak-bubble svg{width:28px;height:28px;}" +
+    "#ak-bubble img{width:100%;height:100%;border-radius:50%;object-fit:cover;object-position:50% 14%;display:block;}" +
     "#ak-bubble .ak-badge{position:absolute;top:-3px;right:-3px;background:var(--ak-gold);color:#fff;font-size:10px;" +
     "font-weight:700;width:18px;height:18px;border-radius:50%;display:flex;align-items:center;justify-content:center;}" +
     "#ak-panel{position:fixed;bottom:96px;right:24px;width:380px;max-width:calc(100vw - 32px);height:560px;" +
@@ -40,12 +40,14 @@
     "#ak-root.ak-open #ak-panel{display:flex;}" +
     "#ak-root.ak-open #ak-bubble{display:none;}" +
     "#ak-head{background:var(--ak-navy);color:#fff;padding:16px 18px;display:flex;align-items:center;gap:12px;}" +
-    "#ak-head .ak-avatar{width:38px;height:38px;border-radius:50%;background:var(--ak-gold);flex-shrink:0;display:flex;" +
-    "align-items:center;justify-content:center;font-weight:700;color:#fff;font-size:15px;}" +
+    "#ak-head .ak-avatar{width:40px;height:40px;border-radius:50%;background:var(--ak-gold);flex-shrink:0;" +
+    "object-fit:cover;object-position:50% 12%;border:1.5px solid rgba(255,255,255,.35);}" +
     "#ak-head .ak-title{font-size:15px;font-weight:600;line-height:1.2;}" +
     "#ak-head .ak-sub{font-size:11.5px;opacity:.82;margin-top:2px;}" +
-    "#ak-close{margin-left:auto;background:none;border:none;color:#fff;cursor:pointer;opacity:.8;padding:4px;border-radius:6px;}" +
-    "#ak-close:hover{opacity:1;background:rgba(255,255,255,.12);}" +
+    "#ak-close{margin-left:auto;background:rgba(255,255,255,.16);border:none;color:#fff;cursor:pointer;opacity:.95;" +
+    "width:30px;height:30px;padding:0;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;}" +
+    "#ak-close:hover{opacity:1;background:rgba(255,255,255,.30);}" +
+    "#ak-close svg{width:17px;height:17px;display:block;}" +
     "#ak-log{flex:1;overflow-y:auto;padding:16px;display:flex;flex-direction:column;gap:12px;}" +
     ".ak-msg{max-width:85%;padding:10px 13px;border-radius:14px;font-size:14px;line-height:1.5;white-space:pre-wrap;word-wrap:break-word;}" +
     ".ak-bot{background:#fff;color:var(--ak-char);border:1px solid var(--ak-stone);border-bottom-left-radius:4px;align-self:flex-start;}" +
@@ -68,7 +70,10 @@
     "align-items:center;justify-content:center;transition:background .15s;}" +
     "#ak-send:hover{background:#9d7c4b;}#ak-send:disabled{opacity:.5;cursor:default;}" +
     "#ak-send svg{width:20px;height:20px;}" +
-    "#ak-foot{font-size:10.5px;color:#7c766c;text-align:center;padding:0 12px 10px;background:var(--ak-ivory);}" +
+    "#ak-cta{display:block;margin:10px 12px 4px;text-align:center;background:var(--ak-navy);color:#fff;text-decoration:none;" +
+    "font-size:13px;font-weight:600;padding:11px 12px;border-radius:10px;transition:background .15s;}" +
+    "#ak-cta:hover{background:#16212e;}" +
+    "#ak-foot{font-size:10.5px;color:#7c766c;text-align:center;padding:4px 12px 10px;background:var(--ak-ivory);}" +
     "@media(max-width:480px){#ak-panel{bottom:0;right:0;width:100vw;max-width:100vw;height:100dvh;max-height:100dvh;border-radius:0;border:none;}" +
     "#ak-bubble{bottom:18px;right:18px;}}" +
     "@media(prefers-reduced-motion:reduce){#ak-bubble,.ak-typing span{transition:none;animation:none;}}";
@@ -178,6 +183,24 @@
       var decoder = new TextDecoder();
       var buffer = "";
 
+      // Parse a single SSE line and append any content delta to the answer.
+      function handleLine(rawLine) {
+        var line = rawLine.trim();
+        if (!line || line.indexOf("data:") !== 0) return;
+        var data = line.slice(5).trim();
+        if (data === "[DONE]") return;
+        try {
+          var obj = JSON.parse(data);
+          var delta = obj && obj.choices && obj.choices[0] && obj.choices[0].delta;
+          if (delta && typeof delta.content === "string") {
+            answer += delta.content;
+            ensureBot();
+            botNode.innerHTML = format(answer);
+            log.scrollTop = log.scrollHeight;
+          }
+        } catch (e) { /* ignore non-JSON (e.g. the chunks event) */ }
+      }
+
       while (true) {
         var chunk = await reader.read();
         if (chunk.done) break;
@@ -185,24 +208,14 @@
 
         var parts = buffer.split("\n");
         buffer = parts.pop(); // keep the last (possibly partial) line
-
-        for (var i = 0; i < parts.length; i++) {
-          var line = parts[i].trim();
-          if (!line || line.indexOf("data:") !== 0) continue;
-          var data = line.slice(5).trim();
-          if (data === "[DONE]") continue;
-          try {
-            var obj = JSON.parse(data);
-            var delta = obj && obj.choices && obj.choices[0] && obj.choices[0].delta;
-            if (delta && typeof delta.content === "string") {
-              answer += delta.content;
-              ensureBot();
-              botNode.innerHTML = format(answer);
-              log.scrollTop = log.scrollHeight;
-            }
-          } catch (e) { /* ignore non-JSON (e.g. the chunks event) */ }
-        }
+        for (var i = 0; i < parts.length; i++) handleLine(parts[i]);
       }
+
+      // Flush anything left in the buffer after the stream closes —
+      // otherwise a final token with no trailing newline gets dropped.
+      buffer += decoder.decode();
+      var tail = buffer.split("\n");
+      for (var t = 0; t < tail.length; t++) handleLine(tail[t]);
 
       if (!answer) {
         ensureBot();
@@ -241,16 +254,16 @@
 
     var bubble = el("button", {
       id: "ak-bubble", "aria-label": "Open Ask Kristen chat", type: "button",
-    }, ICON_CHAT + '<span class="ak-badge">1</span>');
+    }, '<img src="/images/kristen-headshot-01.webp" alt="Kristen Carpentier" /><span class="ak-badge">1</span>');
     bubble.addEventListener("click", open);
 
     var panel = el("div", { id: "ak-panel", role: "dialog", "aria-label": "Ask Kristen chat", "aria-modal": "false" });
 
     var head = el("div", { id: "ak-head" },
-      '<div class="ak-avatar">K</div>' +
+      '<img class="ak-avatar" src="/images/kristen-headshot-01.webp" alt="Kristen Carpentier" />' +
       '<div><div class="ak-title">Ask Kristen</div>' +
       '<div class="ak-sub">DFW family relocation guide</div></div>');
-    var closeBtn = el("button", { id: "ak-close", "aria-label": "Close chat", type: "button" }, ICON_CLOSE);
+    var closeBtn = el("button", { id: "ak-close", "aria-label": "Minimize chat", title: "Minimize", type: "button" }, ICON_CLOSE);
     closeBtn.addEventListener("click", close);
     head.appendChild(closeBtn);
 
@@ -279,6 +292,9 @@
     form.appendChild(input); form.appendChild(sendBtn);
     form.addEventListener("submit", function (e) { e.preventDefault(); send(input.value); });
 
+    var cta = el("a", { id: "ak-cta", href: "/get-started" },
+      "Get personalized help from Kristen →");
+
     var foot = el("div", { id: "ak-foot" },
       "AI assistant · may be imperfect. Kristen Carpentier, REALTOR® · eXp Realty");
 
@@ -286,6 +302,7 @@
     panel.appendChild(log);
     panel.appendChild(startersEl);
     panel.appendChild(form);
+    panel.appendChild(cta);
     panel.appendChild(foot);
 
     root.appendChild(bubble);
