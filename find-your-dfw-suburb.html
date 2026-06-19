@@ -752,11 +752,14 @@ gtag('consent','default',{
   /* Commute anchors (approx lat/lng). */
   var ANCHORS = {
     "north-dallas":  {lat:33.08,  lng:-96.82,  label:"North Dallas / Legacy–Plano"},
-    "downtown":      {lat:32.7816,lng:-96.7970,label:"Downtown Dallas"},
-    "las-colinas":   {lat:32.8740,lng:-96.9489,label:"Las Colinas / Irving"},
-    "fort-worth":    {lat:32.7555,lng:-97.3308,label:"Fort Worth"},
     "frisco":        {lat:33.1507,lng:-96.8236,label:"Frisco"},
+    "downtown":      {lat:32.7816,lng:-96.7970,label:"Downtown Dallas"},
+    "southlake":     {lat:32.9545,lng:-97.1467,label:"Southlake / Grapevine / Westlake"},
+    "las-colinas":   {lat:32.8740,lng:-96.9489,label:"Las Colinas / Irving"},
     "dfw-airport":   {lat:32.8998,lng:-97.0403,label:"DFW Airport area"},
+    "fort-worth":    {lat:32.7555,lng:-97.3308,label:"Fort Worth"},
+    "arlington":     {lat:32.7357,lng:-97.1081,label:"Arlington / Mid-Cities"},
+    "rockwall":      {lat:32.8918,lng:-96.4597,label:"Rockwall / Lake Ray Hubbard"},
     "remote":        null
   };
   var TOL_MIN = {"u20":18,"20-35":32,"35-50":47,"50plus":62};
@@ -1040,8 +1043,8 @@ gtag('consent','default',{
 
     if(lev==="commute"){
       h+='<h2 class="lvm-h2">Where does your day anchor?</h2><p class="lvm-sub">The single biggest geographic constraint for most families.</p>';
-      h+=qBlock("Is there a fixed daily anchor — office, campus, hospital?","Pick the closest. Fully remote? We’ll down-weight commute entirely.","anchor",
-        [["north-dallas","North Dallas / Legacy–Plano"],["downtown","Downtown Dallas"],["las-colinas","Las Colinas / Irving"],["fort-worth","Fort Worth"],["frisco","Frisco"],["dfw-airport","DFW Airport area"],["remote","Fully remote / no anchor"]],answers.anchor);
+      h+=qBlock("Is there a fixed daily anchor — office, campus, hospital?","Pick the closest area to where you’ll spend your workday — grouped by the same metro quadrants as our suburbs map (NE / NW / Central / SW / SE), with the big employers in each so you can spot yours even if you’ve never been to DFW. Fully remote? We’ll down-weight commute entirely.","anchor",
+        [["north-dallas","North Dallas / Legacy–Plano (NE) · Toyota, JPMorgan"],["frisco","Frisco (NE) · The Star, PGA"],["southlake","Southlake / Grapevine / Westlake (NW) · Schwab, Fidelity"],["las-colinas","Las Colinas / Irving (NW) · airline & corporate HQs"],["dfw-airport","DFW Airport (NW) · airport & logistics"],["downtown","Downtown Dallas (Central) · AT&T, banks"],["fort-worth","Fort Worth (SW) · American Airlines, BNSF"],["arlington","Arlington / Mid-Cities (SW) · stadiums, GM, UTA"],["rockwall","Rockwall / East (SE) · Lake Ray Hubbard, I-30 corridor"],["remote","Fully remote / no anchor"]],answers.anchor);
       h+=qBlock("One commuter or two?",null,"commuters",[["one","One commuter"],["two","Two commuters"]],answers.commuters);
       h+=qBlock("Max rush-hour commute (one-way)?",null,"tolerance",[["u20","Under 20 min"],["20-35","20–35 min"],["35-50","35–50 min"],["50plus","50+ min"]],answers.tolerance);
       h+=qBlock("Toll roads okay?","The Dallas North Tollway and others are a real monthly cost.","toll",[["yes","Yes, fine"],["avoid","Prefer to avoid"]],answers.toll);
