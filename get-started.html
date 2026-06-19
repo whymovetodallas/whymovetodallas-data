@@ -1533,7 +1533,7 @@ gtag('consent','default',{
 
     var payload = buildPayload();
 
-    fetch('https://whymovetodallas-app.vercel.app/api/intake-to-lofty', {
+    fetch('/api/intake-to-lofty', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(payload)

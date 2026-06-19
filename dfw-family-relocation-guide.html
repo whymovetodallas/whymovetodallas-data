@@ -1274,7 +1274,7 @@ gtag('consent','default',{
     btn.textContent = 'Sending…';
 
     try {
-      var res = await fetch('https://whymovetodallas-app.vercel.app/api/form-to-lofty', {
+      var res = await fetch('/api/form-to-lofty', {
         method:  'POST',
         headers: { 'Content-Type': 'application/json' },
         body:    JSON.stringify({ firstName: firstName, lastName: lastName, email: email, phone: phone, message: message, suburbs: suburbs }),
