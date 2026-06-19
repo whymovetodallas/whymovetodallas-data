@@ -835,6 +835,31 @@
   ]
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Dallas Relocation Guide: How to Choose the Right DFW Suburb",
+  "description": "If you're moving to Dallas–Fort Worth and wondering where your family should actually live, this is your start-here guide. Kristen Carpentier walks through how to choose the right DFW suburb using four simple levers — schools, commute, budget, and lifestyle — so an overwhelming list of 60+ suburbs turns into a real shortlist of three.",
+  "thumbnailUrl": [
+    "https://img.youtube.com/vi/twWIP6QUTWE/maxresdefault.jpg",
+    "https://img.youtube.com/vi/twWIP6QUTWE/hqdefault.jpg"
+  ],
+  "uploadDate": "2026-06-19T00:00:00-05:00",
+  "duration": "PT8M11S",
+  "contentUrl": "https://www.youtube.com/watch?v=twWIP6QUTWE",
+  "embedUrl": "https://www.youtube.com/embed/twWIP6QUTWE",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://whymovetodallas.com/#agent",
+    "name": "Why Move to Dallas | DFW Family Relocation",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://whymovetodallas.com/images/logo-white.webp"
+    }
+  }
+}
+</script>
 <!-- Site verifications -->
 <meta name="ahrefs-site-verification" content="0ce5b9f21be99897ea2af7da64a710d253016a2b6fe1eeb79c7d9d1a2eed4174">
 <meta name="p:domain_verify" content="4c6d262c6ac5a835c32182b2ce11e98d">
@@ -1211,6 +1236,78 @@ gtag('consent','default',{
     </div>
   </div>
 </section>
+
+<!-- ──────────────────────────────────────────────────────────────────────
+     SECTION 4.5 — RELOCATION JOURNEY VIDEO
+     ────────────────────────────────────────────────────────────────────── -->
+<style>
+  .kc-video-bg { background: var(--navy); padding: 4.5rem 1.5rem; }
+  .kc-video-bg .kc-section-header h2 { color: var(--white); }
+  .kc-video-bg .kc-section-header p  { color: rgba(255,255,255,0.78); }
+  .kc-video-bg .kc-eyebrow           { color: var(--gold); }
+  .kc-video-wrap {
+    position: relative; max-width: 880px; margin: 0 auto;
+    aspect-ratio: 16 / 9; border-radius: 12px; overflow: hidden;
+    box-shadow: 0 14px 44px rgba(0,0,0,0.45); cursor: pointer; background: #000;
+  }
+  .kc-video-wrap img    { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .kc-video-wrap iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .kc-yt-play {
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    width: 84px; height: 84px; border-radius: 50%; border: 0;
+    background: rgba(176,141,87,0.92); display: flex; align-items: center;
+    justify-content: center; cursor: pointer; transition: transform .2s ease, background .2s ease;
+  }
+  .kc-video-wrap:hover .kc-yt-play,
+  .kc-video-wrap:focus-visible .kc-yt-play { transform: translate(-50%, -50%) scale(1.08); background: var(--gold); }
+  .kc-yt-play svg { width: 32px; height: 32px; fill: #fff; margin-left: 4px; }
+  .kc-video-caption { text-align: center; color: rgba(255,255,255,0.62); font-size: 0.85rem; font-style: italic; max-width: 760px; margin: 1.1rem auto 0; }
+</style>
+<section class="kc-video-bg" aria-labelledby="video-heading">
+  <div class="kc-inner">
+    <div class="kc-section-header">
+      <span class="kc-eyebrow">Start Here</span>
+      <h2 id="video-heading">Where Should Your Family Actually Live?</h2>
+      <p>Before you compare a single suburb, watch this. Kristen walks you through the four levers — schools, commute, budget, and lifestyle — that turn an overwhelming list of 60+ DFW suburbs into a real shortlist of three.</p>
+    </div>
+
+    <div id="kc-hp-video" class="kc-video-wrap"
+         data-videoid="twWIP6QUTWE"
+         data-title="Dallas Relocation Guide: How to Choose the Right DFW Suburb"
+         role="button" tabindex="0"
+         aria-label="Play video: Dallas Relocation Guide — How to Choose the Right DFW Suburb">
+      <img src="https://img.youtube.com/vi/twWIP6QUTWE/maxresdefault.jpg"
+           alt="Dallas Relocation Guide: How to Choose the Right DFW Suburb"
+           loading="lazy" width="1280" height="720"
+           onerror="this.src='https://img.youtube.com/vi/twWIP6QUTWE/hqdefault.jpg'">
+      <button class="kc-yt-play" aria-label="Play video" tabindex="-1">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><polygon points="5,3 19,12 5,21"/></svg>
+      </button>
+    </div>
+    <p class="kc-video-caption">Watch: Dallas Relocation Guide — How to Choose the Right DFW Suburb (8 min)</p>
+  </div>
+</section>
+<script>
+  (function () {
+    var el = document.getElementById('kc-hp-video');
+    if (!el) return;
+    function load() {
+      if (el.querySelector('iframe')) return;
+      var id = el.dataset.videoid, title = el.dataset.title || 'YouTube video';
+      var ifr = document.createElement('iframe');
+      ifr.src = 'https://www.youtube.com/embed/' + id + '?autoplay=1&rel=0&modestbranding=1';
+      ifr.title = title;
+      ifr.allow = 'autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+      ifr.allowFullscreen = true;
+      el.innerHTML = '';
+      el.appendChild(ifr);
+    }
+    el.addEventListener('click', load);
+    el.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); load(); }
+    });
+  })();
+</script>
 
 <!-- ──────────────────────────────────────────────────────────────────────
      SECTION 5 — SUBURB EXPLORER GRID
