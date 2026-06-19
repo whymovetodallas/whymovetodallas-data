@@ -23,7 +23,7 @@
 
   --header-topbar-h: 32px;
   --header-nav-h:    110px;
-  --header-total-h:  142px; /* topbar + two-row nav */
+  --header-total-h:  152px; /* topbar + two-row nav (kept in sync by header JS) */
 }
 
 /* ─────────────────────────────────────────────────────────────

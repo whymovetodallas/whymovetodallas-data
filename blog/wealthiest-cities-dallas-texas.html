@@ -869,6 +869,17 @@ gtag('consent','default',{
   var burger = hdr.querySelector('.kc-hamburger');
   var menu   = document.getElementById('kc-mobile-menu');
 
+  // Keep --header-total-h equal to the real header height so page content always
+  // clears the fixed header — even when the two-row nav wraps on narrower screens
+  // or the web font finishes loading and reflows the links.
+  function syncHeaderHeight() {
+    if (hdr) document.documentElement.style.setProperty('--header-total-h', hdr.offsetHeight + 'px');
+  }
+  syncHeaderHeight();
+  window.addEventListener('resize', syncHeaderHeight, { passive: true });
+  window.addEventListener('load', syncHeaderHeight);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(syncHeaderHeight);
+
   // Scroll: transparent → solid navy
   function onScroll() {
     hdr.classList.toggle('kc-scrolled', window.scrollY > 60);
