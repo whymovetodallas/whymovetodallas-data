@@ -880,6 +880,9 @@ gtag('consent','default',{
     var gNum = s.quiz && s.quiz.overall_isd_grade ? (s.quiz.overall_isd_grade-6)/7*100 : 60;
     var gff = gradeToScore(s.schools && s.schools.good_for_families);
     var fit = 0.6*edu + 0.2*clamp(gNum,0,100) + 0.2*gff;
+    // Empty nester / downsizing — schools matter for RESALE value, not daily use:
+    // lean on the district's headline reputation, drop the family-fit weighting.
+    if(answers.kidsStage==="empty"){ fit = 0.55*edu + 0.45*clamp(gNum,0,100); }
     // district feel
     var pop = (s.demographics && s.demographics.population) || 30000;
     if(answers.districtFeel==="powerhouse"){ fit += pop>=120000?6: pop>=60000?3: -2; }
@@ -1059,8 +1062,8 @@ gtag('consent','default',{
     }
     else if(lev==="schools"){
       h+='<h2 class="lvm-h2">What do your kids need?</h2><p class="lvm-sub">The best district on paper isn’t always the best for <em>your</em> kid.</p>';
-      h+=qBlock("Kids’ stage","Drives whether we weight elementary or high-school strength.","kidsStage",
-        [["elem","Elementary"],["middle","Middle"],["high","High school"],["mixed","Mixed ages"],["none","No kids yet / expecting"]],answers.kidsStage);
+      h+=qBlock("Kids’ stage","Drives how we weight schools — daily fit for your kids, or resale value from a strong district if you’re past that stage.","kidsStage",
+        [["elem","Elementary"],["middle","Middle"],["high","High school"],["mixed","Mixed ages"],["none","No kids yet / expecting"],["empty","Empty nester / downsizing"]],answers.kidsStage);
       h+=qBlock("Public only, or open to private?",null,"schoolType",[["public","Public only"],["private","Open to private"]],answers.schoolType);
       h+=qBlock("Any specialized priority?","We surface districts known for strength here — always verify the specific program yourself.","schoolPriority",
         [["none","None in particular"],["sped","Strong special-education"],["gifted","Gifted / STEM / IB"],["athletics","Competitive athletics"],["arts","Arts / band / theater"],["dual","Dual-language"]],answers.schoolPriority);
@@ -1086,7 +1089,7 @@ gtag('consent','default',{
     states.forEach(function(st){ h+='<option value="'+st+'"'+(answers.origin===st?" selected":"")+'>'+st+'</option>'; });
     h+='</select></div>';
     h+=qBlock("Timeline",null,"timeline",[["lt60","Under 60 days"],["3-6","3–6 months"],["6-12","6–12 months"],["research","Just researching"]],answers.timeline);
-    h+=qBlock("Household",null,"household",[["justus","Just us"],["growing","Growing family"],["multigen","Need multigen space"]],answers.household);
+    h+=qBlock("Household",null,"household",[["justus","Just us"],["downsizing","Downsizing"],["growing","Growing family"],["multigen","Need multigen space"]],answers.household);
     elHost.innerHTML=h;
     $("lvmOrigin").addEventListener("change",function(){ answers.origin=this.value; });
     wireInputs();
