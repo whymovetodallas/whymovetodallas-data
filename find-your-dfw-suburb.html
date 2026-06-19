@@ -579,7 +579,7 @@ gtag('consent','default',{
 
   /* ════════ CONFIG ════════ */
   var DATA_URL   = "/suburb-profiles.json";          // served at site root (build.js copies it)
-  var LVM_LIVE   = false;                              // ⚠ step 3: set true once Worker is deployed
+  var LVM_LIVE   = true;                               // live: posts to the deployed Worker
   var LVM_ENDPOINT = "/api/suburb-matcher";           // ⚠ step 3: Cloudflare Worker route
   var SUBURB_URL = function(slug){ return "/" + slug + "-texas"; };
   var SUBURB_HUB = "/dallas-fort-worth-suburbs";
