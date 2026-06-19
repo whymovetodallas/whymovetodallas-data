@@ -514,6 +514,9 @@ gtag('consent','default',{
 .lvm-gate-form input{padding:13px 15px;border:1px solid var(--lvm-line);border-radius:8px;
   font-family:inherit;font-size:.95rem;}
 .lvm-gate-form input:focus{outline:none;border-color:var(--lvm-gold);}
+.lvm-gate-row{display:flex;gap:10px;}
+.lvm-gate-row input{flex:1;min-width:0;}
+@media (max-width:420px){.lvm-gate-row{flex-direction:column;}}
 .lvm-gate-fine{font-size:.74rem;color:#999;margin:.8rem auto 0;max-width:420px;line-height:1.4;}
 .lvm-secondary{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin:8px 0 0;}
 .lvm-disclaimer{font-size:.8rem;color:#8a8a8a;line-height:1.55;border-top:1px solid var(--lvm-line);
@@ -774,7 +777,7 @@ gtag('consent','default',{
     // context (not scored)
     origin:null, timeline:null, household:null,
     // lead
-    firstName:null, email:null
+    firstName:null, lastName:null, email:null, phone:null
   };
 
   var LEVERS = {
@@ -1232,8 +1235,12 @@ gtag('consent','default',{
       '<p>Get your complete personalized suburb report — the full ranking, the numbers behind each match, and the <strong>30-60-90 relocation checklist</strong> — sent to your inbox.</p>'+
       '<form class="lvm-gate-form" id="lvmLeadForm">'+
         '<input type="text" id="lvmCompany" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;">'+
-        '<input type="text" id="lvmFirst" placeholder="First name" autocomplete="given-name" required>'+
+        '<div class="lvm-gate-row">'+
+          '<input type="text" id="lvmFirst" placeholder="First name" autocomplete="given-name" required>'+
+          '<input type="text" id="lvmLast" placeholder="Last name" autocomplete="family-name" required>'+
+        '</div>'+
         '<input type="email" id="lvmEmail" placeholder="Email address" autocomplete="email" required>'+
+        '<input type="tel" id="lvmPhone" placeholder="Phone (optional)" autocomplete="tel" inputmode="tel">'+
         '<button type="submit" class="lvm-btn lvm-btn--gold" style="width:100%;">Email me my full report</button>'+
       '</form>'+
       '<p class="lvm-gate-fine">No spam — your report plus occasional DFW relocation tips from Kristen. Unsubscribe anytime.</p>'+
@@ -1261,7 +1268,9 @@ gtag('consent','default',{
     return {
       source:"suburb-quiz",
       firstName: ($("lvmFirst")||{}).value || "",
+      lastName: ($("lvmLast")||{}).value || "",
       email: ($("lvmEmail")||{}).value || "",
+      phone: ($("lvmPhone")||{}).value || "",                // optional
       company: ($("lvmCompany")||{}).value || "",            // honeypot — must stay empty
       ranking: answers.ranking,
       answers: answers,
