@@ -358,58 +358,54 @@ gtag('consent','default',{
   <!-- Gold accent line (appears on scroll) -->
   <span class="kc-nav-accent" aria-hidden="true"></span>
 
-  <!-- Main navigation bar -->
+  <!-- Main navigation bar — two rows -->
   <div class="kc-nav">
 
-    <!-- Left: Why Move to Dallas logo + nav links -->
-    <div class="kc-nav-left-group">
+    <!-- Row 1: agent logo (left) · brand logo (center) · CTA (right) -->
+    <div class="kc-nav-row1">
       <a href="/" class="kc-nav-agent-logo" aria-label="Why Move to Dallas | DFW Family Relocation">
         <img src="/images/logo-icon.png"
              alt="Why Move to Dallas | DFW Family Relocation"
              width="240" height="240"
              loading="eager">
       </a>
-      <nav class="kc-nav-links kc-nav-left" aria-label="Main navigation">
-        <a href="/dallas-fort-worth-suburbs">Suburbs</a>
-        <a href="/dfw-school-districts">Schools</a>
-        <a href="/new-construction-dfw">New Construction</a>
-        <a href="/find-your-dfw-suburb">Find Your Suburb</a>
-        <a href="/blog">Blog</a>
-        <a href="/dfw-family-activities">Activities</a>
-      </nav>
-    </div>
 
-    <!-- Centered logo -->
-    <a href="/" class="kc-nav-logo" aria-label="Why Move to Dallas — home">
-      <img src="/images/logo-why-move-to-dallas-header.webp"
-           alt="Why Move to Dallas"
-           class="kc-logo-full"
-           width="1160" height="240"
-           loading="eager"
-           fetchpriority="high">
-      <img src="/images/logo-why-move-to-dallas-mobile.png"
-           alt="Why Move to Dallas"
-           class="kc-logo-icon"
-           width="800" height="533"
-           loading="eager">
-    </a>
+      <a href="/" class="kc-nav-logo" aria-label="Why Move to Dallas — home">
+        <img src="/images/logo-why-move-to-dallas-header.webp"
+             alt="Why Move to Dallas"
+             class="kc-logo-full"
+             width="1160" height="240"
+             loading="eager"
+             fetchpriority="high">
+        <img src="/images/logo-why-move-to-dallas-mobile.png"
+             alt="Why Move to Dallas"
+             class="kc-logo-icon"
+             width="800" height="533"
+             loading="eager">
+      </a>
 
-    <!-- Right nav links + CTA -->
-    <div class="kc-nav-right">
-      <nav class="kc-nav-links" aria-label="Main navigation">
-        <a href="/about">About</a>
-        <a href="/contact">Contact</a>
-        <a href="/get-started">Get Started</a>
-      </nav>
       <a href="https://calendly.com/socialagentgroup/let-s-talk" target="_blank" rel="noopener noreferrer" class="kc-nav-cta">Schedule a call</a>
+
+      <!-- Hamburger (mobile only) -->
+      <button class="kc-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="kc-mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
 
-    <!-- Hamburger (mobile only) -->
-    <button class="kc-hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="kc-mobile-menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
+    <!-- Row 2: all nav links, centered -->
+    <nav class="kc-nav-row2" aria-label="Main navigation">
+      <a href="/dallas-fort-worth-suburbs">Suburbs</a>
+      <a href="/dfw-school-districts">Schools</a>
+      <a href="/new-construction-dfw">New Construction</a>
+      <a href="/find-your-dfw-suburb">Find Your Suburb</a>
+      <a href="/blog">Blog</a>
+      <a href="/dfw-family-activities">Activities</a>
+      <a href="/about">About</a>
+      <a href="/contact">Contact</a>
+      <a href="/get-started">Get Started</a>
+    </nav>
 
   </div>
 
@@ -456,7 +452,7 @@ gtag('consent','default',{
 
   // Mark active nav link
   var path = window.location.pathname.replace(/\/$/, '') || '/';
-  hdr.querySelectorAll('.kc-nav-links a, .kc-mobile-menu a').forEach(function (a) {
+  hdr.querySelectorAll('.kc-nav-row2 a, .kc-mobile-menu a').forEach(function (a) {
     var href = a.getAttribute('href').replace(/\/$/, '') || '/';
     if (href === path) a.classList.add('active');
   });
