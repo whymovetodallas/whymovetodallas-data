@@ -534,29 +534,171 @@ gtag('consent','default',{
   .lvm-fit{order:3;}
   .lvm-nav .lvm-btn{padding:13px 20px;font-size:.78rem;}
 }
+
+/* ════════ LANDING / HERO ════════ */
+.lvm-hero{display:grid;grid-template-columns:1.04fr .96fr;gap:44px;align-items:center;padding:12px 0 10px;}
+.lvm-hero-text .lvm-eyebrow{text-align:left;}
+.lvm-hero-text .lvm-h1{text-align:left;font-size:clamp(2.1rem,4.6vw,3.3rem);line-height:1.08;margin-bottom:.7rem;}
+.lvm-hero-text .lvm-lead{text-align:left;max-width:none;margin:0 0 1.5rem;}
+.lvm-hero-cta{display:flex;flex-direction:column;align-items:flex-start;gap:.65rem;}
+.lvm-hero-note{font-size:.8rem;color:#8a8a8a;letter-spacing:.01em;}
+.lvm-hero-note b{color:var(--lvm-gold);font-weight:600;}
+/* app-style levers demo */
+.lvm-demo{background:#fff;border:1px solid var(--lvm-line);border-radius:18px;box-shadow:0 22px 60px rgba(31,45,61,.13);padding:22px 22px 20px;}
+.lvm-demo-bar{display:flex;align-items:center;justify-content:space-between;margin:0 0 16px;}
+.lvm-demo-bar small{font:700 .66rem/1 'Jost',sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#b7b0a4;}
+.lvm-demo-dots{display:flex;gap:5px;}
+.lvm-demo-dots i{width:9px;height:9px;border-radius:50%;background:var(--lvm-stone);}
+.lvm-demo-row{display:flex;align-items:center;gap:12px;margin:0 0 14px;}
+.lvm-demo-row:last-child{margin-bottom:0;}
+.lvm-demo-row .ic{flex:0 0 24px;height:24px;color:var(--lvm-gold);}
+.lvm-demo-row .ic svg{width:24px;height:24px;}
+.lvm-demo-row .nm{flex:0 0 78px;font-size:.84rem;font-weight:600;color:var(--lvm-navy);}
+.lvm-demo-track{flex:1 1 auto;height:9px;border-radius:6px;background:var(--lvm-ivory);position:relative;overflow:hidden;}
+.lvm-demo-track i{position:absolute;left:0;top:0;bottom:0;border-radius:6px;background:linear-gradient(90deg,#ccab6d,var(--lvm-gold));width:0;animation:lvmFill 1.05s cubic-bezier(.2,.85,.25,1) forwards;}
+@keyframes lvmFill{to{width:var(--w);}}
+.lvm-demo-row:nth-child(2) i{animation-delay:.45s}
+.lvm-demo-row:nth-child(3) i{animation-delay:.6s}
+.lvm-demo-row:nth-child(4) i{animation-delay:.75s}
+.lvm-demo-row:nth-child(5) i{animation-delay:.9s}
+
+/* shared section heads */
+.lvm-sec{padding:40px 0 6px;}
+.lvm-sec-h{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:clamp(1.6rem,3.4vw,2.25rem);color:var(--lvm-navy);text-align:center;line-height:1.15;margin:0 0 .4rem;}
+.lvm-sec-sub{text-align:center;color:#666;font-size:.98rem;max-width:580px;margin:0 auto 1.9rem;line-height:1.6;}
+
+/* the four levers as cards */
+.lvm-lgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
+.lvm-lcard{background:#fff;border:1px solid var(--lvm-line);border-radius:14px;padding:22px 16px;text-align:center;transition:transform .16s,box-shadow .16s,border-color .16s;}
+.lvm-lcard:hover{transform:translateY(-4px);box-shadow:0 14px 32px rgba(176,141,87,.17);border-color:var(--lvm-gold);}
+.lvm-lcard-ic{width:50px;height:50px;border-radius:50%;background:var(--lvm-ivory);display:flex;align-items:center;justify-content:center;margin:0 auto 13px;}
+.lvm-lcard-ic svg{width:27px;height:27px;}
+.lvm-lcard strong{display:block;font-size:1.04rem;color:var(--lvm-navy);margin:0 0 .25rem;}
+.lvm-lcard span{font-size:.82rem;color:#787878;line-height:1.45;}
+
+/* how it works */
+.lvm-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.lvm-step{text-align:center;padding:0 6px;}
+.lvm-step-n{width:46px;height:46px;border-radius:50%;background:var(--lvm-navy);color:#fff;font-family:'Cormorant Garamond',serif;font-size:1.35rem;font-weight:600;display:flex;align-items:center;justify-content:center;margin:0 auto 13px;}
+.lvm-step strong{display:block;color:var(--lvm-navy);font-size:1.02rem;margin:0 0 .3rem;}
+.lvm-step span{font-size:.87rem;color:#787878;line-height:1.5;}
+
+/* sample result preview */
+.lvm-preview{max-width:470px;margin:0 auto;background:#fff;border:1px solid var(--lvm-gold);border-radius:16px;box-shadow:0 16px 44px rgba(176,141,87,.18);overflow:hidden;}
+.lvm-preview-flag{font:700 .62rem/1 'Jost',sans-serif;letter-spacing:.16em;text-transform:uppercase;color:#fff;background:var(--lvm-gold);text-align:center;padding:7px;}
+.lvm-preview-top{display:flex;align-items:center;gap:13px;padding:18px 20px 4px;}
+.lvm-preview-badge{flex:0 0 auto;width:42px;height:42px;border-radius:10px;background:var(--lvm-gold);color:#fff;font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:600;display:flex;align-items:center;justify-content:center;}
+.lvm-preview-nm{flex:1 1 auto;}
+.lvm-preview-nm h4{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:600;color:var(--lvm-navy);margin:0;line-height:1;}
+.lvm-preview-nm .m{font-size:.8rem;color:#888;margin-top:2px;}
+.lvm-preview-fit{flex:0 0 auto;text-align:center;}
+.lvm-preview-fit b{display:block;font-size:1.3rem;color:var(--lvm-gold);font-weight:700;line-height:1;}
+.lvm-preview-fit span{font-size:.62rem;text-transform:uppercase;letter-spacing:.1em;color:#aaa;}
+.lvm-preview p{font-size:.9rem;line-height:1.6;color:#444;padding:8px 20px 4px;margin:0;}
+.lvm-preview-bars{display:flex;flex-wrap:wrap;gap:9px 16px;padding:8px 20px 18px;}
+.lvm-preview-bars .b{flex:1 1 120px;min-width:110px;}
+.lvm-preview-bars .b .t{display:flex;justify-content:space-between;font-size:.72rem;color:#666;margin:0 0 4px;}
+.lvm-preview-bars .b .tr{height:6px;background:var(--lvm-ivory);border-radius:4px;overflow:hidden;}
+.lvm-preview-bars .b .fl{height:100%;background:var(--lvm-gold);border-radius:4px;}
+
+/* final CTA */
+.lvm-final{text-align:center;background:var(--lvm-navy);border-radius:20px;padding:42px 24px;margin:42px 0 0;}
+.lvm-final h2{color:#fff;font-family:'Cormorant Garamond',serif;font-weight:600;font-size:clamp(1.7rem,3.6vw,2.4rem);line-height:1.15;margin:0 0 .5rem;}
+.lvm-final p{color:#cdc6ba;font-size:1rem;max-width:480px;margin:0 auto 1.5rem;line-height:1.6;}
+.lvm-credit{display:block;margin:1.3rem auto 0;font-size:.78rem;color:#9aa3ad;letter-spacing:.01em;}
+
+@media(max-width:760px){
+  .lvm-hero{grid-template-columns:1fr;gap:26px;}
+  .lvm-hero-text{text-align:center;}
+  .lvm-hero-text .lvm-eyebrow,.lvm-hero-text .lvm-h1,.lvm-hero-text .lvm-lead{text-align:center;}
+  .lvm-hero-cta{align-items:center;}
+  .lvm-lgrid{grid-template-columns:repeat(2,1fr);}
+  .lvm-steps{grid-template-columns:1fr;gap:24px;}
+}
 </style>
 
 <section class="lvm-app" id="lvmApp" aria-live="polite">
 
   <!-- ============ INTRO ============ -->
   <div class="lvm-screen" id="lvmIntro">
-    <span class="lvm-eyebrow">The 4-Lever Suburb Matcher</span>
-    <h1 class="lvm-h1">Find Your DFW Fit in 4 Levers</h1>
-    <p class="lvm-lead">You're not choosing a house — you're choosing a daily life. Rank the four
-      levers that matter most to <em>your</em> family, answer a few quick questions, and watch
-      Dallas–Fort Worth narrow from a long list of suburbs down to about three that actually fit.</p>
-    <div style="text-align:center;">
-      <span class="lvm-byline">
-        <img src="/images/kristen-headshot-01.webp" alt="Kristen Carpentier, DFW Realtor" width="46" height="46" onerror="this.style.display='none'">
-        <span class="lvm-byline-t"><strong>with Kristen Carpentier</strong><span>Licensed TX Realtor® · DFW Family Relocation</span></span>
-      </span>
+
+    <!-- HERO -->
+    <div class="lvm-hero">
+      <div class="lvm-hero-text">
+        <span class="lvm-eyebrow">The 4-Lever Suburb Matcher</span>
+        <h1 class="lvm-h1">Find your DFW&nbsp;fit in 4&nbsp;levers</h1>
+        <p class="lvm-lead">You're not choosing a house — you're choosing a daily life. Rank what matters most to <em>your</em> family, and watch Dallas–Fort Worth narrow from <strong>70 suburbs</strong> down to your top three — with the honest tradeoffs spelled out.</p>
+        <div class="lvm-hero-cta">
+          <button class="lvm-btn lvm-btn--gold lvm-start-btn" id="lvmStart">Start — it takes 2 minutes
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+          <span class="lvm-hero-note"><b>Free</b> · No account · Your top matches show on screen</span>
+        </div>
+      </div>
+
+      <!-- app-style levers demo -->
+      <div class="lvm-demo" aria-hidden="true">
+        <div class="lvm-demo-bar"><small>Your levers</small><span class="lvm-demo-dots"><i></i><i></i><i></i></span></div>
+        <div class="lvm-demo-row"><span class="ic"><svg viewBox="0 0 28 28" fill="none" stroke="#B08D57" stroke-width="1.75"><path d="M14 5L3 10l11 5 11-5-11-5z"/><path d="M7 12v5c0 1.5 3.1 3 7 3s7-1.5 7-3v-5"/></svg></span><span class="nm">Schools</span><span class="lvm-demo-track"><i style="--w:92%"></i></span></div>
+        <div class="lvm-demo-row"><span class="ic"><svg viewBox="0 0 28 28" fill="none" stroke="#B08D57" stroke-width="1.75"><path d="M5 16l1.5-5A3 3 0 019.4 9h9.2a3 3 0 012.9 2l1.5 5"/><path d="M4 16h20v4H4z"/><circle cx="8" cy="20" r="1.6"/><circle cx="20" cy="20" r="1.6"/></svg></span><span class="nm">Commute</span><span class="lvm-demo-track"><i style="--w:80%"></i></span></div>
+        <div class="lvm-demo-row"><span class="ic"><svg viewBox="0 0 28 28" fill="none" stroke="#B08D57" stroke-width="1.75"><circle cx="14" cy="14" r="9"/><path d="M14 9v10M11.5 11.2c0-1.2 1.1-2 2.5-2s2.5.8 2.5 2-1.1 1.8-2.5 1.8-2.5.8-2.5 2 1.1 2 2.5 2 2.5-.8 2.5-2"/></svg></span><span class="nm">Budget</span><span class="lvm-demo-track"><i style="--w:62%"></i></span></div>
+        <div class="lvm-demo-row"><span class="ic"><svg viewBox="0 0 28 28" fill="none" stroke="#B08D57" stroke-width="1.75"><path d="M4 13l10-8 10 8"/><path d="M7 11v10h14V11"/><path d="M11 21v-6h6v6"/></svg></span><span class="nm">Lifestyle</span><span class="lvm-demo-track"><i style="--w:74%"></i></span></div>
+      </div>
     </div>
-    <div style="text-align:center;">
-      <button class="lvm-btn lvm-btn--gold" id="lvmStart">Start — it takes 2 minutes
+
+    <!-- THE FOUR LEVERS -->
+    <div class="lvm-sec">
+      <h2 class="lvm-sec-h">It comes down to four levers</h2>
+      <p class="lvm-sec-sub">Most families can get three of the four easily. The fourth is the one that costs you — and naming it is the whole game.</p>
+      <div class="lvm-lgrid">
+        <div class="lvm-lcard"><div class="lvm-lcard-ic"><svg viewBox="0 0 28 28" fill="none" stroke="#B08D57" stroke-width="1.75"><path d="M14 5L3 10l11 5 11-5-11-5z"/><path d="M7 12v5c0 1.5 3.1 3 7 3s7-1.5 7-3v-5"/></svg></div><strong>Schools</strong><span>District ratings, programs, the right fit for your kids</span></div>
+        <div class="lvm-lcard"><div class="lvm-lcard-ic"><svg viewBox="0 0 28 28" fill="none" stroke="#B08D57" stroke-width="1.75"><path d="M5 16l1.5-5A3 3 0 019.4 9h9.2a3 3 0 012.9 2l1.5 5"/><path d="M4 16h20v4H4z"/><circle cx="8" cy="20" r="1.6"/><circle cx="20" cy="20" r="1.6"/></svg></div><strong>Commute</strong><span>How far from work, school runs, and daily life</span></div>
+        <div class="lvm-lcard"><div class="lvm-lcard-ic"><svg viewBox="0 0 28 28" fill="none" stroke="#B08D57" stroke-width="1.75"><circle cx="14" cy="14" r="9"/><path d="M14 9v10M11.5 11.2c0-1.2 1.1-2 2.5-2s2.5.8 2.5 2-1.1 1.8-2.5 1.8-2.5.8-2.5 2 1.1 2 2.5 2 2.5-.8 2.5-2"/></svg></div><strong>Budget</strong><span>What your money buys, taxes, new vs. resale</span></div>
+        <div class="lvm-lcard"><div class="lvm-lcard-ic"><svg viewBox="0 0 28 28" fill="none" stroke="#B08D57" stroke-width="1.75"><path d="M4 13l10-8 10 8"/><path d="M7 11v10h14V11"/><path d="M11 21v-6h6v6"/></svg></div><strong>Lifestyle</strong><span>Walkability, space, vibe, and the amenities you want</span></div>
+      </div>
+    </div>
+
+    <!-- HOW IT WORKS -->
+    <div class="lvm-sec">
+      <h2 class="lvm-sec-h">How it works</h2>
+      <div class="lvm-steps">
+        <div class="lvm-step"><div class="lvm-step-n">1</div><strong>Rank your levers</strong><span>Drag the four into priority order for your family. That sets how every suburb is scored.</span></div>
+        <div class="lvm-step"><div class="lvm-step-n">2</div><strong>Answer a few questions</strong><span>Commute anchor, budget band, school priorities, the vibe you want. Two minutes, tops.</span></div>
+        <div class="lvm-step"><div class="lvm-step-n">3</div><strong>Get your top three</strong><span>We score all 70 DFW suburbs and hand you a shortlist — plus the honest tradeoff for each.</span></div>
+      </div>
+    </div>
+
+    <!-- WHAT YOU GET -->
+    <div class="lvm-sec">
+      <h2 class="lvm-sec-h">What you'll get</h2>
+      <p class="lvm-sec-sub">A real recommendation — not a personality-quiz result. Here's a taste:</p>
+      <div class="lvm-preview">
+        <div class="lvm-preview-flag">Sample result</div>
+        <div class="lvm-preview-top">
+          <span class="lvm-preview-badge">1</span>
+          <span class="lvm-preview-nm"><h4>Frisco</h4><span class="m">Collin County · $679K median · Frisco ISD</span></span>
+          <span class="lvm-preview-fit"><b>91</b><span>fit</span></span>
+        </div>
+        <p>Frisco ISD carries a Niche A+ overall, you're about 18 minutes to your North Dallas anchor, and it has a fast-growing, master-planned feel with lots of new construction.</p>
+        <div class="lvm-preview-bars">
+          <div class="b"><div class="t"><span>Schools</span><span>95</span></div><div class="tr"><div class="fl" style="width:95%"></div></div></div>
+          <div class="b"><div class="t"><span>Commute</span><span>85</span></div><div class="tr"><div class="fl" style="width:85%"></div></div></div>
+          <div class="b"><div class="t"><span>Budget</span><span>78</span></div><div class="tr"><div class="fl" style="width:78%"></div></div></div>
+          <div class="b"><div class="t"><span>Lifestyle</span><span>82</span></div><div class="tr"><div class="fl" style="width:82%"></div></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FINAL CTA -->
+    <div class="lvm-final">
+      <h2>Ready to find your three?</h2>
+      <p>Rank your levers and let Dallas–Fort Worth narrow itself down. Free, about two minutes, and your matches show up right on screen.</p>
+      <button class="lvm-btn lvm-btn--gold lvm-start-btn">Start the Suburb Matcher
         <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
       </button>
+      <span class="lvm-credit">Built by Kristen Carpentier · Licensed TX REALTOR® · DFW family relocation specialist</span>
     </div>
-    <p class="lvm-hint" style="margin-top:1rem;">No account needed. Your top matches show on screen — free.</p>
+
   </div>
 
   <!-- ============ WIZARD ============ -->
@@ -1185,9 +1327,8 @@ gtag('consent','default',{
   function init(){
     elBack.addEventListener("click",back);
     elNext.addEventListener("click",next);
-    $("lvmStart").addEventListener("click",function(){
-      if(!DATA){ loadData(startWizard); } else { startWizard(); }
-    });
+    var startFn=function(){ if(!DATA){ loadData(startWizard); } else { startWizard(); } };
+    document.querySelectorAll(".lvm-start-btn").forEach(function(b){ b.addEventListener("click",startFn); });
   }
   function loadData(cb){
     elLoading.classList.remove("hidden"); elIntro.classList.add("hidden");
