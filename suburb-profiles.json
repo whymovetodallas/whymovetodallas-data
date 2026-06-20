@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "last_updated": "2026-06-20T03:23:56.242Z",
+    "last_updated": "2026-06-20T17:54:02.743Z",
     "sources": [
       "Census ACS 2023",
       "WalkScore (2026-06-09)",
@@ -66,7 +66,48 @@
         "condo_median_price": 286479.2,
         "condo_closed_sales_12mo": 25,
         "condo_days_on_market": 70.3,
-        "condo_months_supply": 5.3
+        "condo_months_supply": 5.3,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 352829,
+            "price_per_sqft": 228.8,
+            "sqft": 1542,
+            "closed_sales": 3,
+            "low_confidence": true
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 568033,
+            "price_per_sqft": 276.7,
+            "sqft": 2053,
+            "closed_sales": 54
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 769594,
+            "price_per_sqft": 275.4,
+            "sqft": 2794,
+            "closed_sales": 5,
+            "low_confidence": true
+          },
+          "luxury": {
+            "label": "Luxury",
+            "min": 1000000,
+            "max": null,
+            "median_sale_price": 2519667,
+            "price_per_sqft": 362.6,
+            "sqft": 6949,
+            "closed_sales": 6,
+            "low_confidence": true
+          }
+        }
       },
       "schools": {
         "isd_name": "Carrollton-Farmers Branch ISD",
@@ -146,7 +187,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -195,7 +236,45 @@
         "condo_median_price": 371762.1,
         "condo_closed_sales_12mo": 15,
         "condo_days_on_market": 126.7,
-        "condo_months_supply": 6.1
+        "condo_months_supply": 6.1,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 332896,
+            "price_per_sqft": 208.8,
+            "sqft": 1594,
+            "closed_sales": 236
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 521183,
+            "price_per_sqft": 204.8,
+            "sqft": 2545,
+            "closed_sales": 548
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 802990,
+            "price_per_sqft": 219.8,
+            "sqft": 3653,
+            "closed_sales": 166
+          },
+          "luxury": {
+            "label": "Luxury",
+            "min": 1000000,
+            "max": null,
+            "median_sale_price": 1186667,
+            "price_per_sqft": 269.2,
+            "sqft": 4408,
+            "closed_sales": 39
+          }
+        }
       },
       "schools": {
         "isd_name": "Allen ISD",
@@ -275,7 +354,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -324,7 +403,46 @@
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
         "condo_days_on_market": null,
-        "condo_months_supply": null
+        "condo_months_supply": null,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 330497,
+            "price_per_sqft": 166.7,
+            "sqft": 1983,
+            "closed_sales": 541
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 458541,
+            "price_per_sqft": 160.8,
+            "sqft": 2852,
+            "closed_sales": 232
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 814320,
+            "price_per_sqft": 295.3,
+            "sqft": 2758,
+            "closed_sales": 10,
+            "low_confidence": true
+          },
+          "luxury": {
+            "label": "Luxury",
+            "min": 1000000,
+            "max": null,
+            "median_sale_price": 1466062,
+            "price_per_sqft": 387,
+            "sqft": 3788,
+            "closed_sales": 13
+          }
+        }
       },
       "schools": {
         "isd_name": "Anna ISD",
@@ -404,7 +522,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -453,7 +571,45 @@
         "condo_median_price": 402982,
         "condo_closed_sales_12mo": 0,
         "condo_days_on_market": 36,
-        "condo_months_supply": null
+        "condo_months_supply": null,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 379427,
+            "price_per_sqft": 205.7,
+            "sqft": 1845,
+            "closed_sales": 44
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 489395,
+            "price_per_sqft": 196.3,
+            "sqft": 2493,
+            "closed_sales": 247
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 818133,
+            "price_per_sqft": 238.1,
+            "sqft": 3436,
+            "closed_sales": 80
+          },
+          "luxury": {
+            "label": "Luxury",
+            "min": 1000000,
+            "max": null,
+            "median_sale_price": 1422464,
+            "price_per_sqft": 333.7,
+            "sqft": 4263,
+            "closed_sales": 75
+          }
+        }
       },
       "schools": {
         "isd_name": "Argyle ISD",
@@ -533,7 +689,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "estimate"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -582,7 +738,45 @@
         "condo_median_price": 146237,
         "condo_closed_sales_12mo": 118,
         "condo_days_on_market": 75,
-        "condo_months_supply": 8.7
+        "condo_months_supply": 8.7,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 303042,
+            "price_per_sqft": 176.9,
+            "sqft": 1713,
+            "closed_sales": 2039
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 468671,
+            "price_per_sqft": 181.1,
+            "sqft": 2588,
+            "closed_sales": 687
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 783250,
+            "price_per_sqft": 223.6,
+            "sqft": 3503,
+            "closed_sales": 58
+          },
+          "luxury": {
+            "label": "Luxury",
+            "min": 1000000,
+            "max": null,
+            "median_sale_price": 1318986,
+            "price_per_sqft": 271.4,
+            "sqft": 4860,
+            "closed_sales": 33
+          }
+        }
       },
       "schools": {
         "isd_name": "Arlington ISD",
@@ -662,7 +856,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -711,7 +905,36 @@
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
         "condo_days_on_market": null,
-        "condo_months_supply": null
+        "condo_months_supply": null,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 316375,
+            "price_per_sqft": 168.8,
+            "sqft": 1874,
+            "closed_sales": 663
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 488189,
+            "price_per_sqft": 176.1,
+            "sqft": 2772,
+            "closed_sales": 273
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 841200,
+            "price_per_sqft": 236.1,
+            "sqft": 3563,
+            "closed_sales": 33
+          }
+        }
       },
       "schools": {
         "isd_name": "Aubrey ISD",
@@ -791,7 +1014,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -840,7 +1063,46 @@
         "condo_median_price": 312000,
         "condo_closed_sales_12mo": 0,
         "condo_days_on_market": 6,
-        "condo_months_supply": 0.8
+        "condo_months_supply": 0.8,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 299693,
+            "price_per_sqft": 174.9,
+            "sqft": 1714,
+            "closed_sales": 367
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 516104,
+            "price_per_sqft": 220.9,
+            "sqft": 2336,
+            "closed_sales": 158
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 804079,
+            "price_per_sqft": 293.3,
+            "sqft": 2741,
+            "closed_sales": 37
+          },
+          "luxury": {
+            "label": "Luxury",
+            "min": 1000000,
+            "max": null,
+            "median_sale_price": 1181453,
+            "price_per_sqft": 326.3,
+            "sqft": 3621,
+            "closed_sales": 10,
+            "low_confidence": true
+          }
+        }
       },
       "schools": {
         "isd_name": "Azle ISD",
@@ -920,7 +1182,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -969,7 +1231,37 @@
         "condo_median_price": 256919.1,
         "condo_closed_sales_12mo": 10,
         "condo_days_on_market": 45.3,
-        "condo_months_supply": 1.7
+        "condo_months_supply": 1.7,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 342383,
+            "price_per_sqft": 205.8,
+            "sqft": 1664,
+            "closed_sales": 258
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 470708,
+            "price_per_sqft": 207.6,
+            "sqft": 2267,
+            "closed_sales": 194
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 797366,
+            "price_per_sqft": 226.9,
+            "sqft": 3514,
+            "closed_sales": 8,
+            "low_confidence": true
+          }
+        }
       },
       "schools": {
         "isd_name": "HEB ISD",
@@ -1049,7 +1341,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -1098,7 +1390,45 @@
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
         "condo_days_on_market": null,
-        "condo_months_supply": null
+        "condo_months_supply": null,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 303888,
+            "price_per_sqft": 174.6,
+            "sqft": 1740,
+            "closed_sales": 614
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 485258,
+            "price_per_sqft": 177.9,
+            "sqft": 2728,
+            "closed_sales": 279
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 837128,
+            "price_per_sqft": 235.6,
+            "sqft": 3553,
+            "closed_sales": 42
+          },
+          "luxury": {
+            "label": "Luxury",
+            "min": 1000000,
+            "max": null,
+            "median_sale_price": 1329863,
+            "price_per_sqft": 295,
+            "sqft": 4508,
+            "closed_sales": 14
+          }
+        }
       },
       "schools": {
         "isd_name": "Burleson ISD",
@@ -1178,7 +1508,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -1227,7 +1557,45 @@
         "condo_median_price": 233416.7,
         "condo_closed_sales_12mo": 37,
         "condo_days_on_market": 60.4,
-        "condo_months_supply": 9.9
+        "condo_months_supply": 9.9,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 345319,
+            "price_per_sqft": 210.4,
+            "sqft": 1641,
+            "closed_sales": 436
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 486995,
+            "price_per_sqft": 212.8,
+            "sqft": 2289,
+            "closed_sales": 543
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 824025,
+            "price_per_sqft": 232.6,
+            "sqft": 3543,
+            "closed_sales": 104
+          },
+          "luxury": {
+            "label": "Luxury",
+            "min": 1000000,
+            "max": null,
+            "median_sale_price": 1136775,
+            "price_per_sqft": 277.9,
+            "sqft": 4091,
+            "closed_sales": 20
+          }
+        }
       },
       "schools": {
         "isd_name": "Carrollton-Farmers Branch ISD",
@@ -1307,7 +1675,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -1356,7 +1724,45 @@
         "condo_median_price": 153125,
         "condo_closed_sales_12mo": 0,
         "condo_days_on_market": 11,
-        "condo_months_supply": 0.9
+        "condo_months_supply": 0.9,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 310140,
+            "price_per_sqft": 162.1,
+            "sqft": 1913,
+            "closed_sales": 332
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 514449,
+            "price_per_sqft": 164.3,
+            "sqft": 3131,
+            "closed_sales": 103
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 784546,
+            "price_per_sqft": 216.9,
+            "sqft": 3617,
+            "closed_sales": 21
+          },
+          "luxury": {
+            "label": "Luxury",
+            "min": 1000000,
+            "max": null,
+            "median_sale_price": 1418583,
+            "price_per_sqft": 236.3,
+            "sqft": 6003,
+            "closed_sales": 15
+          }
+        }
       },
       "schools": {
         "isd_name": "Cedar Hill ISD",
@@ -1436,7 +1842,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -1485,7 +1891,45 @@
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
         "condo_days_on_market": null,
-        "condo_months_supply": null
+        "condo_months_supply": null,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 359146,
+            "price_per_sqft": 181.1,
+            "sqft": 1983,
+            "closed_sales": 358
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 534496,
+            "price_per_sqft": 185.4,
+            "sqft": 2883,
+            "closed_sales": 973
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 804373,
+            "price_per_sqft": 226.9,
+            "sqft": 3545,
+            "closed_sales": 196
+          },
+          "luxury": {
+            "label": "Luxury",
+            "min": 1000000,
+            "max": null,
+            "median_sale_price": 1382006,
+            "price_per_sqft": 303.8,
+            "sqft": 4549,
+            "closed_sales": 122
+          }
+        }
       },
       "schools": {
         "isd_name": "Celina ISD",
@@ -1565,7 +2009,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -1614,7 +2058,36 @@
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
         "condo_days_on_market": null,
-        "condo_months_supply": null
+        "condo_months_supply": null,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 278980,
+            "price_per_sqft": 157.6,
+            "sqft": 1770,
+            "closed_sales": 698
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 501661,
+            "price_per_sqft": 198.3,
+            "sqft": 2530,
+            "closed_sales": 84
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 830225,
+            "price_per_sqft": 328.3,
+            "sqft": 2529,
+            "closed_sales": 16
+          }
+        }
       },
       "schools": {
         "isd_name": "Cleburne ISD",
@@ -1694,7 +2167,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -1743,7 +2216,46 @@
         "condo_median_price": 440979.2,
         "condo_closed_sales_12mo": 10,
         "condo_days_on_market": 55,
-        "condo_months_supply": 3.7
+        "condo_months_supply": 3.7,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 343250,
+            "price_per_sqft": 342,
+            "sqft": 1004,
+            "closed_sales": 2,
+            "low_confidence": true
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 607388,
+            "price_per_sqft": 251.1,
+            "sqft": 2419,
+            "closed_sales": 50
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 851646,
+            "price_per_sqft": 262.5,
+            "sqft": 3244,
+            "closed_sales": 110
+          },
+          "luxury": {
+            "label": "Luxury",
+            "min": 1000000,
+            "max": null,
+            "median_sale_price": 1317458,
+            "price_per_sqft": 293.8,
+            "sqft": 4484,
+            "closed_sales": 176
+          }
+        }
       },
       "schools": {
         "isd_name": "Grapevine-Colleyville ISD",
@@ -1823,7 +2335,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -1872,7 +2384,45 @@
         "condo_median_price": 251229.2,
         "condo_closed_sales_12mo": 7,
         "condo_days_on_market": 36,
-        "condo_months_supply": 1.2
+        "condo_months_supply": 1.2,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 365344,
+            "price_per_sqft": 252.2,
+            "sqft": 1449,
+            "closed_sales": 23
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 526072,
+            "price_per_sqft": 255.5,
+            "sqft": 2059,
+            "closed_sales": 183
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 812458,
+            "price_per_sqft": 238.3,
+            "sqft": 3409,
+            "closed_sales": 104
+          },
+          "luxury": {
+            "label": "Luxury",
+            "min": 1000000,
+            "max": null,
+            "median_sale_price": 1204321,
+            "price_per_sqft": 291.7,
+            "sqft": 4129,
+            "closed_sales": 36
+          }
+        }
       },
       "schools": {
         "isd_name": "Coppell ISD",
@@ -1952,7 +2502,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -2001,7 +2551,46 @@
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
         "condo_days_on_market": null,
-        "condo_months_supply": null
+        "condo_months_supply": null,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 347992,
+            "price_per_sqft": 195.7,
+            "sqft": 1778,
+            "closed_sales": 122
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 505420,
+            "price_per_sqft": 177,
+            "sqft": 2855,
+            "closed_sales": 244
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 787871,
+            "price_per_sqft": 212,
+            "sqft": 3716,
+            "closed_sales": 16
+          },
+          "luxury": {
+            "label": "Luxury",
+            "min": 1000000,
+            "max": null,
+            "median_sale_price": 1239583,
+            "price_per_sqft": 308.8,
+            "sqft": 4014,
+            "closed_sales": 2,
+            "low_confidence": true
+          }
+        }
       },
       "schools": {
         "isd_name": "Lake Dallas ISD",
@@ -2081,7 +2670,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -2130,7 +2719,27 @@
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
         "condo_days_on_market": null,
-        "condo_months_supply": null
+        "condo_months_supply": null,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 261385,
+            "price_per_sqft": 147.4,
+            "sqft": 1773,
+            "closed_sales": 761
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 466902,
+            "price_per_sqft": 175.2,
+            "sqft": 2665,
+            "closed_sales": 21
+          }
+        }
       },
       "schools": {
         "isd_name": "Crandall ISD",
@@ -2210,7 +2819,7 @@
           "shopping_total_suburbs": 65,
           "population_source": null
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -2259,7 +2868,45 @@
         "condo_median_price": 269344,
         "condo_closed_sales_12mo": 1498,
         "condo_days_on_market": 53.6,
-        "condo_months_supply": 8.7
+        "condo_months_supply": 8.7,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 266901,
+            "price_per_sqft": 175.8,
+            "sqft": 1518,
+            "closed_sales": 3187
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 546188,
+            "price_per_sqft": 262.1,
+            "sqft": 2084,
+            "closed_sales": 1887
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 816241,
+            "price_per_sqft": 316.8,
+            "sqft": 2577,
+            "closed_sales": 1152
+          },
+          "luxury": {
+            "label": "Luxury",
+            "min": 1000000,
+            "max": null,
+            "median_sale_price": 1567042,
+            "price_per_sqft": 425.3,
+            "sqft": 3685,
+            "closed_sales": 1553
+          }
+        }
       },
       "schools": {
         "isd_name": "Dallas ISD",
@@ -2339,7 +2986,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -2388,7 +3035,45 @@
         "condo_median_price": 216218.8,
         "condo_closed_sales_12mo": 8,
         "condo_days_on_market": 83.3,
-        "condo_months_supply": 5.6
+        "condo_months_supply": 5.6,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 329770,
+            "price_per_sqft": 185.3,
+            "sqft": 1780,
+            "closed_sales": 1081
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 466239,
+            "price_per_sqft": 185.9,
+            "sqft": 2508,
+            "closed_sales": 569
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 785896,
+            "price_per_sqft": 263.6,
+            "sqft": 2981,
+            "closed_sales": 61
+          },
+          "luxury": {
+            "label": "Luxury",
+            "min": 1000000,
+            "max": null,
+            "median_sale_price": 1254854,
+            "price_per_sqft": 328.8,
+            "sqft": 3816,
+            "closed_sales": 34
+          }
+        }
       },
       "schools": {
         "isd_name": "Denton ISD",
@@ -2468,7 +3153,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -2517,7 +3202,47 @@
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
         "condo_days_on_market": null,
-        "condo_months_supply": null
+        "condo_months_supply": null,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 303900,
+            "price_per_sqft": 148.7,
+            "sqft": 2044,
+            "closed_sales": 281
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 495476,
+            "price_per_sqft": 159.2,
+            "sqft": 3112,
+            "closed_sales": 145
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 747198,
+            "price_per_sqft": 183.9,
+            "sqft": 4063,
+            "closed_sales": 9,
+            "low_confidence": true
+          },
+          "luxury": {
+            "label": "Luxury",
+            "min": 1000000,
+            "max": null,
+            "median_sale_price": 1206980,
+            "price_per_sqft": 203.6,
+            "sqft": 5928,
+            "closed_sales": 2,
+            "low_confidence": true
+          }
+        }
       },
       "schools": {
         "isd_name": "DeSoto ISD",
@@ -2597,7 +3322,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -2646,7 +3371,47 @@
         "condo_median_price": 175211.1,
         "condo_closed_sales_12mo": 2,
         "condo_days_on_market": 84.2,
-        "condo_months_supply": 2.5
+        "condo_months_supply": 2.5,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 289869,
+            "price_per_sqft": 160.3,
+            "sqft": 1808,
+            "closed_sales": 208
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 463750,
+            "price_per_sqft": 156.8,
+            "sqft": 2958,
+            "closed_sales": 30
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 700000,
+            "price_per_sqft": 244,
+            "sqft": 2869,
+            "closed_sales": 1,
+            "low_confidence": true
+          },
+          "luxury": {
+            "label": "Luxury",
+            "min": 1000000,
+            "max": null,
+            "median_sale_price": 1000000,
+            "price_per_sqft": 173,
+            "sqft": 5780,
+            "closed_sales": 1,
+            "low_confidence": true
+          }
+        }
       },
       "schools": {
         "isd_name": "Duncanville ISD",
@@ -2726,7 +3491,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -2775,7 +3540,36 @@
         "condo_median_price": 279975,
         "condo_closed_sales_12mo": 2,
         "condo_days_on_market": 44,
-        "condo_months_supply": 1
+        "condo_months_supply": 1,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 309571,
+            "price_per_sqft": 208.3,
+            "sqft": 1486,
+            "closed_sales": 231
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 469736,
+            "price_per_sqft": 210.7,
+            "sqft": 2229,
+            "closed_sales": 158
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 753874,
+            "price_per_sqft": 211.3,
+            "sqft": 3568,
+            "closed_sales": 14
+          }
+        }
       },
       "schools": {
         "isd_name": "HEB ISD",
@@ -2855,7 +3649,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -2904,7 +3698,45 @@
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
         "condo_days_on_market": null,
-        "condo_months_supply": null
+        "condo_months_supply": null,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 376067,
+            "price_per_sqft": 243.5,
+            "sqft": 1544,
+            "closed_sales": 12
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 521447,
+            "price_per_sqft": 226.8,
+            "sqft": 2299,
+            "closed_sales": 74
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 817833,
+            "price_per_sqft": 269.8,
+            "sqft": 3031,
+            "closed_sales": 17
+          },
+          "luxury": {
+            "label": "Luxury",
+            "min": 1000000,
+            "max": null,
+            "median_sale_price": 1855290,
+            "price_per_sqft": 353.1,
+            "sqft": 5254,
+            "closed_sales": 45
+          }
+        }
       },
       "schools": {
         "isd_name": "Lovejoy ISD",
@@ -2984,7 +3816,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -3033,7 +3865,45 @@
         "condo_median_price": 223679.2,
         "condo_closed_sales_12mo": 29,
         "condo_days_on_market": 85.9,
-        "condo_months_supply": 5.7
+        "condo_months_supply": 5.7,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 313329,
+            "price_per_sqft": 224.4,
+            "sqft": 1396,
+            "closed_sales": 111
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 505039,
+            "price_per_sqft": 243.8,
+            "sqft": 2072,
+            "closed_sales": 100
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 798169,
+            "price_per_sqft": 245.7,
+            "sqft": 3249,
+            "closed_sales": 30
+          },
+          "luxury": {
+            "label": "Luxury",
+            "min": 1000000,
+            "max": null,
+            "median_sale_price": 1448459,
+            "price_per_sqft": 331.8,
+            "sqft": 4365,
+            "closed_sales": 13
+          }
+        }
       },
       "schools": {
         "isd_name": "Carrollton-Farmers Branch ISD",
@@ -3104,7 +3974,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -3153,7 +4023,47 @@
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
         "condo_days_on_market": null,
-        "condo_months_supply": null
+        "condo_months_supply": null,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 335710,
+            "price_per_sqft": 164.7,
+            "sqft": 2038,
+            "closed_sales": 260
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 464081,
+            "price_per_sqft": 175.1,
+            "sqft": 2650,
+            "closed_sales": 182
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 771987,
+            "price_per_sqft": 197.1,
+            "sqft": 3917,
+            "closed_sales": 4,
+            "low_confidence": true
+          },
+          "luxury": {
+            "label": "Luxury",
+            "min": 1000000,
+            "max": null,
+            "median_sale_price": 1250000,
+            "price_per_sqft": 265,
+            "sqft": 4717,
+            "closed_sales": 0,
+            "low_confidence": true
+          }
+        }
       },
       "schools": {
         "isd_name": "Rockwall ISD",
@@ -3233,7 +4143,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -3282,7 +4192,45 @@
         "condo_median_price": 1524375,
         "condo_closed_sales_12mo": 1,
         "condo_days_on_market": 81.8,
-        "condo_months_supply": 4.3
+        "condo_months_supply": 4.3,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 350208,
+            "price_per_sqft": 211.9,
+            "sqft": 1653,
+            "closed_sales": 81
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 548721,
+            "price_per_sqft": 223.5,
+            "sqft": 2455,
+            "closed_sales": 496
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 777920,
+            "price_per_sqft": 233.9,
+            "sqft": 3326,
+            "closed_sales": 195
+          },
+          "luxury": {
+            "label": "Luxury",
+            "min": 1000000,
+            "max": null,
+            "median_sale_price": 1394542,
+            "price_per_sqft": 304.8,
+            "sqft": 4575,
+            "closed_sales": 144
+          }
+        }
       },
       "schools": {
         "isd_name": "Lewisville ISD",
@@ -3362,7 +4310,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -3411,7 +4359,47 @@
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
         "condo_days_on_market": null,
-        "condo_months_supply": null
+        "condo_months_supply": null,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 299645,
+            "price_per_sqft": 151.7,
+            "sqft": 1975,
+            "closed_sales": 1295
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 452407,
+            "price_per_sqft": 161.1,
+            "sqft": 2808,
+            "closed_sales": 400
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 806370,
+            "price_per_sqft": 220.5,
+            "sqft": 3657,
+            "closed_sales": 10,
+            "low_confidence": true
+          },
+          "luxury": {
+            "label": "Luxury",
+            "min": 1000000,
+            "max": null,
+            "median_sale_price": 1330836,
+            "price_per_sqft": 247,
+            "sqft": 5388,
+            "closed_sales": 2,
+            "low_confidence": true
+          }
+        }
       },
       "schools": {
         "isd_name": "Forney ISD",
@@ -3491,7 +4479,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -3540,7 +4528,45 @@
         "condo_median_price": 280763.3,
         "condo_closed_sales_12mo": 202,
         "condo_days_on_market": 61.3,
-        "condo_months_supply": 8.3
+        "condo_months_supply": 8.3,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 303765,
+            "price_per_sqft": 169.5,
+            "sqft": 1792,
+            "closed_sales": 7268
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 484183,
+            "price_per_sqft": 181.8,
+            "sqft": 2663,
+            "closed_sales": 2496
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 798247,
+            "price_per_sqft": 244.2,
+            "sqft": 3269,
+            "closed_sales": 405
+          },
+          "luxury": {
+            "label": "Luxury",
+            "min": 1000000,
+            "max": null,
+            "median_sale_price": 1376375,
+            "price_per_sqft": 355.6,
+            "sqft": 3871,
+            "closed_sales": 286
+          }
+        }
       },
       "schools": {
         "isd_name": "Fort Worth ISD",
@@ -3620,7 +4646,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -3669,7 +4695,45 @@
         "condo_median_price": 736446.8,
         "condo_closed_sales_12mo": 3,
         "condo_days_on_market": 164,
-        "condo_months_supply": 3.2
+        "condo_months_supply": 3.2,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 366846,
+            "price_per_sqft": 227.2,
+            "sqft": 1615,
+            "closed_sales": 173
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 535732,
+            "price_per_sqft": 219.1,
+            "sqft": 2445,
+            "closed_sales": 981
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 807562,
+            "price_per_sqft": 224.8,
+            "sqft": 3592,
+            "closed_sales": 593
+          },
+          "luxury": {
+            "label": "Luxury",
+            "min": 1000000,
+            "max": null,
+            "median_sale_price": 1353315,
+            "price_per_sqft": 316,
+            "sqft": 4283,
+            "closed_sales": 454
+          }
+        }
       },
       "schools": {
         "isd_name": "Frisco ISD",
@@ -3749,7 +4813,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -3798,7 +4862,46 @@
         "condo_median_price": 147402.1,
         "condo_closed_sales_12mo": 31,
         "condo_days_on_market": 84.8,
-        "condo_months_supply": 11.7
+        "condo_months_supply": 11.7,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 282972,
+            "price_per_sqft": 176.4,
+            "sqft": 1604,
+            "closed_sales": 1307
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 456927,
+            "price_per_sqft": 182.1,
+            "sqft": 2509,
+            "closed_sales": 341
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 780380,
+            "price_per_sqft": 202.8,
+            "sqft": 3848,
+            "closed_sales": 18
+          },
+          "luxury": {
+            "label": "Luxury",
+            "min": 1000000,
+            "max": null,
+            "median_sale_price": 1339922,
+            "price_per_sqft": 316.9,
+            "sqft": 4228,
+            "closed_sales": 6,
+            "low_confidence": true
+          }
+        }
       },
       "schools": {
         "isd_name": "Garland ISD",
@@ -3878,7 +4981,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -3927,7 +5030,46 @@
         "condo_median_price": 155408.3,
         "condo_closed_sales_12mo": 6,
         "condo_days_on_market": 120,
-        "condo_months_supply": 5
+        "condo_months_supply": 5,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 312188,
+            "price_per_sqft": 177.6,
+            "sqft": 1758,
+            "closed_sales": 749
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 470413,
+            "price_per_sqft": 166.7,
+            "sqft": 2822,
+            "closed_sales": 352
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 787618,
+            "price_per_sqft": 195.1,
+            "sqft": 4037,
+            "closed_sales": 21
+          },
+          "luxury": {
+            "label": "Luxury",
+            "min": 1000000,
+            "max": null,
+            "median_sale_price": 1279479,
+            "price_per_sqft": 243.1,
+            "sqft": 5263,
+            "closed_sales": 4,
+            "low_confidence": true
+          }
+        }
       },
       "schools": {
         "isd_name": "Grand Prairie ISD",
@@ -4007,7 +5149,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -4056,7 +5198,45 @@
         "condo_median_price": 462083.3,
         "condo_closed_sales_12mo": 4,
         "condo_days_on_market": 57.6,
-        "condo_months_supply": 6.8
+        "condo_months_supply": 6.8,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 356563,
+            "price_per_sqft": 218.7,
+            "sqft": 1630,
+            "closed_sales": 32
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 546771,
+            "price_per_sqft": 259.5,
+            "sqft": 2107,
+            "closed_sales": 277
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 812938,
+            "price_per_sqft": 265.7,
+            "sqft": 3060,
+            "closed_sales": 105
+          },
+          "luxury": {
+            "label": "Luxury",
+            "min": 1000000,
+            "max": null,
+            "median_sale_price": 1358861,
+            "price_per_sqft": 349.8,
+            "sqft": 3885,
+            "closed_sales": 36
+          }
+        }
       },
       "schools": {
         "isd_name": "Grapevine-Colleyville ISD",
@@ -4136,7 +5316,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -4185,7 +5365,46 @@
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
         "condo_days_on_market": null,
-        "condo_months_supply": null
+        "condo_months_supply": null,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 358946,
+            "price_per_sqft": 174.3,
+            "sqft": 2059,
+            "closed_sales": 107
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 523455,
+            "price_per_sqft": 197.5,
+            "sqft": 2650,
+            "closed_sales": 214
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 783006,
+            "price_per_sqft": 231.7,
+            "sqft": 3379,
+            "closed_sales": 76
+          },
+          "luxury": {
+            "label": "Luxury",
+            "min": 1000000,
+            "max": null,
+            "median_sale_price": 1154708,
+            "price_per_sqft": 282.2,
+            "sqft": 4092,
+            "closed_sales": 9,
+            "low_confidence": true
+          }
+        }
       },
       "schools": {
         "isd_name": "Eagle Mountain-Saginaw ISD",
@@ -4265,7 +5484,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "estimate"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -4314,7 +5533,45 @@
         "condo_median_price": 318626.3,
         "condo_closed_sales_12mo": 2,
         "condo_days_on_market": 57,
-        "condo_months_supply": 1
+        "condo_months_supply": 1,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 345558,
+            "price_per_sqft": 168.1,
+            "sqft": 2056,
+            "closed_sales": 21
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 566260,
+            "price_per_sqft": 197,
+            "sqft": 2874,
+            "closed_sales": 85
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 820792,
+            "price_per_sqft": 220.3,
+            "sqft": 3726,
+            "closed_sales": 56
+          },
+          "luxury": {
+            "label": "Luxury",
+            "min": 1000000,
+            "max": null,
+            "median_sale_price": 1608089,
+            "price_per_sqft": 298.9,
+            "sqft": 5380,
+            "closed_sales": 73
+          }
+        }
       },
       "schools": {
         "isd_name": "Rockwall ISD",
@@ -4394,7 +5651,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -4443,7 +5700,28 @@
         "condo_median_price": 1233833.3,
         "condo_closed_sales_12mo": 11,
         "condo_days_on_market": 30.4,
-        "condo_months_supply": 2.7
+        "condo_months_supply": 2.7,
+        "tiers": {
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 874333,
+            "price_per_sqft": 446,
+            "sqft": 1960,
+            "closed_sales": 0,
+            "low_confidence": true
+          },
+          "luxury": {
+            "label": "Luxury",
+            "min": 1000000,
+            "max": null,
+            "median_sale_price": 3577744,
+            "price_per_sqft": 786.6,
+            "sqft": 4548,
+            "closed_sales": 75
+          }
+        }
       },
       "schools": {
         "isd_name": "Highland Park ISD",
@@ -4523,7 +5801,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -4572,7 +5850,46 @@
         "condo_median_price": 537500,
         "condo_closed_sales_12mo": 0,
         "condo_days_on_market": 28,
-        "condo_months_supply": 1
+        "condo_months_supply": 1,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 367146,
+            "price_per_sqft": 216.8,
+            "sqft": 1693,
+            "closed_sales": 5,
+            "low_confidence": true
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 550717,
+            "price_per_sqft": 218.9,
+            "sqft": 2516,
+            "closed_sales": 121
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 805521,
+            "price_per_sqft": 216.9,
+            "sqft": 3714,
+            "closed_sales": 57
+          },
+          "luxury": {
+            "label": "Luxury",
+            "min": 1000000,
+            "max": null,
+            "median_sale_price": 1273667,
+            "price_per_sqft": 283.5,
+            "sqft": 4493,
+            "closed_sales": 13
+          }
+        }
       },
       "schools": {
         "isd_name": "Lewisville ISD",
@@ -4652,7 +5969,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -4701,7 +6018,46 @@
         "condo_median_price": 180189.9,
         "condo_closed_sales_12mo": 9,
         "condo_days_on_market": 53.4,
-        "condo_months_supply": 2.7
+        "condo_months_supply": 2.7,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 311763,
+            "price_per_sqft": 188.5,
+            "sqft": 1654,
+            "closed_sales": 245
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 477979,
+            "price_per_sqft": 205.6,
+            "sqft": 2325,
+            "closed_sales": 129
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 749018,
+            "price_per_sqft": 215.1,
+            "sqft": 3482,
+            "closed_sales": 9,
+            "low_confidence": true
+          },
+          "luxury": {
+            "label": "Luxury",
+            "min": 1000000,
+            "max": null,
+            "median_sale_price": 1258480,
+            "price_per_sqft": 325.9,
+            "sqft": 3862,
+            "closed_sales": 16
+          }
+        }
       },
       "schools": {
         "isd_name": "HEB ISD",
@@ -4781,7 +6137,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -4830,7 +6186,45 @@
         "condo_median_price": 272488.3,
         "condo_closed_sales_12mo": 115,
         "condo_days_on_market": 51.1,
-        "condo_months_supply": 8.3
+        "condo_months_supply": 8.3,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 306167,
+            "price_per_sqft": 195.1,
+            "sqft": 1569,
+            "closed_sales": 481
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 502158,
+            "price_per_sqft": 213.3,
+            "sqft": 2354,
+            "closed_sales": 277
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 797975,
+            "price_per_sqft": 231.4,
+            "sqft": 3448,
+            "closed_sales": 128
+          },
+          "luxury": {
+            "label": "Luxury",
+            "min": 1000000,
+            "max": null,
+            "median_sale_price": 1456106,
+            "price_per_sqft": 328,
+            "sqft": 4439,
+            "closed_sales": 40
+          }
+        }
       },
       "schools": {
         "isd_name": "Irving ISD",
@@ -4910,7 +6304,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -4959,7 +6353,45 @@
         "condo_median_price": 549554.1,
         "condo_closed_sales_12mo": 3,
         "condo_days_on_market": 21.7,
-        "condo_months_supply": 1.1
+        "condo_months_supply": 1.1,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 335054,
+            "price_per_sqft": 213.6,
+            "sqft": 1569,
+            "closed_sales": 59
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 566367,
+            "price_per_sqft": 216.2,
+            "sqft": 2620,
+            "closed_sales": 214
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 827138,
+            "price_per_sqft": 245.2,
+            "sqft": 3373,
+            "closed_sales": 158
+          },
+          "luxury": {
+            "label": "Luxury",
+            "min": 1000000,
+            "max": null,
+            "median_sale_price": 1342165,
+            "price_per_sqft": 285.6,
+            "sqft": 4699,
+            "closed_sales": 110
+          }
+        }
       },
       "schools": {
         "isd_name": "Keller ISD",
@@ -5039,7 +6471,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -5088,7 +6520,47 @@
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
         "condo_days_on_market": null,
-        "condo_months_supply": null
+        "condo_months_supply": null,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 276727,
+            "price_per_sqft": 151.8,
+            "sqft": 1823,
+            "closed_sales": 280
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 462837,
+            "price_per_sqft": 176.7,
+            "sqft": 2619,
+            "closed_sales": 19
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 887500,
+            "price_per_sqft": 174,
+            "sqft": 5101,
+            "closed_sales": 0,
+            "low_confidence": true
+          },
+          "luxury": {
+            "label": "Luxury",
+            "min": 1000000,
+            "max": null,
+            "median_sale_price": 1375000,
+            "price_per_sqft": 256,
+            "sqft": 5371,
+            "closed_sales": 0,
+            "low_confidence": true
+          }
+        }
       },
       "schools": {
         "isd_name": "Lancaster ISD",
@@ -5159,7 +6631,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -5208,7 +6680,46 @@
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
         "condo_days_on_market": null,
-        "condo_months_supply": null
+        "condo_months_supply": null,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 378521,
+            "price_per_sqft": 209.2,
+            "sqft": 1809,
+            "closed_sales": 5,
+            "low_confidence": true
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 563375,
+            "price_per_sqft": 191.2,
+            "sqft": 2947,
+            "closed_sales": 100
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 799013,
+            "price_per_sqft": 204.6,
+            "sqft": 3905,
+            "closed_sales": 50
+          },
+          "luxury": {
+            "label": "Luxury",
+            "min": 1000000,
+            "max": null,
+            "median_sale_price": 1259021,
+            "price_per_sqft": 256.5,
+            "sqft": 4908,
+            "closed_sales": 18
+          }
+        }
       },
       "schools": {
         "isd_name": "Argyle ISD",
@@ -5288,7 +6799,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -5337,7 +6848,47 @@
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
         "condo_days_on_market": null,
-        "condo_months_supply": null
+        "condo_months_supply": null,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 326540,
+            "price_per_sqft": 161.9,
+            "sqft": 2017,
+            "closed_sales": 532
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 459236,
+            "price_per_sqft": 164.9,
+            "sqft": 2785,
+            "closed_sales": 227
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 773634,
+            "price_per_sqft": 282.5,
+            "sqft": 2739,
+            "closed_sales": 1,
+            "low_confidence": true
+          },
+          "luxury": {
+            "label": "Luxury",
+            "min": 1000000,
+            "max": null,
+            "median_sale_price": 1318510,
+            "price_per_sqft": 277.8,
+            "sqft": 4746,
+            "closed_sales": 2,
+            "low_confidence": true
+          }
+        }
       },
       "schools": {
         "isd_name": "Community ISD",
@@ -5408,7 +6959,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -5457,7 +7008,45 @@
         "condo_median_price": 336804.7,
         "condo_closed_sales_12mo": 15,
         "condo_days_on_market": 63.8,
-        "condo_months_supply": 3.6
+        "condo_months_supply": 3.6,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 337117,
+            "price_per_sqft": 210.3,
+            "sqft": 1603,
+            "closed_sales": 385
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 466200,
+            "price_per_sqft": 211,
+            "sqft": 2209,
+            "closed_sales": 272
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 790075,
+            "price_per_sqft": 223.8,
+            "sqft": 3530,
+            "closed_sales": 80
+          },
+          "luxury": {
+            "label": "Luxury",
+            "min": 1000000,
+            "max": null,
+            "median_sale_price": 1381833,
+            "price_per_sqft": 284.6,
+            "sqft": 4855,
+            "closed_sales": 25
+          }
+        }
       },
       "schools": {
         "isd_name": "Lewisville ISD",
@@ -5537,7 +7126,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -5586,7 +7175,36 @@
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
         "condo_days_on_market": null,
-        "condo_months_supply": null
+        "condo_months_supply": null,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 341127,
+            "price_per_sqft": 178.5,
+            "sqft": 1911,
+            "closed_sales": 556
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 485228,
+            "price_per_sqft": 176.3,
+            "sqft": 2752,
+            "closed_sales": 566
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 755412,
+            "price_per_sqft": 242.7,
+            "sqft": 3113,
+            "closed_sales": 21
+          }
+        }
       },
       "schools": {
         "isd_name": "Little Elm ISD",
@@ -5666,7 +7284,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -5715,7 +7333,46 @@
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
         "condo_days_on_market": null,
-        "condo_months_supply": null
+        "condo_months_supply": null,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 343667,
+            "price_per_sqft": 251,
+            "sqft": 1369,
+            "closed_sales": 1,
+            "low_confidence": true
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 580910,
+            "price_per_sqft": 226,
+            "sqft": 2570,
+            "closed_sales": 26
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 841421,
+            "price_per_sqft": 265.8,
+            "sqft": 3166,
+            "closed_sales": 36
+          },
+          "luxury": {
+            "label": "Luxury",
+            "min": 1000000,
+            "max": null,
+            "median_sale_price": 1487333,
+            "price_per_sqft": 306.9,
+            "sqft": 4846,
+            "closed_sales": 82
+          }
+        }
       },
       "schools": {
         "isd_name": "Lovejoy ISD",
@@ -5795,7 +7452,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -5844,7 +7501,45 @@
         "condo_median_price": 440920.3,
         "condo_closed_sales_12mo": 10,
         "condo_days_on_market": 86.5,
-        "condo_months_supply": 3.1
+        "condo_months_supply": 3.1,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 331137,
+            "price_per_sqft": 181.6,
+            "sqft": 1823,
+            "closed_sales": 333
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 512887,
+            "price_per_sqft": 184.1,
+            "sqft": 2786,
+            "closed_sales": 700
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 762053,
+            "price_per_sqft": 200.6,
+            "sqft": 3799,
+            "closed_sales": 97
+          },
+          "luxury": {
+            "label": "Luxury",
+            "min": 1000000,
+            "max": null,
+            "median_sale_price": 1276477,
+            "price_per_sqft": 258.9,
+            "sqft": 4930,
+            "closed_sales": 26
+          }
+        }
       },
       "schools": {
         "isd_name": "Mansfield ISD",
@@ -5924,7 +7619,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -5973,7 +7668,45 @@
         "condo_median_price": 441333.3,
         "condo_closed_sales_12mo": 36,
         "condo_days_on_market": 66.3,
-        "condo_months_supply": 4.4
+        "condo_months_supply": 4.4,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 346907,
+            "price_per_sqft": 191.6,
+            "sqft": 1811,
+            "closed_sales": 901
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 524099,
+            "price_per_sqft": 202.1,
+            "sqft": 2593,
+            "closed_sales": 1985
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 795171,
+            "price_per_sqft": 224.2,
+            "sqft": 3547,
+            "closed_sales": 453
+          },
+          "luxury": {
+            "label": "Luxury",
+            "min": 1000000,
+            "max": null,
+            "median_sale_price": 1264085,
+            "price_per_sqft": 289.3,
+            "sqft": 4369,
+            "closed_sales": 119
+          }
+        }
       },
       "schools": {
         "isd_name": "McKinney ISD",
@@ -6053,7 +7786,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -6102,7 +7835,36 @@
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
         "condo_days_on_market": null,
-        "condo_months_supply": null
+        "condo_months_supply": null,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 353187,
+            "price_per_sqft": 187.6,
+            "sqft": 1883,
+            "closed_sales": 137
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 487448,
+            "price_per_sqft": 184.8,
+            "sqft": 2638,
+            "closed_sales": 277
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 777683,
+            "price_per_sqft": 238.8,
+            "sqft": 3257,
+            "closed_sales": 23
+          }
+        }
       },
       "schools": {
         "isd_name": "Melissa ISD",
@@ -6182,7 +7944,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -6231,7 +7993,37 @@
         "condo_median_price": 130410.4,
         "condo_closed_sales_12mo": 3,
         "condo_days_on_market": 41.5,
-        "condo_months_supply": 1.6
+        "condo_months_supply": 1.6,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 275067,
+            "price_per_sqft": 160.3,
+            "sqft": 1716,
+            "closed_sales": 1200
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 475384,
+            "price_per_sqft": 168,
+            "sqft": 2830,
+            "closed_sales": 176
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 750977,
+            "price_per_sqft": 210.5,
+            "sqft": 3568,
+            "closed_sales": 7,
+            "low_confidence": true
+          }
+        }
       },
       "schools": {
         "isd_name": "Mesquite ISD",
@@ -6311,7 +8103,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -6360,7 +8152,45 @@
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
         "condo_days_on_market": null,
-        "condo_months_supply": null
+        "condo_months_supply": null,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 334901,
+            "price_per_sqft": 188.1,
+            "sqft": 1780,
+            "closed_sales": 183
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 507676,
+            "price_per_sqft": 186.3,
+            "sqft": 2725,
+            "closed_sales": 685
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 756555,
+            "price_per_sqft": 235.9,
+            "sqft": 3207,
+            "closed_sales": 97
+          },
+          "luxury": {
+            "label": "Luxury",
+            "min": 1000000,
+            "max": null,
+            "median_sale_price": 1163963,
+            "price_per_sqft": 275.8,
+            "sqft": 4220,
+            "closed_sales": 27
+          }
+        }
       },
       "schools": {
         "isd_name": "Midlothian ISD",
@@ -6440,7 +8270,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -6489,7 +8319,47 @@
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
         "condo_days_on_market": null,
-        "condo_months_supply": null
+        "condo_months_supply": null,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 325950,
+            "price_per_sqft": 177.9,
+            "sqft": 1832,
+            "closed_sales": 1,
+            "low_confidence": true
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 547167,
+            "price_per_sqft": 192.1,
+            "sqft": 2848,
+            "closed_sales": 111
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 796750,
+            "price_per_sqft": 196.8,
+            "sqft": 4049,
+            "closed_sales": 42
+          },
+          "luxury": {
+            "label": "Luxury",
+            "min": 1000000,
+            "max": null,
+            "median_sale_price": 1125625,
+            "price_per_sqft": 233,
+            "sqft": 4831,
+            "closed_sales": 2,
+            "low_confidence": true
+          }
+        }
       },
       "schools": {
         "isd_name": "Plano ISD",
@@ -6569,7 +8439,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -6618,7 +8488,46 @@
         "condo_median_price": 274799.5,
         "condo_closed_sales_12mo": 1,
         "condo_days_on_market": 105.5,
-        "condo_months_supply": 1
+        "condo_months_supply": 1,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 307160,
+            "price_per_sqft": 187.8,
+            "sqft": 1636,
+            "closed_sales": 389
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 482454,
+            "price_per_sqft": 210.5,
+            "sqft": 2292,
+            "closed_sales": 269
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 789646,
+            "price_per_sqft": 222.7,
+            "sqft": 3546,
+            "closed_sales": 72
+          },
+          "luxury": {
+            "label": "Luxury",
+            "min": 1000000,
+            "max": null,
+            "median_sale_price": 1212594,
+            "price_per_sqft": 279.7,
+            "sqft": 4335,
+            "closed_sales": 5,
+            "low_confidence": true
+          }
+        }
       },
       "schools": {
         "isd_name": "Birdville ISD",
@@ -6698,7 +8607,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -6747,7 +8656,45 @@
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
         "condo_days_on_market": null,
-        "condo_months_supply": null
+        "condo_months_supply": null,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 380108,
+            "price_per_sqft": 206.8,
+            "sqft": 1838,
+            "closed_sales": 31
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 526782,
+            "price_per_sqft": 193.8,
+            "sqft": 2718,
+            "closed_sales": 277
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 773437,
+            "price_per_sqft": 212.6,
+            "sqft": 3638,
+            "closed_sales": 65
+          },
+          "luxury": {
+            "label": "Luxury",
+            "min": 1000000,
+            "max": null,
+            "median_sale_price": 1266053,
+            "price_per_sqft": 310.3,
+            "sqft": 4080,
+            "closed_sales": 40
+          }
+        }
       },
       "schools": {
         "isd_name": "Northwest ISD",
@@ -6827,7 +8774,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -6876,7 +8823,45 @@
         "condo_median_price": 334797.9,
         "condo_closed_sales_12mo": 59,
         "condo_days_on_market": 39.7,
-        "condo_months_supply": 6.7
+        "condo_months_supply": 6.7,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 345779,
+            "price_per_sqft": 201.6,
+            "sqft": 1715,
+            "closed_sales": 487
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 525562,
+            "price_per_sqft": 215.6,
+            "sqft": 2438,
+            "closed_sales": 1261
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 784083,
+            "price_per_sqft": 225.6,
+            "sqft": 3476,
+            "closed_sales": 307
+          },
+          "luxury": {
+            "label": "Luxury",
+            "min": 1000000,
+            "max": null,
+            "median_sale_price": 1296333,
+            "price_per_sqft": 308.4,
+            "sqft": 4203,
+            "closed_sales": 196
+          }
+        }
       },
       "schools": {
         "isd_name": "Plano ISD",
@@ -6956,7 +8941,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -7005,7 +8990,27 @@
         "condo_median_price": 288666.7,
         "condo_closed_sales_12mo": 0,
         "condo_days_on_market": 348,
-        "condo_months_supply": 0.9
+        "condo_months_supply": 0.9,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 290862,
+            "price_per_sqft": 158.5,
+            "sqft": 1835,
+            "closed_sales": 1983
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 426593,
+            "price_per_sqft": 140.8,
+            "sqft": 3030,
+            "closed_sales": 230
+          }
+        }
       },
       "schools": {
         "isd_name": "Princeton ISD",
@@ -7085,7 +9090,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -7134,7 +9139,45 @@
         "condo_median_price": 524000,
         "condo_closed_sales_12mo": 0,
         "condo_days_on_market": 76,
-        "condo_months_supply": 1
+        "condo_months_supply": 1,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 343283,
+            "price_per_sqft": 205.1,
+            "sqft": 1674,
+            "closed_sales": 27
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 603630,
+            "price_per_sqft": 215.1,
+            "sqft": 2806,
+            "closed_sales": 177
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 835998,
+            "price_per_sqft": 231.8,
+            "sqft": 3607,
+            "closed_sales": 335
+          },
+          "luxury": {
+            "label": "Luxury",
+            "min": 1000000,
+            "max": null,
+            "median_sale_price": 1273179,
+            "price_per_sqft": 294.1,
+            "sqft": 4329,
+            "closed_sales": 243
+          }
+        }
       },
       "schools": {
         "isd_name": "Prosper ISD",
@@ -7214,7 +9257,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -7263,7 +9306,45 @@
         "condo_median_price": 205589.8,
         "condo_closed_sales_12mo": 38,
         "condo_days_on_market": 89.4,
-        "condo_months_supply": 9
+        "condo_months_supply": 9,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 350492,
+            "price_per_sqft": 212.7,
+            "sqft": 1648,
+            "closed_sales": 257
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 493747,
+            "price_per_sqft": 226.3,
+            "sqft": 2182,
+            "closed_sales": 553
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 793517,
+            "price_per_sqft": 265.3,
+            "sqft": 2991,
+            "closed_sales": 104
+          },
+          "luxury": {
+            "label": "Luxury",
+            "min": 1000000,
+            "max": null,
+            "median_sale_price": 1480292,
+            "price_per_sqft": 391,
+            "sqft": 3786,
+            "closed_sales": 35
+          }
+        }
       },
       "schools": {
         "isd_name": "Richardson ISD",
@@ -7343,7 +9424,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -7392,7 +9473,36 @@
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
         "condo_days_on_market": null,
-        "condo_months_supply": null
+        "condo_months_supply": null,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 330757,
+            "price_per_sqft": 203.5,
+            "sqft": 1625,
+            "closed_sales": 30
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 552039,
+            "price_per_sqft": 195.4,
+            "sqft": 2825,
+            "closed_sales": 57
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 796788,
+            "price_per_sqft": 229.9,
+            "sqft": 3466,
+            "closed_sales": 36
+          }
+        }
       },
       "schools": {
         "isd_name": "Northwest ISD",
@@ -7472,7 +9582,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -7521,7 +9631,45 @@
         "condo_median_price": 241847.9,
         "condo_closed_sales_12mo": 32,
         "condo_days_on_market": 49.1,
-        "condo_months_supply": 7.9
+        "condo_months_supply": 7.9,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 338333,
+            "price_per_sqft": 173.6,
+            "sqft": 1949,
+            "closed_sales": 223
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 562770,
+            "price_per_sqft": 188.4,
+            "sqft": 2987,
+            "closed_sales": 460
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 791053,
+            "price_per_sqft": 211.9,
+            "sqft": 3733,
+            "closed_sales": 177
+          },
+          "luxury": {
+            "label": "Luxury",
+            "min": 1000000,
+            "max": null,
+            "median_sale_price": 1343761,
+            "price_per_sqft": 298.5,
+            "sqft": 4502,
+            "closed_sales": 24
+          }
+        }
       },
       "schools": {
         "isd_name": "Rockwall ISD",
@@ -7601,7 +9749,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -7650,7 +9798,36 @@
         "condo_median_price": 316666.7,
         "condo_closed_sales_12mo": 0,
         "condo_days_on_market": 60.3,
-        "condo_months_supply": 1
+        "condo_months_supply": 1,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 324054,
+            "price_per_sqft": 172.5,
+            "sqft": 1879,
+            "closed_sales": 442
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 472099,
+            "price_per_sqft": 172.9,
+            "sqft": 2730,
+            "closed_sales": 270
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 799870,
+            "price_per_sqft": 240.6,
+            "sqft": 3324,
+            "closed_sales": 22
+          }
+        }
       },
       "schools": {
         "isd_name": "Garland ISD",
@@ -7730,7 +9907,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -7779,7 +9956,36 @@
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
         "condo_days_on_market": null,
-        "condo_months_supply": null
+        "condo_months_supply": null,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 303713,
+            "price_per_sqft": 150.7,
+            "sqft": 2015,
+            "closed_sales": 638
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 463256,
+            "price_per_sqft": 173.3,
+            "sqft": 2673,
+            "closed_sales": 170
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 772204,
+            "price_per_sqft": 237.5,
+            "sqft": 3251,
+            "closed_sales": 28
+          }
+        }
       },
       "schools": {
         "isd_name": "Royse City ISD",
@@ -7859,7 +10065,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -7908,7 +10114,46 @@
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
         "condo_days_on_market": null,
-        "condo_months_supply": null
+        "condo_months_supply": null,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 338410,
+            "price_per_sqft": 190.8,
+            "sqft": 1774,
+            "closed_sales": 93
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 508201,
+            "price_per_sqft": 185.3,
+            "sqft": 2743,
+            "closed_sales": 138
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 792250,
+            "price_per_sqft": 221.3,
+            "sqft": 3580,
+            "closed_sales": 20
+          },
+          "luxury": {
+            "label": "Luxury",
+            "min": 1000000,
+            "max": null,
+            "median_sale_price": 1287143,
+            "price_per_sqft": 299.4,
+            "sqft": 4299,
+            "closed_sales": 3,
+            "low_confidence": true
+          }
+        }
       },
       "schools": {
         "isd_name": "Wylie ISD",
@@ -7988,7 +10233,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -8037,7 +10282,37 @@
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
         "condo_days_on_market": null,
-        "condo_months_supply": null
+        "condo_months_supply": null,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 300458,
+            "price_per_sqft": 164.8,
+            "sqft": 1823,
+            "closed_sales": 242
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 426163,
+            "price_per_sqft": 170.5,
+            "sqft": 2499,
+            "closed_sales": 30
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 777500,
+            "price_per_sqft": 257,
+            "sqft": 3025,
+            "closed_sales": 1,
+            "low_confidence": true
+          }
+        }
       },
       "schools": {
         "isd_name": "Eagle Mountain-Saginaw ISD",
@@ -8117,7 +10392,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -8166,7 +10441,37 @@
         "condo_median_price": 612567.8,
         "condo_closed_sales_12mo": 13,
         "condo_days_on_market": 79,
-        "condo_months_supply": 3.5
+        "condo_months_supply": 3.5,
+        "tiers": {
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 611479,
+            "price_per_sqft": 315,
+            "sqft": 1941,
+            "closed_sales": 11,
+            "low_confidence": true
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 922875,
+            "price_per_sqft": 298.3,
+            "sqft": 3094,
+            "closed_sales": 50
+          },
+          "luxury": {
+            "label": "Luxury",
+            "min": 1000000,
+            "max": null,
+            "median_sale_price": 1475446,
+            "price_per_sqft": 366.7,
+            "sqft": 4024,
+            "closed_sales": 351
+          }
+        }
       },
       "schools": {
         "isd_name": "Carroll ISD",
@@ -8246,7 +10551,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -8295,7 +10600,45 @@
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
         "condo_days_on_market": null,
-        "condo_months_supply": null
+        "condo_months_supply": null,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 329033,
+            "price_per_sqft": 206.2,
+            "sqft": 1596,
+            "closed_sales": 197
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 499844,
+            "price_per_sqft": 218.4,
+            "sqft": 2289,
+            "closed_sales": 168
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 805083,
+            "price_per_sqft": 242.4,
+            "sqft": 3321,
+            "closed_sales": 68
+          },
+          "luxury": {
+            "label": "Luxury",
+            "min": 1000000,
+            "max": null,
+            "median_sale_price": 1309354,
+            "price_per_sqft": 347.1,
+            "sqft": 3772,
+            "closed_sales": 43
+          }
+        }
       },
       "schools": {
         "isd_name": "Lewisville ISD",
@@ -8375,7 +10718,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -8424,7 +10767,46 @@
         "condo_median_price": 650000,
         "condo_closed_sales_12mo": 0,
         "condo_days_on_market": 60,
-        "condo_months_supply": null
+        "condo_months_supply": null,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 379436,
+            "price_per_sqft": 231.4,
+            "sqft": 1640,
+            "closed_sales": 3,
+            "low_confidence": true
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 555300,
+            "price_per_sqft": 223.9,
+            "sqft": 2480,
+            "closed_sales": 77
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 831208,
+            "price_per_sqft": 250,
+            "sqft": 3325,
+            "closed_sales": 72
+          },
+          "luxury": {
+            "label": "Luxury",
+            "min": 1000000,
+            "max": null,
+            "median_sale_price": 1258958,
+            "price_per_sqft": 291.4,
+            "sqft": 4320,
+            "closed_sales": 63
+          }
+        }
       },
       "schools": {
         "isd_name": "Northwest ISD",
@@ -8504,7 +10886,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -8553,7 +10935,38 @@
         "condo_median_price": 727366.7,
         "condo_closed_sales_12mo": 23,
         "condo_days_on_market": 23.9,
-        "condo_months_supply": 3.5
+        "condo_months_supply": 3.5,
+        "tiers": {
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 540000,
+            "price_per_sqft": 452,
+            "sqft": 1195,
+            "closed_sales": 0,
+            "low_confidence": true
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 901794,
+            "price_per_sqft": 431,
+            "sqft": 2092,
+            "closed_sales": 1,
+            "low_confidence": true
+          },
+          "luxury": {
+            "label": "Luxury",
+            "min": 1000000,
+            "max": null,
+            "median_sale_price": 2844933,
+            "price_per_sqft": 696.3,
+            "sqft": 4086,
+            "closed_sales": 161
+          }
+        }
       },
       "schools": {
         "isd_name": "Highland Park ISD",
@@ -8633,7 +11046,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -8682,7 +11095,36 @@
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
         "condo_days_on_market": null,
-        "condo_months_supply": null
+        "condo_months_supply": null,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 322032,
+            "price_per_sqft": 175.4,
+            "sqft": 1836,
+            "closed_sales": 527
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 506974,
+            "price_per_sqft": 190.2,
+            "sqft": 2665,
+            "closed_sales": 538
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 771060,
+            "price_per_sqft": 235.3,
+            "sqft": 3277,
+            "closed_sales": 72
+          }
+        }
       },
       "schools": {
         "isd_name": "Waxahachie ISD",
@@ -8762,7 +11204,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -8811,7 +11253,28 @@
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
         "condo_days_on_market": null,
-        "condo_months_supply": null
+        "condo_months_supply": null,
+        "tiers": {
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 670000,
+            "price_per_sqft": 429,
+            "sqft": 1562,
+            "closed_sales": 0,
+            "low_confidence": true
+          },
+          "luxury": {
+            "label": "Luxury",
+            "min": 1000000,
+            "max": null,
+            "median_sale_price": 5055252,
+            "price_per_sqft": 702.5,
+            "sqft": 7196,
+            "closed_sales": 26
+          }
+        }
       },
       "schools": {
         "isd_name": "Carroll ISD",
@@ -8891,7 +11354,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "estimate"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     },
@@ -8940,7 +11403,46 @@
         "condo_median_price": 269500,
         "condo_closed_sales_12mo": 0,
         "condo_days_on_market": 28,
-        "condo_months_supply": 1
+        "condo_months_supply": 1,
+        "tiers": {
+          "starter": {
+            "label": "Starter",
+            "min": 0,
+            "max": 399999,
+            "median_sale_price": 333522,
+            "price_per_sqft": 189.6,
+            "sqft": 1759,
+            "closed_sales": 260
+          },
+          "typical": {
+            "label": "Typical",
+            "min": 400000,
+            "max": 699999,
+            "median_sale_price": 505096,
+            "price_per_sqft": 186.8,
+            "sqft": 2704,
+            "closed_sales": 398
+          },
+          "moveup": {
+            "label": "Move-up",
+            "min": 700000,
+            "max": 999999,
+            "median_sale_price": 778617,
+            "price_per_sqft": 192.1,
+            "sqft": 4053,
+            "closed_sales": 49
+          },
+          "luxury": {
+            "label": "Luxury",
+            "min": 1000000,
+            "max": null,
+            "median_sale_price": 1170250,
+            "price_per_sqft": 271.9,
+            "sqft": 4304,
+            "closed_sales": 1,
+            "low_confidence": true
+          }
+        }
       },
       "schools": {
         "isd_name": "Wylie ISD",
@@ -9020,7 +11522,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-06-20T03:23:56.225Z",
+        "computed_date": "2026-06-20T17:54:02.726Z",
         "data_completeness": "full"
       }
     }

@@ -571,6 +571,36 @@ gtag('consent','default',{
   letter-spacing:.05em;text-transform:uppercase;color:var(--cc-navy);text-decoration:none;border:1px solid var(--cc-navy);border-radius:6px;padding:9px 16px;transition:all .15s;}
 .cc-xlate .explore:hover{background:var(--cc-navy);color:#fff;}
 
+/* scenario comparison table (value to premium) */
+.cc-scenwrap{overflow-x:auto;border:1px solid var(--cc-line);border-radius:12px;margin:0 0 10px;}
+.cc-scen{border-collapse:collapse;width:100%;min-width:560px;font-size:.86rem;}
+.cc-scen th{background:var(--cc-navy);color:#fff;font-weight:600;font-size:.72rem;letter-spacing:.04em;text-transform:uppercase;
+  text-align:left;padding:10px 12px;white-space:nowrap;}
+.cc-scen th.r,.cc-scen td.r{text-align:right;}
+.cc-scen td{padding:11px 12px;border-top:1px solid var(--cc-line);color:#3a3a3a;vertical-align:middle;}
+.cc-scen tr:nth-child(even) td{background:#fbf9f5;}
+.cc-scen tr.feat td{background:#fbf3e6;}
+.cc-scen .nm{font-weight:600;color:var(--cc-navy);}
+.cc-scen .nm a{color:var(--cc-navy);text-decoration:none;border-bottom:1px solid var(--cc-stone);}
+.cc-scen .nm a:hover{color:var(--cc-gold);border-color:var(--cc-gold);}
+.cc-scen .sub{display:block;font-size:.72rem;color:#999;font-weight:400;}
+.cc-scen .netpos{color:var(--cc-down);font-weight:700;}
+.cc-scen .netneg{color:var(--cc-up);font-weight:700;}
+.cc-fit{display:inline-block;font-size:.68rem;font-weight:600;letter-spacing:.03em;text-transform:uppercase;padding:3px 8px;border-radius:20px;}
+.cc-fit.more{background:#e7f0ea;color:var(--cc-down);}
+.cc-fit.about{background:#f3ecdd;color:var(--cc-gold);}
+.cc-fit.stretch{background:#f6e7e5;color:var(--cc-up);}
+.cc-scorechip{display:inline-block;font-size:.66rem;font-weight:600;color:#6b6256;background:#f1ece2;border:1px solid var(--cc-line);border-radius:5px;padding:2px 6px;margin:3px 4px 0 0;letter-spacing:.02em;}
+.cc-scorechip b{color:var(--cc-navy);}
+.cc-scen tr.qual td{box-shadow:inset 3px 0 0 var(--cc-down);}
+.cc-scen-note{font-size:.82rem;color:#777;line-height:1.5;margin:4px 2px 22px;}
+.cc-target{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:0 0 12px;font-size:.9rem;color:#555;}
+.cc-target label{font-weight:600;color:var(--cc-navy);}
+.cc-target .cc-money{flex:0 0 auto;}
+.cc-target .cc-money input{width:150px;}
+.cc-target button{font-family:inherit;font-size:.78rem;color:var(--cc-navy);background:#fff;border:1px solid var(--cc-line);border-radius:6px;padding:8px 12px;cursor:pointer;}
+.cc-target button:hover{border-color:var(--cc-gold);color:var(--cc-gold);}
+
 /* tier 2 placeholder */
 .cc-tier2{border:1px dashed var(--cc-stone);border-radius:14px;padding:20px 22px;margin:0 0 22px;background:#fdfcfa;}
 .cc-tier2 .k{font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--cc-gold);margin:0 0 .4rem;}
@@ -669,6 +699,15 @@ gtag('consent','default',{
           <span class="hint" id="ccHomeHint">Powers the home price translation and the property tax comparison.</span>
         </div>
 
+        <div class="cc-field span2" id="ccSqftWrap">
+          <label for="ccSqft">Current home size (optional, for an exact match)</label>
+          <div style="display:flex;gap:8px;align-items:center;max-width:240px;">
+            <input type="text" id="ccSqft" inputmode="numeric" placeholder="2,400" autocomplete="off">
+            <span style="color:#999;font-size:.9rem;white-space:nowrap;">sq ft</span>
+          </div>
+          <span class="hint">Add your home's square footage and we price a home that size in each DFW suburb, true apples to apples. Leave it blank and we use each suburb's typical home instead.</span>
+        </div>
+
         <div class="cc-field">
           <label for="ccIncome">Household income (yearly)</label>
           <div class="cc-money"><input type="text" id="ccIncome" inputmode="numeric" placeholder="180,000" autocomplete="off" required></div>
@@ -706,6 +745,11 @@ gtag('consent','default',{
             <label for="ccCurProp">Current annual property tax paid</label>
             <div class="cc-money"><input type="text" id="ccCurProp" inputmode="numeric" placeholder="auto from your state" autocomplete="off"></div>
             <span class="hint">Overrides the state average.</span>
+          </div>
+          <div class="cc-field">
+            <label for="ccDebts">Monthly debt payments (not housing)</label>
+            <div class="cc-money"><input type="text" id="ccDebts" inputmode="numeric" value="600" autocomplete="off"></div>
+            <span class="hint">Car, student loans, credit cards. Prefilled with a typical $600, edit it for a sharper qualifying estimate, or set 0 if you have none.</span>
           </div>
           <div class="cc-field">
             <label for="ccDown">Down payment</label>
@@ -772,8 +816,9 @@ gtag('consent','default',{
     <h3>Summer electricity</h3>
     <p>Texas heat means heavy air conditioning use and high summer electric bills. Texas also runs a deregulated retail electricity market, so you choose your provider and plan. Budget for higher cooling costs from June through September. We surface this in your results so it does not surprise you after the move.</p>
 
-    <h2 id="home-buys">What your current home buys in DFW</h2>
-    <p>One of the most powerful moments in a relocation is seeing what your equity becomes in a market priced very differently from the coasts. The calculator translates your current home value into real square footage across named DFW suburbs like Frisco, Plano, McKinney, and Allen, using each suburb's actual median price and price per square foot. Many families discover their money buys substantially more home here, which is often what makes the higher property tax and insurance worth it.</p>
+    <h2 id="home-buys">What your money gets you across DFW</h2>
+    <p>One of the most powerful moments in a relocation is seeing what your budget becomes in a market priced very differently from the coasts. Instead of pretending you would buy a same-dollar home, the calculator shows a typical home in each named DFW suburb, from value suburbs like McKinney, Allen, and Plano to premium ones like Southlake and Colleyville, with the real property tax and monthly payment on each. Many families discover their money buys substantially more home in a value suburb, which is often what makes the higher property tax and insurance worth it, and you do not have to choose the flashiest suburb to come out ahead.</p>
+    <p>A note on square footage: we describe each suburb's typical home using its actual median price and median size, but we do not convert your budget into a square footage, because price per square foot is higher on smaller homes than on larger ones, which would mislead. The honest comparison is your budget against the real median home in each suburb.</p>
     <p>Ready to go suburb by suburb? Explore the <a href="/dallas-fort-worth-suburbs">full DFW suburb guide</a> or let the <a href="/find-your-dfw-suburb">4-Lever Suburb Matcher</a> narrow the list to the suburbs that fit your family.</p>
 
     <h2 id="monthly-payment">Your estimated monthly payment: principal and interest versus all in PITI</h2>
@@ -810,7 +855,7 @@ gtag('consent','default',{
      Slice of data/relocation-tax-rates.json + data/fred-data.json +
      curated suburb medians from data/suburb-profiles.json.
      b.single / b.mfj brackets are [ratePct, thresholdDollar] pairs. */
-  var CC_DATA = /*CC_DATA_INJECT*/{"_meta":{"income_as_of":"2026-01-01","sit_as_of":"2026-01-01","sit_src":"https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/","prop_src":"https://taxfoundation.org/data/all/state/property-taxes-by-state-county/","prop_year":2023,"dfw_year":2025,"dfw_src":"county appraisal districts + city/ISD adopted rate notices","exempt_src":"https://comptroller.texas.gov/taxes/property-tax/exemptions/","ins_as_of":"2026-03 (market averages compiled March 2026)","fred_rate_date":"2026-06-11"},"federal":{"sd":{"single":16100,"married_jointly":32200,"head_of_household":24150},"br":{"single":[[10,0],[12,12400],[22,50400],[24,105700],[32,201775],[35,256225],[37,640600]],"married_jointly":[[10,0],[12,24800],[22,100800],[24,211400],[32,403550],[35,512450],[37,768700]],"head_of_household":[[10,0],[12,17700],[22,67450],[24,105700],[32,201775],[35,256200],[37,640600]]}},"states":{"AL":{"n":"Alabama","t":"graduated","b":{"single":[[2,0],[4,500],[5,3000]],"mfj":[[2,0],[4,1000],[5,6000]]},"sd":{"single":3000,"mfj":8500},"pe":{"single":1500,"married_jointly":3000,"dependent":1000,"form":"deduction"},"hoh":"single"},"AK":{"n":"Alaska","t":"none","b":{"single":[],"mfj":[]},"sd":{"single":0,"mfj":0},"pe":{"single":0,"married_jointly":0,"dependent":0,"form":"none"},"hoh":"single"},"AZ":{"n":"Arizona","t":"flat","b":{"single":[[2.5,0]],"mfj":[[2.5,0]]},"sd":{"single":8350,"mfj":16700},"pe":{"single":0,"married_jointly":0,"dependent":0,"form":"none"},"hoh":"single"},"AR":{"n":"Arkansas","t":"graduated","b":{"single":[[2,0],[3.9,4600]],"mfj":[[2,0],[3.9,4600]]},"sd":{"single":2470,"mfj":4940},"pe":{"single":29,"married_jointly":58,"dependent":29,"form":"credit"},"hoh":"single"},"CA":{"n":"California","t":"graduated","b":{"single":[[1,0],[2,11079],[4,26264],[6,41452],[8,57542],[9.3,72724],[10.3,371479],[11.3,445771],[12.3,742953],[13.3,1000000]],"mfj":[[1,0],[2,22158],[4,52528],[6,82904],[8,115084],[9.3,145448],[10.3,742958],[11.3,891542],[12.3,1000000],[13.3,1485906]]},"sd":{"single":5540,"mfj":11080},"pe":{"single":153,"married_jointly":306,"dependent":153,"form":"credit"},"hoh":"single"},"CO":{"n":"Colorado","t":"flat","b":{"single":[[4.4,0]],"mfj":[[4.4,0]]},"sd":{"single":16100,"mfj":32200},"pe":{"single":0,"married_jointly":0,"dependent":0,"form":"none"},"hoh":"single"},"CT":{"n":"Connecticut","t":"graduated","b":{"single":[[2,0],[4.5,10000],[5.5,50000],[6,100000],[6.5,200000],[6.9,250000],[6.99,500000]],"mfj":[[2,0],[4.5,20000],[5.5,100000],[6,200000],[6.5,400000],[6.9,500000],[6.99,1000000]]},"sd":{"single":0,"mfj":0},"pe":{"single":15000,"married_jointly":24000,"dependent":0,"form":"deduction"},"hoh":"single"},"DE":{"n":"Delaware","t":"graduated","b":{"single":[[2.2,2000],[3.9,5000],[4.8,10000],[5.2,20000],[5.55,25000],[6.6,60000]],"mfj":[[2.2,2000],[3.9,5000],[4.8,10000],[5.2,20000],[5.55,25000],[6.6,60000]]},"sd":{"single":3250,"mfj":6500},"pe":{"single":110,"married_jointly":220,"dependent":110,"form":"credit"},"hoh":"single"},"FL":{"n":"Florida","t":"none","b":{"single":[],"mfj":[]},"sd":{"single":0,"mfj":0},"pe":{"single":0,"married_jointly":0,"dependent":0,"form":"none"},"hoh":"single"},"GA":{"n":"Georgia","t":"flat","b":{"single":[[5.19,0]],"mfj":[[5.19,0]]},"sd":{"single":12000,"mfj":24000},"pe":{"single":0,"married_jointly":0,"dependent":4000,"form":"deduction"},"hoh":"single"},"HI":{"n":"Hawaii","t":"graduated","b":{"single":[[1.4,0],[3.2,9600],[5.5,14400],[6.4,19200],[6.8,24000],[7.2,36000],[7.6,48000],[7.9,125000],[8.25,175000],[9,225000],[10,275000],[11,325000]],"mfj":[[1.4,0],[3.2,19200],[5.5,28800],[6.4,38400],[6.8,48000],[7.2,72000],[7.6,96000],[7.9,250000],[8.25,350000],[9,450000],[10,550000],[11,650000]]},"sd":{"single":4400,"mfj":8800},"pe":{"single":1144,"married_jointly":2288,"dependent":1144,"form":"deduction"},"hoh":"single"},"ID":{"n":"Idaho","t":"flat","b":{"single":[[5.3,4811]],"mfj":[[5.3,9622]]},"sd":{"single":16100,"mfj":32200},"pe":{"single":0,"married_jointly":0,"dependent":0,"form":"none"},"hoh":"single"},"IL":{"n":"Illinois","t":"flat","b":{"single":[[4.95,0]],"mfj":[[4.95,0]]},"sd":{"single":0,"mfj":0},"pe":{"single":2925,"married_jointly":5850,"dependent":2925,"form":"deduction"},"hoh":"single"},"IN":{"n":"Indiana","t":"flat","b":{"single":[[2.95,0]],"mfj":[[2.95,0]]},"sd":{"single":0,"mfj":0},"pe":{"single":1000,"married_jointly":2000,"dependent":1000,"form":"deduction"},"hoh":"single"},"IA":{"n":"Iowa","t":"flat","b":{"single":[[3.8,0]],"mfj":[[3.8,0]]},"sd":{"single":16100,"mfj":32200},"pe":{"single":40,"married_jointly":80,"dependent":40,"form":"credit"},"hoh":"single"},"KS":{"n":"Kansas","t":"graduated","b":{"single":[[5.2,0],[5.58,23000]],"mfj":[[5.2,0],[5.58,46000]]},"sd":{"single":3605,"mfj":8240},"pe":{"single":9160,"married_jointly":18320,"dependent":2320,"form":"deduction"},"hoh":"single"},"KY":{"n":"Kentucky","t":"flat","b":{"single":[[3.5,0]],"mfj":[[3.5,0]]},"sd":{"single":3360,"mfj":3360},"pe":{"single":0,"married_jointly":0,"dependent":0,"form":"none"},"hoh":"single"},"LA":{"n":"Louisiana","t":"flat","b":{"single":[[3,0]],"mfj":[[3,0]]},"sd":{"single":12875,"mfj":25750},"pe":{"single":0,"married_jointly":0,"dependent":0,"form":"none"},"hoh":"single"},"ME":{"n":"Maine","t":"graduated","b":{"single":[[5.8,0],[6.75,27399],[7.15,64849]],"mfj":[[5.8,0],[6.75,54849],[7.15,129749]]},"sd":{"single":8350,"mfj":16700},"pe":{"single":5300,"married_jointly":10600,"dependent":0,"form":"deduction"},"hoh":"single"},"MD":{"n":"Maryland","t":"graduated","b":{"single":[[2,0],[3,1000],[4,2000],[4.75,3000],[5,100000],[5.25,125000],[5.5,150000],[5.75,250000],[6.25,500000],[6.5,1000000]],"mfj":[[2,0],[3,1000],[4,2000],[4.75,3000],[5,150000],[5.25,175000],[5.5,225000],[5.75,300000],[6.25,600000],[6.5,1200000]]},"sd":{"single":3350,"mfj":6700},"pe":{"single":3200,"married_jointly":6400,"dependent":3200,"form":"deduction"},"hoh":"single"},"MA":{"n":"Massachusetts","t":"graduated","b":{"single":[[5,0],[9,1083150]],"mfj":[[5,0],[9,1083150]]},"sd":{"single":0,"mfj":0},"pe":{"single":4400,"married_jointly":8800,"dependent":1000,"form":"deduction"},"hoh":"single"},"MI":{"n":"Michigan","t":"flat","b":{"single":[[4.25,0]],"mfj":[[4.25,0]]},"sd":{"single":0,"mfj":0},"pe":{"single":5900,"married_jointly":11800,"dependent":5900,"form":"deduction"},"hoh":"single"},"MN":{"n":"Minnesota","t":"graduated","b":{"single":[[5.35,0],[6.8,33310],[7.85,109430],[9.85,203150]],"mfj":[[5.35,0],[6.8,48700],[7.85,193480],[9.85,337930]]},"sd":{"single":15300,"mfj":30600},"pe":{"single":0,"married_jointly":0,"dependent":5300,"form":"deduction"},"hoh":"single"},"MS":{"n":"Mississippi","t":"flat","b":{"single":[[4,10000]],"mfj":[[4,10000]]},"sd":{"single":2300,"mfj":4600},"pe":{"single":6000,"married_jointly":12000,"dependent":1500,"form":"deduction"},"hoh":"single"},"MO":{"n":"Missouri","t":"graduated","b":{"single":[[2,1348],[2.5,2696],[3,4044],[3.5,5392],[4,6740],[4.5,8088],[4.7,9436]],"mfj":[[2,1348],[2.5,2696],[3,4044],[3.5,5392],[4,6740],[4.5,8088],[4.7,9436]]},"sd":{"single":16100,"mfj":32200},"pe":{"single":0,"married_jointly":0,"dependent":0,"form":"none"},"hoh":"single"},"MT":{"n":"Montana","t":"graduated","b":{"single":[[4.7,0],[5.65,47500]],"mfj":[[4.7,0],[5.65,95000]]},"sd":{"single":16100,"mfj":32200},"pe":{"single":0,"married_jointly":0,"dependent":0,"form":"none"},"hoh":"single"},"NE":{"n":"Nebraska","t":"graduated","b":{"single":[[2.46,0],[3.51,4130],[4.55,24760]],"mfj":[[2.46,0],[3.51,8250],[4.55,49530]]},"sd":{"single":8850,"mfj":17700},"pe":{"single":176,"married_jointly":352,"dependent":176,"form":"credit"},"hoh":"single"},"NV":{"n":"Nevada","t":"none","b":{"single":[],"mfj":[]},"sd":{"single":0,"mfj":0},"pe":{"single":0,"married_jointly":0,"dependent":0,"form":"none"},"hoh":"single"},"NH":{"n":"New Hampshire","t":"none","b":{"single":[],"mfj":[]},"sd":{"single":0,"mfj":0},"pe":{"single":0,"married_jointly":0,"dependent":0,"form":"none"},"hoh":"single"},"NJ":{"n":"New Jersey","t":"graduated","b":{"single":[[1.4,0],[1.75,20000],[3.5,35000],[5.53,40000],[6.37,75000],[8.97,500000],[10.75,1000000]],"mfj":[[1.4,0],[1.75,20000],[2.45,50000],[3.5,70000],[5.53,80000],[6.37,150000],[8.97,500000],[10.75,1000000]]},"sd":{"single":0,"mfj":0},"pe":{"single":1000,"married_jointly":2000,"dependent":1500,"form":"deduction"},"hoh":"single"},"NM":{"n":"New Mexico","t":"graduated","b":{"single":[[1.5,0],[3.2,5500],[4.3,16500],[4.7,33500],[4.9,66500],[5.9,210000]],"mfj":[[1.5,0],[3.2,8000],[4.3,25000],[4.7,50000],[4.9,100000],[5.9,315000]]},"sd":{"single":16100,"mfj":32200},"pe":{"single":0,"married_jointly":0,"dependent":4000,"form":"deduction"},"hoh":"single"},"NY":{"n":"New York","t":"graduated","b":{"single":[[3.9,0],[4.4,8500],[5.15,11700],[5.4,13900],[5.9,80650],[6.85,215400],[9.65,1077550],[10.3,5000000],[10.9,25000000]],"mfj":[[3.9,0],[4.4,17150],[5.15,23600],[5.4,27900],[5.9,161550],[6.85,323200],[9.65,2155350],[10.3,5000000],[10.9,25000000]]},"sd":{"single":8000,"mfj":16050},"pe":{"single":0,"married_jointly":0,"dependent":1000,"form":"deduction"},"hoh":"single"},"NC":{"n":"North Carolina","t":"flat","b":{"single":[[3.99,0]],"mfj":[[3.99,0]]},"sd":{"single":12750,"mfj":25500},"pe":{"single":0,"married_jointly":0,"dependent":0,"form":"none"},"hoh":"single"},"ND":{"n":"North Dakota","t":"graduated","b":{"single":[[1.95,48475],[2.5,244825]],"mfj":[[1.95,80975],[2.5,298075]]},"sd":{"single":16100,"mfj":32200},"pe":{"single":0,"married_jointly":0,"dependent":0,"form":"none"},"hoh":"single"},"OH":{"n":"Ohio","t":"flat","b":{"single":[[2.75,26050]],"mfj":[[2.75,26050]]},"sd":{"single":0,"mfj":0},"pe":{"single":2400,"married_jointly":4800,"dependent":2400,"form":"deduction"},"hoh":"single"},"OK":{"n":"Oklahoma","t":"graduated","b":{"single":[[2.5,3750],[3.5,4900],[4.5,7200]],"mfj":[[2.5,7500],[3.5,9800],[4.5,14400]]},"sd":{"single":6350,"mfj":12700},"pe":{"single":1000,"married_jointly":2000,"dependent":1000,"form":"deduction"},"hoh":"single"},"OR":{"n":"Oregon","t":"graduated","b":{"single":[[4.75,0],[6.75,4550],[8.75,11400],[9.9,125000]],"mfj":[[4.75,0],[6.75,9100],[8.75,22800],[9.9,250000]]},"sd":{"single":2910,"mfj":5820},"pe":{"single":256,"married_jointly":512,"dependent":256,"form":"credit"},"hoh":"single"},"PA":{"n":"Pennsylvania","t":"flat","b":{"single":[[3.07,0]],"mfj":[[3.07,0]]},"sd":{"single":0,"mfj":0},"pe":{"single":0,"married_jointly":0,"dependent":0,"form":"none"},"hoh":"single"},"RI":{"n":"Rhode Island","t":"graduated","b":{"single":[[3.75,0],[4.75,82050],[5.99,186450]],"mfj":[[3.75,0],[4.75,82050],[5.99,186450]]},"sd":{"single":11200,"mfj":22400},"pe":{"single":5250,"married_jointly":10500,"dependent":5250,"form":"deduction"},"hoh":"single"},"SC":{"n":"South Carolina","t":"graduated","b":{"single":[[0,0],[3,3640],[6,18230]],"mfj":[[0,0],[3,3640],[6,18230]]},"sd":{"single":8350,"mfj":16700},"pe":{"single":0,"married_jointly":0,"dependent":4930,"form":"deduction"},"hoh":"single"},"SD":{"n":"South Dakota","t":"none","b":{"single":[],"mfj":[]},"sd":{"single":0,"mfj":0},"pe":{"single":0,"married_jointly":0,"dependent":0,"form":"none"},"hoh":"single"},"TN":{"n":"Tennessee","t":"none","b":{"single":[],"mfj":[]},"sd":{"single":0,"mfj":0},"pe":{"single":0,"married_jointly":0,"dependent":0,"form":"none"},"hoh":"single"},"TX":{"n":"Texas","t":"none","b":{"single":[],"mfj":[]},"sd":{"single":0,"mfj":0},"pe":{"single":0,"married_jointly":0,"dependent":0,"form":"none"},"hoh":"single"},"UT":{"n":"Utah","t":"flat","b":{"single":[[4.5,0]],"mfj":[[4.5,0]]},"sd":{"single":966,"mfj":1932},"pe":{"single":0,"married_jointly":0,"dependent":2111,"form":"credit"},"hoh":"single"},"VT":{"n":"Vermont","t":"graduated","b":{"single":[[3.35,0],[6.6,49400],[7.6,119700],[8.75,249700]],"mfj":[[3.35,0],[6.6,82500],[7.6,199450],[8.75,304000]]},"sd":{"single":7650,"mfj":15300},"pe":{"single":5300,"married_jointly":10600,"dependent":5300,"form":"deduction"},"hoh":"single"},"VA":{"n":"Virginia","t":"graduated","b":{"single":[[2,0],[3,3000],[5,5000],[5.75,17000]],"mfj":[[2,0],[3,3000],[5,5000],[5.75,17000]]},"sd":{"single":8750,"mfj":17500},"pe":{"single":930,"married_jointly":1860,"dependent":930,"form":"deduction"},"hoh":"single"},"WA":{"n":"Washington","t":"none","b":{"single":[],"mfj":[]},"sd":{"single":0,"mfj":0},"pe":{"single":0,"married_jointly":0,"dependent":0,"form":"none"},"hoh":"single"},"WV":{"n":"West Virginia","t":"graduated","b":{"single":[[2.22,0],[2.96,10000],[3.33,25000],[4.44,40000],[4.82,60000]],"mfj":[[2.22,0],[2.96,10000],[3.33,25000],[4.44,40000],[4.82,60000]]},"sd":{"single":0,"mfj":0},"pe":{"single":2000,"married_jointly":4000,"dependent":2000,"form":"deduction"},"hoh":"single"},"WI":{"n":"Wisconsin","t":"graduated","b":{"single":[[3.5,0],[4.4,15110],[5.3,51950],[7.65,332720]],"mfj":[[3.5,0],[4.4,20150],[5.3,69260],[7.65,443630]]},"sd":{"single":13960,"mfj":25840},"pe":{"single":700,"married_jointly":1400,"dependent":700,"form":"deduction"},"hoh":"single"},"WY":{"n":"Wyoming","t":"none","b":{"single":[],"mfj":[]},"sd":{"single":0,"mfj":0},"pe":{"single":0,"married_jointly":0,"dependent":0,"form":"none"},"hoh":"single"},"DC":{"n":"District of Columbia","t":"graduated","b":{"single":[[4,0],[6,10000],[6.5,40000],[8.5,60000],[9.25,250000],[9.75,500000],[10.75,1000000]],"mfj":[[4,0],[6,10000],[6.5,40000],[8.5,60000],[9.25,250000],[9.75,500000],[10.75,1000000]]},"sd":{"single":16100,"mfj":32200},"pe":{"single":0,"married_jointly":0,"dependent":0,"form":"none"},"hoh":"single"}},"stateProp":{"AK":1.14,"AL":0.38,"AR":0.56,"AZ":0.52,"CA":0.71,"CO":0.49,"CT":1.92,"DC":0.58,"DE":0.53,"FL":0.79,"GA":0.81,"HI":0.27,"IA":1.43,"ID":0.53,"IL":2.07,"IN":0.74,"KS":1.3,"KY":0.77,"LA":0.55,"MA":1.11,"MD":1,"ME":1.1,"MI":1.28,"MN":1.04,"MO":0.88,"MS":0.74,"MT":0.75,"NC":0.7,"ND":0.99,"NE":1.5,"NH":1.77,"NJ":2.23,"NM":0.72,"NV":0.49,"NY":1.6,"OH":1.36,"OK":0.82,"OR":0.83,"PA":1.35,"RI":1.32,"SC":0.51,"SD":1.09,"TN":0.55,"TX":1.58,"UT":0.53,"VA":0.74,"VT":1.71,"WA":0.84,"WI":1.51,"WV":0.54,"WY":0.58},"suburbs":{"frisco":{"name":"Frisco","county":"Collin","med":679371,"ppsf":233,"combined":1.675,"isd":"Frisco ISD","isd_rate":1.0194},"plano":{"name":"Plano","county":"Collin","med":525940,"ppsf":217.3,"combined":1.708,"isd":"Plano ISD","isd_rate":1.03955},"mckinney":{"name":"McKinney","county":"Collin","med":497691,"ppsf":205,"combined":1.747,"isd":"McKinney ISD","isd_rate":1.1043},"allen":{"name":"Allen","county":"Collin","med":516235,"ppsf":210.3,"combined":1.772,"isd":"Allen ISD","isd_rate":1.1258},"prosper":{"name":"Prosper","county":"Collin","med":851513,"ppsf":239.6,"combined":1.95,"isd":"Prosper ISD","isd_rate":1.2141},"flower-mound":{"name":"Flower Mound","county":"Denton","med":621958,"ppsf":231.4,"combined":1.691,"isd":"Lewisville ISD","isd_rate":1.1178},"argyle":{"name":"Argyle","county":"Denton","med":567039,"ppsf":209.1,"combined":1.702,"isd":"Argyle ISD","isd_rate":1.1727},"coppell":{"name":"Coppell","county":"Dallas","med":629583,"ppsf":254.4,"combined":1.961,"isd":"Coppell ISD","isd_rate":0.9819},"southlake":{"name":"Southlake","county":"Tarrant","med":1355958,"ppsf":355.9,"combined":1.688,"isd":"Carroll ISD","isd_rate":0.9294},"colleyville":{"name":"Colleyville","county":"Tarrant","med":1001646,"ppsf":275.6,"combined":1.643,"isd":"Grapevine-Colleyville ISD","isd_rate":0.8686}},"homestead_isd":140000,"senior_isd":60000,"vet":{"10_to_29_pct":5000,"30_to_49_pct":7500,"50_to_69_pct":10000,"70_to_100_pct":12000,"age65_with_10pct_min":12000},"ins":{"lo_min":4000,"hi_min":4900,"lo_pct":0.6,"hi_pct":0.9},"fredRate":6.52}/*END_CC_DATA_INJECT*/;
+  var CC_DATA = /*CC_DATA_INJECT*/{"_meta":{"income_as_of":"2026-01-01","sit_as_of":"2026-01-01","sit_src":"https://taxfoundation.org/data/all/state/state-income-tax-rates-2026/","prop_src":"https://taxfoundation.org/data/all/state/property-taxes-by-state-county/","prop_year":2023,"dfw_year":2025,"dfw_src":"county appraisal districts + city/ISD adopted rate notices","exempt_src":"https://comptroller.texas.gov/taxes/property-tax/exemptions/","ins_as_of":"2026-03 (market averages compiled March 2026)","fred_rate_date":"2026-06-11"},"federal":{"sd":{"single":16100,"married_jointly":32200,"head_of_household":24150},"br":{"single":[[10,0],[12,12400],[22,50400],[24,105700],[32,201775],[35,256225],[37,640600]],"married_jointly":[[10,0],[12,24800],[22,100800],[24,211400],[32,403550],[35,512450],[37,768700]],"head_of_household":[[10,0],[12,17700],[22,67450],[24,105700],[32,201775],[35,256200],[37,640600]]}},"states":{"AL":{"n":"Alabama","t":"graduated","b":{"single":[[2,0],[4,500],[5,3000]],"mfj":[[2,0],[4,1000],[5,6000]]},"sd":{"single":3000,"mfj":8500},"pe":{"single":1500,"married_jointly":3000,"dependent":1000,"form":"deduction"},"hoh":"single"},"AK":{"n":"Alaska","t":"none","b":{"single":[],"mfj":[]},"sd":{"single":0,"mfj":0},"pe":{"single":0,"married_jointly":0,"dependent":0,"form":"none"},"hoh":"single"},"AZ":{"n":"Arizona","t":"flat","b":{"single":[[2.5,0]],"mfj":[[2.5,0]]},"sd":{"single":8350,"mfj":16700},"pe":{"single":0,"married_jointly":0,"dependent":0,"form":"none"},"hoh":"single"},"AR":{"n":"Arkansas","t":"graduated","b":{"single":[[2,0],[3.9,4600]],"mfj":[[2,0],[3.9,4600]]},"sd":{"single":2470,"mfj":4940},"pe":{"single":29,"married_jointly":58,"dependent":29,"form":"credit"},"hoh":"single"},"CA":{"n":"California","t":"graduated","b":{"single":[[1,0],[2,11079],[4,26264],[6,41452],[8,57542],[9.3,72724],[10.3,371479],[11.3,445771],[12.3,742953],[13.3,1000000]],"mfj":[[1,0],[2,22158],[4,52528],[6,82904],[8,115084],[9.3,145448],[10.3,742958],[11.3,891542],[12.3,1000000],[13.3,1485906]]},"sd":{"single":5540,"mfj":11080},"pe":{"single":153,"married_jointly":306,"dependent":153,"form":"credit"},"hoh":"single"},"CO":{"n":"Colorado","t":"flat","b":{"single":[[4.4,0]],"mfj":[[4.4,0]]},"sd":{"single":16100,"mfj":32200},"pe":{"single":0,"married_jointly":0,"dependent":0,"form":"none"},"hoh":"single"},"CT":{"n":"Connecticut","t":"graduated","b":{"single":[[2,0],[4.5,10000],[5.5,50000],[6,100000],[6.5,200000],[6.9,250000],[6.99,500000]],"mfj":[[2,0],[4.5,20000],[5.5,100000],[6,200000],[6.5,400000],[6.9,500000],[6.99,1000000]]},"sd":{"single":0,"mfj":0},"pe":{"single":15000,"married_jointly":24000,"dependent":0,"form":"deduction"},"hoh":"single"},"DE":{"n":"Delaware","t":"graduated","b":{"single":[[2.2,2000],[3.9,5000],[4.8,10000],[5.2,20000],[5.55,25000],[6.6,60000]],"mfj":[[2.2,2000],[3.9,5000],[4.8,10000],[5.2,20000],[5.55,25000],[6.6,60000]]},"sd":{"single":3250,"mfj":6500},"pe":{"single":110,"married_jointly":220,"dependent":110,"form":"credit"},"hoh":"single"},"FL":{"n":"Florida","t":"none","b":{"single":[],"mfj":[]},"sd":{"single":0,"mfj":0},"pe":{"single":0,"married_jointly":0,"dependent":0,"form":"none"},"hoh":"single"},"GA":{"n":"Georgia","t":"flat","b":{"single":[[5.19,0]],"mfj":[[5.19,0]]},"sd":{"single":12000,"mfj":24000},"pe":{"single":0,"married_jointly":0,"dependent":4000,"form":"deduction"},"hoh":"single"},"HI":{"n":"Hawaii","t":"graduated","b":{"single":[[1.4,0],[3.2,9600],[5.5,14400],[6.4,19200],[6.8,24000],[7.2,36000],[7.6,48000],[7.9,125000],[8.25,175000],[9,225000],[10,275000],[11,325000]],"mfj":[[1.4,0],[3.2,19200],[5.5,28800],[6.4,38400],[6.8,48000],[7.2,72000],[7.6,96000],[7.9,250000],[8.25,350000],[9,450000],[10,550000],[11,650000]]},"sd":{"single":4400,"mfj":8800},"pe":{"single":1144,"married_jointly":2288,"dependent":1144,"form":"deduction"},"hoh":"single"},"ID":{"n":"Idaho","t":"flat","b":{"single":[[5.3,4811]],"mfj":[[5.3,9622]]},"sd":{"single":16100,"mfj":32200},"pe":{"single":0,"married_jointly":0,"dependent":0,"form":"none"},"hoh":"single"},"IL":{"n":"Illinois","t":"flat","b":{"single":[[4.95,0]],"mfj":[[4.95,0]]},"sd":{"single":0,"mfj":0},"pe":{"single":2925,"married_jointly":5850,"dependent":2925,"form":"deduction"},"hoh":"single"},"IN":{"n":"Indiana","t":"flat","b":{"single":[[2.95,0]],"mfj":[[2.95,0]]},"sd":{"single":0,"mfj":0},"pe":{"single":1000,"married_jointly":2000,"dependent":1000,"form":"deduction"},"hoh":"single"},"IA":{"n":"Iowa","t":"flat","b":{"single":[[3.8,0]],"mfj":[[3.8,0]]},"sd":{"single":16100,"mfj":32200},"pe":{"single":40,"married_jointly":80,"dependent":40,"form":"credit"},"hoh":"single"},"KS":{"n":"Kansas","t":"graduated","b":{"single":[[5.2,0],[5.58,23000]],"mfj":[[5.2,0],[5.58,46000]]},"sd":{"single":3605,"mfj":8240},"pe":{"single":9160,"married_jointly":18320,"dependent":2320,"form":"deduction"},"hoh":"single"},"KY":{"n":"Kentucky","t":"flat","b":{"single":[[3.5,0]],"mfj":[[3.5,0]]},"sd":{"single":3360,"mfj":3360},"pe":{"single":0,"married_jointly":0,"dependent":0,"form":"none"},"hoh":"single"},"LA":{"n":"Louisiana","t":"flat","b":{"single":[[3,0]],"mfj":[[3,0]]},"sd":{"single":12875,"mfj":25750},"pe":{"single":0,"married_jointly":0,"dependent":0,"form":"none"},"hoh":"single"},"ME":{"n":"Maine","t":"graduated","b":{"single":[[5.8,0],[6.75,27399],[7.15,64849]],"mfj":[[5.8,0],[6.75,54849],[7.15,129749]]},"sd":{"single":8350,"mfj":16700},"pe":{"single":5300,"married_jointly":10600,"dependent":0,"form":"deduction"},"hoh":"single"},"MD":{"n":"Maryland","t":"graduated","b":{"single":[[2,0],[3,1000],[4,2000],[4.75,3000],[5,100000],[5.25,125000],[5.5,150000],[5.75,250000],[6.25,500000],[6.5,1000000]],"mfj":[[2,0],[3,1000],[4,2000],[4.75,3000],[5,150000],[5.25,175000],[5.5,225000],[5.75,300000],[6.25,600000],[6.5,1200000]]},"sd":{"single":3350,"mfj":6700},"pe":{"single":3200,"married_jointly":6400,"dependent":3200,"form":"deduction"},"hoh":"single"},"MA":{"n":"Massachusetts","t":"graduated","b":{"single":[[5,0],[9,1083150]],"mfj":[[5,0],[9,1083150]]},"sd":{"single":0,"mfj":0},"pe":{"single":4400,"married_jointly":8800,"dependent":1000,"form":"deduction"},"hoh":"single"},"MI":{"n":"Michigan","t":"flat","b":{"single":[[4.25,0]],"mfj":[[4.25,0]]},"sd":{"single":0,"mfj":0},"pe":{"single":5900,"married_jointly":11800,"dependent":5900,"form":"deduction"},"hoh":"single"},"MN":{"n":"Minnesota","t":"graduated","b":{"single":[[5.35,0],[6.8,33310],[7.85,109430],[9.85,203150]],"mfj":[[5.35,0],[6.8,48700],[7.85,193480],[9.85,337930]]},"sd":{"single":15300,"mfj":30600},"pe":{"single":0,"married_jointly":0,"dependent":5300,"form":"deduction"},"hoh":"single"},"MS":{"n":"Mississippi","t":"flat","b":{"single":[[4,10000]],"mfj":[[4,10000]]},"sd":{"single":2300,"mfj":4600},"pe":{"single":6000,"married_jointly":12000,"dependent":1500,"form":"deduction"},"hoh":"single"},"MO":{"n":"Missouri","t":"graduated","b":{"single":[[2,1348],[2.5,2696],[3,4044],[3.5,5392],[4,6740],[4.5,8088],[4.7,9436]],"mfj":[[2,1348],[2.5,2696],[3,4044],[3.5,5392],[4,6740],[4.5,8088],[4.7,9436]]},"sd":{"single":16100,"mfj":32200},"pe":{"single":0,"married_jointly":0,"dependent":0,"form":"none"},"hoh":"single"},"MT":{"n":"Montana","t":"graduated","b":{"single":[[4.7,0],[5.65,47500]],"mfj":[[4.7,0],[5.65,95000]]},"sd":{"single":16100,"mfj":32200},"pe":{"single":0,"married_jointly":0,"dependent":0,"form":"none"},"hoh":"single"},"NE":{"n":"Nebraska","t":"graduated","b":{"single":[[2.46,0],[3.51,4130],[4.55,24760]],"mfj":[[2.46,0],[3.51,8250],[4.55,49530]]},"sd":{"single":8850,"mfj":17700},"pe":{"single":176,"married_jointly":352,"dependent":176,"form":"credit"},"hoh":"single"},"NV":{"n":"Nevada","t":"none","b":{"single":[],"mfj":[]},"sd":{"single":0,"mfj":0},"pe":{"single":0,"married_jointly":0,"dependent":0,"form":"none"},"hoh":"single"},"NH":{"n":"New Hampshire","t":"none","b":{"single":[],"mfj":[]},"sd":{"single":0,"mfj":0},"pe":{"single":0,"married_jointly":0,"dependent":0,"form":"none"},"hoh":"single"},"NJ":{"n":"New Jersey","t":"graduated","b":{"single":[[1.4,0],[1.75,20000],[3.5,35000],[5.53,40000],[6.37,75000],[8.97,500000],[10.75,1000000]],"mfj":[[1.4,0],[1.75,20000],[2.45,50000],[3.5,70000],[5.53,80000],[6.37,150000],[8.97,500000],[10.75,1000000]]},"sd":{"single":0,"mfj":0},"pe":{"single":1000,"married_jointly":2000,"dependent":1500,"form":"deduction"},"hoh":"single"},"NM":{"n":"New Mexico","t":"graduated","b":{"single":[[1.5,0],[3.2,5500],[4.3,16500],[4.7,33500],[4.9,66500],[5.9,210000]],"mfj":[[1.5,0],[3.2,8000],[4.3,25000],[4.7,50000],[4.9,100000],[5.9,315000]]},"sd":{"single":16100,"mfj":32200},"pe":{"single":0,"married_jointly":0,"dependent":4000,"form":"deduction"},"hoh":"single"},"NY":{"n":"New York","t":"graduated","b":{"single":[[3.9,0],[4.4,8500],[5.15,11700],[5.4,13900],[5.9,80650],[6.85,215400],[9.65,1077550],[10.3,5000000],[10.9,25000000]],"mfj":[[3.9,0],[4.4,17150],[5.15,23600],[5.4,27900],[5.9,161550],[6.85,323200],[9.65,2155350],[10.3,5000000],[10.9,25000000]]},"sd":{"single":8000,"mfj":16050},"pe":{"single":0,"married_jointly":0,"dependent":1000,"form":"deduction"},"hoh":"single"},"NC":{"n":"North Carolina","t":"flat","b":{"single":[[3.99,0]],"mfj":[[3.99,0]]},"sd":{"single":12750,"mfj":25500},"pe":{"single":0,"married_jointly":0,"dependent":0,"form":"none"},"hoh":"single"},"ND":{"n":"North Dakota","t":"graduated","b":{"single":[[1.95,48475],[2.5,244825]],"mfj":[[1.95,80975],[2.5,298075]]},"sd":{"single":16100,"mfj":32200},"pe":{"single":0,"married_jointly":0,"dependent":0,"form":"none"},"hoh":"single"},"OH":{"n":"Ohio","t":"flat","b":{"single":[[2.75,26050]],"mfj":[[2.75,26050]]},"sd":{"single":0,"mfj":0},"pe":{"single":2400,"married_jointly":4800,"dependent":2400,"form":"deduction"},"hoh":"single"},"OK":{"n":"Oklahoma","t":"graduated","b":{"single":[[2.5,3750],[3.5,4900],[4.5,7200]],"mfj":[[2.5,7500],[3.5,9800],[4.5,14400]]},"sd":{"single":6350,"mfj":12700},"pe":{"single":1000,"married_jointly":2000,"dependent":1000,"form":"deduction"},"hoh":"single"},"OR":{"n":"Oregon","t":"graduated","b":{"single":[[4.75,0],[6.75,4550],[8.75,11400],[9.9,125000]],"mfj":[[4.75,0],[6.75,9100],[8.75,22800],[9.9,250000]]},"sd":{"single":2910,"mfj":5820},"pe":{"single":256,"married_jointly":512,"dependent":256,"form":"credit"},"hoh":"single"},"PA":{"n":"Pennsylvania","t":"flat","b":{"single":[[3.07,0]],"mfj":[[3.07,0]]},"sd":{"single":0,"mfj":0},"pe":{"single":0,"married_jointly":0,"dependent":0,"form":"none"},"hoh":"single"},"RI":{"n":"Rhode Island","t":"graduated","b":{"single":[[3.75,0],[4.75,82050],[5.99,186450]],"mfj":[[3.75,0],[4.75,82050],[5.99,186450]]},"sd":{"single":11200,"mfj":22400},"pe":{"single":5250,"married_jointly":10500,"dependent":5250,"form":"deduction"},"hoh":"single"},"SC":{"n":"South Carolina","t":"graduated","b":{"single":[[0,0],[3,3640],[6,18230]],"mfj":[[0,0],[3,3640],[6,18230]]},"sd":{"single":8350,"mfj":16700},"pe":{"single":0,"married_jointly":0,"dependent":4930,"form":"deduction"},"hoh":"single"},"SD":{"n":"South Dakota","t":"none","b":{"single":[],"mfj":[]},"sd":{"single":0,"mfj":0},"pe":{"single":0,"married_jointly":0,"dependent":0,"form":"none"},"hoh":"single"},"TN":{"n":"Tennessee","t":"none","b":{"single":[],"mfj":[]},"sd":{"single":0,"mfj":0},"pe":{"single":0,"married_jointly":0,"dependent":0,"form":"none"},"hoh":"single"},"TX":{"n":"Texas","t":"none","b":{"single":[],"mfj":[]},"sd":{"single":0,"mfj":0},"pe":{"single":0,"married_jointly":0,"dependent":0,"form":"none"},"hoh":"single"},"UT":{"n":"Utah","t":"flat","b":{"single":[[4.5,0]],"mfj":[[4.5,0]]},"sd":{"single":966,"mfj":1932},"pe":{"single":0,"married_jointly":0,"dependent":2111,"form":"credit"},"hoh":"single"},"VT":{"n":"Vermont","t":"graduated","b":{"single":[[3.35,0],[6.6,49400],[7.6,119700],[8.75,249700]],"mfj":[[3.35,0],[6.6,82500],[7.6,199450],[8.75,304000]]},"sd":{"single":7650,"mfj":15300},"pe":{"single":5300,"married_jointly":10600,"dependent":5300,"form":"deduction"},"hoh":"single"},"VA":{"n":"Virginia","t":"graduated","b":{"single":[[2,0],[3,3000],[5,5000],[5.75,17000]],"mfj":[[2,0],[3,3000],[5,5000],[5.75,17000]]},"sd":{"single":8750,"mfj":17500},"pe":{"single":930,"married_jointly":1860,"dependent":930,"form":"deduction"},"hoh":"single"},"WA":{"n":"Washington","t":"none","b":{"single":[],"mfj":[]},"sd":{"single":0,"mfj":0},"pe":{"single":0,"married_jointly":0,"dependent":0,"form":"none"},"hoh":"single"},"WV":{"n":"West Virginia","t":"graduated","b":{"single":[[2.22,0],[2.96,10000],[3.33,25000],[4.44,40000],[4.82,60000]],"mfj":[[2.22,0],[2.96,10000],[3.33,25000],[4.44,40000],[4.82,60000]]},"sd":{"single":0,"mfj":0},"pe":{"single":2000,"married_jointly":4000,"dependent":2000,"form":"deduction"},"hoh":"single"},"WI":{"n":"Wisconsin","t":"graduated","b":{"single":[[3.5,0],[4.4,15110],[5.3,51950],[7.65,332720]],"mfj":[[3.5,0],[4.4,20150],[5.3,69260],[7.65,443630]]},"sd":{"single":13960,"mfj":25840},"pe":{"single":700,"married_jointly":1400,"dependent":700,"form":"deduction"},"hoh":"single"},"WY":{"n":"Wyoming","t":"none","b":{"single":[],"mfj":[]},"sd":{"single":0,"mfj":0},"pe":{"single":0,"married_jointly":0,"dependent":0,"form":"none"},"hoh":"single"},"DC":{"n":"District of Columbia","t":"graduated","b":{"single":[[4,0],[6,10000],[6.5,40000],[8.5,60000],[9.25,250000],[9.75,500000],[10.75,1000000]],"mfj":[[4,0],[6,10000],[6.5,40000],[8.5,60000],[9.25,250000],[9.75,500000],[10.75,1000000]]},"sd":{"single":16100,"mfj":32200},"pe":{"single":0,"married_jointly":0,"dependent":0,"form":"none"},"hoh":"single"}},"stateProp":{"AK":1.14,"AL":0.38,"AR":0.56,"AZ":0.52,"CA":0.71,"CO":0.49,"CT":1.92,"DC":0.58,"DE":0.53,"FL":0.79,"GA":0.81,"HI":0.27,"IA":1.43,"ID":0.53,"IL":2.07,"IN":0.74,"KS":1.3,"KY":0.77,"LA":0.55,"MA":1.11,"MD":1,"ME":1.1,"MI":1.28,"MN":1.04,"MO":0.88,"MS":0.74,"MT":0.75,"NC":0.7,"ND":0.99,"NE":1.5,"NH":1.77,"NJ":2.23,"NM":0.72,"NV":0.49,"NY":1.6,"OH":1.36,"OK":0.82,"OR":0.83,"PA":1.35,"RI":1.32,"SC":0.51,"SD":1.09,"TN":0.55,"TX":1.58,"UT":0.53,"VA":0.74,"VT":1.71,"WA":0.84,"WI":1.51,"WV":0.54,"WY":0.58},"suburbs":{"frisco":{"name":"Frisco","county":"Collin","med":679371,"ppsf":233,"combined":1.675,"isd":"Frisco ISD","isd_rate":1.0194,"vs":79,"edu":97,"com":51,"tiers":{"starter":{"min":0,"max":399999,"med":366846,"ppsf":227.2,"sqft":1615,"lc":0},"typical":{"min":400000,"max":699999,"med":535732,"ppsf":219.1,"sqft":2445,"lc":0},"moveup":{"min":700000,"max":999999,"med":807562,"ppsf":224.8,"sqft":3592,"lc":0},"luxury":{"min":1000000,"max":null,"med":1353315,"ppsf":316,"sqft":4283,"lc":0}}},"plano":{"name":"Plano","county":"Collin","med":525940,"ppsf":217.3,"combined":1.708,"isd":"Plano ISD","isd_rate":1.03955,"vs":89,"edu":97,"com":54,"tiers":{"starter":{"min":0,"max":399999,"med":345779,"ppsf":201.6,"sqft":1715,"lc":0},"typical":{"min":400000,"max":699999,"med":525562,"ppsf":215.6,"sqft":2438,"lc":0},"moveup":{"min":700000,"max":999999,"med":784083,"ppsf":225.6,"sqft":3476,"lc":0},"luxury":{"min":1000000,"max":null,"med":1296333,"ppsf":308.4,"sqft":4203,"lc":0}}},"mckinney":{"name":"McKinney","county":"Collin","med":497691,"ppsf":205,"combined":1.747,"isd":"McKinney ISD","isd_rate":1.1043,"vs":93,"edu":97,"com":54,"tiers":{"starter":{"min":0,"max":399999,"med":346907,"ppsf":191.6,"sqft":1811,"lc":0},"typical":{"min":400000,"max":699999,"med":524099,"ppsf":202.1,"sqft":2593,"lc":0},"moveup":{"min":700000,"max":999999,"med":795171,"ppsf":224.2,"sqft":3547,"lc":0},"luxury":{"min":1000000,"max":null,"med":1264085,"ppsf":289.3,"sqft":4369,"lc":0}}},"allen":{"name":"Allen","county":"Collin","med":516235,"ppsf":210.3,"combined":1.772,"isd":"Allen ISD","isd_rate":1.1258,"vs":94,"edu":97,"com":50,"tiers":{"starter":{"min":0,"max":399999,"med":332896,"ppsf":208.8,"sqft":1594,"lc":0},"typical":{"min":400000,"max":699999,"med":521183,"ppsf":204.8,"sqft":2545,"lc":0},"moveup":{"min":700000,"max":999999,"med":802990,"ppsf":219.8,"sqft":3653,"lc":0},"luxury":{"min":1000000,"max":null,"med":1186667,"ppsf":269.2,"sqft":4408,"lc":0}}},"prosper":{"name":"Prosper","county":"Collin","med":851513,"ppsf":239.6,"combined":1.95,"isd":"Prosper ISD","isd_rate":1.2141,"vs":68,"edu":97,"com":46,"tiers":{"starter":{"min":0,"max":399999,"med":343283,"ppsf":205.1,"sqft":1674,"lc":0},"typical":{"min":400000,"max":699999,"med":603630,"ppsf":215.1,"sqft":2806,"lc":0},"moveup":{"min":700000,"max":999999,"med":835998,"ppsf":231.8,"sqft":3607,"lc":0},"luxury":{"min":1000000,"max":null,"med":1273179,"ppsf":294.1,"sqft":4329,"lc":0}}},"flower-mound":{"name":"Flower Mound","county":"Denton","med":621958,"ppsf":231.4,"combined":1.691,"isd":"Lewisville ISD","isd_rate":1.1178,"vs":87,"edu":97,"com":48,"tiers":{"starter":{"min":0,"max":399999,"med":350208,"ppsf":211.9,"sqft":1653,"lc":0},"typical":{"min":400000,"max":699999,"med":548721,"ppsf":223.5,"sqft":2455,"lc":0},"moveup":{"min":700000,"max":999999,"med":777920,"ppsf":233.9,"sqft":3326,"lc":0},"luxury":{"min":1000000,"max":null,"med":1394542,"ppsf":304.8,"sqft":4575,"lc":0}}},"argyle":{"name":"Argyle","county":"Denton","med":567039,"ppsf":209.1,"combined":1.702,"isd":"Argyle ISD","isd_rate":1.1727,"vs":96,"edu":97,"com":55,"tiers":{"starter":{"min":0,"max":399999,"med":379427,"ppsf":205.7,"sqft":1845,"lc":0},"typical":{"min":400000,"max":699999,"med":489395,"ppsf":196.3,"sqft":2493,"lc":0},"moveup":{"min":700000,"max":999999,"med":818133,"ppsf":238.1,"sqft":3436,"lc":0},"luxury":{"min":1000000,"max":null,"med":1422464,"ppsf":333.7,"sqft":4263,"lc":0}}},"coppell":{"name":"Coppell","county":"Dallas","med":629583,"ppsf":254.4,"combined":1.961,"isd":"Coppell ISD","isd_rate":0.9819,"vs":84,"edu":97,"com":53,"tiers":{"starter":{"min":0,"max":399999,"med":365344,"ppsf":252.2,"sqft":1449,"lc":0},"typical":{"min":400000,"max":699999,"med":526072,"ppsf":255.5,"sqft":2059,"lc":0},"moveup":{"min":700000,"max":999999,"med":812458,"ppsf":238.3,"sqft":3409,"lc":0},"luxury":{"min":1000000,"max":null,"med":1204321,"ppsf":291.7,"sqft":4129,"lc":0}}},"southlake":{"name":"Southlake","county":"Tarrant","med":1355958,"ppsf":355.9,"combined":1.688,"isd":"Carroll ISD","isd_rate":0.9294,"vs":47,"edu":97,"com":45,"tiers":{"typical":{"min":400000,"max":699999,"med":611479,"ppsf":315,"sqft":1941,"lc":1},"moveup":{"min":700000,"max":999999,"med":922875,"ppsf":298.3,"sqft":3094,"lc":0},"luxury":{"min":1000000,"max":null,"med":1475446,"ppsf":366.7,"sqft":4024,"lc":0}}},"colleyville":{"name":"Colleyville","county":"Tarrant","med":1001646,"ppsf":275.6,"combined":1.643,"isd":"Grapevine-Colleyville ISD","isd_rate":0.8686,"vs":55,"edu":97,"com":55,"tiers":{"starter":{"min":0,"max":399999,"med":343250,"ppsf":342,"sqft":1004,"lc":1},"typical":{"min":400000,"max":699999,"med":607388,"ppsf":251.1,"sqft":2419,"lc":0},"moveup":{"min":700000,"max":999999,"med":851646,"ppsf":262.5,"sqft":3244,"lc":0},"luxury":{"min":1000000,"max":null,"med":1317458,"ppsf":293.8,"sqft":4484,"lc":0}}}},"homestead_isd":140000,"senior_isd":60000,"vet":{"10_to_29_pct":5000,"30_to_49_pct":7500,"50_to_69_pct":10000,"70_to_100_pct":12000,"age65_with_10pct_min":12000},"ins":{"lo_min":4000,"hi_min":4900,"lo_pct":0.6,"hi_pct":0.9},"fredRate":6.52}/*END_CC_DATA_INJECT*/;
 
   /* Multi-metro states: metro only feeds Tier 2 (emailed report). */
   var METROS = {
@@ -830,13 +875,16 @@ gtag('consent','default',{
   function $(id){ return document.getElementById(id); }
   var elState=$("ccState"), elMetroWrap=$("ccMetroWrap"), elMetro=$("ccMetro"),
       elHome=$("ccHome"), elHomeLabel=$("ccHomeLabel"), elHomeHint=$("ccHomeHint"),
+      elSqft=$("ccSqft"), elSqftWrap=$("ccSqftWrap"),
       elOwnBtn=$("ccOwnBtn"), elRentBtn=$("ccRentBtn"),
       elIncome=$("ccIncome"), elHousehold=$("ccHousehold"),
-      elCurProp=$("ccCurProp"), elDown=$("ccDown"), elRate=$("ccRate"),
+      elCurProp=$("ccCurProp"), elDebts=$("ccDebts"), elDown=$("ccDown"), elRate=$("ccRate"),
       elVet=$("ccVet"), elSenior=$("ccSenior"),
       elForm=$("ccForm"), elResults=$("ccResults"), elFormErr=$("ccFormErr"), elCard=$("ccCard");
   var IS_RENT=false;
   var featuredSlug=null;     // current featured DFW suburb for property tax + PITI
+  var dfwTarget=null;        // user-set target DFW home price for the featured suburb (null = use median)
+  var scenSort="price";      // suburb table sort: price | afford | schools | net
   var lastModel=null;        // last computed model, for the email payload
 
   /* ======== NUMBER HELPERS ======== */
@@ -921,6 +969,29 @@ gtag('consent','default',{
     return Math.round(loan * r * Math.pow(1+r,n) / (Math.pow(1+r,n)-1));
   }
 
+  /* Loan-officer ballpark: the home price a household might qualify for, using the
+     standard 28/36 debt-to-income ratios at the current rate and down payment, with
+     a typical assumed monthly debt load. This is an education estimate, NOT a
+     pre-approval (the UI says so and points to a licensed lender). */
+  var CC_ASSUMED_DEBTS = 600;   // typical other monthly debt (car, etc.), the prefill the user can override
+  var CC_DTI = 0.43;            // back-end debt-to-income ceiling lenders commonly approve to (QM limit)
+  function maxQualifyingPrice(grossAnnual, downPct, ratePct, debts){
+    if(grossAnnual<=0) return 0;
+    var gm=grossAnnual/12;
+    var maxHousing=CC_DTI*gm - (debts||0);                          // housing + debts <= 43% of gross
+    if(maxHousing<=0) return 0;
+    // Binary search the home price whose all-in monthly (P&I + generic DFW tax + insurance) hits the cap.
+    var lo=0, hi=8000000;
+    for(var i=0;i<46;i++){
+      var mid=(lo+hi)/2;
+      var pi=monthlyPI(mid*(1-downPct/100), ratePct);
+      var taxM=Math.max(0, mid-CC_DATA.homestead_isd)*0.017/12;     // ~1.7% effective after homestead, generic
+      var insM=insuranceRange(mid).mid/12;
+      if(pi+taxM+insM > maxHousing) hi=mid; else lo=mid;
+    }
+    return Math.round(lo/1000)*1000;
+  }
+
   /* Closest suburb by median price to the user's home value. */
   function closestSuburb(homeVal){
     var best=null, bestD=Infinity;
@@ -931,43 +1002,108 @@ gtag('consent','default',{
     return best || "frisco";
   }
 
-  /* ======== BUILD MODEL ======== */
+  /* ======== BUILD MODEL ========
+     Key principle (apples to apples): the Texas property tax, insurance, and
+     mortgage are computed on a REAL DFW home you would actually buy, defaulting
+     to each suburb's actual median price, not on your origin home's dollar value.
+     A $750K coastal home does not buy a $750K DFW home; it buys a typical home in
+     a value suburb with room to spare, or a smaller home in a premium one. Income
+     tax savings and your current property tax stay based on your income and your
+     current home value (your budget). PPSF is used only to size the median home,
+     where it is valid, never to convert your budget into a square footage. */
   function buildModel(){
     var st=elState.value;
     var fs=(document.querySelector('input[name=ccfile]:checked')||{}).value || "married_jointly";
     var income=toNum(elIncome.value);
     var hh=parseInt(elHousehold.value,10)||1;
-    var homeVal=toNum(elHome.value);             // home value (own) OR monthly rent (rent)
+    var budget=IS_RENT ? null : toNum(elHome.value);   // current home value = budget / equity
+    var sqft=IS_RENT ? 0 : toNum(elSqft.value);        // current home size (optional)
+    var sizeMode=sqft>0;                                // exact apples to apples when we know the size
     var ratePct=toNum(elRate.value) || CC_DATA.fredRate;
     var downPct=parseFloat(elDown.value)||0;
-
-    // For renters, the entered figure is monthly rent. Use a buying scenario
-    // anchored to the featured suburb median so the housing math stays honest.
-    var hv = IS_RENT ? null : homeVal;
-    if(!featuredSlug) featuredSlug = closestSuburb(IS_RENT ? CC_DATA.suburbs.frisco.med : homeVal);
-    var subVal = IS_RENT ? CC_DATA.suburbs[featuredSlug].med : homeVal;
+    // Monthly non-housing debt for the qualifying estimate: prefilled with a typical
+    // value the user can override or zero out.
+    var debtsRaw=elDebts ? String(elDebts.value).trim() : "";
+    var debts=debtsRaw==="" ? CC_ASSUMED_DEBTS : toNum(debtsRaw);
+    var debtsCustom=debtsRaw!=="" && Math.round(debts)!==CC_ASSUMED_DEBTS;
 
     var incomeSavings = stateIncomeTax(st, fs, income, hh);   // origin state tax = savings vs TX zero
-    var originProp    = originPropertyTax(hv||0);
-    var dfwProp       = dfwPropertyTax(featuredSlug, subVal);
-    var propIncrease  = dfwProp - originProp;                 // can be negative
-    var ins           = insuranceRange(subVal);
-    var loan          = subVal * (1 - downPct/100);
-    var pi            = monthlyPI(loan, ratePct);
-    var piti          = pi + Math.round(dfwProp/12) + Math.round(ins.mid/12);
+    var originProp    = originPropertyTax(budget||0);         // on your current home value (0 if renting)
 
-    // Net annual: income tax saved, minus the property tax increase, minus the
-    // full Texas insurance estimate (conservative: we do not net out your
-    // current insurance, so the real net is usually a little better).
-    var housingCost = Math.max(0, propIncrease) + ins.mid;
-    var net = incomeSavings - housingCost;
+    // Pick the price tier whose typical home size is closest to the user's square
+    // footage, so we price their size at the band's PPSF (a small home at the Starter
+    // rate, a big one at the Luxury rate) instead of one suburb-wide rate. This is the
+    // fix for PPSF being size-dependent. Falls back to the suburb median PPSF when a
+    // suburb has no tier data yet.
+    function tierForSize(s){
+      if(!s.tiers) return null;
+      var best=null, bestD=Infinity;
+      for(var k in s.tiers){ var t=s.tiers[k]; if(!t||t.sqft==null) continue; var d=Math.abs(t.sqft-sqft); if(d<bestD){bestD=d;best=t;} }
+      return best;
+    }
+    // The "natural" DFW home for a suburb: a home your exact size, priced at the
+    // matching tier's PPSF when you gave us square footage; otherwise the median home.
+    function naturalPrice(slug){
+      var s=CC_DATA.suburbs[slug];
+      if(!sizeMode) return s.med;
+      var t=tierForSize(s);
+      return Math.round(sqft*(t? t.ppsf : s.ppsf));
+    }
+
+    // Compute a buying scenario for a given suburb at a given DFW home price.
+    function scenario(slug, price){
+      var s=CC_DATA.suburbs[slug];
+      var natural = naturalPrice(slug);
+      var tier = sizeMode ? tierForSize(s) : null;
+      var dfwProp = dfwPropertyTax(slug, price);
+      var ins     = insuranceRange(price);
+      var loan    = price * (1 - downPct/100);
+      var pi      = monthlyPI(loan, ratePct);
+      var piti    = pi + Math.round(dfwProp/12) + Math.round(ins.mid/12);
+      var propIncrease = dfwProp - originProp;                // can be negative
+      var housingCost  = Math.max(0, propIncrease) + ins.mid; // conservative: full TX insurance
+      var net = incomeSavings - housingCost;
+      return {
+        slug:slug, name:s.name, combined:s.combined,
+        price:price, natural:natural, median:s.med, medSqft:Math.round(s.med/s.ppsf), ppsf:s.ppsf,
+        sizeSqft: sizeMode ? sqft : null,                     // the size we are pricing (your size)
+        usedPpsf: tier ? tier.ppsf : (sizeMode ? s.ppsf : null),  // the PPSF we priced your size at
+        tierLabel: tier && tier.label ? tier.label : null,    // which band matched your size
+        tierLc: tier && tier.lc ? 1 : 0,                      // matched band is a small sample
+        dfwProp:dfwProp, ins:ins, pi:pi, piti:piti,
+        propIncrease:propIncrease, housingCost:housingCost, net:net,
+        // compliance-safe scores (affordability, schools, commute), never safety
+        vs:s.vs!=null?s.vs:null, edu:s.edu!=null?s.edu:null, com:s.com!=null?s.com:null,
+        // where the user's budget lands vs the home we are pricing (your size, or the typical home)
+        fit: budget==null ? null : (budget>=natural*1.05 ? "more" : (budget>=natural*0.85 ? "about" : "stretch"))
+      };
+    }
+
+    // One scenario per suburb, at a home your size (if given) or the suburb median.
+    var slugs=Object.keys(CC_DATA.suburbs);
+    var scenarios=slugs.map(function(slug){ return scenario(slug, naturalPrice(slug)); });
+    scenarios.sort(function(a,b){ return a.price-b.price; });   // value to premium
+
+    // Featured suburb: where your budget naturally lands (closest median), or Frisco
+    // when renting. The featured scenario can use a user-set target price.
+    if(!featuredSlug) featuredSlug = closestSuburb(IS_RENT ? CC_DATA.suburbs.frisco.med : (budget||CC_DATA.suburbs.frisco.med));
+    var featPrice = dfwTarget && dfwTarget>0 ? dfwTarget : naturalPrice(featuredSlug);
+    var feat = scenario(featuredSlug, featPrice);
+
+    // Net range across suburbs, for the honest "it depends on the suburb" framing.
+    var nets=scenarios.map(function(s){ return s.net; });
+    var bestScen=scenarios.reduce(function(a,b){ return b.net>a.net?b:a; });
+    var worstScen=scenarios.reduce(function(a,b){ return b.net<a.net?b:a; });
 
     return {
       state:st, stateName:(CC_DATA.states[st]||{}).n||st, filing:fs, income:income, household:hh,
-      isRent:IS_RENT, homeValue:hv, subValue:subVal, downPct:downPct, ratePct:ratePct,
-      incomeSavings:incomeSavings, originProp:originProp, dfwProp:dfwProp, propIncrease:propIncrease,
-      ins:ins, pi:pi, piti:piti, loan:loan, net:net, housingCost:housingCost,
-      featured:featuredSlug, featuredName:CC_DATA.suburbs[featuredSlug].name,
+      isRent:IS_RENT, budget:budget, sqft:(sizeMode?sqft:null), sizeMode:sizeMode, downPct:downPct, ratePct:ratePct,
+      incomeSavings:incomeSavings, originProp:originProp,
+      scenarios:scenarios, feat:feat, bestScen:bestScen, worstScen:worstScen,
+      netMin:Math.min.apply(null,nets), netMax:Math.max.apply(null,nets),
+      featured:featuredSlug, featuredName:CC_DATA.suburbs[featuredSlug].name, targetSet: !!(dfwTarget&&dfwTarget>0),
+      qualPrice: maxQualifyingPrice(income, downPct, ratePct, debts),   // loan-officer ballpark
+      qualDebts: debts, qualDebtsCustom: debtsCustom,
       metro: elMetro.value || null, vet: elVet.value||null, senior: elSenior.checked
     };
   }
@@ -993,102 +1129,249 @@ gtag('consent','default',{
     return '<select id="ccSubSel" aria-label="Featured DFW suburb">'+opts+'</select>';
   }
 
-  function render(m){
-    var net=m.net, positive=net>=0;
-    var fileLabel=FILE_LABEL[m.filing]||m.filing;
-    var sub=CC_DATA.suburbs[m.featured];
+  /* Top marginal income tax rate for a state (for flavor in the narrative). */
+  function topRate(st){
+    var s=CC_DATA.states[st]; if(!s||s.t==="none") return 0;
+    var b=(s.b&&(s.b.mfj||s.b.single))||[];
+    return b.length ? b[b.length-1][0] : 0;
+  }
 
-    /* hero */
+  /* An honest, data-driven narrative specific to the origin state the user picked,
+     so an Arizona mover reads about Arizona, not California. Built from the state's
+     income tax type/rate, its effective property tax rate vs the DFW range, and the
+     household's computed income tax savings. */
+  function originNarrative(m){
+    var st=m.state, sName=esc(m.stateName), s=CC_DATA.states[st]||{};
+    var op=CC_DATA.stateProp[st];          // origin effective property tax rate, percent
+    var dfwLo=1.64, dfwHi=1.96;
+    var parts=[];
+    // Income tax
+    if(s.t==="none"){
+      parts.push("Like Texas, "+sName+" has no state income tax, so your move is not really about the income tax line. It is about housing, space, and lifestyle.");
+    } else if(m.incomeSavings>0){
+      var rateBit = s.t==="flat" ? " (a flat "+topRate(st)+" percent)" : "";
+      parts.push("Leaving "+sName+" income tax"+rateBit+" saves your household about <b>"+money(m.incomeSavings)+" a year</b>, money you stop paying the day you become a Texas resident.");
+    } else {
+      parts.push(sName+" does have a state income tax, but at your income the Texas savings are small.");
+    }
+    // Property tax, the part that flips for low-property-tax origin states like AZ
+    if(op!=null){
+      if(op < dfwLo){
+        var ptLine="Be clear eyed on property tax: "+sName+" runs about <b>"+op+" percent</b> of value, which is <b>lower</b> than the DFW range of "+dfwLo+" to "+dfwHi+" percent, so you take on a higher property tax rate here. The $140,000 homestead exemption softens it.";
+        // Only frame it as "lifestyle, not a tax cut" when the income tax win is small;
+        // for a big-income-tax origin like California the income tax savings are the story.
+        if(s.t==="none"){
+          ptLine+=" Since "+sName+" also has no income tax, weigh this move on housing and lifestyle, not taxes.";
+        } else if(m.incomeSavings>0 && m.incomeSavings<5000){
+          ptLine+=" With "+sName+"'s modest income tax, this move is more about space and lifestyle than a tax cut.";
+        }
+        parts.push(ptLine);
+      } else if(op >= dfwHi){
+        parts.push(sName+" property tax already runs about <b>"+op+" percent</b>, at or above the DFW range, so Texas may actually be a property tax improvement depending on your county, on top of the no income tax win.");
+      } else {
+        parts.push(sName+" property tax runs about <b>"+op+" percent</b>, close to the DFW range of "+dfwLo+" to "+dfwHi+" percent, so the property tax change is modest.");
+      }
+    }
+    parts.push("Either way, budget for higher Texas home insurance and summer electricity, detailed just below.");
+    return parts.join(" ");
+  }
+
+  function render(m){
+    var f=m.feat;                       // featured scenario (a real DFW home)
+    var net=f.net, positive=net>=0;
+    var fileLabel=FILE_LABEL[m.filing]||m.filing;
+    var best=m.bestScen, worst=m.worstScen;
+    // Size-aware home descriptor: "a 2,400 sq ft " when we know the size, else "a typical ".
+    var descr = m.sizeMode ? ("a "+fmt(m.sqft)+" sq ft ") : "a typical ";
+
+    /* hero, anchored to a real home in the featured suburb, with the honest range */
     var heroNum = (positive?"+":"")+money(Math.abs(net));
     var heroLine;
+    var rangeLine = (best.slug!==worst.slug)
+      ? ' Your net swings with the suburb you pick: from about <span class="cc-gold">'+(best.net>=0?"+":"")+money(best.net)+' a year in '+esc(best.name)+'</span> to '+(worst.net>=0?"+":"")+money(worst.net)+' in '+esc(worst.name)+'. You do not have to buy the flashiest suburb to make the move work.'
+      : '';
     if(m.incomeSavings===0 && m.state==="TX"){
-      heroLine='You are already in a no income tax state, so this move is about housing and lifestyle, not the income tax line. Here is the honest housing picture.';
+      heroLine='You are already in a no income tax state, so this move is about housing and lifestyle, not the income tax line. Here is the honest housing picture if you buy '+descr+esc(f.name)+' home at '+money(f.price)+'.'+rangeLine;
     } else if(positive){
-      heroLine='A '+esc(fileLabel)+' household earning '+money(m.income)+' would keep roughly <span class="cc-gold">'+money(net)+' more per year</span> in DFW, after accounting for higher property tax and home insurance.';
+      heroLine='If you buy '+descr+esc(f.name)+' home at '+money(f.price)+', a '+esc(fileLabel)+' household earning '+money(m.income)+' would keep roughly <span class="cc-gold">'+money(net)+' more per year</span> in DFW, after the higher Texas property tax and insurance.'+rangeLine;
     } else {
-      heroLine='For this scenario, the higher Texas property tax and insurance outweigh the income tax savings by about <span class="cc-gold">'+money(Math.abs(net))+' per year</span>. That is the honest result, and many families still move for the equity and the space. Here is the full picture.';
+      heroLine=descr.charAt(0).toUpperCase()+descr.slice(1)+esc(f.name)+' home at '+money(f.price)+' carries enough property tax and insurance to outweigh your income tax savings by about <span class="cc-gold">'+money(Math.abs(net))+' a year</span>.'+rangeLine;
     }
 
     var h='';
     h+='<div class="cc-hero">'+
-        '<span class="tag">Your estimated net, per year</span>'+
+        '<span class="tag">Your estimated net in '+esc(f.name)+', per year</span>'+
         '<div class="num'+(positive?'':' neg')+'">'+heroNum+'</div>'+
-        '<div class="per">per year, net of the Texas costs that go up</div>'+
+        '<div class="per">on '+descr+esc(f.name)+' home priced at '+money(f.price)+', net of the Texas costs that go up</div>'+
         '<p>'+heroLine+'</p>'+
       '</div>';
 
-    /* 3 line side by side */
+    /* 3 line side by side, on the featured real home (not your old home dollar value) */
     var incClass = m.incomeSavings>0 ? "down" : "";
-    var propClass = "up";
-    // For renters, the Texas property tax and insurance are a NEW cost they take on
-    // as a buyer, not a higher version of something they pay today. Label and net note
-    // adjust so the renter result is not misread as "the move costs you this."
-    var propLabel = m.isRent ? "New Texas housing costs as a buyer" : "Higher property tax and insurance";
     var propSub = m.isRent
-      ? "Property tax and insurance you take on as a Texas homeowner, on a "+esc(m.featuredName)+" home. Your current rent stops, so this is a housing type shift, not the rent you save."
-      : "Texas housing costs to budget, on a home of the same value in "+esc(m.featuredName);
-    var netSub = positive ? "what you keep" : (m.isRent ? "the added housing carrying cost, before the rent you stop paying" : "what the move costs");
+      ? "Property tax and insurance on "+descr+esc(f.name)+" home. You rent today, so this is a new cost as a buyer, your rent stops to offset much of it."
+      : "Property tax and insurance on "+descr+esc(f.name)+" home ("+money(f.price)+"), versus your current property tax";
+    var netSub = positive ? "what you keep, in "+esc(f.name) : (m.isRent ? "added housing carrying cost, before the rent you stop paying" : "the gap in "+esc(f.name)+", smaller or positive in a value suburb");
     h+='<div class="cc-ledger">'+
         '<div class="row"><div class="lbl"><b>No state income tax</b><span>vs '+esc(m.stateName)+' at your income and filing status</span></div>'+
           '<div class="amt '+incClass+'">'+(m.incomeSavings>0?"+"+money(m.incomeSavings):"$0")+'</div></div>'+
-        '<div class="row"><div class="lbl"><b>'+propLabel+'</b><span>'+propSub+'</span></div>'+
-          '<div class="amt '+propClass+'">'+(m.housingCost>0?"-"+money(m.housingCost):"$0")+'</div></div>'+
+        '<div class="row"><div class="lbl"><b>Texas property tax and insurance</b><span>'+propSub+'</span></div>'+
+          '<div class="amt up">'+(f.housingCost>0?"-"+money(f.housingCost):"$0")+'</div></div>'+
         '<div class="row net"><div class="lbl"><b>Your net, per year</b><span>'+netSub+'</span></div>'+
           '<div class="amt">'+(positive?"+":"-")+money(Math.abs(net))+'</div></div>'+
       '</div>';
-    var ownNote = "To stay honest we count the full Texas insurance estimate here, not just the increase over the policy you carry today, so your real net is usually a little better than this conservative figure. We also tax a home of the same value: many families find their equity buys a larger home in DFW and right size to a lower price, which lowers both the mortgage and the tax. See what your home buys below.";
-    var rentNote = "Because you rent today, you pay no property tax directly now, so the Texas property tax and insurance show as a full new cost you take on as a buyer. Your current rent is not netted out here, the rent you stop paying offsets much of this. Treat the net above as the added housing carrying cost, not money out of pocket. See what homes cost below.";
-    h+='<p style="font-size:.82rem;color:#777;margin:-12px 0 22px;line-height:1.5;">'+(m.isRent?rentNote:ownNote)+'</p>';
+    var anchorNote = m.isRent
+      ? "You rent today, so you pay no property tax directly now. The Texas figures are a new cost you take on as a buyer; the rent you stop paying offsets much of it. We also count the full Texas insurance estimate, so the real net is usually a little better."
+      : "We tax a real "+esc(f.name)+" home at "+money(f.price)+", not your current home's dollar value, because your money buys a different home here. We also count the full Texas insurance estimate, not just the increase over your current policy, so your real net is usually a little better. Pick a different suburb or target price below to see the range.";
+    h+='<p style="font-size:.82rem;color:#777;margin:-12px 0 22px;line-height:1.5;">'+anchorNote+'</p>';
+
+    /* origin-state specific narrative (so an Arizona mover reads about Arizona) */
+    h+='<div style="background:#fff;border:1px solid var(--cc-line);border-left:4px solid var(--cc-gold);border-radius:10px;padding:18px 20px;margin:0 0 22px;">'+
+        '<div style="font:600 1.15rem/1.3 \'Cormorant Garamond\',Georgia,serif;color:var(--cc-navy);margin:0 0 .5rem;">What this means coming from '+esc(m.stateName)+'</div>'+
+        '<p style="font-size:.95rem;line-height:1.65;color:#3a3a3a;margin:0;">'+originNarrative(m)+'</p>'+
+      '</div>';
 
     /* honesty callouts (never gated) */
     h+='<div class="cc-honest">'+
         '<h3>'+IC.scale+'Be ready for this</h3>'+
         '<p class="intro">The costs that go up in Texas, named here on the free screen, not buried. Plan for them and there are no surprises after you move.</p>'+
-        '<div class="item">'+IC.rain+'<div><b>Home insurance runs high</b><p>Texas is among the highest insurance states in the nation, driven by hail, wind, and severe storms. On a '+money(m.subValue)+' home we estimate <span class="fig">about '+money(m.ins.lo)+' to '+money(m.ins.hi)+' per year</span>. This is a quote driven range, not a fixed figure, and high hail risk ZIP codes can run higher.</p></div></div>'+
+        '<div class="item">'+IC.rain+'<div><b>Home insurance runs high</b><p>Texas is among the highest insurance states in the nation, driven by hail, wind, and severe storms. On a '+money(f.price)+' home we estimate <span class="fig">about '+money(f.ins.lo)+' to '+money(f.ins.hi)+' per year</span>. This is a quote driven range, not a fixed figure, and high hail risk ZIP codes can run higher.</p></div></div>'+
         '<div class="item">'+IC.sun+'<div><b>Summer cooling and electricity</b><p>Texas heat means heavy air conditioning use and high summer electric bills, June through September. Texas runs a deregulated retail electricity market, so you choose your provider and plan. Budget for it from day one.</p></div></div>'+
       '</div>';
 
-    /* mortgage two numbers */
+    /* LOAN-OFFICER BALLPARK: what you might qualify for (income + down, typical debts) */
+    var qual=m.qualPrice;
+    if(qual>0){
+      var qualFit=m.scenarios.filter(function(s){ return s.price<=qual; }).length;
+      h+='<div class="cc-secblock"><div class="cc-xlate">'+
+          '<div style="font:600 1.1rem/1.3 \'Cormorant Garamond\',Georgia,serif;color:var(--cc-navy);margin:0 0 .4rem;">A loan officer ballpark, what you might qualify for</div>'+
+          '<p class="big">At '+money(m.income)+' income with '+m.downPct+' percent down, a rough 43 percent debt to income estimate puts you around <span class="cc-gold">'+money(qual)+'</span> in home price.</p>'+
+          '<p class="sm">This is a planning ballpark, not a pre approval. It uses '+(m.qualDebtsCustom?('the <b>'+money(m.qualDebts)+' a month</b> in other debts you entered'):('about '+money(m.qualDebts)+' a month in typical other debts, a car payment and the like, which you can change in Fine tune'))+', plus the current '+m.ratePct+' percent rate. 43 percent is roughly the most lenders approve, so read this as a ceiling, not a target, a comfortable monthly budget is usually lower. Your real number depends on your credit, debts, and the lender, so get a true pre approval from a licensed lender before you shop.'+(qualFit?(' Of the suburbs below, <b>'+qualFit+'</b> have a '+(m.sizeMode?"home your size":"typical home")+' at or under that, marked with a green edge.'):'')+'</p>'+
+        '</div></div>';
+    }
+
+    /* WHAT YOU GET: scenario table, value to premium, sortable, with safe score chips */
+    var colHome = m.sizeMode ? "A home your size" : "Typical home";
+    var scenIntro = m.sizeMode
+      ? "A home of your size ("+fmt(m.sqft)+" sq ft) priced in each suburb, from value to premium, with the property tax, all in monthly payment, and your estimated net. This is true apples to apples: the same size home, what it costs and what it nets you here."
+      : "A typical home in each suburb, from value to premium, with the property tax, all in monthly payment, and your estimated net. This is the real picture: not everyone moves to the flashiest suburb, and a value suburb can leave you net positive with plenty of home.";
     h+='<div class="cc-secblock">'+
-        '<h3>'+IC.coins+'Your monthly payment, two honest numbers</h3>'+
-        '<p class="note">Featured suburb: '+suburbSelectHTML()+' at a '+sub.combined+' percent combined rate. Change it to see how the suburb shifts your taxes and payment.</p>'+
+        '<h3>'+IC.home+'What your money gets you across DFW</h3>'+
+        '<p class="note">'+scenIntro+'</p>';
+    // light priority sort + cross-link to the full matcher for deep priority ranking
+    var sortOpts=[["price","Home price"],["afford","Affordability"],["schools","Schools"],["net","Lowest yearly cost"]];
+    h+='<div class="cc-target" style="margin:0 0 12px;">'+
+        '<label for="ccSort">Sort by</label>'+
+        '<select id="ccSort">'+sortOpts.map(function(o){ return '<option value="'+o[0]+'"'+(scenSort===o[0]?' selected':'')+'>'+o[1]+'</option>'; }).join("")+'</select>'+
+        '<a class="explore" href="/find-your-dfw-suburb" style="margin-left:auto;">Rank all your priorities in the matcher '+IC.arrow+'</a>'+
+      '</div>';
+    var sorted=m.scenarios.slice();
+    if(scenSort==="afford") sorted.sort(function(a,b){ return (b.vs||0)-(a.vs||0); });
+    else if(scenSort==="schools") sorted.sort(function(a,b){ return (b.edu||0)-(a.edu||0); });
+    else if(scenSort==="net") sorted.sort(function(a,b){ return b.net-a.net; });
+    else sorted.sort(function(a,b){ return a.price-b.price; });
+    var rows=sorted.map(function(s){
+      var npos=s.net>=0;
+      var fitWord = m.sizeMode
+        ? (s.fit==="more"?"within budget":s.fit==="about"?"right at budget":"over budget")
+        : (s.fit==="more"?"buys more":s.fit==="about"?"about right":"a stretch");
+      var fitTag = s.fit ? '<span class="cc-fit '+s.fit+'">'+fitWord+'</span>' : '<span style="color:#bbb;">&middot;</span>';
+      var homeCell = m.sizeMode
+        ? money(s.price)+'<span class="sub">'+fmt(m.sqft)+' sq ft</span>'
+        : money(s.median)+'<span class="sub">~'+fmt(s.medSqft)+' sq ft</span>';
+      var chips='';
+      if(s.edu!=null) chips+='<span class="cc-scorechip">Schools <b>'+s.edu+'</b></span>';
+      if(s.vs!=null)  chips+='<span class="cc-scorechip">Affordability <b>'+s.vs+'</b></span>';
+      var rowCls=[]; if(s.slug===m.featured)rowCls.push("feat"); if(qual>0&&s.price<=qual)rowCls.push("qual");
+      return '<tr'+(rowCls.length?' class="'+rowCls.join(" ")+'"':'')+'>'+
+        '<td class="nm"><a href="'+SUBURB_URL(s.slug)+'">'+esc(s.name)+'</a><span class="sub">'+s.combined+' percent tax</span>'+(chips?'<br>'+chips:'')+'</td>'+
+        '<td class="r">'+homeCell+'</td>'+
+        '<td class="r">'+money(s.dfwProp)+'<span class="sub">per year</span></td>'+
+        '<td class="r">'+money(s.piti)+'<span class="sub">all in /mo</span></td>'+
+        '<td class="r"><span class="'+(npos?"netpos":"netneg")+'">'+(npos?"+":"-")+money(Math.abs(s.net))+'</span><span class="sub">per year</span></td>'+
+        '<td>'+fitTag+'</td>'+
+      '</tr>';
+    }).join("");
+    h+='<div class="cc-scenwrap"><table class="cc-scen">'+
+        '<thead><tr><th>Suburb</th><th class="r">'+colHome+'</th><th class="r">Property tax</th><th class="r">Payment</th><th class="r">Your net</th><th>Afford it?</th></tr></thead>'+
+        '<tbody>'+rows+'</tbody></table></div>'+
+        '<p style="font-size:.74rem;color:#999;margin:6px 2px 0;line-height:1.5;">Schools is the area education score and Affordability is the value score (price relative to income, schools per dollar, and taxes), both from our suburb data and refreshed monthly. We never rank by safety or crime; for that, review <a href="https://www.neighborhoodscout.com" target="_blank" rel="noopener nofollow">NeighborhoodScout</a> or <a href="https://www.city-data.com" target="_blank" rel="noopener nofollow">City-Data</a> and decide for yourself.</p>';
+    // Two different questions, called out so the affordability tag and the net never
+    // read as a contradiction (you can comfortably afford a home that still nets negative).
+    var clarify = ' Two different things here: <b>Afford it</b> is whether your budget covers that home, while <b>Your net</b> is the yearly property tax and insurance math after your income tax savings. In Texas a home you can easily afford can still net a little negative, because the property tax and insurance run higher than what you saved on income tax. That is the honest tradeoff.';
+    var budgetNote;
+    if(m.budget && m.sizeMode){
+      budgetNote = 'Each suburb is priced for a home your size ('+fmt(m.sqft)+' sq ft). Your budget of '+money(m.budget)+' covers it where it shows "within budget," and falls short where a same size home costs more.'+clarify;
+    } else if(m.budget){
+      budgetNote = 'Net assumes you buy a typical home in each suburb. Your '+money(m.budget)+' budget buys more than the typical home where it shows "buys more," and stretches where the typical home costs more. Tax and payment scale with the home you actually buy.'+clarify;
+    } else {
+      budgetNote = 'Net assumes you buy a typical home in each suburb. Enter a current home value to see where your budget lands in each one.';
+    }
+    h+='<p class="cc-scen-note">'+budgetNote+'</p>';
+
+    /* mortgage two numbers, on the featured real home, with suburb + target price controls */
+    h+='<div class="cc-secblock">'+
+        '<h3>'+IC.coins+'Your monthly payment in '+esc(f.name)+', two honest numbers</h3>'+
+        '<div class="cc-target">'+
+          '<span>Suburb: '+suburbSelectHTML()+'</span>'+
+          '<label for="ccTarget">Target home price</label>'+
+          '<span class="cc-money"><input type="text" id="ccTarget" inputmode="numeric" value="'+fmt(f.price)+'"></span>'+
+          '<button type="button" id="ccTargetReset">'+(m.sizeMode?"Use a home your size":"Use "+esc(f.name)+" median")+'</button>'+
+        '</div>'+
         '<div class="cc-pmt">'+
           '<div class="box pi"><div class="k">Principal and interest (precise)</div>'+
-            '<div class="v">'+money(m.pi)+'<small> /mo</small></div>'+
-            '<div class="d">The clean, apples to apples number. '+ (m.downPct===0?"0 percent down":m.downPct+" percent down") +' on '+money(m.subValue)+' at '+m.ratePct+' percent, 30 year fixed. Compare this from home to home.</div></div>'+
+            '<div class="v">'+money(f.pi)+'<small> /mo</small></div>'+
+            '<div class="d">The clean, apples to apples number. '+ (m.downPct===0?"0 percent down":m.downPct+" percent down") +' on '+money(f.price)+' at '+m.ratePct+' percent, 30 year fixed. Compare this from home to home.</div></div>'+
           '<div class="box"><div class="k">Estimated all in (PITI)</div>'+
-            '<div class="v">'+money(m.piti)+'<small> /mo</small></div>'+
+            '<div class="v">'+money(f.piti)+'<small> /mo</small></div>'+
             '<div class="d">What you would actually budget. An estimate: see the limitations below.</div></div>'+
         '</div>'+
         '<div style="border:1px solid var(--cc-line);border-radius:12px;padding:14px 18px;background:#fff;">'+
-          '<div class="cc-pmt-item"><span>Principal and interest</span><b>'+money(m.pi)+' /mo</b></div>'+
-          '<div class="cc-pmt-item"><span>'+esc(m.featuredName)+' property tax (after homestead)</span><b>'+money(Math.round(m.dfwProp/12))+' /mo</b></div>'+
-          '<div class="cc-pmt-item"><span>Home insurance (midpoint estimate)</span><b>'+money(Math.round(m.ins.mid/12))+' /mo</b></div>'+
-          '<div class="cc-pmt-item"><span>Estimated all in monthly (PITI)</span><b>'+money(m.piti)+' /mo</b></div>'+
+          '<div class="cc-pmt-item"><span>Principal and interest</span><b>'+money(f.pi)+' /mo</b></div>'+
+          '<div class="cc-pmt-item"><span>'+esc(f.name)+' property tax (after homestead)</span><b>'+money(Math.round(f.dfwProp/12))+' /mo</b></div>'+
+          '<div class="cc-pmt-item"><span>Home insurance (midpoint estimate)</span><b>'+money(Math.round(f.ins.mid/12))+' /mo</b></div>'+
+          '<div class="cc-pmt-item"><span>Estimated all in monthly (PITI)</span><b>'+money(f.piti)+' /mo</b></div>'+
         '</div>'+
         '<p class="note" style="margin-top:.8rem;">PITI is an estimate. Property tax varies by exact address and exemptions (homestead, disabled veteran, senior). Newer master planned suburbs may carry MUD or PID assessments that raise the effective tax. Insurance is quote driven. HOA dues are not included.</p>'+
       '</div>';
 
-    /* home translation teaser */
-    var sqft = m.homeValue ? Math.round(m.homeValue / sub.ppsf) : null;
-    var medSqft = Math.round(sub.med / sub.ppsf);
-    var xUrl=SUBURB_URL(m.featured);
+    /* what your budget buys in the featured suburb */
     h+='<div class="cc-secblock">'+
-        '<h3>'+IC.home+'What your home buys in DFW</h3>';
-    if(sqft){
-      h+='<div class="cc-xlate">'+
-          '<p class="big">Your <b>'+money(m.homeValue)+'</b> home could buy roughly a <span class="cc-gold">'+fmt(sqft)+' square foot</span> home in '+esc(m.featuredName)+', at the local '+money(sub.ppsf)+' per square foot.</p>'+
-          '<p class="sm">For reference, the median '+esc(m.featuredName)+' home is about '+fmt(medSqft)+' square feet at '+money(sub.med)+'. Your full report translates your equity across several DFW suburbs side by side.</p>'+
-          '<a class="explore" href="'+xUrl+'">Explore '+esc(m.featuredName)+' '+IC.arrow+'</a>'+
-        '</div>';
+        '<h3>'+IC.home+'What your budget buys in '+esc(f.name)+'</h3>'+
+        '<div class="cc-xlate">';
+    if(m.sizeMode && m.budget){
+      // We know their size: price that size here and compare to budget directly.
+      var sizePrice=f.natural;
+      var sr=m.budget/sizePrice;
+      var sLine = sr>=1.05
+        ? 'A home your size ('+fmt(m.sqft)+' sq ft) in '+esc(f.name)+' runs about <span class="cc-gold">'+money(sizePrice)+'</span>, comfortably <b>under</b> your '+money(m.budget)+' budget.'
+        : (sr>=0.9
+          ? 'A home your size ('+fmt(m.sqft)+' sq ft) in '+esc(f.name)+' runs about <span class="cc-gold">'+money(sizePrice)+'</span>, right around your '+money(m.budget)+' budget.'
+          : 'A home your size ('+fmt(m.sqft)+' sq ft) in '+esc(f.name)+' runs about <span class="cc-gold">'+money(sizePrice)+'</span>, above your '+money(m.budget)+' budget. A value suburb in the table above prices the same size for less.');
+      var tierWord = f.tierLabel ? (' '+esc(f.tierLabel)+' tier') : '';
+      var lcNote = f.tierLc ? ' This band had limited recent sales, so treat it as approximate.' : '';
+      h+='<p class="big">'+sLine+'</p>'+
+         '<p class="sm">Priced at about '+money(f.usedPpsf||f.ppsf)+' per square foot, the rate for'+(tierWord?tierWord:' homes this size')+' in '+esc(f.name)+'. We match your square footage to the price band closest to it, because price per square foot runs higher on smaller homes and lower on larger ones.'+lcNote+'</p>';
+    } else if(m.sizeMode){
+      var tierWord2 = f.tierLabel ? (' '+esc(f.tierLabel)+' tier') : '';
+      var lcNote2 = f.tierLc ? ' Limited recent sales in this band, so treat it as approximate.' : '';
+      h+='<p class="big">A home your size ('+fmt(m.sqft)+' sq ft) in '+esc(f.name)+' runs about <span class="cc-gold">'+money(f.natural)+'</span>, around '+money(f.usedPpsf||f.ppsf)+' per square foot'+(tierWord2?' ('+tierWord2.trim()+')':'')+'.'+lcNote2+'</p>'+
+         '<p class="sm">Add a current home value to see how that compares to your budget across the suburbs above.</p>';
+    } else if(m.budget){
+      var ratio=m.budget/f.median;
+      var buyLine = ratio>=1.05
+        ? 'Your <b>'+money(m.budget)+'</b> budget lands <span class="cc-gold">above</span> the typical '+esc(f.name)+' home, so you can buy larger or newer than the median.'
+        : (ratio>=0.85
+          ? 'Your <b>'+money(m.budget)+'</b> budget lands right around the typical '+esc(f.name)+' home.'
+          : 'Your <b>'+money(m.budget)+'</b> budget is below the typical '+esc(f.name)+' home, so this is a stretch suburb. A value suburb in the table above gives you more home for the same money.');
+      h+='<p class="big">'+buyLine+'</p>'+
+         '<p class="sm">The typical '+esc(f.name)+' home is about <b>'+fmt(f.medSqft)+' square feet</b> at '+money(f.median)+'. For an exact match, add your current home size up top and we price a home that size in each suburb. We avoid converting your budget into a square footage with a single rate, because price per square foot is higher on smaller homes and would mislead.</p>';
     } else {
-      h+='<div class="cc-xlate">'+
-          '<p class="big">In '+esc(m.featuredName)+', the median home is about <b>'+fmt(medSqft)+' square feet</b> at <span class="cc-gold">'+money(sub.med)+'</span>, around '+money(sub.ppsf)+' per square foot.</p>'+
-          '<p class="sm">Since you are renting today, enter a target home value in the fine tune section to translate your buying power across DFW suburbs. Your full report compares several suburbs side by side.</p>'+
-          '<a class="explore" href="'+xUrl+'">Explore '+esc(m.featuredName)+' '+IC.arrow+'</a>'+
-        '</div>';
+      h+='<p class="big">The typical '+esc(f.name)+' home is about <b>'+fmt(f.medSqft)+' square feet</b> at <span class="cc-gold">'+money(f.median)+'</span>.</p>'+
+         '<p class="sm">Enter a current home value to see where your budget lands in '+esc(f.name)+' and across the suburbs above.</p>';
     }
-    h+='</div>';
+    h+='<a class="explore" href="'+SUBURB_URL(m.featured)+'">Explore '+esc(f.name)+' '+IC.arrow+'</a>'+
+      '</div></div>';
 
     /* Tier 2 placeholder (structured slot) */
     h+='<div class="cc-secblock"><div class="cc-tier2">'+
@@ -1099,11 +1382,12 @@ gtag('consent','default',{
     /* EMAIL GATE (gates depth only, never the honesty) */
     h+='<div class="cc-gate" id="ccGate">'+
         '<h3>Get your full personalized breakdown</h3>'+
-        '<p>Your numbers above are yours to keep, free. For the deeper plan you can forward to your spouse, add your email and we will send:</p>'+
+        '<p>Your numbers above are yours to keep, free. For the deeper plan you can forward to your spouse and bring to a lender, add your email and we will send:</p>'+
         '<ul>'+
-          '<li>'+IC.check+'<span>The full line by line breakdown, annual and monthly, every category</span></li>'+
-          '<li>'+IC.check+'<span>Your home equity translated across several named DFW suburbs</span></li>'+
-          '<li>'+IC.check+'<span>The breakeven explanation tuned to your income, plus veteran exemption detail if flagged</span></li>'+
+          '<li>'+IC.check+'<span><b>Your 3 best-fit suburbs</b> for your qualifying budget, each with its price tiers, scores, and cost</span></li>'+
+          '<li>'+IC.check+'<span>A <b>written relocation plan</b> in Kristen\'s voice, tuned to your situation and timeline</span></li>'+
+          '<li>'+IC.check+'<span>A <b>property tax and exemptions deep dive</b> for your suburb, with the homestead, senior, and veteran breakdown</span></li>'+
+          '<li>'+IC.check+'<span>The everyday cost of living picture, groceries, utilities, and fuel, coming soon</span></li>'+
           '<li>'+IC.check+'<span>The 30 60 90 relocation checklist</span></li>'+
         '</ul>'+
         '<form class="cc-gate-form" id="ccLeadForm">'+
@@ -1151,7 +1435,18 @@ gtag('consent','default',{
     // wire interactions
     $("ccRestart").addEventListener("click", restart);
     var subSel=$("ccSubSel");
-    if(subSel){ subSel.addEventListener("change", function(){ featuredSlug=subSel.value; recompute(); }); }
+    if(subSel){ subSel.addEventListener("change", function(){ featuredSlug=subSel.value; dfwTarget=null; recompute(); }); }
+    var tgt=$("ccTarget");
+    if(tgt){
+      tgt.addEventListener("input",function(){ var raw=tgt.value.replace(/[^0-9]/g,""); tgt.value=raw?Number(raw).toLocaleString("en-US"):""; });
+      var applyTarget=function(){ var v=toNum(tgt.value); dfwTarget = v>0 ? v : null; recompute(); };
+      tgt.addEventListener("change", applyTarget);
+      tgt.addEventListener("keydown", function(e){ if(e.key==="Enter"){ e.preventDefault(); applyTarget(); } });
+    }
+    var tgtReset=$("ccTargetReset");
+    if(tgtReset){ tgtReset.addEventListener("click", function(){ dfwTarget=null; recompute(); }); }
+    var sortSel=$("ccSort");
+    if(sortSel){ sortSel.addEventListener("change", function(){ scenSort=sortSel.value; recompute(); }); }
     $("ccLeadForm").addEventListener("submit", function(e){ e.preventDefault(); submitLead(); });
   }
   /* arrow icon (defined after IC for use in template) */
@@ -1175,6 +1470,7 @@ gtag('consent','default',{
     }
     elFormErr.classList.add("cc-hidden");
     featuredSlug = IS_RENT ? "frisco" : closestSuburb(toNum(elHome.value));
+    dfwTarget = null; scenSort = "price";
     recompute();
   }
   function recompute(){
@@ -1184,7 +1480,7 @@ gtag('consent','default',{
   function restart(){
     elResults.classList.add("cc-hidden");
     elResults.innerHTML="";
-    featuredSlug=null; lastModel=null;
+    featuredSlug=null; dfwTarget=null; lastModel=null;
     window.scrollTo({top:elCard.offsetTop-20, behavior:"smooth"});
   }
 
@@ -1199,13 +1495,19 @@ gtag('consent','default',{
       company:($("ccCompany")||{}).value||"",      // honeypot, must stay empty
       origin:m.state, originName:m.stateName, metro:m.metro,
       filing:m.filing, income:m.income, household:m.household,
-      isRent:m.isRent, homeValue:m.homeValue, vaLoan:m.vet, senior:m.senior,
-      // computed results so the Worker renders the report without re-deriving
+      isRent:m.isRent, homeValue:m.budget, budget:m.budget, sqft:m.sqft, sizeMode:m.sizeMode, vaLoan:m.vet, senior:m.senior,
+      // computed results so the Worker renders the report without re-deriving.
+      // The housing figures are on the featured REAL DFW home (its median, or your
+      // target price), not your origin home's dollar value.
       results:{
-        incomeSavings:m.incomeSavings, originProp:m.originProp, dfwProp:m.dfwProp,
-        propIncrease:m.propIncrease, insurance:m.ins, pi:m.pi, piti:m.piti,
-        net:m.net, downPct:m.downPct, ratePct:m.ratePct,
-        featured:m.featured, featuredName:m.featuredName, subValue:m.subValue
+        incomeSavings:m.incomeSavings, originProp:m.originProp,
+        dfwProp:m.feat.dfwProp, propIncrease:m.feat.propIncrease, insurance:m.feat.ins,
+        pi:m.feat.pi, piti:m.feat.piti, net:m.feat.net, downPct:m.downPct, ratePct:m.ratePct,
+        featured:m.featured, featuredName:m.featuredName,
+        dfwHomePrice:m.feat.price, medSqft:m.feat.medSqft, subValue:m.feat.price,
+        qualPrice:m.qualPrice, qualDebts:m.qualDebts,   // loan-officer ballpark, for the email shortlist
+        // value to premium spread + safe scores, so the emailed report can rank a best-fit shortlist
+        scenarios:m.scenarios.map(function(s){ return {slug:s.slug, name:s.name, median:s.median, medSqft:s.medSqft, price:s.price, sizeSqft:s.sizeSqft, dfwProp:s.dfwProp, piti:s.piti, net:s.net, combined:s.combined, fit:s.fit, vs:s.vs, edu:s.edu, com:s.com}; })
       },
       incomeBand: m.income>=300000?"300k+":m.income>=200000?"200k-300k":m.income>=120000?"120k-200k":m.income>=80000?"80k-120k":"under-80k",
       submittedAt:new Date().toISOString()
@@ -1264,13 +1566,16 @@ gtag('consent','default',{
     elHomeLabel.textContent = rent ? "Current monthly rent" : "Current home value";
     elHomeHint.textContent = rent ? "Renters skip origin property tax. We translate buying power off DFW medians." : "Powers the home price translation and the property tax comparison.";
     elHome.placeholder = rent ? "2,400" : "650,000";
+    // Current home size only applies to owners (renters have no current home to match).
+    if(elSqftWrap){ elSqftWrap.classList.toggle("cc-hidden", rent); }
+    if(rent && elSqft){ elSqft.value=""; }
   }
   function init(){
     populateStates();
     elState.addEventListener("change", onStateChange);
     elOwnBtn.addEventListener("click", function(){ setOwnRent(false); });
     elRentBtn.addEventListener("click", function(){ setOwnRent(true); });
-    groupThousands(elHome); groupThousands(elIncome); groupThousands(elCurProp);
+    groupThousands(elHome); groupThousands(elIncome); groupThousands(elCurProp); if(elSqft){ groupThousands(elSqft); } if(elDebts){ groupThousands(elDebts); }
     elRate.value = CC_DATA.fredRate;
     elForm.addEventListener("submit", function(e){ e.preventDefault(); compute(); });
   }
