@@ -1307,60 +1307,61 @@ gtag('consent','default',{
     <h2>Dallas Housing Market: Current Data</h2>
   </div>
 
-  <div class="kc-grid kc-grid--4" style="margin-bottom:2rem;">
-    <div class="kc-card kc-card--navy" style="text-align:center;">
-      <h4 style="margin-bottom:0.5rem;">Median SFR Price</h4>
-      <p id="kc-mkt-price" style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;">$492,384</p>
-      <p id="kc-mkt-price-sub" style="font-size:0.78rem;color:#666;margin:0;">12-month rolling avg · single-family</p>
-    </div>
-    <div class="kc-card kc-card--navy" style="text-align:center;">
-      <h4 style="margin-bottom:0.5rem;">Days on Market</h4>
-      <p id="kc-mkt-dom" style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;">31 days</p>
-      <p id="kc-mkt-dom-sub" style="font-size:0.78rem;color:#666;margin:0;">12-month rolling avg · median</p>
-    </div>
-    <div class="kc-card kc-card--navy" style="text-align:center;">
-      <h4 style="margin-bottom:0.5rem;">Months Supply</h4>
-      <p id="kc-mkt-msi" style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;">4.5 mo.</p>
-      <p id="kc-mkt-msi-sub" style="font-size:0.78rem;color:#666;margin:0;">Balanced market · 12-month calculation</p>
-    </div>
-    <div class="kc-card kc-card--navy" style="text-align:center;">
-      <h4 style="margin-bottom:0.5rem;">Closed Sales (12 mo)</h4>
-      <p id="kc-mkt-cs" style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;">7,813</p>
-      <p id="kc-mkt-cs-sub" style="font-size:0.78rem;color:#666;margin:0;">12-month total · single-family</p>
-    </div>
-  </div>
 
   <p style="margin-top:1.5rem;"><a href="https://kristencarpentier.expportal.com/dallas-texas-homes-for-sale" class="kc-btn kc-btn--gold" target="_blank" rel="noopener">Search Current Dallas Listings →</a></p>
 
-  <p style="font-size:0.8rem;color:#888;margin-top:-1rem;margin-bottom:1.5rem;">Source: NTREIS (North Texas Real Estate Information Systems). Data as of <span id="kc-mkt-updated">2026</span>. Single-family residential only.</p>
 
   <p>Dallas is the largest single-family housing market in DFW by transaction volume, 7,813 closed sales in the trailing 12 months, nearly double Frisco or Plano. At a 4.5-month supply, the market is balanced: neither the frenzied seller's market of 2021–22 nor a buyer's market. Median prices at ~$492K sit meaningfully below the northern suburbs, partly because the urban core includes more diverse price points (from Oak Cliff's $280K starter homes to Preston Hollow's $2M+ estates). Smart buyers can find exceptional value in transition neighborhoods; working with an agent who knows the specific blocks matters here more than in any suburb.</p>
 
   <!-- Condo/Townhome subsection — shown because condo_closed_sales_12mo > 0 -->
   <div id="kc-condo-market" style="margin-top:1.75rem;padding-top:1.5rem;border-top:1px solid #e5e2db;">
     <h3 style="margin-bottom:1rem;">Condo &amp; Townhome Market</h3>
-    <div class="kc-grid kc-grid--4" style="margin-bottom:0.75rem;">
-      <div style="background:var(--white);border-radius:10px;padding:1rem;box-shadow:var(--shadow);text-align:center;">
-        <div style="font-size:0.68rem;text-transform:uppercase;letter-spacing:0.06em;color:#999;margin-bottom:0.25rem;">Median Price</div>
-        <div id="kc-condo-price" style="font-size:1.4rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;">$268,594</div>
-        <div id="kc-condo-price-sub" style="font-size:0.68rem;color:#888;margin-top:0.15rem;">Condo / Townhome</div>
-      </div>
-      <div style="background:var(--white);border-radius:10px;padding:1rem;box-shadow:var(--shadow);text-align:center;">
-        <div style="font-size:0.68rem;text-transform:uppercase;letter-spacing:0.06em;color:#999;margin-bottom:0.25rem;">Days on Market</div>
-        <div id="kc-condo-dom" style="font-size:1.4rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;">53 days</div>
-        <div style="font-size:0.68rem;color:#888;margin-top:0.15rem;">12-month median</div>
-      </div>
-      <div style="background:var(--white);border-radius:10px;padding:1rem;box-shadow:var(--shadow);text-align:center;">
-        <div style="font-size:0.68rem;text-transform:uppercase;letter-spacing:0.06em;color:#999;margin-bottom:0.25rem;">Months Supply</div>
-        <div id="kc-condo-msi" style="font-size:1.4rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;">8.7 mo.</div>
-        <div id="kc-condo-msi-sub" style="font-size:0.68rem;color:#888;margin-top:0.15rem;">Buyer's market · 12-month</div>
-      </div>
-      <div style="background:var(--white);border-radius:10px;padding:1rem;box-shadow:var(--shadow);text-align:center;">
-        <div style="font-size:0.68rem;text-transform:uppercase;letter-spacing:0.06em;color:#999;margin-bottom:0.25rem;">Closed Sales (12 mo)</div>
-        <div id="kc-condo-cs" style="font-size:1.4rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;">1,506</div>
-        <div style="font-size:0.68rem;color:#888;margin-top:0.15rem;">12-month total</div>
-      </div>
+      <!-- KC-NTREIS-CARDS:START  unified market metrics, live via kc-blog-live + kcUnifiedMarketCards loader, refreshes with the monthly NTREIS scrape, never hardcode -->
+  <div class="kc-grid kc-grid--4" style="margin-bottom:1rem;">
+    <div class="kc-card kc-card--navy" style="text-align:center;">
+      <h4 style="margin-bottom:0.5rem;">Median Sale Price</h4>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="dallas" data-field="sfr_median_price">$498K</span></p>
+      <p style="font-size:0.78rem;color:#666;margin:0;">12-month rolling avg · single-family</p>
     </div>
+    <div class="kc-card kc-card--navy" style="text-align:center;">
+      <h4 style="margin-bottom:0.5rem;">Average Sale Price</h4>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="dallas" data-field="sfr_avg_price">$745K</span></p>
+      <p style="font-size:0.78rem;color:#666;margin:0;">12-month rolling avg · single-family</p>
+    </div>
+    <div class="kc-card kc-card--navy" style="text-align:center;">
+      <h4 style="margin-bottom:0.5rem;">Price per Sq Ft</h4>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="dallas" data-field="sfr_median_price_per_sqft">$246</span></p>
+      <p style="font-size:0.78rem;color:#666;margin:0;">Median · 12-month rolling</p>
+    </div>
+    <div class="kc-card kc-card--navy" style="text-align:center;">
+      <h4 style="margin-bottom:0.5rem;">Sale to Original List</h4>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="dallas" data-field="sfr_pct_of_original_price">96%</span></p>
+      <p style="font-size:0.78rem;color:#666;margin:0;">12-month rolling · share of original list price</p>
+    </div>
+    <div class="kc-card kc-card--navy" style="text-align:center;">
+      <h4 style="margin-bottom:0.5rem;">Days on Market</h4>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="dallas" data-field="sfr_days_on_market">31 days</span></p>
+      <p style="font-size:0.78rem;color:#666;margin:0;">Median · 12-month rolling</p>
+    </div>
+    <div class="kc-card kc-card--navy" style="text-align:center;">
+      <h4 style="margin-bottom:0.5rem;">Months Supply</h4>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="dallas" data-field="sfr_months_supply">4.4 mo.</span></p>
+      <p style="font-size:0.78rem;color:#666;margin:0;"><span class="kc-blog-live" data-suburb="dallas" data-field="market_condition">Balanced</span> market · 12-month</p>
+    </div>
+    <div class="kc-card kc-card--navy" style="text-align:center;">
+      <h4 style="margin-bottom:0.5rem;">Active Inventory</h4>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="dallas" data-field="sfr_inventory">2,902</span></p>
+      <p style="font-size:0.78rem;color:#666;margin:0;">Current active supply · single-family</p>
+    </div>
+    <div class="kc-card kc-card--navy" style="text-align:center;">
+      <h4 style="margin-bottom:0.5rem;">Closed Sales</h4>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="dallas" data-field="sfr_closed_sales_12mo">7,777</span></p>
+      <p style="font-size:0.78rem;color:#666;margin:0;">12-month total · single-family</p>
+    </div>
+  </div>
+  <p style="font-size:0.8rem;color:#888;margin-top:-0.25rem;margin-bottom:1.5rem;">Source: NTREIS via 10K Research. Price figures are 12-month rolling; inventory is current active supply. Updated <span class="kc-blog-live" data-suburb="dallas" data-field="updated">June 2026</span>.</p>
+  <p>A few more numbers worth knowing if you are weighing an offer in Dallas. Over the trailing 12 months, single-family homes sold for a median of <span class="kc-blog-live" data-suburb="dallas" data-field="sfr_median_price">$498K</span> and an average of <span class="kc-blog-live" data-suburb="dallas" data-field="sfr_avg_price">$745K</span>, which works out to about <span class="kc-blog-live" data-suburb="dallas" data-field="sfr_median_price_per_sqft">$246</span> per square foot. Homes here sold for roughly <span class="kc-blog-live" data-suburb="dallas" data-field="sfr_pct_of_original_price">96%</span> of their original list price, which gives you a sense of how much room buyers have typically had to negotiate. As of the latest data, about <span class="kc-blog-live" data-suburb="dallas" data-field="sfr_inventory">2,902</span> single-family homes were actively listed. These are NTREIS figures (the price metrics are 12-month rolling, inventory is current active supply), and your own price per square foot and negotiating room will vary by neighborhood, age of home, and finish level.</p>
+  <!-- KC-NTREIS-CARDS:END -->
     <div id="kc-condo-thin-warning" style="display:none;background:#fff8e1;border-left:3px solid var(--amber);padding:0.75rem 1rem;border-radius:0 6px 6px 0;font-size:0.82rem;margin-bottom:0.75rem;"><strong>Low transaction volume:</strong> Fewer than 5 condo sales in 12 months, median price is not statistically reliable for this suburb.</div>
     <div id="kc-condo-callout" class="kc-callout" style="margin-top:0.75rem;">With 1,506 condo and townhome sales in the trailing 12 months at a median of $268,594, Dallas has the most active condo market in DFW. For families who prefer urban living, Uptown, Knox, the Design District, condos and townhomes represent a real alternative to single-family homes at roughly 45% below the SFR median. Always run the full monthly cost comparison (mortgage + HOA) before assuming the condo is cheaper. HOA fees in Uptown typically run $300–$700/month, which closes some of the gap.</div>
     <p style="font-size:0.72rem;color:#aaa;margin-top:0.5rem;">Condo data as of <span id="kc-condo-updated">2026</span>. Source: NTREIS.</p>

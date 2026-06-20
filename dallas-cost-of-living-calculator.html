@@ -211,7 +211,7 @@ gtag('consent','default',{
           "name": "Is Texas property tax higher than California?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Yes. DFW suburb combined property tax rates run between about 1.64 percent and 1.95 percent of value per year, compared to California's roughly 0.71 percent effective rate, per Tax Foundation data. Texas offsets this with no state income tax and a homestead exemption that removes $140,000 of value from school district taxes, plus extra exemptions for seniors and disabled veterans. The calculator applies these exemptions for you."
+            "text": "Yes. DFW suburb combined property tax rates run between about 1.64 percent and 1.96 percent of value per year, compared to California's roughly 0.71 percent effective rate, per Tax Foundation data. Texas offsets this with no state income tax and a homestead exemption that removes $140,000 of value from school district taxes, plus extra exemptions for seniors and disabled veterans. The calculator applies these exemptions for you."
           }
         },
         {
@@ -766,7 +766,7 @@ gtag('consent','default',{
     <h2 id="where-texas-costs-more">The honest part: where Texas costs more (property tax and insurance)</h2>
     <p>This is the section other calculators leave out. Two Texas costs go up, and a trustworthy tool names them on the same screen as the savings.</p>
     <h3>Property tax</h3>
-    <p>Texas has no income tax partly because it leans on property tax instead. DFW suburb combined rates run between about 1.64 percent and 1.95 percent of value per year, depending on the city, the school district, and any municipal utility district or public improvement district assessments in newer master planned neighborhoods. Compare that to California's roughly 0.71 percent effective rate. The good news for families is the Texas homestead exemption, which removes $140,000 of value from your school district taxes, plus extra exemptions for seniors and disabled veterans. The calculator applies these for you.</p>
+    <p>Texas has no income tax partly because it leans on property tax instead. DFW suburb combined rates run between about 1.64 percent and 1.96 percent of value per year, depending on the city, the school district, and any municipal utility district or public improvement district assessments in newer master planned neighborhoods. Compare that to California's roughly 0.71 percent effective rate. The good news for families is the Texas homestead exemption, which removes $140,000 of value from your school district taxes, plus extra exemptions for seniors and disabled veterans. The calculator applies these for you.</p>
     <h3>Home insurance</h3>
     <p>Texas is among the highest home insurance states in the nation, with typical annual premiums around $4,000 to $4,900, driven by hail, wind, and severe storms. This is the insurance analog to the property tax story, and it belongs in your monthly budget from day one. Your premium scales with your home value and your exact risk, so the calculator shows it as a range, never a single fixed figure.</p>
     <h3>Summer electricity</h3>
@@ -1020,15 +1020,25 @@ gtag('consent','default',{
     /* 3 line side by side */
     var incClass = m.incomeSavings>0 ? "down" : "";
     var propClass = "up";
+    // For renters, the Texas property tax and insurance are a NEW cost they take on
+    // as a buyer, not a higher version of something they pay today. Label and net note
+    // adjust so the renter result is not misread as "the move costs you this."
+    var propLabel = m.isRent ? "New Texas housing costs as a buyer" : "Higher property tax and insurance";
+    var propSub = m.isRent
+      ? "Property tax and insurance you take on as a Texas homeowner, on a "+esc(m.featuredName)+" home. Your current rent stops, so this is a housing type shift, not the rent you save."
+      : "Texas housing costs to budget, on a home of the same value in "+esc(m.featuredName);
+    var netSub = positive ? "what you keep" : (m.isRent ? "the added housing carrying cost, before the rent you stop paying" : "what the move costs");
     h+='<div class="cc-ledger">'+
         '<div class="row"><div class="lbl"><b>No state income tax</b><span>vs '+esc(m.stateName)+' at your income and filing status</span></div>'+
           '<div class="amt '+incClass+'">'+(m.incomeSavings>0?"+"+money(m.incomeSavings):"$0")+'</div></div>'+
-        '<div class="row"><div class="lbl"><b>Higher property tax and insurance</b><span>Texas housing costs to budget, on a home of the same value in '+esc(m.featuredName)+'</span></div>'+
+        '<div class="row"><div class="lbl"><b>'+propLabel+'</b><span>'+propSub+'</span></div>'+
           '<div class="amt '+propClass+'">'+(m.housingCost>0?"-"+money(m.housingCost):"$0")+'</div></div>'+
-        '<div class="row net"><div class="lbl"><b>Your net, per year</b><span>'+(positive?'what you keep':'what the move costs')+'</span></div>'+
+        '<div class="row net"><div class="lbl"><b>Your net, per year</b><span>'+netSub+'</span></div>'+
           '<div class="amt">'+(positive?"+":"-")+money(Math.abs(net))+'</div></div>'+
       '</div>';
-    h+='<p style="font-size:.82rem;color:#777;margin:-12px 0 22px;line-height:1.5;">To stay honest we count the full Texas insurance estimate here, not just the increase over the policy you carry today, so your real net is usually a little better than this conservative figure. We also tax a home of the same value: many families find their equity buys a larger home in DFW and right size to a lower price, which lowers both the mortgage and the tax. See what your home buys below.</p>';
+    var ownNote = "To stay honest we count the full Texas insurance estimate here, not just the increase over the policy you carry today, so your real net is usually a little better than this conservative figure. We also tax a home of the same value: many families find their equity buys a larger home in DFW and right size to a lower price, which lowers both the mortgage and the tax. See what your home buys below.";
+    var rentNote = "Because you rent today, you pay no property tax directly now, so the Texas property tax and insurance show as a full new cost you take on as a buyer. Your current rent is not netted out here, the rent you stop paying offsets much of this. Treat the net above as the added housing carrying cost, not money out of pocket. See what homes cost below.";
+    h+='<p style="font-size:.82rem;color:#777;margin:-12px 0 22px;line-height:1.5;">'+(m.isRent?rentNote:ownNote)+'</p>';
 
     /* honesty callouts (never gated) */
     h+='<div class="cc-honest">'+

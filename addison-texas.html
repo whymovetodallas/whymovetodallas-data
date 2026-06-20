@@ -1272,29 +1272,52 @@ gtag('consent','default',{
   <p>Addison's SFR (single-family home) market is small, the town is predominantly condos, townhomes, and apartments. When detached homes come available, they move. The market has moderated from the 2021–2022 frenzy but remains competitive for quality SFR product. Condos and townhomes provide broader inventory at lower price points.</p>
 
   <!-- Market stat cards — static fallback (Addison not in live data feed) -->
-  <div class="kc-grid kc-grid--4" style="margin:1.5rem 0 0.5rem;">
-    <div style="background:var(--white);border-radius:10px;padding:1.25rem;box-shadow:var(--shadow);text-align:center;">
-      <div id="kc-mkt-price" style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;">~$630K</div>
-      <div style="font-size:0.72rem;text-transform:uppercase;letter-spacing:0.06em;color:#888;margin-top:0.2rem;">Median SFR Price</div>
-      <div id="kc-mkt-price-sub" style="font-size:0.7rem;color:#aaa;margin-top:0.2rem;">Recent · single-family · Redfin/NTREIS</div>
+    <!-- KC-NTREIS-CARDS:START  unified market metrics, live via kc-blog-live + kcUnifiedMarketCards loader, refreshes with the monthly NTREIS scrape, never hardcode -->
+  <div class="kc-grid kc-grid--4" style="margin-bottom:1rem;">
+    <div class="kc-card kc-card--navy" style="text-align:center;">
+      <h4 style="margin-bottom:0.5rem;">Median Sale Price</h4>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="addison" data-field="sfr_median_price">$601K</span></p>
+      <p style="font-size:0.78rem;color:#666;margin:0;">12-month rolling avg · single-family</p>
     </div>
-    <div style="background:var(--white);border-radius:10px;padding:1.25rem;box-shadow:var(--shadow);text-align:center;">
-      <div id="kc-mkt-dom" style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;">~45 days</div>
-      <div style="font-size:0.72rem;text-transform:uppercase;letter-spacing:0.06em;color:#888;margin-top:0.2rem;">Days on Market</div>
-      <div id="kc-mkt-dom-sub" style="font-size:0.7rem;color:#aaa;margin-top:0.2rem;">Median · single-family homes</div>
+    <div class="kc-card kc-card--navy" style="text-align:center;">
+      <h4 style="margin-bottom:0.5rem;">Average Sale Price</h4>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="addison" data-field="sfr_avg_price">$761K</span></p>
+      <p style="font-size:0.78rem;color:#666;margin:0;">12-month rolling avg · single-family</p>
     </div>
-    <div style="background:var(--white);border-radius:10px;padding:1.25rem;box-shadow:var(--shadow);text-align:center;">
-      <div id="kc-mkt-msi" style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;">~3.5 mo.</div>
-      <div style="font-size:0.72rem;text-transform:uppercase;letter-spacing:0.06em;color:#888;margin-top:0.2rem;">Months Supply</div>
-      <div id="kc-mkt-msi-sub" style="font-size:0.7rem;color:#aaa;margin-top:0.2rem;">Balanced market · SFR</div>
+    <div class="kc-card kc-card--navy" style="text-align:center;">
+      <h4 style="margin-bottom:0.5rem;">Price per Sq Ft</h4>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="addison" data-field="sfr_median_price_per_sqft">$276</span></p>
+      <p style="font-size:0.78rem;color:#666;margin:0;">Median · 12-month rolling</p>
     </div>
-    <div style="background:var(--white);border-radius:10px;padding:1.25rem;box-shadow:var(--shadow);text-align:center;">
-      <div id="kc-mkt-cs" style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;">~180</div>
-      <div style="font-size:0.72rem;text-transform:uppercase;letter-spacing:0.06em;color:#888;margin-top:0.2rem;">Annual SFR Sales</div>
-      <div id="kc-mkt-cs-sub" style="font-size:0.7rem;color:#aaa;margin-top:0.2rem;">12-month total · small inventory town</div>
+    <div class="kc-card kc-card--navy" style="text-align:center;">
+      <h4 style="margin-bottom:0.5rem;">Sale to Original List</h4>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="addison" data-field="sfr_pct_of_original_price">96.5%</span></p>
+      <p style="font-size:0.78rem;color:#666;margin:0;">12-month rolling · share of original list price</p>
+    </div>
+    <div class="kc-card kc-card--navy" style="text-align:center;">
+      <h4 style="margin-bottom:0.5rem;">Days on Market</h4>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="addison" data-field="sfr_days_on_market">33 days</span></p>
+      <p style="font-size:0.78rem;color:#666;margin:0;">Median · 12-month rolling</p>
+    </div>
+    <div class="kc-card kc-card--navy" style="text-align:center;">
+      <h4 style="margin-bottom:0.5rem;">Months Supply</h4>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="addison" data-field="sfr_months_supply">4.2 mo.</span></p>
+      <p style="font-size:0.78rem;color:#666;margin:0;"><span class="kc-blog-live" data-suburb="addison" data-field="market_condition">Balanced</span> market · 12-month</p>
+    </div>
+    <div class="kc-card kc-card--navy" style="text-align:center;">
+      <h4 style="margin-bottom:0.5rem;">Active Inventory</h4>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="addison" data-field="sfr_inventory">22</span></p>
+      <p style="font-size:0.78rem;color:#666;margin:0;">Current active supply · single-family</p>
+    </div>
+    <div class="kc-card kc-card--navy" style="text-align:center;">
+      <h4 style="margin-bottom:0.5rem;">Closed Sales</h4>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="addison" data-field="sfr_closed_sales_12mo">68</span></p>
+      <p style="font-size:0.78rem;color:#666;margin:0;">12-month total · single-family</p>
     </div>
   </div>
-  <p style="font-size:0.72rem;color:#aaa;margin-bottom:1.5rem;" id="kc-mkt-updated">Data: Redfin / NTREIS, May 2026. SFR only. Verify current conditions with Kristen.</p>
+  <p style="font-size:0.8rem;color:#888;margin-top:-0.25rem;margin-bottom:1.5rem;">Source: NTREIS via 10K Research. Price figures are 12-month rolling; inventory is current active supply. Updated <span class="kc-blog-live" data-suburb="addison" data-field="updated">June 2026</span>.</p>
+  <p>A few more numbers worth knowing if you are weighing an offer in Addison. Over the trailing 12 months, single-family homes sold for a median of <span class="kc-blog-live" data-suburb="addison" data-field="sfr_median_price">$601K</span> and an average of <span class="kc-blog-live" data-suburb="addison" data-field="sfr_avg_price">$761K</span>, which works out to about <span class="kc-blog-live" data-suburb="addison" data-field="sfr_median_price_per_sqft">$276</span> per square foot. Homes here sold for roughly <span class="kc-blog-live" data-suburb="addison" data-field="sfr_pct_of_original_price">96.5%</span> of their original list price, which gives you a sense of how much room buyers have typically had to negotiate. As of the latest data, about <span class="kc-blog-live" data-suburb="addison" data-field="sfr_inventory">22</span> single-family homes were actively listed. These are NTREIS figures (the price metrics are 12-month rolling, inventory is current active supply), and your own price per square foot and negotiating room will vary by neighborhood, age of home, and finish level.</p>
+  <!-- KC-NTREIS-CARDS:END -->
 
   <p>With roughly 85 SFR closings per year and a months supply of ~7.4, Addison currently sits in <strong>buyer's market territory for single-family homes</strong>, meaning you have more negotiating room than in prior years. Townhome and condo inventory is even more plentiful. That said, well-priced SFR homes in good school feeders still attract multiple offers, so arriving pre-approved remains essential.</p>
   <div style="text-align:center;margin-top:1.5rem;">

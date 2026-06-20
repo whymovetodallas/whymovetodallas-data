@@ -1345,36 +1345,17 @@ gtag('consent','default',{
   </div>
 
   <!-- Market stat cards — values injected by kcLoadMarketStats() from NTREIS data pipeline -->
-  <div class="kc-grid kc-grid--4" style="margin-bottom:2rem;">
+    <!-- KC-NTREIS-CARDS:START  unified market metrics, live via kc-blog-live + kcUnifiedMarketCards loader, refreshes with the monthly NTREIS scrape, never hardcode -->
+  <div class="kc-grid kc-grid--4" style="margin-bottom:1rem;">
     <div class="kc-card kc-card--navy" style="text-align:center;">
       <h4 style="margin-bottom:0.5rem;">Median Sale Price</h4>
-      <p id="kc-mkt-price" style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;">$692,433</p>
-      <p id="kc-mkt-price-sub" style="font-size:0.78rem;color:#666;margin:0;">12-month rolling avg · single-family</p>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="frisco" data-field="sfr_median_price">$679K</span></p>
+      <p style="font-size:0.78rem;color:#666;margin:0;">12-month rolling avg · single-family</p>
     </div>
-    <div class="kc-card kc-card--navy" style="text-align:center;">
-      <h4 style="margin-bottom:0.5rem;">Days on Market</h4>
-      <p id="kc-mkt-dom" style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;">19 days</p>
-      <p id="kc-mkt-dom-sub" style="font-size:0.78rem;color:#666;margin:0;">12-month rolling avg · median</p>
-    </div>
-    <div class="kc-card kc-card--navy" style="text-align:center;">
-      <h4 style="margin-bottom:0.5rem;">Months Supply</h4>
-      <p id="kc-mkt-msi" style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;">4.9 mo.</p>
-      <p id="kc-mkt-msi-sub" style="font-size:0.78rem;color:#666;margin:0;">Balanced market · 12-month calculation</p>
-    </div>
-    <div class="kc-card kc-card--navy" style="text-align:center;">
-      <h4 style="margin-bottom:0.5rem;">Closed Sales</h4>
-      <p id="kc-mkt-cs" style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;">206</p>
-      <p id="kc-mkt-cs-sub" style="font-size:0.78rem;color:#666;margin:0;">12-month total · single-family</p>
-    </div>
-  </div>
-  <p style="font-size:0.8rem;color:#888;margin-top:-1rem;margin-bottom:1.5rem;">Source: NTREIS via 10K Research · All figures are 12-month rolling periods · Updated <span id="kc-mkt-updated">April 2026</span></p>
-
-  <!-- NTREIS price-depth & supply metrics · live from data layer (kc-blog-live), refreshes with the monthly scrape · never hardcode -->
-  <div class="kc-grid kc-grid--4" style="margin-bottom:1rem;">
     <div class="kc-card kc-card--navy" style="text-align:center;">
       <h4 style="margin-bottom:0.5rem;">Average Sale Price</h4>
       <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="frisco" data-field="sfr_avg_price">$815K</span></p>
-      <p style="font-size:0.78rem;color:#666;margin:0;">12-month rolling avg · median is <span class="kc-blog-live" data-suburb="frisco" data-field="sfr_median_price">$679K</span></p>
+      <p style="font-size:0.78rem;color:#666;margin:0;">12-month rolling avg · single-family</p>
     </div>
     <div class="kc-card kc-card--navy" style="text-align:center;">
       <h4 style="margin-bottom:0.5rem;">Price per Sq Ft</h4>
@@ -1387,13 +1368,31 @@ gtag('consent','default',{
       <p style="font-size:0.78rem;color:#666;margin:0;">12-month rolling · share of original list price</p>
     </div>
     <div class="kc-card kc-card--navy" style="text-align:center;">
+      <h4 style="margin-bottom:0.5rem;">Days on Market</h4>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="frisco" data-field="sfr_days_on_market">38 days</span></p>
+      <p style="font-size:0.78rem;color:#666;margin:0;">Median · 12-month rolling</p>
+    </div>
+    <div class="kc-card kc-card--navy" style="text-align:center;">
+      <h4 style="margin-bottom:0.5rem;">Months Supply</h4>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="frisco" data-field="sfr_months_supply">4.5 mo.</span></p>
+      <p style="font-size:0.78rem;color:#666;margin:0;"><span class="kc-blog-live" data-suburb="frisco" data-field="market_condition">Balanced</span> market · 12-month</p>
+    </div>
+    <div class="kc-card kc-card--navy" style="text-align:center;">
       <h4 style="margin-bottom:0.5rem;">Active Inventory</h4>
       <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="frisco" data-field="sfr_inventory">810</span></p>
       <p style="font-size:0.78rem;color:#666;margin:0;">Current active supply · single-family</p>
     </div>
+    <div class="kc-card kc-card--navy" style="text-align:center;">
+      <h4 style="margin-bottom:0.5rem;">Closed Sales</h4>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="frisco" data-field="sfr_closed_sales_12mo">2,199</span></p>
+      <p style="font-size:0.78rem;color:#666;margin:0;">12-month total · single-family</p>
+    </div>
   </div>
-
+  <p style="font-size:0.8rem;color:#888;margin-top:-0.25rem;margin-bottom:1.5rem;">Source: NTREIS via 10K Research. Price figures are 12-month rolling; inventory is current active supply. Updated <span class="kc-blog-live" data-suburb="frisco" data-field="updated">June 2026</span>.</p>
   <p>A few more numbers worth knowing if you are weighing an offer in Frisco. Over the trailing 12 months, single-family homes sold for a median of <span class="kc-blog-live" data-suburb="frisco" data-field="sfr_median_price">$679K</span> and an average of <span class="kc-blog-live" data-suburb="frisco" data-field="sfr_avg_price">$815K</span>, which works out to about <span class="kc-blog-live" data-suburb="frisco" data-field="sfr_median_price_per_sqft">$233</span> per square foot. Homes here sold for roughly <span class="kc-blog-live" data-suburb="frisco" data-field="sfr_pct_of_original_price">95.6%</span> of their original list price, which gives you a sense of how much room buyers have typically had to negotiate. As of the latest data, about <span class="kc-blog-live" data-suburb="frisco" data-field="sfr_inventory">810</span> single-family homes were actively listed. These are NTREIS figures (the price metrics are 12-month rolling, inventory is current active supply), and your own price per square foot and negotiating room will vary by neighborhood, age of home, and finish level.</p>
+  <!-- KC-NTREIS-CARDS:END -->
+
+
 
   <p>Frisco has one of the strongest long-term value cases in DFW. Corporate relocations, infrastructure investment, and continued population growth support demand. New construction is abundant, but understanding builder contracts, incentive timing, and MUD/PID implications takes expertise. I've closed dozens of new construction deals in Frisco and know the builders and their negotiating windows.</p>
 
@@ -2226,32 +2225,6 @@ document.querySelectorAll('.kc-jumpnav-list a').forEach(function(a) {
 }());
 </script>
 
-<script>
-/* NTREIS market metrics: live auto-refresh (kc-blog-live span pattern).
-   Pulls from the data layer so values update with the monthly NTREIS scrape.
-   Self-contained: independent of this page's other market scripts. Never hardcode. */
-(function kcLiveNtreisSpans(){
-  var DATA_URL='https://raw.githubusercontent.com/whymovetodallas/whymovetodallas-data/main/suburb-profiles.json';
-  var nodes=document.querySelectorAll('.kc-blog-live[data-suburb][data-field]');
-  if(!nodes.length||!window.fetch)return;
-  fetch(DATA_URL,{cache:'no-cache'})
-    .then(function(r){return r.ok?r.json():Promise.reject();})
-    .then(function(data){
-      var suburbs=data&&data.suburbs;if(!suburbs)return;
-      nodes.forEach(function(el){
-        var s=suburbs[el.dataset.suburb];if(!s)return;
-        var m=s.market||{};var f=el.dataset.field;var v=null;
-        if(f==='sfr_avg_price'&&m.sfr_avg_price!=null)v='$'+Math.round(m.sfr_avg_price/1000)+'K';
-        else if(f==='sfr_median_price'&&m.sfr_median_price!=null)v='$'+Math.round(m.sfr_median_price/1000)+'K';
-        else if(f==='sfr_median_price_per_sqft'&&m.sfr_median_price_per_sqft!=null)v='$'+Math.round(m.sfr_median_price_per_sqft);
-        else if(f==='sfr_pct_of_original_price'&&m.sfr_pct_of_original_price!=null)v=(Math.round(m.sfr_pct_of_original_price*10)/10)+'%';
-        else if(f==='sfr_inventory'&&m.sfr_inventory!=null)v=Math.round(m.sfr_inventory).toLocaleString();
-        if(v!=null)el.textContent=v;
-      });
-    })
-    .catch(function(){});
-})();
-</script>
 
 <!-- Suburb Matcher CTA (injected) -->
 <section style="background:#1F2D3D;padding:48px 20px;" aria-label="Find your DFW suburb">
