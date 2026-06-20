@@ -1,4 +1,4 @@
-/* Why Move to Dallas — shared suburb DATA STRIP renderer (single source of truth).
+/* Why Move to Dallas: shared suburb DATA STRIP renderer (single source of truth).
  *
  * Paints the #kc-data-strip region on every suburb page from the live
  * suburb-profiles.json: Family Score + Affordability Score (with meter fills),
@@ -11,7 +11,7 @@
  * authority for the data strip. It identifies the suburb from the page URL
  * (/[slug]-texas -> data key) and re-asserts its values via a MutationObserver,
  * so it deterministically wins over any leftover inline renderer regardless of
- * fetch timing. It touches ONLY #kc-data-strip — nothing else on the page.
+ * fetch timing. It touches ONLY #kc-data-strip, nothing else on the page.
  *
  * Injected on every page containing #kc-data-strip by build.js. On fetch
  * failure it silently leaves whatever the page already shows.
@@ -44,7 +44,7 @@
     var html = '';
     SS_ORDER.forEach(function (k) {
       var v = sub[k];
-      var disp = (v != null) ? v : '—';
+      var disp = (v != null) ? v : '-';
       var pct = (v != null) ? v : 0;
       html += '<div class="kc-subscore-item">';
       html += '<div class="kc-subscore-item-label">' + SS_NAMES[k] + '</div>';
