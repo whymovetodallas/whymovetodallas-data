@@ -187,7 +187,12 @@
         "condo_median_price": 371762.1,
         "condo_closed_sales_12mo": 15,
         "condo_days_on_market": 126.7,
-        "condo_months_supply": 6.1
+        "condo_months_supply": 6.1,
+        "median_price_per_sqft": 211,
+        "median_price_per_sqft_source": "Redfin",
+        "median_price_per_sqft_as_of": "2025-10",
+        "median_price_per_sqft_url": "https://www.redfin.com/city/492/TX/Allen/housing-market",
+        "median_price_per_sqft_approx": true
       },
       "schools": {
         "isd_name": "Allen ISD",
@@ -437,7 +442,12 @@
         "condo_median_price": 402982,
         "condo_closed_sales_12mo": 0,
         "condo_days_on_market": 36,
-        "condo_months_supply": null
+        "condo_months_supply": null,
+        "median_price_per_sqft": 223,
+        "median_price_per_sqft_source": "Redfin",
+        "median_price_per_sqft_as_of": "2025-11",
+        "median_price_per_sqft_url": "https://www.redfin.com/city/1023/TX/Argyle/housing-market",
+        "median_price_per_sqft_approx": false
       },
       "schools": {
         "isd_name": "Argyle ISD",
@@ -1687,7 +1697,12 @@
         "condo_median_price": 440979.2,
         "condo_closed_sales_12mo": 10,
         "condo_days_on_market": 55,
-        "condo_months_supply": 3.7
+        "condo_months_supply": 3.7,
+        "median_price_per_sqft": 281,
+        "median_price_per_sqft_source": "Redfin",
+        "median_price_per_sqft_as_of": "2025-10",
+        "median_price_per_sqft_url": "https://www.redfin.com/city/4139/TX/Colleyville/housing-market",
+        "median_price_per_sqft_approx": true
       },
       "schools": {
         "isd_name": "Grapevine-Colleyville ISD",
@@ -1812,7 +1827,12 @@
         "condo_median_price": 251229.2,
         "condo_closed_sales_12mo": 7,
         "condo_days_on_market": 36,
-        "condo_months_supply": 1.2
+        "condo_months_supply": 1.2,
+        "median_price_per_sqft": 272,
+        "median_price_per_sqft_source": "Redfin",
+        "median_price_per_sqft_as_of": "2025-11",
+        "median_price_per_sqft_url": "https://www.redfin.com/city/30867/TX/Coppell/housing-market",
+        "median_price_per_sqft_approx": false
       },
       "schools": {
         "isd_name": "Coppell ISD",
@@ -3178,7 +3198,12 @@
         "condo_median_price": 1524375,
         "condo_closed_sales_12mo": 1,
         "condo_days_on_market": 81.8,
-        "condo_months_supply": 4.3
+        "condo_months_supply": 4.3,
+        "median_price_per_sqft": 226,
+        "median_price_per_sqft_source": "Redfin",
+        "median_price_per_sqft_as_of": "2025-11",
+        "median_price_per_sqft_url": "https://www.redfin.com/city/30837/TX/Flower-Mound/housing-market",
+        "median_price_per_sqft_approx": false
       },
       "schools": {
         "isd_name": "Lewisville ISD",
@@ -3553,7 +3578,12 @@
         "condo_median_price": 736446.8,
         "condo_closed_sales_12mo": 3,
         "condo_days_on_market": 164,
-        "condo_months_supply": 3.1
+        "condo_months_supply": 3.1,
+        "median_price_per_sqft": 233,
+        "median_price_per_sqft_source": "Redfin",
+        "median_price_per_sqft_as_of": "2025-11",
+        "median_price_per_sqft_url": "https://www.redfin.com/city/30844/TX/Frisco/housing-market",
+        "median_price_per_sqft_approx": false
       },
       "schools": {
         "isd_name": "Frisco ISD",
@@ -5785,7 +5815,12 @@
         "condo_median_price": 450708.3,
         "condo_closed_sales_12mo": 35,
         "condo_days_on_market": 67.9,
-        "condo_months_supply": 4.4
+        "condo_months_supply": 4.4,
+        "median_price_per_sqft": 203,
+        "median_price_per_sqft_source": "Redfin",
+        "median_price_per_sqft_as_of": "2025-11",
+        "median_price_per_sqft_url": "https://www.redfin.com/city/11666/TX/McKinney/housing-market",
+        "median_price_per_sqft_approx": false
       },
       "schools": {
         "isd_name": "McKinney ISD",
@@ -6660,7 +6695,12 @@
         "condo_median_price": 334568.8,
         "condo_closed_sales_12mo": 58,
         "condo_days_on_market": 39.4,
-        "condo_months_supply": 6.5
+        "condo_months_supply": 6.5,
+        "median_price_per_sqft": 213,
+        "median_price_per_sqft_source": "Redfin",
+        "median_price_per_sqft_as_of": "2025-09",
+        "median_price_per_sqft_url": "https://www.redfin.com/city/30868/TX/Plano/housing-market",
+        "median_price_per_sqft_approx": false
       },
       "schools": {
         "isd_name": "Plano ISD",
@@ -6910,7 +6950,12 @@
         "condo_median_price": 524000,
         "condo_closed_sales_12mo": 0,
         "condo_days_on_market": 76,
-        "condo_months_supply": 1
+        "condo_months_supply": 1,
+        "median_price_per_sqft": 244,
+        "median_price_per_sqft_source": "Redfin",
+        "median_price_per_sqft_as_of": "2025-11",
+        "median_price_per_sqft_url": "https://www.redfin.com/city/30828/TX/Prosper/housing-market",
+        "median_price_per_sqft_approx": false
       },
       "schools": {
         "isd_name": "Prosper ISD",
@@ -7910,7 +7955,12 @@
         "condo_median_price": 612567.8,
         "condo_closed_sales_12mo": 13,
         "condo_days_on_market": 79,
-        "condo_months_supply": 3.5
+        "condo_months_supply": 3.5,
+        "median_price_per_sqft": 373,
+        "median_price_per_sqft_source": "Redfin",
+        "median_price_per_sqft_as_of": "2025-11",
+        "median_price_per_sqft_url": "https://www.redfin.com/city/30852/TX/Southlake/housing-market",
+        "median_price_per_sqft_approx": true
       },
       "schools": {
         "isd_name": "Carroll ISD",
