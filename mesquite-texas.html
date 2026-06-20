@@ -1311,6 +1311,29 @@ gtag('consent','default',{
     <h2>Mesquite Real Estate Market: What to Expect</h2>
   </div>
 
+  <div class="kc-grid kc-grid--4" style="margin-bottom:2rem;">
+    <div class="kc-card kc-card--navy" style="text-align:center;">
+      <h4 style="margin-bottom:0.5rem;">Median SFR Price</h4>
+      <p id="kc-mkt-price" style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;">$289,058</p>
+      <p id="kc-mkt-price-sub" style="font-size:0.78rem;color:#666;margin:0;">12-month rolling avg · single-family</p>
+    </div>
+    <div class="kc-card kc-card--navy" style="text-align:center;">
+      <h4 style="margin-bottom:0.5rem;">Days on Market</h4>
+      <p id="kc-mkt-dom" style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;">42 days</p>
+      <p id="kc-mkt-dom-sub" style="font-size:0.78rem;color:#666;margin:0;">12-month rolling avg · median</p>
+    </div>
+    <div class="kc-card kc-card--navy" style="text-align:center;">
+      <h4 style="margin-bottom:0.5rem;">Months Supply</h4>
+      <p id="kc-mkt-msi" style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;">4.9 mo.</p>
+      <p id="kc-mkt-msi-sub" style="font-size:0.78rem;color:#666;margin:0;">Balanced market · 12-month calculation</p>
+    </div>
+    <div class="kc-card kc-card--navy" style="text-align:center;">
+      <h4 style="margin-bottom:0.5rem;">Closed Sales (12 mo.)</h4>
+      <p id="kc-mkt-cs" style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;">1,411</p>
+      <p id="kc-mkt-cs-sub" style="font-size:0.78rem;color:#666;margin:0;">12-month total · single-family</p>
+    </div>
+  </div>
+  <p style="font-size:0.8rem;color:#888;margin-top:-1rem;margin-bottom:1.5rem;">Source: NTREIS via 10K Research · All figures are 12-month rolling periods · Updated <span id="kc-mkt-updated">2025</span></p>
 
   <p>Mesquite's market sits in balanced territory, not the competitive seller's market seen in Frisco, and not a buyer's market either. With a median single-family price under $300K, Mesquite is the most affordable market we cover at this proximity to Dallas. The 42-day median DOM means homes aren't flying off the market in 48 hours, but well-priced homes in the southeast neighborhoods still move in two to three weeks. For relocating families from California or New York, the comparison is striking: a $289K home in Mesquite is typically 3BR/2BA, 1,600–2,000 sq ft, equivalent space to something costing $900K–$1.4M+ in the Bay Area or Westchester.</p>
 
@@ -1318,52 +1341,28 @@ gtag('consent','default',{
   <div id="kc-condo-market" style="display:none;margin-top:2rem;border-top:1px solid #eee;padding-top:2rem;">
     <h3 style="font-size:1.1rem;margin-bottom:1rem;">Condo &amp; Townhome Market</h3>
     <div id="kc-condo-cards" style="display:none;">
-        <!-- KC-NTREIS-CARDS:START  unified market metrics, live via kc-blog-live + kcUnifiedMarketCards loader, refreshes with the monthly NTREIS scrape, never hardcode -->
-  <div class="kc-grid kc-grid--4" style="margin-bottom:1rem;">
-    <div class="kc-card kc-card--navy" style="text-align:center;">
-      <h4 style="margin-bottom:0.5rem;">Median Sale Price</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="mesquite" data-field="sfr_median_price">$288K</span></p>
-      <p style="font-size:0.78rem;color:#666;margin:0;">12-month rolling avg · single-family</p>
-    </div>
-    <div class="kc-card kc-card--navy" style="text-align:center;">
-      <h4 style="margin-bottom:0.5rem;">Average Sale Price</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="mesquite" data-field="sfr_avg_price">$301K</span></p>
-      <p style="font-size:0.78rem;color:#666;margin:0;">12-month rolling avg · single-family</p>
-    </div>
-    <div class="kc-card kc-card--navy" style="text-align:center;">
-      <h4 style="margin-bottom:0.5rem;">Price per Sq Ft</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="mesquite" data-field="sfr_median_price_per_sqft">$162</span></p>
-      <p style="font-size:0.78rem;color:#666;margin:0;">Median · 12-month rolling</p>
-    </div>
-    <div class="kc-card kc-card--navy" style="text-align:center;">
-      <h4 style="margin-bottom:0.5rem;">Sale to Original List</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="mesquite" data-field="sfr_pct_of_original_price">95.2%</span></p>
-      <p style="font-size:0.78rem;color:#666;margin:0;">12-month rolling · share of original list price</p>
-    </div>
-    <div class="kc-card kc-card--navy" style="text-align:center;">
-      <h4 style="margin-bottom:0.5rem;">Days on Market</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="mesquite" data-field="sfr_days_on_market">42 days</span></p>
-      <p style="font-size:0.78rem;color:#666;margin:0;">Median · 12-month rolling</p>
-    </div>
-    <div class="kc-card kc-card--navy" style="text-align:center;">
-      <h4 style="margin-bottom:0.5rem;">Months Supply</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="mesquite" data-field="sfr_months_supply">4.8 mo.</span></p>
-      <p style="font-size:0.78rem;color:#666;margin:0;"><span class="kc-blog-live" data-suburb="mesquite" data-field="market_condition">Balanced</span> market · 12-month</p>
-    </div>
-    <div class="kc-card kc-card--navy" style="text-align:center;">
-      <h4 style="margin-bottom:0.5rem;">Active Inventory</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="mesquite" data-field="sfr_inventory">558</span></p>
-      <p style="font-size:0.78rem;color:#666;margin:0;">Current active supply · single-family</p>
-    </div>
-    <div class="kc-card kc-card--navy" style="text-align:center;">
-      <h4 style="margin-bottom:0.5rem;">Closed Sales</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="mesquite" data-field="sfr_closed_sales_12mo">1,383</span></p>
-      <p style="font-size:0.78rem;color:#666;margin:0;">12-month total · single-family</p>
-    </div>
-  </div>
-  <p style="font-size:0.8rem;color:#888;margin-top:-0.25rem;margin-bottom:1.5rem;">Source: NTREIS via 10K Research. Price figures are 12-month rolling; inventory is current active supply. Updated <span class="kc-blog-live" data-suburb="mesquite" data-field="updated">June 2026</span>.</p>
-  <p>A few more numbers worth knowing if you are weighing an offer in Mesquite. Over the trailing 12 months, single-family homes sold for a median of <span class="kc-blog-live" data-suburb="mesquite" data-field="sfr_median_price">$288K</span> and an average of <span class="kc-blog-live" data-suburb="mesquite" data-field="sfr_avg_price">$301K</span>, which works out to about <span class="kc-blog-live" data-suburb="mesquite" data-field="sfr_median_price_per_sqft">$162</span> per square foot. Homes here sold for roughly <span class="kc-blog-live" data-suburb="mesquite" data-field="sfr_pct_of_original_price">95.2%</span> of their original list price, which gives you a sense of how much room buyers have typically had to negotiate. As of the latest data, about <span class="kc-blog-live" data-suburb="mesquite" data-field="sfr_inventory">558</span> single-family homes were actively listed. These are NTREIS figures (the price metrics are 12-month rolling, inventory is current active supply), and your own price per square foot and negotiating room will vary by neighborhood, age of home, and finish level.</p>
-  <!-- KC-NTREIS-CARDS:END -->
+      <div class="kc-grid kc-grid--4" style="margin-bottom:1rem;">
+        <div style="background:var(--ivory);border-radius:10px;padding:1rem;text-align:center;border:1px solid #e8e4de;">
+          <div style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--gold);margin-bottom:0.4rem;">Median Condo Price</div>
+          <p id="kc-condo-price" style="font-size:1.3rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.2rem 0;">-</p>
+          <p id="kc-condo-price-sub" style="font-size:0.72rem;color:#666;margin:0;">Condo / Townhome</p>
+        </div>
+        <div style="background:var(--ivory);border-radius:10px;padding:1rem;text-align:center;border:1px solid #e8e4de;">
+          <div style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--gold);margin-bottom:0.4rem;">Days on Market</div>
+          <p id="kc-condo-dom" style="font-size:1.3rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.2rem 0;">-</p>
+          <p style="font-size:0.72rem;color:#666;margin:0;">Median · condo/TH</p>
+        </div>
+        <div style="background:var(--ivory);border-radius:10px;padding:1rem;text-align:center;border:1px solid #e8e4de;">
+          <div style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--gold);margin-bottom:0.4rem;">Months Supply</div>
+          <p id="kc-condo-msi" style="font-size:1.3rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.2rem 0;">-</p>
+          <p id="kc-condo-msi-sub" style="font-size:0.72rem;color:#666;margin:0;">12-month</p>
+        </div>
+        <div style="background:var(--ivory);border-radius:10px;padding:1rem;text-align:center;border:1px solid #e8e4de;">
+          <div style="font-size:0.7rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:var(--gold);margin-bottom:0.4rem;">Closed (12 mo.)</div>
+          <p id="kc-condo-cs" style="font-size:1.3rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.2rem 0;">-</p>
+          <p style="font-size:0.72rem;color:#666;margin:0;">Condo / TH sales</p>
+        </div>
+      </div>
       <div id="kc-condo-thin-warning" style="display:none;background:#fff8e7;border:1px solid #f5c842;border-radius:8px;padding:0.75rem 1rem;font-size:0.85rem;color:#7a5c00;margin-bottom:1rem;">&#9888; Thin data, fewer than 5 condo/townhome sales recorded. Stats may not reflect true market pricing.</div>
       <p id="kc-condo-callout" style="font-size:0.9rem;color:#444;line-height:1.7;"></p>
       <p style="font-size:0.72rem;color:#888;">Source: NTREIS · Updated: <span id="kc-condo-updated">2025</span></p>

@@ -1306,52 +1306,29 @@ gtag('consent','default',{
     <h2>North Richland Hills Real Estate Market: What to Expect</h2>
   </div>
 
-    <!-- KC-NTREIS-CARDS:START  unified market metrics, live via kc-blog-live + kcUnifiedMarketCards loader, refreshes with the monthly NTREIS scrape, never hardcode -->
-  <div class="kc-grid kc-grid--4" style="margin-bottom:1rem;">
+  <div class="kc-grid kc-grid--4" style="margin-bottom:2rem;">
     <div class="kc-card kc-card--navy" style="text-align:center;">
       <h4 style="margin-bottom:0.5rem;">Median Sale Price</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="north-richland-hills" data-field="sfr_median_price">$388K</span></p>
-      <p style="font-size:0.78rem;color:#666;margin:0;">12-month rolling avg · single-family</p>
-    </div>
-    <div class="kc-card kc-card--navy" style="text-align:center;">
-      <h4 style="margin-bottom:0.5rem;">Average Sale Price</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="north-richland-hills" data-field="sfr_avg_price">$432K</span></p>
-      <p style="font-size:0.78rem;color:#666;margin:0;">12-month rolling avg · single-family</p>
-    </div>
-    <div class="kc-card kc-card--navy" style="text-align:center;">
-      <h4 style="margin-bottom:0.5rem;">Price per Sq Ft</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="north-richland-hills" data-field="sfr_median_price_per_sqft">$198</span></p>
-      <p style="font-size:0.78rem;color:#666;margin:0;">Median · 12-month rolling</p>
-    </div>
-    <div class="kc-card kc-card--navy" style="text-align:center;">
-      <h4 style="margin-bottom:0.5rem;">Sale to Original List</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="north-richland-hills" data-field="sfr_pct_of_original_price">97.7%</span></p>
-      <p style="font-size:0.78rem;color:#666;margin:0;">12-month rolling · share of original list price</p>
+      <p id="kc-mkt-price" style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;">$386,246</p>
+      <p id="kc-mkt-price-sub" style="font-size:0.78rem;color:#666;margin:0;">12-month rolling avg · single-family</p>
     </div>
     <div class="kc-card kc-card--navy" style="text-align:center;">
       <h4 style="margin-bottom:0.5rem;">Days on Market</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="north-richland-hills" data-field="sfr_days_on_market">27 days</span></p>
-      <p style="font-size:0.78rem;color:#666;margin:0;">Median · 12-month rolling</p>
+      <p id="kc-mkt-dom" style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;">27 days</p>
+      <p id="kc-mkt-dom-sub" style="font-size:0.78rem;color:#666;margin:0;">12-month rolling avg · median</p>
     </div>
     <div class="kc-card kc-card--navy" style="text-align:center;">
       <h4 style="margin-bottom:0.5rem;">Months Supply</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="north-richland-hills" data-field="sfr_months_supply">2.9 mo.</span></p>
-      <p style="font-size:0.78rem;color:#666;margin:0;"><span class="kc-blog-live" data-suburb="north-richland-hills" data-field="market_condition">Seller</span> market · 12-month</p>
-    </div>
-    <div class="kc-card kc-card--navy" style="text-align:center;">
-      <h4 style="margin-bottom:0.5rem;">Active Inventory</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="north-richland-hills" data-field="sfr_inventory">180</span></p>
-      <p style="font-size:0.78rem;color:#666;margin:0;">Current active supply · single-family</p>
+      <p id="kc-mkt-msi" style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;">3.0 mo.</p>
+      <p id="kc-mkt-msi-sub" style="font-size:0.78rem;color:#666;margin:0;">Balanced market · 12-month calculation</p>
     </div>
     <div class="kc-card kc-card--navy" style="text-align:center;">
       <h4 style="margin-bottom:0.5rem;">Closed Sales</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="north-richland-hills" data-field="sfr_closed_sales_12mo">735</span></p>
-      <p style="font-size:0.78rem;color:#666;margin:0;">12-month total · single-family</p>
+      <p id="kc-mkt-cs" style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;">749</p>
+      <p id="kc-mkt-cs-sub" style="font-size:0.78rem;color:#666;margin:0;">12-month total · single-family</p>
     </div>
   </div>
-  <p style="font-size:0.8rem;color:#888;margin-top:-0.25rem;margin-bottom:1.5rem;">Source: NTREIS via 10K Research. Price figures are 12-month rolling; inventory is current active supply. Updated <span class="kc-blog-live" data-suburb="north-richland-hills" data-field="updated">June 2026</span>.</p>
-  <p>A few more numbers worth knowing if you are weighing an offer in North Richland Hills. Over the trailing 12 months, single-family homes sold for a median of <span class="kc-blog-live" data-suburb="north-richland-hills" data-field="sfr_median_price">$388K</span> and an average of <span class="kc-blog-live" data-suburb="north-richland-hills" data-field="sfr_avg_price">$432K</span>, which works out to about <span class="kc-blog-live" data-suburb="north-richland-hills" data-field="sfr_median_price_per_sqft">$198</span> per square foot. Homes here sold for roughly <span class="kc-blog-live" data-suburb="north-richland-hills" data-field="sfr_pct_of_original_price">97.7%</span> of their original list price, which gives you a sense of how much room buyers have typically had to negotiate. As of the latest data, about <span class="kc-blog-live" data-suburb="north-richland-hills" data-field="sfr_inventory">180</span> single-family homes were actively listed. These are NTREIS figures (the price metrics are 12-month rolling, inventory is current active supply), and your own price per square foot and negotiating room will vary by neighborhood, age of home, and finish level.</p>
-  <!-- KC-NTREIS-CARDS:END -->
+  <p style="font-size:0.8rem;color:#888;margin-top:-1rem;margin-bottom:1.5rem;">Source: NTREIS via 10K Research · All figures are 12-month rolling periods · Updated <span id="kc-mkt-updated">May 2026</span></p>
 
   <p>North Richland Hills sits at a balanced market, 3.0 months supply puts buyers and sellers on roughly even footing. With a median SFR price of ~$386K and 749 closed sales in the past 12 months, this is a market with enough volume to give buyers real choices and enough demand to keep sellers from discounting heavily. Days on market averaging 27 days means correctly priced homes move within a month. Homes in HomeTown NRH and Forest Glenn tend to sell faster than the city average; Smithfield and some older established areas give buyers more time to negotiate. For relocating families, NRH offers one of the few mid-cities addresses where $400K still gets you a three-bedroom family home with a yard, something increasingly rare in Southlake, Keller, or Colleyville at this price point.</p>
 

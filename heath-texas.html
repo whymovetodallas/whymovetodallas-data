@@ -1283,52 +1283,29 @@ gtag('consent','default',{
     <h2>Heath Real Estate Market: What to Expect</h2>
   </div>
 
-    <!-- KC-NTREIS-CARDS:START  unified market metrics, live via kc-blog-live + kcUnifiedMarketCards loader, refreshes with the monthly NTREIS scrape, never hardcode -->
-  <div class="kc-grid kc-grid--4" style="margin-bottom:1rem;">
+  <div class="kc-grid kc-grid--4" style="margin-bottom:2rem;">
     <div class="kc-card kc-card--navy" style="text-align:center;">
       <h4 style="margin-bottom:0.5rem;">Median Sale Price</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="heath" data-field="sfr_median_price">$760K</span></p>
-      <p style="font-size:0.78rem;color:#666;margin:0;">12-month rolling avg · single-family</p>
-    </div>
-    <div class="kc-card kc-card--navy" style="text-align:center;">
-      <h4 style="margin-bottom:0.5rem;">Average Sale Price</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="heath" data-field="sfr_avg_price">$913K</span></p>
-      <p style="font-size:0.78rem;color:#666;margin:0;">12-month rolling avg · single-family</p>
-    </div>
-    <div class="kc-card kc-card--navy" style="text-align:center;">
-      <h4 style="margin-bottom:0.5rem;">Price per Sq Ft</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="heath" data-field="sfr_median_price_per_sqft">$222</span></p>
-      <p style="font-size:0.78rem;color:#666;margin:0;">Median · 12-month rolling</p>
-    </div>
-    <div class="kc-card kc-card--navy" style="text-align:center;">
-      <h4 style="margin-bottom:0.5rem;">Sale to Original List</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="heath" data-field="sfr_pct_of_original_price">93.6%</span></p>
-      <p style="font-size:0.78rem;color:#666;margin:0;">12-month rolling · share of original list price</p>
+      <p id="kc-mkt-price" style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;">~$751K</p>
+      <p id="kc-mkt-price-sub" style="font-size:0.78rem;color:#666;margin:0;">12-month rolling avg · single-family</p>
     </div>
     <div class="kc-card kc-card--navy" style="text-align:center;">
       <h4 style="margin-bottom:0.5rem;">Days on Market</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="heath" data-field="sfr_days_on_market">70 days</span></p>
-      <p style="font-size:0.78rem;color:#666;margin:0;">Median · 12-month rolling</p>
+      <p id="kc-mkt-dom" style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;">70 days</p>
+      <p id="kc-mkt-dom-sub" style="font-size:0.78rem;color:#666;margin:0;">12-month rolling avg · median</p>
     </div>
     <div class="kc-card kc-card--navy" style="text-align:center;">
       <h4 style="margin-bottom:0.5rem;">Months Supply</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="heath" data-field="sfr_months_supply">9.1 mo.</span></p>
-      <p style="font-size:0.78rem;color:#666;margin:0;"><span class="kc-blog-live" data-suburb="heath" data-field="market_condition">Buyer</span> market · 12-month</p>
-    </div>
-    <div class="kc-card kc-card--navy" style="text-align:center;">
-      <h4 style="margin-bottom:0.5rem;">Active Inventory</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="heath" data-field="sfr_inventory">170</span></p>
-      <p style="font-size:0.78rem;color:#666;margin:0;">Current active supply · single-family</p>
+      <p id="kc-mkt-msi" style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;">9.3 mo.</p>
+      <p id="kc-mkt-msi-sub" style="font-size:0.78rem;color:#666;margin:0;">Buyer's market · 12-month calculation</p>
     </div>
     <div class="kc-card kc-card--navy" style="text-align:center;">
       <h4 style="margin-bottom:0.5rem;">Closed Sales</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="heath" data-field="sfr_closed_sales_12mo">235</span></p>
-      <p style="font-size:0.78rem;color:#666;margin:0;">12-month total · single-family</p>
+      <p id="kc-mkt-cs" style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;">238</p>
+      <p id="kc-mkt-cs-sub" style="font-size:0.78rem;color:#666;margin:0;">12-month total · single-family</p>
     </div>
   </div>
-  <p style="font-size:0.8rem;color:#888;margin-top:-0.25rem;margin-bottom:1.5rem;">Source: NTREIS via 10K Research. Price figures are 12-month rolling; inventory is current active supply. Updated <span class="kc-blog-live" data-suburb="heath" data-field="updated">June 2026</span>.</p>
-  <p>A few more numbers worth knowing if you are weighing an offer in Heath. Over the trailing 12 months, single-family homes sold for a median of <span class="kc-blog-live" data-suburb="heath" data-field="sfr_median_price">$760K</span> and an average of <span class="kc-blog-live" data-suburb="heath" data-field="sfr_avg_price">$913K</span>, which works out to about <span class="kc-blog-live" data-suburb="heath" data-field="sfr_median_price_per_sqft">$222</span> per square foot. Homes here sold for roughly <span class="kc-blog-live" data-suburb="heath" data-field="sfr_pct_of_original_price">93.6%</span> of their original list price, which gives you a sense of how much room buyers have typically had to negotiate. As of the latest data, about <span class="kc-blog-live" data-suburb="heath" data-field="sfr_inventory">170</span> single-family homes were actively listed. These are NTREIS figures (the price metrics are 12-month rolling, inventory is current active supply), and your own price per square foot and negotiating room will vary by neighborhood, age of home, and finish level.</p>
-  <!-- KC-NTREIS-CARDS:END -->
+  <p style="font-size:0.8rem;color:#888;margin-top:-1rem;margin-bottom:1.5rem;">Source: NTREIS via 10K Research · All figures are 12-month rolling periods · Updated <span id="kc-mkt-updated">April 2026</span></p>
 
   <p>Heath's market tells a buyer-friendly story in 2026 that most DFW suburbs can't match. At 9.3 months of supply, this is solidly a buyer's market, meaning more homes are available than buyers can absorb at current demand levels. The 70-day average median days on market confirms it: sellers are typically waiting more than two months for offers, and homes that are priced correctly and show well are moving, but overpriced inventory is sitting. For a family relocating from California or New York where competition is brutal and offers go over asking in days, Heath feels like a different planet, in a good way. You have time to think, time to inspect, and real negotiating leverage on price and terms.</p>
 

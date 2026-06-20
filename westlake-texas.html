@@ -1261,52 +1261,29 @@ gtag('consent','default',{
     <h2>Westlake Real Estate Market: What to Expect</h2>
   </div>
 
-    <!-- KC-NTREIS-CARDS:START  unified market metrics, live via kc-blog-live + kcUnifiedMarketCards loader, refreshes with the monthly NTREIS scrape, never hardcode -->
-  <div class="kc-grid kc-grid--4" style="margin-bottom:1rem;">
+  <div class="kc-grid kc-grid--4" style="margin-bottom:2rem;">
     <div class="kc-card kc-card--navy" style="text-align:center;">
       <h4 style="margin-bottom:0.5rem;">Median Sale Price</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="westlake" data-field="sfr_median_price">$5055K</span></p>
-      <p style="font-size:0.78rem;color:#666;margin:0;">12-month rolling avg · single-family</p>
-    </div>
-    <div class="kc-card kc-card--navy" style="text-align:center;">
-      <h4 style="margin-bottom:0.5rem;">Average Sale Price</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="westlake" data-field="sfr_avg_price">$4866K</span></p>
-      <p style="font-size:0.78rem;color:#666;margin:0;">12-month rolling avg · single-family</p>
-    </div>
-    <div class="kc-card kc-card--navy" style="text-align:center;">
-      <h4 style="margin-bottom:0.5rem;">Price per Sq Ft</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="westlake" data-field="sfr_median_price_per_sqft">$703</span></p>
-      <p style="font-size:0.78rem;color:#666;margin:0;">Median · 12-month rolling</p>
-    </div>
-    <div class="kc-card kc-card--navy" style="text-align:center;">
-      <h4 style="margin-bottom:0.5rem;">Sale to Original List</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="westlake" data-field="sfr_pct_of_original_price">91.9%</span></p>
-      <p style="font-size:0.78rem;color:#666;margin:0;">12-month rolling · share of original list price</p>
+      <p id="kc-mkt-price" style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;">$4.9M</p>
+      <p id="kc-mkt-price-sub" style="font-size:0.78rem;color:#666;margin:0;">12-month rolling avg · single-family</p>
     </div>
     <div class="kc-card kc-card--navy" style="text-align:center;">
       <h4 style="margin-bottom:0.5rem;">Days on Market</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="westlake" data-field="sfr_days_on_market">98 days</span></p>
-      <p style="font-size:0.78rem;color:#666;margin:0;">Median · 12-month rolling</p>
+      <p id="kc-mkt-dom" style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;">96 days</p>
+      <p id="kc-mkt-dom-sub" style="font-size:0.78rem;color:#666;margin:0;">12-month rolling avg · median</p>
     </div>
     <div class="kc-card kc-card--navy" style="text-align:center;">
       <h4 style="margin-bottom:0.5rem;">Months Supply</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="westlake" data-field="sfr_months_supply">15.7 mo.</span></p>
-      <p style="font-size:0.78rem;color:#666;margin:0;"><span class="kc-blog-live" data-suburb="westlake" data-field="market_condition">Buyer</span> market · 12-month</p>
-    </div>
-    <div class="kc-card kc-card--navy" style="text-align:center;">
-      <h4 style="margin-bottom:0.5rem;">Active Inventory</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="westlake" data-field="sfr_inventory">40</span></p>
-      <p style="font-size:0.78rem;color:#666;margin:0;">Current active supply · single-family</p>
+      <p id="kc-mkt-msi" style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;">16.5 mo.</p>
+      <p id="kc-mkt-msi-sub" style="font-size:0.78rem;color:#666;margin:0;">Buyer's market · 12-month calculation</p>
     </div>
     <div class="kc-card kc-card--navy" style="text-align:center;">
       <h4 style="margin-bottom:0.5rem;">Closed Sales</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="westlake" data-field="sfr_closed_sales_12mo">26</span></p>
-      <p style="font-size:0.78rem;color:#666;margin:0;">12-month total · single-family</p>
+      <p id="kc-mkt-cs" style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;">24</p>
+      <p id="kc-mkt-cs-sub" style="font-size:0.78rem;color:#666;margin:0;">12-month total · single-family</p>
     </div>
   </div>
-  <p style="font-size:0.8rem;color:#888;margin-top:-0.25rem;margin-bottom:1.5rem;">Source: NTREIS via 10K Research. Price figures are 12-month rolling; inventory is current active supply. Updated <span class="kc-blog-live" data-suburb="westlake" data-field="updated">June 2026</span>.</p>
-  <p>A few more numbers worth knowing if you are weighing an offer in Westlake. Over the trailing 12 months, single-family homes sold for a median of <span class="kc-blog-live" data-suburb="westlake" data-field="sfr_median_price">$5055K</span> and an average of <span class="kc-blog-live" data-suburb="westlake" data-field="sfr_avg_price">$4866K</span>, which works out to about <span class="kc-blog-live" data-suburb="westlake" data-field="sfr_median_price_per_sqft">$703</span> per square foot. Homes here sold for roughly <span class="kc-blog-live" data-suburb="westlake" data-field="sfr_pct_of_original_price">91.9%</span> of their original list price, which gives you a sense of how much room buyers have typically had to negotiate. As of the latest data, about <span class="kc-blog-live" data-suburb="westlake" data-field="sfr_inventory">40</span> single-family homes were actively listed. These are NTREIS figures (the price metrics are 12-month rolling, inventory is current active supply), and your own price per square foot and negotiating room will vary by neighborhood, age of home, and finish level.</p>
-  <!-- KC-NTREIS-CARDS:END -->
+  <p style="font-size:0.8rem;color:#888;margin-top:-1rem;margin-bottom:1.5rem;">Source: NTREIS via 10K Research · All figures are 12-month rolling periods · Updated <span id="kc-mkt-updated">April 2026</span></p>
 
   <p>Westlake's market is among the thinnest and most exclusive in all of DFW. Only about <strong>24 homes sell per year</strong>, roughly two per month. The MLS data is statistically fragile: a single outlier sale can move the median dramatically. Many Westlake transactions happen <strong>off-market</strong> through private agent networks and direct outreach. If you're buying or selling here, access to off-market intelligence isn't a nice-to-have, it's essential.</p>
   <p>With 16.5 months of supply, this is technically a buyer's market, but that's because the qualified buyer pool is exceptionally small, not because of distress or overpricing. The 96-day average days on market reflects considered, deliberate selling to a highly specific audience.</p>

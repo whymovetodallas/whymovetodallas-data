@@ -1373,52 +1373,29 @@ gtag('consent','default',{
     <p class="kc-eyebrow">Real Estate Market</p>
     <h2 >Forney Housing Market Snapshot</h2>
 
-      <!-- KC-NTREIS-CARDS:START  unified market metrics, live via kc-blog-live + kcUnifiedMarketCards loader, refreshes with the monthly NTREIS scrape, never hardcode -->
-  <div class="kc-grid kc-grid--4" style="margin-bottom:1rem;">
-    <div class="kc-card kc-card--navy" style="text-align:center;">
-      <h4 style="margin-bottom:0.5rem;">Median Sale Price</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="forney" data-field="sfr_median_price">$325K</span></p>
-      <p style="font-size:0.78rem;color:#666;margin:0;">12-month rolling avg · single-family</p>
+    <div class="kc-grid kc-grid--4">
+      <div class="kc-card kc-card--navy">
+        <h4 style="margin-bottom:0.5rem;">Median SFR Price</h4>
+        <p id="kc-mkt-price" style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;">$326K</p>
+        <p style="font-size:0.78rem;color:#666;margin:0;">Single-family residential</p>
+      </div>
+      <div class="kc-card kc-card--navy">
+        <h4 style="margin-bottom:0.5rem;">Days on Market</h4>
+        <p id="kc-mkt-dom" style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;">62</p>
+        <p style="font-size:0.78rem;color:#666;margin:0;">Median days, active listings</p>
+      </div>
+      <div class="kc-card kc-card--navy">
+        <h4 style="margin-bottom:0.5rem;">Months Supply</h4>
+        <p id="kc-mkt-msi" style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;">5.4</p>
+        <p style="font-size:0.78rem;color:#666;margin:0;">Balanced market (3–6 months)</p>
+      </div>
+      <div class="kc-card kc-card--navy">
+        <h4 style="margin-bottom:0.5rem;">Annual Sales</h4>
+        <p id="kc-mkt-cs" style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;">1,742</p>
+        <p style="font-size:0.78rem;color:#666;margin:0;">Closed SFR sales (12 months)</p>
+      </div>
     </div>
-    <div class="kc-card kc-card--navy" style="text-align:center;">
-      <h4 style="margin-bottom:0.5rem;">Average Sale Price</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="forney" data-field="sfr_avg_price">$345K</span></p>
-      <p style="font-size:0.78rem;color:#666;margin:0;">12-month rolling avg · single-family</p>
-    </div>
-    <div class="kc-card kc-card--navy" style="text-align:center;">
-      <h4 style="margin-bottom:0.5rem;">Price per Sq Ft</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="forney" data-field="sfr_median_price_per_sqft">$153</span></p>
-      <p style="font-size:0.78rem;color:#666;margin:0;">Median · 12-month rolling</p>
-    </div>
-    <div class="kc-card kc-card--navy" style="text-align:center;">
-      <h4 style="margin-bottom:0.5rem;">Sale to Original List</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="forney" data-field="sfr_pct_of_original_price">93.7%</span></p>
-      <p style="font-size:0.78rem;color:#666;margin:0;">12-month rolling · share of original list price</p>
-    </div>
-    <div class="kc-card kc-card--navy" style="text-align:center;">
-      <h4 style="margin-bottom:0.5rem;">Days on Market</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="forney" data-field="sfr_days_on_market">62 days</span></p>
-      <p style="font-size:0.78rem;color:#666;margin:0;">Median · 12-month rolling</p>
-    </div>
-    <div class="kc-card kc-card--navy" style="text-align:center;">
-      <h4 style="margin-bottom:0.5rem;">Months Supply</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="forney" data-field="sfr_months_supply">5.4 mo.</span></p>
-      <p style="font-size:0.78rem;color:#666;margin:0;"><span class="kc-blog-live" data-suburb="forney" data-field="market_condition">Balanced</span> market · 12-month</p>
-    </div>
-    <div class="kc-card kc-card--navy" style="text-align:center;">
-      <h4 style="margin-bottom:0.5rem;">Active Inventory</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="forney" data-field="sfr_inventory">824</span></p>
-      <p style="font-size:0.78rem;color:#666;margin:0;">Current active supply · single-family</p>
-    </div>
-    <div class="kc-card kc-card--navy" style="text-align:center;">
-      <h4 style="margin-bottom:0.5rem;">Closed Sales</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="forney" data-field="sfr_closed_sales_12mo">1,707</span></p>
-      <p style="font-size:0.78rem;color:#666;margin:0;">12-month total · single-family</p>
-    </div>
-  </div>
-  <p style="font-size:0.8rem;color:#888;margin-top:-0.25rem;margin-bottom:1.5rem;">Source: NTREIS via 10K Research. Price figures are 12-month rolling; inventory is current active supply. Updated <span class="kc-blog-live" data-suburb="forney" data-field="updated">June 2026</span>.</p>
-  <p>A few more numbers worth knowing if you are weighing an offer in Forney. Over the trailing 12 months, single-family homes sold for a median of <span class="kc-blog-live" data-suburb="forney" data-field="sfr_median_price">$325K</span> and an average of <span class="kc-blog-live" data-suburb="forney" data-field="sfr_avg_price">$345K</span>, which works out to about <span class="kc-blog-live" data-suburb="forney" data-field="sfr_median_price_per_sqft">$153</span> per square foot. Homes here sold for roughly <span class="kc-blog-live" data-suburb="forney" data-field="sfr_pct_of_original_price">93.7%</span> of their original list price, which gives you a sense of how much room buyers have typically had to negotiate. As of the latest data, about <span class="kc-blog-live" data-suburb="forney" data-field="sfr_inventory">824</span> single-family homes were actively listed. These are NTREIS figures (the price metrics are 12-month rolling, inventory is current active supply), and your own price per square foot and negotiating room will vary by neighborhood, age of home, and finish level.</p>
-  <!-- KC-NTREIS-CARDS:END -->
+    <p style="font-size:0.75rem;color:#aaa;margin-top:0.5rem;">Source: NTREIS / <span id="kc-mkt-updated">2024–2025</span>. SFR data only. Live data loads from suburb-profiles.json.</p>
 
     <p style="margin-top:1.5rem;">At $326K median, Forney sits at the value end of the East DFW spectrum, significantly below Rockwall ($430K+) and well below Frisco or Allen. The 5.4 months supply puts it in balanced market territory: sellers aren't desperate, but buyers aren't competing in multiple-offer frenzies either. The 62-day median DOM reflects longer time to sell than tighter markets, which is buyer-friendly. For families coming from Bay Area or NY Metro pricing, the negotiating dynamic here is a genuine relief.</p>
 
