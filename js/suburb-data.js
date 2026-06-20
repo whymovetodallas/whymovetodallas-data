@@ -291,6 +291,70 @@
         }
       }
 
+      // ── Price-band tier cards (Market §15, above the metric cards) ────────
+      // Reads market.tiers (starter / typical / moveup / luxury). Refreshes the
+      // baked fallback values, computes share-of-sales bars, marks the
+      // center-of-gravity band, flags low-confidence bands, hides absent bands.
+      var BANDS = ['starter', 'typical', 'moveup', 'luxury'];
+      var bandsWrap = document.getElementById('kc-market-bands');
+      if (bandsWrap && mkt.tiers) {
+        var tiers = mkt.tiers;
+        var bandTotal = 0, leadBand = null, leadSales = -1;
+        BANDS.forEach(function (b) {
+          var t = tiers[b];
+          if (t && t.closed_sales != null) {
+            bandTotal += t.closed_sales;
+            if (t.closed_sales > leadSales) { leadSales = t.closed_sales; leadBand = b; }
+          }
+        });
+        BANDS.forEach(function (b) {
+          var card = bandsWrap.querySelector('[data-band="' + b + '"]');
+          if (!card) return;
+          var t = tiers[b];
+          if (!t) { card.style.display = 'none'; return; }
+          card.style.display = '';
+          var pEl = card.querySelector('.kc-band-price');
+          if (pEl) { var pv = fmtPrice(t.median_sale_price); if (pv) pEl.textContent = pv; }
+          var sEl = card.querySelector('.kc-band-sqft');
+          if (sEl && t.sqft != null && t.price_per_sqft != null) {
+            sEl.textContent = '≈ ' + Math.round(t.sqft).toLocaleString() + ' sq ft · $' + Math.round(t.price_per_sqft) + '/sq ft';
+          }
+          var share = bandTotal ? Math.round(t.closed_sales / bandTotal * 100) : 0;
+          var shEl = card.querySelector('.kc-band-share');
+          if (shEl) shEl.textContent = share + '% of sales · ' + (t.closed_sales != null ? t.closed_sales.toLocaleString() : '–') + ' closed';
+          var barEl = card.querySelector('.kc-band-bar-fill');
+          if (barEl) barEl.style.width = share + '%';
+          if (t.low_confidence) card.classList.add('kc-band--lowconf'); else card.classList.remove('kc-band--lowconf');
+          var ribbon = card.querySelector('.kc-band-ribbon');
+          if (b === leadBand) {
+            card.classList.add('kc-band--lead');
+            if (!ribbon) { ribbon = document.createElement('span'); ribbon.className = 'kc-band-ribbon'; ribbon.textContent = 'Most homes sell here'; card.insertBefore(ribbon, card.firstChild); }
+          } else {
+            card.classList.remove('kc-band--lead');
+            if (ribbon && ribbon.parentNode) ribbon.parentNode.removeChild(ribbon);
+          }
+        });
+      }
+
+      // ── Demand read (Block B1): supply + days-on-market + sale-to-list ─────
+      // Compliance: uses ONLY market-velocity signals. Never crime/safety.
+      var demandEl = document.getElementById('kc-market-demand');
+      if (demandEl) {
+        var dPts = 0, dN = 0;
+        if (mkt.sfr_months_supply != null) { dN++; dPts += mkt.sfr_months_supply < 2.5 ? 2 : mkt.sfr_months_supply <= 4.5 ? 1 : 0; }
+        if (mkt.sfr_days_on_market != null) { dN++; dPts += mkt.sfr_days_on_market < 25 ? 2 : mkt.sfr_days_on_market <= 50 ? 1 : 0; }
+        if (mkt.sfr_pct_of_original_price != null) { dN++; dPts += mkt.sfr_pct_of_original_price >= 98 ? 2 : mkt.sfr_pct_of_original_price >= 95 ? 1 : 0; }
+        if (dN) {
+          var dAvg = dPts / dN, dVerdict;
+          if (dAvg >= 1.6) dVerdict = 'High demand';
+          else if (dAvg >= 1.2) dVerdict = 'Strong demand';
+          else if (dAvg >= 0.8) dVerdict = 'Steady demand';
+          else if (dAvg >= 0.4) dVerdict = 'Balanced';
+          else dVerdict = 'Buyer-friendlier';
+          if (demandEl.textContent.trim() !== dVerdict) demandEl.textContent = dVerdict;
+        }
+      }
+
       // ═══ INJECTED: scores, grade chips, sub-scores, comparison ════════════
 
       // ── Crime grade badge ────────────────────────────────────────────────

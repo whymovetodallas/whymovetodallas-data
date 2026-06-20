@@ -1221,6 +1221,44 @@ gtag('consent','default',{
     <span class="kc-eyebrow">Real Estate</span>
     <h2>McKinney Real Estate Market: What to Expect</h2>
   </div>
+    <!-- KC-TIER-BANDS:START  price-band cards + "what your money buys" note, baked by tools/generate-tier-bands.cjs; values refresh live via suburb-data.js -->
+  <div id="kc-market-bands" class="kc-grid kc-grid--4" style="margin-bottom:1rem;">
+    <div class="kc-band" data-band="starter">
+      <span class="kc-band-label">Starter</span>
+      <span class="kc-band-range">Under $400K</span>
+      <span class="kc-band-price">$347K</span>
+      <span class="kc-band-sqft">≈ 1,811 sq ft · $192/sq ft</span>
+      <span class="kc-band-bar"><span class="kc-band-bar-fill" style="width:26%;"></span></span>
+      <span class="kc-band-share">26% of sales · 901 closed</span>
+    </div>
+    <div class="kc-band kc-band--lead" data-band="typical">
+      <span class="kc-band-ribbon">Most homes sell here</span>
+      <span class="kc-band-label">Typical</span>
+      <span class="kc-band-range">$400K to $700K</span>
+      <span class="kc-band-price">$524K</span>
+      <span class="kc-band-sqft">≈ 2,593 sq ft · $202/sq ft</span>
+      <span class="kc-band-bar"><span class="kc-band-bar-fill" style="width:57%;"></span></span>
+      <span class="kc-band-share">57% of sales · 1,985 closed</span>
+    </div>
+    <div class="kc-band" data-band="moveup">
+      <span class="kc-band-label">Move-up</span>
+      <span class="kc-band-range">$700K to $1M</span>
+      <span class="kc-band-price">$795K</span>
+      <span class="kc-band-sqft">≈ 3,547 sq ft · $224/sq ft</span>
+      <span class="kc-band-bar"><span class="kc-band-bar-fill" style="width:13%;"></span></span>
+      <span class="kc-band-share">13% of sales · 453 closed</span>
+    </div>
+    <div class="kc-band" data-band="luxury">
+      <span class="kc-band-label">Luxury</span>
+      <span class="kc-band-range">$1M and up</span>
+      <span class="kc-band-price">$1.3M</span>
+      <span class="kc-band-sqft">≈ 4,369 sq ft · $289/sq ft</span>
+      <span class="kc-band-bar"><span class="kc-band-bar-fill" style="width:3%;"></span></span>
+      <span class="kc-band-share">3% of sales · 119 closed</span>
+    </div>
+  </div>
+  <p id="kc-market-bands-note" class="kc-callout kc-callout--gold">In McKinney, the heart of the market is the typical band: 57% of homes sold in the past year landed between $400K and $700K, where a median of about $524K buys roughly 2,593 square feet. Entry-level homes do exist, around $347K for about 1,811 square feet, but they are a smaller share (26%). About 16% of sales were $700K or more, so move-up and luxury buyers have real selection. Price per square foot climbs from about $192 at the entry level to $289 at the top, which is what you are paying for in larger lots, newer builds, and higher finish levels.</p>
+    <!-- KC-TIER-BANDS:END -->
     <!-- KC-NTREIS-CARDS:START  unified market metrics, live via kc-blog-live + kcUnifiedMarketCards loader, refreshes with the monthly NTREIS scrape, never hardcode -->
   <div class="kc-grid kc-grid--4" style="margin-bottom:1rem;">
     <div class="kc-card kc-card--navy" style="text-align:center;">
@@ -1267,6 +1305,33 @@ gtag('consent','default',{
   <p>A few more numbers worth knowing if you are weighing an offer in McKinney. Over the trailing 12 months, single-family homes sold for a median of <span class="kc-blog-live" data-suburb="mckinney" data-field="sfr_median_price">$498K</span> and an average of <span class="kc-blog-live" data-suburb="mckinney" data-field="sfr_avg_price">$544K</span>, which works out to about <span class="kc-blog-live" data-suburb="mckinney" data-field="sfr_median_price_per_sqft">$205</span> per square foot. Homes here sold for roughly <span class="kc-blog-live" data-suburb="mckinney" data-field="sfr_pct_of_original_price">95%</span> of their original list price, which gives you a sense of how much room buyers have typically had to negotiate. As of the latest data, about <span class="kc-blog-live" data-suburb="mckinney" data-field="sfr_inventory">1,054</span> single-family homes were actively listed. These are NTREIS figures (the price metrics are 12-month rolling, inventory is current active supply), and your own price per square foot and negotiating room will vary by neighborhood, age of home, and finish level.</p>
   <!-- KC-NTREIS-CARDS:END -->
   <p style="font-size:0.8rem;color:#888;margin-top:-1rem;margin-bottom:1.5rem;">Source: NTREIS via 10K Research · All figures are 12-month rolling periods · Updated <span id="kc-mkt-updated">May 2025</span></p>
+  <!-- KC-DEMAND:START  demand read + price-driver narrative, baked by tools/generate-tier-bands.cjs; #kc-market-demand verdict refreshes live -->
+  <div id="kc-market-demand-block" style="margin-top:1.5rem;">
+    <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:0.75rem;">
+      <span style="font-size:0.72rem;letter-spacing:0.06em;text-transform:uppercase;color:#888;">Demand Read</span>
+      <span id="kc-market-demand" class="kc-demand-chip">Steady demand</span>
+    </div>
+    <div class="kc-grid kc-grid--4" style="margin-bottom:1rem;">
+      <div class="kc-card" style="text-align:center;background:var(--white);border:1px solid var(--stone);">
+        <div style="font-size:0.72rem;color:#888;">Months Supply</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--navy);">3.8 mo.</div>
+        <div style="font-size:0.72rem;color:var(--gold);font-weight:600;">Seller-leaning</div>
+      </div>
+      <div class="kc-card" style="text-align:center;background:var(--white);border:1px solid var(--stone);">
+        <div style="font-size:0.72rem;color:#888;">Days on Market</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--navy);">42 days</div>
+        <div style="font-size:0.72rem;color:var(--gold);font-weight:600;">Homes don't sit</div>
+      </div>
+      <div class="kc-card" style="text-align:center;background:var(--white);border:1px solid var(--stone);">
+        <div style="font-size:0.72rem;color:#888;">Sale to Original List</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--navy);">95%</div>
+        <div style="font-size:0.72rem;color:var(--gold);font-weight:600;">Some room to negotiate</div>
+      </div>
+    </div>
+    <div class="kc-callout kc-callout--gold"><strong>What these numbers tell you:</strong> McKinney is a steady demand market. Single-family homes are averaging about 42 days on market and selling at roughly 95% of their original list price, with around 3.8 months of supply. In plain terms, well-priced homes here do not sit, and there is not much room for a lowball offer, but you are also not walking into a bidding war. If you are relocating on a timeline, get your financing in order before you tour.</div>
+    <div class="kc-callout kc-callout--gold"><strong>Why McKinney is priced where it is:</strong> The value is anchored by McKinney ISD, which earns an A overall and an A+ for college prep, so school-driven demand stays strong year after year. It is a owner-occupied community (about 63%) where roughly 4 in 10 households have school-age kids, and with 161 parks and green spaces mapped. Prices have also been stable rather than swingy. The tradeoff, and there is always one, is the commute: a typical drive runs about 29 minutes, longer than the inner-ring suburbs, which is part of why your dollar buys more square footage in McKinney than closer to the core.</div>
+  </div>
+  <!-- KC-DEMAND:END -->
 
   <p>McKinney is in a balanced market with a months supply hovering near 3.9, conditions have normalized from the 2021–2022 seller's market frenzy. Buyers have more negotiating room than in Frisco or Prosper, and the city's large transaction volume (3,462 SFR closings in 12 months) means active inventory across all price points. Both resale homes and new construction from builders like Toll Brothers, Highland Homes, and David Weekley are active in Craig Ranch, Stonebridge Ranch expansion areas, and newer northern neighborhoods.</p>
 

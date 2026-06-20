@@ -781,3 +781,38 @@
   font-style: italic;
   line-height: 1.4;
 }
+
+/* ── Price-band tier cards + demand read (Market section, §15) ─────────────
+   Band cards sit above the standard market metric cards. Static fallback
+   values are baked per page by tools/generate-tier-bands.cjs; suburb-data.js
+   refreshes prices, derived sqft, share-of-sales bars, the center-of-gravity
+   ribbon, and low-confidence flags live from suburb-profiles.json market.tiers.
+   ───────────────────────────────────────────────────────────────────────── */
+#kc-market-bands { margin-bottom: 1rem; }
+.kc-band {
+  background: var(--navy);
+  border-radius: 10px;
+  padding: 14px 14px 12px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.kc-band-label { font-size: 0.7rem; letter-spacing: 0.07em; text-transform: uppercase; color: var(--gold); font-weight: 700; }
+.kc-band-range { font-size: 0.7rem; color: var(--stone); margin-top: 1px; }
+.kc-band-price { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; color: var(--white); margin: 8px 0 2px; line-height: 1; }
+.kc-band-sqft { font-size: 0.78rem; color: #e7e2d8; }
+.kc-band-bar { height: 5px; background: #3a4654; border-radius: 3px; margin: 10px 0 6px; overflow: hidden; }
+.kc-band-bar-fill { display: block; height: 100%; width: 0; background: var(--gold); transition: width 0.5s ease; }
+.kc-band-share { font-size: 0.72rem; color: var(--stone); }
+.kc-band--lead { box-shadow: 0 0 0 2px var(--gold); }
+.kc-band-ribbon { position: absolute; top: -9px; left: 14px; background: var(--gold); color: var(--navy); font-size: 0.62rem; letter-spacing: 0.04em; text-transform: uppercase; font-weight: 700; padding: 2px 7px; border-radius: 4px; }
+.kc-band--lowconf { opacity: 0.85; }
+.kc-band--lowconf .kc-band-share::after { content: " \00B7 limited sales"; color: #9aa3ad; }
+
+/* Demand read verdict chip + Block B narrative callout */
+.kc-demand-chip { display: inline-block; background: var(--navy); color: var(--white); font-size: 0.78rem; font-weight: 600; padding: 3px 12px; border-radius: 20px; }
+.kc-callout--gold { border-left-color: var(--gold); }
+
+@media (max-width: 640px) {
+  #kc-market-bands.kc-grid--4 { grid-template-columns: 1fr 1fr; }
+}
