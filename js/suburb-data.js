@@ -134,11 +134,12 @@
 /* ---------------------------------------------------------------------------
  * PART 2: the rest of the live-data layer (stats bar, census, walkability,
  * market + condo cards, comparison table, amenity narratives, city footprint).
- * Ported from the Flower Mound gold page; identifies the suburb from the URL and
+ * Ported from the Flower Mound gold page. Identifies the suburb from the URL and
  * the comparison list from window.KC_SUBURB.compare (injected by build.js). The
- * data-strip itself is owned by PART 1 above; this part deliberately omits it.
- * Every write is element-id-guarded, so pages missing a section are skipped and
- * pages already showing correct values are left unchanged.
+ * data strip is owned by PART 1 above; this part omits it. Every write is
+ * element-id-guarded (missing sections are skipped) and the handler re-applies a
+ * few times so the canonical gold output wins over each page's legacy inline
+ * renderer regardless of fetch timing.
  * --------------------------------------------------------------------------- */
 (function kcRenderSuburbSections() {
   // ── CONFIG ─────────────────────────────────────────────────────────────────
@@ -181,9 +182,10 @@
   fetch(DATA_URL, { cache: 'no-cache' })
     .then(function(r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
     .then(function(data) {
+      function _apply() {
       var suburb = data && data.suburbs && data.suburbs[SUBURB_KEY];
       if (!suburb) return;
-      if(!SUBURB_NAME) SUBURB_NAME=suburb.display_name||'This suburb';
+        if(!SUBURB_NAME) SUBURB_NAME=suburb.display_name||'This suburb';
 
       var mkt   = suburb.market      || {};
       var walk  = suburb.walkability || {};
@@ -280,7 +282,7 @@
           cc.innerHTML = condoSales < 5
             ? '<strong>A note on condo data here:</strong> With only ' + condoSales + ' sale' + (condoSales === 1 ? '' : 's') + ' recorded in the past 12 months, the condo/townhome market here is extremely thin. The median figure (' + condoF + ') is not statistically reliable, a single high-end or atypical sale can move it dramatically. If a condo or townhome is what you\'re looking for, a neighboring suburb with a more active market will give you a much better picture of what to expect.'
             : cdiff > 0
-              ? '<strong>Condos as an entry point:</strong> If single-family homes at ' + sfrF + ' are outside your current budget, the condo and townhome market here offers a real alternative at a median of ' + condoF + ', roughly ' + cdiff + '% less. That said, condo ownership in DFW typically comes with HOA fees ranging from $200–$600+/month, which can offset a meaningful portion of the mortgage payment difference. Always run the full monthly payment comparison (PITI + HOA) before assuming a condo is the cheaper option. For some buyers the math works in their favor, for others, the monthly difference is smaller than the sticker prices suggest.'
+              ? '<strong>Condos as an entry point:</strong> If single-family homes at ' + sfrF + ' are outside your current budget, the condo and townhome market here offers a real alternative at a median of ' + condoF + ', roughly ' + cdiff + '% less. That said, condo ownership in DFW typically comes with HOA fees ranging from $200 to $600+/month, which can offset a meaningful portion of the mortgage payment difference. Always run the full monthly payment comparison (PITI + HOA) before assuming a condo is the cheaper option. For some buyers the math works in their favor, for others, the monthly difference is smaller than the sticker prices suggest.'
               : '<strong>Condo pricing note:</strong> The condo and townhome data for this suburb shows a median of ' + condoF + ', which is actually above the single-family median of ' + sfrF + '. This is most likely driven by a small number of high-end or atypical sales rather than a true market trend. Single-family homes remain the dominant and better-priced product type here.';
         }
         } else {
@@ -308,16 +310,16 @@
           var isCur = k === SUBURB_KEY;
           tbl += '<tr' + (isCur ? ' class=\"kc-compare-current\"' : '') + '>';
           tbl += '<td>' + (s.display_name || k) + '</td>';
-          tbl += '<td>' + (s.scores && s.scores.family_score != null ? s.scores.family_score : '—') + '</td>';
-          tbl += '<td>' + (s.scores && s.scores.value_score  != null ? s.scores.value_score  : '—') + '</td>';
-          tbl += '<td>' + (s.schools  && (s.schools.overall_grade  || s.schools.niche_city_schools_grade) || '—') + '</td>';
-          tbl += '<td>' + (s.crime    && s.crime.niche_crime_grade  || '—') + '</td>';
-          tbl += '<td>' + (s.niche_city && s.niche_city.families   || '—') + '</td>';
-          tbl += '<td>' + (s.market   && s.market.sfr_median_price ? fmtPrice(s.market.sfr_median_price) : '—') + '</td>';
+          tbl += '<td>' + (s.scores && s.scores.family_score != null ? s.scores.family_score : '-') + '</td>';
+          tbl += '<td>' + (s.scores && s.scores.value_score  != null ? s.scores.value_score  : '-') + '</td>';
+          tbl += '<td>' + (s.schools  && (s.schools.overall_grade  || s.schools.niche_city_schools_grade) || '-') + '</td>';
+          tbl += '<td>' + (s.crime    && s.crime.niche_crime_grade  || '-') + '</td>';
+          tbl += '<td>' + (s.niche_city && s.niche_city.families   || '-') + '</td>';
+          tbl += '<td>' + (s.market   && s.market.sfr_median_price ? fmtPrice(s.market.sfr_median_price) : '-') + '</td>';
           tbl += '</tr>';
         });
         tbl += '</tbody></table>';
-        cmpEl.innerHTML = tbl;
+        if (cmpEl.innerHTML !== tbl) cmpEl.innerHTML = tbl;
       }
       if (updated) setText('kc-compare-date', updated);
 
@@ -329,7 +331,7 @@
         function kcParksNarr(rank, pct, count, total) {
           if (!rank || !total) return null;
           var rStr  = '<strong>#' + rank + ' of ' + total + '</strong> DFW suburbs';
-          var cNote = count ? ' — ' + count + ' parks and green spaces mapped within city limits' : '';
+          var cNote = count ? ', ' + count + ' parks and green spaces mapped within city limits' : '';
           var v = _vi(rank, 4);
           if (rank === 1) return 'No suburb in DFW packs in more park space per resident. ' + _n + ' ranks ' + rStr + ' for parks per capita' + cNote + '. Trails, playgrounds, and open fields are woven into nearly every neighborhood, for families, that\'s a meaningful day-to-day quality-of-life win.';
           if (pct >= 90) { var o = ['Park access is one of ' + _n + '\'s real strengths, ' + rStr + ' for green space per resident (top ' + pct + '%)' + cNote + '. Trails, playgrounds, and sports fields are never far from home.', _n + ' ranks ' + rStr + ' for parks per resident, landing in the top ' + pct + '% of DFW suburbs' + cNote + '. Outdoor options are a short walk or bike ride away rather than a planned outing.', 'With ' + rStr + ' for parks per capita (top ' + pct + '%)' + cNote + ', ' + _n + ' punches well above its weight on outdoor access. Kids sports, trail runs, and weekend picnics rarely require leaving the city.']; return o[v % 3]; }
@@ -354,7 +356,7 @@
             if (rPct >= 75 && sPct >= 75) { var o = ['Day-to-day errands and dining out are well-covered: ' + _n + ' ranks ' + rStr + ' for restaurants and ' + sStr + ' for retail per resident. Most families handle groceries, weeknight dinners, and everyday shopping without leaving the city.', 'Dining and retail are two of ' + _n + '\'s practical strengths, ' + rStr + ' for restaurants and ' + sStr + ' for shopping per capita. Residents rarely need to drive to a neighboring city for everyday needs.', _n + ' ranks ' + rStr + ' for dining and ' + sStr + ' for retail per resident. Weeknight dinner variety is real, and the shopping infrastructure handles the full range of family errands.']; return o[v % 3]; }
             if (rPct >= 50 && sPct >= 50) { var o = ['On the practical side, ' + _n + ' ranks ' + rStr + ' for restaurants and ' + sStr + ' for retail per resident. The everyday staples are well-covered; specialty dining and stores are a short drive away.', 'Dining and shopping cover daily family life comfortably, ' + rStr + ' for restaurants and ' + sStr + ' for retail per resident. Most weeknight needs stay local; a larger mall or specialty grocer may mean a quick trip out.', _n + ' lands ' + rStr + ' for dining and ' + sStr + ' for retail per capita, solidly mid-range for DFW, with the usual suburban mix of chain restaurants and major retailers within easy reach.']; return o[v % 3]; }
 
-            if (rPct < 50 && sPct < 50) { if (isSpread) { var densDesc = density ? Math.round(density).toLocaleString() + ' residents per sq mile' : 'lower density'; var sqmiDesc = sqmi ? sqmi + ' sq miles' : 'a larger footprint'; var o = [_n + ' is a lower-density suburb (' + densDesc + '), and its commercial footprint reflects that, ' + rStr + ' for restaurants and ' + sStr + ' for retail per resident. The essentials are covered locally; families typically drive 10–15 minutes for more variety.', 'At ' + sqmiDesc + ' with a ' + densDesc + ' character, ' + _n + ' spreads development across a larger area than the per-capita numbers suggest. It ranks ' + rStr + ' for dining and ' + sStr + " for retail, expect the basics locally, with neighboring cities filling the gaps.", "Lower residential density means commercial development follows a more spread-out pattern in " + _n + " — " + rStr + " for restaurants and " + sStr + " for retail per resident. What's here covers daily needs; specialty dining and larger retailers are a short drive away."]; return o[v % 3]; } var o = [_n + ' ranks ' + rStr + ' for restaurants and ' + sStr + ' for retail per resident, both on the lower end for DFW. Families here regularly drive to neighboring cities for dining variety and bigger shopping options.', 'Dining and retail are still catching up to population growth: ' + rStr + ' for restaurants and ' + sStr + ' for shopping per capita. Essentials are covered locally; expect to drive for variety, a common tradeoff in newer suburbs where commercial development trails residential.', 'As a fast-growing suburb, ' + _n + ' is still building out its commercial base, ' + rStr + ' for dining and ' + sStr + ' for retail per resident. Families get the basics locally; a neighboring city covers the rest.']; return o[v % 3]; }
+            if (rPct < 50 && sPct < 50) { if (isSpread) { var densDesc = density ? Math.round(density).toLocaleString() + ' residents per sq mile' : 'lower density'; var sqmiDesc = sqmi ? sqmi + ' sq miles' : 'a larger footprint'; var o = [_n + ' is a lower-density suburb (' + densDesc + '), and its commercial footprint reflects that, ' + rStr + ' for restaurants and ' + sStr + ' for retail per resident. The essentials are covered locally; families typically drive 10 to 15 minutes for more variety.', 'At ' + sqmiDesc + ' with a ' + densDesc + ' character, ' + _n + ' spreads development across a larger area than the per-capita numbers suggest. It ranks ' + rStr + ' for dining and ' + sStr + " for retail, expect the basics locally, with neighboring cities filling the gaps.", "Lower residential density means commercial development follows a more spread-out pattern in " + _n + ", " + rStr + " for restaurants and " + sStr + " for retail per resident. What's here covers daily needs; specialty dining and larger retailers are a short drive away."]; return o[v % 3]; } var o = [_n + ' ranks ' + rStr + ' for restaurants and ' + sStr + ' for retail per resident, both on the lower end for DFW. Families here regularly drive to neighboring cities for dining variety and bigger shopping options.', 'Dining and retail are still catching up to population growth: ' + rStr + ' for restaurants and ' + sStr + ' for shopping per capita. Essentials are covered locally; expect to drive for variety, a common tradeoff in newer suburbs where commercial development trails residential.', 'As a fast-growing suburb, ' + _n + ' is still building out its commercial base, ' + rStr + ' for dining and ' + sStr + ' for retail per resident. Families get the basics locally; a neighboring city covers the rest.']; return o[v % 3]; }
             if (rPct >= sPct) { var o = [_n + ' ranks ' + rStr + ' for restaurants per resident, decent weeknight dining variety without leaving the city, but comes in at ' + sStr + ' for retail, so bigger shopping trips mean heading elsewhere.', 'The dining scene holds up well at ' + rStr + ' per resident, but retail is thinner at ' + sStr + ' per capita. Families eat local more than they shop local.']; return o[v % 2]; }
             var o = ['Retail is the stronger suit: ' + _n + ' ranks ' + sStr + ' for shopping per resident, though the restaurant scene comes in at ' + rStr + ' per capita. Grocery runs and errands stay local; weekend dinner variety usually means a drive.', _n + ' is better positioned for errands than eating out, ' + sStr + ' for retail vs. ' + rStr + ' for restaurants per resident. Shopping infrastructure covers family needs well; the dining selection is more limited.']; return o[v % 2];
           }
@@ -393,8 +395,13 @@
         }
       }
 
+      }
+      _apply();
+      setTimeout(_apply, 1200);
+      setTimeout(_apply, 3500);
+      setTimeout(_apply, 6000);
     })
     .catch(function() {
-      // Silently keep hardcoded fallbacks — no visible error to visitor
+      // Silently keep hardcoded fallbacks ,  no visible error to visitor
     });
 }());
