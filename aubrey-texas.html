@@ -1196,6 +1196,36 @@ gtag('consent','default',{
   <div class="kc-section">
     <span class="kc-eyebrow">Real Estate Market</span>
     <h2>Aubrey Housing Market</h2>
+    <!-- KC-TIER-BANDS:START  price-band cards + "what your money buys" note, baked by tools/generate-tier-bands.cjs; values refresh live via suburb-data.js -->
+  <div id="kc-market-bands" class="kc-grid kc-grid--4" style="margin-bottom:1rem;">
+    <div class="kc-band kc-band--lead" data-band="starter">
+      <span class="kc-band-ribbon">Most homes sell here</span>
+      <span class="kc-band-label">Starter</span>
+      <span class="kc-band-range">Under $400K</span>
+      <span class="kc-band-price">$316K</span>
+      <span class="kc-band-sqft">≈ 1,874 sq ft · $169/sq ft</span>
+      <span class="kc-band-bar"><span class="kc-band-bar-fill" style="width:68%;"></span></span>
+      <span class="kc-band-share">68% of sales · 663 closed</span>
+    </div>
+    <div class="kc-band" data-band="typical">
+      <span class="kc-band-label">Typical</span>
+      <span class="kc-band-range">$400K to $700K</span>
+      <span class="kc-band-price">$488K</span>
+      <span class="kc-band-sqft">≈ 2,772 sq ft · $176/sq ft</span>
+      <span class="kc-band-bar"><span class="kc-band-bar-fill" style="width:28%;"></span></span>
+      <span class="kc-band-share">28% of sales · 273 closed</span>
+    </div>
+    <div class="kc-band" data-band="moveup">
+      <span class="kc-band-label">Move-up</span>
+      <span class="kc-band-range">$700K to $1M</span>
+      <span class="kc-band-price">$841K</span>
+      <span class="kc-band-sqft">≈ 3,563 sq ft · $236/sq ft</span>
+      <span class="kc-band-bar"><span class="kc-band-bar-fill" style="width:3%;"></span></span>
+      <span class="kc-band-share">3% of sales · 33 closed</span>
+    </div>
+  </div>
+  <p id="kc-market-bands-note" class="kc-callout kc-callout--gold">In Aubrey, the heart of the market is the starter band: 68% of homes sold in the past year landed under $400K, where a median of about $316K buys roughly 1,874 square feet. About 3% of sales were $700K or more, so move-up and luxury buyers have real selection. Price per square foot climbs from about $169 at the entry level to $236 at the top, which is what you are paying for in larger lots, newer builds, and higher finish levels.</p>
+    <!-- KC-TIER-BANDS:END -->
       <!-- KC-NTREIS-CARDS:START  unified market metrics, live via kc-blog-live + kcUnifiedMarketCards loader, refreshes with the monthly NTREIS scrape, never hardcode -->
   <div class="kc-grid kc-grid--4" style="margin-bottom:1rem;">
     <div class="kc-card kc-card--navy" style="text-align:center;">
@@ -1245,6 +1275,33 @@ gtag('consent','default',{
     <p style="margin-top:1.5rem;"><a href="https://kristencarpentier.expportal.com/aubrey-texas-homes-for-sale" class="kc-btn" target="_blank" rel="noopener">View Current Listings &rarr;</a></p>
 
     <p style="font-size:0.72rem;color:#aaa;margin-bottom:1.25rem;margin-top:0.75rem;">Source: NTREIS (North Texas Real Estate Information Systems). Data as of <span id="kc-mkt-updated">2026</span>. Single-family residential only.</p>
+  <!-- KC-DEMAND:START  demand read + price-driver narrative, baked by tools/generate-tier-bands.cjs; #kc-market-demand verdict refreshes live -->
+  <div id="kc-market-demand-block" style="margin-top:1.5rem;">
+    <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:0.75rem;">
+      <span style="font-size:0.72rem;letter-spacing:0.06em;text-transform:uppercase;color:#888;">Demand Read</span>
+      <span id="kc-market-demand" class="kc-demand-chip">Buyer-friendlier</span>
+    </div>
+    <div class="kc-grid kc-grid--4" style="margin-bottom:1rem;">
+      <div class="kc-card" style="text-align:center;background:var(--white);border:1px solid var(--stone);">
+        <div style="font-size:0.72rem;color:#888;">Months Supply</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--navy);">5.9 mo.</div>
+        <div style="font-size:0.72rem;color:var(--gold);font-weight:600;">Ample supply</div>
+      </div>
+      <div class="kc-card" style="text-align:center;background:var(--white);border:1px solid var(--stone);">
+        <div style="font-size:0.72rem;color:#888;">Days on Market</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--navy);">47 days</div>
+        <div style="font-size:0.72rem;color:var(--gold);font-weight:600;">Homes don't sit</div>
+      </div>
+      <div class="kc-card" style="text-align:center;background:var(--white);border:1px solid var(--stone);">
+        <div style="font-size:0.72rem;color:#888;">Sale to Original List</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--navy);">94.3%</div>
+        <div style="font-size:0.72rem;color:var(--gold);font-weight:600;">Some room to negotiate</div>
+      </div>
+    </div>
+    <div class="kc-callout kc-callout--gold"><strong>What these numbers tell you:</strong> Aubrey is a buyer-friendlier market. Single-family homes are averaging about 47 days on market and selling at roughly 94% of their original list price, with around 5.9 months of supply. In plain terms, buyers have real leverage here. Homes take longer to sell and there is more room to negotiate, so you can take your time and lean on the inspection.</div>
+    <div class="kc-callout kc-callout--gold"><strong>Why Aubrey is priced where it is:</strong> The value is anchored by Aubrey ISD, which earns a B overall and a B+ for college prep, so school-driven demand stays strong year after year. It is a mostly owner-occupied community (about 76%) where roughly 4 in 10 households have school-age kids, and with 5 parks and green spaces mapped. Prices have also been stable rather than swingy. The tradeoff, and there is always one, is the commute: a typical drive runs about 27 minutes, longer than the inner-ring suburbs, which is part of why your dollar buys more square footage in Aubrey than closer to the core.</div>
+  </div>
+  <!-- KC-DEMAND:END -->
 
     <p>Aubrey is currently one of the most buyer-friendly markets in North DFW. At 6 months of supply and 48 days on market, buyers have genuine negotiating power, an uncommon position in a region where Frisco and Allen regularly see sub-30-day absorption. For families who want new construction, builder incentives including rate buydowns, closing cost credits, and design upgrades are actively available. The $350K median buys a 2,400-3,200 square foot home with modern finishes, which represents dramatically more space per dollar than any comparable suburb closer to Dallas.</p>
   </div>

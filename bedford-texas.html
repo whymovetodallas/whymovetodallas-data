@@ -1229,6 +1229,36 @@ gtag('consent','default',{
     <h2>Bedford Real Estate Market: What to Expect</h2>
   </div>
 
+    <!-- KC-TIER-BANDS:START  price-band cards + "what your money buys" note, baked by tools/generate-tier-bands.cjs; values refresh live via suburb-data.js -->
+  <div id="kc-market-bands" class="kc-grid kc-grid--4" style="margin-bottom:1rem;">
+    <div class="kc-band kc-band--lead" data-band="starter">
+      <span class="kc-band-ribbon">Most homes sell here</span>
+      <span class="kc-band-label">Starter</span>
+      <span class="kc-band-range">Under $400K</span>
+      <span class="kc-band-price">$342K</span>
+      <span class="kc-band-sqft">≈ 1,664 sq ft · $206/sq ft</span>
+      <span class="kc-band-bar"><span class="kc-band-bar-fill" style="width:56%;"></span></span>
+      <span class="kc-band-share">56% of sales · 258 closed</span>
+    </div>
+    <div class="kc-band" data-band="typical">
+      <span class="kc-band-label">Typical</span>
+      <span class="kc-band-range">$400K to $700K</span>
+      <span class="kc-band-price">$471K</span>
+      <span class="kc-band-sqft">≈ 2,267 sq ft · $208/sq ft</span>
+      <span class="kc-band-bar"><span class="kc-band-bar-fill" style="width:42%;"></span></span>
+      <span class="kc-band-share">42% of sales · 194 closed</span>
+    </div>
+    <div class="kc-band kc-band--lowconf" data-band="moveup">
+      <span class="kc-band-label">Move-up</span>
+      <span class="kc-band-range">$700K to $1M</span>
+      <span class="kc-band-price">$797K</span>
+      <span class="kc-band-sqft">≈ 3,514 sq ft · $227/sq ft</span>
+      <span class="kc-band-bar"><span class="kc-band-bar-fill" style="width:2%;"></span></span>
+      <span class="kc-band-share">2% of sales · 8 closed</span>
+    </div>
+  </div>
+  <p id="kc-market-bands-note" class="kc-callout kc-callout--gold">In Bedford, the heart of the market is the starter band: 56% of homes sold in the past year landed under $400K, where a median of about $342K buys roughly 1,664 square feet. About 2% of sales were $700K or more, so move-up and luxury buyers have real selection. Price per square foot climbs from about $206 at the entry level to $227 at the top, which is what you are paying for in larger lots, newer builds, and higher finish levels.</p>
+    <!-- KC-TIER-BANDS:END -->
     <!-- KC-NTREIS-CARDS:START  unified market metrics, live via kc-blog-live + kcUnifiedMarketCards loader, refreshes with the monthly NTREIS scrape, never hardcode -->
   <div class="kc-grid kc-grid--4" style="margin-bottom:1rem;">
     <div class="kc-card kc-card--navy" style="text-align:center;">
@@ -1275,6 +1305,33 @@ gtag('consent','default',{
   <p>A few more numbers worth knowing if you are weighing an offer in Bedford. Over the trailing 12 months, single-family homes sold for a median of <span class="kc-blog-live" data-suburb="bedford" data-field="sfr_median_price">$385K</span> and an average of <span class="kc-blog-live" data-suburb="bedford" data-field="sfr_avg_price">$403K</span>, which works out to about <span class="kc-blog-live" data-suburb="bedford" data-field="sfr_median_price_per_sqft">$207</span> per square foot. Homes here sold for roughly <span class="kc-blog-live" data-suburb="bedford" data-field="sfr_pct_of_original_price">98.1%</span> of their original list price, which gives you a sense of how much room buyers have typically had to negotiate. As of the latest data, about <span class="kc-blog-live" data-suburb="bedford" data-field="sfr_inventory">94</span> single-family homes were actively listed. These are NTREIS figures (the price metrics are 12-month rolling, inventory is current active supply), and your own price per square foot and negotiating room will vary by neighborhood, age of home, and finish level.</p>
   <!-- KC-NTREIS-CARDS:END -->
   <p style="font-size:0.8rem;color:#888;margin-top:-1rem;margin-bottom:1.5rem;">Source: NTREIS via 10K Research · All figures are 12-month rolling periods · Updated <span id="kc-mkt-updated">2026</span></p>
+  <!-- KC-DEMAND:START  demand read + price-driver narrative, baked by tools/generate-tier-bands.cjs; #kc-market-demand verdict refreshes live -->
+  <div id="kc-market-demand-block" style="margin-top:1.5rem;">
+    <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:0.75rem;">
+      <span style="font-size:0.72rem;letter-spacing:0.06em;text-transform:uppercase;color:#888;">Demand Read</span>
+      <span id="kc-market-demand" class="kc-demand-chip">High demand</span>
+    </div>
+    <div class="kc-grid kc-grid--4" style="margin-bottom:1rem;">
+      <div class="kc-card" style="text-align:center;background:var(--white);border:1px solid var(--stone);">
+        <div style="font-size:0.72rem;color:#888;">Months Supply</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--navy);">2.5 mo.</div>
+        <div style="font-size:0.72rem;color:var(--gold);font-weight:600;">Seller-leaning</div>
+      </div>
+      <div class="kc-card" style="text-align:center;background:var(--white);border:1px solid var(--stone);">
+        <div style="font-size:0.72rem;color:#888;">Days on Market</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--navy);">21 days</div>
+        <div style="font-size:0.72rem;color:var(--gold);font-weight:600;">Sells fast</div>
+      </div>
+      <div class="kc-card" style="text-align:center;background:var(--white);border:1px solid var(--stone);">
+        <div style="font-size:0.72rem;color:#888;">Sale to Original List</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--navy);">98.1%</div>
+        <div style="font-size:0.72rem;color:var(--gold);font-weight:600;">Little lowball room</div>
+      </div>
+    </div>
+    <div class="kc-callout kc-callout--gold"><strong>What these numbers tell you:</strong> Bedford is a high demand market. Single-family homes are averaging about 21 days on market and selling at roughly 98% of their original list price, with around 2.5 months of supply. In plain terms, well-priced homes here do not sit, and there is little room for a lowball offer. If you are relocating on a timeline, line up your financing before you tour, because the home you want may not wait.</div>
+    <div class="kc-callout kc-callout--gold"><strong>Why Bedford is priced where it is:</strong> The value is anchored by HEB ISD, which earns an A+ overall and an A+ for college prep, so school-driven demand stays strong year after year. It is a owner-occupied community (about 52%) where roughly 3 in 10 households have school-age kids, and with 292 parks and green spaces mapped. Prices have also been stable rather than swingy. The tradeoff, and there is always one, is the commute: a typical drive runs about 29 minutes, longer than the inner-ring suburbs, which is part of why your dollar buys more square footage in Bedford than closer to the core.</div>
+  </div>
+  <!-- KC-DEMAND:END -->
 
   <p>At a median around $383K for single-family homes, Bedford is one of the more affordable established suburbs in the DFW mid-cities corridor, sitting well below Colleyville ($750K+) and Southlake ($1M+) to the south while offering the same airport proximity and comparable schools. Inventory is tight (2.4 months supply puts it firmly in seller's market territory), and homes that are priced correctly and updated tend to move in 2–3 weeks. The housing stock skews toward 1,970s–1990s builds, plan for some cosmetic updating, but also plan for mature trees, established landscaping, and zero MUD or PID taxes that inflate new construction carrying costs. Bedford is fully built out, so supply is limited by definition.</p>
 

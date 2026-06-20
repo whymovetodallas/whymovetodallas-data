@@ -1377,6 +1377,44 @@ gtag('consent','default',{
     <h2>Colleyville Home Prices &amp; Market Conditions</h2>
   </div>
 
+    <!-- KC-TIER-BANDS:START  price-band cards + "what your money buys" note, baked by tools/generate-tier-bands.cjs; values refresh live via suburb-data.js -->
+  <div id="kc-market-bands" class="kc-grid kc-grid--4" style="margin-bottom:1rem;">
+    <div class="kc-band kc-band--lowconf" data-band="starter">
+      <span class="kc-band-label">Starter</span>
+      <span class="kc-band-range">Under $400K</span>
+      <span class="kc-band-price">$343K</span>
+      <span class="kc-band-sqft">≈ 1,004 sq ft · $342/sq ft</span>
+      <span class="kc-band-bar"><span class="kc-band-bar-fill" style="width:1%;"></span></span>
+      <span class="kc-band-share">1% of sales · 2 closed</span>
+    </div>
+    <div class="kc-band" data-band="typical">
+      <span class="kc-band-label">Typical</span>
+      <span class="kc-band-range">$400K to $700K</span>
+      <span class="kc-band-price">$607K</span>
+      <span class="kc-band-sqft">≈ 2,419 sq ft · $251/sq ft</span>
+      <span class="kc-band-bar"><span class="kc-band-bar-fill" style="width:15%;"></span></span>
+      <span class="kc-band-share">15% of sales · 50 closed</span>
+    </div>
+    <div class="kc-band" data-band="moveup">
+      <span class="kc-band-label">Move-up</span>
+      <span class="kc-band-range">$700K to $1M</span>
+      <span class="kc-band-price">$852K</span>
+      <span class="kc-band-sqft">≈ 3,244 sq ft · $263/sq ft</span>
+      <span class="kc-band-bar"><span class="kc-band-bar-fill" style="width:33%;"></span></span>
+      <span class="kc-band-share">33% of sales · 110 closed</span>
+    </div>
+    <div class="kc-band kc-band--lead" data-band="luxury">
+      <span class="kc-band-ribbon">Most homes sell here</span>
+      <span class="kc-band-label">Luxury</span>
+      <span class="kc-band-range">$1M and up</span>
+      <span class="kc-band-price">$1.3M</span>
+      <span class="kc-band-sqft">≈ 4,484 sq ft · $294/sq ft</span>
+      <span class="kc-band-bar"><span class="kc-band-bar-fill" style="width:52%;"></span></span>
+      <span class="kc-band-share">52% of sales · 176 closed</span>
+    </div>
+  </div>
+  <p id="kc-market-bands-note" class="kc-callout kc-callout--gold">In Colleyville, the heart of the market is the luxury band: 52% of homes sold in the past year landed at $1M and up, where a median of about $1.3M buys roughly 4,484 square feet. Entry-level homes do exist, around $343K for about 1,004 square feet, but they are a smaller share (1%). About 85% of sales were $700K or more, so move-up and luxury buyers have real selection.</p>
+    <!-- KC-TIER-BANDS:END -->
     <!-- KC-NTREIS-CARDS:START  unified market metrics, live via kc-blog-live + kcUnifiedMarketCards loader, refreshes with the monthly NTREIS scrape, never hardcode -->
   <div class="kc-grid kc-grid--4" style="margin-bottom:1rem;">
     <div class="kc-card kc-card--navy" style="text-align:center;">

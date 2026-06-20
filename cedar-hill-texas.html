@@ -1240,6 +1240,44 @@ gtag('consent','default',{
     <h2>Cedar Hill Real Estate Market: What to Expect</h2>
   </div>
 
+    <!-- KC-TIER-BANDS:START  price-band cards + "what your money buys" note, baked by tools/generate-tier-bands.cjs; values refresh live via suburb-data.js -->
+  <div id="kc-market-bands" class="kc-grid kc-grid--4" style="margin-bottom:1rem;">
+    <div class="kc-band kc-band--lead" data-band="starter">
+      <span class="kc-band-ribbon">Most homes sell here</span>
+      <span class="kc-band-label">Starter</span>
+      <span class="kc-band-range">Under $400K</span>
+      <span class="kc-band-price">$310K</span>
+      <span class="kc-band-sqft">≈ 1,913 sq ft · $162/sq ft</span>
+      <span class="kc-band-bar"><span class="kc-band-bar-fill" style="width:70%;"></span></span>
+      <span class="kc-band-share">70% of sales · 332 closed</span>
+    </div>
+    <div class="kc-band" data-band="typical">
+      <span class="kc-band-label">Typical</span>
+      <span class="kc-band-range">$400K to $700K</span>
+      <span class="kc-band-price">$514K</span>
+      <span class="kc-band-sqft">≈ 3,131 sq ft · $164/sq ft</span>
+      <span class="kc-band-bar"><span class="kc-band-bar-fill" style="width:22%;"></span></span>
+      <span class="kc-band-share">22% of sales · 103 closed</span>
+    </div>
+    <div class="kc-band" data-band="moveup">
+      <span class="kc-band-label">Move-up</span>
+      <span class="kc-band-range">$700K to $1M</span>
+      <span class="kc-band-price">$785K</span>
+      <span class="kc-band-sqft">≈ 3,617 sq ft · $217/sq ft</span>
+      <span class="kc-band-bar"><span class="kc-band-bar-fill" style="width:4%;"></span></span>
+      <span class="kc-band-share">4% of sales · 21 closed</span>
+    </div>
+    <div class="kc-band" data-band="luxury">
+      <span class="kc-band-label">Luxury</span>
+      <span class="kc-band-range">$1M and up</span>
+      <span class="kc-band-price">$1.4M</span>
+      <span class="kc-band-sqft">≈ 6,003 sq ft · $236/sq ft</span>
+      <span class="kc-band-bar"><span class="kc-band-bar-fill" style="width:3%;"></span></span>
+      <span class="kc-band-share">3% of sales · 15 closed</span>
+    </div>
+  </div>
+  <p id="kc-market-bands-note" class="kc-callout kc-callout--gold">In Cedar Hill, the heart of the market is the starter band: 70% of homes sold in the past year landed under $400K, where a median of about $310K buys roughly 1,913 square feet. About 7% of sales were $700K or more, so move-up and luxury buyers have real selection. Price per square foot climbs from about $162 at the entry level to $236 at the top, which is what you are paying for in larger lots, newer builds, and higher finish levels.</p>
+    <!-- KC-TIER-BANDS:END -->
     <!-- KC-NTREIS-CARDS:START  unified market metrics, live via kc-blog-live + kcUnifiedMarketCards loader, refreshes with the monthly NTREIS scrape, never hardcode -->
   <div class="kc-grid kc-grid--4" style="margin-bottom:1rem;">
     <div class="kc-card kc-card--navy" style="text-align:center;">
@@ -1286,6 +1324,33 @@ gtag('consent','default',{
   <p>A few more numbers worth knowing if you are weighing an offer in Cedar Hill. Over the trailing 12 months, single-family homes sold for a median of <span class="kc-blog-live" data-suburb="cedar-hill" data-field="sfr_median_price">$347K</span> and an average of <span class="kc-blog-live" data-suburb="cedar-hill" data-field="sfr_avg_price">$417K</span>, which works out to about <span class="kc-blog-live" data-suburb="cedar-hill" data-field="sfr_median_price_per_sqft">$165</span> per square foot. Homes here sold for roughly <span class="kc-blog-live" data-suburb="cedar-hill" data-field="sfr_pct_of_original_price">96.9%</span> of their original list price, which gives you a sense of how much room buyers have typically had to negotiate. As of the latest data, about <span class="kc-blog-live" data-suburb="cedar-hill" data-field="sfr_inventory">166</span> single-family homes were actively listed. These are NTREIS figures (the price metrics are 12-month rolling, inventory is current active supply), and your own price per square foot and negotiating room will vary by neighborhood, age of home, and finish level.</p>
   <!-- KC-NTREIS-CARDS:END -->
   <p style="font-size:0.8rem;color:#888;margin-top:-1rem;margin-bottom:1.5rem;">Source: NTREIS via 10K Research · All figures are 12-month rolling periods · Updated <span id="kc-mkt-updated">April 2026</span></p>
+  <!-- KC-DEMAND:START  demand read + price-driver narrative, baked by tools/generate-tier-bands.cjs; #kc-market-demand verdict refreshes live -->
+  <div id="kc-market-demand-block" style="margin-top:1.5rem;">
+    <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:0.75rem;">
+      <span style="font-size:0.72rem;letter-spacing:0.06em;text-transform:uppercase;color:#888;">Demand Read</span>
+      <span id="kc-market-demand" class="kc-demand-chip">Steady demand</span>
+    </div>
+    <div class="kc-grid kc-grid--4" style="margin-bottom:1rem;">
+      <div class="kc-card" style="text-align:center;background:var(--white);border:1px solid var(--stone);">
+        <div style="font-size:0.72rem;color:#888;">Months Supply</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--navy);">4.2 mo.</div>
+        <div style="font-size:0.72rem;color:var(--gold);font-weight:600;">Seller-leaning</div>
+      </div>
+      <div class="kc-card" style="text-align:center;background:var(--white);border:1px solid var(--stone);">
+        <div style="font-size:0.72rem;color:#888;">Days on Market</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--navy);">32 days</div>
+        <div style="font-size:0.72rem;color:var(--gold);font-weight:600;">Homes don't sit</div>
+      </div>
+      <div class="kc-card" style="text-align:center;background:var(--white);border:1px solid var(--stone);">
+        <div style="font-size:0.72rem;color:#888;">Sale to Original List</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--navy);">96.9%</div>
+        <div style="font-size:0.72rem;color:var(--gold);font-weight:600;">Some room to negotiate</div>
+      </div>
+    </div>
+    <div class="kc-callout kc-callout--gold"><strong>What these numbers tell you:</strong> Cedar Hill is a steady demand market. Single-family homes are averaging about 32 days on market and selling at roughly 97% of their original list price, with around 4.2 months of supply. In plain terms, well-priced homes here do not sit, and there is not much room for a lowball offer, but you are also not walking into a bidding war. If you are relocating on a timeline, get your financing in order before you tour.</div>
+    <div class="kc-callout kc-callout--gold"><strong>Why Cedar Hill is priced where it is:</strong> The value is anchored by Cedar Hill ISD, which earns a C overall and a B for college prep, so school-driven demand stays strong year after year. It is a mostly owner-occupied community (about 69%) where roughly 4 in 10 households have school-age kids, and with 45 parks and green spaces mapped. Prices have also been stable rather than swingy. The tradeoff, and there is always one, is the commute: a typical drive runs about 32 minutes, longer than the inner-ring suburbs, which is part of why your dollar buys more square footage in Cedar Hill than closer to the core.</div>
+  </div>
+  <!-- KC-DEMAND:END -->
 
   <p>At a median of around $346,000 for a single-family home, Cedar Hill is one of the most affordable options in the greater DFW market, and one of the rare places where families moving from California or New York will find that their dollar goes a genuinely long way. A $400,000 budget in Cedar Hill gets you a 2,000–2,500 sq ft home with a yard in an established neighborhood; the same budget in Frisco or Allen typically gets you a smaller townhome or a starter home at the edge of a development.</p>
 
