@@ -487,6 +487,10 @@ gtag('consent','default',{
 .lvm-fit b{display:block;font-size:1.35rem;color:var(--lvm-gold);font-weight:700;line-height:1;}
 .lvm-fit span{font-size:.66rem;text-transform:uppercase;letter-spacing:.1em;color:#999;}
 .lvm-why{padding:6px 22px 4px;font-size:.95rem;line-height:1.62;color:#3a3a3a;}
+.lvm-tier{margin:6px 22px 2px;padding:8px 12px;background:var(--lvm-ivory);border-left:3px solid var(--lvm-gold);
+  border-radius:6px;font-size:.9rem;line-height:1.5;color:#3a3a3a;}
+.lvm-tier strong{color:var(--lvm-navy);}
+.lvm-tier--stretch{border-left-color:#9a8a73;color:#5a5347;}
 .lvm-bars{display:flex;flex-wrap:wrap;gap:10px 18px;padding:10px 22px 16px;}
 .lvm-bar{flex:1 1 130px;min-width:120px;}
 .lvm-bar .t{display:flex;justify-content:space-between;font-size:.74rem;color:#666;margin:0 0 4px;}
@@ -737,6 +741,20 @@ gtag('consent','default',{
   var SUBURB_HUB = "/dallas-fort-worth-suburbs";
   var LEVER_WEIGHTS = [0.40, 0.30, 0.20, 0.10];       // 1st..4th rank (tunable)
 
+  /* Tier-aware budget config. Each suburb in suburb-profiles.json carries market.tiers
+     (Starter / Typical / Move-up / Luxury), each with median_sale_price, price_per_sqft,
+     sqft, and an optional low_confidence flag on thin-sample tiers. We judge affordability
+     by the best tier a family can actually buy into, not by the suburb's overall median.
+     WORKING_BUDGET = the realistic spending ceiling for each band. */
+  var WORKING_BUDGET = {"u500":500000,"500-700":700000,"700-900":900000,"900-1200":1200000,"1200plus":3000000};
+  var TIER_ORDER = ["starter","typical","moveup","luxury"];
+  var TIER_RANK  = {starter:0, typical:1, moveup:2, luxury:3};
+  var TIER_LABEL = {starter:"Starter", typical:"Typical", moveup:"Move-up", luxury:"Luxury"};
+  /* Desirability floor (compliance-safe). Blend of education + commute + value_score only,
+     NEVER family_score or any safety/crime field. Guards budget-widening so a cheap-but-weak
+     suburb is never surfaced as a top match just because the money fits. */
+  var DESIRABILITY_FLOOR = 74;
+
   /* Monthly new-construction snapshot (showingnew-communities.json, 2026-06-10).
      Used only for new-vs-resale + master-planned-vibe signals. */
   var NEW_CONSTRUCTION = {"celina":33,"mckinney":30,"prosper":23,"forney":25,"frisco":23,"midlothian":18,"rockwall":23,"anna":14,"aubrey":17,"waxahachie":15,"fate":11,"northlake":15,"argyle":11,"denton":12,"princeton":10,"royse-city":12,"melissa":8,"wylie":8,"heath":8,"little-elm":9,"corinth":7,"flower-mound":5,"allen":4,"lucas":3,"plano":4,"lewisville":1,"murphy":1,"fort-worth":5,"dallas":2,"the-colony":1};
@@ -845,26 +863,69 @@ gtag('consent','default',{
     return clamp(0.78*fit + 0.22*sub, 0, 100);
   }
 
-  function budgetFit(s){
-    var price = s.market.sfr_median_price;
-    var value = (s.scores && s.scores.value_score) || 60;
-    var bands = {
-      "u500":  [0,        500000],
-      "500-700":[500000,  700000],
-      "700-900":[700000,  900000],
-      "900-1200":[900000, 1200000],
-      "1200plus":[1200000, Infinity]
+  /* Which price tier can this family actually buy into at the given budget?
+     A tier "qualifies" only when its typical (median) sale price sits at or under the budget.
+     low_confidence (thin-sample) tiers are noted but never the sole basis for reachability:
+     a suburb is reachable only if at least one SOLID tier is within budget. */
+  function tierFor(s, budget){
+    var t = (s.market && s.market.tiers) || {};
+    var solid=[], all=[];
+    for(var i=0;i<TIER_ORDER.length;i++){
+      var k=TIER_ORDER[i], v=t[k];
+      if(!v || v.median_sale_price==null) continue;
+      var e={ key:k, label:TIER_LABEL[k], med:v.median_sale_price, ppsf:v.price_per_sqft, sqft:v.sqft, low:!!v.low_confidence };
+      all.push(e);
+      if(!e.low) solid.push(e);
+    }
+    var solidReach = solid.filter(function(e){ return e.med<=budget; });
+    var allReach   = all.filter(function(e){ return e.med<=budget; });
+    var reachable  = solidReach.length>0;
+    return {
+      reachable: reachable,
+      best:   reachable ? solidReach[solidReach.length-1] : null, // highest tier they can buy
+      entry:  reachable ? solidReach[0] : null,                   // cheapest solid way in
+      bestAny: allReach.length ? allReach[allReach.length-1] : null,
+      cheapestSolid: solid.length ? solid[0] : null
     };
-    var b = bands[answers.priceBand] || bands["500-700"];
-    var lo=b[0], hi=b[1], fit;
-    if(price>=lo && price<=hi){ fit = 100; }
-    else if(price>hi){ // stretch above ceiling
-      var over=(price-hi)/hi;
-      fit = over<=.15?80: over<=.40?58: over<=.80?38: 16;
-    } else { // below band
-      if(answers.priceBand==="1200plus"){ // prestige caliber: scale down below 1.2M
-        var u=(lo-price)/lo; fit = u<=.20?82: u<=.40?64: u<=.60?50: 38;
-      } else { var u2=(lo-price)/Math.max(lo,1); fit = u2<=.15?92: u2<=.35?82: u2<=.55?72: 62; } // affordable = fine
+  }
+  /* Compact tier summary for the report payload + on-screen card. */
+  function tierSummary(s, budget){
+    var ti = tierFor(s, budget);
+    if(!ti.reachable){
+      var cheap = (ti.cheapestSolid && ti.cheapestSolid.med) || (s.market && s.market.sfr_median_price) || null;
+      return { reachable:false, entryMed:cheap };
+    }
+    return {
+      reachable:true,
+      key: ti.best.key, label: ti.best.label, med: ti.best.med, sqft: ti.best.sqft, ppsf: ti.best.ppsf,
+      entryKey: ti.entry.key, entryLabel: ti.entry.label, entryMed: ti.entry.med
+    };
+  }
+
+  /* Tier-aware budget fit. Judges the BEST tier a family can buy into (not the suburb median),
+     so a top-school suburb the family can reach at its entry tier stays in play even when its
+     median is well above budget. When budget is ranked high, it leans harder into
+     more-home-for-money (lower price-per-sqft + value_score, reaching a higher tier). */
+  function budgetFit(s){
+    var budget = WORKING_BUDGET[answers.priceBand] || WORKING_BUDGET["500-700"];
+    var value  = (s.scores && s.scores.value_score) || 60;
+    var ti     = tierFor(s, budget);
+    var budgetHigh = answers.ranking.indexOf("budget") <= 1; // budget is a top-2 lever
+    var fit;
+    if(!ti.reachable){
+      // Even the cheapest solid tier's typical price is over budget: a genuine stretch.
+      var cheap = (ti.cheapestSolid && ti.cheapestSolid.med) || s.market.sfr_median_price || budget;
+      var over  = (cheap - budget)/Math.max(budget,1);
+      fit = over<=.08?70 : over<=.20?54 : over<=.40?38 : over<=.70?24 : 14;
+    } else {
+      var bestIdx = TIER_RANK[ti.best.key];                               // 0 starter .. 3 luxury
+      var ppsf    = ti.best.ppsf || s.market.sfr_median_price_per_sqft || 235;
+      var ppsfVal = clamp((430 - ppsf)/(430 - 180)*100, 0, 100);          // lower $/sqft = more home per dollar
+      var head    = clamp((budget - ti.entry.med)/Math.max(budget,1), 0, 1); // comfort: room under budget at entry
+      var reachComp = 78 + bestIdx*4 + head*8;                            // reachable + comfortable (~78 to 98)
+      var homeComp  = 0.55*ppsfVal + 0.45*value;                          // more-home-for-money
+      fit = budgetHigh ? (0.45*reachComp + 0.55*homeComp)                 // budget ranked high: reward more home
+                       : (0.78*reachComp + 0.22*homeComp);                // otherwise reachability leads
     }
     // new vs resale
     var nc = NEW_CONSTRUCTION[ slugOf(s) ] || 0;
@@ -872,7 +933,7 @@ gtag('consent','default',{
     else if(answers.newResale==="resale"){ fit += nc>=20? -4: 2; }
     // tax-load sensitivity (MUD/PID)
     if(answers.taxLoad==="avoid" && HIGH_MUD_SET[ slugOf(s) ]) fit -= 7;
-    return clamp(0.80*fit + 0.20*value, 0, 100);
+    return clamp(fit, 0, 100);
   }
 
   function schoolsFit(s){
@@ -931,10 +992,20 @@ gtag('consent','default',{
 
   function slugOf(s){ return s.__slug; }
 
+  /* Compliance-safe desirability. Education-led blend of the three allowed scores ONLY:
+     education + commute + value_score. NEVER family_score / safety / crime (Fair Housing).
+     Education dominates so genuinely strong, expensive family suburbs (low value_score because
+     they cost more) stay above the floor, while cheap-but-weak suburbs fall below it. */
+  function desirability(s){
+    var sc = s.scores || {}, ss = sc.sub_scores || {};
+    var v = sc.value_score || 60, e = ss.education || 60, c = ss.commute || 60;
+    return 0.60*e + 0.25*c + 0.15*v;
+  }
+
   function scoreAll(){
-    var fitFns = {commute:commuteFit, budget:budgetFit, schools:schoolsFit, lifestyle:lifestyleFit};
     var weight = {};
     answers.ranking.forEach(function(lev,i){ weight[lev]=LEVER_WEIGHTS[i]; });
+    var budget = WORKING_BUDGET[answers.priceBand] || WORKING_BUDGET["500-700"];
     return DATA.map(function(pair){
       var slug=pair[0], s=pair[1];
       var fits = {
@@ -943,7 +1014,15 @@ gtag('consent','default',{
       };
       var total = 0;
       answers.ranking.forEach(function(lev){ total += weight[lev]*fits[lev]; });
-      return {slug:slug, s:s, fits:fits, total:Math.round(total), weight:weight};
+      // Desirability floor: demote (never zero) any suburb below the floor so budget-widening
+      // can never push a cheap, low-desirability suburb into the top matches.
+      var desir = desirability(s);
+      if(desir < DESIRABILITY_FLOOR){
+        var gap = DESIRABILITY_FLOOR - desir;
+        total = total * clamp(1 - gap*0.05, 0.55, 1);
+      }
+      return {slug:slug, s:s, fits:fits, total:Math.round(total), weight:weight,
+              desir:Math.round(desir), tier:tierSummary(s, budget)};
     }).sort(function(a,b){ return b.total-a.total; });
   }
 
@@ -1173,6 +1252,19 @@ gtag('consent','default',{
     return "Because you ranked <strong>"+LEVERS[topLever].label.toLowerCase()+"</strong> above <strong>"+LEVERS[worst].label.toLowerCase()+"</strong>, "+name+" "+msgs[worst];
   }
 
+  function sqftPhrase(t){ return (t && t.sqft) ? ", typically around "+Math.round(t.sqft).toLocaleString()+" sq ft" : ""; }
+  function tierLine(r){
+    var t=r.tier; if(!t) return "";
+    var name=r.s.display_name;
+    if(!t.reachable){
+      return '<p class="lvm-tier lvm-tier--stretch">At your budget, '+name+'’s entry price sits above your target, so this one is a stretch. Worth a look if you can flex up.</p>';
+    }
+    if(t.entryKey===t.key){
+      return '<p class="lvm-tier">Your budget buys into '+name+' at the <strong>'+t.label+'</strong> tier'+sqftPhrase(t)+'.</p>';
+    }
+    return '<p class="lvm-tier">In '+name+', the same budget reaches the <strong>'+t.label+'</strong> tier'+sqftPhrase(t)+' (entry starts around the '+t.entryLabel+' tier).</p>';
+  }
+
   function matchCard(r, rank, isWild){
     var s=r.s, slug=r.slug;
     var url = SUBURB_URL(slug); // all 70 slugs verified to map to /[slug]-texas
@@ -1185,6 +1277,7 @@ gtag('consent','default',{
         '<div class="lvm-fit"><b>'+r.total+'</b><span>fit</span></div>'+
       '</div>'+
       '<p class="lvm-why">'+whyParagraph(Object.assign({},r,{rank:rank}))+'</p>'+
+      tierLine(r)+
       leverBars(r)+
       '<div class="lvm-match-foot">'+
         '<a class="lvm-explore" href="'+url+'">Explore '+s.display_name+' <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>'+
@@ -1284,7 +1377,7 @@ gtag('consent','default',{
       timeline: answers.timeline,
       vaLoan: answers.vaLoan,
       // top 12 computed results so the Worker renders the report without re-scoring
-      results: ranked.slice(0,12).map(function(r){ return {slug:r.slug, total:r.total, fits:r.fits}; }),
+      results: ranked.slice(0,12).map(function(r){ return {slug:r.slug, total:r.total, fits:r.fits, tier:r.tier}; }),
       wildcardSlug: wild ? wild.slug : null,
       topSuburb: ranked[0] ? ranked[0].s.display_name : null,
       submittedAt: new Date().toISOString()
