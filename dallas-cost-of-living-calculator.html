@@ -534,14 +534,14 @@ gtag('consent','default',{
 .cc-secblock>.note{font-size:.85rem;color:#777;margin:0 0 1rem;line-height:1.5;}
 
 /* honesty callouts */
-.cc-honest{background:#fbf3ee;border:1px solid #e7d3c6;border-radius:14px;padding:22px 24px;margin:0 0 22px;}
-.cc-honest h3{font-family:'Cormorant Garamond',serif;font-size:1.4rem;color:var(--cc-up);margin:0 0 .2rem;font-weight:600;display:flex;align-items:center;gap:10px;}
-.cc-honest>p.intro{font-size:.9rem;color:#7a5648;margin:0 0 1rem;line-height:1.55;}
-.cc-honest .item{display:flex;gap:13px;align-items:flex-start;padding:13px 0;border-top:1px solid #ecd9cd;}
-.cc-honest .item:first-of-type{border-top:none;}
-.cc-honest .item svg{flex:0 0 26px;margin-top:1px;}
-.cc-honest .item b{display:block;color:var(--cc-navy);font-size:1rem;margin:0 0 .2rem;}
-.cc-honest .item p{margin:0;font-size:.9rem;line-height:1.55;color:#54493f;}
+.cc-honest{background:#fbf3ee;border:1px solid #e7d3c6;border-left:4px solid var(--cc-up);border-radius:10px;padding:14px 18px;margin:0 0 20px;}
+.cc-honest h3{font-family:'Jost',sans-serif;font-size:.92rem;letter-spacing:.04em;text-transform:uppercase;color:var(--cc-up);margin:0 0 .5rem;font-weight:700;display:flex;align-items:center;gap:8px;}
+.cc-honest h3 svg{flex:0 0 18px;width:18px;height:18px;}
+.cc-honest>p.intro{display:none;}
+.cc-honest .item{display:block;padding:6px 0 0;border:none;}
+.cc-honest .item svg{display:none;}
+.cc-honest .item b{color:var(--cc-navy);font-size:.9rem;}
+.cc-honest .item p{display:inline;margin:0;font-size:.9rem;line-height:1.55;color:#54493f;}
 .cc-honest .item .fig{color:var(--cc-up);font-weight:600;}
 
 /* mortgage two-number */
@@ -594,6 +594,20 @@ gtag('consent','default',{
 .cc-scorechip b{color:var(--cc-navy);}
 .cc-scen tr.qual td{box-shadow:inset 3px 0 0 var(--cc-down);}
 .cc-scen-note{font-size:.82rem;color:#777;line-height:1.5;margin:4px 2px 22px;}
+/* multi-lever priority controls */
+.cc-levers{background:#fff;border:1px solid var(--cc-line);border-radius:10px;padding:14px 16px;margin:0 0 14px;}
+.cc-levers .lv-lead{font-size:.86rem;color:#555;margin:0 0 .6rem;}
+.cc-levers .lv-lead b{color:var(--cc-navy);}
+.cc-lever{display:inline-flex;align-items:center;gap:7px;font-family:inherit;font-size:.85rem;font-weight:600;color:#555;
+  background:#fff;border:1px solid var(--cc-line);border-radius:30px;padding:9px 15px;margin:0 7px 7px 0;cursor:pointer;transition:all .15s;}
+.cc-lever:hover{border-color:var(--cc-gold);}
+.cc-lever.on{background:var(--cc-navy);border-color:var(--cc-navy);color:#fff;}
+.cc-lever .rank{display:inline-flex;align-items:center;justify-content:center;width:18px;height:18px;border-radius:50%;
+  background:var(--cc-gold);color:#fff;font-size:.7rem;font-weight:700;}
+.cc-levers .lv-clear{background:none;border:none;color:#999;font-size:.8rem;text-decoration:underline;cursor:pointer;font-family:inherit;margin-left:4px;}
+.cc-levers .lv-row{display:flex;flex-wrap:wrap;align-items:center;gap:0;}
+.cc-levers .lv-link{margin-left:auto;}
+.cc-scen td.fitscore{font-weight:700;color:var(--cc-gold);}
 .cc-target{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:0 0 12px;font-size:.9rem;color:#555;}
 .cc-target label{font-weight:600;color:var(--cc-navy);}
 .cc-target .cc-money{flex:0 0 auto;}
@@ -666,7 +680,7 @@ gtag('consent','default',{
   <!-- INTAKE -->
   <div class="cc-card" id="ccCard">
     <h2 class="cc-card-h">Run your numbers</h2>
-    <p class="cc-card-sub">Five quick questions. The data layer does the heavy lifting: full state and federal brackets, DFW suburb property rates, the live mortgage rate, and the Texas exemptions.</p>
+    <p class="cc-card-sub">Answer a few quick questions and the data layer does the heavy lifting: full state and federal brackets, DFW suburb property rates, the live mortgage rate, and the Texas exemptions. Open Fine tune below and fit those extra fields (your cash, debts, mortgage rate, veteran and senior exemptions) to your situation for an even sharper estimate.</p>
 
     <form id="ccForm">
       <div class="cc-grid">
@@ -739,7 +753,7 @@ gtag('consent','default',{
 
       <details class="cc-finetune">
         <summary><svg class="chev" viewBox="0 0 28 28" fill="none" stroke="#B08D57" stroke-width="2" width="16" height="16" aria-hidden="true"><path d="M11 7l6 7-6 7"/></svg> Fine tune (optional, for an exact estimate)</summary>
-        <p class="ft-help">Leave these blank and we use sensible defaults: your state average property tax rate, 20 percent down, and the current national 30 year mortgage rate.</p>
+        <p class="ft-help">Leave these blank and we use sensible defaults: your state average property tax rate, a down payment equal to your home value minus about 7.5 percent selling costs, and the current national 30 year mortgage rate. Fill in the ones that match your situation for a more accurate number.</p>
         <div class="cc-grid">
           <div class="cc-field">
             <label for="ccCurProp">Current annual property tax paid</label>
@@ -752,7 +766,17 @@ gtag('consent','default',{
             <span class="hint">Car, student loans, credit cards. Prefilled with a typical $600, edit it for a sharper qualifying estimate, or set 0 if you have none.</span>
           </div>
           <div class="cc-field">
-            <label for="ccDown">Down payment</label>
+            <label for="ccCash">Cash you will bring (home sale or savings)</label>
+            <div class="cc-money"><input type="text" id="ccCash" inputmode="numeric" placeholder="auto from your home value" autocomplete="off"></div>
+            <span class="hint">This is your actual down payment, and it overrides the percent below. We default to your home value minus about 7.5 percent in selling costs (agent commissions and closing). Lower it if you still owe a mortgage, or raise it for extra savings.</span>
+          </div>
+          <div class="cc-field">
+            <label for="ccPreapp">Already pre-approved? (optional)</label>
+            <div class="cc-money"><input type="text" id="ccPreapp" inputmode="numeric" placeholder="your lender's amount" autocomplete="off"></div>
+            <span class="hint">If a lender already pre-approved you for a purchase price, enter it and we use that instead of estimating.</span>
+          </div>
+          <div class="cc-field">
+            <label for="ccDown">Down payment percent (fallback)</label>
             <select id="ccDown">
               <option value="20" selected>20 percent</option>
               <option value="10">10 percent</option>
@@ -760,6 +784,7 @@ gtag('consent','default',{
               <option value="3.5">3.5 percent</option>
               <option value="0">0 percent (VA)</option>
             </select>
+            <span class="hint">Only used when you leave the cash field above blank, for example if you rent and have no home-sale equity yet.</span>
           </div>
           <div class="cc-field">
             <label for="ccRate">Mortgage rate</label>
@@ -878,13 +903,14 @@ gtag('consent','default',{
       elSqft=$("ccSqft"), elSqftWrap=$("ccSqftWrap"),
       elOwnBtn=$("ccOwnBtn"), elRentBtn=$("ccRentBtn"),
       elIncome=$("ccIncome"), elHousehold=$("ccHousehold"),
-      elCurProp=$("ccCurProp"), elDebts=$("ccDebts"), elDown=$("ccDown"), elRate=$("ccRate"),
+      elCurProp=$("ccCurProp"), elDebts=$("ccDebts"), elCash=$("ccCash"), elPreapp=$("ccPreapp"), elDown=$("ccDown"), elRate=$("ccRate"),
       elVet=$("ccVet"), elSenior=$("ccSenior"),
       elForm=$("ccForm"), elResults=$("ccResults"), elFormErr=$("ccFormErr"), elCard=$("ccCard");
   var IS_RENT=false;
   var featuredSlug=null;     // current featured DFW suburb for property tax + PITI
   var dfwTarget=null;        // user-set target DFW home price for the featured suburb (null = use median)
-  var scenSort="price";      // suburb table sort: price | afford | schools | net
+  var scenSort="price";      // suburb table sort: price | afford | schools | net (fallback when no levers)
+  var leverOrder=[];         // multi-lever priority order, e.g. ["budget","schools"], weighted descending
   var lastModel=null;        // last computed model, for the email payload
 
   /* ======== NUMBER HELPERS ======== */
@@ -969,23 +995,33 @@ gtag('consent','default',{
     return Math.round(loan * r * Math.pow(1+r,n) / (Math.pow(1+r,n)-1));
   }
 
-  /* Loan-officer ballpark: the home price a household might qualify for, using the
-     standard 28/36 debt-to-income ratios at the current rate and down payment, with
-     a typical assumed monthly debt load. This is an education estimate, NOT a
-     pre-approval (the UI says so and points to a licensed lender). */
+  /* Loan-officer ballpark, EQUITY AWARE: a relocating family brings cash from selling
+     their current home, which is the down payment. Buying power = that cash down plus
+     the loan their income supports at a 43 percent debt-to-income ceiling. We solve for
+     the highest home price where (P&I on the financed balance) + DFW property tax +
+     insurance fits the income cap. A cash-heavy downsizer can afford far more than the
+     income-only number suggests. This is an education estimate, NOT a pre-approval. */
   var CC_ASSUMED_DEBTS = 600;   // typical other monthly debt (car, etc.), the prefill the user can override
   var CC_DTI = 0.43;            // back-end debt-to-income ceiling lenders commonly approve to (QM limit)
-  function maxQualifyingPrice(grossAnnual, downPct, ratePct, debts){
-    if(grossAnnual<=0) return 0;
-    var gm=grossAnnual/12;
-    var maxHousing=CC_DTI*gm - (debts||0);                          // housing + debts <= 43% of gross
-    if(maxHousing<=0) return 0;
-    // Binary search the home price whose all-in monthly (P&I + generic DFW tax + insurance) hits the cap.
-    var lo=0, hi=8000000;
-    for(var i=0;i<46;i++){
+  var CC_SELLING_COST = 0.075;  // ~6% agent commissions + ~1.5% closing, netted from home-sale equity
+  // Down payment for a given home price: the cash you bring overrides the percent.
+  // If you entered cash, that is your down payment (capped at the price); otherwise we
+  // fall back to the percent (for a renter or someone with no home-sale equity).
+  function downFor(price, cashDown, downPct){
+    return cashDown>0 ? Math.min(cashDown, price) : price*(downPct||0)/100;
+  }
+  function maxAffordablePrice(grossAnnual, ratePct, debts, cashDown, downPct){
+    cashDown = Math.max(0, cashDown||0);
+    var gm = grossAnnual>0 ? grossAnnual/12 : 0;
+    var maxHousing = Math.max(0, CC_DTI*gm - (debts||0));           // monthly room for P&I + tax + ins
+    if(maxHousing<=0 && cashDown<=0) return 0;
+    // Binary search the home price where the financed-balance payment + tax + insurance fits the cap.
+    var lo=0, hi=20000000;
+    for(var i=0;i<50;i++){
       var mid=(lo+hi)/2;
-      var pi=monthlyPI(mid*(1-downPct/100), ratePct);
-      var taxM=Math.max(0, mid-CC_DATA.homestead_isd)*0.017/12;     // ~1.7% effective after homestead, generic
+      var loan=Math.max(0, mid-downFor(mid, cashDown, downPct));    // cash (or the percent) comes off first
+      var pi=monthlyPI(loan, ratePct);
+      var taxM=Math.max(0, mid-CC_DATA.homestead_isd)*0.017/12;    // ~1.7% effective after homestead, generic
       var insM=insuranceRange(mid).mid/12;
       if(pi+taxM+insM > maxHousing) hi=mid; else lo=mid;
     }
@@ -1026,6 +1062,16 @@ gtag('consent','default',{
     var debtsRaw=elDebts ? String(elDebts.value).trim() : "";
     var debts=debtsRaw==="" ? CC_ASSUMED_DEBTS : toNum(debtsRaw);
     var debtsCustom=debtsRaw!=="" && Math.round(debts)!==CC_ASSUMED_DEBTS;
+    // Cash brought to the purchase (down payment): defaults to current home value MINUS
+    // about 7.5 percent selling costs (agent commissions plus closing), since that is the
+    // net equity they actually walk away with. User-adjustable.
+    var cashRaw=elCash ? String(elCash.value).trim() : "";
+    var cashDown=cashRaw!=="" ? toNum(cashRaw) : Math.round((budget||0)*(1-CC_SELLING_COST));
+    var cashCustom=cashRaw!=="";
+    // Pre-approval override: if a lender already approved a purchase price, use it directly.
+    var preRaw=elPreapp ? String(elPreapp.value).trim() : "";
+    var preApproval=preRaw!=="" ? toNum(preRaw) : 0;
+    var affordPrice = preApproval>0 ? preApproval : maxAffordablePrice(income, ratePct, debts, cashDown, downPct);
 
     var incomeSavings = stateIncomeTax(st, fs, income, hh);   // origin state tax = savings vs TX zero
     var originProp    = originPropertyTax(budget||0);         // on your current home value (0 if renting)
@@ -1057,7 +1103,8 @@ gtag('consent','default',{
       var tier = sizeMode ? tierForSize(s) : null;
       var dfwProp = dfwPropertyTax(slug, price);
       var ins     = insuranceRange(price);
-      var loan    = price * (1 - downPct/100);
+      var down    = downFor(price, cashDown, downPct);          // cash you bring overrides the percent
+      var loan    = price - down;
       var pi      = monthlyPI(loan, ratePct);
       var piti    = pi + Math.round(dfwProp/12) + Math.round(ins.mid/12);
       var propIncrease = dfwProp - originProp;                // can be negative
@@ -1070,12 +1117,12 @@ gtag('consent','default',{
         usedPpsf: tier ? tier.ppsf : (sizeMode ? s.ppsf : null),  // the PPSF we priced your size at
         tierLabel: tier && tier.label ? tier.label : null,    // which band matched your size
         tierLc: tier && tier.lc ? 1 : 0,                      // matched band is a small sample
-        dfwProp:dfwProp, ins:ins, pi:pi, piti:piti,
+        dfwProp:dfwProp, ins:ins, down:down, loan:loan, pi:pi, piti:piti,
         propIncrease:propIncrease, housingCost:housingCost, net:net,
         // compliance-safe scores (affordability, schools, commute), never safety
         vs:s.vs!=null?s.vs:null, edu:s.edu!=null?s.edu:null, com:s.com!=null?s.com:null,
-        // where the user's budget lands vs the home we are pricing (your size, or the typical home)
-        fit: budget==null ? null : (budget>=natural*1.05 ? "more" : (budget>=natural*0.85 ? "about" : "stretch"))
+        // affordability: can they buy this home, using equity-plus-income buying power
+        fit: affordPrice<=0 ? null : (natural<=affordPrice ? "more" : (natural<=affordPrice*1.12 ? "about" : "stretch"))
       };
     }
 
@@ -1102,8 +1149,8 @@ gtag('consent','default',{
       scenarios:scenarios, feat:feat, bestScen:bestScen, worstScen:worstScen,
       netMin:Math.min.apply(null,nets), netMax:Math.max.apply(null,nets),
       featured:featuredSlug, featuredName:CC_DATA.suburbs[featuredSlug].name, targetSet: !!(dfwTarget&&dfwTarget>0),
-      qualPrice: maxQualifyingPrice(income, downPct, ratePct, debts),   // loan-officer ballpark
-      qualDebts: debts, qualDebtsCustom: debtsCustom,
+      qualPrice: affordPrice,   // equity + income buying power, or pre-approval (the affordability anchor)
+      qualDebts: debts, qualDebtsCustom: debtsCustom, cashDown: cashDown, cashCustom: cashCustom, preApproval: preApproval,
       metro: elMetro.value || null, vet: elVet.value||null, senior: elSenior.checked
     };
   }
@@ -1179,6 +1226,16 @@ gtag('consent','default',{
   function render(m){
     var f=m.feat;                       // featured scenario (a real DFW home)
     var net=f.net, positive=net>=0;
+    // Describe the down payment actually used on a scenario: the cash you bring overrides
+    // the percent. Full cash purchase, partial cash, or the fallback percentage.
+    function downCopy(s){
+      if(m.cashDown>0){
+        if(s.down>=s.price) return money(s.price)+' paid in cash (no mortgage)';
+        var pctOfPrice = Math.round(s.down/s.price*100);
+        return money(s.down)+' down (your cash, about '+pctOfPrice+' percent) on '+money(s.price);
+      }
+      return (m.downPct===0?"0 percent down":m.downPct+" percent down")+' on '+money(s.price);
+    }
     var fileLabel=FILE_LABEL[m.filing]||m.filing;
     var best=m.bestScen, worst=m.worstScen;
     // Size-aware home descriptor: "a 2,400 sq ft " when we know the size, else "a typical ".
@@ -1239,14 +1296,27 @@ gtag('consent','default',{
         '<div class="item">'+IC.sun+'<div><b>Summer cooling and electricity</b><p>Texas heat means heavy air conditioning use and high summer electric bills, June through September. Texas runs a deregulated retail electricity market, so you choose your provider and plan. Budget for it from day one.</p></div></div>'+
       '</div>';
 
-    /* LOAN-OFFICER BALLPARK: what you might qualify for (income + down, typical debts) */
+    /* LOAN-OFFICER BALLPARK: equity-aware buying power (cash down + income loan) */
     var qual=m.qualPrice;
     if(qual>0){
       var qualFit=m.scenarios.filter(function(s){ return s.price<=qual; }).length;
+      var withinTail = qualFit?(' Of the suburbs below, <b>'+qualFit+'</b> have a '+(m.sizeMode?"home your size":"typical home")+' within that, marked with a green edge.'):(' At this budget, a '+(m.sizeMode?"home your size":"typical home")+' in these suburbs is a stretch; consider a smaller home or a more affordable suburb.');
+      var headBig, headSm;
+      if(m.preApproval>0){
+        headBig='Your lender pre-approved you for up to <span class="cc-gold">'+money(qual)+'</span>, so that is your shopping budget in DFW.';
+        headSm='You entered a pre-approval, so we use it directly instead of estimating. Confirm the final figure and rate with your lender, and remember it is a ceiling, not a target.'+withinTail;
+      } else {
+        var cashLine = m.cashDown>0
+          ? ('bringing about <b>'+money(m.cashDown)+'</b> in cash'+(m.cashCustom?'':' (your home value after about 7.5 percent selling costs, adjustable in Fine tune)'))
+          : 'with no cash down entered';
+        var debtLine = m.qualDebtsCustom ? ('the '+money(m.qualDebts)+' a month in other debts you entered') : ('about '+money(m.qualDebts)+' a month in typical other debts, which you can change in Fine tune');
+        headBig='At '+money(m.income)+' income and '+cashLine+' for the down payment, you could buy a home up to around <span class="cc-gold">'+money(qual)+'</span> in DFW.';
+        headSm='This combines your cash (your home-sale equity after agent commissions and closing) with the loan your income supports at a 43 percent debt to income ceiling, '+debtLine+', at the current '+m.ratePct+' percent rate. It is a planning ballpark, not a pre approval, so treat it as a ceiling. Already pre-approved? Enter your amount in Fine tune to use it instead. Get a true pre approval from a licensed lender before you shop.'+withinTail;
+      }
       h+='<div class="cc-secblock"><div class="cc-xlate">'+
-          '<div style="font:600 1.1rem/1.3 \'Cormorant Garamond\',Georgia,serif;color:var(--cc-navy);margin:0 0 .4rem;">A loan officer ballpark, what you might qualify for</div>'+
-          '<p class="big">At '+money(m.income)+' income with '+m.downPct+' percent down, a rough 43 percent debt to income estimate puts you around <span class="cc-gold">'+money(qual)+'</span> in home price.</p>'+
-          '<p class="sm">This is a planning ballpark, not a pre approval. It uses '+(m.qualDebtsCustom?('the <b>'+money(m.qualDebts)+' a month</b> in other debts you entered'):('about '+money(m.qualDebts)+' a month in typical other debts, a car payment and the like, which you can change in Fine tune'))+', plus the current '+m.ratePct+' percent rate. 43 percent is roughly the most lenders approve, so read this as a ceiling, not a target, a comfortable monthly budget is usually lower. Your real number depends on your credit, debts, and the lender, so get a true pre approval from a licensed lender before you shop.'+(qualFit?(' Of the suburbs below, <b>'+qualFit+'</b> have a '+(m.sizeMode?"home your size":"typical home")+' at or under that, marked with a green edge.'):'')+'</p>'+
+          '<div style="font:600 1.1rem/1.3 \'Cormorant Garamond\',Georgia,serif;color:var(--cc-navy);margin:0 0 .4rem;">'+(m.preApproval>0?'Your pre-approval, what you can shop for':'What you can afford, a loan officer ballpark')+'</div>'+
+          '<p class="big">'+headBig+'</p>'+
+          '<p class="sm">'+headSm+'</p>'+
         '</div></div>';
     }
 
@@ -1258,23 +1328,37 @@ gtag('consent','default',{
     h+='<div class="cc-secblock">'+
         '<h3>'+IC.home+'What your money gets you across DFW</h3>'+
         '<p class="note">'+scenIntro+'</p>';
-    // light priority sort + cross-link to the full matcher for deep priority ranking
-    var sortOpts=[["price","Home price"],["afford","Affordability"],["schools","Schools"],["net","Lowest yearly cost"]];
-    h+='<div class="cc-target" style="margin:0 0 12px;">'+
-        '<label for="ccSort">Sort by</label>'+
-        '<select id="ccSort">'+sortOpts.map(function(o){ return '<option value="'+o[0]+'"'+(scenSort===o[0]?' selected':'')+'>'+o[1]+'</option>'; }).join("")+'</select>'+
-        '<a class="explore" href="/find-your-dfw-suburb" style="margin-left:auto;">Rank all your priorities in the matcher '+IC.arrow+'</a>'+
+    // MULTI-LEVER PRIORITY: tap levers in priority order, table ranks by a weighted blend.
+    // Compliance-safe levers only (budget fit, schools, value, yearly cost), never safety.
+    var LEVERS=[["budget","Budget fit"],["schools","Schools"],["value","Best value"],["cost","Lower yearly cost"]];
+    var nMin=m.netMin, nMax=m.netMax, nRange=(nMax-nMin)||1;
+    function leverScore(s, lev){
+      if(lev==="budget") return qual>0 ? (s.price<=qual?100:Math.max(0,100-(s.price/qual-1)*150)) : 50;
+      if(lev==="schools") return s.edu!=null?s.edu:50;
+      if(lev==="value") return s.vs!=null?s.vs:50;
+      if(lev==="cost") return (s.net-nMin)/nRange*100;
+      return 50;
+    }
+    function leverWeighted(s){
+      if(!leverOrder.length) return 0;
+      var W=[0.40,0.30,0.20,0.10], sw=0, sc=0;
+      leverOrder.forEach(function(lev,i){ var w=W[i]||0.05; sw+=w; sc+=w*leverScore(s,lev); });
+      return sw>0?sc/sw:0;
+    }
+    var leverHtml=LEVERS.map(function(L){ var i=leverOrder.indexOf(L[0]); var on=i>=0;
+      return '<button type="button" class="cc-lever'+(on?' on':'')+'" data-lev="'+L[0]+'">'+(on?'<span class="rank">'+(i+1)+'</span>':'')+L[1]+'</button>'; }).join("");
+    h+='<div class="cc-levers">'+
+        '<div class="lv-lead">What matters most to your family? <b>Tap in priority order</b> and we reorder the suburbs to fit. We never rank by safety or crime.</div>'+
+        '<div class="lv-row">'+leverHtml+(leverOrder.length?'<button type="button" class="lv-clear" id="ccLvClear">clear</button>':'')+
+        '<a class="explore lv-link" href="/find-your-dfw-suburb">Full priority matcher '+IC.arrow+'</a></div>'+
+        (leverOrder.indexOf("schools")>=0?'<p style="font-size:.78rem;color:#999;margin:.6rem 0 0;line-height:1.5;">All ten of these suburbs are top-rated school districts, so Schools is close to a tie here, your other priorities do the sorting. To compare districts in depth across the whole metro, see the <a href="/dfw-school-districts" style="color:var(--cc-gold);">school district guide</a>.</p>':'')+
       '</div>';
     var sorted=m.scenarios.slice();
-    if(scenSort==="afford") sorted.sort(function(a,b){ return (b.vs||0)-(a.vs||0); });
-    else if(scenSort==="schools") sorted.sort(function(a,b){ return (b.edu||0)-(a.edu||0); });
-    else if(scenSort==="net") sorted.sort(function(a,b){ return b.net-a.net; });
+    if(leverOrder.length) sorted.sort(function(a,b){ return leverWeighted(b)-leverWeighted(a); });
     else sorted.sort(function(a,b){ return a.price-b.price; });
     var rows=sorted.map(function(s){
       var npos=s.net>=0;
-      var fitWord = m.sizeMode
-        ? (s.fit==="more"?"within budget":s.fit==="about"?"right at budget":"over budget")
-        : (s.fit==="more"?"buys more":s.fit==="about"?"about right":"a stretch");
+      var fitWord = s.fit==="more"?"within budget":s.fit==="about"?"a bit over":"over budget";
       var fitTag = s.fit ? '<span class="cc-fit '+s.fit+'">'+fitWord+'</span>' : '<span style="color:#bbb;">&middot;</span>';
       var homeCell = m.sizeMode
         ? money(s.price)+'<span class="sub">'+fmt(m.sqft)+' sq ft</span>'
@@ -1298,7 +1382,7 @@ gtag('consent','default',{
         '<p style="font-size:.74rem;color:#999;margin:6px 2px 0;line-height:1.5;">Schools is the area education score and Affordability is the value score (price relative to income, schools per dollar, and taxes), both from our suburb data and refreshed monthly. We never rank by safety or crime; for that, review <a href="https://www.neighborhoodscout.com" target="_blank" rel="noopener nofollow">NeighborhoodScout</a> or <a href="https://www.city-data.com" target="_blank" rel="noopener nofollow">City-Data</a> and decide for yourself.</p>';
     // Two different questions, called out so the affordability tag and the net never
     // read as a contradiction (you can comfortably afford a home that still nets negative).
-    var clarify = ' Two different things here: <b>Afford it</b> is whether your budget covers that home, while <b>Your net</b> is the yearly property tax and insurance math after your income tax savings. In Texas a home you can easily afford can still net a little negative, because the property tax and insurance run higher than what you saved on income tax. That is the honest tradeoff.';
+    var clarify = ' Two different things here: <b>Afford it</b> is whether your buying power (the cash you bring plus the loan your income supports) covers that home, while <b>Your net</b> is the yearly property tax and insurance math after your income tax savings. In Texas a home you can easily afford can still net a little negative, because the property tax and insurance run higher than what you saved on income tax. That is the honest tradeoff.';
     var budgetNote;
     if(m.budget && m.sizeMode){
       budgetNote = 'Each suburb is priced for a home your size ('+fmt(m.sqft)+' sq ft). Your budget of '+money(m.budget)+' covers it where it shows "within budget," and falls short where a same size home costs more.'+clarify;
@@ -1321,7 +1405,7 @@ gtag('consent','default',{
         '<div class="cc-pmt">'+
           '<div class="box pi"><div class="k">Principal and interest (precise)</div>'+
             '<div class="v">'+money(f.pi)+'<small> /mo</small></div>'+
-            '<div class="d">The clean, apples to apples number. '+ (m.downPct===0?"0 percent down":m.downPct+" percent down") +' on '+money(f.price)+' at '+m.ratePct+' percent, 30 year fixed. Compare this from home to home.</div></div>'+
+            '<div class="d">The clean, apples to apples number. '+ downCopy(f) +' at '+m.ratePct+' percent, 30 year fixed. Compare this from home to home.</div></div>'+
           '<div class="box"><div class="k">Estimated all in (PITI)</div>'+
             '<div class="v">'+money(f.piti)+'<small> /mo</small></div>'+
             '<div class="d">What you would actually budget. An estimate: see the limitations below.</div></div>'+
@@ -1445,8 +1529,15 @@ gtag('consent','default',{
     }
     var tgtReset=$("ccTargetReset");
     if(tgtReset){ tgtReset.addEventListener("click", function(){ dfwTarget=null; recompute(); }); }
-    var sortSel=$("ccSort");
-    if(sortSel){ sortSel.addEventListener("change", function(){ scenSort=sortSel.value; recompute(); }); }
+    Array.prototype.forEach.call(document.querySelectorAll(".cc-lever"), function(btn){
+      btn.addEventListener("click", function(){
+        var lev=btn.getAttribute("data-lev"); var i=leverOrder.indexOf(lev);
+        if(i>=0) leverOrder.splice(i,1); else leverOrder.push(lev);
+        recompute();
+      });
+    });
+    var lvClear=$("ccLvClear");
+    if(lvClear){ lvClear.addEventListener("click", function(){ leverOrder=[]; recompute(); }); }
     $("ccLeadForm").addEventListener("submit", function(e){ e.preventDefault(); submitLead(); });
   }
   /* arrow icon (defined after IC for use in template) */
@@ -1470,7 +1561,7 @@ gtag('consent','default',{
     }
     elFormErr.classList.add("cc-hidden");
     featuredSlug = IS_RENT ? "frisco" : closestSuburb(toNum(elHome.value));
-    dfwTarget = null; scenSort = "price";
+    dfwTarget = null; scenSort = "price"; leverOrder = [];
     recompute();
   }
   function recompute(){
@@ -1575,7 +1666,7 @@ gtag('consent','default',{
     elState.addEventListener("change", onStateChange);
     elOwnBtn.addEventListener("click", function(){ setOwnRent(false); });
     elRentBtn.addEventListener("click", function(){ setOwnRent(true); });
-    groupThousands(elHome); groupThousands(elIncome); groupThousands(elCurProp); if(elSqft){ groupThousands(elSqft); } if(elDebts){ groupThousands(elDebts); }
+    groupThousands(elHome); groupThousands(elIncome); groupThousands(elCurProp); if(elSqft){ groupThousands(elSqft); } if(elDebts){ groupThousands(elDebts); } if(elCash){ groupThousands(elCash); } if(elPreapp){ groupThousands(elPreapp); }
     elRate.value = CC_DATA.fredRate;
     elForm.addEventListener("submit", function(e){ e.preventDefault(); compute(); });
   }
