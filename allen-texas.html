@@ -1455,6 +1455,32 @@ gtag('consent','default',{
 
   <p style="font-size:0.75rem;color:#aaa;margin-bottom:1rem;">Source: NTREIS via 10K Research InfoSparks · <span id="kc-mkt-updated">Most recent available month, 2026</span> · Single-family residential only</p>
 
+  <!-- NTREIS price-depth & supply metrics · live from data layer (kc-blog-live), refreshes with the monthly scrape · never hardcode -->
+  <div class="kc-grid kc-grid--4" style="margin-bottom:1rem;">
+    <div class="kc-card kc-card--navy" style="text-align:center;">
+      <h4 style="margin-bottom:0.5rem;">Average Sale Price</h4>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="allen" data-field="sfr_avg_price">$551K</span></p>
+      <p style="font-size:0.78rem;color:#666;margin:0;">12-month average · median is <span class="kc-blog-live" data-suburb="allen" data-field="sfr_median_price">$516K</span></p>
+    </div>
+    <div class="kc-card kc-card--navy" style="text-align:center;">
+      <h4 style="margin-bottom:0.5rem;">Price per Sq Ft</h4>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="allen" data-field="sfr_median_price_per_sqft">$210</span></p>
+      <p style="font-size:0.78rem;color:#666;margin:0;">Median, single-family · 12-month</p>
+    </div>
+    <div class="kc-card kc-card--navy" style="text-align:center;">
+      <h4 style="margin-bottom:0.5rem;">Sale to Original List</h4>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="allen" data-field="sfr_pct_of_original_price">96.4%</span></p>
+      <p style="font-size:0.78rem;color:#666;margin:0;">Share of original list price homes sell for</p>
+    </div>
+    <div class="kc-card kc-card--navy" style="text-align:center;">
+      <h4 style="margin-bottom:0.5rem;">Active Inventory</h4>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="allen" data-field="sfr_inventory">280</span></p>
+      <p style="font-size:0.78rem;color:#666;margin:0;">Single-family homes listed · current supply</p>
+    </div>
+  </div>
+
+  <p>A few more numbers worth knowing if you are weighing an offer in Allen. Over the trailing 12 months, single-family homes sold for a median of <span class="kc-blog-live" data-suburb="allen" data-field="sfr_median_price">$516K</span> and an average of <span class="kc-blog-live" data-suburb="allen" data-field="sfr_avg_price">$551K</span>, which works out to about <span class="kc-blog-live" data-suburb="allen" data-field="sfr_median_price_per_sqft">$210</span> per square foot. Homes here sold for roughly <span class="kc-blog-live" data-suburb="allen" data-field="sfr_pct_of_original_price">96.4%</span> of their original list price, which gives you a sense of how much room buyers have typically had to negotiate. As of the latest data, about <span class="kc-blog-live" data-suburb="allen" data-field="sfr_inventory">280</span> single-family homes were actively listed. These are NTREIS figures (the price metrics are 12-month rolling, inventory is current active supply), and your own price per square foot and negotiating room will vary by neighborhood, age of home, and finish level.</p>
+
   <p>Allen offers one of the best value propositions in Collin County right now. At a median SFR price around $520K, it sits comfortably below Frisco (~$681K) and above McKinney (~$496K), while sharing access to the same caliber of Collin County school systems. With 33 days on market and a balanced 3.4 months of supply, the Allen market is competitive but not frenzied. Buyers have more room to negotiate than they did in 2021–22, and sellers are still seeing solid demand.</p>
 
   <p>The diversity of Allen's housing stock is a real advantage: you can find a well-maintained 1990s home in Villages of Allen in the mid-$300Ks, a Stone Bridge Ranch four-bedroom in the $450K–$550K range, or a Twin Creeks executive home over $800K. Whatever budget you bring to Allen ISD, there's typically something that works.</p>
@@ -2246,6 +2272,33 @@ function kcToggleFaq(btn) {
     btn.setAttribute('aria-expanded','true');
   }
 }
+</script>
+
+<script>
+/* NTREIS market metrics: live auto-refresh (kc-blog-live span pattern).
+   Pulls from the data layer so values update with the monthly NTREIS scrape.
+   Self-contained: independent of this page's other market scripts. Never hardcode. */
+(function kcLiveNtreisSpans(){
+  var DATA_URL='https://raw.githubusercontent.com/whymovetodallas/whymovetodallas-data/main/suburb-profiles.json';
+  var nodes=document.querySelectorAll('.kc-blog-live[data-suburb][data-field]');
+  if(!nodes.length||!window.fetch)return;
+  fetch(DATA_URL,{cache:'no-cache'})
+    .then(function(r){return r.ok?r.json():Promise.reject();})
+    .then(function(data){
+      var suburbs=data&&data.suburbs;if(!suburbs)return;
+      nodes.forEach(function(el){
+        var s=suburbs[el.dataset.suburb];if(!s)return;
+        var m=s.market||{};var f=el.dataset.field;var v=null;
+        if(f==='sfr_avg_price'&&m.sfr_avg_price!=null)v='$'+Math.round(m.sfr_avg_price/1000)+'K';
+        else if(f==='sfr_median_price'&&m.sfr_median_price!=null)v='$'+Math.round(m.sfr_median_price/1000)+'K';
+        else if(f==='sfr_median_price_per_sqft'&&m.sfr_median_price_per_sqft!=null)v='$'+Math.round(m.sfr_median_price_per_sqft);
+        else if(f==='sfr_pct_of_original_price'&&m.sfr_pct_of_original_price!=null)v=(Math.round(m.sfr_pct_of_original_price*10)/10)+'%';
+        else if(f==='sfr_inventory'&&m.sfr_inventory!=null)v=Math.round(m.sfr_inventory).toLocaleString();
+        if(v!=null)el.textContent=v;
+      });
+    })
+    .catch(function(){});
+})();
 </script>
 
 <!-- Suburb Matcher CTA (injected) -->

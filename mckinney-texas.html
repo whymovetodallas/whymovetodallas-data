@@ -1245,6 +1245,32 @@ gtag('consent','default',{
   </div>
   <p style="font-size:0.8rem;color:#888;margin-top:-1rem;margin-bottom:1.5rem;">Source: NTREIS via 10K Research · All figures are 12-month rolling periods · Updated <span id="kc-mkt-updated">May 2025</span></p>
 
+  <!-- NTREIS price-depth & supply metrics · live from data layer (kc-blog-live), refreshes with the monthly scrape · never hardcode -->
+  <div class="kc-grid kc-grid--4" style="margin-bottom:1rem;">
+    <div class="kc-card kc-card--navy" style="text-align:center;">
+      <h4 style="margin-bottom:0.5rem;">Average Sale Price</h4>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="mckinney" data-field="sfr_avg_price">$544K</span></p>
+      <p style="font-size:0.78rem;color:#666;margin:0;">12-month average · median is <span class="kc-blog-live" data-suburb="mckinney" data-field="sfr_median_price">$498K</span></p>
+    </div>
+    <div class="kc-card kc-card--navy" style="text-align:center;">
+      <h4 style="margin-bottom:0.5rem;">Price per Sq Ft</h4>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="mckinney" data-field="sfr_median_price_per_sqft">$205</span></p>
+      <p style="font-size:0.78rem;color:#666;margin:0;">Median, single-family · 12-month</p>
+    </div>
+    <div class="kc-card kc-card--navy" style="text-align:center;">
+      <h4 style="margin-bottom:0.5rem;">Sale to Original List</h4>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="mckinney" data-field="sfr_pct_of_original_price">95%</span></p>
+      <p style="font-size:0.78rem;color:#666;margin:0;">Share of original list price homes sell for</p>
+    </div>
+    <div class="kc-card kc-card--navy" style="text-align:center;">
+      <h4 style="margin-bottom:0.5rem;">Active Inventory</h4>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="mckinney" data-field="sfr_inventory">1,054</span></p>
+      <p style="font-size:0.78rem;color:#666;margin:0;">Single-family homes listed · current supply</p>
+    </div>
+  </div>
+
+  <p>A few more numbers worth knowing if you are weighing an offer in McKinney. Over the trailing 12 months, single-family homes sold for a median of <span class="kc-blog-live" data-suburb="mckinney" data-field="sfr_median_price">$498K</span> and an average of <span class="kc-blog-live" data-suburb="mckinney" data-field="sfr_avg_price">$544K</span>, which works out to about <span class="kc-blog-live" data-suburb="mckinney" data-field="sfr_median_price_per_sqft">$205</span> per square foot. Homes here sold for roughly <span class="kc-blog-live" data-suburb="mckinney" data-field="sfr_pct_of_original_price">95%</span> of their original list price, which gives you a sense of how much room buyers have typically had to negotiate. As of the latest data, about <span class="kc-blog-live" data-suburb="mckinney" data-field="sfr_inventory">1,054</span> single-family homes were actively listed. These are NTREIS figures (the price metrics are 12-month rolling, inventory is current active supply), and your own price per square foot and negotiating room will vary by neighborhood, age of home, and finish level.</p>
+
   <p>McKinney is in a balanced market with a months supply hovering near 3.9, conditions have normalized from the 2021–2022 seller's market frenzy. Buyers have more negotiating room than in Frisco or Prosper, and the city's large transaction volume (3,462 SFR closings in 12 months) means active inventory across all price points. Both resale homes and new construction from builders like Toll Brothers, Highland Homes, and David Weekley are active in Craig Ranch, Stonebridge Ranch expansion areas, and newer northern neighborhoods.</p>
 
   
@@ -1938,6 +1964,33 @@ document.querySelectorAll('.kc-jumpnav-list a').forEach(function(a) {
     })
     .catch(function() {});
 }());
+</script>
+
+<script>
+/* NTREIS market metrics: live auto-refresh (kc-blog-live span pattern).
+   Pulls from the data layer so values update with the monthly NTREIS scrape.
+   Self-contained: independent of this page's other market scripts. Never hardcode. */
+(function kcLiveNtreisSpans(){
+  var DATA_URL='https://raw.githubusercontent.com/whymovetodallas/whymovetodallas-data/main/suburb-profiles.json';
+  var nodes=document.querySelectorAll('.kc-blog-live[data-suburb][data-field]');
+  if(!nodes.length||!window.fetch)return;
+  fetch(DATA_URL,{cache:'no-cache'})
+    .then(function(r){return r.ok?r.json():Promise.reject();})
+    .then(function(data){
+      var suburbs=data&&data.suburbs;if(!suburbs)return;
+      nodes.forEach(function(el){
+        var s=suburbs[el.dataset.suburb];if(!s)return;
+        var m=s.market||{};var f=el.dataset.field;var v=null;
+        if(f==='sfr_avg_price'&&m.sfr_avg_price!=null)v='$'+Math.round(m.sfr_avg_price/1000)+'K';
+        else if(f==='sfr_median_price'&&m.sfr_median_price!=null)v='$'+Math.round(m.sfr_median_price/1000)+'K';
+        else if(f==='sfr_median_price_per_sqft'&&m.sfr_median_price_per_sqft!=null)v='$'+Math.round(m.sfr_median_price_per_sqft);
+        else if(f==='sfr_pct_of_original_price'&&m.sfr_pct_of_original_price!=null)v=(Math.round(m.sfr_pct_of_original_price*10)/10)+'%';
+        else if(f==='sfr_inventory'&&m.sfr_inventory!=null)v=Math.round(m.sfr_inventory).toLocaleString();
+        if(v!=null)el.textContent=v;
+      });
+    })
+    .catch(function(){});
+})();
 </script>
 
 <!-- Suburb Matcher CTA (injected) -->
