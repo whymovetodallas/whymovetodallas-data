@@ -1250,28 +1250,51 @@ gtag('consent','default',{
     <h2>DeSoto Real Estate Market: What to Expect</h2>
   </div>
 
-  <div class="kc-grid kc-grid--4" style="margin-bottom:2rem;">
+    <!-- KC-NTREIS-CARDS:START  unified market metrics, live via kc-blog-live + kcUnifiedMarketCards loader, refreshes with the monthly NTREIS scrape, never hardcode -->
+  <div class="kc-grid kc-grid--4" style="margin-bottom:1rem;">
     <div class="kc-card kc-card--navy" style="text-align:center;">
       <h4 style="margin-bottom:0.5rem;">Median Sale Price</h4>
-      <p id="kc-mkt-price" style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;">$356K</p>
-      <p id="kc-mkt-price-sub" style="font-size:0.78rem;color:#666;margin:0;">12-month rolling avg · single-family</p>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="desoto" data-field="sfr_median_price">$354K</span></p>
+      <p style="font-size:0.78rem;color:#666;margin:0;">12-month rolling avg · single-family</p>
+    </div>
+    <div class="kc-card kc-card--navy" style="text-align:center;">
+      <h4 style="margin-bottom:0.5rem;">Average Sale Price</h4>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="desoto" data-field="sfr_avg_price">$378K</span></p>
+      <p style="font-size:0.78rem;color:#666;margin:0;">12-month rolling avg · single-family</p>
+    </div>
+    <div class="kc-card kc-card--navy" style="text-align:center;">
+      <h4 style="margin-bottom:0.5rem;">Price per Sq Ft</h4>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="desoto" data-field="sfr_median_price_per_sqft">$154</span></p>
+      <p style="font-size:0.78rem;color:#666;margin:0;">Median · 12-month rolling</p>
+    </div>
+    <div class="kc-card kc-card--navy" style="text-align:center;">
+      <h4 style="margin-bottom:0.5rem;">Sale to Original List</h4>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="desoto" data-field="sfr_pct_of_original_price">96.6%</span></p>
+      <p style="font-size:0.78rem;color:#666;margin:0;">12-month rolling · share of original list price</p>
     </div>
     <div class="kc-card kc-card--navy" style="text-align:center;">
       <h4 style="margin-bottom:0.5rem;">Days on Market</h4>
-      <p id="kc-mkt-dom" style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;">43 days</p>
-      <p id="kc-mkt-dom-sub" style="font-size:0.78rem;color:#666;margin:0;">12-month rolling avg · median</p>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="desoto" data-field="sfr_days_on_market">42 days</span></p>
+      <p style="font-size:0.78rem;color:#666;margin:0;">Median · 12-month rolling</p>
     </div>
     <div class="kc-card kc-card--navy" style="text-align:center;">
       <h4 style="margin-bottom:0.5rem;">Months Supply</h4>
-      <p id="kc-mkt-msi" style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;">4.5 mo.</p>
-      <p id="kc-mkt-msi-sub" style="font-size:0.78rem;color:#666;margin:0;">Balanced market · 12-month calculation</p>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="desoto" data-field="sfr_months_supply">4.4 mo.</span></p>
+      <p style="font-size:0.78rem;color:#666;margin:0;"><span class="kc-blog-live" data-suburb="desoto" data-field="market_condition">Balanced</span> market · 12-month</p>
+    </div>
+    <div class="kc-card kc-card--navy" style="text-align:center;">
+      <h4 style="margin-bottom:0.5rem;">Active Inventory</h4>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="desoto" data-field="sfr_inventory">176</span></p>
+      <p style="font-size:0.78rem;color:#666;margin:0;">Current active supply · single-family</p>
     </div>
     <div class="kc-card kc-card--navy" style="text-align:center;">
       <h4 style="margin-bottom:0.5rem;">Closed Sales</h4>
-      <p id="kc-mkt-cs" style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;">446</p>
-      <p id="kc-mkt-cs-sub" style="font-size:0.78rem;color:#666;margin:0;">12-month total · single-family</p>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="desoto" data-field="sfr_closed_sales_12mo">437</span></p>
+      <p style="font-size:0.78rem;color:#666;margin:0;">12-month total · single-family</p>
     </div>
   </div>
+  <p>A few more numbers worth knowing if you are weighing an offer in DeSoto. Over the trailing 12 months, single-family homes sold for a median of <span class="kc-blog-live" data-suburb="desoto" data-field="sfr_median_price">$354K</span> and an average of <span class="kc-blog-live" data-suburb="desoto" data-field="sfr_avg_price">$378K</span>, which works out to about <span class="kc-blog-live" data-suburb="desoto" data-field="sfr_median_price_per_sqft">$154</span> per square foot. Homes here sold for roughly <span class="kc-blog-live" data-suburb="desoto" data-field="sfr_pct_of_original_price">96.6%</span> of their original list price, which gives you a sense of how much room buyers have typically had to negotiate. As of the latest data, about <span class="kc-blog-live" data-suburb="desoto" data-field="sfr_inventory">176</span> single-family homes were actively listed. These are NTREIS figures (the price metrics are 12-month rolling, inventory is current active supply), and your own price per square foot and negotiating room will vary by neighborhood, age of home, and finish level.</p>
+  <!-- KC-NTREIS-CARDS:END -->
   <p style="font-size:0.8rem;color:#888;margin-top:-1rem;margin-bottom:1.5rem;">Source: NTREIS via 10K Research · All figures are 12-month rolling periods · Updated <span id="kc-mkt-updated">May 2026</span></p>
 
   <p>DeSoto operates in a genuinely balanced market, 4.5 months of supply puts it squarely between the seller's markets of 2021–2023 and the buyer's drift of 2024. At a $356K median, it is consistently the most affordable single-family market in Dallas County among established cities. Days on market has normalized to the mid-40s, meaning well-priced homes move in 4–6 weeks rather than days. The condo and townhome market in DeSoto is essentially non-existent, this is an overwhelmingly single-family city, which reflects its housing stock and demographics rather than a product gap.</p>

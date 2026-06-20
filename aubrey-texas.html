@@ -1196,28 +1196,51 @@ gtag('consent','default',{
   <div class="kc-section">
     <span class="kc-eyebrow">Real Estate Market</span>
     <h2>Aubrey Housing Market</h2>
-    <div class="kc-grid kc-grid--4">
-      <div class="kc-card kc-card--navy">
-        <h4 style="font-size:0.7rem;text-transform:uppercase;color:#aaa;margin-bottom:0.4rem;">Median Sale Price</h4>
-        <p id="kc-mkt-price" style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;">~$350K</p>
-        <p id="kc-mkt-price-sub" style="font-size:0.78rem;color:#666;margin:0;">12-month rolling avg · single-family</p>
-      </div>
-      <div class="kc-card kc-card--navy">
-        <h4 style="font-size:0.7rem;text-transform:uppercase;color:#aaa;margin-bottom:0.4rem;">Days on Market</h4>
-        <p id="kc-mkt-dom" style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;">48 days</p>
-        <p id="kc-mkt-dom-sub" style="font-size:0.78rem;color:#666;margin:0;">12-month rolling avg · median</p>
-      </div>
-      <div class="kc-card kc-card--navy">
-        <h4 style="font-size:0.7rem;text-transform:uppercase;color:#aaa;margin-bottom:0.4rem;">Months Supply</h4>
-        <p id="kc-mkt-msi" style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;">6.0 mo.</p>
-        <p id="kc-mkt-msi-sub" style="font-size:0.78rem;color:#666;margin:0;">Balanced market · 12-month calculation</p>
-      </div>
-      <div class="kc-card kc-card--navy">
-        <h4 style="font-size:0.7rem;text-transform:uppercase;color:#aaa;margin-bottom:0.4rem;">Closed Sales</h4>
-        <p id="kc-mkt-cs" style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;">927</p>
-        <p id="kc-mkt-cs-sub" style="font-size:0.78rem;color:#666;margin:0;">12-month total · single-family</p>
-      </div>
+      <!-- KC-NTREIS-CARDS:START  unified market metrics, live via kc-blog-live + kcUnifiedMarketCards loader, refreshes with the monthly NTREIS scrape, never hardcode -->
+  <div class="kc-grid kc-grid--4" style="margin-bottom:1rem;">
+    <div class="kc-card kc-card--navy" style="text-align:center;">
+      <h4 style="margin-bottom:0.5rem;">Median Sale Price</h4>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="aubrey" data-field="sfr_median_price">$347K</span></p>
+      <p style="font-size:0.78rem;color:#666;margin:0;">12-month rolling avg · single-family</p>
     </div>
+    <div class="kc-card kc-card--navy" style="text-align:center;">
+      <h4 style="margin-bottom:0.5rem;">Average Sale Price</h4>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="aubrey" data-field="sfr_avg_price">$395K</span></p>
+      <p style="font-size:0.78rem;color:#666;margin:0;">12-month rolling avg · single-family</p>
+    </div>
+    <div class="kc-card kc-card--navy" style="text-align:center;">
+      <h4 style="margin-bottom:0.5rem;">Price per Sq Ft</h4>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="aubrey" data-field="sfr_median_price_per_sqft">$173</span></p>
+      <p style="font-size:0.78rem;color:#666;margin:0;">Median · 12-month rolling</p>
+    </div>
+    <div class="kc-card kc-card--navy" style="text-align:center;">
+      <h4 style="margin-bottom:0.5rem;">Sale to Original List</h4>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="aubrey" data-field="sfr_pct_of_original_price">94.3%</span></p>
+      <p style="font-size:0.78rem;color:#666;margin:0;">12-month rolling · share of original list price</p>
+    </div>
+    <div class="kc-card kc-card--navy" style="text-align:center;">
+      <h4 style="margin-bottom:0.5rem;">Days on Market</h4>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="aubrey" data-field="sfr_days_on_market">47 days</span></p>
+      <p style="font-size:0.78rem;color:#666;margin:0;">Median · 12-month rolling</p>
+    </div>
+    <div class="kc-card kc-card--navy" style="text-align:center;">
+      <h4 style="margin-bottom:0.5rem;">Months Supply</h4>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="aubrey" data-field="sfr_months_supply">5.9 mo.</span></p>
+      <p style="font-size:0.78rem;color:#666;margin:0;"><span class="kc-blog-live" data-suburb="aubrey" data-field="market_condition">Balanced</span> market · 12-month</p>
+    </div>
+    <div class="kc-card kc-card--navy" style="text-align:center;">
+      <h4 style="margin-bottom:0.5rem;">Active Inventory</h4>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="aubrey" data-field="sfr_inventory">434</span></p>
+      <p style="font-size:0.78rem;color:#666;margin:0;">Current active supply · single-family</p>
+    </div>
+    <div class="kc-card kc-card--navy" style="text-align:center;">
+      <h4 style="margin-bottom:0.5rem;">Closed Sales</h4>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="aubrey" data-field="sfr_closed_sales_12mo">976</span></p>
+      <p style="font-size:0.78rem;color:#666;margin:0;">12-month total · single-family</p>
+    </div>
+  </div>
+  <p>A few more numbers worth knowing if you are weighing an offer in Aubrey. Over the trailing 12 months, single-family homes sold for a median of <span class="kc-blog-live" data-suburb="aubrey" data-field="sfr_median_price">$347K</span> and an average of <span class="kc-blog-live" data-suburb="aubrey" data-field="sfr_avg_price">$395K</span>, which works out to about <span class="kc-blog-live" data-suburb="aubrey" data-field="sfr_median_price_per_sqft">$173</span> per square foot. Homes here sold for roughly <span class="kc-blog-live" data-suburb="aubrey" data-field="sfr_pct_of_original_price">94.3%</span> of their original list price, which gives you a sense of how much room buyers have typically had to negotiate. As of the latest data, about <span class="kc-blog-live" data-suburb="aubrey" data-field="sfr_inventory">434</span> single-family homes were actively listed. These are NTREIS figures (the price metrics are 12-month rolling, inventory is current active supply), and your own price per square foot and negotiating room will vary by neighborhood, age of home, and finish level.</p>
+  <!-- KC-NTREIS-CARDS:END -->
 
     <p style="margin-top:1.5rem;"><a href="https://kristencarpentier.expportal.com/aubrey-texas-homes-for-sale" class="kc-btn" target="_blank" rel="noopener">View Current Listings &rarr;</a></p>
 
