@@ -1336,6 +1336,44 @@ gtag('consent','default',{
     <h2>Trophy Club Housing Market</h2>
   </div>
 
+    <!-- KC-TIER-BANDS:START  price-band cards + "what your money buys" note, baked by tools/generate-tier-bands.cjs; values refresh live via suburb-data.js -->
+  <div id="kc-market-bands" class="kc-grid kc-grid--4" style="margin-bottom:1rem;">
+    <div class="kc-band kc-band--lowconf" data-band="starter">
+      <span class="kc-band-label">Starter</span>
+      <span class="kc-band-range">Under $400K</span>
+      <span class="kc-band-price">$379K</span>
+      <span class="kc-band-sqft">≈ 1,640 sq ft · $231/sq ft</span>
+      <span class="kc-band-bar"><span class="kc-band-bar-fill" style="width:1%;"></span></span>
+      <span class="kc-band-share">1% of sales · 3 closed</span>
+    </div>
+    <div class="kc-band kc-band--lead" data-band="typical">
+      <span class="kc-band-ribbon">Most homes sell here</span>
+      <span class="kc-band-label">Typical</span>
+      <span class="kc-band-range">$400K to $700K</span>
+      <span class="kc-band-price">$555K</span>
+      <span class="kc-band-sqft">≈ 2,480 sq ft · $224/sq ft</span>
+      <span class="kc-band-bar"><span class="kc-band-bar-fill" style="width:36%;"></span></span>
+      <span class="kc-band-share">36% of sales · 77 closed</span>
+    </div>
+    <div class="kc-band" data-band="moveup">
+      <span class="kc-band-label">Move-up</span>
+      <span class="kc-band-range">$700K to $1M</span>
+      <span class="kc-band-price">$831K</span>
+      <span class="kc-band-sqft">≈ 3,325 sq ft · $250/sq ft</span>
+      <span class="kc-band-bar"><span class="kc-band-bar-fill" style="width:33%;"></span></span>
+      <span class="kc-band-share">33% of sales · 72 closed</span>
+    </div>
+    <div class="kc-band" data-band="luxury">
+      <span class="kc-band-label">Luxury</span>
+      <span class="kc-band-range">$1M and up</span>
+      <span class="kc-band-price">$1.3M</span>
+      <span class="kc-band-sqft">≈ 4,320 sq ft · $291/sq ft</span>
+      <span class="kc-band-bar"><span class="kc-band-bar-fill" style="width:29%;"></span></span>
+      <span class="kc-band-share">29% of sales · 63 closed</span>
+    </div>
+  </div>
+  <p id="kc-market-bands-note" class="kc-callout kc-callout--gold">In Trophy Club, the heart of the market is the typical band: 36% of homes sold in the past year landed between $400K and $700K, where a median of about $555K buys roughly 2,480 square feet. Entry-level homes do exist, around $379K for about 1,640 square feet, but they are a smaller share (1%). About 62% of sales were $700K or more, so move-up and luxury buyers have real selection. Price per square foot climbs from about $231 at the entry level to $291 at the top, which is what you are paying for in larger lots, newer builds, and higher finish levels.</p>
+    <!-- KC-TIER-BANDS:END -->
     <!-- KC-NTREIS-CARDS:START  unified market metrics, live via kc-blog-live + kcUnifiedMarketCards loader, refreshes with the monthly NTREIS scrape, never hardcode -->
   <div class="kc-grid kc-grid--4" style="margin-bottom:1rem;">
     <div class="kc-card kc-card--navy" style="text-align:center;">
@@ -1382,6 +1420,33 @@ gtag('consent','default',{
   <p>A few more numbers worth knowing if you are weighing an offer in Trophy Club. Over the trailing 12 months, single-family homes sold for a median of <span class="kc-blog-live" data-suburb="trophy-club" data-field="sfr_median_price">$808K</span> and an average of <span class="kc-blog-live" data-suburb="trophy-club" data-field="sfr_avg_price">$875K</span>, which works out to about <span class="kc-blog-live" data-suburb="trophy-club" data-field="sfr_median_price_per_sqft">$249</span> per square foot. Homes here sold for roughly <span class="kc-blog-live" data-suburb="trophy-club" data-field="sfr_pct_of_original_price">97.7%</span> of their original list price, which gives you a sense of how much room buyers have typically had to negotiate. As of the latest data, about <span class="kc-blog-live" data-suburb="trophy-club" data-field="sfr_inventory">42</span> single-family homes were actively listed. These are NTREIS figures (the price metrics are 12-month rolling, inventory is current active supply), and your own price per square foot and negotiating room will vary by neighborhood, age of home, and finish level.</p>
   <!-- KC-NTREIS-CARDS:END -->
   <p id="kc-mkt-updated" style="font-size:0.76rem;color:#888;margin-bottom:1.5rem;">Source: NTREIS / North Texas MLS · Data updates monthly</p>
+  <!-- KC-DEMAND:START  demand read + price-driver narrative, baked by tools/generate-tier-bands.cjs; #kc-market-demand verdict refreshes live -->
+  <div id="kc-market-demand-block" style="margin-top:1.5rem;">
+    <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:0.75rem;">
+      <span style="font-size:0.72rem;letter-spacing:0.06em;text-transform:uppercase;color:#888;">Demand Read</span>
+      <span id="kc-market-demand" class="kc-demand-chip">High demand</span>
+    </div>
+    <div class="kc-grid kc-grid--4" style="margin-bottom:1rem;">
+      <div class="kc-card" style="text-align:center;background:var(--white);border:1px solid var(--stone);">
+        <div style="font-size:0.72rem;color:#888;">Months Supply</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--navy);">2.2 mo.</div>
+        <div style="font-size:0.72rem;color:var(--gold);font-weight:600;">Tight supply</div>
+      </div>
+      <div class="kc-card" style="text-align:center;background:var(--white);border:1px solid var(--stone);">
+        <div style="font-size:0.72rem;color:#888;">Days on Market</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--navy);">22 days</div>
+        <div style="font-size:0.72rem;color:var(--gold);font-weight:600;">Sells fast</div>
+      </div>
+      <div class="kc-card" style="text-align:center;background:var(--white);border:1px solid var(--stone);">
+        <div style="font-size:0.72rem;color:#888;">Sale to Original List</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--navy);">97.7%</div>
+        <div style="font-size:0.72rem;color:var(--gold);font-weight:600;">Little lowball room</div>
+      </div>
+    </div>
+    <div class="kc-callout kc-callout--gold"><strong>What these numbers tell you:</strong> Trophy Club is a high demand market. Single-family homes are averaging about 22 days on market and selling at roughly 98% of their original list price, with around 2.2 months of supply. In plain terms, well-priced homes here do not sit, and there is little room for a lowball offer. If you are relocating on a timeline, line up your financing before you tour, because the home you want may not wait.</div>
+    <div class="kc-callout kc-callout--gold"><strong>Why Trophy Club is priced where it is:</strong> The value is anchored by Northwest ISD, which earns an A- overall and an A for college prep, so school-driven demand stays strong year after year. It is a heavily owner-occupied community (about 89%) where roughly 4 in 10 households have school-age kids, and with 15 parks and green spaces mapped. Prices have also been stable rather than swingy. The tradeoff, and there is always one, is the commute: a typical drive runs about 29 minutes, longer than the inner-ring suburbs, which is part of why your dollar buys more square footage in Trophy Club than closer to the core.</div>
+  </div>
+  <!-- KC-DEMAND:END -->
 
   <p>Trophy Club's market is tightly constrained by geography, 8 square miles, very little vacant land, and a population that doesn't churn quickly. Homeowners here bought intentionally and tend to stay. That means inventory is typically low (2–4 homes per week coming to market in the ~$700K–$1.2M range), and quality listings price competitively and go quickly. The 2.3 months of supply confirms seller's market conditions that have persisted since 2021.</p>
 

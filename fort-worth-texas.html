@@ -1217,6 +1217,44 @@ gtag('consent','default',{
   <div class="kc-section">
     <span class="kc-eyebrow">Real Estate Market</span>
     <h2>Fort Worth Housing Market</h2>
+    <!-- KC-TIER-BANDS:START  price-band cards + "what your money buys" note, baked by tools/generate-tier-bands.cjs; values refresh live via suburb-data.js -->
+  <div id="kc-market-bands" class="kc-grid kc-grid--4" style="margin-bottom:1rem;">
+    <div class="kc-band kc-band--lead" data-band="starter">
+      <span class="kc-band-ribbon">Most homes sell here</span>
+      <span class="kc-band-label">Starter</span>
+      <span class="kc-band-range">Under $400K</span>
+      <span class="kc-band-price">$304K</span>
+      <span class="kc-band-sqft">≈ 1,792 sq ft · $170/sq ft</span>
+      <span class="kc-band-bar"><span class="kc-band-bar-fill" style="width:70%;"></span></span>
+      <span class="kc-band-share">70% of sales · 7,268 closed</span>
+    </div>
+    <div class="kc-band" data-band="typical">
+      <span class="kc-band-label">Typical</span>
+      <span class="kc-band-range">$400K to $700K</span>
+      <span class="kc-band-price">$484K</span>
+      <span class="kc-band-sqft">≈ 2,663 sq ft · $182/sq ft</span>
+      <span class="kc-band-bar"><span class="kc-band-bar-fill" style="width:24%;"></span></span>
+      <span class="kc-band-share">24% of sales · 2,496 closed</span>
+    </div>
+    <div class="kc-band" data-band="moveup">
+      <span class="kc-band-label">Move-up</span>
+      <span class="kc-band-range">$700K to $1M</span>
+      <span class="kc-band-price">$798K</span>
+      <span class="kc-band-sqft">≈ 3,269 sq ft · $244/sq ft</span>
+      <span class="kc-band-bar"><span class="kc-band-bar-fill" style="width:4%;"></span></span>
+      <span class="kc-band-share">4% of sales · 405 closed</span>
+    </div>
+    <div class="kc-band" data-band="luxury">
+      <span class="kc-band-label">Luxury</span>
+      <span class="kc-band-range">$1M and up</span>
+      <span class="kc-band-price">$1.4M</span>
+      <span class="kc-band-sqft">≈ 3,871 sq ft · $356/sq ft</span>
+      <span class="kc-band-bar"><span class="kc-band-bar-fill" style="width:3%;"></span></span>
+      <span class="kc-band-share">3% of sales · 286 closed</span>
+    </div>
+  </div>
+  <p id="kc-market-bands-note" class="kc-callout kc-callout--gold">In Fort Worth, the heart of the market is the starter band: 70% of homes sold in the past year landed under $400K, where a median of about $304K buys roughly 1,792 square feet. About 7% of sales were $700K or more, so move-up and luxury buyers have real selection. Price per square foot climbs from about $170 at the entry level to $356 at the top, which is what you are paying for in larger lots, newer builds, and higher finish levels.</p>
+    <!-- KC-TIER-BANDS:END -->
       <!-- KC-NTREIS-CARDS:START  unified market metrics, live via kc-blog-live + kcUnifiedMarketCards loader, refreshes with the monthly NTREIS scrape, never hardcode -->
   <div class="kc-grid kc-grid--4" style="margin-bottom:1rem;">
     <div class="kc-card kc-card--navy" style="text-align:center;">
@@ -1266,6 +1304,33 @@ gtag('consent','default',{
   <p style="margin-top:1.5rem;"><a href="https://kristencarpentier.expportal.com/fort-worth-texas-homes-for-sale" class="kc-btn kc-btn--gold" target="_blank" rel="noopener">Search Current Fort Worth Listings →</a></p>
 
     <p style="font-size:0.72rem;color:#aaa;margin-bottom:1.25rem;margin-top:0.75rem;">Source: NTREIS (North Texas Real Estate Information Systems). Data as of <span id="kc-mkt-updated">2026</span>. Single-family residential only.</p>
+  <!-- KC-DEMAND:START  demand read + price-driver narrative, baked by tools/generate-tier-bands.cjs; #kc-market-demand verdict refreshes live -->
+  <div id="kc-market-demand-block" style="margin-top:1.5rem;">
+    <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:0.75rem;">
+      <span style="font-size:0.72rem;letter-spacing:0.06em;text-transform:uppercase;color:#888;">Demand Read</span>
+      <span id="kc-market-demand" class="kc-demand-chip">Steady demand</span>
+    </div>
+    <div class="kc-grid kc-grid--4" style="margin-bottom:1rem;">
+      <div class="kc-card" style="text-align:center;background:var(--white);border:1px solid var(--stone);">
+        <div style="font-size:0.72rem;color:#888;">Months Supply</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--navy);">3.9 mo.</div>
+        <div style="font-size:0.72rem;color:var(--gold);font-weight:600;">Seller-leaning</div>
+      </div>
+      <div class="kc-card" style="text-align:center;background:var(--white);border:1px solid var(--stone);">
+        <div style="font-size:0.72rem;color:#888;">Days on Market</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--navy);">37 days</div>
+        <div style="font-size:0.72rem;color:var(--gold);font-weight:600;">Homes don't sit</div>
+      </div>
+      <div class="kc-card" style="text-align:center;background:var(--white);border:1px solid var(--stone);">
+        <div style="font-size:0.72rem;color:#888;">Sale to Original List</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--navy);">96.5%</div>
+        <div style="font-size:0.72rem;color:var(--gold);font-weight:600;">Some room to negotiate</div>
+      </div>
+    </div>
+    <div class="kc-callout kc-callout--gold"><strong>What these numbers tell you:</strong> Fort Worth is a steady demand market. Single-family homes are averaging about 37 days on market and selling at roughly 97% of their original list price, with around 3.9 months of supply. In plain terms, well-priced homes here do not sit, and there is not much room for a lowball offer, but you are also not walking into a bidding war. If you are relocating on a timeline, get your financing in order before you tour.</div>
+    <div class="kc-callout kc-callout--gold"><strong>Why Fort Worth is priced where it is:</strong> The value is anchored by Fort Worth ISD, which earns a B- overall and a B+ for college prep, so school-driven demand stays strong year after year. It is a owner-occupied community (about 57%) where roughly 4 in 10 households have school-age kids, and it scores unusually well for walkability (Walk Score 87, high for a North Texas suburb), with 443 parks and green spaces mapped. Prices have also been stable rather than swingy. The tradeoff, and there is always one, is the commute: a typical drive runs about 29 minutes, longer than the inner-ring suburbs, which is part of why your dollar buys more square footage in Fort Worth than closer to the core.</div>
+  </div>
+  <!-- KC-DEMAND:END -->
 
     <p>Fort Worth is the most affordably priced major city in DFW, with a median SFR at $339,834, roughly $150,000 below Dallas and $350,000 below Frisco. The market is balanced at 3.9 months supply, meaning well-priced homes in desirable neighborhoods still move in 3–5 weeks. The combination of affordability and employment base (aerospace, logistics, healthcare) keeps demand stable. Buyers relocating from California or New York find that their purchasing power in Fort Worth is dramatically higher, comparable homes often at a third of what they cost on the coasts.</p>
 

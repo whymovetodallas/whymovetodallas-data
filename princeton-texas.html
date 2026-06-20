@@ -1428,6 +1428,28 @@ gtag('consent','default',{
       <h2>Princeton Housing Market at a Glance</h2>
     </div>
 
+    <!-- KC-TIER-BANDS:START  price-band cards + "what your money buys" note, baked by tools/generate-tier-bands.cjs; values refresh live via suburb-data.js -->
+  <div id="kc-market-bands" class="kc-grid kc-grid--4" style="margin-bottom:1rem;">
+    <div class="kc-band kc-band--lead" data-band="starter">
+      <span class="kc-band-ribbon">Most homes sell here</span>
+      <span class="kc-band-label">Starter</span>
+      <span class="kc-band-range">Under $400K</span>
+      <span class="kc-band-price">$291K</span>
+      <span class="kc-band-sqft">≈ 1,835 sq ft · $159/sq ft</span>
+      <span class="kc-band-bar"><span class="kc-band-bar-fill" style="width:90%;"></span></span>
+      <span class="kc-band-share">90% of sales · 1,983 closed</span>
+    </div>
+    <div class="kc-band" data-band="typical">
+      <span class="kc-band-label">Typical</span>
+      <span class="kc-band-range">$400K to $700K</span>
+      <span class="kc-band-price">$427K</span>
+      <span class="kc-band-sqft">≈ 3,030 sq ft · $141/sq ft</span>
+      <span class="kc-band-bar"><span class="kc-band-bar-fill" style="width:10%;"></span></span>
+      <span class="kc-band-share">10% of sales · 230 closed</span>
+    </div>
+  </div>
+  <p id="kc-market-bands-note" class="kc-callout kc-callout--gold">In Princeton, the heart of the market is the starter band: 90% of homes sold in the past year landed under $400K, where a median of about $291K buys roughly 1,835 square feet.</p>
+    <!-- KC-TIER-BANDS:END -->
       <!-- KC-NTREIS-CARDS:START  unified market metrics, live via kc-blog-live + kcUnifiedMarketCards loader, refreshes with the monthly NTREIS scrape, never hardcode -->
   <div class="kc-grid kc-grid--4" style="margin-bottom:1rem;">
     <div class="kc-card kc-card--navy" style="text-align:center;">
@@ -1474,6 +1496,33 @@ gtag('consent','default',{
   <p>A few more numbers worth knowing if you are weighing an offer in Princeton. Over the trailing 12 months, single-family homes sold for a median of <span class="kc-blog-live" data-suburb="princeton" data-field="sfr_median_price">$300K</span> and an average of <span class="kc-blog-live" data-suburb="princeton" data-field="sfr_avg_price">$311K</span>, which works out to about <span class="kc-blog-live" data-suburb="princeton" data-field="sfr_median_price_per_sqft">$157</span> per square foot. Homes here sold for roughly <span class="kc-blog-live" data-suburb="princeton" data-field="sfr_pct_of_original_price">94.5%</span> of their original list price, which gives you a sense of how much room buyers have typically had to negotiate. As of the latest data, about <span class="kc-blog-live" data-suburb="princeton" data-field="sfr_inventory">652</span> single-family homes were actively listed. These are NTREIS figures (the price metrics are 12-month rolling, inventory is current active supply), and your own price per square foot and negotiating room will vary by neighborhood, age of home, and finish level.</p>
   <!-- KC-NTREIS-CARDS:END -->
     <p  id="kc-mkt-updated">Source: NTREIS via suburb-profiles.json · Data updated periodically · Figures reflect SFR (single-family residential) only</p>
+  <!-- KC-DEMAND:START  demand read + price-driver narrative, baked by tools/generate-tier-bands.cjs; #kc-market-demand verdict refreshes live -->
+  <div id="kc-market-demand-block" style="margin-top:1.5rem;">
+    <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:0.75rem;">
+      <span style="font-size:0.72rem;letter-spacing:0.06em;text-transform:uppercase;color:#888;">Demand Read</span>
+      <span id="kc-market-demand" class="kc-demand-chip">Balanced</span>
+    </div>
+    <div class="kc-grid kc-grid--4" style="margin-bottom:1rem;">
+      <div class="kc-card" style="text-align:center;background:var(--white);border:1px solid var(--stone);">
+        <div style="font-size:0.72rem;color:#888;">Months Supply</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--navy);">3.7 mo.</div>
+        <div style="font-size:0.72rem;color:var(--gold);font-weight:600;">Seller-leaning</div>
+      </div>
+      <div class="kc-card" style="text-align:center;background:var(--white);border:1px solid var(--stone);">
+        <div style="font-size:0.72rem;color:#888;">Days on Market</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--navy);">38 days</div>
+        <div style="font-size:0.72rem;color:var(--gold);font-weight:600;">Homes don't sit</div>
+      </div>
+      <div class="kc-card" style="text-align:center;background:var(--white);border:1px solid var(--stone);">
+        <div style="font-size:0.72rem;color:#888;">Sale to Original List</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--navy);">94.5%</div>
+        <div style="font-size:0.72rem;color:var(--gold);font-weight:600;">Some room to negotiate</div>
+      </div>
+    </div>
+    <div class="kc-callout kc-callout--gold"><strong>What these numbers tell you:</strong> Princeton is a balanced market. Single-family homes are averaging about 38 days on market and selling at roughly 95% of their original list price, with around 3.7 months of supply. In plain terms, you have a bit more time and a bit more negotiating room than in the fastest suburbs, though strong listings still move quickly.</div>
+    <div class="kc-callout kc-callout--gold"><strong>Why Princeton is priced where it is:</strong> The value is anchored by Princeton ISD, which earns a B+ overall and an A- for college prep, so school-driven demand stays strong year after year. It is a heavily owner-occupied community (about 80%) where roughly 5 in 10 households have school-age kids, and with 152 parks and green spaces mapped. Prices have also been stable rather than swingy. The tradeoff, and there is always one, is the commute: a typical drive runs about 32 minutes, longer than the inner-ring suburbs, which is part of why your dollar buys more square footage in Princeton than closer to the core.</div>
+  </div>
+  <!-- KC-DEMAND:END -->
 
     <p>Princeton's real estate market is balanced at 3.7 months of supply, sellers still have a meaningful advantage in desirable communities, but buyers have more time and leverage than they would in a true seller's market. The $302K median is the lowest among all Collin County suburbs with rated schools, making Princeton uniquely attractive for families who've been outbid or priced out of Frisco, Allen, and McKinney. Active new construction keeps supply from drying up the way it has in more built-out suburbs.</p>
 

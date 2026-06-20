@@ -1284,6 +1284,28 @@ gtag('consent','default',{
 
   <p>Highland Park is one of the thinnest real estate markets in DFW, only 75 single-family homes changed hands in the past 12 months across the entire town. That's a function of both the price level and the ownership culture: people who buy here tend to stay for decades. The market is balanced (3.7 months supply), which means neither buyers nor sellers hold extreme leverage. When a well-priced home in the right neighborhood hits the market, it moves. Overpriced listings sit, even here. Median DOM is about 50 days, which reflects the selectivity of the buyer pool at $3.7M+. Condos also trade, with 10 units sold in the past 12 months at a median of ~$1.2M, primarily in the high-rise buildings along the southern edge near Mockingbird.</p>
 
+    <!-- KC-TIER-BANDS:START  price-band cards + "what your money buys" note, baked by tools/generate-tier-bands.cjs; values refresh live via suburb-data.js -->
+  <div id="kc-market-bands" class="kc-grid kc-grid--4" style="margin-bottom:1rem;">
+    <div class="kc-band kc-band--lowconf" data-band="moveup">
+      <span class="kc-band-label">Move-up</span>
+      <span class="kc-band-range">$700K to $1M</span>
+      <span class="kc-band-price">$874K</span>
+      <span class="kc-band-sqft">≈ 1,960 sq ft · $446/sq ft</span>
+      <span class="kc-band-bar"><span class="kc-band-bar-fill" style="width:0%;"></span></span>
+      <span class="kc-band-share">0% of sales · 0 closed</span>
+    </div>
+    <div class="kc-band kc-band--lead" data-band="luxury">
+      <span class="kc-band-ribbon">Most homes sell here</span>
+      <span class="kc-band-label">Luxury</span>
+      <span class="kc-band-range">$1M and up</span>
+      <span class="kc-band-price">$3.6M</span>
+      <span class="kc-band-sqft">≈ 4,548 sq ft · $787/sq ft</span>
+      <span class="kc-band-bar"><span class="kc-band-bar-fill" style="width:100%;"></span></span>
+      <span class="kc-band-share">100% of sales · 75 closed</span>
+    </div>
+  </div>
+  <p id="kc-market-bands-note" class="kc-callout kc-callout--gold">In Highland Park, the heart of the market is the luxury band: 100% of homes sold in the past year landed at $1M and up, where a median of about $3.6M buys roughly 4,548 square feet. True entry-level inventory under $400K is scarce here. About 100% of sales were $700K or more, so move-up and luxury buyers have real selection.</p>
+    <!-- KC-TIER-BANDS:END -->
     <!-- KC-NTREIS-CARDS:START  unified market metrics, live via kc-blog-live + kcUnifiedMarketCards loader, refreshes with the monthly NTREIS scrape, never hardcode -->
   <div class="kc-grid kc-grid--4" style="margin-bottom:1rem;">
     <div class="kc-card kc-card--navy" style="text-align:center;">
@@ -1333,6 +1355,33 @@ gtag('consent','default',{
   <p style="margin-top:1.5rem;"><a href="https://kristencarpentier.expportal.com/search?city=Highland+Park&state=TX" class="kc-btn kc-btn--gold" target="_blank" rel="noopener">Search Current Highland Park Listings →</a></p>
 
   <p style="font-size:0.8rem;color:#888;margin-top:-1rem;margin-bottom:1.5rem;">Source: NTREIS via suburb-profiles.json · Updated <span id="kc-mkt-updated">recent</span></p>
+  <!-- KC-DEMAND:START  demand read + price-driver narrative, baked by tools/generate-tier-bands.cjs; #kc-market-demand verdict refreshes live -->
+  <div id="kc-market-demand-block" style="margin-top:1.5rem;">
+    <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:0.75rem;">
+      <span style="font-size:0.72rem;letter-spacing:0.06em;text-transform:uppercase;color:#888;">Demand Read</span>
+      <span id="kc-market-demand" class="kc-demand-chip">Balanced</span>
+    </div>
+    <div class="kc-grid kc-grid--4" style="margin-bottom:1rem;">
+      <div class="kc-card" style="text-align:center;background:var(--white);border:1px solid var(--stone);">
+        <div style="font-size:0.72rem;color:#888;">Months Supply</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--navy);">3.9 mo.</div>
+        <div style="font-size:0.72rem;color:var(--gold);font-weight:600;">Seller-leaning</div>
+      </div>
+      <div class="kc-card" style="text-align:center;background:var(--white);border:1px solid var(--stone);">
+        <div style="font-size:0.72rem;color:#888;">Days on Market</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--navy);">45 days</div>
+        <div style="font-size:0.72rem;color:var(--gold);font-weight:600;">Homes don't sit</div>
+      </div>
+      <div class="kc-card" style="text-align:center;background:var(--white);border:1px solid var(--stone);">
+        <div style="font-size:0.72rem;color:#888;">Sale to Original List</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--navy);">93.2%</div>
+        <div style="font-size:0.72rem;color:var(--gold);font-weight:600;">Room to negotiate</div>
+      </div>
+    </div>
+    <div class="kc-callout kc-callout--gold"><strong>What these numbers tell you:</strong> Highland Park is a balanced market. Single-family homes are averaging about 45 days on market and selling at roughly 93% of their original list price, with around 3.9 months of supply. In plain terms, you have a bit more time and a bit more negotiating room than in the fastest suburbs, though strong listings still move quickly.</div>
+    <div class="kc-callout kc-callout--gold"><strong>Why Highland Park is priced where it is:</strong> The value is anchored by Highland Park ISD, which earns an A+ overall and an A+ for college prep, so school-driven demand stays strong year after year. It is a heavily owner-occupied community (about 88%) where roughly 4 in 10 households have school-age kids, and with 109 parks and green spaces mapped. Prices have also been stable rather than swingy. The tradeoff, and there is always one, is the commute: a typical drive runs about 23 minutes, longer than the inner-ring suburbs, which is part of why your dollar buys more square footage in Highland Park than closer to the core.</div>
+  </div>
+  <!-- KC-DEMAND:END -->
 
   <!-- Condo/Townhome section — shown by JS when condo_closed_sales_12mo > 0 -->
   <div id="kc-condo-market" style="display:none;margin-top:1.5rem;">

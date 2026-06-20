@@ -1311,6 +1311,36 @@ gtag('consent','default',{
     <h2>Mesquite Real Estate Market: What to Expect</h2>
   </div>
 
+    <!-- KC-TIER-BANDS:START  price-band cards + "what your money buys" note, baked by tools/generate-tier-bands.cjs; values refresh live via suburb-data.js -->
+  <div id="kc-market-bands" class="kc-grid kc-grid--4" style="margin-bottom:1rem;">
+    <div class="kc-band kc-band--lead" data-band="starter">
+      <span class="kc-band-ribbon">Most homes sell here</span>
+      <span class="kc-band-label">Starter</span>
+      <span class="kc-band-range">Under $400K</span>
+      <span class="kc-band-price">$275K</span>
+      <span class="kc-band-sqft">≈ 1,716 sq ft · $160/sq ft</span>
+      <span class="kc-band-bar"><span class="kc-band-bar-fill" style="width:87%;"></span></span>
+      <span class="kc-band-share">87% of sales · 1,200 closed</span>
+    </div>
+    <div class="kc-band" data-band="typical">
+      <span class="kc-band-label">Typical</span>
+      <span class="kc-band-range">$400K to $700K</span>
+      <span class="kc-band-price">$475K</span>
+      <span class="kc-band-sqft">≈ 2,830 sq ft · $168/sq ft</span>
+      <span class="kc-band-bar"><span class="kc-band-bar-fill" style="width:13%;"></span></span>
+      <span class="kc-band-share">13% of sales · 176 closed</span>
+    </div>
+    <div class="kc-band kc-band--lowconf" data-band="moveup">
+      <span class="kc-band-label">Move-up</span>
+      <span class="kc-band-range">$700K to $1M</span>
+      <span class="kc-band-price">$751K</span>
+      <span class="kc-band-sqft">≈ 3,568 sq ft · $211/sq ft</span>
+      <span class="kc-band-bar"><span class="kc-band-bar-fill" style="width:1%;"></span></span>
+      <span class="kc-band-share">1% of sales · 7 closed</span>
+    </div>
+  </div>
+  <p id="kc-market-bands-note" class="kc-callout kc-callout--gold">In Mesquite, the heart of the market is the starter band: 87% of homes sold in the past year landed under $400K, where a median of about $275K buys roughly 1,716 square feet. About 1% of sales were $700K or more, so move-up and luxury buyers have real selection. Price per square foot climbs from about $160 at the entry level to $211 at the top, which is what you are paying for in larger lots, newer builds, and higher finish levels.</p>
+    <!-- KC-TIER-BANDS:END -->
     <!-- KC-NTREIS-CARDS:START  unified market metrics, live via kc-blog-live + kcUnifiedMarketCards loader, refreshes with the monthly NTREIS scrape, never hardcode -->
   <div class="kc-grid kc-grid--4" style="margin-bottom:1rem;">
     <div class="kc-card kc-card--navy" style="text-align:center;">
@@ -1357,6 +1387,33 @@ gtag('consent','default',{
   <p>A few more numbers worth knowing if you are weighing an offer in Mesquite. Over the trailing 12 months, single-family homes sold for a median of <span class="kc-blog-live" data-suburb="mesquite" data-field="sfr_median_price">$288K</span> and an average of <span class="kc-blog-live" data-suburb="mesquite" data-field="sfr_avg_price">$301K</span>, which works out to about <span class="kc-blog-live" data-suburb="mesquite" data-field="sfr_median_price_per_sqft">$162</span> per square foot. Homes here sold for roughly <span class="kc-blog-live" data-suburb="mesquite" data-field="sfr_pct_of_original_price">95.2%</span> of their original list price, which gives you a sense of how much room buyers have typically had to negotiate. As of the latest data, about <span class="kc-blog-live" data-suburb="mesquite" data-field="sfr_inventory">558</span> single-family homes were actively listed. These are NTREIS figures (the price metrics are 12-month rolling, inventory is current active supply), and your own price per square foot and negotiating room will vary by neighborhood, age of home, and finish level.</p>
   <!-- KC-NTREIS-CARDS:END -->
   <p style="font-size:0.8rem;color:#888;margin-top:-1rem;margin-bottom:1.5rem;">Source: NTREIS via 10K Research · All figures are 12-month rolling periods · Updated <span id="kc-mkt-updated">2025</span></p>
+  <!-- KC-DEMAND:START  demand read + price-driver narrative, baked by tools/generate-tier-bands.cjs; #kc-market-demand verdict refreshes live -->
+  <div id="kc-market-demand-block" style="margin-top:1.5rem;">
+    <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:0.75rem;">
+      <span style="font-size:0.72rem;letter-spacing:0.06em;text-transform:uppercase;color:#888;">Demand Read</span>
+      <span id="kc-market-demand" class="kc-demand-chip">Balanced</span>
+    </div>
+    <div class="kc-grid kc-grid--4" style="margin-bottom:1rem;">
+      <div class="kc-card" style="text-align:center;background:var(--white);border:1px solid var(--stone);">
+        <div style="font-size:0.72rem;color:#888;">Months Supply</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--navy);">4.8 mo.</div>
+        <div style="font-size:0.72rem;color:var(--gold);font-weight:600;">Ample supply</div>
+      </div>
+      <div class="kc-card" style="text-align:center;background:var(--white);border:1px solid var(--stone);">
+        <div style="font-size:0.72rem;color:#888;">Days on Market</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--navy);">42 days</div>
+        <div style="font-size:0.72rem;color:var(--gold);font-weight:600;">Homes don't sit</div>
+      </div>
+      <div class="kc-card" style="text-align:center;background:var(--white);border:1px solid var(--stone);">
+        <div style="font-size:0.72rem;color:#888;">Sale to Original List</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--navy);">95.2%</div>
+        <div style="font-size:0.72rem;color:var(--gold);font-weight:600;">Some room to negotiate</div>
+      </div>
+    </div>
+    <div class="kc-callout kc-callout--gold"><strong>What these numbers tell you:</strong> Mesquite is a balanced market. Single-family homes are averaging about 42 days on market and selling at roughly 95% of their original list price, with around 4.8 months of supply. In plain terms, you have a bit more time and a bit more negotiating room than in the fastest suburbs, though strong listings still move quickly.</div>
+    <div class="kc-callout kc-callout--gold"><strong>Why Mesquite is priced where it is:</strong> The value is anchored by Mesquite ISD, which earns a B overall and an A- for college prep, so school-driven demand stays strong year after year. It is a owner-occupied community (about 63%) where roughly 4 in 10 households have school-age kids, and it scores unusually well for walkability (Walk Score 70, high for a North Texas suburb), with 97 parks and green spaces mapped. Prices have also been stable rather than swingy. The tradeoff, and there is always one, is the commute: a typical drive runs about 33 minutes, longer than the inner-ring suburbs, which is part of why your dollar buys more square footage in Mesquite than closer to the core.</div>
+  </div>
+  <!-- KC-DEMAND:END -->
 
   <p>Mesquite's market sits in balanced territory, not the competitive seller's market seen in Frisco, and not a buyer's market either. With a median single-family price under $300K, Mesquite is the most affordable market we cover at this proximity to Dallas. The 42-day median DOM means homes aren't flying off the market in 48 hours, but well-priced homes in the southeast neighborhoods still move in two to three weeks. For relocating families from California or New York, the comparison is striking: a $289K home in Mesquite is typically 3BR/2BA, 1,600–2,000 sq ft, equivalent space to something costing $900K–$1.4M+ in the Bay Area or Westchester.</p>
 

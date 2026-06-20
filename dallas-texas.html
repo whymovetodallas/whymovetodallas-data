@@ -1307,6 +1307,44 @@ gtag('consent','default',{
     <h2>Dallas Housing Market: Current Data</h2>
   </div>
 
+    <!-- KC-TIER-BANDS:START  price-band cards + "what your money buys" note, baked by tools/generate-tier-bands.cjs; values refresh live via suburb-data.js -->
+  <div id="kc-market-bands" class="kc-grid kc-grid--4" style="margin-bottom:1rem;">
+    <div class="kc-band kc-band--lead" data-band="starter">
+      <span class="kc-band-ribbon">Most homes sell here</span>
+      <span class="kc-band-label">Starter</span>
+      <span class="kc-band-range">Under $400K</span>
+      <span class="kc-band-price">$267K</span>
+      <span class="kc-band-sqft">≈ 1,518 sq ft · $176/sq ft</span>
+      <span class="kc-band-bar"><span class="kc-band-bar-fill" style="width:41%;"></span></span>
+      <span class="kc-band-share">41% of sales · 3,187 closed</span>
+    </div>
+    <div class="kc-band" data-band="typical">
+      <span class="kc-band-label">Typical</span>
+      <span class="kc-band-range">$400K to $700K</span>
+      <span class="kc-band-price">$546K</span>
+      <span class="kc-band-sqft">≈ 2,084 sq ft · $262/sq ft</span>
+      <span class="kc-band-bar"><span class="kc-band-bar-fill" style="width:24%;"></span></span>
+      <span class="kc-band-share">24% of sales · 1,887 closed</span>
+    </div>
+    <div class="kc-band" data-band="moveup">
+      <span class="kc-band-label">Move-up</span>
+      <span class="kc-band-range">$700K to $1M</span>
+      <span class="kc-band-price">$816K</span>
+      <span class="kc-band-sqft">≈ 2,577 sq ft · $317/sq ft</span>
+      <span class="kc-band-bar"><span class="kc-band-bar-fill" style="width:15%;"></span></span>
+      <span class="kc-band-share">15% of sales · 1,152 closed</span>
+    </div>
+    <div class="kc-band" data-band="luxury">
+      <span class="kc-band-label">Luxury</span>
+      <span class="kc-band-range">$1M and up</span>
+      <span class="kc-band-price">$1.6M</span>
+      <span class="kc-band-sqft">≈ 3,685 sq ft · $425/sq ft</span>
+      <span class="kc-band-bar"><span class="kc-band-bar-fill" style="width:20%;"></span></span>
+      <span class="kc-band-share">20% of sales · 1,553 closed</span>
+    </div>
+  </div>
+  <p id="kc-market-bands-note" class="kc-callout kc-callout--gold">In Dallas, the heart of the market is the starter band: 41% of homes sold in the past year landed under $400K, where a median of about $267K buys roughly 1,518 square feet. About 35% of sales were $700K or more, so move-up and luxury buyers have real selection. Price per square foot climbs from about $176 at the entry level to $425 at the top, which is what you are paying for in larger lots, newer builds, and higher finish levels.</p>
+    <!-- KC-TIER-BANDS:END -->
     <!-- KC-NTREIS-CARDS:START  unified market metrics, live via kc-blog-live + kcUnifiedMarketCards loader, refreshes with the monthly NTREIS scrape, never hardcode -->
   <div class="kc-grid kc-grid--4" style="margin-bottom:1rem;">
     <div class="kc-card kc-card--navy" style="text-align:center;">
@@ -1356,6 +1394,33 @@ gtag('consent','default',{
   <p style="margin-top:1.5rem;"><a href="https://kristencarpentier.expportal.com/dallas-texas-homes-for-sale" class="kc-btn kc-btn--gold" target="_blank" rel="noopener">Search Current Dallas Listings →</a></p>
 
   <p style="font-size:0.8rem;color:#888;margin-top:-1rem;margin-bottom:1.5rem;">Source: NTREIS (North Texas Real Estate Information Systems). Data as of <span id="kc-mkt-updated">2026</span>. Single-family residential only.</p>
+  <!-- KC-DEMAND:START  demand read + price-driver narrative, baked by tools/generate-tier-bands.cjs; #kc-market-demand verdict refreshes live -->
+  <div id="kc-market-demand-block" style="margin-top:1.5rem;">
+    <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:0.75rem;">
+      <span style="font-size:0.72rem;letter-spacing:0.06em;text-transform:uppercase;color:#888;">Demand Read</span>
+      <span id="kc-market-demand" class="kc-demand-chip">Steady demand</span>
+    </div>
+    <div class="kc-grid kc-grid--4" style="margin-bottom:1rem;">
+      <div class="kc-card" style="text-align:center;background:var(--white);border:1px solid var(--stone);">
+        <div style="font-size:0.72rem;color:#888;">Months Supply</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--navy);">4.4 mo.</div>
+        <div style="font-size:0.72rem;color:var(--gold);font-weight:600;">Seller-leaning</div>
+      </div>
+      <div class="kc-card" style="text-align:center;background:var(--white);border:1px solid var(--stone);">
+        <div style="font-size:0.72rem;color:#888;">Days on Market</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--navy);">31 days</div>
+        <div style="font-size:0.72rem;color:var(--gold);font-weight:600;">Homes don't sit</div>
+      </div>
+      <div class="kc-card" style="text-align:center;background:var(--white);border:1px solid var(--stone);">
+        <div style="font-size:0.72rem;color:#888;">Sale to Original List</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--navy);">96%</div>
+        <div style="font-size:0.72rem;color:var(--gold);font-weight:600;">Some room to negotiate</div>
+      </div>
+    </div>
+    <div class="kc-callout kc-callout--gold"><strong>What these numbers tell you:</strong> Dallas is a steady demand market. Single-family homes are averaging about 31 days on market and selling at roughly 96% of their original list price, with around 4.4 months of supply. In plain terms, well-priced homes here do not sit, and there is not much room for a lowball offer, but you are also not walking into a bidding war. If you are relocating on a timeline, get your financing in order before you tour.</div>
+    <div class="kc-callout kc-callout--gold"><strong>Why Dallas is priced where it is:</strong> The value is anchored by Dallas ISD, which earns a B overall and a B+ for college prep, so school-driven demand stays strong year after year. It is a owner-occupied community (about 42%) where roughly 3 in 10 households have school-age kids, and it scores unusually well for walkability (Walk Score 93, high for a North Texas suburb), with 601 parks and green spaces mapped. Prices have also been stable rather than swingy. The tradeoff, and there is always one, is the commute: a typical drive runs about 29 minutes, longer than the inner-ring suburbs, which is part of why your dollar buys more square footage in Dallas than closer to the core.</div>
+  </div>
+  <!-- KC-DEMAND:END -->
 
   <p>Dallas is the largest single-family housing market in DFW by transaction volume, 7,813 closed sales in the trailing 12 months, nearly double Frisco or Plano. At a 4.5-month supply, the market is balanced: neither the frenzied seller's market of 2021–22 nor a buyer's market. Median prices at ~$492K sit meaningfully below the northern suburbs, partly because the urban core includes more diverse price points (from Oak Cliff's $280K starter homes to Preston Hollow's $2M+ estates). Smart buyers can find exceptional value in transition neighborhoods; working with an agent who knows the specific blocks matters here more than in any suburb.</p>
 

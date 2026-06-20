@@ -1276,6 +1276,44 @@ gtag('consent','default',{
     <h2>Sachse Real Estate Market: What to Expect</h2>
   </div>
 
+    <!-- KC-TIER-BANDS:START  price-band cards + "what your money buys" note, baked by tools/generate-tier-bands.cjs; values refresh live via suburb-data.js -->
+  <div id="kc-market-bands" class="kc-grid kc-grid--4" style="margin-bottom:1rem;">
+    <div class="kc-band" data-band="starter">
+      <span class="kc-band-label">Starter</span>
+      <span class="kc-band-range">Under $400K</span>
+      <span class="kc-band-price">$338K</span>
+      <span class="kc-band-sqft">≈ 1,774 sq ft · $191/sq ft</span>
+      <span class="kc-band-bar"><span class="kc-band-bar-fill" style="width:37%;"></span></span>
+      <span class="kc-band-share">37% of sales · 93 closed</span>
+    </div>
+    <div class="kc-band kc-band--lead" data-band="typical">
+      <span class="kc-band-ribbon">Most homes sell here</span>
+      <span class="kc-band-label">Typical</span>
+      <span class="kc-band-range">$400K to $700K</span>
+      <span class="kc-band-price">$508K</span>
+      <span class="kc-band-sqft">≈ 2,743 sq ft · $185/sq ft</span>
+      <span class="kc-band-bar"><span class="kc-band-bar-fill" style="width:54%;"></span></span>
+      <span class="kc-band-share">54% of sales · 138 closed</span>
+    </div>
+    <div class="kc-band" data-band="moveup">
+      <span class="kc-band-label">Move-up</span>
+      <span class="kc-band-range">$700K to $1M</span>
+      <span class="kc-band-price">$792K</span>
+      <span class="kc-band-sqft">≈ 3,580 sq ft · $221/sq ft</span>
+      <span class="kc-band-bar"><span class="kc-band-bar-fill" style="width:8%;"></span></span>
+      <span class="kc-band-share">8% of sales · 20 closed</span>
+    </div>
+    <div class="kc-band kc-band--lowconf" data-band="luxury">
+      <span class="kc-band-label">Luxury</span>
+      <span class="kc-band-range">$1M and up</span>
+      <span class="kc-band-price">$1.3M</span>
+      <span class="kc-band-sqft">≈ 4,299 sq ft · $299/sq ft</span>
+      <span class="kc-band-bar"><span class="kc-band-bar-fill" style="width:1%;"></span></span>
+      <span class="kc-band-share">1% of sales · 3 closed</span>
+    </div>
+  </div>
+  <p id="kc-market-bands-note" class="kc-callout kc-callout--gold">In Sachse, the heart of the market is the typical band: 54% of homes sold in the past year landed between $400K and $700K, where a median of about $508K buys roughly 2,743 square feet. Entry-level homes do exist, around $338K for about 1,774 square feet, but they are a smaller share (37%). About 9% of sales were $700K or more, so move-up and luxury buyers have real selection. Price per square foot climbs from about $191 at the entry level to $299 at the top, which is what you are paying for in larger lots, newer builds, and higher finish levels.</p>
+    <!-- KC-TIER-BANDS:END -->
     <!-- KC-NTREIS-CARDS:START  unified market metrics, live via kc-blog-live + kcUnifiedMarketCards loader, refreshes with the monthly NTREIS scrape, never hardcode -->
   <div class="kc-grid kc-grid--4" style="margin-bottom:1rem;">
     <div class="kc-card kc-card--navy" style="text-align:center;">
@@ -1322,6 +1360,33 @@ gtag('consent','default',{
   <p>A few more numbers worth knowing if you are weighing an offer in Sachse. Over the trailing 12 months, single-family homes sold for a median of <span class="kc-blog-live" data-suburb="sachse" data-field="sfr_median_price">$443K</span> and an average of <span class="kc-blog-live" data-suburb="sachse" data-field="sfr_avg_price">$477K</span>, which works out to about <span class="kc-blog-live" data-suburb="sachse" data-field="sfr_median_price_per_sqft">$189</span> per square foot. Homes here sold for roughly <span class="kc-blog-live" data-suburb="sachse" data-field="sfr_pct_of_original_price">95.7%</span> of their original list price, which gives you a sense of how much room buyers have typically had to negotiate. As of the latest data, about <span class="kc-blog-live" data-suburb="sachse" data-field="sfr_inventory">89</span> single-family homes were actively listed. These are NTREIS figures (the price metrics are 12-month rolling, inventory is current active supply), and your own price per square foot and negotiating room will vary by neighborhood, age of home, and finish level.</p>
   <!-- KC-NTREIS-CARDS:END -->
   <p style="font-size:0.8rem;color:#888;margin-top:-1rem;margin-bottom:1.5rem;">Source: NTREIS via 10K Research · All figures are 12-month rolling periods · Updated <span id="kc-mkt-updated">April 2026</span></p>
+  <!-- KC-DEMAND:START  demand read + price-driver narrative, baked by tools/generate-tier-bands.cjs; #kc-market-demand verdict refreshes live -->
+  <div id="kc-market-demand-block" style="margin-top:1.5rem;">
+    <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:0.75rem;">
+      <span style="font-size:0.72rem;letter-spacing:0.06em;text-transform:uppercase;color:#888;">Demand Read</span>
+      <span id="kc-market-demand" class="kc-demand-chip">Steady demand</span>
+    </div>
+    <div class="kc-grid kc-grid--4" style="margin-bottom:1rem;">
+      <div class="kc-card" style="text-align:center;background:var(--white);border:1px solid var(--stone);">
+        <div style="font-size:0.72rem;color:#888;">Months Supply</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--navy);">4.3 mo.</div>
+        <div style="font-size:0.72rem;color:var(--gold);font-weight:600;">Seller-leaning</div>
+      </div>
+      <div class="kc-card" style="text-align:center;background:var(--white);border:1px solid var(--stone);">
+        <div style="font-size:0.72rem;color:#888;">Days on Market</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--navy);">37 days</div>
+        <div style="font-size:0.72rem;color:var(--gold);font-weight:600;">Homes don't sit</div>
+      </div>
+      <div class="kc-card" style="text-align:center;background:var(--white);border:1px solid var(--stone);">
+        <div style="font-size:0.72rem;color:#888;">Sale to Original List</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--navy);">95.7%</div>
+        <div style="font-size:0.72rem;color:var(--gold);font-weight:600;">Some room to negotiate</div>
+      </div>
+    </div>
+    <div class="kc-callout kc-callout--gold"><strong>What these numbers tell you:</strong> Sachse is a steady demand market. Single-family homes are averaging about 37 days on market and selling at roughly 96% of their original list price, with around 4.3 months of supply. In plain terms, well-priced homes here do not sit, and there is not much room for a lowball offer, but you are also not walking into a bidding war. If you are relocating on a timeline, get your financing in order before you tour.</div>
+    <div class="kc-callout kc-callout--gold"><strong>Why Sachse is priced where it is:</strong> The value is anchored by Wylie ISD, which earns an A+ overall and an A+ for college prep, so school-driven demand stays strong year after year. It is a heavily owner-occupied community (about 87%) where roughly 4 in 10 households have school-age kids, and with 14 parks and green spaces mapped. Prices have also been stable rather than swingy. The tradeoff, and there is always one, is the commute: a typical drive runs about 31 minutes, longer than the inner-ring suburbs, which is part of why your dollar buys more square footage in Sachse than closer to the core.</div>
+  </div>
+  <!-- KC-DEMAND:END -->
 
   <p>Sachse represents one of the strongest value cases in northeast DFW. With a median single-family price around $441K, roughly $250K below Frisco and $200K below Plano, families can buy more house, in a safer and quieter community, without giving up school quality. The balanced market (4.3 months supply) means buyers have more negotiating room than they'd find in hotter suburbs, while sellers still benefit from genuine demand driven by affordability-seekers from across the metro.</p>
 

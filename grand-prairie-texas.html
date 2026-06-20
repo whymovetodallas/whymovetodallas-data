@@ -1304,6 +1304,44 @@ gtag('consent','default',{
       <h2>Grand Prairie Housing Market Overview</h2>
     </div>
 
+    <!-- KC-TIER-BANDS:START  price-band cards + "what your money buys" note, baked by tools/generate-tier-bands.cjs; values refresh live via suburb-data.js -->
+  <div id="kc-market-bands" class="kc-grid kc-grid--4" style="margin-bottom:1rem;">
+    <div class="kc-band kc-band--lead" data-band="starter">
+      <span class="kc-band-ribbon">Most homes sell here</span>
+      <span class="kc-band-label">Starter</span>
+      <span class="kc-band-range">Under $400K</span>
+      <span class="kc-band-price">$312K</span>
+      <span class="kc-band-sqft">≈ 1,758 sq ft · $178/sq ft</span>
+      <span class="kc-band-bar"><span class="kc-band-bar-fill" style="width:67%;"></span></span>
+      <span class="kc-band-share">67% of sales · 749 closed</span>
+    </div>
+    <div class="kc-band" data-band="typical">
+      <span class="kc-band-label">Typical</span>
+      <span class="kc-band-range">$400K to $700K</span>
+      <span class="kc-band-price">$470K</span>
+      <span class="kc-band-sqft">≈ 2,822 sq ft · $167/sq ft</span>
+      <span class="kc-band-bar"><span class="kc-band-bar-fill" style="width:31%;"></span></span>
+      <span class="kc-band-share">31% of sales · 352 closed</span>
+    </div>
+    <div class="kc-band" data-band="moveup">
+      <span class="kc-band-label">Move-up</span>
+      <span class="kc-band-range">$700K to $1M</span>
+      <span class="kc-band-price">$788K</span>
+      <span class="kc-band-sqft">≈ 4,037 sq ft · $195/sq ft</span>
+      <span class="kc-band-bar"><span class="kc-band-bar-fill" style="width:2%;"></span></span>
+      <span class="kc-band-share">2% of sales · 21 closed</span>
+    </div>
+    <div class="kc-band kc-band--lowconf" data-band="luxury">
+      <span class="kc-band-label">Luxury</span>
+      <span class="kc-band-range">$1M and up</span>
+      <span class="kc-band-price">$1.3M</span>
+      <span class="kc-band-sqft">≈ 5,263 sq ft · $243/sq ft</span>
+      <span class="kc-band-bar"><span class="kc-band-bar-fill" style="width:0%;"></span></span>
+      <span class="kc-band-share">0% of sales · 4 closed</span>
+    </div>
+  </div>
+  <p id="kc-market-bands-note" class="kc-callout kc-callout--gold">In Grand Prairie, the heart of the market is the starter band: 67% of homes sold in the past year landed under $400K, where a median of about $312K buys roughly 1,758 square feet. About 2% of sales were $700K or more, so move-up and luxury buyers have real selection. Price per square foot climbs from about $178 at the entry level to $243 at the top, which is what you are paying for in larger lots, newer builds, and higher finish levels.</p>
+    <!-- KC-TIER-BANDS:END -->
       <!-- KC-NTREIS-CARDS:START  unified market metrics, live via kc-blog-live + kcUnifiedMarketCards loader, refreshes with the monthly NTREIS scrape, never hardcode -->
   <div class="kc-grid kc-grid--4" style="margin-bottom:1rem;">
     <div class="kc-card kc-card--navy" style="text-align:center;">
@@ -1353,6 +1391,33 @@ gtag('consent','default',{
   <p style="margin-top:1.5rem;"><a href="https://kristencarpentier.expportal.com/grand-prairie-texas-homes-for-sale" class="kc-btn kc-btn--gold" target="_blank" rel="noopener">Search Current Grand Prairie Listings →</a></p>
 
     <p >Source: NTREIS via suburb-profiles.json · <span id="kc-mkt-updated">2025</span> · SFR only</p>
+  <!-- KC-DEMAND:START  demand read + price-driver narrative, baked by tools/generate-tier-bands.cjs; #kc-market-demand verdict refreshes live -->
+  <div id="kc-market-demand-block" style="margin-top:1.5rem;">
+    <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:0.75rem;">
+      <span style="font-size:0.72rem;letter-spacing:0.06em;text-transform:uppercase;color:#888;">Demand Read</span>
+      <span id="kc-market-demand" class="kc-demand-chip">Steady demand</span>
+    </div>
+    <div class="kc-grid kc-grid--4" style="margin-bottom:1rem;">
+      <div class="kc-card" style="text-align:center;background:var(--white);border:1px solid var(--stone);">
+        <div style="font-size:0.72rem;color:#888;">Months Supply</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--navy);">3.5 mo.</div>
+        <div style="font-size:0.72rem;color:var(--gold);font-weight:600;">Seller-leaning</div>
+      </div>
+      <div class="kc-card" style="text-align:center;background:var(--white);border:1px solid var(--stone);">
+        <div style="font-size:0.72rem;color:#888;">Days on Market</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--navy);">31 days</div>
+        <div style="font-size:0.72rem;color:var(--gold);font-weight:600;">Homes don't sit</div>
+      </div>
+      <div class="kc-card" style="text-align:center;background:var(--white);border:1px solid var(--stone);">
+        <div style="font-size:0.72rem;color:#888;">Sale to Original List</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--navy);">96.8%</div>
+        <div style="font-size:0.72rem;color:var(--gold);font-weight:600;">Some room to negotiate</div>
+      </div>
+    </div>
+    <div class="kc-callout kc-callout--gold"><strong>What these numbers tell you:</strong> Grand Prairie is a steady demand market. Single-family homes are averaging about 31 days on market and selling at roughly 97% of their original list price, with around 3.5 months of supply. In plain terms, well-priced homes here do not sit, and there is not much room for a lowball offer, but you are also not walking into a bidding war. If you are relocating on a timeline, get your financing in order before you tour.</div>
+    <div class="kc-callout kc-callout--gold"><strong>Why Grand Prairie is priced where it is:</strong> The value is anchored by Grand Prairie ISD, which earns a B overall and an A- for college prep, so school-driven demand stays strong year after year. It is a owner-occupied community (about 58%) where roughly 4 in 10 households have school-age kids, and it scores unusually well for walkability (Walk Score 73, high for a North Texas suburb), with 63 parks and green spaces mapped. Prices have also been stable rather than swingy. The tradeoff, and there is always one, is the commute: a typical drive runs about 31 minutes, longer than the inner-ring suburbs, which is part of why your dollar buys more square footage in Grand Prairie than closer to the core.</div>
+  </div>
+  <!-- KC-DEMAND:END -->
 
     <p>Grand Prairie's housing market is one of the most active value plays in the DFW Metroplex. At a median SFR price around $353K, roughly $100K–$200K below comparable inventory in Mansfield, Irving, or Coppell, the city attracts first-time buyers, growing families, and investors simultaneously. Monthly supply of 3.5 months puts the market in balanced territory: sellers still have pricing power, but buyers aren't competing at the same frenzy level seen in 2021–2022. Median days on market around 30 days means well-priced homes move, but buyers have time for proper due diligence.</p>
 

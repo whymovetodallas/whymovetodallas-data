@@ -1255,6 +1255,44 @@ gtag('consent','default',{
     <p class="kc-eyebrow">Market</p>
     <h2>Richardson Real Estate Market</h2>
     <p>Richardson's market is balanced, competitive enough to reward serious buyers, stable enough that families aren't getting blown out in bidding wars. At ~$464K median for single-family homes, Richardson delivers one of the strongest value propositions in North Dallas: Telecom Corridor employment, DART rail access, and established neighborhoods at a price point $150K–$200K below Plano or Frisco.</p>
+    <!-- KC-TIER-BANDS:START  price-band cards + "what your money buys" note, baked by tools/generate-tier-bands.cjs; values refresh live via suburb-data.js -->
+  <div id="kc-market-bands" class="kc-grid kc-grid--4" style="margin-bottom:1rem;">
+    <div class="kc-band" data-band="starter">
+      <span class="kc-band-label">Starter</span>
+      <span class="kc-band-range">Under $400K</span>
+      <span class="kc-band-price">$350K</span>
+      <span class="kc-band-sqft">≈ 1,648 sq ft · $213/sq ft</span>
+      <span class="kc-band-bar"><span class="kc-band-bar-fill" style="width:27%;"></span></span>
+      <span class="kc-band-share">27% of sales · 257 closed</span>
+    </div>
+    <div class="kc-band kc-band--lead" data-band="typical">
+      <span class="kc-band-ribbon">Most homes sell here</span>
+      <span class="kc-band-label">Typical</span>
+      <span class="kc-band-range">$400K to $700K</span>
+      <span class="kc-band-price">$494K</span>
+      <span class="kc-band-sqft">≈ 2,182 sq ft · $226/sq ft</span>
+      <span class="kc-band-bar"><span class="kc-band-bar-fill" style="width:58%;"></span></span>
+      <span class="kc-band-share">58% of sales · 553 closed</span>
+    </div>
+    <div class="kc-band" data-band="moveup">
+      <span class="kc-band-label">Move-up</span>
+      <span class="kc-band-range">$700K to $1M</span>
+      <span class="kc-band-price">$794K</span>
+      <span class="kc-band-sqft">≈ 2,991 sq ft · $265/sq ft</span>
+      <span class="kc-band-bar"><span class="kc-band-bar-fill" style="width:11%;"></span></span>
+      <span class="kc-band-share">11% of sales · 104 closed</span>
+    </div>
+    <div class="kc-band" data-band="luxury">
+      <span class="kc-band-label">Luxury</span>
+      <span class="kc-band-range">$1M and up</span>
+      <span class="kc-band-price">$1.5M</span>
+      <span class="kc-band-sqft">≈ 3,786 sq ft · $391/sq ft</span>
+      <span class="kc-band-bar"><span class="kc-band-bar-fill" style="width:4%;"></span></span>
+      <span class="kc-band-share">4% of sales · 35 closed</span>
+    </div>
+  </div>
+  <p id="kc-market-bands-note" class="kc-callout kc-callout--gold">In Richardson, the heart of the market is the typical band: 58% of homes sold in the past year landed between $400K and $700K, where a median of about $494K buys roughly 2,182 square feet. Entry-level homes do exist, around $350K for about 1,648 square feet, but they are a smaller share (27%). About 15% of sales were $700K or more, so move-up and luxury buyers have real selection. Price per square foot climbs from about $213 at the entry level to $391 at the top, which is what you are paying for in larger lots, newer builds, and higher finish levels.</p>
+    <!-- KC-TIER-BANDS:END -->
       <!-- KC-NTREIS-CARDS:START  unified market metrics, live via kc-blog-live + kcUnifiedMarketCards loader, refreshes with the monthly NTREIS scrape, never hardcode -->
   <div class="kc-grid kc-grid--4" style="margin-bottom:1rem;">
     <div class="kc-card kc-card--navy" style="text-align:center;">
@@ -1304,6 +1342,33 @@ gtag('consent','default',{
   <p style="margin-top:1.5rem;"><a href="https://kristencarpentier.expportal.com/search?city=Richardson&state=TX&neighborhood=Cottonwood" class="kc-btn kc-btn--gold" target="_blank" rel="noopener">Search Current Richardson Listings →</a></p>
 
     <p style="font-size:0.78rem;color:#888;margin-top:0.75rem;">Source: NTREIS via 10K Research. SFR only. Data as of <span id="kc-mkt-updated">recent period</span>. Updated automatically when available.</p>
+  <!-- KC-DEMAND:START  demand read + price-driver narrative, baked by tools/generate-tier-bands.cjs; #kc-market-demand verdict refreshes live -->
+  <div id="kc-market-demand-block" style="margin-top:1.5rem;">
+    <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:0.75rem;">
+      <span style="font-size:0.72rem;letter-spacing:0.06em;text-transform:uppercase;color:#888;">Demand Read</span>
+      <span id="kc-market-demand" class="kc-demand-chip">Steady demand</span>
+    </div>
+    <div class="kc-grid kc-grid--4" style="margin-bottom:1rem;">
+      <div class="kc-card" style="text-align:center;background:var(--white);border:1px solid var(--stone);">
+        <div style="font-size:0.72rem;color:#888;">Months Supply</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--navy);">3.0 mo.</div>
+        <div style="font-size:0.72rem;color:var(--gold);font-weight:600;">Seller-leaning</div>
+      </div>
+      <div class="kc-card" style="text-align:center;background:var(--white);border:1px solid var(--stone);">
+        <div style="font-size:0.72rem;color:#888;">Days on Market</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--navy);">28 days</div>
+        <div style="font-size:0.72rem;color:var(--gold);font-weight:600;">Homes don't sit</div>
+      </div>
+      <div class="kc-card" style="text-align:center;background:var(--white);border:1px solid var(--stone);">
+        <div style="font-size:0.72rem;color:#888;">Sale to Original List</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;color:var(--navy);">96.6%</div>
+        <div style="font-size:0.72rem;color:var(--gold);font-weight:600;">Some room to negotiate</div>
+      </div>
+    </div>
+    <div class="kc-callout kc-callout--gold"><strong>What these numbers tell you:</strong> Richardson is a steady demand market. Single-family homes are averaging about 28 days on market and selling at roughly 97% of their original list price, with around 3.0 months of supply. In plain terms, well-priced homes here do not sit, and there is not much room for a lowball offer, but you are also not walking into a bidding war. If you are relocating on a timeline, get your financing in order before you tour.</div>
+    <div class="kc-callout kc-callout--gold"><strong>Why Richardson is priced where it is:</strong> The value is anchored by Richardson ISD, which earns an A- overall and an A for college prep, so school-driven demand stays strong year after year. It is a owner-occupied community (about 51%) where roughly 3 in 10 households have school-age kids, and it scores unusually well for walkability (Walk Score 77, high for a North Texas suburb), with 74 parks and green spaces mapped. Prices have also been stable rather than swingy. The tradeoff, and there is always one, is the commute: a typical drive runs about 29 minutes, longer than the inner-ring suburbs, which is part of why your dollar buys more square footage in Richardson than closer to the core.</div>
+  </div>
+  <!-- KC-DEMAND:END -->
     <div style="margin-top:2rem;">
       <h3>What Your Budget Buys in Richardson</h3>
       <ul  style="margin-top:1rem;">
