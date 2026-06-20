@@ -846,7 +846,7 @@ gtag('consent','default',{
   "use strict";
 
   /* ======== CONFIG ======== */
-  var CC_LIVE     = false;                      // backend step flips this to true
+  var CC_LIVE     = true;                       // LIVE: posts to the deployed /api/cost-calculator Worker
   var CC_ENDPOINT = "/api/cost-calculator";     // Cloudflare Worker route (backend step)
   var SUBURB_URL  = function(slug){ return "/" + slug + "-texas"; };
   var SUBURB_HUB  = "/dallas-fort-worth-suburbs";
