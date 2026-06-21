@@ -1006,6 +1006,22 @@ gtag('consent','default',{
   var CC_ASSUMED_DEBTS = 600;   // typical other monthly debt (car, etc.), the prefill the user can override
   var CC_DTI = 0.43;            // back-end debt-to-income ceiling lenders commonly approve to (QM limit)
   var CC_SELLING_COST = 0.075;  // ~6% agent commissions + ~1.5% closing, netted from home-sale equity
+  // Tier band keys map to display labels.
+  var TIER_LABELS = { starter:"Starter", typical:"Typical", moveup:"Move-up", luxury:"Luxury" };
+  // Match a home PRICE to the suburb price band that contains it, returning the band's
+  // price-per-sqft and label. Used to translate a target price into a square footage
+  // ("$750,000 buys about 3,200 sq ft, a Move-up home"), the inverse of tierForSize.
+  function tierForPrice(s, price){
+    if(!s || !s.tiers) return null;
+    var k, t, lo, hi;
+    for(k in s.tiers){ t=s.tiers[k]; if(!t || t.ppsf==null) continue;
+      lo = t.min!=null ? t.min : 0; hi = t.max!=null ? t.max : Infinity;
+      if(price>=lo && price<=hi) return { key:k, ppsf:t.ppsf, lc:t.lc, med:t.med }; }
+    // fallback: nearest band by median price
+    var best=null, bestD=Infinity, d;
+    for(k in s.tiers){ t=s.tiers[k]; if(!t || t.ppsf==null) continue; d=Math.abs((t.med||0)-price); if(d<bestD){ bestD=d; best={ key:k, ppsf:t.ppsf, lc:t.lc, med:t.med }; } }
+    return best;
+  }
   // Down payment for a given home price: the cash you bring overrides the percent.
   // If you entered cash, that is your down payment (capped at the price); otherwise we
   // fall back to the percent (for a renter or someone with no home-sale equity).
@@ -1085,9 +1101,9 @@ gtag('consent','default',{
     // suburb has no tier data yet.
     function tierForSize(s){
       if(!s.tiers) return null;
-      var best=null, bestD=Infinity;
-      for(var k in s.tiers){ var t=s.tiers[k]; if(!t||t.sqft==null) continue; var d=Math.abs(t.sqft-sqft); if(d<bestD){bestD=d;best=t;} }
-      return best;
+      var best=null, bestKey=null, bestD=Infinity;
+      for(var k in s.tiers){ var t=s.tiers[k]; if(!t||t.sqft==null) continue; var d=Math.abs(t.sqft-sqft); if(d<bestD){bestD=d;best=t;bestKey=k;} }
+      return best ? { key:bestKey, ppsf:best.ppsf, sqft:best.sqft, med:best.med, lc:best.lc, label:(TIER_LABELS[bestKey]||bestKey) } : null;
     }
     // The "natural" DFW home for a suburb: a home your exact size, priced at the
     // matching tier's PPSF when you gave us square footage; otherwise the median home.
@@ -1105,7 +1121,10 @@ gtag('consent','default',{
       var tier = sizeMode ? tierForSize(s) : null;
       var dfwProp = dfwPropertyTax(slug, price);
       var ins     = insuranceRange(price);
-      var down    = downFor(price, cashDown, downPct);          // cash you bring overrides the percent
+      // Down payment on this specific home: only an explicitly entered cash amount
+      // overrides the percent. The auto equity default feeds affordability (buying
+      // power), it does not silently turn this into a cash purchase and zero the loan.
+      var down    = cashCustom ? Math.min(cashDown, price) : price*downPct/100;
       var loan    = price - down;
       var pi      = monthlyPI(loan, ratePct);
       var piti    = pi + Math.round(dfwProp/12) + Math.round(ins.mid/12);
@@ -1231,7 +1250,7 @@ gtag('consent','default',{
     // Describe the down payment actually used on a scenario: the cash you bring overrides
     // the percent. Full cash purchase, partial cash, or the fallback percentage.
     function downCopy(s){
-      if(m.cashDown>0){
+      if(m.cashCustom){
         if(s.down>=s.price) return money(s.price)+' paid in cash (no mortgage)';
         var pctOfPrice = Math.round(s.down/s.price*100);
         return money(s.down)+' down (your cash, about '+pctOfPrice+' percent) on '+money(s.price);
@@ -1250,11 +1269,11 @@ gtag('consent','default',{
       ? ' Your net swings with the suburb you pick: from about <span class="cc-gold">'+(best.net>=0?"+":"")+money(best.net)+' a year in '+esc(best.name)+'</span> to '+(worst.net>=0?"+":"")+money(worst.net)+' in '+esc(worst.name)+'. You do not have to buy the flashiest suburb to make the move work.'
       : '';
     if(m.incomeSavings===0 && m.state==="TX"){
-      heroLine='You are already in a no income tax state, so this move is about housing and lifestyle, not the income tax line. Here is the honest housing picture if you buy '+descr+esc(f.name)+' home at '+money(f.price)+'.'+rangeLine;
+      heroLine='You are already in a no income tax state, so this move is about housing and lifestyle, not the income tax line. The number above is what is left after the higher Texas property tax and insurance.'+rangeLine;
     } else if(positive){
-      heroLine='If you buy '+descr+esc(f.name)+' home at '+money(f.price)+', a '+esc(fileLabel)+' household earning '+money(m.income)+' would keep roughly <span class="cc-gold">'+money(net)+' more per year</span> in DFW, after the higher Texas property tax and insurance.'+rangeLine;
+      heroLine='That is mostly Texas having no state income tax, which more than offsets the higher property tax and insurance you take on here as a '+esc(fileLabel)+' household earning '+money(m.income)+'.'+rangeLine;
     } else {
-      heroLine=descr.charAt(0).toUpperCase()+descr.slice(1)+esc(f.name)+' home at '+money(f.price)+' carries enough property tax and insurance to outweigh your income tax savings by about <span class="cc-gold">'+money(Math.abs(net))+' a year</span>.'+rangeLine;
+      heroLine='Here the higher Texas property tax and insurance outweigh your income tax savings. A value suburb or a lower target price usually flips this back to positive.'+rangeLine;
     }
 
     var h='';
@@ -1321,6 +1340,70 @@ gtag('consent','default',{
           '<p class="sm">'+headSm+'</p>'+
         '</div></div>';
     }
+
+    /* mortgage two numbers, on the featured real home, with suburb + target price controls */
+    h+='<div class="cc-secblock">'+
+        '<h3>'+IC.coins+'Your monthly payment in '+esc(f.name)+', two honest numbers</h3>'+
+        '<div class="cc-target">'+
+          '<span>Suburb: '+suburbSelectHTML()+'</span>'+
+          '<label for="ccTarget">Target home price</label>'+
+          '<span class="cc-money"><input type="text" id="ccTarget" inputmode="numeric" value="'+fmt(f.price)+'"></span>'+
+          '<button type="button" id="ccTargetReset">'+(m.sizeMode?"Use a home your size":"Use "+esc(f.name)+" median")+'</button>'+
+        '</div>'+
+        '<div class="cc-pmt">'+
+          '<div class="box pi"><div class="k">Principal and interest (precise)</div>'+
+            '<div class="v">'+money(f.pi)+'<small> /mo</small></div>'+
+            '<div class="d">The clean, apples to apples number. '+ downCopy(f) +' at '+m.ratePct+' percent, 30 year fixed. Compare this from home to home.</div></div>'+
+          '<div class="box"><div class="k">Estimated all in (PITI)</div>'+
+            '<div class="v">'+money(f.piti)+'<small> /mo</small></div>'+
+            '<div class="d">What you would actually budget. An estimate: see the limitations below.</div></div>'+
+        '</div>'+
+        '<div style="border:1px solid var(--cc-line);border-radius:12px;padding:14px 18px;background:#fff;">'+
+          '<div class="cc-pmt-item"><span>Principal and interest</span><b>'+money(f.pi)+' /mo</b></div>'+
+          '<div class="cc-pmt-item"><span>'+esc(f.name)+' property tax (after homestead)</span><b>'+money(Math.round(f.dfwProp/12))+' /mo</b></div>'+
+          '<div class="cc-pmt-item"><span>Home insurance (midpoint estimate)</span><b>'+money(Math.round(f.ins.mid/12))+' /mo</b></div>'+
+          '<div class="cc-pmt-item"><span>Estimated all in monthly (PITI)</span><b>'+money(f.piti)+' /mo</b></div>'+
+        '</div>'+
+        '<p class="note" style="margin-top:.8rem;">PITI is an estimate. Property tax varies by exact address and exemptions (homestead, disabled veteran, senior). Newer master planned suburbs may carry MUD or PID assessments that raise the effective tax. Insurance is quote driven. HOA dues are not included.</p>'+
+      '</div>';
+
+    /* what your budget buys in the featured suburb: price-anchored when a target is set, */
+    /* size-anchored when a home size is given, otherwise the typical home. Always names the tier. */
+    h+='<div class="cc-secblock">'+
+        '<h3>'+IC.home+'What your budget buys in '+esc(f.name)+'</h3>'+
+        '<div class="cc-xlate">';
+    var fsub = CC_DATA.suburbs[f.slug];
+    function fitClause(price){
+      if(!m.budget) return '';
+      var r=price/m.budget;
+      if(r<=0.95) return ' That sits comfortably within your '+money(m.budget)+' budget.';
+      if(r<=1.05) return ' That is right around your '+money(m.budget)+' budget.';
+      return ' That runs above your '+money(m.budget)+' budget, so it would stretch your equity. A value suburb in the table below prices a similar home for less.';
+    }
+    if(m.targetSet && fsub && fsub.tiers){
+      // Price-anchored: translate the target price into a square footage and tier band.
+      var pt = tierForPrice(fsub, f.price);
+      var pPpsf = pt ? pt.ppsf : (f.ppsf||fsub.ppsf);
+      var pSqft = pPpsf>0 ? Math.round(f.price/pPpsf) : null;
+      var pLabel = pt ? (TIER_LABELS[pt.key]||pt.key) : '';
+      var pLc = pt && pt.lc ? ' This price band had limited recent sales, so treat the size as approximate.' : '';
+      h+='<p class="big"><span class="cc-gold">'+money(f.price)+'</span> in '+esc(f.name)+' buys about <span class="cc-gold">'+(pSqft?fmt(pSqft)+' sq ft':'a home')+'</span>'+(pLabel?', a <b>'+esc(pLabel)+'</b> tier home':'')+', at about '+money(Math.round(pPpsf))+' per square foot.'+fitClause(f.price)+'</p>'+
+         '<p class="sm">We match your target price to the '+esc(f.name)+' sale price band closest to it, then read the square footage from that band, because price per square foot runs higher on smaller homes and lower on larger ones.'+pLc+'</p>';
+    } else if(m.sizeMode){
+      // Size-anchored: price the user's square footage at the size-matched band.
+      var tierWord = f.tierLabel ? (', a <b>'+esc(f.tierLabel)+'</b> tier home') : '';
+      var lcNote = f.tierLc ? ' This band had limited recent sales, so treat it as approximate.' : '';
+      h+='<p class="big">A home your size ('+fmt(m.sqft)+' sq ft) in '+esc(f.name)+' runs about <span class="cc-gold">'+money(f.natural)+'</span>'+tierWord+'.'+fitClause(f.natural)+'</p>'+
+         '<p class="sm">Priced at about '+money(f.usedPpsf||f.ppsf)+' per square foot, the rate for homes this size in '+esc(f.name)+'. We match your square footage to the price band closest to it, because price per square foot runs higher on smaller homes and lower on larger ones.'+lcNote+'</p>';
+    } else {
+      // No size and no target: describe the typical home and its tier.
+      var mt = fsub && fsub.tiers ? tierForPrice(fsub, f.median) : null;
+      var mLabel = mt ? (TIER_LABELS[mt.key]||mt.key) : '';
+      h+='<p class="big">The typical '+esc(f.name)+' home is about <b>'+fmt(f.medSqft)+' square feet</b> at <span class="cc-gold">'+money(f.median)+'</span>'+(mLabel?', a <b>'+esc(mLabel)+'</b> tier home':'')+'.'+fitClause(f.median)+'</p>'+
+         '<p class="sm">Set a target home price in the payment section above, or add your current home size up top, and we translate it into the square footage and price band you would get in '+esc(f.name)+'.</p>';
+    }
+    h+='<a class="explore" href="'+SUBURB_URL(m.featured)+'">Explore '+esc(f.name)+' '+IC.arrow+'</a>'+
+      '</div></div>';
 
     /* WHAT YOU GET: scenario table, value to premium, sortable, with safe score chips */
     var colHome = m.sizeMode ? "A home your size" : "Typical home";
@@ -1394,70 +1477,6 @@ gtag('consent','default',{
       budgetNote = 'Net assumes you buy a typical home in each suburb. Enter a current home value to see where your budget lands in each one.';
     }
     h+='<p class="cc-scen-note">'+budgetNote+'</p>';
-
-    /* mortgage two numbers, on the featured real home, with suburb + target price controls */
-    h+='<div class="cc-secblock">'+
-        '<h3>'+IC.coins+'Your monthly payment in '+esc(f.name)+', two honest numbers</h3>'+
-        '<div class="cc-target">'+
-          '<span>Suburb: '+suburbSelectHTML()+'</span>'+
-          '<label for="ccTarget">Target home price</label>'+
-          '<span class="cc-money"><input type="text" id="ccTarget" inputmode="numeric" value="'+fmt(f.price)+'"></span>'+
-          '<button type="button" id="ccTargetReset">'+(m.sizeMode?"Use a home your size":"Use "+esc(f.name)+" median")+'</button>'+
-        '</div>'+
-        '<div class="cc-pmt">'+
-          '<div class="box pi"><div class="k">Principal and interest (precise)</div>'+
-            '<div class="v">'+money(f.pi)+'<small> /mo</small></div>'+
-            '<div class="d">The clean, apples to apples number. '+ downCopy(f) +' at '+m.ratePct+' percent, 30 year fixed. Compare this from home to home.</div></div>'+
-          '<div class="box"><div class="k">Estimated all in (PITI)</div>'+
-            '<div class="v">'+money(f.piti)+'<small> /mo</small></div>'+
-            '<div class="d">What you would actually budget. An estimate: see the limitations below.</div></div>'+
-        '</div>'+
-        '<div style="border:1px solid var(--cc-line);border-radius:12px;padding:14px 18px;background:#fff;">'+
-          '<div class="cc-pmt-item"><span>Principal and interest</span><b>'+money(f.pi)+' /mo</b></div>'+
-          '<div class="cc-pmt-item"><span>'+esc(f.name)+' property tax (after homestead)</span><b>'+money(Math.round(f.dfwProp/12))+' /mo</b></div>'+
-          '<div class="cc-pmt-item"><span>Home insurance (midpoint estimate)</span><b>'+money(Math.round(f.ins.mid/12))+' /mo</b></div>'+
-          '<div class="cc-pmt-item"><span>Estimated all in monthly (PITI)</span><b>'+money(f.piti)+' /mo</b></div>'+
-        '</div>'+
-        '<p class="note" style="margin-top:.8rem;">PITI is an estimate. Property tax varies by exact address and exemptions (homestead, disabled veteran, senior). Newer master planned suburbs may carry MUD or PID assessments that raise the effective tax. Insurance is quote driven. HOA dues are not included.</p>'+
-      '</div>';
-
-    /* what your budget buys in the featured suburb */
-    h+='<div class="cc-secblock">'+
-        '<h3>'+IC.home+'What your budget buys in '+esc(f.name)+'</h3>'+
-        '<div class="cc-xlate">';
-    if(m.sizeMode && m.budget){
-      // We know their size: price that size here and compare to budget directly.
-      var sizePrice=f.natural;
-      var sr=m.budget/sizePrice;
-      var sLine = sr>=1.05
-        ? 'A home your size ('+fmt(m.sqft)+' sq ft) in '+esc(f.name)+' runs about <span class="cc-gold">'+money(sizePrice)+'</span>, comfortably <b>under</b> your '+money(m.budget)+' budget.'
-        : (sr>=0.9
-          ? 'A home your size ('+fmt(m.sqft)+' sq ft) in '+esc(f.name)+' runs about <span class="cc-gold">'+money(sizePrice)+'</span>, right around your '+money(m.budget)+' budget.'
-          : 'A home your size ('+fmt(m.sqft)+' sq ft) in '+esc(f.name)+' runs about <span class="cc-gold">'+money(sizePrice)+'</span>, above your '+money(m.budget)+' budget. A value suburb in the table above prices the same size for less.');
-      var tierWord = f.tierLabel ? (' '+esc(f.tierLabel)+' tier') : '';
-      var lcNote = f.tierLc ? ' This band had limited recent sales, so treat it as approximate.' : '';
-      h+='<p class="big">'+sLine+'</p>'+
-         '<p class="sm">Priced at about '+money(f.usedPpsf||f.ppsf)+' per square foot, the rate for'+(tierWord?tierWord:' homes this size')+' in '+esc(f.name)+'. We match your square footage to the price band closest to it, because price per square foot runs higher on smaller homes and lower on larger ones.'+lcNote+'</p>';
-    } else if(m.sizeMode){
-      var tierWord2 = f.tierLabel ? (' '+esc(f.tierLabel)+' tier') : '';
-      var lcNote2 = f.tierLc ? ' Limited recent sales in this band, so treat it as approximate.' : '';
-      h+='<p class="big">A home your size ('+fmt(m.sqft)+' sq ft) in '+esc(f.name)+' runs about <span class="cc-gold">'+money(f.natural)+'</span>, around '+money(f.usedPpsf||f.ppsf)+' per square foot'+(tierWord2?' ('+tierWord2.trim()+')':'')+'.'+lcNote2+'</p>'+
-         '<p class="sm">Add a current home value to see how that compares to your budget across the suburbs above.</p>';
-    } else if(m.budget){
-      var ratio=m.budget/f.median;
-      var buyLine = ratio>=1.05
-        ? 'Your <b>'+money(m.budget)+'</b> budget lands <span class="cc-gold">above</span> the typical '+esc(f.name)+' home, so you can buy larger or newer than the median.'
-        : (ratio>=0.85
-          ? 'Your <b>'+money(m.budget)+'</b> budget lands right around the typical '+esc(f.name)+' home.'
-          : 'Your <b>'+money(m.budget)+'</b> budget is below the typical '+esc(f.name)+' home, so this is a stretch suburb. A value suburb in the table above gives you more home for the same money.');
-      h+='<p class="big">'+buyLine+'</p>'+
-         '<p class="sm">The typical '+esc(f.name)+' home is about <b>'+fmt(f.medSqft)+' square feet</b> at '+money(f.median)+'. For an exact match, add your current home size up top and we price a home that size in each suburb. We avoid converting your budget into a square footage with a single rate, because price per square foot is higher on smaller homes and would mislead.</p>';
-    } else {
-      h+='<p class="big">The typical '+esc(f.name)+' home is about <b>'+fmt(f.medSqft)+' square feet</b> at <span class="cc-gold">'+money(f.median)+'</span>.</p>'+
-         '<p class="sm">Enter a current home value to see where your budget lands in '+esc(f.name)+' and across the suburbs above.</p>';
-    }
-    h+='<a class="explore" href="'+SUBURB_URL(m.featured)+'">Explore '+esc(f.name)+' '+IC.arrow+'</a>'+
-      '</div></div>';
 
     /* Tier 2 placeholder (structured slot) */
     h+='<div class="cc-secblock"><div class="cc-tier2">'+
