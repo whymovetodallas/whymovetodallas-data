@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "last_updated": "2026-06-21T00:11:32.374Z",
+    "last_updated": "2026-06-21T00:14:46.167Z",
     "sources": [
       "Census ACS 2023",
       "WalkScore (2026-06-21)",
@@ -14,7 +14,7 @@
     "suburbs_partial": 0,
     "schema_version": "1.0",
     "note": "Run build-suburb-profiles.js after any source data refresh.",
-    "niche_city_scraped": "2026-05-27",
+    "niche_city_scraped": "2026-06-21",
     "places_data_fetched": "2026-05-19",
     "places_api_radius_miles": 5,
     "fbi_data_fetched": null,
@@ -3434,8 +3434,32 @@
         "owner_occupied_pct": 97.8,
         "wfh_pct": 22.5
       },
-      "niche_city": null,
-      "crime": null,
+      "niche_city": {
+        "overall": "A",
+        "public_schools": "A+",
+        "crime": "B+",
+        "housing": "B+",
+        "nightlife": "A-",
+        "families": "A+",
+        "diversity": "C+",
+        "jobs": "A",
+        "weather": "B+",
+        "cost_of_living": "B+",
+        "health_fitness": "A",
+        "outdoor_activities": "C+",
+        "commute": "C+",
+        "scraped_date": "2026-06-21"
+      },
+      "crime": {
+        "niche_crime_grade": "B+",
+        "niche_crime_numeric": 87,
+        "fbi_violent_per_100k": null,
+        "fbi_property_per_100k": null,
+        "fbi_agency_ori": null,
+        "fbi_data_available": false,
+        "fbi_reporting": null,
+        "fbi_data_year": null
+      },
       "amenities": null,
       "scores": {
         "family_score": 58,
