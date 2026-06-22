@@ -12,7 +12,7 @@
     <copyright>Copyright 2026 Kristen Carpentier / Social Agent Group</copyright>
     <managingEditor>Kristen@whymovetodallas.com (Kristen Carpentier)</managingEditor>
     <webMaster>Kristen@whymovetodallas.com (Kristen Carpentier)</webMaster>
-    <lastBuildDate>Thu, 18 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 19 Jun 2026 00:00:00 +0000</lastBuildDate>
     <ttl>1440</ttl>
     <atom:link href="https://whymovetodallas.com/feed.xml" rel="self" type="application/rss+xml" />
     <image>
@@ -20,6 +20,17 @@
       <title>Why Move to Dallas</title>
       <link>https://whymovetodallas.com</link>
     </image>
+
+  <item>
+    <title><![CDATA[Frisco vs McKinney vs Flower Mound Texas: Which Suburb Fits Your Family?]]></title>
+    <link>https://whymovetodallas.com/blog/frisco-vs-mckinney-vs-flower-mound-texas</link>
+    <guid isPermaLink="true">https://whymovetodallas.com/blog/frisco-vs-mckinney-vs-flower-mound-texas</guid>
+    <pubDate>Fri, 19 Jun 2026 00:00:00 +0000</pubDate>
+    <description><![CDATA[Compare Frisco, McKinney, and Flower Mound on schools, home prices, commutes, taxes, and family lifestyle before choosing your DFW suburb.]]></description>
+      <category>City Comparisons</category>
+      <enclosure url="https://whymovetodallas.com/images/blog/frisco-vs-mckinney-flower-mound-hero.webp" type="image/jpeg" length="0" />
+      <media:content url="https://whymovetodallas.com/images/blog/frisco-vs-mckinney-flower-mound-hero.webp" medium="image" />
+  </item>
 
   <item>
     <title><![CDATA[Living in Argyle, Texas for Families]]></title>
@@ -558,17 +569,6 @@
       <category>Home Tour</category>
       <enclosure url="https://i.ytimg.com/vi/Tx6ywzjDYYI/maxresdefault.jpg" type="image/jpeg" length="0" />
       <media:content url="https://i.ytimg.com/vi/Tx6ywzjDYYI/maxresdefault.jpg" medium="image" />
-  </item>
-
-  <item>
-    <title><![CDATA[North Richland Hills Texas: Hometown Community Guide]]></title>
-    <link>https://whymovetodallas.com/blog/north-richland-hills-tx-hometown-community</link>
-    <guid isPermaLink="true">https://whymovetodallas.com/blog/north-richland-hills-tx-hometown-community</guid>
-    <pubDate>Fri, 24 Nov 2023 00:00:00 +0000</pubDate>
-    <description><![CDATA[Explore Hometown in North Richland Hills Texas, where convenience meets community. This mixed-use gem offers diverse housing options, from townhomes to sin]]></description>
-      <category>Suburb Guide</category>
-      <enclosure url="https://i.ytimg.com/vi/dyWI1M5nb2k/maxresdefault.jpg" type="image/jpeg" length="0" />
-      <media:content url="https://i.ytimg.com/vi/dyWI1M5nb2k/maxresdefault.jpg" medium="image" />
   </item>
 
   </channel>
