@@ -18,7 +18,8 @@
     "places_data_fetched": "2026-05-19",
     "places_api_radius_miles": 5,
     "fbi_data_fetched": null,
-    "fbi_data_year": null
+    "fbi_data_year": null,
+    "education_fix": "ISD-grade based (weighted for split suburbs) 2026-06-23"
   },
   "suburbs": {
     "addison": {
@@ -498,10 +499,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 62,
-        "value_score": 93,
+        "family_score": 60,
+        "value_score": 92,
         "sub_scores": {
-          "education": 83,
+          "education": 80,
           "safety": 80,
           "family_community": 50,
           "commute": 42,
@@ -618,7 +619,19 @@
         "college_prep_grade": "A+",
         "good_for_families": "A+",
         "niche_url": "https://www.niche.com/k12/d/argyle-independent-school-district-tx/",
-        "split_isd": true
+        "split_isd": true,
+        "isd_breakdown": [
+          {
+            "isd": "Argyle ISD",
+            "grade": "A+",
+            "pct": 95
+          },
+          {
+            "isd": "Denton ISD",
+            "grade": "A",
+            "pct": 5
+          }
+        ]
       },
       "quiz": {
         "sfr_median_price": 567039.1,
@@ -990,10 +1003,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 67,
-        "value_score": 95,
+        "family_score": 64,
+        "value_score": 94,
         "sub_scores": {
-          "education": 87,
+          "education": 83,
           "safety": 77,
           "family_community": 42,
           "commute": 59,
@@ -1317,10 +1330,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 80,
-        "value_score": 88,
+        "family_score": 83,
+        "value_score": 89,
         "sub_scores": {
-          "education": 93,
+          "education": 97,
           "safety": 77,
           "family_community": 77,
           "commute": 54,
@@ -1604,7 +1617,24 @@
         "college_prep_grade": "A",
         "good_for_families": "A",
         "niche_url": "https://www.niche.com/k12/d/carrollton-farmers-branch-independent-school-district-tx/",
-        "split_isd": true
+        "split_isd": true,
+        "isd_breakdown": [
+          {
+            "isd": "Carrollton-Farmers Branch ISD",
+            "grade": "B+",
+            "pct": 70
+          },
+          {
+            "isd": "Lewisville ISD",
+            "grade": "A",
+            "pct": 25
+          },
+          {
+            "isd": "Dallas ISD",
+            "grade": "B",
+            "pct": 5
+          }
+        ]
       },
       "quiz": {
         "sfr_median_price": 425562.5,
@@ -1651,10 +1681,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 82,
-        "value_score": 92,
+        "family_score": 76,
+        "value_score": 90,
         "sub_scores": {
-          "education": 97,
+          "education": 88,
           "safety": 80,
           "family_community": 69,
           "commute": 52,
@@ -1938,7 +1968,19 @@
         "college_prep_grade": "B+",
         "good_for_families": "A+",
         "niche_url": "https://www.niche.com/k12/d/celina-independent-school-district-tx/",
-        "split_isd": true
+        "split_isd": true,
+        "isd_breakdown": [
+          {
+            "isd": "Celina ISD",
+            "grade": "B+",
+            "pct": 70
+          },
+          {
+            "isd": "Prosper ISD",
+            "grade": "A",
+            "pct": 30
+          }
+        ]
       },
       "quiz": {
         "sfr_median_price": 528829.1,
@@ -1985,10 +2027,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 74,
-        "value_score": 96,
+        "family_score": 72,
+        "value_score": 95,
         "sub_scores": {
-          "education": 93,
+          "education": 89,
           "safety": 80,
           "family_community": 70,
           "commute": 47,
@@ -2264,7 +2306,24 @@
         "college_prep_grade": "A+",
         "good_for_families": "A+",
         "niche_url": "https://www.niche.com/k12/d/grapevine-colleyville-independent-school-district-tx/",
-        "split_isd": true
+        "split_isd": true,
+        "isd_breakdown": [
+          {
+            "isd": "Grapevine-Colleyville ISD",
+            "grade": "A+",
+            "pct": 85
+          },
+          {
+            "isd": "Keller ISD",
+            "grade": "A",
+            "pct": 10
+          },
+          {
+            "isd": "HEB ISD",
+            "grade": "A-",
+            "pct": 5
+          }
+        ]
       },
       "quiz": {
         "sfr_median_price": 1001645.8,
@@ -2311,10 +2370,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 83,
+        "family_score": 82,
         "value_score": 56,
         "sub_scores": {
-          "education": 97,
+          "education": 96,
           "safety": 87,
           "family_community": 47,
           "commute": 55,
@@ -2431,7 +2490,24 @@
         "college_prep_grade": "A+",
         "good_for_families": "A+",
         "niche_url": "https://www.niche.com/k12/d/coppell-independent-school-district-tx/",
-        "split_isd": true
+        "split_isd": true,
+        "isd_breakdown": [
+          {
+            "isd": "Coppell ISD",
+            "grade": "A+",
+            "pct": 90
+          },
+          {
+            "isd": "Lewisville ISD",
+            "grade": "A",
+            "pct": 5
+          },
+          {
+            "isd": "Carrollton-Farmers Branch ISD",
+            "grade": "B+",
+            "pct": 5
+          }
+        ]
       },
       "quiz": {
         "sfr_median_price": 629583.3,
@@ -2478,10 +2554,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 83,
+        "family_score": 82,
         "value_score": 84,
         "sub_scores": {
-          "education": 97,
+          "education": 96,
           "safety": 83,
           "family_community": 63,
           "commute": 53,
@@ -2599,7 +2675,24 @@
         "college_prep_grade": "A-",
         "good_for_families": "B+",
         "niche_url": "https://www.niche.com/k12/d/lake-dallas-independent-school-district-tx/",
-        "split_isd": true
+        "split_isd": true,
+        "isd_breakdown": [
+          {
+            "isd": "Lake Dallas ISD",
+            "grade": "B",
+            "pct": 70
+          },
+          {
+            "isd": "Denton ISD",
+            "grade": "A",
+            "pct": 25
+          },
+          {
+            "isd": "Lewisville ISD",
+            "grade": "A",
+            "pct": 5
+          }
+        ]
       },
       "quiz": {
         "sfr_median_price": 449808.6,
@@ -2646,10 +2739,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 76,
+        "family_score": 73,
         "value_score": 93,
         "sub_scores": {
-          "education": 90,
+          "education": 86,
           "safety": 83,
           "family_community": 65,
           "commute": 46,
@@ -2962,10 +3055,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 59,
+        "family_score": 61,
         "value_score": 71,
         "sub_scores": {
-          "education": 80,
+          "education": 83,
           "safety": 70,
           "family_community": 46,
           "commute": 53,
@@ -3129,10 +3222,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 71,
+        "family_score": 74,
         "value_score": 86,
         "sub_scores": {
-          "education": 87,
+          "education": 90,
           "safety": 73,
           "family_community": 55,
           "commute": 64,
@@ -3420,7 +3513,19 @@
         "college_prep_grade": "A+",
         "good_for_families": "A",
         "niche_url": "https://www.niche.com/k12/d/lewisville-independent-school-district-tx/",
-        "split_isd": true
+        "split_isd": true,
+        "isd_breakdown": [
+          {
+            "isd": "Lewisville ISD",
+            "grade": "A",
+            "pct": 90
+          },
+          {
+            "isd": "Denton ISD",
+            "grade": "A",
+            "pct": 10
+          }
+        ]
       },
       "quiz": {
         "sfr_median_price": 969979.2,
@@ -3466,10 +3571,10 @@
         "shopping": 2
       },
       "scores": {
-        "family_score": 85,
-        "value_score": 55,
+        "family_score": 82,
+        "value_score": 54,
         "sub_scores": {
-          "education": 97,
+          "education": 93,
           "safety": 87,
           "family_community": 69,
           "commute": 48,
@@ -3635,10 +3740,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 60,
-        "value_score": 88,
+        "family_score": 63,
+        "value_score": 89,
         "sub_scores": {
-          "education": 77,
+          "education": 80,
           "safety": 73,
           "family_community": 52,
           "commute": 55,
@@ -4118,10 +4223,10 @@
       },
       "amenities": null,
       "scores": {
-        "family_score": 60,
-        "value_score": 84,
+        "family_score": 67,
+        "value_score": 86,
         "sub_scores": {
-          "education": 77,
+          "education": 87,
           "safety": 72,
           "family_community": 44,
           "commute": 61,
@@ -4407,7 +4512,29 @@
         "college_prep_grade": "A+",
         "good_for_families": "A",
         "niche_url": "https://www.niche.com/k12/d/lewisville-independent-school-district-tx/",
-        "split_isd": true
+        "split_isd": true,
+        "isd_breakdown": [
+          {
+            "isd": "Lewisville ISD",
+            "grade": "A",
+            "pct": 85
+          },
+          {
+            "isd": "Argyle ISD",
+            "grade": "A+",
+            "pct": 5
+          },
+          {
+            "isd": "Denton ISD",
+            "grade": "A",
+            "pct": 5
+          },
+          {
+            "isd": "Northwest ISD",
+            "grade": "A-",
+            "pct": 5
+          }
+        ]
       },
       "quiz": {
         "sfr_median_price": 621958.3,
@@ -4454,10 +4581,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 85,
+        "family_score": 82,
         "value_score": 88,
         "sub_scores": {
-          "education": 97,
+          "education": 93,
           "safety": 87,
           "family_community": 68,
           "commute": 48,
@@ -4623,10 +4750,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 60,
+        "family_score": 57,
         "value_score": 96,
         "sub_scores": {
-          "education": 87,
+          "education": 83,
           "safety": 73,
           "family_community": 48,
           "commute": 38,
@@ -4743,7 +4870,39 @@
         "college_prep_grade": "B+",
         "good_for_families": "B",
         "niche_url": "https://www.niche.com/k12/d/fort-worth-independent-school-district-tx/",
-        "split_isd": true
+        "split_isd": true,
+        "isd_breakdown": [
+          {
+            "isd": "Fort Worth ISD",
+            "grade": "B-",
+            "pct": 65
+          },
+          {
+            "isd": "Eagle Mountain-Saginaw ISD",
+            "grade": "A-",
+            "pct": 10
+          },
+          {
+            "isd": "Crowley ISD",
+            "grade": "B-",
+            "pct": 10
+          },
+          {
+            "isd": "Keller ISD",
+            "grade": "A",
+            "pct": 5
+          },
+          {
+            "isd": "Northwest ISD",
+            "grade": "A-",
+            "pct": 5
+          },
+          {
+            "isd": "Birdville ISD",
+            "grade": "B+",
+            "pct": 5
+          }
+        ]
       },
       "quiz": {
         "sfr_median_price": 339687.8,
@@ -4790,10 +4949,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 56,
-        "value_score": 86,
+        "family_score": 61,
+        "value_score": 88,
         "sub_scores": {
-          "education": 76,
+          "education": 83,
           "safety": 73,
           "family_community": 37,
           "commute": 53,
@@ -4910,7 +5069,24 @@
         "college_prep_grade": "A+",
         "good_for_families": "A+",
         "niche_url": "https://www.niche.com/k12/d/frisco-independent-school-district-tx/",
-        "split_isd": true
+        "split_isd": true,
+        "isd_breakdown": [
+          {
+            "isd": "Frisco ISD",
+            "grade": "A+",
+            "pct": 85
+          },
+          {
+            "isd": "Prosper ISD",
+            "grade": "A",
+            "pct": 10
+          },
+          {
+            "isd": "Lewisville ISD",
+            "grade": "A",
+            "pct": 5
+          }
+        ]
       },
       "quiz": {
         "sfr_median_price": 679371.3,
@@ -4957,10 +5133,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 83,
-        "value_score": 80,
+        "family_score": 82,
+        "value_score": 79,
         "sub_scores": {
-          "education": 97,
+          "education": 96,
           "safety": 80,
           "family_community": 74,
           "commute": 51,
@@ -5125,10 +5301,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 61,
+        "family_score": 63,
         "value_score": 91,
         "sub_scores": {
-          "education": 87,
+          "education": 90,
           "safety": 73,
           "family_community": 41,
           "commute": 40,
@@ -5246,7 +5422,34 @@
         "college_prep_grade": "A-",
         "good_for_families": "B+",
         "niche_url": "https://www.niche.com/k12/d/grand-prairie-independent-school-district-tx/",
-        "split_isd": true
+        "split_isd": true,
+        "isd_breakdown": [
+          {
+            "isd": "Grand Prairie ISD",
+            "grade": "B",
+            "pct": 65
+          },
+          {
+            "isd": "Arlington ISD",
+            "grade": "B",
+            "pct": 20
+          },
+          {
+            "isd": "Mansfield ISD",
+            "grade": "A",
+            "pct": 10
+          },
+          {
+            "isd": "Cedar Hill ISD",
+            "grade": "C",
+            "pct": 3
+          },
+          {
+            "isd": "Irving ISD",
+            "grade": "B-",
+            "pct": 2
+          }
+        ]
       },
       "quiz": {
         "sfr_median_price": 353452.3,
@@ -5293,10 +5496,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 62,
+        "family_score": 63,
         "value_score": 88,
         "sub_scores": {
-          "education": 83,
+          "education": 84,
           "safety": 77,
           "family_community": 36,
           "commute": 48,
@@ -5581,7 +5784,19 @@
         "college_prep_grade": "A",
         "good_for_families": "B+",
         "niche_url": "https://www.niche.com/k12/d/eagle-mountain-saginaw-independent-school-district-tx/",
-        "split_isd": true
+        "split_isd": true,
+        "isd_breakdown": [
+          {
+            "isd": "Northwest ISD",
+            "grade": "A-",
+            "pct": 60
+          },
+          {
+            "isd": "Eagle Mountain-Saginaw ISD",
+            "grade": "A-",
+            "pct": 40
+          }
+        ]
       },
       "quiz": {
         "sfr_median_price": 500886.3,
@@ -5795,10 +6010,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 78,
-        "value_score": 81,
+        "family_score": 75,
+        "value_score": 80,
         "sub_scores": {
-          "education": 97,
+          "education": 93,
           "safety": 83,
           "family_community": 77,
           "commute": 50,
@@ -6113,10 +6328,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 87,
-        "value_score": 89,
+        "family_score": 84,
+        "value_score": 88,
         "sub_scores": {
-          "education": 97,
+          "education": 93,
           "safety": 87,
           "family_community": 76,
           "commute": 47,
@@ -6281,10 +6496,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 75,
+        "family_score": 78,
         "value_score": 87,
         "sub_scores": {
-          "education": 93,
+          "education": 97,
           "safety": 77,
           "family_community": 58,
           "commute": 53,
@@ -6448,10 +6663,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 67,
-        "value_score": 86,
+        "family_score": 62,
+        "value_score": 85,
         "sub_scores": {
-          "education": 87,
+          "education": 80,
           "safety": 73,
           "family_community": 46,
           "commute": 56,
@@ -6568,7 +6783,19 @@
         "college_prep_grade": "A+",
         "good_for_families": "A+",
         "niche_url": "https://www.niche.com/k12/d/keller-independent-school-district-tx/",
-        "split_isd": true
+        "split_isd": true,
+        "isd_breakdown": [
+          {
+            "isd": "Keller ISD",
+            "grade": "A",
+            "pct": 95
+          },
+          {
+            "isd": "Northwest ISD",
+            "grade": "A-",
+            "pct": 5
+          }
+        ]
       },
       "quiz": {
         "sfr_median_price": 682912.5,
@@ -6615,10 +6842,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 77,
+        "family_score": 74,
         "value_score": 83,
         "sub_scores": {
-          "education": 97,
+          "education": 93,
           "safety": 83,
           "family_community": 50,
           "commute": 42,
@@ -6775,10 +7002,10 @@
       },
       "amenities": null,
       "scores": {
-        "family_score": 52,
-        "value_score": 87,
+        "family_score": 58,
+        "value_score": 89,
         "sub_scores": {
-          "education": 73,
+          "education": 80,
           "safety": 69,
           "family_community": 58,
           "commute": 43,
@@ -6890,13 +7117,25 @@
         }
       },
       "schools": {
-        "isd_name": "Argyle ISD",
-        "overall_grade": "A+",
+        "isd_name": "Denton ISD",
+        "overall_grade": "A",
         "academics_grade": "A+",
         "college_prep_grade": "A+",
         "good_for_families": "A+",
         "niche_url": "https://www.niche.com/k12/d/argyle-independent-school-district-tx/",
-        "split_isd": true
+        "split_isd": true,
+        "isd_breakdown": [
+          {
+            "isd": "Denton ISD",
+            "grade": "A",
+            "pct": 90
+          },
+          {
+            "isd": "Argyle ISD",
+            "grade": "A+",
+            "pct": 10
+          }
+        ]
       },
       "quiz": {
         "sfr_median_price": 653166.7,
@@ -6943,10 +7182,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 90,
-        "value_score": 90,
+        "family_score": 87,
+        "value_score": 89,
         "sub_scores": {
-          "education": 97,
+          "education": 93,
           "safety": 89,
           "family_community": 91,
           "commute": 42,
@@ -7103,10 +7342,10 @@
       },
       "amenities": null,
       "scores": {
-        "family_score": 64,
-        "value_score": 96,
+        "family_score": 60,
+        "value_score": 95,
         "sub_scores": {
-          "education": 83,
+          "education": 77,
           "safety": 79,
           "family_community": 76,
           "commute": 25,
@@ -7381,7 +7620,24 @@
         "college_prep_grade": "A",
         "good_for_families": "A",
         "niche_url": "https://www.niche.com/k12/d/little-elm-independent-school-district-tx/",
-        "split_isd": true
+        "split_isd": true,
+        "isd_breakdown": [
+          {
+            "isd": "Little Elm ISD",
+            "grade": "B",
+            "pct": 55
+          },
+          {
+            "isd": "Denton ISD",
+            "grade": "A",
+            "pct": 25
+          },
+          {
+            "isd": "Frisco ISD",
+            "grade": "A+",
+            "pct": 20
+          }
+        ]
       },
       "quiz": {
         "sfr_median_price": 404744.6,
@@ -7428,10 +7684,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 73,
-        "value_score": 96,
+        "family_score": 69,
+        "value_score": 95,
         "sub_scores": {
-          "education": 93,
+          "education": 88,
           "safety": 80,
           "family_community": 48,
           "commute": 48,
@@ -7883,7 +8139,34 @@
         "college_prep_grade": "A+",
         "good_for_families": "A+",
         "niche_url": "https://www.niche.com/k12/d/mckinney-independent-school-district-tx/",
-        "split_isd": true
+        "split_isd": true,
+        "isd_breakdown": [
+          {
+            "isd": "McKinney ISD",
+            "grade": "A",
+            "pct": 75
+          },
+          {
+            "isd": "Prosper ISD",
+            "grade": "A",
+            "pct": 10
+          },
+          {
+            "isd": "Frisco ISD",
+            "grade": "A+",
+            "pct": 5
+          },
+          {
+            "isd": "Melissa ISD",
+            "grade": "A",
+            "pct": 5
+          },
+          {
+            "isd": "Lovejoy ISD",
+            "grade": "A+",
+            "pct": 5
+          }
+        ]
       },
       "quiz": {
         "sfr_median_price": 497691.3,
@@ -7930,10 +8213,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 82,
-        "value_score": 93,
+        "family_score": 79,
+        "value_score": 92,
         "sub_scores": {
-          "education": 97,
+          "education": 93,
           "safety": 80,
           "family_community": 62,
           "commute": 54,
@@ -8088,10 +8371,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 86,
-        "value_score": 98,
+        "family_score": 83,
+        "value_score": 97,
         "sub_scores": {
-          "education": 97,
+          "education": 93,
           "safety": 90,
           "family_community": 66,
           "commute": 49,
@@ -8536,7 +8819,19 @@
         "college_prep_grade": "A+",
         "good_for_families": "A-",
         "niche_url": "https://www.niche.com/k12/d/plano-independent-school-district-tx/",
-        "split_isd": true
+        "split_isd": true,
+        "isd_breakdown": [
+          {
+            "isd": "Plano ISD",
+            "grade": "A",
+            "pct": 55
+          },
+          {
+            "isd": "Wylie ISD",
+            "grade": "A+",
+            "pct": 45
+          }
+        ]
       },
       "quiz": {
         "sfr_median_price": 593787.5,
@@ -8583,10 +8878,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 87,
-        "value_score": 92,
+        "family_score": 86,
+        "value_score": 91,
         "sub_scores": {
-          "education": 97,
+          "education": 95,
           "safety": 87,
           "family_community": 86,
           "commute": 42,
@@ -8704,7 +8999,19 @@
         "college_prep_grade": "A",
         "good_for_families": "B-",
         "niche_url": "https://www.niche.com/k12/d/birdville-independent-school-district-tx/",
-        "split_isd": true
+        "split_isd": true,
+        "isd_breakdown": [
+          {
+            "isd": "Birdville ISD",
+            "grade": "B+",
+            "pct": 80
+          },
+          {
+            "isd": "Keller ISD",
+            "grade": "A",
+            "pct": 20
+          }
+        ]
       },
       "quiz": {
         "sfr_median_price": 388329.2,
@@ -8751,10 +9058,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 74,
-        "value_score": 92,
+        "family_score": 70,
+        "value_score": 91,
         "sub_scores": {
-          "education": 93,
+          "education": 88,
           "safety": 80,
           "family_community": 44,
           "commute": 50,
@@ -8871,7 +9178,24 @@
         "college_prep_grade": "A",
         "good_for_families": "B",
         "niche_url": "https://www.niche.com/k12/d/northwest-independent-school-district-tx/",
-        "split_isd": true
+        "split_isd": true,
+        "isd_breakdown": [
+          {
+            "isd": "Northwest ISD",
+            "grade": "A-",
+            "pct": 75
+          },
+          {
+            "isd": "Argyle ISD",
+            "grade": "A+",
+            "pct": 20
+          },
+          {
+            "isd": "Ponder ISD",
+            "grade": "B",
+            "pct": 5
+          }
+        ]
       },
       "quiz": {
         "sfr_median_price": 561326.3,
@@ -8918,10 +9242,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 82,
+        "family_score": 81,
         "value_score": 87,
         "sub_scores": {
-          "education": 93,
+          "education": 91,
           "safety": 83,
           "family_community": 86,
           "commute": 47,
@@ -9038,7 +9362,19 @@
         "college_prep_grade": "A+",
         "good_for_families": "A-",
         "niche_url": "https://www.niche.com/k12/d/plano-independent-school-district-tx/",
-        "split_isd": true
+        "split_isd": true,
+        "isd_breakdown": [
+          {
+            "isd": "Plano ISD",
+            "grade": "A",
+            "pct": 95
+          },
+          {
+            "isd": "Frisco ISD",
+            "grade": "A+",
+            "pct": 5
+          }
+        ]
       },
       "quiz": {
         "sfr_median_price": 525939.6,
@@ -9085,10 +9421,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 80,
-        "value_score": 89,
+        "family_score": 77,
+        "value_score": 88,
         "sub_scores": {
-          "education": 97,
+          "education": 93,
           "safety": 80,
           "family_community": 53,
           "commute": 54,
@@ -9354,7 +9690,19 @@
         "college_prep_grade": "A+",
         "good_for_families": "A+",
         "niche_url": "https://www.niche.com/k12/d/prosper-independent-school-district-tx/",
-        "split_isd": true
+        "split_isd": true,
+        "isd_breakdown": [
+          {
+            "isd": "Prosper ISD",
+            "grade": "A",
+            "pct": 90
+          },
+          {
+            "isd": "Frisco ISD",
+            "grade": "A+",
+            "pct": 10
+          }
+        ]
       },
       "quiz": {
         "sfr_median_price": 851512.5,
@@ -9401,10 +9749,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 84,
+        "family_score": 81,
         "value_score": 68,
         "sub_scores": {
-          "education": 97,
+          "education": 93,
           "safety": 87,
           "family_community": 75,
           "commute": 46,
@@ -9568,10 +9916,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 76,
-        "value_score": 88,
+        "family_score": 74,
+        "value_score": 87,
         "sub_scores": {
-          "education": 93,
+          "education": 90,
           "safety": 80,
           "family_community": 49,
           "commute": 55,
@@ -9679,7 +10027,14 @@
         "college_prep_grade": "A",
         "good_for_families": "B",
         "niche_url": "https://www.niche.com/k12/d/northwest-independent-school-district-tx/",
-        "split_isd": true
+        "split_isd": true,
+        "isd_breakdown": [
+          {
+            "isd": "Northwest ISD",
+            "grade": "A-",
+            "pct": 100
+          }
+        ]
       },
       "quiz": {
         "sfr_median_price": 590363.4,
@@ -9726,10 +10081,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 87,
-        "value_score": 79,
+        "family_score": 82,
+        "value_score": 77,
         "sub_scores": {
-          "education": 97,
+          "education": 90,
           "safety": 83,
           "family_community": 82,
           "commute": 52,
@@ -9893,10 +10248,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 81,
-        "value_score": 88,
+        "family_score": 78,
+        "value_score": 87,
         "sub_scores": {
-          "education": 97,
+          "education": 93,
           "safety": 80,
           "family_community": 70,
           "commute": 55,
@@ -10004,7 +10359,19 @@
         "college_prep_grade": "A",
         "good_for_families": "B+",
         "niche_url": "https://www.niche.com/k12/d/garland-independent-school-district-tx/",
-        "split_isd": true
+        "split_isd": true,
+        "isd_breakdown": [
+          {
+            "isd": "Garland ISD",
+            "grade": "A-",
+            "pct": 80
+          },
+          {
+            "isd": "Rockwall ISD",
+            "grade": "A",
+            "pct": 20
+          }
+        ]
       },
       "quiz": {
         "sfr_median_price": 379030.4,
@@ -10051,10 +10418,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 64,
-        "value_score": 95,
+        "family_score": 67,
+        "value_score": 96,
         "sub_scores": {
-          "education": 87,
+          "education": 91,
           "safety": 80,
           "family_community": 38,
           "commute": 40,
@@ -10330,7 +10697,19 @@
         "college_prep_grade": "A+",
         "good_for_families": "A",
         "niche_url": "https://www.niche.com/k12/d/wylie-independent-school-district-wylie-tx/",
-        "split_isd": true
+        "split_isd": true,
+        "isd_breakdown": [
+          {
+            "isd": "Garland ISD",
+            "grade": "A-",
+            "pct": 60
+          },
+          {
+            "isd": "Wylie ISD",
+            "grade": "A+",
+            "pct": 40
+          }
+        ]
       },
       "quiz": {
         "sfr_median_price": 443089.4,
@@ -10377,10 +10756,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 69,
-        "value_score": 95,
+        "family_score": 73,
+        "value_score": 96,
         "sub_scores": {
-          "education": 87,
+          "education": 93,
           "safety": 83,
           "family_community": 40,
           "commute": 45,
@@ -10815,7 +11194,19 @@
         "college_prep_grade": "A+",
         "good_for_families": "A",
         "niche_url": "https://www.niche.com/k12/d/lewisville-independent-school-district-tx/",
-        "split_isd": true
+        "split_isd": true,
+        "isd_breakdown": [
+          {
+            "isd": "Lewisville ISD",
+            "grade": "A",
+            "pct": 85
+          },
+          {
+            "isd": "Little Elm ISD",
+            "grade": "B",
+            "pct": 15
+          }
+        ]
       },
       "quiz": {
         "sfr_median_price": 433515.8,
@@ -10862,10 +11253,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 77,
-        "value_score": 94,
+        "family_score": 73,
+        "value_score": 93,
         "sub_scores": {
-          "education": 97,
+          "education": 92,
           "safety": 80,
           "family_community": 51,
           "commute": 46,
@@ -10983,7 +11374,14 @@
         "college_prep_grade": "A",
         "good_for_families": "B",
         "niche_url": "https://www.niche.com/k12/d/northwest-independent-school-district-tx/",
-        "split_isd": true
+        "split_isd": true,
+        "isd_breakdown": [
+          {
+            "isd": "Northwest ISD",
+            "grade": "A-",
+            "pct": 100
+          }
+        ]
       },
       "quiz": {
         "sfr_median_price": 807912.5,
@@ -11030,10 +11428,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 87,
-        "value_score": 73,
+        "family_score": 82,
+        "value_score": 72,
         "sub_scores": {
-          "education": 97,
+          "education": 90,
           "safety": 90,
           "family_community": 62,
           "commute": 55,
@@ -11451,7 +11849,24 @@
         "college_prep_grade": "A+",
         "good_for_families": "A+",
         "niche_url": "https://www.niche.com/k12/d/carroll-independent-school-district-tx/",
-        "split_isd": true
+        "split_isd": true,
+        "isd_breakdown": [
+          {
+            "isd": "Carroll ISD",
+            "grade": "A+",
+            "pct": 50
+          },
+          {
+            "isd": "Keller ISD",
+            "grade": "A",
+            "pct": 35
+          },
+          {
+            "isd": "Northwest ISD",
+            "grade": "A-",
+            "pct": 15
+          }
+        ]
       },
       "quiz": {
         "sfr_median_price": 5055252.3,
@@ -11498,10 +11913,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 77,
+        "family_score": 75,
         "value_score": 44,
         "sub_scores": {
-          "education": 97,
+          "education": 95,
           "safety": 89,
           "family_community": 83,
           "commute": 47,
@@ -11666,10 +12081,10 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 73,
+        "family_score": 76,
         "value_score": 94,
         "sub_scores": {
-          "education": 93,
+          "education": 97,
           "safety": 80,
           "family_community": 60,
           "commute": 39,
