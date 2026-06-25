@@ -12,7 +12,7 @@
     <copyright>Copyright 2026 Kristen Carpentier / Social Agent Group</copyright>
     <managingEditor>Kristen@whymovetodallas.com (Kristen Carpentier)</managingEditor>
     <webMaster>Kristen@whymovetodallas.com (Kristen Carpentier)</webMaster>
-    <lastBuildDate>Fri, 19 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 22 Jun 2026 00:00:00 +0000</lastBuildDate>
     <ttl>1440</ttl>
     <atom:link href="https://whymovetodallas.com/feed.xml" rel="self" type="application/rss+xml" />
     <image>
@@ -20,6 +20,17 @@
       <title>Why Move to Dallas</title>
       <link>https://whymovetodallas.com</link>
     </image>
+
+  <item>
+    <title><![CDATA[Moving to McKinney, Texas: What Families Need to Know]]></title>
+    <link>https://whymovetodallas.com/blog/moving-to-mckinney-texas</link>
+    <guid isPermaLink="true">https://whymovetodallas.com/blog/moving-to-mckinney-texas</guid>
+    <pubDate>Mon, 22 Jun 2026 00:00:00 +0000</pubDate>
+    <description><![CDATA[Thinking about moving to McKinney, Texas? Compare schools, neighborhoods, commute, taxes, MUD districts, and nearby suburbs before you buy.]]></description>
+      <category>Suburb Guide</category>
+      <enclosure url="https://whymovetodallas.com/images/blog/moving-to-mckinney-texas-og-og.webp" type="image/jpeg" length="0" />
+      <media:content url="https://whymovetodallas.com/images/blog/moving-to-mckinney-texas-og-og.webp" medium="image" />
+  </item>
 
   <item>
     <title><![CDATA[Frisco vs McKinney vs Flower Mound Texas: Which Suburb Fits Your Family?]]></title>
@@ -558,17 +569,6 @@
       <category>Cost of Living</category>
       <enclosure url="https://whymovetodallas.com/images/social-og-image.webp" type="image/jpeg" length="0" />
       <media:content url="https://whymovetodallas.com/images/social-og-image.webp" medium="image" />
-  </item>
-
-  <item>
-    <title><![CDATA[Custom Home Tour: Luxury Living in Southlake, Texas]]></title>
-    <link>https://whymovetodallas.com/blog/southlake-tx-custom-home-tour-stony-brooke-community</link>
-    <guid isPermaLink="true">https://whymovetodallas.com/blog/southlake-tx-custom-home-tour-stony-brooke-community</guid>
-    <pubDate>Sat, 25 Nov 2023 00:00:00 +0000</pubDate>
-    <description><![CDATA[Embark on a virtual tour with Kristen Carpenter, a licensed real estate agent, as we explore a $2.8 million custom home in Southlake, Texas. Boasting 5,100]]></description>
-      <category>Home Tour</category>
-      <enclosure url="https://i.ytimg.com/vi/Tx6ywzjDYYI/maxresdefault.jpg" type="image/jpeg" length="0" />
-      <media:content url="https://i.ytimg.com/vi/Tx6ywzjDYYI/maxresdefault.jpg" medium="image" />
   </item>
 
   </channel>
