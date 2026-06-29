@@ -18,7 +18,7 @@
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:site_name" content="Why Move to Dallas">
-  <meta property="article:published_time" content="2026-06-25T07:00:00.000Z">
+  <meta property="article:published_time" content="2026-06-26T07:00:00.000Z">
   <meta property="article:modified_time" content="2026-06-28T07:00:00.000Z">
   <meta property="article:author" content="Kristen Carpentier">
   <meta property="article:section" content="Suburb Guide">
@@ -41,7 +41,7 @@
         "headline": "Moving to McKinney, Texas: What Families Need to Know",
         "description": "Thinking about moving to McKinney, Texas? Compare schools, neighborhoods, commute, taxes, MUD districts, and nearby suburbs before you buy.",
         "url": "https://whymovetodallas.com/blog/moving-to-mckinney-texas",
-        "datePublished": "2026-06-25T07:00:00.000Z",
+        "datePublished": "2026-06-26T07:00:00.000Z",
         "dateModified": "2026-06-28T07:00:00.000Z",
         "author": {
           "@type": "Person",
@@ -128,11 +128,27 @@
     .kc-nav-cta:hover { background:var(--gold); }
 
     /* ─── HERO ─── */
-    .kc-post-hero { background:linear-gradient(rgba(31,45,61,0.72),rgba(31,45,61,0.72)),url('/images/moving-to-mckinney-texas-hero-hero.webp') center/cover no-repeat; color:#fff; padding:3.5rem 1.5rem 2.5rem; text-align:center; }
-    @media(max-width:768px){ .kc-post-hero { background-image:linear-gradient(rgba(31,45,61,0.72),rgba(31,45,61,0.72)),url('/images/moving-to-mckinney-texas-hero-hero-mobile.webp'); } }
-    .kc-post-hero-eyebrow { font-size:0.72rem; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:var(--gold); margin-bottom:1rem; }
-    .kc-post-hero h1 { font-family:'Cormorant Garamond',Georgia,serif; font-size:clamp(1.9rem,4.5vw,3rem); font-weight:700; line-height:1.2; max-width:800px; margin:0 auto 1.1rem; }
-    .kc-post-hero-meta { font-size:0.82rem; color:rgba(255,255,255,0.6); }
+    .kc-post-hero {
+      background: linear-gradient(135deg, rgba(31,45,61,.68) 0%, rgba(31,45,61,.50) 50%, rgba(31,45,61,.63) 100%),
+                  url('/images/moving-to-mckinney-texas-hero-hero.webp') center/cover no-repeat;
+      background-color: var(--navy, #1F2D3D);
+      color: #fff;
+      padding: calc(var(--header-total-h, 108px) + 2rem) 1.5rem 3rem;
+      text-align: center;
+    }
+    @media(max-width:768px){
+      .kc-post-hero { background-image: linear-gradient(135deg, rgba(31,45,61,.68) 0%, rgba(31,45,61,.50) 50%, rgba(31,45,61,.63) 100%), url('/images/moving-to-mckinney-texas-hero-hero-mobile.webp'); padding: 2.5rem 1.25rem 2.25rem; }
+    }
+    .kc-post-hero-breadcrumb { font-size:0.74rem; color:rgba(255,255,255,0.45); margin-bottom:0.9rem; }
+    .kc-post-hero-breadcrumb a { color:rgba(255,255,255,0.45); text-decoration:none; }
+    .kc-post-hero-breadcrumb a:hover { color:var(--gold, #B08D57); }
+    .kc-post-hero-breadcrumb span { margin:0 0.35rem; }
+    .kc-post-hero-cat { display:inline-block; font-size:0.7rem; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:var(--navy, #1F2D3D); background:var(--gold, #B08D57); border-radius:20px; padding:0.3rem 0.9rem; margin-bottom:1rem; }
+    .kc-post-hero h1 { font-family:'Cormorant Garamond',Georgia,serif; font-size:clamp(1.9rem,4.5vw,3rem); font-weight:700; line-height:1.2; max-width:800px; margin:0 auto 1.25rem; }
+    .kc-post-hero-byline { display:inline-flex; align-items:center; gap:0.65rem; margin-top:0.25rem; }
+    .kc-post-hero-byline img { width:36px; height:36px; border-radius:50%; object-fit:cover; border:2px solid rgba(255,255,255,0.3); }
+    .kc-post-hero-byline-name { font-size:0.82rem; font-weight:600; color:#fff; display:block; line-height:1.3; }
+    .kc-post-hero-byline-meta { font-size:0.72rem; color:rgba(255,255,255,0.55); display:block; }
 
     /* ─── LAYOUT ─── */
     .kc-post-body { max-width:780px; margin:0 auto; padding:2.5rem 1.5rem 4rem; }
@@ -468,9 +484,21 @@ gtag('consent','default',{
 
 <!-- HERO -->
 <header class="kc-post-hero">
-  <div class="kc-post-hero-eyebrow">DFW Family Relocation Guide · McKinney, TX</div>
+  <nav class="kc-post-hero-breadcrumb" aria-label="Breadcrumb">
+    <a href="/">Home</a><span aria-hidden="true">›</span>
+    <a href="/blog">Blog</a><span aria-hidden="true">›</span>
+    <span>Moving to McKinney, Texas</span>
+  </nav>
+  <span class="kc-post-hero-cat">Suburb Guide</span>
   <h1>Moving to McKinney, Texas: What Families Need to Know</h1>
-  <div class="kc-post-hero-meta">By Kristen Carpentier, Licensed Texas Realtor® &nbsp;·&nbsp; June 26, 2026 &nbsp;·&nbsp; 11 min read</div>
+  <div class="kc-post-hero-byline">
+    <img src="/images/kristen-headshot-01.webp" alt="Kristen Carpentier, DFW Realtor"
+         width="36" height="36" loading="eager" onerror="this.style.display='none'">
+    <div class="kc-post-hero-byline-text">
+      <span class="kc-post-hero-byline-name">Kristen Carpentier</span>
+      <span class="kc-post-hero-byline-meta">Licensed TX Realtor® &nbsp;·&nbsp; June 26, 2026 &nbsp;·&nbsp; 11 min read</span>
+    </div>
+  </div>
 </header>
 
 <!-- POST BODY -->
