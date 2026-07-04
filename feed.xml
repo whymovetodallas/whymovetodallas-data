@@ -12,7 +12,7 @@
     <copyright>Copyright 2026 Kristen Carpentier / Social Agent Group</copyright>
     <managingEditor>Kristen@whymovetodallas.com (Kristen Carpentier)</managingEditor>
     <webMaster>Kristen@whymovetodallas.com (Kristen Carpentier)</webMaster>
-    <lastBuildDate>Fri, 26 Jun 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 04 Jul 2026 00:00:00 +0000</lastBuildDate>
     <ttl>1440</ttl>
     <atom:link href="https://whymovetodallas.com/feed.xml" rel="self" type="application/rss+xml" />
     <image>
@@ -20,6 +20,17 @@
       <title>Why Move to Dallas</title>
       <link>https://whymovetodallas.com</link>
     </image>
+
+  <item>
+    <title><![CDATA[Moving from Phoenix to Dallas: A Family Relocation Guide]]></title>
+    <link>https://whymovetodallas.com/blog/moving-from-phoenix-to-dallas-texas</link>
+    <guid isPermaLink="true">https://whymovetodallas.com/blog/moving-from-phoenix-to-dallas-texas</guid>
+    <pubDate>Sat, 04 Jul 2026 00:00:00 +0000</pubDate>
+    <description><![CDATA[Moving from Phoenix to Dallas with kids? Compare cost of living, home prices, heat, jobs, and the DFW suburbs Arizona families choose most.]]></description>
+      <category>Moving to DFW</category>
+      <enclosure url="https://whymovetodallas.com/images/dallas-relocation-guide-thumb.webp" type="image/jpeg" length="0" />
+      <media:content url="https://whymovetodallas.com/images/dallas-relocation-guide-thumb.webp" medium="image" />
+  </item>
 
   <item>
     <title><![CDATA[Moving to McKinney, Texas: What Families Need to Know]]></title>
@@ -558,17 +569,6 @@
       <category>Suburb Guide</category>
       <enclosure url="https://i.ytimg.com/vi/3U6CPG0KOOQ/maxresdefault.jpg" type="image/jpeg" length="0" />
       <media:content url="https://i.ytimg.com/vi/3U6CPG0KOOQ/maxresdefault.jpg" medium="image" />
-  </item>
-
-  <item>
-    <title><![CDATA[Best Performing Cities in Dallas-Fort Worth TX]]></title>
-    <link>https://whymovetodallas.com/blog/best-performing-cities-dallas-texas-2023</link>
-    <guid isPermaLink="true">https://whymovetodallas.com/blog/best-performing-cities-dallas-texas-2023</guid>
-    <pubDate>Mon, 08 Jan 2024 00:00:00 +0000</pubDate>
-    <description><![CDATA[Looking for the best cities in the Dallas Texas housing market for 2023? we conducted research on the top-performing cities. In this article, we present ou]]></description>
-      <category>Market and Buying</category>
-      <enclosure url="https://whymovetodallas.com/images/social-og-image.webp" type="image/jpeg" length="0" />
-      <media:content url="https://whymovetodallas.com/images/social-og-image.webp" medium="image" />
   </item>
 
   </channel>
