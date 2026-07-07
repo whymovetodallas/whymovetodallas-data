@@ -1,0 +1,4 @@
+Contact: mailto:kristen@whymovetodallas.com
+Expires: 2027-07-06T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://whymovetodallas.com/.well-known/security.txt
