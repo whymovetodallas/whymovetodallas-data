@@ -416,10 +416,10 @@ gtag('consent','default',{
   live data dependency. Tier 2 (BEA / EIA / MIT everyday costs) is a
   structured placeholder, ready to slot in without touching the engine.
 
-  BACKEND NOT LIVE YET. Lead capture is gated behind CC_LIVE=false.
-     The backend step sets CC_LIVE=true and points CC_ENDPOINT at the
-     Cloudflare Worker (/api/cost-calculator -> Lofty lead-create,
-     source: cost-calculator, plus the Resend report and Lofty log).
+  LIVE. CC_LIVE=true, posting to the deployed /api/cost-calculator Worker
+     (Lofty lead-create, source: cost-calculator, plus the Resend report
+     and Lofty log). On successful send, fires zaraz.track('cost_calculator_lead')
+     for GA4 (Cloudflare Zaraz > Tag setup > Triggers > Zaraz Track).
   ====================================================================
 -->
 <style>
@@ -1832,6 +1832,7 @@ gtag('consent','default',{
     fetch(CC_ENDPOINT,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(payload)})
       .then(function(res){ if(!res.ok) throw new Error("bad status"); return res.json().catch(function(){return {};}); })
       .then(function(){
+        if(window.zaraz) zaraz.track('cost_calculator_lead');
         gate.innerHTML='<h3>You are all set'+name+'.</h3>'+
           '<p>Your full personalized breakdown and the 30 60 90 checklist are on the way to your inbox.</p>';
       })

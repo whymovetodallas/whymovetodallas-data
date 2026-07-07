@@ -371,9 +371,10 @@ gtag('consent','default',{
   questions are routed to third-party tools. Per-result verify disclaimer.
   TREC disclosures come from the global site footer.
 
-  ⚠ BACKEND NOT LIVE YET. Lead capture is gated behind LVM_LIVE=false.
-     Step 3 sets LVM_LIVE=true + points LVM_ENDPOINT at the Cloudflare
-     Worker (/api/suburb-matcher → Lofty lead-create + Resend report).
+  LIVE. LVM_LIVE=true, posting to the deployed /api/suburb-matcher Worker
+     (Lofty lead-create + Resend report). On successful send, fires
+     zaraz.track('suburb_matcher_lead') for GA4 (Cloudflare Zaraz > Tag
+     setup > Triggers > Zaraz Track).
   ════════════════════════════════════════════════════════════════════
 -->
 <style>
@@ -1405,6 +1406,7 @@ gtag('consent','default',{
     fetch(LVM_ENDPOINT,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(payload)})
       .then(function(res){ if(!res.ok) throw new Error("bad status"); return res.json().catch(function(){return {};}); })
       .then(function(){
+        if(window.zaraz) zaraz.track('suburb_matcher_lead');
         gate.innerHTML='<h3>You’re all set'+name+'!</h3>'+
           '<p>Your full personalized report and the 30-60-90 checklist are on the way to your inbox.</p>';
       })
