@@ -79,7 +79,7 @@ Every page covers schools, home prices, commute data, parks, pros/cons, new cons
 - Westlake, Texas: https://whymovetodallas.com/westlake-texas
 - Wylie, Texas: https://whymovetodallas.com/wylie-texas
 
-## School District Profiles (49 pages)
+## School District Profiles (50 pages)
 
 Every page covers TEA accountability information where available, Niche grade, enrollment, notable campuses, and relocation context. Verify school information directly with the district before enrollment decisions.
 
@@ -113,6 +113,7 @@ Every page covers TEA accountability information where available, Niche grade, e
 - Highland Park ISD: https://whymovetodallas.com/highland-park-isd-texas
 - Irving ISD: https://whymovetodallas.com/irving-isd-texas
 - Keller ISD: https://whymovetodallas.com/keller-isd-texas
+- Lake Dallas ISD: https://whymovetodallas.com/lake-dallas-isd-texas
 - Lancaster ISD: https://whymovetodallas.com/lancaster-isd-texas
 - Lewisville ISD: https://whymovetodallas.com/lewisville-isd-texas
 - Little Elm ISD: https://whymovetodallas.com/little-elm-isd-texas
