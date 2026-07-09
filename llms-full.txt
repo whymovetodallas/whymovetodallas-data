@@ -79,7 +79,7 @@ Every page covers schools, home prices, commute data, parks, pros/cons, new cons
 - Westlake, Texas: https://whymovetodallas.com/westlake-texas
 - Wylie, Texas: https://whymovetodallas.com/wylie-texas
 
-## School District Profiles (51 pages)
+## School District Profiles (52 pages)
 
 Every page covers TEA accountability information where available, Niche grade, enrollment, notable campuses, and relocation context. Verify school information directly with the district before enrollment decisions.
 
@@ -99,6 +99,7 @@ Every page covers TEA accountability information where available, Niche grade, e
 - Coppell ISD: https://whymovetodallas.com/coppell-isd-texas
 - Crandall ISD: https://whymovetodallas.com/crandall-isd-texas
 - Crowley ISD: https://whymovetodallas.com/crowley-isd-texas
+- Dallas ISD: https://whymovetodallas.com/dallas-isd-texas
 - Denton ISD: https://whymovetodallas.com/denton-isd-texas
 - DeSoto ISD: https://whymovetodallas.com/desoto-isd-texas
 - Duncanville ISD: https://whymovetodallas.com/duncanville-isd-texas
