@@ -79,7 +79,7 @@ Every page covers schools, home prices, commute data, parks, pros/cons, new cons
 - Westlake, Texas: https://whymovetodallas.com/westlake-texas
 - Wylie, Texas: https://whymovetodallas.com/wylie-texas
 
-## School District Profiles (47 pages)
+## School District Profiles (49 pages)
 
 Every page covers TEA accountability information where available, Niche grade, enrollment, notable campuses, and relocation context. Verify school information directly with the district before enrollment decisions.
 
@@ -128,6 +128,8 @@ Every page covers TEA accountability information where available, Niche grade, e
 - Prosper ISD: https://whymovetodallas.com/prosper-isd-texas
 - Richardson ISD: https://whymovetodallas.com/richardson-isd-texas
 - Rockwall ISD: https://whymovetodallas.com/rockwall-isd-texas
+- Royse City ISD: https://whymovetodallas.com/royse-city-isd-texas
+- Waxahachie ISD: https://whymovetodallas.com/waxahachie-isd-texas
 - White Settlement ISD: https://whymovetodallas.com/white-settlement-isd-texas
 - Wylie ISD: https://whymovetodallas.com/wylie-isd-texas
 
