@@ -12,7 +12,7 @@
     <copyright>Copyright 2026 Kristen Carpentier / Social Agent Group</copyright>
     <managingEditor>Kristen@whymovetodallas.com (Kristen Carpentier)</managingEditor>
     <webMaster>Kristen@whymovetodallas.com (Kristen Carpentier)</webMaster>
-    <lastBuildDate>Sat, 04 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 13 Jul 2026 00:00:00 +0000</lastBuildDate>
     <ttl>1440</ttl>
     <atom:link href="https://whymovetodallas.com/feed.xml" rel="self" type="application/rss+xml" />
     <image>
@@ -20,6 +20,17 @@
       <title>Why Move to Dallas</title>
       <link>https://whymovetodallas.com</link>
     </image>
+
+  <item>
+    <title><![CDATA[Is Fort Worth Safe for Families?]]></title>
+    <link>https://whymovetodallas.com/blog/is-fort-worth-texas-safe-for-families</link>
+    <guid isPermaLink="true">https://whymovetodallas.com/blog/is-fort-worth-texas-safe-for-families</guid>
+    <pubDate>Mon, 13 Jul 2026 00:00:00 +0000</pubDate>
+    <description><![CDATA[Is Fort Worth, Texas safe for families? Here is how to actually check any address yourself, plus the research most relocating parents miss: school zoning.]]></description>
+      <category>Suburb Guide</category>
+      <enclosure url="https://whymovetodallas.com/images/blog/fort-worth-safety-guide-og.webp" type="image/jpeg" length="0" />
+      <media:content url="https://whymovetodallas.com/images/blog/fort-worth-safety-guide-og.webp" medium="image" />
+  </item>
 
   <item>
     <title><![CDATA[Moving from Phoenix to Dallas: A Family Relocation Guide]]></title>
@@ -555,17 +566,6 @@
     <guid isPermaLink="true">https://whymovetodallas.com/blog/copper-canyon-tx-vickery-toll-brothers-model-home-tour-vanguard-model</guid>
     <pubDate>Tue, 16 Jan 2024 00:00:00 +0000</pubDate>
     <description><![CDATA[Model Home Tour near Flower Mound, Texas, a suburb of Dallas, Texas, with its beautiful neighborhoods and great schools. Toll Brothers, a popular home buil]]></description>
-      <category>Home Tour</category>
-      <enclosure url="https://whymovetodallas.com/images/social-og-image.webp" type="image/jpeg" length="0" />
-      <media:content url="https://whymovetodallas.com/images/social-og-image.webp" medium="image" />
-  </item>
-
-  <item>
-    <title><![CDATA[Dallas Model Home Tour of Absolutely Stunning Home!]]></title>
-    <link>https://whymovetodallas.com/blog/dallas-home-model-tour-grand-homes-corinth-texas</link>
-    <guid isPermaLink="true">https://whymovetodallas.com/blog/dallas-home-model-tour-grand-homes-corinth-texas</guid>
-    <pubDate>Mon, 15 Jan 2024 00:00:00 +0000</pubDate>
-    <description><![CDATA[This is an amazing model home tour that you wouldn't want to miss! The beautiful home is located in Corinth, a suburb of Dallas, Texas, just to the northwe]]></description>
       <category>Home Tour</category>
       <enclosure url="https://whymovetodallas.com/images/social-og-image.webp" type="image/jpeg" length="0" />
       <media:content url="https://whymovetodallas.com/images/social-og-image.webp" medium="image" />
