@@ -12,7 +12,7 @@
     <copyright>Copyright 2026 Kristen Carpentier / Social Agent Group</copyright>
     <managingEditor>Kristen@whymovetodallas.com (Kristen Carpentier)</managingEditor>
     <webMaster>Kristen@whymovetodallas.com (Kristen Carpentier)</webMaster>
-    <lastBuildDate>Mon, 13 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 16 Jul 2026 00:00:00 +0000</lastBuildDate>
     <ttl>1440</ttl>
     <atom:link href="https://whymovetodallas.com/feed.xml" rel="self" type="application/rss+xml" />
     <image>
@@ -20,6 +20,17 @@
       <title>Why Move to Dallas</title>
       <link>https://whymovetodallas.com</link>
     </image>
+
+  <item>
+    <title><![CDATA[Moving to Plano, Texas: An Honest Family Guide]]></title>
+    <link>https://whymovetodallas.com/blog/moving-to-plano-texas</link>
+    <guid isPermaLink="true">https://whymovetodallas.com/blog/moving-to-plano-texas</guid>
+    <pubDate>Thu, 16 Jul 2026 00:00:00 +0000</pubDate>
+    <description><![CDATA[Moving to Plano, Texas? An honest family guide to the jobs, home prices, the Plano ISD high school split, the commute, and who Plano really fits.]]></description>
+      <category>Suburb Guide</category>
+      <enclosure url="https://whymovetodallas.com/images/blog/moving-to-plano-texas-og.png" type="image/jpeg" length="0" />
+      <media:content url="https://whymovetodallas.com/images/blog/moving-to-plano-texas-og.png" medium="image" />
+  </item>
 
   <item>
     <title><![CDATA[Is Fort Worth Safe for Families?]]></title>
@@ -555,17 +566,6 @@
     <guid isPermaLink="true">https://whymovetodallas.com/blog/arlington-tx-viridian-community-drees-custom-home-tour</guid>
     <pubDate>Thu, 18 Jan 2024 00:00:00 +0000</pubDate>
     <description><![CDATA[Don't, miss this Custom Home Tour in the Beautiful Lake Community of Viridian in Arlington, Texas.  Dallas Home Tours features a new construction custom ho]]></description>
-      <category>Home Tour</category>
-      <enclosure url="https://whymovetodallas.com/images/social-og-image.webp" type="image/jpeg" length="0" />
-      <media:content url="https://whymovetodallas.com/images/social-og-image.webp" medium="image" />
-  </item>
-
-  <item>
-    <title><![CDATA[Toll Brothers Model Home Near Dallas: Unbelievable Upgrades]]></title>
-    <link>https://whymovetodallas.com/blog/copper-canyon-tx-vickery-toll-brothers-model-home-tour-vanguard-model</link>
-    <guid isPermaLink="true">https://whymovetodallas.com/blog/copper-canyon-tx-vickery-toll-brothers-model-home-tour-vanguard-model</guid>
-    <pubDate>Tue, 16 Jan 2024 00:00:00 +0000</pubDate>
-    <description><![CDATA[Model Home Tour near Flower Mound, Texas, a suburb of Dallas, Texas, with its beautiful neighborhoods and great schools. Toll Brothers, a popular home buil]]></description>
       <category>Home Tour</category>
       <enclosure url="https://whymovetodallas.com/images/social-og-image.webp" type="image/jpeg" length="0" />
       <media:content url="https://whymovetodallas.com/images/social-og-image.webp" medium="image" />
