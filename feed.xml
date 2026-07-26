@@ -12,7 +12,7 @@
     <copyright>Copyright 2026 Kristen Carpentier / Social Agent Group</copyright>
     <managingEditor>Kristen@whymovetodallas.com (Kristen Carpentier)</managingEditor>
     <webMaster>Kristen@whymovetodallas.com (Kristen Carpentier)</webMaster>
-    <lastBuildDate>Thu, 16 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jul 2026 00:00:00 +0000</lastBuildDate>
     <ttl>1440</ttl>
     <atom:link href="https://whymovetodallas.com/feed.xml" rel="self" type="application/rss+xml" />
     <image>
@@ -20,6 +20,17 @@
       <title>Why Move to Dallas</title>
       <link>https://whymovetodallas.com</link>
     </image>
+
+  <item>
+    <title><![CDATA[Moving from New York to Dallas | Family Guide]]></title>
+    <link>https://whymovetodallas.com/blog/moving-from-new-york-to-dallas</link>
+    <guid isPermaLink="true">https://whymovetodallas.com/blog/moving-from-new-york-to-dallas</guid>
+    <pubDate>Thu, 23 Jul 2026 00:00:00 +0000</pubDate>
+    <description><![CDATA[Moving from New York to Dallas? Compare taxes, housing, schools, commutes, and DFW suburbs before planning your family's Texas relocation.]]></description>
+      <category>Moving to DFW</category>
+      <enclosure url="https://whymovetodallas.com/images/blog/moving-from-new-york-to-dallas-og.png" type="image/png" length="0" />
+      <media:content url="https://whymovetodallas.com/images/blog/moving-from-new-york-to-dallas-og.png" medium="image" />
+  </item>
 
   <item>
     <title><![CDATA[Moving to Plano, Texas: An Honest Family Guide]]></title>
@@ -555,17 +566,6 @@
     <guid isPermaLink="true">https://whymovetodallas.com/blog/fort-worth-tx-resort-eagle-mountain-lake-custom-home-tour</guid>
     <pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate>
     <description><![CDATA[UNBELIEVABLE! New construction custom home tour with Incredible lake views.  Check out this 4,000 sqft story custom modern luxury home located on the Resor]]></description>
-      <category>Home Tour</category>
-      <enclosure url="https://whymovetodallas.com/images/social-og-image.webp" type="image/webp" length="0" />
-      <media:content url="https://whymovetodallas.com/images/social-og-image.webp" medium="image" />
-  </item>
-
-  <item>
-    <title><![CDATA[Custom Home Tour: Viridian Community in Arlington, Texas]]></title>
-    <link>https://whymovetodallas.com/blog/arlington-tx-viridian-community-drees-custom-home-tour</link>
-    <guid isPermaLink="true">https://whymovetodallas.com/blog/arlington-tx-viridian-community-drees-custom-home-tour</guid>
-    <pubDate>Thu, 18 Jan 2024 00:00:00 +0000</pubDate>
-    <description><![CDATA[Don't, miss this Custom Home Tour in the Beautiful Lake Community of Viridian in Arlington, Texas.  Dallas Home Tours features a new construction custom ho]]></description>
       <category>Home Tour</category>
       <enclosure url="https://whymovetodallas.com/images/social-og-image.webp" type="image/webp" length="0" />
       <media:content url="https://whymovetodallas.com/images/social-og-image.webp" medium="image" />
