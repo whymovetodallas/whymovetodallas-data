@@ -12,7 +12,7 @@
     <copyright>Copyright 2026 Kristen Carpentier / Social Agent Group</copyright>
     <managingEditor>Kristen@whymovetodallas.com (Kristen Carpentier)</managingEditor>
     <webMaster>Kristen@whymovetodallas.com (Kristen Carpentier)</webMaster>
-    <lastBuildDate>Thu, 23 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 28 Jul 2026 00:00:00 +0000</lastBuildDate>
     <ttl>1440</ttl>
     <atom:link href="https://whymovetodallas.com/feed.xml" rel="self" type="application/rss+xml" />
     <image>
@@ -20,6 +20,17 @@
       <title>Why Move to Dallas</title>
       <link>https://whymovetodallas.com</link>
     </image>
+
+  <item>
+    <title><![CDATA[Moving from Chicago to Dallas | Family Guide]]></title>
+    <link>https://whymovetodallas.com/blog/moving-from-chicago-to-dallas</link>
+    <guid isPermaLink="true">https://whymovetodallas.com/blog/moving-from-chicago-to-dallas</guid>
+    <pubDate>Tue, 28 Jul 2026 00:00:00 +0000</pubDate>
+    <description><![CDATA[Moving from Chicago to Dallas? Compare taxes, housing, weather, schools, commutes, and DFW suburbs with this practical family relocation guide.]]></description>
+      <category>Moving to DFW</category>
+      <enclosure url="https://whymovetodallas.com/images/blog/moving-from-chicago-to-dallas-og.png" type="image/png" length="0" />
+      <media:content url="https://whymovetodallas.com/images/blog/moving-from-chicago-to-dallas-og.png" medium="image" />
+  </item>
 
   <item>
     <title><![CDATA[Moving from New York to Dallas | Family Guide]]></title>
@@ -558,17 +569,6 @@
       <category>Home Tour</category>
       <enclosure url="https://whymovetodallas.com/images/blog/1706632788842-1XU20Z10YQ80Z3CMV97V-Heath-Texas-Background.png" type="image/png" length="0" />
       <media:content url="https://whymovetodallas.com/images/blog/1706632788842-1XU20Z10YQ80Z3CMV97V-Heath-Texas-Background.png" medium="image" />
-  </item>
-
-  <item>
-    <title><![CDATA[Waterfront Custom Home Tour in Fort Worth, Texas]]></title>
-    <link>https://whymovetodallas.com/blog/fort-worth-tx-resort-eagle-mountain-lake-custom-home-tour</link>
-    <guid isPermaLink="true">https://whymovetodallas.com/blog/fort-worth-tx-resort-eagle-mountain-lake-custom-home-tour</guid>
-    <pubDate>Mon, 22 Jan 2024 00:00:00 +0000</pubDate>
-    <description><![CDATA[UNBELIEVABLE! New construction custom home tour with Incredible lake views.  Check out this 4,000 sqft story custom modern luxury home located on the Resor]]></description>
-      <category>Home Tour</category>
-      <enclosure url="https://whymovetodallas.com/images/social-og-image.webp" type="image/webp" length="0" />
-      <media:content url="https://whymovetodallas.com/images/social-og-image.webp" medium="image" />
   </item>
 
   </channel>
