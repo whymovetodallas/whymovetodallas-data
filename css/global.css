@@ -613,3 +613,40 @@ body > *:not(#kc-site-header) { scroll-margin-top: var(--header-total-h); }
   border-left: 20px solid #fff;
   margin-left: 5px;
 }
+
+
+/* Blog component contrast fixes -------------------------------------------
+   Per-post <style> blocks set `.kc-body h2 { color:#1F2D3D; border-top:... }`
+   and `.kc-table th { background:#1F2D3D; color:#fff }`. Those blocks are
+   injected AFTER this file, so equal-specificity rules here lose. These
+   selectors are deliberately higher specificity so they win regardless of
+   source order.
+
+   1. An <h2> inside the navy .kc-cta block rendered navy-on-navy, with its
+      inherited border-top showing as a stray white line.
+   2. A <th scope="row"> row header (required for accessible data tables)
+      picked up the navy column-header background, hiding the brown links.
+--------------------------------------------------------------------------- */
+.kc-body .kc-cta h2 {
+  color: #fff;
+  border-top: 0;
+  padding-top: 0;
+  margin-top: 0;
+}
+.kc-body .kc-table th[scope="row"] {
+  background: #fff;
+  color: #1F2D3D;
+  font-weight: 700;
+  vertical-align: top;
+}
+.kc-body .kc-table tr:nth-child(even) th[scope="row"] {
+  background: #F7F4EE;
+}
+.kc-body .kc-table th[scope="row"] a {
+  color: #775C34;
+}
+.kc-body .kc-table caption {
+  caption-side: top;
+  text-align: left;
+  padding: 0 0 .6rem;
+}
