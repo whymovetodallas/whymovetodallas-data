@@ -12,7 +12,7 @@
     <copyright>Copyright 2026 Kristen Carpentier / Social Agent Group</copyright>
     <managingEditor>Kristen@whymovetodallas.com (Kristen Carpentier)</managingEditor>
     <webMaster>Kristen@whymovetodallas.com (Kristen Carpentier)</webMaster>
-    <lastBuildDate>Tue, 28 Jul 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 02 Aug 2026 00:00:00 +0000</lastBuildDate>
     <ttl>1440</ttl>
     <atom:link href="https://whymovetodallas.com/feed.xml" rel="self" type="application/rss+xml" />
     <image>
@@ -20,6 +20,17 @@
       <title>Why Move to Dallas</title>
       <link>https://whymovetodallas.com</link>
     </image>
+
+  <item>
+    <title><![CDATA[Moving from Florida to Dallas | Cost, Tax &amp; Suburb Guide]]></title>
+    <link>https://whymovetodallas.com/blog/moving-from-florida-to-dallas-texas</link>
+    <guid isPermaLink="true">https://whymovetodallas.com/blog/moving-from-florida-to-dallas-texas</guid>
+    <pubDate>Sun, 02 Aug 2026 00:00:00 +0000</pubDate>
+    <description><![CDATA[Moving from Florida to Dallas? Compare property tax, insurance, MUD and PID costs, tolls, schools, and DFW suburbs before you set a budget.]]></description>
+      <category>Cost of Living</category>
+      <enclosure url="https://whymovetodallas.com/images/blog/moving-from-florida-to-dallas-texas-og.png" type="image/png" length="0" />
+      <media:content url="https://whymovetodallas.com/images/blog/moving-from-florida-to-dallas-texas-og.png" medium="image" />
+  </item>
 
   <item>
     <title><![CDATA[Moving from Chicago to Dallas | Family Guide]]></title>
@@ -558,17 +569,6 @@
       <category>Suburb Guide</category>
       <enclosure url="https://whymovetodallas.com/images/blog/fbe407b5-a662-44e8-ae48-83904f64b261-Dallas-Migration.png" type="image/png" length="0" />
       <media:content url="https://whymovetodallas.com/images/blog/fbe407b5-a662-44e8-ae48-83904f64b261-Dallas-Migration.png" medium="image" />
-  </item>
-
-  <item>
-    <title><![CDATA[Dallas Lake Life: $3.4 Million Custom Home Tour]]></title>
-    <link>https://whymovetodallas.com/blog/dallas-lake-life-custom-home-tour-3-million-dollar-home</link>
-    <guid isPermaLink="true">https://whymovetodallas.com/blog/dallas-lake-life-custom-home-tour-3-million-dollar-home</guid>
-    <pubDate>Tue, 30 Jan 2024 00:00:00 +0000</pubDate>
-    <description><![CDATA[Check out this fantastic Dallas Lake Life custom home tour of a $3.4 Million Lake Front Home in Heath, Texas.]]></description>
-      <category>Home Tour</category>
-      <enclosure url="https://whymovetodallas.com/images/blog/1706632788842-1XU20Z10YQ80Z3CMV97V-Heath-Texas-Background.png" type="image/png" length="0" />
-      <media:content url="https://whymovetodallas.com/images/blog/1706632788842-1XU20Z10YQ80Z3CMV97V-Heath-Texas-Background.png" medium="image" />
   </item>
 
   </channel>
