@@ -12,7 +12,7 @@
     <copyright>Copyright 2026 Kristen Carpentier / Social Agent Group</copyright>
     <managingEditor>Kristen@whymovetodallas.com (Kristen Carpentier)</managingEditor>
     <webMaster>Kristen@whymovetodallas.com (Kristen Carpentier)</webMaster>
-    <lastBuildDate>Sun, 02 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 05 Aug 2026 00:00:00 +0000</lastBuildDate>
     <ttl>1440</ttl>
     <atom:link href="https://whymovetodallas.com/feed.xml" rel="self" type="application/rss+xml" />
     <image>
@@ -20,6 +20,17 @@
       <title>Why Move to Dallas</title>
       <link>https://whymovetodallas.com</link>
     </image>
+
+  <item>
+    <title><![CDATA[Moving from Seattle to Dallas | Cost, Tax &amp; Suburb Guide]]></title>
+    <link>https://whymovetodallas.com/blog/moving-from-seattle-to-dallas-texas</link>
+    <guid isPermaLink="true">https://whymovetodallas.com/blog/moving-from-seattle-to-dallas-texas</guid>
+    <pubDate>Wed, 05 Aug 2026 00:00:00 +0000</pubDate>
+    <description><![CDATA[Moving from Seattle to Dallas? Compare Washington and Texas taxes, property tax, insurance, MUD and PID costs, schools, and DFW suburbs before you set a budget.]]></description>
+      <category>Cost of Living</category>
+      <enclosure url="https://whymovetodallas.com/images/blog/moving-from-seattle-to-dallas-texas-og.png" type="image/png" length="0" />
+      <media:content url="https://whymovetodallas.com/images/blog/moving-from-seattle-to-dallas-texas-og.png" medium="image" />
+  </item>
 
   <item>
     <title><![CDATA[Moving from Florida to Dallas | Cost, Tax &amp; Suburb Guide]]></title>
@@ -558,17 +569,6 @@
       <category>Relocation Guide</category>
       <enclosure url="https://whymovetodallas.com/images/social-og-image.webp" type="image/webp" length="0" />
       <media:content url="https://whymovetodallas.com/images/social-og-image.webp" medium="image" />
-  </item>
-
-  <item>
-    <title><![CDATA[Dallas, Texas is Changing! What Does it Mean for You?]]></title>
-    <link>https://whymovetodallas.com/blog/dallas-texas-is-changing-what-does-it-mean-for-you</link>
-    <guid isPermaLink="true">https://whymovetodallas.com/blog/dallas-texas-is-changing-what-does-it-mean-for-you</guid>
-    <pubDate>Wed, 15 May 2024 00:00:00 +0000</pubDate>
-    <description><![CDATA[Dive into the transformation of Dallas, Texas, and discover how it impacts you. Explore population growth trends, housing market insights, job opportunitie]]></description>
-      <category>Suburb Guide</category>
-      <enclosure url="https://whymovetodallas.com/images/blog/fbe407b5-a662-44e8-ae48-83904f64b261-Dallas-Migration.png" type="image/png" length="0" />
-      <media:content url="https://whymovetodallas.com/images/blog/fbe407b5-a662-44e8-ae48-83904f64b261-Dallas-Migration.png" medium="image" />
   </item>
 
   </channel>
