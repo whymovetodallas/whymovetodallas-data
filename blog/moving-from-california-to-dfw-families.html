@@ -1246,32 +1246,7 @@ gtag('consent','default',{
 </script>
 
 <script>
-(function kcBlogLiveData() {
-  var DATA_URL = 'https://raw.githubusercontent.com/whymovetodallas/whymovetodallas-data/main/suburb-profiles.json';
-  if (!window.fetch) return;
-  fetch(DATA_URL, { cache: 'no-cache' })
-    .then(function(r) { return r.ok ? r.json() : Promise.reject(); })
-    .then(function(data) {
-      var suburbs = data && data.suburbs;
-      if (!suburbs) return;
-      document.querySelectorAll('.kc-blog-live[data-suburb][data-field]').forEach(function(el) {
-        var key = el.dataset.suburb, field = el.dataset.field;
-        var s = suburbs[key]; if (!s) return;
-        var val = null;
-        var mkt = s.market || {}, scr = s.scores || {}, sch = s.schools || {}, wlk = s.walkability || {}, dem = s.demographics || {};
-        if (field === 'sfr_median_price')      val = mkt.sfr_median_price != null ? '$' + Math.round(mkt.sfr_median_price / 1000) + 'K' : null;
-        if (field === 'sfr_median_price_full') val = mkt.sfr_median_price != null ? '$' + Math.round(mkt.sfr_median_price).toLocaleString() : null;
-        if (field === 'market_condition')      val = mkt.market_condition || null;
-        if (field === 'family_score')          val = scr.family_score != null ? scr.family_score : null;
-        if (field === 'value_score')           val = scr.value_score != null ? scr.value_score : null;
-        if (field === 'isd_grade')             val = sch.overall_grade || null;
-        if (field === 'walk_score')            val = wlk.walk_score != null ? wlk.walk_score : null;
-        if (field === 'population')            val = dem.population != null ? Math.round(dem.population).toLocaleString() : null;
-        if (val != null) el.textContent = val;
-      });
-    })
-    .catch(function() {});
-})();
+
 </script>
 
 <!-- ═══════════════════════════════════════════════════════════════

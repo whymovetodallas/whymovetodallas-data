@@ -406,20 +406,7 @@ gtag('consent','default',{
 </script>
 
 <script>
-(function kcBlogLiveData(){
-  var DATA_URL='https://raw.githubusercontent.com/whymovetodallas/whymovetodallas-data/main/suburb-profiles.json';
-  if(!window.fetch)return;
-  fetch(DATA_URL,{cache:'no-cache'}).then(function(r){return r.ok?r.json():Promise.reject();}).then(function(data){
-    var suburbs=data&&data.suburbs; if(!suburbs)return;
-    document.querySelectorAll('.kc-blog-live[data-suburb][data-field]').forEach(function(el){
-      var s=suburbs[el.dataset.suburb]; if(!s)return;
-      var field=el.dataset.field,val=null;
-      var sch=s.schools||{};
-      if(field==='isd_grade')val=sch.overall_grade||null;
-      if(val!=null)el.textContent=val;
-    });
-  }).catch(function(){});
-})();
+
 </script>
 
 <!-- JSON-LD -->
@@ -608,5 +595,7 @@ gtag('consent','default',{
   update();
 })();
 </script>
+<!-- kc-blog-live field loader -->
+<script defer src="/js/kc-live-fields.js"></script>
 </body>
 </html>

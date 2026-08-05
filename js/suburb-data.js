@@ -16,6 +16,21 @@
  * Injected on every page containing #kc-data-strip by build.js. On fetch
  * failure it silently leaves whatever the page already shows.
  */
+/* Shared, memoised fetch of suburb-profiles.json.
+ * public/js/kc-live-fields.js owns the loader and is injected immediately
+ * before this file on every page that carries live data, so the page makes ONE
+ * conditional request instead of one per renderer. The direct-fetch fallback
+ * keeps this file working standalone if that script is ever absent. */
+var kcLoadProfiles = function (url) {
+  if (typeof window !== 'undefined' && window.KCLive && typeof window.KCLive.load === 'function') {
+    return window.KCLive.load();
+  }
+  return fetch(url, { cache: 'no-cache' }).then(function (r) {
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    return r.json();
+  });
+};
+
 (function () {
   var DATA_URL = 'https://raw.githubusercontent.com/whymovetodallas/whymovetodallas-data/main/suburb-profiles.json';
 
@@ -114,8 +129,7 @@
     if (!window.fetch || !document.getElementById('kc-data-strip')) return;
     var key = suburbKey();
     if (!key) return;
-    fetch(DATA_URL, { cache: 'no-cache' })
-      .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+    kcLoadProfiles(DATA_URL)
       .then(function (data) {
         var suburb = data && data.suburbs && data.suburbs[key];
         if (suburb) start(suburb);
@@ -179,8 +193,7 @@
   // ── Fetch ──────────────────────────────────────────────────────────────────
   if (!window.fetch) return;
 
-  fetch(DATA_URL, { cache: 'no-cache' })
-    .then(function(r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+  kcLoadProfiles(DATA_URL)
     .then(function(data) {
       function _apply() {
       var suburb = data && data.suburbs && data.suburbs[SUBURB_KEY];

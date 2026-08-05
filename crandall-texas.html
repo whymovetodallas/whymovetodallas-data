@@ -1249,21 +1249,21 @@ gtag('consent','default',{
   </div>
   <p id="kc-market-bands-note" class="kc-callout kc-callout--gold">In Crandall, the heart of the market is the starter band: 97% of homes sold in the past year landed under $400K, where a median of about $261K buys roughly 1,773 square feet.</p>
     <!-- KC-TIER-BANDS:END -->
-    <!-- KC-NTREIS-CARDS:START  unified market metrics, live via kc-blog-live + kcUnifiedMarketCards loader, refreshes with the monthly NTREIS scrape, never hardcode -->
+    <!-- KC-NTREIS-CARDS:START  unified market metrics, live via kc-blog-live spans + /js/kc-live-fields.js; fallback text is baked by tools/refresh-live-fallbacks.mjs (npm run bake:fallbacks) and gated by build.js, never hardcode -->
   <div class="kc-grid kc-grid--4" style="margin-bottom:1rem;">
     <div class="kc-card kc-card--navy" style="text-align:center;">
       <h4 style="margin-bottom:0.5rem;">Median Sale Price</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="crandall" data-field="sfr_median_price">$264K</span></p>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="crandall" data-field="sfr_median_price">$266K</span></p>
       <p style="font-size:0.78rem;color:#666;margin:0;">12-month rolling avg · single-family</p>
     </div>
     <div class="kc-card kc-card--navy" style="text-align:center;">
       <h4 style="margin-bottom:0.5rem;">Average Sale Price</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="crandall" data-field="sfr_avg_price">$272K</span></p>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="crandall" data-field="sfr_avg_price">$270K</span></p>
       <p style="font-size:0.78rem;color:#666;margin:0;">12-month rolling avg · single-family</p>
     </div>
     <div class="kc-card kc-card--navy" style="text-align:center;">
       <h4 style="margin-bottom:0.5rem;">Price per Sq Ft</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="crandall" data-field="sfr_median_price_per_sqft">$148</span></p>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="crandall" data-field="sfr_median_price_per_sqft">$147</span></p>
       <p style="font-size:0.78rem;color:#666;margin:0;">Median · 12-month rolling</p>
     </div>
     <div class="kc-card kc-card--navy" style="text-align:center;">
@@ -1273,7 +1273,7 @@ gtag('consent','default',{
     </div>
     <div class="kc-card kc-card--navy" style="text-align:center;">
       <h4 style="margin-bottom:0.5rem;">Days on Market</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="crandall" data-field="sfr_days_on_market">37 days</span></p>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="crandall" data-field="sfr_days_on_market">38 days</span></p>
       <p style="font-size:0.78rem;color:#666;margin:0;">Median · 12-month rolling</p>
     </div>
     <div class="kc-card kc-card--navy" style="text-align:center;">
@@ -1283,16 +1283,16 @@ gtag('consent','default',{
     </div>
     <div class="kc-card kc-card--navy" style="text-align:center;">
       <h4 style="margin-bottom:0.5rem;">Active Inventory</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="crandall" data-field="sfr_inventory">236</span></p>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="crandall" data-field="sfr_inventory">230</span></p>
       <p style="font-size:0.78rem;color:#666;margin:0;">Current active supply · single-family</p>
     </div>
     <div class="kc-card kc-card--navy" style="text-align:center;">
       <h4 style="margin-bottom:0.5rem;">Closed Sales</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="crandall" data-field="sfr_closed_sales_12mo">784</span></p>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="crandall" data-field="sfr_closed_sales_12mo">742</span></p>
       <p style="font-size:0.78rem;color:#666;margin:0;">12-month total · single-family</p>
     </div>
   </div>
-  <p>A few more numbers worth knowing if you are weighing an offer in Crandall. Over the trailing 12 months, single-family homes sold for a median of <span class="kc-blog-live" data-suburb="crandall" data-field="sfr_median_price">$264K</span> and an average of <span class="kc-blog-live" data-suburb="crandall" data-field="sfr_avg_price">$272K</span>, which works out to about <span class="kc-blog-live" data-suburb="crandall" data-field="sfr_median_price_per_sqft">$148</span> per square foot. Homes here sold for roughly <span class="kc-blog-live" data-suburb="crandall" data-field="sfr_pct_of_original_price">95.3%</span> of their original list price, which gives you a sense of how much room buyers have typically had to negotiate. As of the latest data, about <span class="kc-blog-live" data-suburb="crandall" data-field="sfr_inventory">236</span> single-family homes were actively listed. These are NTREIS figures (the price metrics are 12-month rolling, inventory is current active supply), and your own price per square foot and negotiating room will vary by neighborhood, age of home, and finish level.</p>
+  <p>A few more numbers worth knowing if you are weighing an offer in Crandall. Over the trailing 12 months, single-family homes sold for a median of <span class="kc-blog-live" data-suburb="crandall" data-field="sfr_median_price">$266K</span> and an average of <span class="kc-blog-live" data-suburb="crandall" data-field="sfr_avg_price">$270K</span>, which works out to about <span class="kc-blog-live" data-suburb="crandall" data-field="sfr_median_price_per_sqft">$147</span> per square foot. Homes here sold for roughly <span class="kc-blog-live" data-suburb="crandall" data-field="sfr_pct_of_original_price">95.3%</span> of their original list price, which gives you a sense of how much room buyers have typically had to negotiate. As of the latest data, about <span class="kc-blog-live" data-suburb="crandall" data-field="sfr_inventory">230</span> single-family homes were actively listed. These are NTREIS figures (the price metrics are 12-month rolling, inventory is current active supply), and your own price per square foot and negotiating room will vary by neighborhood, age of home, and finish level.</p>
   <!-- KC-NTREIS-CARDS:END -->
   <p style="font-size:0.8rem;color:#888;margin-top:-1rem;margin-bottom:1.5rem;">Source: NTREIS via 10K Research · All figures are 12-month rolling periods · Updated <span id="kc-mkt-updated">May 2026</span></p>
   <!-- KC-DEMAND:START  demand read + price-driver narrative, baked by tools/generate-tier-bands.cjs; #kc-market-demand verdict refreshes live -->

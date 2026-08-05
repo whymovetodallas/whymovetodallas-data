@@ -1275,7 +1275,6 @@ gtag('consent','default',{
 
       </div>
 
-
       <!-- SUBURB MATCHER CTA: earned moment: reader just toured all six communities -->
       <div style="display:flex;align-items:center;justify-content:space-between;gap:1rem;background:#1F2D3D;border-radius:10px;padding:1.1rem 1.5rem;margin:2.5rem 0;flex-wrap:wrap;">
         <div style="display:flex;flex-direction:column;">
@@ -1377,31 +1376,9 @@ gtag('consent','default',{
 </script>
 
 <script>
-// kcBlogLiveData — keep suburb stat cards current
-function kcBlogLiveData() {
-  var suburbs = ['southlake','westlake','highland-park','prosper','colleyville'];
-  var profileUrl = 'https://raw.githubusercontent.com/whymovetodallas/whymovetodallas-data/main/suburb-profiles.json';
-  fetch(profileUrl)
-    .then(function(r){ return r.ok ? r.json() : null; })
-    .then(function(data){
-      if (!data) return;
-      suburbs.forEach(function(slug){
-        var p = data[slug];
-        if (!p) return;
-        document.querySelectorAll('[data-kc-live="' + slug + '"]').forEach(function(el){
-          var field = el.dataset.kcField;
-          if (field === 'median_price' && p.market && p.market.median_price) {
-            el.textContent = '$' + (p.market.median_price / 1000).toFixed(0) + 'K';
-          }
-        });
-      });
-    })
-    .catch(function(){});
-}
+
 if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', kcBlogLiveData);
 } else {
-  kcBlogLiveData();
 }
 </script>
 

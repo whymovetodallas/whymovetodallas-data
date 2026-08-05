@@ -590,7 +590,7 @@ gtag('consent','default',{
       <!-- ── SECTION 3: Housing ── -->
       <h2 id="section-housing">The Housing Picture</h2>
 
-      <p>Argyle is not a budget suburb, and it is fair to set expectations. The median sale price in Argyle proper runs around <span class="kc-blog-live" data-suburb="argyle" data-field="sfr_median_price">$720K</span> (with Zillow and Movoto tracking the range at roughly $670,000–$765,000 in 2026). That said, the broader 76226 ZIP gives families more entry points than the headline number suggests, with townhomes and smaller-lot products starting in the mid $400,000s.</p>
+      <p>Argyle is not a budget suburb, and it is fair to set expectations. The median sale price in Argyle proper runs around <span class="kc-blog-live" data-suburb="argyle" data-field="sfr_median_price">$568K</span> (with Zillow and Movoto tracking the range at roughly $670,000–$765,000 in 2026). That said, the broader 76226 ZIP gives families more entry points than the headline number suggests, with townhomes and smaller-lot products starting in the mid $400,000s.</p>
 
       <table>
         <thead>
@@ -610,7 +610,7 @@ gtag('consent','default',{
           </tr>
           <tr>
             <td>Median home price</td>
-            <td>~<span class="kc-blog-live" data-suburb="argyle" data-field="sfr_median_price">$720K</span> (entry options from mid $400Ks in 76226)</td>
+            <td>~<span class="kc-blog-live" data-suburb="argyle" data-field="sfr_median_price">$568K</span> (entry options from mid $400Ks in 76226)</td>
           </tr>
           <tr>
             <td>Community feel</td>
@@ -681,7 +681,7 @@ gtag('consent','default',{
       <p>Yes, for the right family. Argyle pairs the number-one-rated school district in Denton County (Argyle ISD, 97/100 TEA) with a rural, spacious feel, low crime, and a tight-knit community. It suits families who want space and top schools and are comfortable driving a bit for major shopping and dining.</p>
 
       <h3>How much do homes cost in Argyle, TX?</h3>
-      <p>The median sale price in Argyle proper runs roughly <span class="kc-blog-live" data-suburb="argyle" data-field="sfr_median_price">$720K</span>, with the broader 76226 ZIP offering entry points such as townhomes and smaller-lot homes from the mid $400,000s. Argyle skews toward larger custom and semi-custom homes on generous lots.</p>
+      <p>The median sale price in Argyle proper runs roughly <span class="kc-blog-live" data-suburb="argyle" data-field="sfr_median_price">$568K</span>, with the broader 76226 ZIP offering entry points such as townhomes and smaller-lot homes from the mid $400,000s. Argyle skews toward larger custom and semi-custom homes on generous lots.</p>
 
       <h3>How good are Argyle schools?</h3>
       <p>Very good. Argyle ISD is consistently ranked the number one district in Denton County by Niche and holds a 97 out of 100 TEA accountability score. Its small size also gives families a strong sense of community around the schools that larger districts cannot replicate.</p>
@@ -778,32 +778,7 @@ gtag('consent','default',{
 </script>
 
 <script>
-(function kcBlogLiveData() {
-  var DATA_URL = 'https://raw.githubusercontent.com/whymovetodallas/whymovetodallas-data/main/suburb-profiles.json';
-  if (!window.fetch) return;
-  fetch(DATA_URL, { cache: 'no-cache' })
-    .then(function(r) { return r.ok ? r.json() : Promise.reject(); })
-    .then(function(data) {
-      var suburbs = data && data.suburbs;
-      if (!suburbs) return;
-      document.querySelectorAll('.kc-blog-live[data-suburb][data-field]').forEach(function(el) {
-        var key = el.dataset.suburb, field = el.dataset.field;
-        var s = suburbs[key]; if (!s) return;
-        var val = null;
-        var mkt = s.market || {}, scr = s.scores || {}, sch = s.schools || {}, wlk = s.walkability || {}, dem = s.demographics || {};
-        if (field === 'sfr_median_price')      val = mkt.sfr_median_price != null ? '$' + Math.round(mkt.sfr_median_price / 1000) + 'K' : null;
-        if (field === 'sfr_median_price_full') val = mkt.sfr_median_price != null ? '$' + Math.round(mkt.sfr_median_price).toLocaleString() : null;
-        if (field === 'market_condition')      val = mkt.market_condition || null;
-        if (field === 'family_score')          val = scr.family_score != null ? scr.family_score : null;
-        if (field === 'value_score')           val = scr.value_score != null ? scr.value_score : null;
-        if (field === 'isd_grade')             val = sch.overall_grade || null;
-        if (field === 'walk_score')            val = wlk.walk_score != null ? wlk.walk_score : null;
-        if (field === 'population')            val = dem.population != null ? Math.round(dem.population).toLocaleString() : null;
-        if (val != null) el.textContent = val;
-      });
-    })
-    .catch(function() {});
-})();
+
 </script>
 
 <!-- ═══════════════════════════════════════════════════════════════
@@ -976,5 +951,7 @@ gtag('consent','default',{
   update();
 })();
 </script>
+<!-- kc-blog-live field loader -->
+<script defer src="/js/kc-live-fields.js"></script>
 </body>
 </html>

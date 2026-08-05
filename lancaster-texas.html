@@ -1124,7 +1124,7 @@ gtag('consent','default',{
   </div>
   <p id="kc-market-bands-note" class="kc-callout kc-callout--gold">In Lancaster, the heart of the market is the starter band: 94% of homes sold in the past year landed under $400K, where a median of about $277K buys roughly 1,823 square feet. About 0% of sales were $700K or more, so move-up and luxury buyers have real selection. Price per square foot climbs from about $152 at the entry level to $256 at the top, which is what you are paying for in larger lots, newer builds, and higher finish levels.</p>
     <!-- KC-TIER-BANDS:END -->
-    <!-- KC-NTREIS-CARDS:START  unified market metrics, live via kc-blog-live + kcUnifiedMarketCards loader, refreshes with the monthly NTREIS scrape, never hardcode -->
+    <!-- KC-NTREIS-CARDS:START  unified market metrics, live via kc-blog-live spans + /js/kc-live-fields.js; fallback text is baked by tools/refresh-live-fallbacks.mjs (npm run bake:fallbacks) and gated by build.js, never hardcode -->
   <div class="kc-grid kc-grid--4" style="margin-bottom:1rem;">
     <div class="kc-card kc-card--navy" style="text-align:center;">
       <h4 style="margin-bottom:0.5rem;">Median Sale Price</h4>
@@ -1133,41 +1133,41 @@ gtag('consent','default',{
     </div>
     <div class="kc-card kc-card--navy" style="text-align:center;">
       <h4 style="margin-bottom:0.5rem;">Average Sale Price</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="lancaster" data-field="sfr_avg_price">$285K</span></p>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="lancaster" data-field="sfr_avg_price">$286K</span></p>
       <p style="font-size:0.78rem;color:#666;margin:0;">12-month rolling avg · single-family</p>
     </div>
     <div class="kc-card kc-card--navy" style="text-align:center;">
       <h4 style="margin-bottom:0.5rem;">Price per Sq Ft</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="lancaster" data-field="sfr_median_price_per_sqft">$152</span></p>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="lancaster" data-field="sfr_median_price_per_sqft">$153</span></p>
       <p style="font-size:0.78rem;color:#666;margin:0;">Median · 12-month rolling</p>
     </div>
     <div class="kc-card kc-card--navy" style="text-align:center;">
       <h4 style="margin-bottom:0.5rem;">Sale to Original List</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="lancaster" data-field="sfr_pct_of_original_price">97.3%</span></p>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="lancaster" data-field="sfr_pct_of_original_price">97.8%</span></p>
       <p style="font-size:0.78rem;color:#666;margin:0;">12-month rolling · share of original list price</p>
     </div>
     <div class="kc-card kc-card--navy" style="text-align:center;">
       <h4 style="margin-bottom:0.5rem;">Days on Market</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="lancaster" data-field="sfr_days_on_market">37 days</span></p>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="lancaster" data-field="sfr_days_on_market">31 days</span></p>
       <p style="font-size:0.78rem;color:#666;margin:0;">Median · 12-month rolling</p>
     </div>
     <div class="kc-card kc-card--navy" style="text-align:center;">
       <h4 style="margin-bottom:0.5rem;">Months Supply</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="lancaster" data-field="sfr_months_supply">3.4 mo.</span></p>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="lancaster" data-field="sfr_months_supply">3.6 mo.</span></p>
       <p style="font-size:0.78rem;color:#666;margin:0;"><span class="kc-blog-live" data-suburb="lancaster" data-field="market_condition">Balanced</span> market · 12-month</p>
     </div>
     <div class="kc-card kc-card--navy" style="text-align:center;">
       <h4 style="margin-bottom:0.5rem;">Active Inventory</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="lancaster" data-field="sfr_inventory">93</span></p>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="lancaster" data-field="sfr_inventory">94</span></p>
       <p style="font-size:0.78rem;color:#666;margin:0;">Current active supply · single-family</p>
     </div>
     <div class="kc-card kc-card--navy" style="text-align:center;">
       <h4 style="margin-bottom:0.5rem;">Closed Sales</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="lancaster" data-field="sfr_closed_sales_12mo">299</span></p>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="lancaster" data-field="sfr_closed_sales_12mo">290</span></p>
       <p style="font-size:0.78rem;color:#666;margin:0;">12-month total · single-family</p>
     </div>
   </div>
-  <p>A few more numbers worth knowing if you are weighing an offer in Lancaster. Over the trailing 12 months, single-family homes sold for a median of <span class="kc-blog-live" data-suburb="lancaster" data-field="sfr_median_price">$282K</span> and an average of <span class="kc-blog-live" data-suburb="lancaster" data-field="sfr_avg_price">$285K</span>, which works out to about <span class="kc-blog-live" data-suburb="lancaster" data-field="sfr_median_price_per_sqft">$152</span> per square foot. Homes here sold for roughly <span class="kc-blog-live" data-suburb="lancaster" data-field="sfr_pct_of_original_price">97.3%</span> of their original list price, which gives you a sense of how much room buyers have typically had to negotiate. As of the latest data, about <span class="kc-blog-live" data-suburb="lancaster" data-field="sfr_inventory">93</span> single-family homes were actively listed. These are NTREIS figures (the price metrics are 12-month rolling, inventory is current active supply), and your own price per square foot and negotiating room will vary by neighborhood, age of home, and finish level.</p>
+  <p>A few more numbers worth knowing if you are weighing an offer in Lancaster. Over the trailing 12 months, single-family homes sold for a median of <span class="kc-blog-live" data-suburb="lancaster" data-field="sfr_median_price">$282K</span> and an average of <span class="kc-blog-live" data-suburb="lancaster" data-field="sfr_avg_price">$286K</span>, which works out to about <span class="kc-blog-live" data-suburb="lancaster" data-field="sfr_median_price_per_sqft">$153</span> per square foot. Homes here sold for roughly <span class="kc-blog-live" data-suburb="lancaster" data-field="sfr_pct_of_original_price">97.8%</span> of their original list price, which gives you a sense of how much room buyers have typically had to negotiate. As of the latest data, about <span class="kc-blog-live" data-suburb="lancaster" data-field="sfr_inventory">94</span> single-family homes were actively listed. These are NTREIS figures (the price metrics are 12-month rolling, inventory is current active supply), and your own price per square foot and negotiating room will vary by neighborhood, age of home, and finish level.</p>
   <!-- KC-NTREIS-CARDS:END -->
   <!-- KC-DEMAND:START  demand read + price-driver narrative, baked by tools/generate-tier-bands.cjs; #kc-market-demand verdict refreshes live -->
   <div id="kc-market-demand-block" style="margin-top:1.5rem;">

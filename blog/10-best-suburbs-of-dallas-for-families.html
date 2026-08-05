@@ -1619,26 +1619,7 @@ gtag('consent','default',{
 </script>
 
 <script>
-// Live suburb data (badge stamps on suburb pills if data available)
-function kcBlogLiveData() {
-  var els = document.querySelectorAll('[data-suburb-slug]');
-  if (!els.length) return;
-  fetch('https://raw.githubusercontent.com/whymovetodallas/whymovetodallas-data/main/suburb-profiles.json')
-    .then(function(r){ return r.json(); })
-    .then(function(data){
-      els.forEach(function(el){
-        var slug = el.dataset.suburbSlug;
-        var profile = data[slug];
-        if (!profile) return;
-        var badge = el.querySelector('.kc-blog-live');
-        if (badge && profile.market && profile.market.median_price) {
-          badge.textContent = '$' + Math.round(profile.market.median_price / 1000) + 'K median';
-          badge.style.display = 'inline';
-        }
-      });
-    }).catch(function(){});
-}
-document.addEventListener('DOMContentLoaded', kcBlogLiveData);
+
 </script>
 
 <script>

@@ -294,10 +294,10 @@ gtag('consent','default',{
 <h2 id="areas">Create a Starting Shortlist</h2>
 <p>The table below is a set of starting points, not a list of Chicago neighborhood equivalents. Prices are rolling single family medians from the site's local market dataset. Confirm live inventory, school assignment, tax rates, and insurance for each address.</p>
 <div class="kc-table"><table><thead><tr><th>Community</th><th>Current median</th><th>District grade</th><th>Why compare it</th></tr></thead><tbody>
-  <tr><td><a href="/richardson-texas">Richardson</a></td><td><span class="kc-blog-live" data-suburb="richardson" data-field="sfr_median_price">$463K</span></td><td><span class="kc-blog-live" data-suburb="richardson" data-field="isd_grade">A-</span></td><td>Established housing, Dallas access, selected DART connections</td></tr>
-  <tr><td><a href="/plano-texas">Plano</a></td><td><span class="kc-blog-live" data-suburb="plano" data-field="sfr_median_price">$526K</span></td><td><span class="kc-blog-live" data-suburb="plano" data-field="isd_grade">A</span></td><td>Large employment base and varied housing ages</td></tr>
-  <tr><td><a href="/allen-texas">Allen</a></td><td><span class="kc-blog-live" data-suburb="allen" data-field="sfr_median_price">$516K</span></td><td><span class="kc-blog-live" data-suburb="allen" data-field="isd_grade">A+</span></td><td>North DFW location and broad single family inventory</td></tr>
-  <tr><td><a href="/colleyville-texas">Colleyville</a></td><td><span class="kc-blog-live" data-suburb="colleyville" data-field="sfr_median_price">$1.00M</span></td><td><span class="kc-blog-live" data-suburb="colleyville" data-field="isd_grade">A+</span></td><td>Larger lots and access to the airport corridor</td></tr>
+  <tr><td><a href="/richardson-texas">Richardson</a></td><td><span class="kc-blog-live" data-suburb="richardson" data-field="sfr_median_price">$466K</span></td><td><span class="kc-blog-live" data-suburb="richardson" data-field="isd_grade">A-</span></td><td>Established housing, Dallas access, selected DART connections</td></tr>
+  <tr><td><a href="/plano-texas">Plano</a></td><td><span class="kc-blog-live" data-suburb="plano" data-field="sfr_median_price">$531K</span></td><td><span class="kc-blog-live" data-suburb="plano" data-field="isd_grade">A</span></td><td>Large employment base and varied housing ages</td></tr>
+  <tr><td><a href="/allen-texas">Allen</a></td><td><span class="kc-blog-live" data-suburb="allen" data-field="sfr_median_price">$513K</span></td><td><span class="kc-blog-live" data-suburb="allen" data-field="isd_grade">A+</span></td><td>North DFW location and broad single family inventory</td></tr>
+  <tr><td><a href="/colleyville-texas">Colleyville</a></td><td><span class="kc-blog-live" data-suburb="colleyville" data-field="sfr_median_price">$1.0M</span></td><td><span class="kc-blog-live" data-suburb="colleyville" data-field="isd_grade">A+</span></td><td>Larger lots and access to the airport corridor</td></tr>
 </tbody></table></div>
 <h3>Translate Your Chicago-Area Routine, Not the Suburb Name</h3>
 <div class="kc-table"><table><thead><tr><th>If this matters now</th><th>Ask this before choosing a DFW address</th></tr></thead><tbody>
@@ -340,7 +340,6 @@ gtag('consent','default',{
 </article></main>
 <script>
 (function(){var bar=document.getElementById('kc-read-progress');function p(){var h=document.documentElement.scrollHeight-innerHeight;bar.style.width=(h?Math.min(100,scrollY/h*100):0)+'%'}addEventListener('scroll',p,{passive:true});p()})();
-(function(){fetch('https://raw.githubusercontent.com/whymovetodallas/whymovetodallas-data/main/suburb-profiles.json',{cache:'no-cache'}).then(function(r){return r.json()}).then(function(d){document.querySelectorAll('.kc-blog-live').forEach(function(el){var s=d.suburbs&&d.suburbs[el.dataset.suburb];if(!s)return;var v=el.dataset.field==='sfr_median_price'&&s.market&&s.market.sfr_median_price!=null?'$'+Math.round(s.market.sfr_median_price/1000)+'K':el.dataset.field==='isd_grade'&&s.schools?s.schools.overall_grade:null;if(v)el.textContent=v})}).catch(function(){})})();
 </script>
 <!-- ═══════════════════════════════════════════════════════════════
      SITE FOOTER — whymovetodallas.com
@@ -512,4 +511,6 @@ gtag('consent','default',{
   update();
 })();
 </script>
+<!-- kc-blog-live field loader -->
+<script defer src="/js/kc-live-fields.js"></script>
 </body></html>

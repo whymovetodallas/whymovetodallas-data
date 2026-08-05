@@ -873,34 +873,7 @@ window.addEventListener('scroll',function(){
 });
 </script>
 <script>
-(function kcBlogLiveData(){
-  var DATA_URL='https://raw.githubusercontent.com/whymovetodallas/whymovetodallas-data/main/suburb-profiles.json';
-  if(!window.fetch)return;
-  fetch(DATA_URL,{cache:'no-cache'})
-    .then(function(r){return r.ok?r.json():Promise.reject();})
-    .then(function(data){
-      var suburbs=data&&data.suburbs;
-      if(!suburbs)return;
-      document.querySelectorAll('.kc-blog-live[data-suburb][data-field]').forEach(function(el){
-        var key=el.dataset.suburb;
-        var field=el.dataset.field;
-        var s=suburbs[key];
-        if(!s)return;
-        var val=null;
-        var mkt=s.market||{};
-        var scr=s.scores||{};
-        var sch=s.schools||{};
-        if(field==='sfr_median_price')     val=mkt.sfr_median_price!=null?'$'+Math.round(mkt.sfr_median_price/1000)+'K':null;
-        if(field==='sfr_days_on_market')   val=mkt.sfr_days_on_market!=null?Math.round(mkt.sfr_days_on_market*10)/10:null;
-        if(field==='sfr_months_supply')    val=mkt.sfr_months_supply!=null?(Math.round(mkt.sfr_months_supply*10)/10)+' mo.':null;
-        if(field==='market_condition')     val=mkt.market_condition||null;
-        if(field==='family_score')         val=scr.family_score!=null?scr.family_score:null;
-        if(field==='isd_grade')            val=sch.overall_grade||null;
-        if(val!=null)el.textContent=val;
-      });
-    })
-    .catch(function(){});
-})();
+
 </script>
 <!-- ═══════════════════════════════════════════════════════════════
      SITE FOOTER — whymovetodallas.com
