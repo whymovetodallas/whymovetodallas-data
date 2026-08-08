@@ -13,7 +13,7 @@
 
   var GREETING =
     "Hi! I'm Kristen's assistant. Ask me anything about moving to the " +
-    "Dallas–Fort Worth suburbs — schools, neighborhoods, commutes, " +
+    "Dallas-Fort Worth suburbs: schools, neighborhoods, commutes, " +
     "cost of living, or the relocation process.";
 
   var STARTERS = [
@@ -220,7 +220,7 @@
       if (!answer) {
         ensureBot();
         botNode.innerHTML = format(
-          "I'm not certain I have that on the site yet. Kristen can help directly — Kristen@whymovetodallas.com or (602) 405-4115."
+          "I'm not certain I have that on the site yet. Kristen can help directly: Kristen@whymovetodallas.com or (602) 405-4115."
         );
       } else {
         messages.push({ role: "assistant", content: answer });
