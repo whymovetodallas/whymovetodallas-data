@@ -12,7 +12,7 @@
     <copyright>Copyright 2026 Kristen Carpentier / Social Agent Group</copyright>
     <managingEditor>Kristen@whymovetodallas.com (Kristen Carpentier)</managingEditor>
     <webMaster>Kristen@whymovetodallas.com (Kristen Carpentier)</webMaster>
-    <lastBuildDate>Wed, 05 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 22 Aug 2026 00:00:00 +0000</lastBuildDate>
     <ttl>1440</ttl>
     <atom:link href="https://whymovetodallas.com/feed.xml" rel="self" type="application/rss+xml" />
     <image>
@@ -20,6 +20,17 @@
       <title>Why Move to Dallas</title>
       <link>https://whymovetodallas.com</link>
     </image>
+
+  <item>
+    <title><![CDATA[Moving to Colleyville Texas: Homes, Schools, Taxes]]></title>
+    <link>https://whymovetodallas.com/blog/moving-to-colleyville-texas</link>
+    <guid isPermaLink="true">https://whymovetodallas.com/blog/moving-to-colleyville-texas</guid>
+    <pubDate>Sat, 22 Aug 2026 00:00:00 +0000</pubDate>
+    <description><![CDATA[Moving to Colleyville, Texas? Five school districts split this one city, and your exact address sets both your schools and your property tax bill. Verify it.]]></description>
+      <category>Suburb Guide</category>
+      <enclosure url="https://whymovetodallas.com/images/blog/moving-to-colleyville-texas-og.png" type="image/png" length="0" />
+      <media:content url="https://whymovetodallas.com/images/blog/moving-to-colleyville-texas-og.png" medium="image" />
+  </item>
 
   <item>
     <title><![CDATA[Moving from Seattle to Dallas | Cost, Tax &amp; Suburb Guide]]></title>
@@ -558,17 +569,6 @@
       <category>Relocation Guide</category>
       <enclosure url="https://whymovetodallas.com/images/dallas-hero.webp" type="image/webp" length="0" />
       <media:content url="https://whymovetodallas.com/images/dallas-hero.webp" medium="image" />
-  </item>
-
-  <item>
-    <title><![CDATA[Moving to Dallas, Texas, Can Be BAD If You Do It Wrong!]]></title>
-    <link>https://whymovetodallas.com/blog/moving-to-dallas-texas-can-be-bad-if-you-do-it-wrong</link>
-    <guid isPermaLink="true">https://whymovetodallas.com/blog/moving-to-dallas-texas-can-be-bad-if-you-do-it-wrong</guid>
-    <pubDate>Mon, 27 May 2024 00:00:00 +0000</pubDate>
-    <description><![CDATA[Check out the Ultimate Dallas Texas relocation guide,  you don’t want to make a mistake when moving to Dallas Texas.  We dive into several topics about liv]]></description>
-      <category>Relocation Guide</category>
-      <enclosure url="https://whymovetodallas.com/images/social-og-image.webp" type="image/webp" length="0" />
-      <media:content url="https://whymovetodallas.com/images/social-og-image.webp" medium="image" />
   </item>
 
   </channel>
