@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-wmtd-contract-version="1" data-wmtd-page-family="builder" data-wmtd-entity-id="builder:grand-homes" data-wmtd-build-id="sha256:f3a7cefec6b3cba9bf002d1adae67e6ca6e258c057f02024e90a6d30f595f557">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -521,7 +521,7 @@ gtag('consent','default',{
   </div>
 
   <!-- ── About ──────────────────────────────────────────────────────────── -->
-  <section class="section" id="about">
+  <section class="section" id="about" data-wmtd-frame="builder.about" data-wmtd-kind="section">
     <h2>Who Is Grand Homes?
       <span class="score-badge">Score 96 <span class="grade">A+</span></span>
     </h2>
@@ -569,7 +569,7 @@ gtag('consent','default',{
   <hr class="divider">
 
   <!-- ── Communities ─────────────────────────────────────────────────────── -->
-  <section class="section" id="communities">
+  <section class="section" id="communities" data-wmtd-frame="builder.communities" data-wmtd-kind="entity-list">
     <h2>Grand Homes DFW Communities</h2>
     <p>Grand Homes currently has active communities across 14+ DFW suburbs, spanning the East DFW corridor, established North DFW growth suburbs, and select mid-cities locations. Click any suburb to read the full family profile, or search current listings directly.</p>
 
@@ -579,7 +579,7 @@ gtag('consent','default',{
     </div>
 
     <!-- SHOWINGNEW_TABLE_START:grand-homes -->
-    <p id="bt-note-grand-homes" style="font-size:0.87rem;color:#555;margin:0 0 0.85rem;">Showing <strong>5 communities</strong>, sourced from ShowingNew and last updated 2026-05-26. Additional communities may be available; <a href="https://www.showingnew.com/whymovetodallas" target="_blank" rel="noopener" style="color:#b08d57;">browse the full portal</a> for current listings.</p>
+    <p id="bt-note-grand-homes" style="font-size:0.87rem;color:#555;margin:0 0 0.85rem;">Showing <strong>8 communities</strong>, sourced from ShowingNew and last updated 2026-09-07. Additional communities may be available; <a href="https://www.showingnew.com/whymovetodallas" target="_blank" rel="noopener" style="color:#b08d57;">browse the full portal</a> for current listings.</p>
 
     <div style="background:#fff;border:1px solid #e0d9ce;border-radius:10px;padding:1rem 1.25rem;margin:1.25rem 0 0.5rem;display:flex;flex-wrap:wrap;gap:0.85rem;align-items:flex-end;box-shadow:0 2px 12px rgba(0,0,0,0.07);">
       <div style="display:flex;flex-direction:column;gap:0.25rem;">
@@ -589,6 +589,9 @@ gtag('consent','default',{
           <option value="corinth">Corinth</option>
           <option value="fate">Fate</option>
           <option value="heath">Heath</option>
+          <option value="irving">Irving</option>
+          <option value="midlothian">Midlothian</option>
+          <option value="rowlett">Rowlett</option>
           <option value="wylie">Wylie</option>
         </select>
       </div>
@@ -597,8 +600,8 @@ gtag('consent','default',{
         <div id="bt-price-grand-homes" style="display:flex;gap:0.3rem;flex-wrap:wrap;">
           <button style="padding:0.2rem 0.65rem;border:1px solid #c8c1b6;border-radius:20px;font-size:0.78rem;font-weight:500;background:#fff;color:#232323;cursor:pointer;white-space:nowrap;line-height:1.6;background:#1f2d3d;color:#fff;border-color:#1f2d3d;" data-pmin="0" data-pmax="0">All</button>
           <button style="padding:0.2rem 0.65rem;border:1px solid #c8c1b6;border-radius:20px;font-size:0.78rem;font-weight:500;background:#fff;color:#232323;cursor:pointer;white-space:nowrap;line-height:1.6;" data-pmin="0" data-pmax="400000">Under $400k</button>
-          <button style="padding:0.2rem 0.65rem;border:1px solid #c8c1b6;border-radius:20px;font-size:0.78rem;font-weight:500;background:#fff;color:#232323;cursor:pointer;white-space:nowrap;line-height:1.6;" data-pmin="400000" data-pmax="550000">$400–$550k</button>
-          <button style="padding:0.2rem 0.65rem;border:1px solid #c8c1b6;border-radius:20px;font-size:0.78rem;font-weight:500;background:#fff;color:#232323;cursor:pointer;white-space:nowrap;line-height:1.6;" data-pmin="550000" data-pmax="750000">$550–$750k</button>
+          <button style="padding:0.2rem 0.65rem;border:1px solid #c8c1b6;border-radius:20px;font-size:0.78rem;font-weight:500;background:#fff;color:#232323;cursor:pointer;white-space:nowrap;line-height:1.6;" data-pmin="400000" data-pmax="550000">$400 to $550k</button>
+          <button style="padding:0.2rem 0.65rem;border:1px solid #c8c1b6;border-radius:20px;font-size:0.78rem;font-weight:500;background:#fff;color:#232323;cursor:pointer;white-space:nowrap;line-height:1.6;" data-pmin="550000" data-pmax="750000">$550 to $750k</button>
           <button style="padding:0.2rem 0.65rem;border:1px solid #c8c1b6;border-radius:20px;font-size:0.78rem;font-weight:500;background:#fff;color:#232323;cursor:pointer;white-space:nowrap;line-height:1.6;" data-pmin="750000" data-pmax="0">$750k+</button>
         </div>
       </div>
@@ -647,7 +650,7 @@ gtag('consent','default',{
     <script>
     (function() {
       var NAVY = '#1f2d3d';
-      var DATA = [{"suburb":"corinth","name":"Walton Ridge","price_min":479900,"price_max":861900,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":4,"sqft_min":1978,"sqft_max":3916,"homes_available":17,"has_promo":true},{"suburb":"fate","name":"Edgewater","price_min":414900,"price_max":669900,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"sqft_min":1895,"sqft_max":3541,"homes_available":27,"has_promo":true},{"suburb":"fate","name":"Monterra","price_min":515900,"price_max":857850,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"sqft_min":2377,"sqft_max":4539,"homes_available":16,"has_promo":false},{"suburb":"heath","name":"Heath Golf & Yacht Club","price_min":734900,"price_max":1314900,"beds_min":3,"beds_max":5,"baths_min":3,"baths_max":4,"sqft_min":2377,"sqft_max":5019,"homes_available":14,"has_promo":false},{"suburb":"wylie","name":"Dominion of Pleasant Valley","price_min":543900,"price_max":849570,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":5,"sqft_min":1902,"sqft_max":4041,"homes_available":23,"has_promo":false}];
+      var DATA = [{"suburb":"corinth","name":"Walton Ridge","price_min":479900,"price_max":871900,"beds_min":3,"beds_max":4,"baths_min":2,"baths_max":4,"sqft_min":1978,"sqft_max":3916,"homes_available":19,"has_promo":false},{"suburb":"fate","name":"Edgewater","price_min":414900,"price_max":669900,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"sqft_min":1895,"sqft_max":3912,"homes_available":28,"has_promo":false},{"suburb":"fate","name":"Monterra","price_min":515900,"price_max":819800,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"sqft_min":2377,"sqft_max":4539,"homes_available":16,"has_promo":false},{"suburb":"heath","name":"Heath Golf & Yacht Club","price_min":734900,"price_max":1192527,"beds_min":3,"beds_max":5,"baths_min":3,"baths_max":4,"sqft_min":2377,"sqft_max":4633,"homes_available":15,"has_promo":false},{"suburb":"irving","name":"Grand Braniff Park","price_min":815900,"price_max":915900,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"sqft_min":1902,"sqft_max":3438,"homes_available":11,"has_promo":false},{"suburb":"midlothian","name":"Somercrest","price_min":639880,"price_max":799188,"beds_min":3,"beds_max":5,"baths_min":3,"baths_max":4,"sqft_min":2897,"sqft_max":4226,"homes_available":6,"has_promo":false},{"suburb":"rowlett","name":"Trails at Cottonwood Creek","price_min":409900,"price_max":649778,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":4,"sqft_min":1895,"sqft_max":3899,"homes_available":12,"has_promo":false},{"suburb":"wylie","name":"Dominion of Pleasant Valley","price_min":543900,"price_max":848850,"beds_min":3,"beds_max":5,"baths_min":2,"baths_max":5,"sqft_min":1902,"sqft_max":4018,"homes_available":22,"has_promo":false}];
 
       function fmtP(n) {
         if (!n) return null;
@@ -765,7 +768,7 @@ gtag('consent','default',{
   <hr class="divider">
 
   <!-- ── Warranty ────────────────────────────────────────────────────────── -->
-  <section class="section" id="warranty">
+  <section class="section" id="warranty" data-wmtd-frame="builder.warranty" data-wmtd-kind="section">
     <h2>Grand Homes Warranty: Meets Texas Legal Minimum</h2>
     <p>Grand Homes offers a standard 1-2-10 limited express warranty, which is the most common warranty structure in DFW new construction. Texas law (RCLA) sets the floor at 1 year for workmanship, 2 years for mechanical systems, and 10 years for structural defects, Grand's warranty meets these minimums exactly. The workmanship coverage period (1 year) is the Texas floor; it does not exceed it. Warranty administration is handled in-house by Grand's own warranty team, not a third-party warranty company. This means your service requests go directly to Grand staff, which can be an advantage when issues are resolved promptly, and a friction point when responsiveness lags, which is the most consistent complaint theme across BBB and Eliant reviews.</p>
 
@@ -809,7 +812,7 @@ gtag('consent','default',{
   <hr class="divider">
 
   <!-- ── Pros / Cons ─────────────────────────────────────────────────────── -->
-  <section class="section" id="pros-cons">
+  <section class="section" id="pros-cons" data-wmtd-frame="pros-cons" data-wmtd-kind="comparison">
     <h2>Honest Assessment: What Families Love and What to Know</h2>
     <p>Grand Homes scores a <strong>96 (A+)</strong> on our 100-point builder index. Here's what drives that score, and where relocating families should pay attention.</p>
 
@@ -840,7 +843,7 @@ gtag('consent','default',{
   <hr class="divider">
 
   <!-- ── Incentives ──────────────────────────────────────────────────────── -->
-  <section class="section" id="incentives">
+  <section class="section" id="incentives" data-wmtd-frame="builder.incentives" data-wmtd-kind="section">
     <h2>Grand Homes Incentives &amp; Current Promotions</h2>
 
     <div class="incentives-box">
@@ -875,7 +878,7 @@ gtag('consent','default',{
   <hr class="divider">
 
   <!-- ── Floor Plans ─────────────────────────────────────────────────────── -->
-  <section class="section" id="floor-plans">
+  <section class="section" id="floor-plans" data-wmtd-frame="builder.floor-plans" data-wmtd-kind="section">
     <h2>Grand Homes Floor Plans &amp; Design Process</h2>
     <p>Grand Homes' DFW floor plan portfolio spans approximately 1,900–5,000 square feet, with four- and five-bedroom plans making up the majority of their active inventory. Community-specific plan availability varies significantly, East DFW communities like Heath Golf &amp; Yacht Club offer larger luxury plans ($735K–$1.3M), while communities in Fate and Corinth focus on move-up families in the $415K–$860K range. For relocating families comparing multiple suburbs, the plan selection available in each community is one of the first things worth verifying before visiting model homes.</p>
 
@@ -898,7 +901,7 @@ gtag('consent','default',{
   <hr class="divider">
 
   <!-- ── Kristen's Take ──────────────────────────────────────────────────── -->
-  <section class="section" id="agent-take">
+  <section class="section" id="agent-take" data-wmtd-frame="builder.agent-take" data-wmtd-kind="callout">
     <h2>Kristen's Agent Perspective</h2>
 
     <div class="kristen-take">
@@ -922,7 +925,7 @@ gtag('consent','default',{
   <hr class="divider">
 
   <!-- ── FAQ ────────────────────────────────────────────────────────────── -->
-  <section class="section" id="faq">
+  <section class="section" id="faq" data-wmtd-frame="faq" data-wmtd-kind="faq">
     <h2>Grand Homes DFW: Frequently Asked Questions</h2>
     <div class="faq-list">
 
