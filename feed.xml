@@ -12,7 +12,7 @@
     <copyright>Copyright 2026 Kristen Carpentier / Social Agent Group</copyright>
     <managingEditor>Kristen@whymovetodallas.com (Kristen Carpentier)</managingEditor>
     <webMaster>Kristen@whymovetodallas.com (Kristen Carpentier)</webMaster>
-    <lastBuildDate>Sat, 22 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 16 Sep 2026 00:00:00 +0000</lastBuildDate>
     <ttl>1440</ttl>
     <atom:link href="https://whymovetodallas.com/feed.xml" rel="self" type="application/rss+xml" />
     <image>
@@ -20,6 +20,39 @@
       <title>Why Move to Dallas</title>
       <link>https://whymovetodallas.com</link>
     </image>
+
+  <item>
+    <title><![CDATA[Frisco Texas Neighborhoods Guide]]></title>
+    <link>https://whymovetodallas.com/blog/frisco-texas-neighborhoods-guide</link>
+    <guid isPermaLink="true">https://whymovetodallas.com/blog/frisco-texas-neighborhoods-guide</guid>
+    <pubDate>Wed, 16 Sep 2026 00:00:00 +0000</pubDate>
+    <description><![CDATA[Explore Frisco Texas neighborhoods with a practical way to compare routine, complete monthly cost, home type, amenities, and address-level school checks.]]></description>
+      <category>Suburb Guide</category>
+      <enclosure url="https://whymovetodallas.com/images/blog/frisco-texas-neighborhoods-guide-og.png" type="image/png" length="0" />
+      <media:content url="https://whymovetodallas.com/images/blog/frisco-texas-neighborhoods-guide-og.png" medium="image" />
+  </item>
+
+  <item>
+    <title><![CDATA[Moving from Colorado to DFW: A Family Guide]]></title>
+    <link>https://whymovetodallas.com/blog/moving-from-colorado-to-dfw</link>
+    <guid isPermaLink="true">https://whymovetodallas.com/blog/moving-from-colorado-to-dfw</guid>
+    <pubDate>Thu, 03 Sep 2026 00:00:00 +0000</pubDate>
+    <description><![CDATA[Moving from Colorado to DFW? Compare taxes, homes, schools, heat, and the North Texas questions Denver and Colorado Springs families should ask.]]></description>
+      <category>Moving to DFW</category>
+      <enclosure url="https://whymovetodallas.com/images/blog/moving-from-colorado-to-dfw-og.png" type="image/png" length="0" />
+      <media:content url="https://whymovetodallas.com/images/blog/moving-from-colorado-to-dfw-og.png" medium="image" />
+  </item>
+
+  <item>
+    <title><![CDATA[Texas Property Tax Guide]]></title>
+    <link>https://whymovetodallas.com/blog/texas-property-tax-for-out-of-state-buyers</link>
+    <guid isPermaLink="true">https://whymovetodallas.com/blog/texas-property-tax-for-out-of-state-buyers</guid>
+    <pubDate>Tue, 01 Sep 2026 00:00:00 +0000</pubDate>
+    <description><![CDATA[Texas property tax for out-of-state buyers, explained with homestead rules, DFW examples, and every address-level cost families should compare before moving.]]></description>
+      <category>Cost of Living</category>
+      <enclosure url="https://whymovetodallas.com/images/blog/texas-property-tax-for-out-of-state-buyers-og.png" type="image/png" length="0" />
+      <media:content url="https://whymovetodallas.com/images/blog/texas-property-tax-for-out-of-state-buyers-og.png" medium="image" />
+  </item>
 
   <item>
     <title><![CDATA[Moving to Colleyville Texas: Homes, Schools, Taxes]]></title>
@@ -536,39 +569,6 @@
       <category>Suburb Guide</category>
       <enclosure url="https://whymovetodallas.com/images/social-og-image.webp" type="image/webp" length="0" />
       <media:content url="https://whymovetodallas.com/images/social-og-image.webp" medium="image" />
-  </item>
-
-  <item>
-    <title><![CDATA[Top 10 Things to Do in Dallas for New Residents]]></title>
-    <link>https://whymovetodallas.com/blog/top-10-things-to-do-in-dallas-for-new-residents</link>
-    <guid isPermaLink="true">https://whymovetodallas.com/blog/top-10-things-to-do-in-dallas-for-new-residents</guid>
-    <pubDate>Fri, 31 May 2024 00:00:00 +0000</pubDate>
-    <description><![CDATA[Discover the top 10 things new residents can do in Dallas! Explore iconic attractions, outdoor activities, family-friendly spots, top restaurants, cultural]]></description>
-      <category>Suburb Guide</category>
-      <enclosure url="https://whymovetodallas.com/images/social-og-image.webp" type="image/webp" length="0" />
-      <media:content url="https://whymovetodallas.com/images/social-og-image.webp" medium="image" />
-  </item>
-
-  <item>
-    <title><![CDATA[Top 10 Family-Friendly Suburbs Around Dallas]]></title>
-    <link>https://whymovetodallas.com/blog/top-10-family-friendly-suburbs-around-dallas</link>
-    <guid isPermaLink="true">https://whymovetodallas.com/blog/top-10-family-friendly-suburbs-around-dallas</guid>
-    <pubDate>Thu, 30 May 2024 00:00:00 +0000</pubDate>
-    <description><![CDATA[Discover the top 10 family-friendly suburbs around Dallas! Our guide covers the best areas for families, including Plano, Frisco, Southlake, McKinney, Flow]]></description>
-      <category>Suburb Guide</category>
-      <enclosure url="https://whymovetodallas.com/images/blog/4c79bf9a-a736-43dd-97ce-c3306773d73e-Comparison-Chart-of--Dallas-Suburbs-2024--282-29.png" type="image/png" length="0" />
-      <media:content url="https://whymovetodallas.com/images/blog/4c79bf9a-a736-43dd-97ce-c3306773d73e-Comparison-Chart-of--Dallas-Suburbs-2024--282-29.png" medium="image" />
-  </item>
-
-  <item>
-    <title><![CDATA[Moving to Dallas, Texas: Family Relocation Guide]]></title>
-    <link>https://whymovetodallas.com/blog/the-ultimate-guide-to-moving-to-dallas-texas</link>
-    <guid isPermaLink="true">https://whymovetodallas.com/blog/the-ultimate-guide-to-moving-to-dallas-texas</guid>
-    <pubDate>Thu, 30 May 2024 00:00:00 +0000</pubDate>
-    <description><![CDATA[Moving to Dallas-Fort Worth with your family? A DFW Realtor's guide to cost of living, the best suburbs, schools, jobs, taxes, and what to really expect.]]></description>
-      <category>Relocation Guide</category>
-      <enclosure url="https://whymovetodallas.com/images/dallas-hero.webp" type="image/webp" length="0" />
-      <media:content url="https://whymovetodallas.com/images/dallas-hero.webp" medium="image" />
   </item>
 
   </channel>
