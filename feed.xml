@@ -12,7 +12,7 @@
     <copyright>Copyright 2026 Kristen Carpentier / Social Agent Group</copyright>
     <managingEditor>Kristen@whymovetodallas.com (Kristen Carpentier)</managingEditor>
     <webMaster>Kristen@whymovetodallas.com (Kristen Carpentier)</webMaster>
-    <lastBuildDate>Wed, 16 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 23 Sep 2026 00:00:00 +0000</lastBuildDate>
     <ttl>1440</ttl>
     <atom:link href="https://whymovetodallas.com/feed.xml" rel="self" type="application/rss+xml" />
     <image>
@@ -20,6 +20,17 @@
       <title>Why Move to Dallas</title>
       <link>https://whymovetodallas.com</link>
     </image>
+
+  <item>
+    <title><![CDATA[Moving to Flower Mound Texas: Newer House or Bigger Yard?]]></title>
+    <link>https://whymovetodallas.com/blog/moving-to-flower-mound-texas</link>
+    <guid isPermaLink="true">https://whymovetodallas.com/blog/moving-to-flower-mound-texas</guid>
+    <pubDate>Wed, 23 Sep 2026 00:00:00 +0000</pubDate>
+    <description><![CDATA[Moving to Flower Mound Texas? Compare newer homes and larger yards using current sales data, then run the property checks that matter before you buy a home.]]></description>
+      <category>Suburb Guide</category>
+      <enclosure url="https://whymovetodallas.com/images/blog/moving-to-flower-mound-texas-og.png" type="image/png" length="0" />
+      <media:content url="https://whymovetodallas.com/images/blog/moving-to-flower-mound-texas-og.png" medium="image" />
+  </item>
 
   <item>
     <title><![CDATA[Frisco Texas Neighborhoods Guide]]></title>
@@ -556,17 +567,6 @@
     <pubDate>Sun, 02 Jun 2024 00:00:00 +0000</pubDate>
     <description><![CDATA[Discover the most affordable neighborhoods in Dallas-Fort Worth and get expert tips on budget-friendly housing, utilities, and activities. Perfect for fami]]></description>
       <category>Cost of Living</category>
-      <enclosure url="https://whymovetodallas.com/images/social-og-image.webp" type="image/webp" length="0" />
-      <media:content url="https://whymovetodallas.com/images/social-og-image.webp" medium="image" />
-  </item>
-
-  <item>
-    <title><![CDATA[Luxury Living in Dallas: High-End Real Estate Guide]]></title>
-    <link>https://whymovetodallas.com/blog/luxury-living-in-dallas-tx-explained</link>
-    <guid isPermaLink="true">https://whymovetodallas.com/blog/luxury-living-in-dallas-tx-explained</guid>
-    <pubDate>Fri, 31 May 2024 00:00:00 +0000</pubDate>
-    <description><![CDATA[Thinking of moving to Dallas, Texas? Discover the best luxury neighborhoods and high-end real estate options in the Dallas-Fort Worth Metroplex. Get insigh]]></description>
-      <category>Suburb Guide</category>
       <enclosure url="https://whymovetodallas.com/images/social-og-image.webp" type="image/webp" length="0" />
       <media:content url="https://whymovetodallas.com/images/social-og-image.webp" medium="image" />
   </item>
