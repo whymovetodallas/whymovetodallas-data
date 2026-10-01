@@ -1774,7 +1774,7 @@
       "distHtmlPath": "dist/new-construction-dfw.html",
       "canonicalEntityId": "site:dfw-new-construction",
       "pageFamily": "new-construction",
-      "pageSha256": "e2e81cf37a897e8cc0cba702a03d863533d81176e0f217c9d3411d3e6ffdf815"
+      "pageSha256": "6a6b4566e5480f3fc6543860ffbf9dcdb6755fd652e13be71a84269663da96df"
     },
     {
       "distHtmlPath": "dist/north-richland-hills-texas-things-to-do.html",
@@ -59298,7 +59298,7 @@
       "contractVersion": "1",
       "distHtmlPath": "dist/new-construction-dfw.html",
       "selector": "[data-wmtd-frame=\"compare.table\"]",
-      "pageSha256": "e2e81cf37a897e8cc0cba702a03d863533d81176e0f217c9d3411d3e6ffdf815",
+      "pageSha256": "6a6b4566e5480f3fc6543860ffbf9dcdb6755fd652e13be71a84269663da96df",
       "buildId": "sha256:c809f30001943c370e8efced816c5974b5ab681a02a65b4506c4a31fe65a4c19"
     },
     {
@@ -59310,7 +59310,7 @@
       "contractVersion": "1",
       "distHtmlPath": "dist/new-construction-dfw.html",
       "selector": "[data-wmtd-frame=\"contact.cta\"]",
-      "pageSha256": "e2e81cf37a897e8cc0cba702a03d863533d81176e0f217c9d3411d3e6ffdf815",
+      "pageSha256": "6a6b4566e5480f3fc6543860ffbf9dcdb6755fd652e13be71a84269663da96df",
       "buildId": "sha256:c809f30001943c370e8efced816c5974b5ab681a02a65b4506c4a31fe65a4c19"
     },
     {
@@ -59322,7 +59322,7 @@
       "contractVersion": "1",
       "distHtmlPath": "dist/new-construction-dfw.html",
       "selector": "[data-wmtd-frame=\"faq\"]",
-      "pageSha256": "e2e81cf37a897e8cc0cba702a03d863533d81176e0f217c9d3411d3e6ffdf815",
+      "pageSha256": "6a6b4566e5480f3fc6543860ffbf9dcdb6755fd652e13be71a84269663da96df",
       "buildId": "sha256:c809f30001943c370e8efced816c5974b5ab681a02a65b4506c4a31fe65a4c19"
     },
     {
@@ -59334,7 +59334,7 @@
       "contractVersion": "1",
       "distHtmlPath": "dist/new-construction-dfw.html",
       "selector": "[data-wmtd-frame=\"new-construction.intro\"]",
-      "pageSha256": "e2e81cf37a897e8cc0cba702a03d863533d81176e0f217c9d3411d3e6ffdf815",
+      "pageSha256": "6a6b4566e5480f3fc6543860ffbf9dcdb6755fd652e13be71a84269663da96df",
       "buildId": "sha256:c809f30001943c370e8efced816c5974b5ab681a02a65b4506c4a31fe65a4c19"
     },
     {
@@ -59346,7 +59346,7 @@
       "contractVersion": "1",
       "distHtmlPath": "dist/new-construction-dfw.html",
       "selector": "[data-wmtd-frame=\"new-construction.price-tiers\"]",
-      "pageSha256": "e2e81cf37a897e8cc0cba702a03d863533d81176e0f217c9d3411d3e6ffdf815",
+      "pageSha256": "6a6b4566e5480f3fc6543860ffbf9dcdb6755fd652e13be71a84269663da96df",
       "buildId": "sha256:c809f30001943c370e8efced816c5974b5ab681a02a65b4506c4a31fe65a4c19"
     },
     {
@@ -59358,7 +59358,7 @@
       "contractVersion": "1",
       "distHtmlPath": "dist/new-construction-dfw.html",
       "selector": "[data-wmtd-frame=\"new-construction.process\"]",
-      "pageSha256": "e2e81cf37a897e8cc0cba702a03d863533d81176e0f217c9d3411d3e6ffdf815",
+      "pageSha256": "6a6b4566e5480f3fc6543860ffbf9dcdb6755fd652e13be71a84269663da96df",
       "buildId": "sha256:c809f30001943c370e8efced816c5974b5ab681a02a65b4506c4a31fe65a4c19"
     },
     {
@@ -59370,7 +59370,7 @@
       "contractVersion": "1",
       "distHtmlPath": "dist/new-construction-dfw.html",
       "selector": "[data-wmtd-frame=\"new-construction.schools\"]",
-      "pageSha256": "e2e81cf37a897e8cc0cba702a03d863533d81176e0f217c9d3411d3e6ffdf815",
+      "pageSha256": "6a6b4566e5480f3fc6543860ffbf9dcdb6755fd652e13be71a84269663da96df",
       "buildId": "sha256:c809f30001943c370e8efced816c5974b5ab681a02a65b4506c4a31fe65a4c19"
     },
     {
@@ -59382,7 +59382,7 @@
       "contractVersion": "1",
       "distHtmlPath": "dist/new-construction-dfw.html",
       "selector": "[data-wmtd-frame=\"new-construction.suburbs\"]",
-      "pageSha256": "e2e81cf37a897e8cc0cba702a03d863533d81176e0f217c9d3411d3e6ffdf815",
+      "pageSha256": "6a6b4566e5480f3fc6543860ffbf9dcdb6755fd652e13be71a84269663da96df",
       "buildId": "sha256:c809f30001943c370e8efced816c5974b5ab681a02a65b4506c4a31fe65a4c19"
     }
   ]
