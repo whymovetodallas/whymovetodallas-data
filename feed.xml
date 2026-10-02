@@ -12,7 +12,7 @@
     <copyright>Copyright 2026 Kristen Carpentier / Social Agent Group</copyright>
     <managingEditor>Kristen@whymovetodallas.com (Kristen Carpentier)</managingEditor>
     <webMaster>Kristen@whymovetodallas.com (Kristen Carpentier)</webMaster>
-    <lastBuildDate>Wed, 23 Sep 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 02 Oct 2026 00:00:00 +0000</lastBuildDate>
     <ttl>1440</ttl>
     <atom:link href="https://whymovetodallas.com/feed.xml" rel="self" type="application/rss+xml" />
     <image>
@@ -20,6 +20,17 @@
       <title>Why Move to Dallas</title>
       <link>https://whymovetodallas.com</link>
     </image>
+
+  <item>
+    <title><![CDATA[Moving to Celina Texas: Hidden Costs]]></title>
+    <link>https://whymovetodallas.com/blog/moving-to-celina-texas-hidden-costs</link>
+    <guid isPermaLink="true">https://whymovetodallas.com/blog/moving-to-celina-texas-hidden-costs</guid>
+    <pubDate>Fri, 02 Oct 2026 00:00:00 +0000</pubDate>
+    <description><![CDATA[Moving to Celina Texas? Learn how taxes, PID or MUD charges, school assignment, and real drive times change the total cost and fit of a specific home.]]></description>
+      <category>Cost of Living</category>
+      <enclosure url="https://whymovetodallas.com/images/blog/moving-to-celina-texas-hidden-costs-og.png" type="image/png" length="0" />
+      <media:content url="https://whymovetodallas.com/images/blog/moving-to-celina-texas-hidden-costs-og.png" medium="image" />
+  </item>
 
   <item>
     <title><![CDATA[Moving to Flower Mound Texas: Newer House or Bigger Yard?]]></title>
@@ -558,17 +569,6 @@
       <category>Market and Buying</category>
       <enclosure url="https://whymovetodallas.com/images/blog/c2f5c7cf-eb7f-4a41-9266-dfcf59c6df22-Screenshot-2024-06-03-at-8.29.01-E2-80-AFPM.png" type="image/png" length="0" />
       <media:content url="https://whymovetodallas.com/images/blog/c2f5c7cf-eb7f-4a41-9266-dfcf59c6df22-Screenshot-2024-06-03-at-8.29.01-E2-80-AFPM.png" medium="image" />
-  </item>
-
-  <item>
-    <title><![CDATA[Living in DFW on a Budget: Affordable Neighborhoods & Tips]]></title>
-    <link>https://whymovetodallas.com/blog/living-in-dallas-fort-worth-on-a-budget-affordable-neighborhoods-and-cost-saving-tips</link>
-    <guid isPermaLink="true">https://whymovetodallas.com/blog/living-in-dallas-fort-worth-on-a-budget-affordable-neighborhoods-and-cost-saving-tips</guid>
-    <pubDate>Sun, 02 Jun 2024 00:00:00 +0000</pubDate>
-    <description><![CDATA[Discover the most affordable neighborhoods in Dallas-Fort Worth and get expert tips on budget-friendly housing, utilities, and activities. Perfect for fami]]></description>
-      <category>Cost of Living</category>
-      <enclosure url="https://whymovetodallas.com/images/social-og-image.webp" type="image/webp" length="0" />
-      <media:content url="https://whymovetodallas.com/images/social-og-image.webp" medium="image" />
   </item>
 
   </channel>
