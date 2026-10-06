@@ -12,7 +12,7 @@
     <copyright>Copyright 2026 Kristen Carpentier / Social Agent Group</copyright>
     <managingEditor>Kristen@whymovetodallas.com (Kristen Carpentier)</managingEditor>
     <webMaster>Kristen@whymovetodallas.com (Kristen Carpentier)</webMaster>
-    <lastBuildDate>Fri, 02 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2026 00:00:00 +0000</lastBuildDate>
     <ttl>1440</ttl>
     <atom:link href="https://whymovetodallas.com/feed.xml" rel="self" type="application/rss+xml" />
     <image>
@@ -20,6 +20,17 @@
       <title>Why Move to Dallas</title>
       <link>https://whymovetodallas.com</link>
     </image>
+
+  <item>
+    <title><![CDATA[Moving to Frisco Texas: Build-Out Guide]]></title>
+    <link>https://whymovetodallas.com/blog/moving-to-frisco-texas-build-out</link>
+    <guid isPermaLink="true">https://whymovetodallas.com/blog/moving-to-frisco-texas-build-out</guid>
+    <pubDate>Tue, 06 Oct 2026 00:00:00 +0000</pubDate>
+    <description><![CDATA[Moving to Frisco Texas? Learn what build-out changes for taxes, schools, new construction, resale homes, event traffic, and exact-address due diligence.]]></description>
+      <category>Suburb Guide</category>
+      <enclosure url="https://whymovetodallas.com/images/blog/moving-to-frisco-texas-build-out-og.png" type="image/png" length="0" />
+      <media:content url="https://whymovetodallas.com/images/blog/moving-to-frisco-texas-build-out-og.png" medium="image" />
+  </item>
 
   <item>
     <title><![CDATA[Moving to Celina Texas: Hidden Costs]]></title>
@@ -558,17 +569,6 @@
       <category>Suburb Guide</category>
       <enclosure url="https://whymovetodallas.com/images/blog/b6706893-f7ab-433e-ba1b-9aab0e605561-Legacy-West-Shopping.png" type="image/png" length="0" />
       <media:content url="https://whymovetodallas.com/images/blog/b6706893-f7ab-433e-ba1b-9aab0e605561-Legacy-West-Shopping.png" medium="image" />
-  </item>
-
-  <item>
-    <title><![CDATA[Top Tips for Buying a Home in Dallas, Texas]]></title>
-    <link>https://whymovetodallas.com/blog/top-tips-for-buying-a-home-in-dallas-texas</link>
-    <guid isPermaLink="true">https://whymovetodallas.com/blog/top-tips-for-buying-a-home-in-dallas-texas</guid>
-    <pubDate>Tue, 04 Jun 2024 00:00:00 +0000</pubDate>
-    <description><![CDATA[Discover the ultimate step-by-step guide to buying a home in Dallas. From understanding the Dallas real estate market to navigating mortgage options and cl]]></description>
-      <category>Market and Buying</category>
-      <enclosure url="https://whymovetodallas.com/images/blog/c2f5c7cf-eb7f-4a41-9266-dfcf59c6df22-Screenshot-2024-06-03-at-8.29.01-E2-80-AFPM.png" type="image/png" length="0" />
-      <media:content url="https://whymovetodallas.com/images/blog/c2f5c7cf-eb7f-4a41-9266-dfcf59c6df22-Screenshot-2024-06-03-at-8.29.01-E2-80-AFPM.png" medium="image" />
   </item>
 
   </channel>
