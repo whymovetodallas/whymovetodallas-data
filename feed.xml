@@ -12,7 +12,7 @@
     <copyright>Copyright 2026 Kristen Carpentier / Social Agent Group</copyright>
     <managingEditor>Kristen@whymovetodallas.com (Kristen Carpentier)</managingEditor>
     <webMaster>Kristen@whymovetodallas.com (Kristen Carpentier)</webMaster>
-    <lastBuildDate>Tue, 06 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 09 Oct 2026 00:00:00 +0000</lastBuildDate>
     <ttl>1440</ttl>
     <atom:link href="https://whymovetodallas.com/feed.xml" rel="self" type="application/rss+xml" />
     <image>
@@ -20,6 +20,17 @@
       <title>Why Move to Dallas</title>
       <link>https://whymovetodallas.com</link>
     </image>
+
+  <item>
+    <title><![CDATA[Moving from Virginia to Dallas-Fort Worth | DFW Guide]]></title>
+    <link>https://whymovetodallas.com/blog/moving-from-virginia-to-dallas-texas</link>
+    <guid isPermaLink="true">https://whymovetodallas.com/blog/moving-from-virginia-to-dallas-texas</guid>
+    <pubDate>Fri, 09 Oct 2026 00:00:00 +0000</pubDate>
+    <description><![CDATA[Moving from Virginia to Dallas-Fort Worth? Compare income, property, and vehicle taxes, housing costs, and DFW suburbs before setting a family budget.]]></description>
+      <category>Cost of Living</category>
+      <enclosure url="https://whymovetodallas.com/images/blog/moving-from-virginia-to-dallas-texas-og.png" type="image/png" length="0" />
+      <media:content url="https://whymovetodallas.com/images/blog/moving-from-virginia-to-dallas-texas-og.png" medium="image" />
+  </item>
 
   <item>
     <title><![CDATA[Moving to Frisco Texas: Build-Out Guide]]></title>
@@ -558,17 +569,6 @@
       <category>Suburb Guide</category>
       <enclosure url="https://whymovetodallas.com/images/blog/ee1930e6-3ef1-45bc-8fec-381e5deefda4-Climate-in-Dallas-2x.png" type="image/png" length="0" />
       <media:content url="https://whymovetodallas.com/images/blog/ee1930e6-3ef1-45bc-8fec-381e5deefda4-Climate-in-Dallas-2x.png" medium="image" />
-  </item>
-
-  <item>
-    <title><![CDATA[The Best Shopping and Dining Suburbs in Dallas Fort Worth]]></title>
-    <link>https://whymovetodallas.com/blog/best-shopping-and-dining-suburbs-in-dallas-fort-worth</link>
-    <guid isPermaLink="true">https://whymovetodallas.com/blog/best-shopping-and-dining-suburbs-in-dallas-fort-worth</guid>
-    <pubDate>Wed, 05 Jun 2024 00:00:00 +0000</pubDate>
-    <description><![CDATA[Discover the best places to shop and dine in the Dallas-Fort Worth Metroplex! Explore top suburbs with premier shopping districts, renowned restaurants, vi]]></description>
-      <category>Suburb Guide</category>
-      <enclosure url="https://whymovetodallas.com/images/blog/b6706893-f7ab-433e-ba1b-9aab0e605561-Legacy-West-Shopping.png" type="image/png" length="0" />
-      <media:content url="https://whymovetodallas.com/images/blog/b6706893-f7ab-433e-ba1b-9aab0e605561-Legacy-West-Shopping.png" medium="image" />
   </item>
 
   </channel>
