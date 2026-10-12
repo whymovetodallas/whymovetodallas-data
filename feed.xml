@@ -12,7 +12,7 @@
     <copyright>Copyright 2026 Kristen Carpentier / Social Agent Group</copyright>
     <managingEditor>Kristen@whymovetodallas.com (Kristen Carpentier)</managingEditor>
     <webMaster>Kristen@whymovetodallas.com (Kristen Carpentier)</webMaster>
-    <lastBuildDate>Fri, 09 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 12 Oct 2026 00:00:00 +0000</lastBuildDate>
     <ttl>1440</ttl>
     <atom:link href="https://whymovetodallas.com/feed.xml" rel="self" type="application/rss+xml" />
     <image>
@@ -20,6 +20,17 @@
       <title>Why Move to Dallas</title>
       <link>https://whymovetodallas.com</link>
     </image>
+
+  <item>
+    <title><![CDATA[Moving from Atlanta to Dallas | Georgia Family Relocation Guide]]></title>
+    <link>https://whymovetodallas.com/blog/moving-from-atlanta-to-dallas-texas</link>
+    <guid isPermaLink="true">https://whymovetodallas.com/blog/moving-from-atlanta-to-dallas-texas</guid>
+    <pubDate>Mon, 12 Oct 2026 00:00:00 +0000</pubDate>
+    <description><![CDATA[Moving from Atlanta to Dallas? Compare Georgia and Texas income tax, property tax, home prices, and school districts before you pick a DFW suburb.]]></description>
+      <category>Cost of Living</category>
+      <enclosure url="https://whymovetodallas.com/images/blog/moving-from-atlanta-to-dallas-texas-og.png" type="image/png" length="0" />
+      <media:content url="https://whymovetodallas.com/images/blog/moving-from-atlanta-to-dallas-texas-og.png" medium="image" />
+  </item>
 
   <item>
     <title><![CDATA[Moving from Virginia to Dallas-Fort Worth | DFW Guide]]></title>
@@ -558,17 +569,6 @@
       <category>City Comparisons</category>
       <enclosure url="https://whymovetodallas.com/images/blog/dallas-vs-phoenix-og.png" type="image/png" length="0" />
       <media:content url="https://whymovetodallas.com/images/blog/dallas-vs-phoenix-og.png" medium="image" />
-  </item>
-
-  <item>
-    <title><![CDATA[Why Are People Leaving Dallas Texas?]]></title>
-    <link>https://whymovetodallas.com/blog/why-are-people-leaving-dallas-texas</link>
-    <guid isPermaLink="true">https://whymovetodallas.com/blog/why-are-people-leaving-dallas-texas</guid>
-    <pubDate>Sun, 09 Jun 2024 00:00:00 +0000</pubDate>
-    <description><![CDATA[Wondering why people are leaving Dallas, Texas? Our blog post explores the critical reasons behind this trend, including traffic congestion, rising living]]></description>
-      <category>Suburb Guide</category>
-      <enclosure url="https://whymovetodallas.com/images/blog/ee1930e6-3ef1-45bc-8fec-381e5deefda4-Climate-in-Dallas-2x.png" type="image/png" length="0" />
-      <media:content url="https://whymovetodallas.com/images/blog/ee1930e6-3ef1-45bc-8fec-381e5deefda4-Climate-in-Dallas-2x.png" medium="image" />
   </item>
 
   </channel>
