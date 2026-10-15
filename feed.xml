@@ -12,7 +12,7 @@
     <copyright>Copyright 2026 Kristen Carpentier / Social Agent Group</copyright>
     <managingEditor>Kristen@whymovetodallas.com (Kristen Carpentier)</managingEditor>
     <webMaster>Kristen@whymovetodallas.com (Kristen Carpentier)</webMaster>
-    <lastBuildDate>Mon, 12 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 00:00:00 +0000</lastBuildDate>
     <ttl>1440</ttl>
     <atom:link href="https://whymovetodallas.com/feed.xml" rel="self" type="application/rss+xml" />
     <image>
@@ -20,6 +20,17 @@
       <title>Why Move to Dallas</title>
       <link>https://whymovetodallas.com</link>
     </image>
+
+  <item>
+    <title><![CDATA[Moving from South Carolina to Dallas | Family Guide]]></title>
+    <link>https://whymovetodallas.com/blog/moving-from-south-carolina-to-dallas-texas</link>
+    <guid isPermaLink="true">https://whymovetodallas.com/blog/moving-from-south-carolina-to-dallas-texas</guid>
+    <pubDate>Thu, 15 Oct 2026 00:00:00 +0000</pubDate>
+    <description><![CDATA[Moving from South Carolina to Dallas? Compare 2026 tax rules, housing, school assignment, office corridors, and practical Texas move deadlines.]]></description>
+      <category>Moving to DFW</category>
+      <enclosure url="https://whymovetodallas.com/images/blog/moving-from-south-carolina-to-dallas-texas-og.png" type="image/png" length="0" />
+      <media:content url="https://whymovetodallas.com/images/blog/moving-from-south-carolina-to-dallas-texas-og.png" medium="image" />
+  </item>
 
   <item>
     <title><![CDATA[Moving from Atlanta to Dallas | Georgia Family Relocation Guide]]></title>
@@ -558,17 +569,6 @@
       <category>Suburb Guide</category>
       <enclosure url="https://whymovetodallas.com/images/blog/e3a530bd-537d-44d0-acc7-a6ecd65940c5-Allen-Texas-Population-2024.png" type="image/png" length="0" />
       <media:content url="https://whymovetodallas.com/images/blog/e3a530bd-537d-44d0-acc7-a6ecd65940c5-Allen-Texas-Population-2024.png" medium="image" />
-  </item>
-
-  <item>
-    <title><![CDATA[Dallas vs. Phoenix: Which Is Better for Families?]]></title>
-    <link>https://whymovetodallas.com/blog/dallas-vs-phoenix-which-city-is-better-to-live-in</link>
-    <guid isPermaLink="true">https://whymovetodallas.com/blog/dallas-vs-phoenix-which-city-is-better-to-live-in</guid>
-    <pubDate>Sat, 06 Jul 2024 00:00:00 +0000</pubDate>
-    <description><![CDATA[Moving from Phoenix to Dallas? Here's the honest comparison on property taxes, schools, home prices, climate, and jobs: by a Realtor who lived in both.]]></description>
-      <category>City Comparisons</category>
-      <enclosure url="https://whymovetodallas.com/images/blog/dallas-vs-phoenix-og.png" type="image/png" length="0" />
-      <media:content url="https://whymovetodallas.com/images/blog/dallas-vs-phoenix-og.png" medium="image" />
   </item>
 
   </channel>
