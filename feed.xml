@@ -12,7 +12,7 @@
     <copyright>Copyright 2026 Kristen Carpentier / Social Agent Group</copyright>
     <managingEditor>Kristen@whymovetodallas.com (Kristen Carpentier)</managingEditor>
     <webMaster>Kristen@whymovetodallas.com (Kristen Carpentier)</webMaster>
-    <lastBuildDate>Thu, 15 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 18 Oct 2026 00:00:00 +0000</lastBuildDate>
     <ttl>1440</ttl>
     <atom:link href="https://whymovetodallas.com/feed.xml" rel="self" type="application/rss+xml" />
     <image>
@@ -20,6 +20,17 @@
       <title>Why Move to Dallas</title>
       <link>https://whymovetodallas.com</link>
     </image>
+
+  <item>
+    <title><![CDATA[Moving from Pennsylvania to Dallas]]></title>
+    <link>https://whymovetodallas.com/blog/moving-from-pennsylvania-to-dallas-texas</link>
+    <guid isPermaLink="true">https://whymovetodallas.com/blog/moving-from-pennsylvania-to-dallas-texas</guid>
+    <pubDate>Sun, 18 Oct 2026 00:00:00 +0000</pubDate>
+    <description><![CDATA[Moving from Pennsylvania to Dallas? Compare taxes, housing, commutes, schools, and the DFW costs your family should verify before choosing an address.]]></description>
+      <category>Moving to DFW</category>
+      <enclosure url="https://whymovetodallas.com/images/blog/moving-from-pennsylvania-to-dallas-texas-og.png" type="image/png" length="0" />
+      <media:content url="https://whymovetodallas.com/images/blog/moving-from-pennsylvania-to-dallas-texas-og.png" medium="image" />
+  </item>
 
   <item>
     <title><![CDATA[Moving from South Carolina to Dallas | Family Guide]]></title>
@@ -558,17 +569,6 @@
       <category>Suburb Guide</category>
       <enclosure url="https://whymovetodallas.com/images/social-og-image.webp" type="image/webp" length="0" />
       <media:content url="https://whymovetodallas.com/images/social-og-image.webp" medium="image" />
-  </item>
-
-  <item>
-    <title><![CDATA[Best Places to Live in North Dallas: Top Suburbs]]></title>
-    <link>https://whymovetodallas.com/blog/top-6-suburbs-north-dallas-texas</link>
-    <guid isPermaLink="true">https://whymovetodallas.com/blog/top-6-suburbs-north-dallas-texas</guid>
-    <pubDate>Fri, 02 Aug 2024 00:00:00 +0000</pubDate>
-    <description><![CDATA[Explore the top 6 suburbs in North Dallas with our comprehensive guide. Discover the best places to live, featuring insights on schools, real estate, and l]]></description>
-      <category>Suburb Guide</category>
-      <enclosure url="https://whymovetodallas.com/images/blog/e3a530bd-537d-44d0-acc7-a6ecd65940c5-Allen-Texas-Population-2024.png" type="image/png" length="0" />
-      <media:content url="https://whymovetodallas.com/images/blog/e3a530bd-537d-44d0-acc7-a6ecd65940c5-Allen-Texas-Population-2024.png" medium="image" />
   </item>
 
   </channel>
