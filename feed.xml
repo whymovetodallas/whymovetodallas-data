@@ -12,7 +12,7 @@
     <copyright>Copyright 2026 Kristen Carpentier / Social Agent Group</copyright>
     <managingEditor>Kristen@whymovetodallas.com (Kristen Carpentier)</managingEditor>
     <webMaster>Kristen@whymovetodallas.com (Kristen Carpentier)</webMaster>
-    <lastBuildDate>Sun, 18 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 24 Oct 2026 00:00:00 +0000</lastBuildDate>
     <ttl>1440</ttl>
     <atom:link href="https://whymovetodallas.com/feed.xml" rel="self" type="application/rss+xml" />
     <image>
@@ -20,6 +20,39 @@
       <title>Why Move to Dallas</title>
       <link>https://whymovetodallas.com</link>
     </image>
+
+  <item>
+    <title><![CDATA[Frisco ISD vs Allen ISD]]></title>
+    <link>https://whymovetodallas.com/blog/frisco-isd-vs-allen-isd</link>
+    <guid isPermaLink="true">https://whymovetodallas.com/blog/frisco-isd-vs-allen-isd</guid>
+    <pubDate>Sat, 24 Oct 2026 00:00:00 +0000</pubDate>
+    <description><![CDATA[Compare Frisco ISD vs Allen ISD by feeder pattern, enrollment steps, capacity, and your exact address before you choose a North DFW home.]]></description>
+      <category>Schools</category>
+      <enclosure url="https://whymovetodallas.com/images/blog/frisco-isd-vs-allen-isd-og.png" type="image/png" length="0" />
+      <media:content url="https://whymovetodallas.com/images/blog/frisco-isd-vs-allen-isd-og.png" medium="image" />
+  </item>
+
+  <item>
+    <title><![CDATA[Moving to Texas With Kids?]]></title>
+    <link>https://whymovetodallas.com/blog/moving-to-texas-with-kids-again</link>
+    <guid isPermaLink="true">https://whymovetodallas.com/blog/moving-to-texas-with-kids-again</guid>
+    <pubDate>Sat, 24 Oct 2026 00:00:00 +0000</pubDate>
+    <description><![CDATA[After moving from Arizona to Flower Mound, this family would verify school boundaries, weekday routes, full monthly costs, and first-month details sooner.]]></description>
+      <category>Moving to DFW</category>
+      <enclosure url="https://whymovetodallas.com/images/blog/moving-to-texas-with-kids-again-og.png" type="image/png" length="0" />
+      <media:content url="https://whymovetodallas.com/images/blog/moving-to-texas-with-kids-again-og.png" medium="image" />
+  </item>
+
+  <item>
+    <title><![CDATA[Plano ISD vs McKinney ISD]]></title>
+    <link>https://whymovetodallas.com/blog/plano-isd-vs-mckinney-isd</link>
+    <guid isPermaLink="true">https://whymovetodallas.com/blog/plano-isd-vs-mckinney-isd</guid>
+    <pubDate>Sat, 24 Oct 2026 00:00:00 +0000</pubDate>
+    <description><![CDATA[Compare Plano ISD and McKinney ISD by exact address, feeder path, school hours, boundary context, and daily routine before buying a North DFW home with kids.]]></description>
+      <category>Schools</category>
+      <enclosure url="https://whymovetodallas.com/images/blog/plano-isd-vs-mckinney-isd-og.png" type="image/png" length="0" />
+      <media:content url="https://whymovetodallas.com/images/blog/plano-isd-vs-mckinney-isd-og.png" medium="image" />
+  </item>
 
   <item>
     <title><![CDATA[Moving from Pennsylvania to Dallas]]></title>
@@ -536,39 +569,6 @@
       <category>Suburb Guide</category>
       <enclosure url="https://whymovetodallas.com/images/blog/788e858d-eab4-43c5-9790-57bffa0e0996-BIGGEST-BUILDERS-IN-DALLAS.jpg" type="image/jpeg" length="0" />
       <media:content url="https://whymovetodallas.com/images/blog/788e858d-eab4-43c5-9790-57bffa0e0996-BIGGEST-BUILDERS-IN-DALLAS.jpg" medium="image" />
-  </item>
-
-  <item>
-    <title><![CDATA[California vs. Texas: Why Californians Are Moving]]></title>
-    <link>https://whymovetodallas.com/blog/california-vs-texas-why-are-so-many-californians-moving-to-texas</link>
-    <guid isPermaLink="true">https://whymovetodallas.com/blog/california-vs-texas-why-are-so-many-californians-moving-to-texas</guid>
-    <pubDate>Fri, 13 Sep 2024 00:00:00 +0000</pubDate>
-    <description><![CDATA[Wondering if Texas is better than California? In this video, we break down the top 10 reasons why thousands of Californians are making the move to the Lone]]></description>
-      <category>City Comparisons</category>
-      <enclosure url="https://whymovetodallas.com/images/blog/b8eaf6b9-8f22-4960-90a0-9d8e0de1c4f0-Net-Tax-Revenue-Loss-in-Liberal-States.png" type="image/png" length="0" />
-      <media:content url="https://whymovetodallas.com/images/blog/b8eaf6b9-8f22-4960-90a0-9d8e0de1c4f0-Net-Tax-Revenue-Loss-in-Liberal-States.png" medium="image" />
-  </item>
-
-  <item>
-    <title><![CDATA[Why Texas Is a Desirable Place to Settle Down]]></title>
-    <link>https://whymovetodallas.com/blog/why-texas-is-a-desirable-place-to-settle-down-exploring-the-allure-of-the-lone-star-state</link>
-    <guid isPermaLink="true">https://whymovetodallas.com/blog/why-texas-is-a-desirable-place-to-settle-down-exploring-the-allure-of-the-lone-star-state</guid>
-    <pubDate>Thu, 05 Sep 2024 00:00:00 +0000</pubDate>
-    <description><![CDATA[Discover why Texas is one of the best states to settle down! From affordable living and booming job opportunities in cities like Dallas and Austin to the s]]></description>
-      <category>Suburb Guide</category>
-      <enclosure url="https://whymovetodallas.com/images/social-og-image.webp" type="image/webp" length="0" />
-      <media:content url="https://whymovetodallas.com/images/social-og-image.webp" medium="image" />
-  </item>
-
-  <item>
-    <title><![CDATA[Is Dallas-Fort Worth a Good Place to Live?]]></title>
-    <link>https://whymovetodallas.com/blog/is-dallas-fort-worth-a-good-place-to-live</link>
-    <guid isPermaLink="true">https://whymovetodallas.com/blog/is-dallas-fort-worth-a-good-place-to-live</guid>
-    <pubDate>Fri, 30 Aug 2024 00:00:00 +0000</pubDate>
-    <description><![CDATA[Discover if the Dallas-Fort Worth area is the right place for you with our comprehensive, in-depth guide. Explore the pros and cons, job market dynamics, h]]></description>
-      <category>Suburb Guide</category>
-      <enclosure url="https://whymovetodallas.com/images/social-og-image.webp" type="image/webp" length="0" />
-      <media:content url="https://whymovetodallas.com/images/social-og-image.webp" medium="image" />
   </item>
 
   </channel>
