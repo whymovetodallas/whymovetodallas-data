@@ -1,7 +1,7 @@
 # Cloudflare Pages Redirect Rules — whymovetodallas.com
 # Format: [source]  [destination]  [status]
 # Rules are matched top-to-bottom. More specific rules must come BEFORE wildcards.
-# Last updated: May 2026
+# Last updated: October 2026
 #
 # Sections:
 #   1. www → apex
@@ -264,4 +264,6 @@
 
 # ── 13. Garbled/alternate-slug blog posts ─────────────────────────────────────
 # Posts that exist in GSC under a slug that differs from the rebuilt page.
+/blog/best-dallas-suburbs-for-families                                      /blog/best-suburbs-for-families-dfw  301
+/blog/most-affordable-dallas-suburbs                                        /blog/affordable-places-to-live-in-dallas-texas  301
 /blog/living-in-little-elm-texas-lakeside-communities-commute-schools        /blog/living-in-little-elm-texas-lake-life-dallas-texas  301
