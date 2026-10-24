@@ -45,12 +45,6 @@
 /frisco-texas-neighborhoods-guide  /blog/frisco-texas-neighborhoods-guide  301
 /why-are-people-leaving-frisco-texas  /blog/why-are-people-leaving-frisco-texas  301
 
-
-# Cleared October 24 blog routes
-/moving-to-texas-with-kids-again  /blog/moving-to-texas-with-kids-again  301
-/frisco-isd-vs-allen-isd  /blog/frisco-isd-vs-allen-isd  301
-/plano-isd-vs-mckinney-isd  /blog/plano-isd-vs-mckinney-isd  301
-
 # Frisco build-out post (YouTube-paired — bare-slug safety so verbal/unprefixed URL doesn't 404)
 /moving-to-frisco-texas-build-out  /blog/moving-to-frisco-texas-build-out  301
 
@@ -71,6 +65,16 @@
 
 # McKinney future-road post (YouTube-paired bare-slug safety)
 /mckinney-homes-freeway-behind-them  /blog/mckinney-homes-freeway-behind-them  301
+
+# School comparison clean-slug aliases
+/frisco-isd-vs-allen-isd  /blog/frisco-isd-vs-allen-isd  301
+/plano-isd-vs-mckinney-isd  /blog/plano-isd-vs-mckinney-isd  301
+
+# Family move companion (YouTube-paired bare-slug safety)
+/moving-to-texas-with-kids-again  /blog/moving-to-texas-with-kids-again  301
+
+# Out-of-state buyer records post (YouTube-paired bare-slug safety)
+/buying-a-house-in-dallas-from-out-of-state  /blog/buying-a-house-in-dallas-from-out-of-state  301
 /blog/why-people-love-living-in-frisco-texas                     /frisco-texas  301
 /blog/frisco-texas-the-grove-community-explained                 /frisco-texas  301
 /blog/homes-for-sale-in-frisco-texas-just-how-much-does-it-cost  /frisco-texas  301
