@@ -1,10 +1,10 @@
 {
   "_meta": {
-    "last_updated": "2026-10-09T20:18:13.381Z",
+    "last_updated": "2026-10-25T14:19:51.018Z",
     "sources": [
       "Census ACS 2023",
       "WalkScore (2026-06-21)",
-      "NTREIS (2026-10-09)",
+      "NTREIS (2026-10-25)",
       "Niche ISD (2026-06-21)",
       "Google Places (2026-05-19)",
       "Niche City (2026-06-21)",
@@ -61,13 +61,13 @@
         "sfr_pct_of_original_price": 96.7,
         "sfr_days_on_market": 28.5,
         "sfr_months_supply": 3.6,
-        "sfr_inventory": 19.7,
+        "sfr_inventory": 19.6,
         "sfr_closed_sales_12mo": 64,
         "market_condition": "balanced",
         "condo_median_price": 268600,
         "condo_closed_sales_12mo": 23,
         "condo_days_on_market": 72.6,
-        "condo_months_supply": 7,
+        "condo_months_supply": 6.9,
         "tiers": {
           "starter": {
             "label": "Starter",
@@ -190,7 +190,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -227,14 +227,14 @@
         "ws_link": "https://www.walkscore.com/score/Allen-TX/lat=33.1032/lng=-96.6706/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 513197.9,
-        "sfr_avg_price": 559712.9,
+        "sfr_median_price": 513610.4,
+        "sfr_avg_price": 559683.9,
         "sfr_median_price_per_sqft": 210.4,
         "sfr_pct_of_original_price": 96.5,
         "sfr_days_on_market": 32.8,
         "sfr_months_supply": 3.1,
-        "sfr_inventory": 261.8,
-        "sfr_closed_sales_12mo": 1011,
+        "sfr_inventory": 260.7,
+        "sfr_closed_sales_12mo": 1013,
         "market_condition": "balanced",
         "condo_median_price": 380898.3,
         "condo_closed_sales_12mo": 13,
@@ -254,10 +254,10 @@
             "label": "Typical",
             "min": 400000,
             "max": 699999,
-            "median_sale_price": 513133,
+            "median_sale_price": 513475,
             "price_per_sqft": 204.7,
-            "sqft": 2507,
-            "closed_sales": 540
+            "sqft": 2508,
+            "closed_sales": 542
           },
           "moveup": {
             "label": "Move-up",
@@ -291,7 +291,7 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 513197.9,
+        "sfr_median_price": 513610.4,
         "overall_isd_grade": 13,
         "academics_isd_grade": 12,
         "pct_households_with_children": 42.4,
@@ -359,7 +359,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -396,14 +396,14 @@
         "ws_link": "https://www.walkscore.com/score/Anna-TX/lat=33.3526/lng=-96.5472/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 351249,
-        "sfr_avg_price": 384833,
+        "sfr_median_price": 351207.3,
+        "sfr_avg_price": 384800.8,
         "sfr_median_price_per_sqft": 163.1,
         "sfr_pct_of_original_price": 91.6,
-        "sfr_days_on_market": 58.2,
+        "sfr_days_on_market": 58,
         "sfr_months_supply": 6.1,
-        "sfr_inventory": 419.8,
-        "sfr_closed_sales_12mo": 813,
+        "sfr_inventory": 420.3,
+        "sfr_closed_sales_12mo": 814,
         "market_condition": "buyer",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -414,10 +414,10 @@
             "label": "Starter",
             "min": 0,
             "max": 399999,
-            "median_sale_price": 326617,
+            "median_sale_price": 326408,
             "price_per_sqft": 163.8,
-            "sqft": 1994,
-            "closed_sales": 582
+            "sqft": 1993,
+            "closed_sales": 583
           },
           "typical": {
             "label": "Typical",
@@ -442,7 +442,7 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 351249,
+        "sfr_median_price": 351207.3,
         "overall_isd_grade": 8,
         "academics_isd_grade": 9,
         "pct_households_with_children": 49.5,
@@ -510,7 +510,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -553,7 +553,7 @@
         "sfr_pct_of_original_price": 95,
         "sfr_days_on_market": 59.7,
         "sfr_months_supply": 5,
-        "sfr_inventory": 188.6,
+        "sfr_inventory": 189.8,
         "sfr_closed_sales_12mo": 427,
         "market_condition": "balanced",
         "condo_median_price": 288991,
@@ -691,7 +691,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "estimate"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -728,14 +728,14 @@
         "ws_link": "https://www.walkscore.com/score/Arlington-TX/lat=32.7357/lng=-97.1081/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 334714,
-        "sfr_avg_price": 368961.7,
+        "sfr_median_price": 334734.8,
+        "sfr_avg_price": 369071.8,
         "sfr_median_price_per_sqft": 178.1,
         "sfr_pct_of_original_price": 97,
         "sfr_days_on_market": 32.1,
         "sfr_months_supply": 3.1,
-        "sfr_inventory": 731.9,
-        "sfr_closed_sales_12mo": 2760,
+        "sfr_inventory": 733.3,
+        "sfr_closed_sales_12mo": 2766,
         "market_condition": "balanced",
         "condo_median_price": 141316.7,
         "condo_closed_sales_12mo": 110,
@@ -747,18 +747,18 @@
             "min": 0,
             "max": 399999,
             "median_sale_price": 303204,
-            "price_per_sqft": 176.5,
-            "sqft": 1718,
-            "closed_sales": 1983
+            "price_per_sqft": 176.4,
+            "sqft": 1719,
+            "closed_sales": 1987
           },
           "typical": {
             "label": "Typical",
             "min": 400000,
             "max": 699999,
-            "median_sale_price": 466830,
+            "median_sale_price": 467038,
             "price_per_sqft": 179.9,
-            "sqft": 2595,
-            "closed_sales": 690
+            "sqft": 2596,
+            "closed_sales": 691
           },
           "moveup": {
             "label": "Move-up",
@@ -792,7 +792,7 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 334714,
+        "sfr_median_price": 334734.8,
         "overall_isd_grade": 9,
         "academics_isd_grade": 8,
         "pct_households_with_children": 34.6,
@@ -860,7 +860,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -897,14 +897,14 @@
         "ws_link": "https://www.walkscore.com/score/Aubrey-TX/lat=33.3029/lng=-96.9836/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 330831.9,
-        "sfr_avg_price": 374917.9,
+        "sfr_median_price": 330891.9,
+        "sfr_avg_price": 374968.2,
         "sfr_median_price_per_sqft": 169.6,
         "sfr_pct_of_original_price": 94.8,
-        "sfr_days_on_market": 43.8,
+        "sfr_days_on_market": 43.4,
         "sfr_months_supply": 5.5,
-        "sfr_inventory": 454.1,
-        "sfr_closed_sales_12mo": 1096,
+        "sfr_inventory": 454.3,
+        "sfr_closed_sales_12mo": 1099,
         "market_condition": "balanced",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -915,10 +915,10 @@
             "label": "Starter",
             "min": 0,
             "max": 399999,
-            "median_sale_price": 308041,
-            "price_per_sqft": 165.1,
-            "sqft": 1866,
-            "closed_sales": 802
+            "median_sale_price": 308125,
+            "price_per_sqft": 165,
+            "sqft": 1867,
+            "closed_sales": 804
           },
           "typical": {
             "label": "Typical",
@@ -927,7 +927,7 @@
             "median_sale_price": 484315,
             "price_per_sqft": 174.7,
             "sqft": 2772,
-            "closed_sales": 257
+            "closed_sales": 258
           },
           "moveup": {
             "label": "Move-up",
@@ -952,7 +952,7 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 330831.9,
+        "sfr_median_price": 330891.9,
         "overall_isd_grade": 9,
         "academics_isd_grade": 10,
         "pct_households_with_children": 39.3,
@@ -1020,7 +1020,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -1057,14 +1057,14 @@
         "ws_link": "https://www.walkscore.com/score/Azle-TX/lat=32.8957/lng=-97.5447/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 345257.7,
-        "sfr_avg_price": 413541.3,
-        "sfr_median_price_per_sqft": 192.3,
+        "sfr_median_price": 345882.7,
+        "sfr_avg_price": 413620.5,
+        "sfr_median_price_per_sqft": 192.4,
         "sfr_pct_of_original_price": 96.9,
-        "sfr_days_on_market": 47.6,
+        "sfr_days_on_market": 47.5,
         "sfr_months_supply": 4.5,
-        "sfr_inventory": 213.6,
-        "sfr_closed_sales_12mo": 558,
+        "sfr_inventory": 213.7,
+        "sfr_closed_sales_12mo": 559,
         "market_condition": "balanced",
         "condo_median_price": 300500,
         "condo_closed_sales_12mo": 1,
@@ -1084,10 +1084,10 @@
             "label": "Typical",
             "min": 400000,
             "max": 699999,
-            "median_sale_price": 530325,
-            "price_per_sqft": 223.8,
-            "sqft": 2370,
-            "closed_sales": 166
+            "median_sale_price": 529387,
+            "price_per_sqft": 224,
+            "sqft": 2363,
+            "closed_sales": 167
           },
           "moveup": {
             "label": "Move-up",
@@ -1121,7 +1121,7 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 345257.7,
+        "sfr_median_price": 345882.7,
         "overall_isd_grade": 9,
         "academics_isd_grade": 9,
         "pct_households_with_children": 37.3,
@@ -1189,7 +1189,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -1227,27 +1227,27 @@
       },
       "market": {
         "sfr_median_price": 394210.3,
-        "sfr_avg_price": 411044.4,
-        "sfr_median_price_per_sqft": 206.8,
+        "sfr_avg_price": 411012.8,
+        "sfr_median_price_per_sqft": 206.9,
         "sfr_pct_of_original_price": 98.1,
-        "sfr_days_on_market": 21.8,
+        "sfr_days_on_market": 22,
         "sfr_months_supply": 2.4,
-        "sfr_inventory": 88.7,
-        "sfr_closed_sales_12mo": 450,
+        "sfr_inventory": 88.9,
+        "sfr_closed_sales_12mo": 451,
         "market_condition": "seller",
         "condo_median_price": 244998.3,
         "condo_closed_sales_12mo": 10,
         "condo_days_on_market": 46.9,
-        "condo_months_supply": 1.7,
+        "condo_months_supply": 1.6,
         "tiers": {
           "starter": {
             "label": "Starter",
             "min": 0,
             "max": 399999,
-            "median_sale_price": 339525,
-            "price_per_sqft": 206.8,
+            "median_sale_price": 339675,
+            "price_per_sqft": 206.9,
             "sqft": 1642,
-            "closed_sales": 233
+            "closed_sales": 234
           },
           "typical": {
             "label": "Typical",
@@ -1350,7 +1350,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -1392,8 +1392,8 @@
         "sfr_median_price_per_sqft": 175.3,
         "sfr_pct_of_original_price": 96.3,
         "sfr_days_on_market": 39.8,
-        "sfr_months_supply": 3.7,
-        "sfr_inventory": 284.8,
+        "sfr_months_supply": 3.6,
+        "sfr_inventory": 284.6,
         "sfr_closed_sales_12mo": 956,
         "market_condition": "balanced",
         "condo_median_price": null,
@@ -1519,7 +1519,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -1560,10 +1560,10 @@
         "sfr_avg_price": 469349.4,
         "sfr_median_price_per_sqft": 215.3,
         "sfr_pct_of_original_price": 97.2,
-        "sfr_days_on_market": 24.4,
+        "sfr_days_on_market": 24.5,
         "sfr_months_supply": 2.8,
-        "sfr_inventory": 247.9,
-        "sfr_closed_sales_12mo": 1066,
+        "sfr_inventory": 247.5,
+        "sfr_closed_sales_12mo": 1067,
         "market_condition": "seller",
         "condo_median_price": 216354.2,
         "condo_closed_sales_12mo": 36,
@@ -1577,7 +1577,7 @@
             "median_sale_price": 347131,
             "price_per_sqft": 212.6,
             "sqft": 1633,
-            "closed_sales": 453
+            "closed_sales": 454
           },
           "typical": {
             "label": "Typical",
@@ -1705,7 +1705,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -1748,7 +1748,7 @@
         "sfr_pct_of_original_price": 97,
         "sfr_days_on_market": 30.3,
         "sfr_months_supply": 3.9,
-        "sfr_inventory": 154.9,
+        "sfr_inventory": 155.4,
         "sfr_closed_sales_12mo": 496,
         "market_condition": "balanced",
         "condo_median_price": 152750,
@@ -1875,7 +1875,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -1912,14 +1912,14 @@
         "ws_link": "https://www.walkscore.com/score/Celina-TX/lat=33.3254/lng=-96.7855/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 511763.3,
-        "sfr_avg_price": 583062,
+        "sfr_median_price": 512311.9,
+        "sfr_avg_price": 582925.9,
         "sfr_median_price_per_sqft": 186.3,
         "sfr_pct_of_original_price": 90.6,
-        "sfr_days_on_market": 69.8,
-        "sfr_months_supply": 6.5,
-        "sfr_inventory": 905.1,
-        "sfr_closed_sales_12mo": 1743,
+        "sfr_days_on_market": 69.9,
+        "sfr_months_supply": 6.6,
+        "sfr_inventory": 907.8,
+        "sfr_closed_sales_12mo": 1760,
         "market_condition": "buyer",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -1930,37 +1930,37 @@
             "label": "Starter",
             "min": 0,
             "max": 399999,
-            "median_sale_price": 358533,
+            "median_sale_price": 358742,
             "price_per_sqft": 175.8,
-            "sqft": 2039,
-            "closed_sales": 416
+            "sqft": 2041,
+            "closed_sales": 419
           },
           "typical": {
             "label": "Typical",
             "min": 400000,
             "max": 699999,
-            "median_sale_price": 527158,
+            "median_sale_price": 526950,
             "price_per_sqft": 180.3,
-            "sqft": 2924,
-            "closed_sales": 1008
+            "sqft": 2923,
+            "closed_sales": 1019
           },
           "moveup": {
             "label": "Move-up",
             "min": 700000,
             "max": 999999,
-            "median_sale_price": 804186,
-            "price_per_sqft": 226.7,
-            "sqft": 3547,
-            "closed_sales": 193
+            "median_sale_price": 801746,
+            "price_per_sqft": 226.9,
+            "sqft": 3533,
+            "closed_sales": 194
           },
           "luxury": {
             "label": "Luxury",
             "min": 1000000,
             "max": null,
-            "median_sale_price": 1350359,
-            "price_per_sqft": 307.1,
-            "sqft": 4397,
-            "closed_sales": 126
+            "median_sale_price": 1347233,
+            "price_per_sqft": 306.2,
+            "sqft": 4400,
+            "closed_sales": 127
           }
         }
       },
@@ -1988,7 +1988,7 @@
         ]
       },
       "quiz": {
-        "sfr_median_price": 511763.3,
+        "sfr_median_price": 512311.9,
         "overall_isd_grade": 10,
         "academics_isd_grade": 11,
         "pct_households_with_children": 55.3,
@@ -2039,7 +2039,7 @@
           "safety": 80,
           "family_community": 70,
           "commute": 47,
-          "market_stability": 84
+          "market_stability": 83
         },
         "amenity_ranks": {
           "parks_count": 24,
@@ -2056,7 +2056,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -2093,14 +2093,14 @@
         "ws_link": "https://www.walkscore.com/score/Cleburne-TX/lat=32.3499/lng=-97.3842/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 284421,
-        "sfr_avg_price": 312516.2,
+        "sfr_median_price": 285253.5,
+        "sfr_avg_price": 312454.3,
         "sfr_median_price_per_sqft": 160.3,
         "sfr_pct_of_original_price": 96.1,
-        "sfr_days_on_market": 60.9,
+        "sfr_days_on_market": 60.8,
         "sfr_months_supply": 4.6,
-        "sfr_inventory": 309.6,
-        "sfr_closed_sales_12mo": 807,
+        "sfr_inventory": 309.8,
+        "sfr_closed_sales_12mo": 811,
         "market_condition": "balanced",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -2111,10 +2111,10 @@
             "label": "Starter",
             "min": 0,
             "max": 399999,
-            "median_sale_price": 271812,
-            "price_per_sqft": 157.1,
-            "sqft": 1730,
-            "closed_sales": 690
+            "median_sale_price": 272647,
+            "price_per_sqft": 156.9,
+            "sqft": 1738,
+            "closed_sales": 694
           },
           "typical": {
             "label": "Typical",
@@ -2148,7 +2148,7 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 284421,
+        "sfr_median_price": 285253.5,
         "overall_isd_grade": 8,
         "academics_isd_grade": 8,
         "pct_households_with_children": 36.2,
@@ -2193,7 +2193,7 @@
       },
       "scores": {
         "family_score": 65,
-        "value_score": 88,
+        "value_score": 87,
         "sub_scores": {
           "education": 77,
           "safety": 77,
@@ -2216,7 +2216,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -2253,14 +2253,14 @@
         "ws_link": "https://www.walkscore.com/score/Colleyville-TX/lat=32.8887/lng=-97.1503/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 1013458.3,
-        "sfr_avg_price": 1192439,
-        "sfr_median_price_per_sqft": 277.2,
-        "sfr_pct_of_original_price": 96.9,
-        "sfr_days_on_market": 20.2,
+        "sfr_median_price": 1014708.3,
+        "sfr_avg_price": 1191759.2,
+        "sfr_median_price_per_sqft": 277.1,
+        "sfr_pct_of_original_price": 97,
+        "sfr_days_on_market": 20,
         "sfr_months_supply": 2.4,
-        "sfr_inventory": 67.1,
-        "sfr_closed_sales_12mo": 317,
+        "sfr_inventory": 66.8,
+        "sfr_closed_sales_12mo": 318,
         "market_condition": "seller",
         "condo_median_price": 499670.8,
         "condo_closed_sales_12mo": 12,
@@ -2290,10 +2290,10 @@
             "label": "Move-up",
             "min": 700000,
             "max": 999999,
-            "median_sale_price": 847188,
-            "price_per_sqft": 257,
-            "sqft": 3296,
-            "closed_sales": 98
+            "median_sale_price": 847604,
+            "price_per_sqft": 256.5,
+            "sqft": 3304,
+            "closed_sales": 99
           },
           "luxury": {
             "label": "Luxury",
@@ -2335,7 +2335,7 @@
         ]
       },
       "quiz": {
-        "sfr_median_price": 1013458.3,
+        "sfr_median_price": 1014708.3,
         "overall_isd_grade": 13,
         "academics_isd_grade": 13,
         "pct_households_with_children": 37.1,
@@ -2403,7 +2403,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -2446,7 +2446,7 @@
         "sfr_pct_of_original_price": 97.8,
         "sfr_days_on_market": 20.6,
         "sfr_months_supply": 2.6,
-        "sfr_inventory": 76,
+        "sfr_inventory": 75.7,
         "sfr_closed_sales_12mo": 341,
         "market_condition": "seller",
         "condo_median_price": 248375,
@@ -2589,7 +2589,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -2627,13 +2627,13 @@
       },
       "market": {
         "sfr_median_price": 434601.3,
-        "sfr_avg_price": 457366.8,
+        "sfr_avg_price": 457236.5,
         "sfr_median_price_per_sqft": 181.7,
         "sfr_pct_of_original_price": 95.9,
-        "sfr_days_on_market": 48.5,
+        "sfr_days_on_market": 48.9,
         "sfr_months_supply": 3.3,
-        "sfr_inventory": 109.2,
-        "sfr_closed_sales_12mo": 364,
+        "sfr_inventory": 109.5,
+        "sfr_closed_sales_12mo": 365,
         "market_condition": "balanced",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -2653,10 +2653,10 @@
             "label": "Typical",
             "min": 400000,
             "max": 699999,
-            "median_sale_price": 492771,
-            "price_per_sqft": 179,
-            "sqft": 2753,
-            "closed_sales": 215
+            "median_sale_price": 492317,
+            "price_per_sqft": 178.9,
+            "sqft": 2752,
+            "closed_sales": 216
           },
           "moveup": {
             "label": "Move-up",
@@ -2776,7 +2776,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -2813,14 +2813,14 @@
         "ws_link": "https://www.walkscore.com/score/Crandall-TX/lat=32.6335/lng=-96.4633/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 265487.7,
-        "sfr_avg_price": 267327.1,
-        "sfr_median_price_per_sqft": 146.3,
-        "sfr_pct_of_original_price": 95.6,
-        "sfr_days_on_market": 35.6,
+        "sfr_median_price": 264926.9,
+        "sfr_avg_price": 267192.6,
+        "sfr_median_price_per_sqft": 146.2,
+        "sfr_pct_of_original_price": 95.7,
+        "sfr_days_on_market": 35.7,
         "sfr_months_supply": 3.3,
-        "sfr_inventory": 227.5,
-        "sfr_closed_sales_12mo": 776,
+        "sfr_inventory": 228.3,
+        "sfr_closed_sales_12mo": 784,
         "market_condition": "balanced",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -2831,10 +2831,10 @@
             "label": "Starter",
             "min": 0,
             "max": 399999,
-            "median_sale_price": 263502,
-            "price_per_sqft": 145.9,
+            "median_sale_price": 263325,
+            "price_per_sqft": 145.8,
             "sqft": 1806,
-            "closed_sales": 758
+            "closed_sales": 766
           },
           "typical": {
             "label": "Typical",
@@ -2859,7 +2859,7 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 265487.7,
+        "sfr_median_price": 264926.9,
         "overall_isd_grade": 7,
         "academics_isd_grade": 8,
         "pct_households_with_children": 41.3,
@@ -2927,7 +2927,7 @@
           "shopping_total_suburbs": 65,
           "population_source": null
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -2964,17 +2964,17 @@
         "ws_link": "https://www.walkscore.com/score/Dallas-TX/lat=32.7767/lng=-96.797/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 499818.4,
-        "sfr_avg_price": 754489.4,
-        "sfr_median_price_per_sqft": 245.4,
+        "sfr_median_price": 499655.9,
+        "sfr_avg_price": 754044.2,
+        "sfr_median_price_per_sqft": 245.3,
         "sfr_pct_of_original_price": 96.1,
         "sfr_days_on_market": 29.8,
         "sfr_months_supply": 4.4,
-        "sfr_inventory": 2825.8,
-        "sfr_closed_sales_12mo": 7581,
+        "sfr_inventory": 2830.3,
+        "sfr_closed_sales_12mo": 7596,
         "market_condition": "balanced",
-        "condo_median_price": 277308.6,
-        "condo_closed_sales_12mo": 1492,
+        "condo_median_price": 277016.9,
+        "condo_closed_sales_12mo": 1494,
         "condo_days_on_market": 52.7,
         "condo_months_supply": 8.8,
         "tiers": {
@@ -2983,36 +2983,36 @@
             "min": 0,
             "max": 399999,
             "median_sale_price": 264138,
-            "price_per_sqft": 174.4,
+            "price_per_sqft": 174.3,
             "sqft": 1515,
-            "closed_sales": 3082
+            "closed_sales": 3090
           },
           "typical": {
             "label": "Typical",
             "min": 400000,
             "max": 699999,
-            "median_sale_price": 543042,
+            "median_sale_price": 542958,
             "price_per_sqft": 260.6,
-            "sqft": 2084,
-            "closed_sales": 1808
+            "sqft": 2083,
+            "closed_sales": 1810
           },
           "moveup": {
             "label": "Move-up",
             "min": 700000,
             "max": 999999,
-            "median_sale_price": 813463,
-            "price_per_sqft": 321.3,
-            "sqft": 2532,
-            "closed_sales": 1113
+            "median_sale_price": 813460,
+            "price_per_sqft": 320.8,
+            "sqft": 2536,
+            "closed_sales": 1115
           },
           "luxury": {
             "label": "Luxury",
             "min": 1000000,
             "max": null,
-            "median_sale_price": 1572604,
-            "price_per_sqft": 426.6,
-            "sqft": 3686,
-            "closed_sales": 1578
+            "median_sale_price": 1572208,
+            "price_per_sqft": 425.8,
+            "sqft": 3692,
+            "closed_sales": 1581
           }
         }
       },
@@ -3028,7 +3028,7 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 499818.4,
+        "sfr_median_price": 499655.9,
         "overall_isd_grade": 9,
         "academics_isd_grade": 8,
         "pct_households_with_children": 28.1,
@@ -3096,7 +3096,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -3134,13 +3134,13 @@
       },
       "market": {
         "sfr_median_price": 362942,
-        "sfr_avg_price": 405415.8,
+        "sfr_avg_price": 405504.7,
         "sfr_median_price_per_sqft": 186.8,
         "sfr_pct_of_original_price": 95.3,
-        "sfr_days_on_market": 50,
+        "sfr_days_on_market": 49.8,
         "sfr_months_supply": 4.4,
-        "sfr_inventory": 632.9,
-        "sfr_closed_sales_12mo": 1811,
+        "sfr_inventory": 633.6,
+        "sfr_closed_sales_12mo": 1815,
         "market_condition": "balanced",
         "condo_median_price": 211218.8,
         "condo_closed_sales_12mo": 6,
@@ -3154,7 +3154,7 @@
             "median_sale_price": 324499,
             "price_per_sqft": 185.3,
             "sqft": 1751,
-            "closed_sales": 1149
+            "closed_sales": 1152
           },
           "typical": {
             "label": "Typical",
@@ -3169,10 +3169,10 @@
             "label": "Move-up",
             "min": 700000,
             "max": 999999,
-            "median_sale_price": 795896,
-            "price_per_sqft": 270.1,
-            "sqft": 2947,
-            "closed_sales": 60
+            "median_sale_price": 797979,
+            "price_per_sqft": 269.6,
+            "sqft": 2960,
+            "closed_sales": 61
           },
           "luxury": {
             "label": "Luxury",
@@ -3265,7 +3265,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -3303,12 +3303,12 @@
       },
       "market": {
         "sfr_median_price": 351562.3,
-        "sfr_avg_price": 375044.8,
+        "sfr_avg_price": 375230.1,
         "sfr_median_price_per_sqft": 150.6,
         "sfr_pct_of_original_price": 97.1,
         "sfr_days_on_market": 37.5,
         "sfr_months_supply": 4.8,
-        "sfr_inventory": 181.3,
+        "sfr_inventory": 181.1,
         "sfr_closed_sales_12mo": 437,
         "market_condition": "balanced",
         "condo_median_price": null,
@@ -3329,9 +3329,9 @@
             "label": "Typical",
             "min": 400000,
             "max": 699999,
-            "median_sale_price": 489643,
-            "price_per_sqft": 157.7,
-            "sqft": 3105,
+            "median_sale_price": 490060,
+            "price_per_sqft": 157.8,
+            "sqft": 3106,
             "closed_sales": 142
           },
           "moveup": {
@@ -3436,7 +3436,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -3479,7 +3479,7 @@
         "sfr_pct_of_original_price": 98.1,
         "sfr_days_on_market": 29.8,
         "sfr_months_supply": 3.3,
-        "sfr_inventory": 11.8,
+        "sfr_inventory": 11.7,
         "sfr_closed_sales_12mo": 47,
         "market_condition": "balanced",
         "condo_median_price": null,
@@ -3618,7 +3618,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "estimate"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -3655,14 +3655,14 @@
         "ws_link": "https://www.walkscore.com/score/Duncanville-TX/lat=32.6518/lng=-96.9083/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 299066.7,
-        "sfr_avg_price": 307670.7,
+        "sfr_median_price": 299441.7,
+        "sfr_avg_price": 308052.2,
         "sfr_median_price_per_sqft": 161.8,
         "sfr_pct_of_original_price": 96.1,
         "sfr_days_on_market": 30,
         "sfr_months_supply": 3.7,
-        "sfr_inventory": 75.3,
-        "sfr_closed_sales_12mo": 244,
+        "sfr_inventory": 75.2,
+        "sfr_closed_sales_12mo": 246,
         "market_condition": "balanced",
         "condo_median_price": 172190,
         "condo_closed_sales_12mo": 2,
@@ -3674,18 +3674,18 @@
             "min": 0,
             "max": 399999,
             "median_sale_price": 287950,
-            "price_per_sqft": 161.6,
-            "sqft": 1782,
-            "closed_sales": 213
+            "price_per_sqft": 161.5,
+            "sqft": 1783,
+            "closed_sales": 214
           },
           "typical": {
             "label": "Typical",
             "min": 400000,
             "max": 699999,
-            "median_sale_price": 455875,
-            "price_per_sqft": 154.2,
-            "sqft": 2956,
-            "closed_sales": 29
+            "median_sale_price": 454417,
+            "price_per_sqft": 154.6,
+            "sqft": 2939,
+            "closed_sales": 30
           },
           "moveup": {
             "label": "Move-up",
@@ -3721,7 +3721,7 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 299066.7,
+        "sfr_median_price": 299441.7,
         "overall_isd_grade": 8,
         "academics_isd_grade": 7,
         "pct_households_with_children": 36.1,
@@ -3789,7 +3789,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -3831,8 +3831,8 @@
         "sfr_median_price_per_sqft": 211.8,
         "sfr_pct_of_original_price": 97.5,
         "sfr_days_on_market": 21,
-        "sfr_months_supply": 2.3,
-        "sfr_inventory": 76.9,
+        "sfr_months_supply": 2.4,
+        "sfr_inventory": 77.1,
         "sfr_closed_sales_12mo": 400,
         "market_condition": "seller",
         "condo_median_price": 279975,
@@ -3943,7 +3943,7 @@
           "safety": 77,
           "family_community": 44,
           "commute": 57,
-          "market_stability": 95
+          "market_stability": 98
         },
         "amenity_ranks": {
           "parks_count": 21,
@@ -3960,7 +3960,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -4003,7 +4003,7 @@
         "sfr_pct_of_original_price": 95.5,
         "sfr_days_on_market": 46.3,
         "sfr_months_supply": 4.2,
-        "sfr_inventory": 49,
+        "sfr_inventory": 48.8,
         "sfr_closed_sales_12mo": 143,
         "market_condition": "balanced",
         "condo_median_price": null,
@@ -4129,7 +4129,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -4172,7 +4172,7 @@
         "sfr_pct_of_original_price": 95.9,
         "sfr_days_on_market": 31.9,
         "sfr_months_supply": 3.1,
-        "sfr_inventory": 63.4,
+        "sfr_inventory": 63.5,
         "sfr_closed_sales_12mo": 232,
         "market_condition": "balanced",
         "condo_median_price": 242158.3,
@@ -4290,7 +4290,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -4333,7 +4333,7 @@
         "sfr_pct_of_original_price": 94.4,
         "sfr_days_on_market": 61.6,
         "sfr_months_supply": 4.7,
-        "sfr_inventory": 177.1,
+        "sfr_inventory": 177.3,
         "sfr_closed_sales_12mo": 397,
         "market_condition": "balanced",
         "condo_median_price": null,
@@ -4461,7 +4461,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -4503,14 +4503,14 @@
         "sfr_median_price_per_sqft": 232.9,
         "sfr_pct_of_original_price": 97.3,
         "sfr_days_on_market": 25.3,
-        "sfr_months_supply": 2.9,
-        "sfr_inventory": 215.6,
+        "sfr_months_supply": 2.8,
+        "sfr_inventory": 213.9,
         "sfr_closed_sales_12mo": 925,
         "market_condition": "seller",
         "condo_median_price": 1524375,
         "condo_closed_sales_12mo": 1,
         "condo_days_on_market": 81.8,
-        "condo_months_supply": 5,
+        "condo_months_supply": 5.2,
         "tiers": {
           "starter": {
             "label": "Starter",
@@ -4652,7 +4652,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -4689,14 +4689,14 @@
         "ws_link": "https://www.walkscore.com/score/Forney-TX/lat=32.7474/lng=-96.4697/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 321031.4,
-        "sfr_avg_price": 341281.8,
+        "sfr_median_price": 320950.4,
+        "sfr_avg_price": 341259.5,
         "sfr_median_price_per_sqft": 151.3,
         "sfr_pct_of_original_price": 93.9,
-        "sfr_days_on_market": 58.8,
+        "sfr_days_on_market": 58.7,
         "sfr_months_supply": 5.6,
-        "sfr_inventory": 812.7,
-        "sfr_closed_sales_12mo": 1610,
+        "sfr_inventory": 814.9,
+        "sfr_closed_sales_12mo": 1616,
         "market_condition": "balanced",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -4707,19 +4707,19 @@
             "label": "Starter",
             "min": 0,
             "max": 399999,
-            "median_sale_price": 294263,
-            "price_per_sqft": 149.4,
-            "sqft": 1970,
-            "closed_sales": 1216
+            "median_sale_price": 294138,
+            "price_per_sqft": 149.5,
+            "sqft": 1967,
+            "closed_sales": 1220
           },
           "typical": {
             "label": "Typical",
             "min": 400000,
             "max": 699999,
             "median_sale_price": 451762,
-            "price_per_sqft": 161.1,
-            "sqft": 2804,
-            "closed_sales": 387
+            "price_per_sqft": 161,
+            "sqft": 2806,
+            "closed_sales": 389
           },
           "moveup": {
             "label": "Move-up",
@@ -4755,7 +4755,7 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 321031.4,
+        "sfr_median_price": 320950.4,
         "overall_isd_grade": 9,
         "academics_isd_grade": 9,
         "pct_households_with_children": 48.8,
@@ -4823,7 +4823,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -4861,13 +4861,13 @@
       },
       "market": {
         "sfr_median_price": 336749,
-        "sfr_avg_price": 396896.2,
+        "sfr_avg_price": 396765,
         "sfr_median_price_per_sqft": 174.1,
         "sfr_pct_of_original_price": 96.6,
         "sfr_days_on_market": 36.3,
         "sfr_months_supply": 3.9,
-        "sfr_inventory": 3413.2,
-        "sfr_closed_sales_12mo": 10680,
+        "sfr_inventory": 3419.3,
+        "sfr_closed_sales_12mo": 10711,
         "market_condition": "balanced",
         "condo_median_price": 299302.1,
         "condo_closed_sales_12mo": 193,
@@ -4881,16 +4881,16 @@
             "median_sale_price": 302701,
             "price_per_sqft": 169.3,
             "sqft": 1788,
-            "closed_sales": 7547
+            "closed_sales": 7563
           },
           "typical": {
             "label": "Typical",
             "min": 400000,
             "max": 699999,
-            "median_sale_price": 483830,
+            "median_sale_price": 483747,
             "price_per_sqft": 182.6,
-            "sqft": 2650,
-            "closed_sales": 2465
+            "sqft": 2649,
+            "closed_sales": 2471
           },
           "moveup": {
             "label": "Move-up",
@@ -5024,7 +5024,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -5061,14 +5061,14 @@
         "ws_link": "https://www.walkscore.com/score/Frisco-TX/lat=33.1507/lng=-96.8236/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 673068,
-        "sfr_avg_price": 806162,
+        "sfr_median_price": 672651.3,
+        "sfr_avg_price": 806131.4,
         "sfr_median_price_per_sqft": 230.5,
         "sfr_pct_of_original_price": 95.7,
         "sfr_days_on_market": 37.3,
         "sfr_months_supply": 4.6,
-        "sfr_inventory": 832.9,
-        "sfr_closed_sales_12mo": 2190,
+        "sfr_inventory": 832,
+        "sfr_closed_sales_12mo": 2192,
         "market_condition": "balanced",
         "condo_median_price": 726205.7,
         "condo_closed_sales_12mo": 3,
@@ -5079,19 +5079,19 @@
             "label": "Starter",
             "min": 0,
             "max": 399999,
-            "median_sale_price": 365222,
-            "price_per_sqft": 226.4,
-            "sqft": 1613,
-            "closed_sales": 188
+            "median_sale_price": 365247,
+            "price_per_sqft": 226.8,
+            "sqft": 1610,
+            "closed_sales": 187
           },
           "typical": {
             "label": "Typical",
             "min": 400000,
             "max": 699999,
-            "median_sale_price": 538658,
+            "median_sale_price": 538200,
             "price_per_sqft": 217.3,
-            "sqft": 2479,
-            "closed_sales": 984
+            "sqft": 2477,
+            "closed_sales": 986
           },
           "moveup": {
             "label": "Move-up",
@@ -5142,7 +5142,7 @@
         ]
       },
       "quiz": {
-        "sfr_median_price": 673068,
+        "sfr_median_price": 672651.3,
         "overall_isd_grade": 13,
         "academics_isd_grade": 13,
         "pct_households_with_children": 47.3,
@@ -5210,7 +5210,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -5247,37 +5247,37 @@
         "ws_link": "https://www.walkscore.com/score/Garland-TX/lat=32.9126/lng=-96.6389/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 303661.3,
-        "sfr_avg_price": 326269.4,
+        "sfr_median_price": 303662.5,
+        "sfr_avg_price": 326395.8,
         "sfr_median_price_per_sqft": 176.1,
         "sfr_pct_of_original_price": 96.2,
         "sfr_days_on_market": 30.7,
         "sfr_months_supply": 3.8,
-        "sfr_inventory": 527,
-        "sfr_closed_sales_12mo": 1688,
+        "sfr_inventory": 526.3,
+        "sfr_closed_sales_12mo": 1691,
         "market_condition": "balanced",
         "condo_median_price": 133245.8,
         "condo_closed_sales_12mo": 29,
         "condo_days_on_market": 94.4,
-        "condo_months_supply": 10.3,
+        "condo_months_supply": 10.5,
         "tiers": {
           "starter": {
             "label": "Starter",
             "min": 0,
             "max": 399999,
-            "median_sale_price": 283056,
-            "price_per_sqft": 175.2,
-            "sqft": 1616,
-            "closed_sales": 1341
+            "median_sale_price": 283139,
+            "price_per_sqft": 175.1,
+            "sqft": 1617,
+            "closed_sales": 1343
           },
           "typical": {
             "label": "Typical",
             "min": 400000,
             "max": 699999,
-            "median_sale_price": 457292,
+            "median_sale_price": 457375,
             "price_per_sqft": 180.6,
-            "sqft": 2532,
-            "closed_sales": 330
+            "sqft": 2533,
+            "closed_sales": 331
           },
           "moveup": {
             "label": "Move-up",
@@ -5312,7 +5312,7 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 303661.3,
+        "sfr_median_price": 303662.5,
         "overall_isd_grade": 11,
         "academics_isd_grade": 10,
         "pct_households_with_children": 37.9,
@@ -5380,7 +5380,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -5417,14 +5417,14 @@
         "ws_link": "https://www.walkscore.com/score/Grand-Prairie-TX/lat=32.746/lng=-96.9978/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 356027.3,
-        "sfr_avg_price": 373137.8,
+        "sfr_median_price": 356110.7,
+        "sfr_avg_price": 373119.2,
         "sfr_median_price_per_sqft": 172.5,
         "sfr_pct_of_original_price": 97.1,
         "sfr_days_on_market": 28.3,
         "sfr_months_supply": 3.3,
-        "sfr_inventory": 312.8,
-        "sfr_closed_sales_12mo": 1154,
+        "sfr_inventory": 313.3,
+        "sfr_closed_sales_12mo": 1155,
         "market_condition": "balanced",
         "condo_median_price": 143408.3,
         "condo_closed_sales_12mo": 8,
@@ -5438,7 +5438,7 @@
             "median_sale_price": 314554,
             "price_per_sqft": 175.5,
             "sqft": 1792,
-            "closed_sales": 762
+            "closed_sales": 763
           },
           "typical": {
             "label": "Typical",
@@ -5509,7 +5509,7 @@
         ]
       },
       "quiz": {
-        "sfr_median_price": 356027.3,
+        "sfr_median_price": 356110.7,
         "overall_isd_grade": 9,
         "academics_isd_grade": 9,
         "pct_households_with_children": 39.1,
@@ -5577,7 +5577,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -5620,7 +5620,7 @@
         "sfr_pct_of_original_price": 98.1,
         "sfr_days_on_market": 20,
         "sfr_months_supply": 2.2,
-        "sfr_inventory": 85,
+        "sfr_inventory": 84.8,
         "sfr_closed_sales_12mo": 454,
         "market_condition": "seller",
         "condo_median_price": 458250,
@@ -5746,7 +5746,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -5783,14 +5783,14 @@
         "ws_link": "https://www.walkscore.com/score/Haslet-TX/lat=32.9679/lng=-97.3467/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 496307.6,
-        "sfr_avg_price": 550882.3,
-        "sfr_median_price_per_sqft": 192.6,
+        "sfr_median_price": 498353.9,
+        "sfr_avg_price": 551164.4,
+        "sfr_median_price_per_sqft": 192.7,
         "sfr_pct_of_original_price": 96.1,
         "sfr_days_on_market": 56.3,
         "sfr_months_supply": 4.5,
-        "sfr_inventory": 151.5,
-        "sfr_closed_sales_12mo": 449,
+        "sfr_inventory": 151.7,
+        "sfr_closed_sales_12mo": 451,
         "market_condition": "balanced",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -5810,19 +5810,19 @@
             "label": "Typical",
             "min": 400000,
             "max": 699999,
-            "median_sale_price": 518007,
+            "median_sale_price": 518510,
             "price_per_sqft": 193.4,
-            "sqft": 2678,
-            "closed_sales": 214
+            "sqft": 2681,
+            "closed_sales": 215
           },
           "moveup": {
             "label": "Move-up",
             "min": 700000,
             "max": 999999,
-            "median_sale_price": 788742,
-            "price_per_sqft": 229.2,
-            "sqft": 3441,
-            "closed_sales": 88
+            "median_sale_price": 788532,
+            "price_per_sqft": 228.8,
+            "sqft": 3446,
+            "closed_sales": 89
           },
           "luxury": {
             "label": "Luxury",
@@ -5859,7 +5859,7 @@
         ]
       },
       "quiz": {
-        "sfr_median_price": 496307.6,
+        "sfr_median_price": 498353.9,
         "overall_isd_grade": 11,
         "academics_isd_grade": 10,
         "pct_households_with_children": 37.3,
@@ -5927,7 +5927,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "estimate"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -5970,7 +5970,7 @@
         "sfr_pct_of_original_price": 93.4,
         "sfr_days_on_market": 73.1,
         "sfr_months_supply": 7.8,
-        "sfr_inventory": 159.7,
+        "sfr_inventory": 160.2,
         "sfr_closed_sales_12mo": 277,
         "market_condition": "buyer",
         "condo_median_price": 318626.3,
@@ -6096,7 +6096,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -6139,7 +6139,7 @@
         "sfr_pct_of_original_price": 93.3,
         "sfr_days_on_market": 48.1,
         "sfr_months_supply": 4.1,
-        "sfr_inventory": 27,
+        "sfr_inventory": 27.3,
         "sfr_closed_sales_12mo": 87,
         "market_condition": "balanced",
         "condo_median_price": 1302166.7,
@@ -6248,7 +6248,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -6418,7 +6418,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -6455,19 +6455,19 @@
         "ws_link": "https://www.walkscore.com/score/Hurst-TX/lat=32.8232/lng=-97.1883/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 366714.4,
-        "sfr_avg_price": 422216.6,
-        "sfr_median_price_per_sqft": 198.3,
-        "sfr_pct_of_original_price": 97.5,
-        "sfr_days_on_market": 24.9,
+        "sfr_median_price": 366922.8,
+        "sfr_avg_price": 424304,
+        "sfr_median_price_per_sqft": 198.6,
+        "sfr_pct_of_original_price": 97.6,
+        "sfr_days_on_market": 25.1,
         "sfr_months_supply": 2.1,
-        "sfr_inventory": 72.8,
-        "sfr_closed_sales_12mo": 411,
+        "sfr_inventory": 72.9,
+        "sfr_closed_sales_12mo": 412,
         "market_condition": "seller",
         "condo_median_price": 177523.3,
         "condo_closed_sales_12mo": 7,
         "condo_days_on_market": 42.5,
-        "condo_months_supply": 1.8,
+        "condo_months_supply": 1.9,
         "tiers": {
           "starter": {
             "label": "Starter",
@@ -6501,10 +6501,10 @@
             "label": "Luxury",
             "min": 1000000,
             "max": null,
-            "median_sale_price": 1267792,
-            "price_per_sqft": 327.7,
-            "sqft": 3869,
-            "closed_sales": 22
+            "median_sale_price": 1264367,
+            "price_per_sqft": 326.7,
+            "sqft": 3870,
+            "closed_sales": 23
           }
         }
       },
@@ -6520,7 +6520,7 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 366714.4,
+        "sfr_median_price": 366922.8,
         "overall_isd_grade": 13,
         "academics_isd_grade": 12,
         "pct_households_with_children": 31.1,
@@ -6588,7 +6588,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -6625,14 +6625,14 @@
         "ws_link": "https://www.walkscore.com/score/Irving-TX/lat=32.814/lng=-96.9489/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 389122.9,
-        "sfr_avg_price": 486948.8,
-        "sfr_median_price_per_sqft": 208,
+        "sfr_median_price": 388997.9,
+        "sfr_avg_price": 486801,
+        "sfr_median_price_per_sqft": 207.9,
         "sfr_pct_of_original_price": 96.3,
         "sfr_days_on_market": 27.7,
         "sfr_months_supply": 4,
-        "sfr_inventory": 299.3,
-        "sfr_closed_sales_12mo": 929,
+        "sfr_inventory": 298.9,
+        "sfr_closed_sales_12mo": 930,
         "market_condition": "balanced",
         "condo_median_price": 238918.8,
         "condo_closed_sales_12mo": 122,
@@ -6689,7 +6689,7 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 389122.9,
+        "sfr_median_price": 388997.9,
         "overall_isd_grade": 8,
         "academics_isd_grade": 7,
         "pct_households_with_children": 36.7,
@@ -6757,7 +6757,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -6800,7 +6800,7 @@
         "sfr_pct_of_original_price": 97.2,
         "sfr_days_on_market": 25.3,
         "sfr_months_supply": 3,
-        "sfr_inventory": 141.8,
+        "sfr_inventory": 141.7,
         "sfr_closed_sales_12mo": 583,
         "market_condition": "balanced",
         "condo_median_price": 558729.1,
@@ -6938,7 +6938,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -6975,13 +6975,13 @@
         "ws_link": "https://www.walkscore.com/score/Lancaster-TX/lat=32.5921/lng=-96.7561/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 281456.1,
+        "sfr_median_price": 281414.4,
         "sfr_avg_price": 284884.9,
         "sfr_median_price_per_sqft": 151.9,
         "sfr_pct_of_original_price": 97.8,
         "sfr_days_on_market": 30.3,
         "sfr_months_supply": 3.9,
-        "sfr_inventory": 97.8,
+        "sfr_inventory": 98.2,
         "sfr_closed_sales_12mo": 287,
         "market_condition": "balanced",
         "condo_median_price": null,
@@ -7041,7 +7041,7 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 281456.1,
+        "sfr_median_price": 281414.4,
         "overall_isd_grade": 8,
         "academics_isd_grade": 7,
         "pct_households_with_children": 41.6,
@@ -7100,7 +7100,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -7143,7 +7143,7 @@
         "sfr_pct_of_original_price": 97.7,
         "sfr_days_on_market": 29.2,
         "sfr_months_supply": 2.5,
-        "sfr_inventory": 35.6,
+        "sfr_inventory": 35.8,
         "sfr_closed_sales_12mo": 177,
         "market_condition": "seller",
         "condo_median_price": null,
@@ -7282,7 +7282,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -7319,14 +7319,14 @@
         "ws_link": "https://www.walkscore.com/score/Lavon-TX/lat=33.031/lng=-96.4432/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 340316.1,
-        "sfr_avg_price": 367063.2,
+        "sfr_median_price": 342782.8,
+        "sfr_avg_price": 367341.5,
         "sfr_median_price_per_sqft": 162.3,
         "sfr_pct_of_original_price": 94,
-        "sfr_days_on_market": 77.4,
+        "sfr_days_on_market": 77.7,
         "sfr_months_supply": 3.6,
-        "sfr_inventory": 228.4,
-        "sfr_closed_sales_12mo": 718,
+        "sfr_inventory": 228.7,
+        "sfr_closed_sales_12mo": 721,
         "market_condition": "balanced",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -7337,19 +7337,19 @@
             "label": "Starter",
             "min": 0,
             "max": 399999,
-            "median_sale_price": 319667,
-            "price_per_sqft": 162,
-            "sqft": 1973,
-            "closed_sales": 515
+            "median_sale_price": 320168,
+            "price_per_sqft": 161.8,
+            "sqft": 1979,
+            "closed_sales": 517
           },
           "typical": {
             "label": "Typical",
             "min": 400000,
             "max": 699999,
-            "median_sale_price": 458809,
-            "price_per_sqft": 164,
-            "sqft": 2798,
-            "closed_sales": 199
+            "median_sale_price": 458396,
+            "price_per_sqft": 164.3,
+            "sqft": 2790,
+            "closed_sales": 200
           },
           "moveup": {
             "label": "Move-up",
@@ -7385,7 +7385,7 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 340316.1,
+        "sfr_median_price": 342782.8,
         "overall_isd_grade": 7,
         "academics_isd_grade": 7,
         "pct_households_with_children": 51,
@@ -7444,7 +7444,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -7481,27 +7481,27 @@
         "ws_link": "https://www.walkscore.com/score/Lewisville-TX/lat=33.0462/lng=-96.9942/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 401083.3,
-        "sfr_avg_price": 477636.3,
-        "sfr_median_price_per_sqft": 211.6,
+        "sfr_median_price": 401125,
+        "sfr_avg_price": 478208.2,
+        "sfr_median_price_per_sqft": 211.8,
         "sfr_pct_of_original_price": 97.3,
-        "sfr_days_on_market": 25.1,
+        "sfr_days_on_market": 25.2,
         "sfr_months_supply": 3.1,
-        "sfr_inventory": 196.3,
-        "sfr_closed_sales_12mo": 770,
+        "sfr_inventory": 196,
+        "sfr_closed_sales_12mo": 771,
         "market_condition": "balanced",
         "condo_median_price": 330232.2,
         "condo_closed_sales_12mo": 14,
         "condo_days_on_market": 66,
-        "condo_months_supply": 3.9,
+        "condo_months_supply": 4,
         "tiers": {
           "starter": {
             "label": "Starter",
             "min": 0,
             "max": 399999,
-            "median_sale_price": 332554,
+            "median_sale_price": 332971,
             "price_per_sqft": 208.7,
-            "sqft": 1593,
+            "sqft": 1595,
             "closed_sales": 374
           },
           "typical": {
@@ -7517,10 +7517,10 @@
             "label": "Move-up",
             "min": 700000,
             "max": 999999,
-            "median_sale_price": 801142,
+            "median_sale_price": 801225,
             "price_per_sqft": 224.3,
             "sqft": 3572,
-            "closed_sales": 74
+            "closed_sales": 75
           },
           "luxury": {
             "label": "Luxury",
@@ -7545,7 +7545,7 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 401083.3,
+        "sfr_median_price": 401125,
         "overall_isd_grade": 12,
         "academics_isd_grade": 12,
         "pct_households_with_children": 33.1,
@@ -7613,7 +7613,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -7650,13 +7650,13 @@
         "ws_link": "https://www.walkscore.com/score/Little-Elm-TX/lat=33.1629/lng=-96.9375/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 398138.8,
+        "sfr_median_price": 398289.7,
         "sfr_avg_price": 426965.5,
         "sfr_median_price_per_sqft": 175.3,
         "sfr_pct_of_original_price": 94,
         "sfr_days_on_market": 55.7,
         "sfr_months_supply": 5.1,
-        "sfr_inventory": 495.2,
+        "sfr_inventory": 496.3,
         "sfr_closed_sales_12mo": 1081,
         "market_condition": "balanced",
         "condo_median_price": null,
@@ -7722,7 +7722,7 @@
         ]
       },
       "quiz": {
-        "sfr_median_price": 398138.8,
+        "sfr_median_price": 398289.7,
         "overall_isd_grade": 8,
         "academics_isd_grade": 8,
         "pct_households_with_children": 51.4,
@@ -7790,7 +7790,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -7832,8 +7832,8 @@
         "sfr_median_price_per_sqft": 282.3,
         "sfr_pct_of_original_price": 94.3,
         "sfr_days_on_market": 60,
-        "sfr_months_supply": 5.2,
-        "sfr_inventory": 66.8,
+        "sfr_months_supply": 5.3,
+        "sfr_inventory": 67.3,
         "sfr_closed_sales_12mo": 140,
         "market_condition": "balanced",
         "condo_median_price": null,
@@ -7960,7 +7960,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -7997,14 +7997,14 @@
         "ws_link": "https://www.walkscore.com/score/Mansfield-TX/lat=32.5632/lng=-97.1411/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 480804.1,
-        "sfr_avg_price": 502764.8,
+        "sfr_median_price": 480308.3,
+        "sfr_avg_price": 502522.4,
         "sfr_median_price_per_sqft": 183.3,
         "sfr_pct_of_original_price": 95.7,
         "sfr_days_on_market": 42.3,
         "sfr_months_supply": 3.4,
-        "sfr_inventory": 324.7,
-        "sfr_closed_sales_12mo": 1073,
+        "sfr_inventory": 325.4,
+        "sfr_closed_sales_12mo": 1075,
         "market_condition": "balanced",
         "condo_median_price": 429789.5,
         "condo_closed_sales_12mo": 10,
@@ -8015,19 +8015,19 @@
             "label": "Starter",
             "min": 0,
             "max": 399999,
-            "median_sale_price": 335433,
-            "price_per_sqft": 178.8,
-            "sqft": 1876,
-            "closed_sales": 328
+            "median_sale_price": 335517,
+            "price_per_sqft": 179,
+            "sqft": 1874,
+            "closed_sales": 329
           },
           "typical": {
             "label": "Typical",
             "min": 400000,
             "max": 699999,
-            "median_sale_price": 516858,
+            "median_sale_price": 516649,
             "price_per_sqft": 182.8,
-            "sqft": 2827,
-            "closed_sales": 625
+            "sqft": 2826,
+            "closed_sales": 626
           },
           "moveup": {
             "label": "Move-up",
@@ -8061,7 +8061,7 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 480804.1,
+        "sfr_median_price": 480308.3,
         "overall_isd_grade": 12,
         "academics_isd_grade": 11,
         "pct_households_with_children": 44.5,
@@ -8129,7 +8129,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -8166,14 +8166,14 @@
         "ws_link": "https://www.walkscore.com/score/McKinney-TX/lat=33.1972/lng=-96.6397/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 502274.7,
-        "sfr_avg_price": 548544.1,
-        "sfr_median_price_per_sqft": 205.8,
+        "sfr_median_price": 502108,
+        "sfr_avg_price": 548257.9,
+        "sfr_median_price_per_sqft": 205.7,
         "sfr_pct_of_original_price": 95.2,
         "sfr_days_on_market": 41.8,
         "sfr_months_supply": 3.5,
-        "sfr_inventory": 1001.6,
-        "sfr_closed_sales_12mo": 3217,
+        "sfr_inventory": 1000.8,
+        "sfr_closed_sales_12mo": 3226,
         "market_condition": "balanced",
         "condo_median_price": 405083.3,
         "condo_closed_sales_12mo": 34,
@@ -8184,19 +8184,19 @@
             "label": "Starter",
             "min": 0,
             "max": 399999,
-            "median_sale_price": 349983,
+            "median_sale_price": 350117,
             "price_per_sqft": 192.7,
-            "sqft": 1816,
-            "closed_sales": 793
+            "sqft": 1817,
+            "closed_sales": 796
           },
           "typical": {
             "label": "Typical",
             "min": 400000,
             "max": 699999,
-            "median_sale_price": 525350,
+            "median_sale_price": 525486,
             "price_per_sqft": 202.6,
-            "sqft": 2593,
-            "closed_sales": 1912
+            "sqft": 2594,
+            "closed_sales": 1918
           },
           "moveup": {
             "label": "Move-up",
@@ -8257,7 +8257,7 @@
         ]
       },
       "quiz": {
-        "sfr_median_price": 502274.7,
+        "sfr_median_price": 502108,
         "overall_isd_grade": 12,
         "academics_isd_grade": 12,
         "pct_households_with_children": 42.8,
@@ -8325,7 +8325,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -8362,14 +8362,14 @@
         "ws_link": "https://www.walkscore.com/score/Melissa-TX/lat=33.2843/lng=-96.57/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 441622.3,
-        "sfr_avg_price": 471315.5,
+        "sfr_median_price": 441830.7,
+        "sfr_avg_price": 471540.1,
         "sfr_median_price_per_sqft": 181.3,
         "sfr_pct_of_original_price": 94.9,
         "sfr_days_on_market": 51.3,
         "sfr_months_supply": 5.1,
-        "sfr_inventory": 179.7,
-        "sfr_closed_sales_12mo": 421,
+        "sfr_inventory": 179.2,
+        "sfr_closed_sales_12mo": 422,
         "market_condition": "balanced",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -8389,10 +8389,10 @@
             "label": "Typical",
             "min": 400000,
             "max": 699999,
-            "median_sale_price": 477211,
+            "median_sale_price": 477732,
             "price_per_sqft": 177.8,
-            "sqft": 2684,
-            "closed_sales": 259
+            "sqft": 2687,
+            "closed_sales": 260
           },
           "moveup": {
             "label": "Move-up",
@@ -8417,7 +8417,7 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 441622.3,
+        "sfr_median_price": 441830.7,
         "overall_isd_grade": 12,
         "academics_isd_grade": 12,
         "pct_households_with_children": 58.4,
@@ -8485,7 +8485,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -8522,14 +8522,14 @@
         "ws_link": "https://www.walkscore.com/score/Mesquite-TX/lat=32.7668/lng=-96.5992/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 283216.7,
-        "sfr_avg_price": 296447,
+        "sfr_median_price": 283337.5,
+        "sfr_avg_price": 296344.5,
         "sfr_median_price_per_sqft": 161.5,
         "sfr_pct_of_original_price": 95.4,
-        "sfr_days_on_market": 41.6,
+        "sfr_days_on_market": 41.5,
         "sfr_months_supply": 4.5,
-        "sfr_inventory": 522.9,
-        "sfr_closed_sales_12mo": 1381,
+        "sfr_inventory": 524.1,
+        "sfr_closed_sales_12mo": 1383,
         "market_condition": "balanced",
         "condo_median_price": 130410.4,
         "condo_closed_sales_12mo": 1,
@@ -8540,10 +8540,10 @@
             "label": "Starter",
             "min": 0,
             "max": 399999,
-            "median_sale_price": 272196,
-            "price_per_sqft": 159.4,
+            "median_sale_price": 272029,
+            "price_per_sqft": 159.3,
             "sqft": 1708,
-            "closed_sales": 1216
+            "closed_sales": 1218
           },
           "typical": {
             "label": "Typical",
@@ -8578,7 +8578,7 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 283216.7,
+        "sfr_median_price": 283337.5,
         "overall_isd_grade": 9,
         "academics_isd_grade": 9,
         "pct_households_with_children": 38.7,
@@ -8646,7 +8646,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -8683,14 +8683,14 @@
         "ws_link": "https://www.walkscore.com/score/Midlothian-TX/lat=32.4824/lng=-97.0058/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 492542.8,
-        "sfr_avg_price": 525357.4,
+        "sfr_median_price": 492563.3,
+        "sfr_avg_price": 525399.3,
         "sfr_median_price_per_sqft": 191,
         "sfr_pct_of_original_price": 95.4,
-        "sfr_days_on_market": 66.8,
+        "sfr_days_on_market": 67,
         "sfr_months_supply": 4.4,
-        "sfr_inventory": 368.7,
-        "sfr_closed_sales_12mo": 961,
+        "sfr_inventory": 369.3,
+        "sfr_closed_sales_12mo": 963,
         "market_condition": "balanced",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -8701,10 +8701,10 @@
             "label": "Starter",
             "min": 0,
             "max": 399999,
-            "median_sale_price": 335489,
+            "median_sale_price": 335272,
             "price_per_sqft": 191.7,
-            "sqft": 1750,
-            "closed_sales": 200
+            "sqft": 1749,
+            "closed_sales": 201
           },
           "typical": {
             "label": "Typical",
@@ -8719,10 +8719,10 @@
             "label": "Move-up",
             "min": 700000,
             "max": 999999,
-            "median_sale_price": 768809,
-            "price_per_sqft": 236.1,
-            "sqft": 3256,
-            "closed_sales": 90
+            "median_sale_price": 767143,
+            "price_per_sqft": 236,
+            "sqft": 3251,
+            "closed_sales": 91
           },
           "luxury": {
             "label": "Luxury",
@@ -8747,7 +8747,7 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 492542.8,
+        "sfr_median_price": 492563.3,
         "overall_isd_grade": 11,
         "academics_isd_grade": 11,
         "pct_households_with_children": 48,
@@ -8815,7 +8815,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -8857,7 +8857,7 @@
         "sfr_median_price_per_sqft": 191.3,
         "sfr_pct_of_original_price": 96,
         "sfr_days_on_market": 41.3,
-        "sfr_months_supply": 4.3,
+        "sfr_months_supply": 4.2,
         "sfr_inventory": 55.3,
         "sfr_closed_sales_12mo": 166,
         "market_condition": "balanced",
@@ -8998,7 +8998,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -9035,14 +9035,14 @@
         "ws_link": "https://www.walkscore.com/score/North-Richland-Hills-TX/lat=32.8343/lng=-97.2289/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 386225,
-        "sfr_avg_price": 433099.3,
+        "sfr_median_price": 386641.7,
+        "sfr_avg_price": 433107,
         "sfr_median_price_per_sqft": 198.3,
         "sfr_pct_of_original_price": 98.1,
-        "sfr_days_on_market": 23.8,
+        "sfr_days_on_market": 23.9,
         "sfr_months_supply": 2.8,
-        "sfr_inventory": 171.4,
-        "sfr_closed_sales_12mo": 735,
+        "sfr_inventory": 171.6,
+        "sfr_closed_sales_12mo": 736,
         "market_condition": "seller",
         "condo_median_price": 274799.5,
         "condo_closed_sales_12mo": 1,
@@ -9062,10 +9062,10 @@
             "label": "Typical",
             "min": 400000,
             "max": 699999,
-            "median_sale_price": 490579,
+            "median_sale_price": 490163,
             "price_per_sqft": 209.3,
-            "sqft": 2344,
-            "closed_sales": 263
+            "sqft": 2342,
+            "closed_sales": 264
           },
           "moveup": {
             "label": "Move-up",
@@ -9112,7 +9112,7 @@
         ]
       },
       "quiz": {
-        "sfr_median_price": 386225,
+        "sfr_median_price": 386641.7,
         "overall_isd_grade": 10,
         "academics_isd_grade": 10,
         "pct_households_with_children": 30.8,
@@ -9180,7 +9180,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -9217,14 +9217,14 @@
         "ws_link": "https://www.walkscore.com/score/Northlake-TX/lat=33.1082/lng=-97.2772/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 581788.8,
-        "sfr_avg_price": 651966.3,
-        "sfr_median_price_per_sqft": 202.1,
+        "sfr_median_price": 581163.8,
+        "sfr_avg_price": 651584.3,
+        "sfr_median_price_per_sqft": 202.2,
         "sfr_pct_of_original_price": 93.6,
         "sfr_days_on_market": 61.8,
         "sfr_months_supply": 5.3,
-        "sfr_inventory": 179.6,
-        "sfr_closed_sales_12mo": 416,
+        "sfr_inventory": 179.9,
+        "sfr_closed_sales_12mo": 417,
         "market_condition": "balanced",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -9247,7 +9247,7 @@
             "median_sale_price": 539688,
             "price_per_sqft": 190.8,
             "sqft": 2829,
-            "closed_sales": 269
+            "closed_sales": 270
           },
           "moveup": {
             "label": "Move-up",
@@ -9298,7 +9298,7 @@
         ]
       },
       "quiz": {
-        "sfr_median_price": 581788.8,
+        "sfr_median_price": 581163.8,
         "overall_isd_grade": 11,
         "academics_isd_grade": 11,
         "pct_households_with_children": 51.2,
@@ -9343,7 +9343,7 @@
       },
       "scores": {
         "family_score": 79,
-        "value_score": 83,
+        "value_score": 84,
         "sub_scores": {
           "education": 89,
           "safety": 83,
@@ -9366,7 +9366,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -9404,13 +9404,13 @@
       },
       "market": {
         "sfr_median_price": 528335.4,
-        "sfr_avg_price": 614617,
+        "sfr_avg_price": 614752.8,
         "sfr_median_price_per_sqft": 217.3,
         "sfr_pct_of_original_price": 96.7,
         "sfr_days_on_market": 28.6,
         "sfr_months_supply": 3.1,
-        "sfr_inventory": 571.8,
-        "sfr_closed_sales_12mo": 2215,
+        "sfr_inventory": 572.8,
+        "sfr_closed_sales_12mo": 2220,
         "market_condition": "balanced",
         "condo_median_price": 307964.6,
         "condo_closed_sales_12mo": 72,
@@ -9424,7 +9424,7 @@
             "median_sale_price": 346863,
             "price_per_sqft": 201.3,
             "sqft": 1723,
-            "closed_sales": 470
+            "closed_sales": 469
           },
           "typical": {
             "label": "Typical",
@@ -9433,16 +9433,16 @@
             "median_sale_price": 523413,
             "price_per_sqft": 214.8,
             "sqft": 2437,
-            "closed_sales": 1225
+            "closed_sales": 1228
           },
           "moveup": {
             "label": "Move-up",
             "min": 700000,
             "max": 999999,
-            "median_sale_price": 786512,
-            "price_per_sqft": 225.9,
-            "sqft": 3482,
-            "closed_sales": 319
+            "median_sale_price": 786804,
+            "price_per_sqft": 226.2,
+            "sqft": 3478,
+            "closed_sales": 321
           },
           "luxury": {
             "label": "Luxury",
@@ -9547,7 +9547,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -9584,14 +9584,14 @@
         "ws_link": "https://www.walkscore.com/score/Princeton-TX/lat=33.1818/lng=-96.4997/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 298428.6,
-        "sfr_avg_price": 304316.3,
+        "sfr_median_price": 298293.2,
+        "sfr_avg_price": 304132.2,
         "sfr_median_price_per_sqft": 153.8,
-        "sfr_pct_of_original_price": 94.5,
-        "sfr_days_on_market": 38.2,
-        "sfr_months_supply": 3.5,
-        "sfr_inventory": 655.6,
-        "sfr_closed_sales_12mo": 2361,
+        "sfr_pct_of_original_price": 94.6,
+        "sfr_days_on_market": 38.3,
+        "sfr_months_supply": 3.6,
+        "sfr_inventory": 657.3,
+        "sfr_closed_sales_12mo": 2372,
         "market_condition": "balanced",
         "condo_median_price": 288666.7,
         "condo_closed_sales_12mo": 0,
@@ -9602,10 +9602,10 @@
             "label": "Starter",
             "min": 0,
             "max": 399999,
-            "median_sale_price": 287922,
+            "median_sale_price": 287814,
             "price_per_sqft": 155,
-            "sqft": 1858,
-            "closed_sales": 2127
+            "sqft": 1857,
+            "closed_sales": 2138
           },
           "typical": {
             "label": "Typical",
@@ -9630,7 +9630,7 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 298428.6,
+        "sfr_median_price": 298293.2,
         "overall_isd_grade": 10,
         "academics_isd_grade": 10,
         "pct_households_with_children": 49.7,
@@ -9698,7 +9698,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -9735,14 +9735,14 @@
         "ws_link": "https://www.walkscore.com/score/Prosper-TX/lat=33.2362/lng=-96.8012/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 842475,
-        "sfr_avg_price": 930624.1,
+        "sfr_median_price": 841975,
+        "sfr_avg_price": 929834.3,
         "sfr_median_price_per_sqft": 235.8,
         "sfr_pct_of_original_price": 93.1,
-        "sfr_days_on_market": 62.4,
+        "sfr_days_on_market": 62.2,
         "sfr_months_supply": 6,
-        "sfr_inventory": 382.1,
-        "sfr_closed_sales_12mo": 741,
+        "sfr_inventory": 382.4,
+        "sfr_closed_sales_12mo": 742,
         "market_condition": "balanced",
         "condo_median_price": 552666.7,
         "condo_closed_sales_12mo": 1,
@@ -9753,10 +9753,10 @@
             "label": "Starter",
             "min": 0,
             "max": 399999,
-            "median_sale_price": 334746,
-            "price_per_sqft": 186.7,
-            "sqft": 1793,
-            "closed_sales": 25
+            "median_sale_price": 334954,
+            "price_per_sqft": 185.9,
+            "sqft": 1802,
+            "closed_sales": 26
           },
           "typical": {
             "label": "Typical",
@@ -9811,7 +9811,7 @@
         ]
       },
       "quiz": {
-        "sfr_median_price": 842475,
+        "sfr_median_price": 841975,
         "overall_isd_grade": 12,
         "academics_isd_grade": 12,
         "pct_households_with_children": 57.7,
@@ -9879,7 +9879,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -9922,7 +9922,7 @@
         "sfr_pct_of_original_price": 96.8,
         "sfr_days_on_market": 26.4,
         "sfr_months_supply": 2.9,
-        "sfr_inventory": 228.8,
+        "sfr_inventory": 228.4,
         "sfr_closed_sales_12mo": 919,
         "market_condition": "seller",
         "condo_median_price": 214464.8,
@@ -10048,7 +10048,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -10091,7 +10091,7 @@
         "sfr_pct_of_original_price": 96.7,
         "sfr_days_on_market": 44.3,
         "sfr_months_supply": 3.7,
-        "sfr_inventory": 39.2,
+        "sfr_inventory": 38.7,
         "sfr_closed_sales_12mo": 129,
         "market_condition": "balanced",
         "condo_median_price": null,
@@ -10215,7 +10215,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -10252,28 +10252,28 @@
         "ws_link": "https://www.walkscore.com/score/Rockwall-TX/lat=32.929/lng=-96.4597/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 535747.9,
-        "sfr_avg_price": 566457.1,
-        "sfr_median_price_per_sqft": 189.5,
-        "sfr_pct_of_original_price": 93.8,
+        "sfr_median_price": 536080.4,
+        "sfr_avg_price": 566511.5,
+        "sfr_median_price_per_sqft": 189.6,
+        "sfr_pct_of_original_price": 93.9,
         "sfr_days_on_market": 60,
         "sfr_months_supply": 5.5,
-        "sfr_inventory": 403.1,
-        "sfr_closed_sales_12mo": 914,
+        "sfr_inventory": 404.3,
+        "sfr_closed_sales_12mo": 917,
         "market_condition": "balanced",
         "condo_median_price": 252241.7,
         "condo_closed_sales_12mo": 24,
         "condo_days_on_market": 74.5,
-        "condo_months_supply": 11.6,
+        "condo_months_supply": 11.4,
         "tiers": {
           "starter": {
             "label": "Starter",
             "min": 0,
             "max": 399999,
-            "median_sale_price": 333528,
-            "price_per_sqft": 172.7,
-            "sqft": 1931,
-            "closed_sales": 244
+            "median_sale_price": 333574,
+            "price_per_sqft": 172.8,
+            "sqft": 1930,
+            "closed_sales": 245
           },
           "typical": {
             "label": "Typical",
@@ -10288,10 +10288,10 @@
             "label": "Move-up",
             "min": 700000,
             "max": 999999,
-            "median_sale_price": 791386,
+            "median_sale_price": 790052,
             "price_per_sqft": 209.8,
-            "sqft": 3772,
-            "closed_sales": 157
+            "sqft": 3766,
+            "closed_sales": 159
           },
           "luxury": {
             "label": "Luxury",
@@ -10316,7 +10316,7 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 535747.9,
+        "sfr_median_price": 536080.4,
         "overall_isd_grade": 12,
         "academics_isd_grade": 12,
         "pct_households_with_children": 40,
@@ -10384,7 +10384,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -10427,7 +10427,7 @@
         "sfr_pct_of_original_price": 95.8,
         "sfr_days_on_market": 43.1,
         "sfr_months_supply": 4.9,
-        "sfr_inventory": 309.4,
+        "sfr_inventory": 310.6,
         "sfr_closed_sales_12mo": 757,
         "market_condition": "balanced",
         "condo_median_price": 318750,
@@ -10556,7 +10556,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -10593,14 +10593,14 @@
         "ws_link": "https://www.walkscore.com/score/Royse-City-TX/lat=32.9754/lng=-96.3322/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 328346.3,
-        "sfr_avg_price": 366874.6,
-        "sfr_median_price_per_sqft": 155,
+        "sfr_median_price": 328179.7,
+        "sfr_avg_price": 366738.2,
+        "sfr_median_price_per_sqft": 154.9,
         "sfr_pct_of_original_price": 93.7,
         "sfr_days_on_market": 72.6,
         "sfr_months_supply": 6.6,
-        "sfr_inventory": 468.3,
-        "sfr_closed_sales_12mo": 866,
+        "sfr_inventory": 468.6,
+        "sfr_closed_sales_12mo": 867,
         "market_condition": "buyer",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -10611,10 +10611,10 @@
             "label": "Starter",
             "min": 0,
             "max": 399999,
-            "median_sale_price": 299261,
-            "price_per_sqft": 150.2,
-            "sqft": 1992,
-            "closed_sales": 645
+            "median_sale_price": 299178,
+            "price_per_sqft": 150.1,
+            "sqft": 1993,
+            "closed_sales": 646
           },
           "typical": {
             "label": "Typical",
@@ -10648,7 +10648,7 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 328346.3,
+        "sfr_median_price": 328179.7,
         "overall_isd_grade": 10,
         "academics_isd_grade": 10,
         "pct_households_with_children": 41.4,
@@ -10716,7 +10716,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -10759,7 +10759,7 @@
         "sfr_pct_of_original_price": 96.1,
         "sfr_days_on_market": 38.3,
         "sfr_months_supply": 4.3,
-        "sfr_inventory": 90.9,
+        "sfr_inventory": 90.8,
         "sfr_closed_sales_12mo": 261,
         "market_condition": "balanced",
         "condo_median_price": null,
@@ -10898,7 +10898,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -10941,7 +10941,7 @@
         "sfr_pct_of_original_price": 97.2,
         "sfr_days_on_market": 25.9,
         "sfr_months_supply": 3,
-        "sfr_inventory": 63.4,
+        "sfr_inventory": 63.3,
         "sfr_closed_sales_12mo": 252,
         "market_condition": "balanced",
         "condo_median_price": null,
@@ -11059,7 +11059,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -11219,7 +11219,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -11256,14 +11256,14 @@
         "ws_link": "https://www.walkscore.com/score/The-Colony-TX/lat=33.0918/lng=-96.8883/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 435103.3,
-        "sfr_avg_price": 531413.4,
-        "sfr_median_price_per_sqft": 216.3,
-        "sfr_pct_of_original_price": 96.3,
+        "sfr_median_price": 436770,
+        "sfr_avg_price": 530967.6,
+        "sfr_median_price_per_sqft": 216.5,
+        "sfr_pct_of_original_price": 96.2,
         "sfr_days_on_market": 34.3,
         "sfr_months_supply": 3.2,
-        "sfr_inventory": 130.8,
-        "sfr_closed_sales_12mo": 483,
+        "sfr_inventory": 130.9,
+        "sfr_closed_sales_12mo": 484,
         "market_condition": "balanced",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -11274,10 +11274,10 @@
             "label": "Starter",
             "min": 0,
             "max": 399999,
-            "median_sale_price": 327146,
+            "median_sale_price": 325938,
             "price_per_sqft": 203.8,
-            "sqft": 1605,
-            "closed_sales": 210
+            "sqft": 1599,
+            "closed_sales": 211
           },
           "typical": {
             "label": "Typical",
@@ -11332,7 +11332,7 @@
         ]
       },
       "quiz": {
-        "sfr_median_price": 435103.3,
+        "sfr_median_price": 436770,
         "overall_isd_grade": 12,
         "academics_isd_grade": 12,
         "pct_households_with_children": 29.8,
@@ -11400,7 +11400,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -11443,7 +11443,7 @@
         "sfr_pct_of_original_price": 97.3,
         "sfr_days_on_market": 20.3,
         "sfr_months_supply": 2.2,
-        "sfr_inventory": 39.1,
+        "sfr_inventory": 39.3,
         "sfr_closed_sales_12mo": 201,
         "market_condition": "seller",
         "condo_median_price": 650000,
@@ -11577,7 +11577,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -11614,18 +11614,18 @@
         "ws_link": "https://www.walkscore.com/score/University-Park-TX/lat=32.851/lng=-96.7952/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 2990350,
-        "sfr_avg_price": 3587350.3,
-        "sfr_median_price_per_sqft": 717,
-        "sfr_pct_of_original_price": 96,
-        "sfr_days_on_market": 30.8,
+        "sfr_median_price": 2932058.3,
+        "sfr_avg_price": 3573956.4,
+        "sfr_median_price_per_sqft": 710,
+        "sfr_pct_of_original_price": 96.1,
+        "sfr_days_on_market": 30.6,
         "sfr_months_supply": 3.1,
-        "sfr_inventory": 43.8,
-        "sfr_closed_sales_12mo": 143,
+        "sfr_inventory": 43.6,
+        "sfr_closed_sales_12mo": 144,
         "market_condition": "balanced",
-        "condo_median_price": 735468.8,
-        "condo_closed_sales_12mo": 21,
-        "condo_days_on_market": 25.6,
+        "condo_median_price": 745279.3,
+        "condo_closed_sales_12mo": 22,
+        "condo_days_on_market": 28.2,
         "condo_months_supply": 4,
         "tiers": {
           "typical": {
@@ -11652,10 +11652,10 @@
             "label": "Luxury",
             "min": 1000000,
             "max": null,
-            "median_sale_price": 2998683,
-            "price_per_sqft": 719.7,
-            "sqft": 4167,
-            "closed_sales": 142
+            "median_sale_price": 2940392,
+            "price_per_sqft": 712.7,
+            "sqft": 4126,
+            "closed_sales": 143
           }
         }
       },
@@ -11671,7 +11671,7 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 2990350,
+        "sfr_median_price": 2932058.3,
         "overall_isd_grade": 13,
         "academics_isd_grade": 13,
         "pct_households_with_children": 49.4,
@@ -11739,7 +11739,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -11777,13 +11777,13 @@
       },
       "market": {
         "sfr_median_price": 423176,
-        "sfr_avg_price": 468517.8,
+        "sfr_avg_price": 468461.6,
         "sfr_median_price_per_sqft": 183.7,
         "sfr_pct_of_original_price": 96.7,
         "sfr_days_on_market": 46.5,
         "sfr_months_supply": 4.7,
-        "sfr_inventory": 438.1,
-        "sfr_closed_sales_12mo": 1197,
+        "sfr_inventory": 437.8,
+        "sfr_closed_sales_12mo": 1199,
         "market_condition": "balanced",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -11794,19 +11794,19 @@
             "label": "Starter",
             "min": 0,
             "max": 399999,
-            "median_sale_price": 326172,
-            "price_per_sqft": 174.4,
+            "median_sale_price": 326359,
+            "price_per_sqft": 174.5,
             "sqft": 1870,
-            "closed_sales": 528
+            "closed_sales": 529
           },
           "typical": {
             "label": "Typical",
             "min": 400000,
             "max": 699999,
-            "median_sale_price": 499097,
-            "price_per_sqft": 187.1,
-            "sqft": 2668,
-            "closed_sales": 575
+            "median_sale_price": 499306,
+            "price_per_sqft": 187,
+            "sqft": 2670,
+            "closed_sales": 576
           },
           "moveup": {
             "label": "Move-up",
@@ -11908,7 +11908,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -12077,7 +12077,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "estimate"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     },
@@ -12120,7 +12120,7 @@
         "sfr_pct_of_original_price": 96,
         "sfr_days_on_market": 44.1,
         "sfr_months_supply": 4.4,
-        "sfr_inventory": 258.4,
+        "sfr_inventory": 257.9,
         "sfr_closed_sales_12mo": 710,
         "market_condition": "balanced",
         "condo_median_price": 269500,
@@ -12247,7 +12247,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-10-09T20:18:13.332Z",
+        "computed_date": "2026-10-25T14:19:50.951Z",
         "data_completeness": "full"
       }
     }
