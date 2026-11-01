@@ -12,7 +12,7 @@
     <copyright>Copyright 2026 Kristen Carpentier / Social Agent Group</copyright>
     <managingEditor>Kristen@whymovetodallas.com (Kristen Carpentier)</managingEditor>
     <webMaster>Kristen@whymovetodallas.com (Kristen Carpentier)</webMaster>
-    <lastBuildDate>Sat, 24 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2026 00:00:00 +0000</lastBuildDate>
     <ttl>1440</ttl>
     <atom:link href="https://whymovetodallas.com/feed.xml" rel="self" type="application/rss+xml" />
     <image>
@@ -20,6 +20,17 @@
       <title>Why Move to Dallas</title>
       <link>https://whymovetodallas.com</link>
     </image>
+
+  <item>
+    <title><![CDATA[Buying a Home in McKinney? Check Maps]]></title>
+    <link>https://whymovetodallas.com/blog/mckinney-homes-freeway-behind-them</link>
+    <guid isPermaLink="true">https://whymovetodallas.com/blog/mckinney-homes-freeway-behind-them</guid>
+    <pubDate>Sat, 31 Oct 2026 00:00:00 +0000</pubDate>
+    <description><![CDATA[Buying a home in McKinney? Learn which official road maps to check, what project status means, and how to screen a specific lot before your deadlines.]]></description>
+      <category>Market and Buying</category>
+      <enclosure url="https://whymovetodallas.com/images/blog/mckinney-homes-freeway-behind-them-og.png" type="image/png" length="0" />
+      <media:content url="https://whymovetodallas.com/images/blog/mckinney-homes-freeway-behind-them-og.png" medium="image" />
+  </item>
 
   <item>
     <title><![CDATA[Frisco ISD vs Allen ISD]]></title>
@@ -558,17 +569,6 @@
       <category>City Comparisons</category>
       <enclosure url="https://i.ytimg.com/vi/C45fqaAP-w0/maxresdefault.jpg" type="image/jpeg" length="0" />
       <media:content url="https://i.ytimg.com/vi/C45fqaAP-w0/maxresdefault.jpg" medium="image" />
-  </item>
-
-  <item>
-    <title><![CDATA[D.R. Horton Homes in Dallas-Fort Worth: Complete Guide]]></title>
-    <link>https://whymovetodallas.com/blog/dallas-biggest-home-builders-dr-horton</link>
-    <guid isPermaLink="true">https://whymovetodallas.com/blog/dallas-biggest-home-builders-dr-horton</guid>
-    <pubDate>Fri, 13 Dec 2024 00:00:00 +0000</pubDate>
-    <description><![CDATA[Discover affordable new construction homes in Dallas-Fort Worth with D.R. Horton. As the largest U.S. homebuilder, they offer 99 communities featuring ener]]></description>
-      <category>Suburb Guide</category>
-      <enclosure url="https://whymovetodallas.com/images/blog/788e858d-eab4-43c5-9790-57bffa0e0996-BIGGEST-BUILDERS-IN-DALLAS.jpg" type="image/jpeg" length="0" />
-      <media:content url="https://whymovetodallas.com/images/blog/788e858d-eab4-43c5-9790-57bffa0e0996-BIGGEST-BUILDERS-IN-DALLAS.jpg" medium="image" />
   </item>
 
   </channel>
