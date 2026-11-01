@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-wmtd-contract-version="1" data-wmtd-page-family="suburb" data-wmtd-entity-id="place:lucas-tx" data-wmtd-build-id="sha256:8831e6fbf3be2a08c1a4d82930520aacfe96e803af8e87d043b807f8589e7fa0">
+<html lang="en" data-wmtd-contract-version="1" data-wmtd-page-family="suburb" data-wmtd-entity-id="place:lucas-tx" data-wmtd-build-id="sha256:4114225073a32c03f958cd98661a6195cc06cbcbff99c4247ed6f4b266948b03">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -300,6 +300,7 @@ gtag('consent','default',{
        - Hamburger menu on mobile (< 768px)
      ═══════════════════════════════════════════════════════════════ -->
 
+<a class="kc-skip-link" href="#main-content">Skip to main content</a>
 <header id="kc-site-header" role="banner">
 
   <!-- Top bar: social icons -->
@@ -428,13 +429,30 @@ gtag('consent','default',{
 
   // Hamburger toggle
   if (burger && menu) {
+    function closeMenu() {
+      burger.setAttribute('aria-expanded', 'false');
+      burger.setAttribute('aria-label', 'Open menu');
+      menu.hidden = true;
+      hdr.classList.remove('kc-menu-open');
+    }
+
     burger.addEventListener('click', function () {
       var isOpen = burger.getAttribute('aria-expanded') === 'true';
-      burger.setAttribute('aria-expanded', String(!isOpen));
-      menu.hidden = isOpen;
-      hdr.classList.toggle('kc-menu-open', !isOpen);
-      // Force solid background when menu is open
-      if (!isOpen) hdr.classList.add('kc-scrolled');
+      if (isOpen) {
+        closeMenu();
+      } else {
+        burger.setAttribute('aria-expanded', 'true');
+        burger.setAttribute('aria-label', 'Close menu');
+        menu.hidden = false;
+        hdr.classList.add('kc-menu-open', 'kc-scrolled');
+      }
+    });
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && burger.getAttribute('aria-expanded') === 'true') {
+        closeMenu();
+        burger.focus();
+      }
     });
   }
 
@@ -447,7 +465,7 @@ gtag('consent','default',{
 }());
 </script>
 
-<main class="kc-page-body">
+<main id="main-content" class="kc-page-body">
 <!-- ============================================================
   WHY MOVE TO DALLAS — Lucas, Texas Suburb Page (Body Content)
   Canonical source: pages/suburbs/frisco-texas.html
@@ -472,13 +490,16 @@ gtag('consent','default',{
 
 <!-- ── SECTION 2: HERO ───────────────────────────────────────────────────── -->
 <section class="kc-hero">
-  <img src="/images/lucas-hero.webp"
+  <picture class="kc-hero-picture">
+  <source media="(max-width: 768px)" srcset="/images/lucas-hero-mobile.webp">
+<img src="/images/lucas-hero.webp"
        alt="Lucas, Texas"
        class="kc-hero-img"
        width="1920" height="700"
        fetchpriority="high"
        loading="eager"
        decoding="async">
+</picture>
   <div class="kc-hero-inner">
     <p class="kc-hero-location">Collin County · Northeast DFW · Lovejoy ISD</p>
     <h1>Living in Lucas, Texas</h1>
@@ -654,6 +675,7 @@ gtag('consent','default',{
       data-src="https://www.openstreetmap.org/export/embed.html?bbox=-96.6742,33.0079,-96.4742,33.2079&layer=mapnik&marker=33.1079,-96.5742"
       width="100%" height="220" style="border:0;display:block;" loading="lazy" allowfullscreen=""
       title="Lucas, Texas, location map" data-wmtd-frame="location.map" data-wmtd-kind="map"></iframe>
+<noscript><p class="kc-map-fallback"><a href="https://www.openstreetmap.org/export/embed.html?bbox=-96.6742,33.0079,-96.4742,33.2079&layer=mapnik&marker=33.1079,-96.5742">Open Lucas, Texas, location map on OpenStreetMap</a></p></noscript>
   </div>
 
   <p>Lucas sits in southern Collin County, roughly 30 miles northeast of downtown Dallas, tucked between Allen to the south and McKinney to the north. It's accessed primarily via US-75 (Central Expressway) and State Highway 78, with SH-5 running through town. Lucas is not a commuter suburb by design, it was originally ranch and farmland, and the city has deliberately kept it that way. Lot minimums are two acres in most areas, commercial development is intentionally scarce, and the pace of life reflects that. You come to Lucas because you want space, you want Lovejoy ISD, and you're willing to trade urban convenience for a lifestyle you can't get anywhere else in DFW at this price point.</p>
@@ -1319,7 +1341,7 @@ gtag('consent','default',{
     </div>
     <div class="kc-card kc-card--navy" style="text-align:center;">
       <h4 style="margin-bottom:0.5rem;">Months Supply</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="lucas" data-field="sfr_months_supply">5.2 mo.</span></p>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="lucas" data-field="sfr_months_supply">5.3 mo.</span></p>
       <p style="font-size:0.78rem;color:#666;margin:0;"><span class="kc-blog-live" data-suburb="lucas" data-field="market_condition">Balanced</span> market · 12-month</p>
     </div>
     <div class="kc-card kc-card--navy" style="text-align:center;">
@@ -2133,12 +2155,19 @@ document.addEventListener('DOMContentLoaded', kcLoadSuburbData);
 (function(){
   var maps=document.querySelectorAll('iframe.kc-lazy-map[data-src]');
   if(!maps.length)return;
+  function load(f){
+    f.src=f.getAttribute('data-src');
+    f.removeAttribute('data-src');
+  }
+  if(!('IntersectionObserver' in window)){
+    maps.forEach(load);
+    return;
+  }
   var io=new IntersectionObserver(function(entries,obs){
     entries.forEach(function(e){
       if(!e.isIntersecting)return;
       var f=e.target;
-      f.src=f.getAttribute('data-src');
-      f.removeAttribute('data-src');
+      load(f);
       obs.unobserve(f);
     });
   },{rootMargin:'200px'});

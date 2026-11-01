@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-wmtd-contract-version="1" data-wmtd-page-family="blog" data-wmtd-entity-id="article:moving-to-colleyville-texas" data-wmtd-build-id="sha256:8831e6fbf3be2a08c1a4d82930520aacfe96e803af8e87d043b807f8589e7fa0">
+<html lang="en" data-wmtd-contract-version="1" data-wmtd-page-family="blog" data-wmtd-entity-id="article:moving-to-colleyville-texas" data-wmtd-build-id="sha256:4114225073a32c03f958cd98661a6195cc06cbcbff99c4247ed6f4b266948b03">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -199,6 +199,9 @@ gtag('consent','default',{
 </script>
 <link rel="stylesheet" href="/css/global.css">
 <link rel="stylesheet" href="/css/suburb.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="alternate" type="application/rss+xml" title="Why Move to Dallas | DFW Family Relocation" href="/feed.xml">
 </head>
 <body>
@@ -212,6 +215,7 @@ gtag('consent','default',{
        - Hamburger menu on mobile (< 768px)
      ═══════════════════════════════════════════════════════════════ -->
 
+<a class="kc-skip-link" href="#main-content">Skip to main content</a>
 <header id="kc-site-header" role="banner">
 
   <!-- Top bar: social icons -->
@@ -340,13 +344,30 @@ gtag('consent','default',{
 
   // Hamburger toggle
   if (burger && menu) {
+    function closeMenu() {
+      burger.setAttribute('aria-expanded', 'false');
+      burger.setAttribute('aria-label', 'Open menu');
+      menu.hidden = true;
+      hdr.classList.remove('kc-menu-open');
+    }
+
     burger.addEventListener('click', function () {
       var isOpen = burger.getAttribute('aria-expanded') === 'true';
-      burger.setAttribute('aria-expanded', String(!isOpen));
-      menu.hidden = isOpen;
-      hdr.classList.toggle('kc-menu-open', !isOpen);
-      // Force solid background when menu is open
-      if (!isOpen) hdr.classList.add('kc-scrolled');
+      if (isOpen) {
+        closeMenu();
+      } else {
+        burger.setAttribute('aria-expanded', 'true');
+        burger.setAttribute('aria-label', 'Close menu');
+        menu.hidden = false;
+        hdr.classList.add('kc-menu-open', 'kc-scrolled');
+      }
+    });
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && burger.getAttribute('aria-expanded') === 'true') {
+        closeMenu();
+        burger.focus();
+      }
     });
   }
 
@@ -370,6 +391,7 @@ gtag('consent','default',{
   </div>
 </header>
 
+<span id="main-content" tabindex="-1"></span>
 <main class="kc-body"><article data-wmtd-frame="article.body" data-wmtd-kind="section">
 
   <p>Two houses. Same street in Colleyville, Texas. Roughly the same price. One of them sits in Grapevine-Colleyville ISD and the other one does not, and that single invisible line decides which school your kids report to in August and what your property tax bill looks like every year you own the place.</p>
@@ -603,7 +625,7 @@ gtag('consent','default',{
       <thead><tr><th scope="col">Band</th><th scope="col">Median sale</th><th scope="col">Typical size</th><th scope="col">Price per sq ft</th><th scope="col">Share of sales</th></tr></thead>
       <tbody>
         <tr><th scope="row">Typical · $400K to $700K</th><td><span class="kc-blog-live" data-suburb="colleyville" data-tier="typical" data-field="tier_price">$602K</span></td><td><span class="kc-blog-live" data-suburb="colleyville" data-tier="typical" data-field="tier_sqft">2,462 sq ft</span></td><td><span class="kc-blog-live" data-suburb="colleyville" data-tier="typical" data-field="tier_ppsf">$245/sq ft</span></td><td>14% of sales</td></tr>
-        <tr><th scope="row">Move-up · $700K to $1M</th><td><span class="kc-blog-live" data-suburb="colleyville" data-tier="moveup" data-field="tier_price">$847K</span></td><td><span class="kc-blog-live" data-suburb="colleyville" data-tier="moveup" data-field="tier_sqft">3,296 sq ft</span></td><td><span class="kc-blog-live" data-suburb="colleyville" data-tier="moveup" data-field="tier_ppsf">$257/sq ft</span></td><td>30% of sales</td></tr>
+        <tr><th scope="row">Move-up · $700K to $1M</th><td><span class="kc-blog-live" data-suburb="colleyville" data-tier="moveup" data-field="tier_price">$848K</span></td><td><span class="kc-blog-live" data-suburb="colleyville" data-tier="moveup" data-field="tier_sqft">3,304 sq ft</span></td><td><span class="kc-blog-live" data-suburb="colleyville" data-tier="moveup" data-field="tier_ppsf">$257/sq ft</span></td><td>30% of sales</td></tr>
         <tr><th scope="row">Luxury · $1M and up</th><td><span class="kc-blog-live" data-suburb="colleyville" data-tier="luxury" data-field="tier_price">$1.4M</span></td><td><span class="kc-blog-live" data-suburb="colleyville" data-tier="luxury" data-field="tier_sqft">4,619 sq ft</span></td><td><span class="kc-blog-live" data-suburb="colleyville" data-tier="luxury" data-field="tier_ppsf">$301/sq ft</span></td><td>55% of sales, where most homes sell</td></tr>
       </tbody>
     </table>

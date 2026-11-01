@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-wmtd-contract-version="1" data-wmtd-page-family="suburb" data-wmtd-entity-id="place:roanoke-tx" data-wmtd-build-id="sha256:8831e6fbf3be2a08c1a4d82930520aacfe96e803af8e87d043b807f8589e7fa0">
+<html lang="en" data-wmtd-contract-version="1" data-wmtd-page-family="suburb" data-wmtd-entity-id="place:roanoke-tx" data-wmtd-build-id="sha256:4114225073a32c03f958cd98661a6195cc06cbcbff99c4247ed6f4b266948b03">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -350,6 +350,7 @@ gtag('consent','default',{
        - Hamburger menu on mobile (< 768px)
      ═══════════════════════════════════════════════════════════════ -->
 
+<a class="kc-skip-link" href="#main-content">Skip to main content</a>
 <header id="kc-site-header" role="banner">
 
   <!-- Top bar: social icons -->
@@ -478,13 +479,30 @@ gtag('consent','default',{
 
   // Hamburger toggle
   if (burger && menu) {
+    function closeMenu() {
+      burger.setAttribute('aria-expanded', 'false');
+      burger.setAttribute('aria-label', 'Open menu');
+      menu.hidden = true;
+      hdr.classList.remove('kc-menu-open');
+    }
+
     burger.addEventListener('click', function () {
       var isOpen = burger.getAttribute('aria-expanded') === 'true';
-      burger.setAttribute('aria-expanded', String(!isOpen));
-      menu.hidden = isOpen;
-      hdr.classList.toggle('kc-menu-open', !isOpen);
-      // Force solid background when menu is open
-      if (!isOpen) hdr.classList.add('kc-scrolled');
+      if (isOpen) {
+        closeMenu();
+      } else {
+        burger.setAttribute('aria-expanded', 'true');
+        burger.setAttribute('aria-label', 'Close menu');
+        menu.hidden = false;
+        hdr.classList.add('kc-menu-open', 'kc-scrolled');
+      }
+    });
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && burger.getAttribute('aria-expanded') === 'true') {
+        closeMenu();
+        burger.focus();
+      }
     });
   }
 
@@ -497,7 +515,7 @@ gtag('consent','default',{
 }());
 </script>
 
-<main class="kc-page-body">
+<main id="main-content" class="kc-page-body">
 <!-- ============================================================
   WHY MOVE TO DALLAS — Suburb Page: Roanoke, Texas
   Built: May 2026 · From template: pages/suburb-template.html
@@ -521,13 +539,16 @@ gtag('consent','default',{
 
 <!-- ── HERO ──────────────────────────────────────────────────────────────── -->
 <section class="kc-hero">
-  <img src="/images/roanoke-hero.webp"
+  <picture class="kc-hero-picture">
+  <source media="(max-width: 768px)" srcset="/images/roanoke-hero-mobile.webp">
+<img src="/images/roanoke-hero.webp"
        alt="Roanoke, Texas"
        class="kc-hero-img"
        width="1920" height="700"
        fetchpriority="high"
        loading="eager"
        decoding="async">
+</picture>
   <div class="kc-hero-inner">
     <p class="kc-hero-location">Denton County · Northwest DFW · Alliance Corridor</p>
     <h1>Living in Roanoke, Texas</h1>
@@ -737,6 +758,7 @@ gtag('consent','default',{
       loading="lazy"
       allowfullscreen=""
       title="Roanoke, Texas, location map" data-wmtd-frame="location.map" data-wmtd-kind="map"></iframe>
+<noscript><p class="kc-map-fallback"><a href="https://www.openstreetmap.org/export/embed.html?bbox=-97.3272,32.9032,-97.1272,33.1032&layer=mapnik&marker=33.0032,-97.2272">Open Roanoke, Texas, location map on OpenStreetMap</a></p></noscript>
   </div>
 
   <p>Roanoke sits in the northwestern corner of the DFW metroplex, roughly 25 miles from downtown Fort Worth and 35 miles from downtown Dallas. It straddles Denton and Tarrant counties, most of the city falls in Denton County, and is positioned directly along Highway 114, the corridor that connects DFW Airport to the east and the Alliance employment development to the north via Hwy 377. That geographic position is a big part of why so many families end up here: you're close to everything in the northwest quadrant without living in a high-density suburb. The city proper has about 10,000 residents, which means you actually know your neighbors and the Oak Street downtown feels like a neighborhood gathering place rather than a tourist corridor.</p>
@@ -2140,12 +2162,19 @@ document.querySelectorAll('.kc-jumpnav-list a').forEach(function(a) {
 (function(){
   var maps=document.querySelectorAll('iframe.kc-lazy-map[data-src]');
   if(!maps.length)return;
+  function load(f){
+    f.src=f.getAttribute('data-src');
+    f.removeAttribute('data-src');
+  }
+  if(!('IntersectionObserver' in window)){
+    maps.forEach(load);
+    return;
+  }
   var io=new IntersectionObserver(function(entries,obs){
     entries.forEach(function(e){
       if(!e.isIntersecting)return;
       var f=e.target;
-      f.src=f.getAttribute('data-src');
-      f.removeAttribute('data-src');
+      load(f);
       obs.unobserve(f);
     });
   },{rootMargin:'200px'});

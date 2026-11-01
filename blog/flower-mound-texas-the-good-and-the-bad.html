@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-wmtd-contract-version="1" data-wmtd-page-family="blog" data-wmtd-entity-id="article:flower-mound-texas-the-good-and-the-bad" data-wmtd-build-id="sha256:8831e6fbf3be2a08c1a4d82930520aacfe96e803af8e87d043b807f8589e7fa0">
+<html lang="en" data-wmtd-contract-version="1" data-wmtd-page-family="blog" data-wmtd-entity-id="article:flower-mound-texas-the-good-and-the-bad" data-wmtd-build-id="sha256:4114225073a32c03f958cd98661a6195cc06cbcbff99c4247ed6f4b266948b03">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -533,6 +533,9 @@ gtag('consent','default',{
   ]
 }
 </script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="alternate" type="application/rss+xml" title="Why Move to Dallas | DFW Family Relocation" href="/feed.xml">
 </head>
 <body>
@@ -546,6 +549,7 @@ gtag('consent','default',{
        - Hamburger menu on mobile (< 768px)
      ═══════════════════════════════════════════════════════════════ -->
 
+<a class="kc-skip-link" href="#main-content">Skip to main content</a>
 <header id="kc-site-header" role="banner">
 
   <!-- Top bar: social icons -->
@@ -674,13 +678,30 @@ gtag('consent','default',{
 
   // Hamburger toggle
   if (burger && menu) {
+    function closeMenu() {
+      burger.setAttribute('aria-expanded', 'false');
+      burger.setAttribute('aria-label', 'Open menu');
+      menu.hidden = true;
+      hdr.classList.remove('kc-menu-open');
+    }
+
     burger.addEventListener('click', function () {
       var isOpen = burger.getAttribute('aria-expanded') === 'true';
-      burger.setAttribute('aria-expanded', String(!isOpen));
-      menu.hidden = isOpen;
-      hdr.classList.toggle('kc-menu-open', !isOpen);
-      // Force solid background when menu is open
-      if (!isOpen) hdr.classList.add('kc-scrolled');
+      if (isOpen) {
+        closeMenu();
+      } else {
+        burger.setAttribute('aria-expanded', 'true');
+        burger.setAttribute('aria-label', 'Close menu');
+        menu.hidden = false;
+        hdr.classList.add('kc-menu-open', 'kc-scrolled');
+      }
+    });
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && burger.getAttribute('aria-expanded') === 'true') {
+        closeMenu();
+        burger.focus();
+      }
     });
   }
 
@@ -697,6 +718,7 @@ gtag('consent','default',{
 <!-- Reading progress bar -->
 <div id="kc-read-progress" role="progressbar" aria-hidden="true"></div>
 
+<span id="main-content" tabindex="-1"></span>
 <main class="kc-page-body" id="kc-post-top">
 
   <!-- ── Hero ────────────────────────────────────────────────────────── -->
@@ -743,14 +765,15 @@ gtag('consent','default',{
 
     <div class="kc-post-content" itemprop="articleBody">
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;">
-    <iframe
-      src="https://www.youtube.com/embed/M3tPpEhl7Po?rel=0&modestbranding=1&showinfo=0"
-      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
-      title="Flower Mound Texas: The Good 👍 and the Bad 👎"
-      loading="lazy"
-      allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen>
-    </iframe>
+    <div class="kc-video-wrap">
+<a class="kc-yt-facade" href="https://www.youtube.com/watch?v=M3tPpEhl7Po"
+   data-video="M3tPpEhl7Po" data-title="Flower Mound Texas: The Good 👍 and the Bad 👎" aria-label="Play video: Flower Mound Texas: The Good 👍 and the Bad 👎">
+  <img src="https://img.youtube.com/vi/M3tPpEhl7Po/maxresdefault.jpg"
+       alt="Flower Mound Texas: The Good 👍 and the Bad 👎" loading="lazy" width="1280" height="720"
+       onerror="this.src='https://img.youtube.com/vi/M3tPpEhl7Po/hqdefault.jpg'">
+  <div class="kc-yt-play" aria-hidden="true"></div>
+</a>
+</div>
   </div>
 <p class=""><a href="/flower-mound-texas" target="_blank">Flower Mound, Texas</a>, a highly ranked suburb in the Northwest part of the Dallas-Fort Worth Metroplex, has garnered attention for its family suburban feel combined with big city conveniences. For those considering a move to this area, understanding the good and bad of living in Flower Mound is crucial. Let's review some of the pros and cons of living in Flower Mound, Texas, shedding light on its unique offerings and potential challenges.</p><h2>Where is Flower Mound Texas?</h2></div><p class="">Flower Mound's location is a significant draw for those considering moving to this part of Texas. Nestled in the heart of the Dallas-Fort Worth area, residents enjoy a perfect balance between suburban quiet and city accessibility. The town's proximity to major highways such as I-35 East, I-35 West, Highway 377, and several others, makes commuting relatively straightforward. The average commute time for Flower Mound residents is slightly less than the Texas average, providing a smoother daily drive.</p></div>
 
@@ -987,6 +1010,34 @@ gtag('consent','default',{
 
 <!-- Ask Kristen chat widget -->
 <script defer src="/js/ask-kristen.js"></script>
+<script>
+(function(){
+  function initYTFacades(){
+    document.querySelectorAll('.kc-yt-facade').forEach(function(el){
+      function activate(){
+        if(el.querySelector('iframe')) return;
+        var v=el.dataset.video,t=el.dataset.title||'',
+            wrap=el.parentElement,
+            f=document.createElement('iframe');
+        f.src='https://www.youtube.com/embed/'+v+'?autoplay=1&rel=0';
+        f.title=t;
+        f.allow='accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture';
+        f.allowFullscreen=true;
+        f.tabIndex=0;
+        f.style.cssText='position:absolute;top:0;left:0;width:100%;height:100%;border:0;';
+        wrap.replaceChild(f,el);
+        f.focus({preventScroll:true});
+      }
+      el.addEventListener('click',function(e){e.preventDefault();activate();});
+      el.addEventListener('keydown',function(e){
+        if(e.key==='Enter'||e.key===' '){e.preventDefault();activate();}
+      });
+    });
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',initYTFacades);}
+  else{initYTFacades();}
+})();
+</script>
 <!-- Blog section sticky nav -->
 <div id="kc-blog-sticky-nav" role="navigation" aria-label="Jump to section">
   <span class="kc-bsn-label">Jump to</span>

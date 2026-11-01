@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-wmtd-contract-version="1" data-wmtd-page-family="suburb" data-wmtd-entity-id="place:hurst-tx" data-wmtd-build-id="sha256:8831e6fbf3be2a08c1a4d82930520aacfe96e803af8e87d043b807f8589e7fa0">
+<html lang="en" data-wmtd-contract-version="1" data-wmtd-page-family="suburb" data-wmtd-entity-id="place:hurst-tx" data-wmtd-build-id="sha256:4114225073a32c03f958cd98661a6195cc06cbcbff99c4247ed6f4b266948b03">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -294,6 +294,7 @@ gtag('consent','default',{
        - Hamburger menu on mobile (< 768px)
      ═══════════════════════════════════════════════════════════════ -->
 
+<a class="kc-skip-link" href="#main-content">Skip to main content</a>
 <header id="kc-site-header" role="banner">
 
   <!-- Top bar: social icons -->
@@ -422,13 +423,30 @@ gtag('consent','default',{
 
   // Hamburger toggle
   if (burger && menu) {
+    function closeMenu() {
+      burger.setAttribute('aria-expanded', 'false');
+      burger.setAttribute('aria-label', 'Open menu');
+      menu.hidden = true;
+      hdr.classList.remove('kc-menu-open');
+    }
+
     burger.addEventListener('click', function () {
       var isOpen = burger.getAttribute('aria-expanded') === 'true';
-      burger.setAttribute('aria-expanded', String(!isOpen));
-      menu.hidden = isOpen;
-      hdr.classList.toggle('kc-menu-open', !isOpen);
-      // Force solid background when menu is open
-      if (!isOpen) hdr.classList.add('kc-scrolled');
+      if (isOpen) {
+        closeMenu();
+      } else {
+        burger.setAttribute('aria-expanded', 'true');
+        burger.setAttribute('aria-label', 'Close menu');
+        menu.hidden = false;
+        hdr.classList.add('kc-menu-open', 'kc-scrolled');
+      }
+    });
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && burger.getAttribute('aria-expanded') === 'true') {
+        closeMenu();
+        burger.focus();
+      }
     });
   }
 
@@ -441,7 +459,7 @@ gtag('consent','default',{
 }());
 </script>
 
-<main class="kc-page-body">
+<main id="main-content" class="kc-page-body">
 <!-- ============================================================
   WHY MOVE TO DALLAS — Hurst, Texas Suburb Page (Body Source)
   Source: pages/suburbs/hurst-texas.html
@@ -469,13 +487,16 @@ gtag('consent','default',{
 
 <!-- ── HERO ──────────────────────────────────────────────────────────────── -->
 <section class="kc-hero">
-  <img src="/images/hurst-hero.webp"
+  <picture class="kc-hero-picture">
+  <source media="(max-width: 768px)" srcset="/images/hurst-hero-mobile.webp">
+<img src="/images/hurst-hero.webp"
        alt="Hurst, Texas"
        class="kc-hero-img"
        width="1920" height="700"
        fetchpriority="high"
        loading="eager"
        decoding="async">
+</picture>
   <div class="kc-hero-inner">
     <p class="kc-hero-location">Tarrant County · Mid-Cities DFW</p>
     <h1>Living in Hurst, Texas</h1>
@@ -654,6 +675,7 @@ gtag('consent','default',{
       data-src="https://www.openstreetmap.org/export/embed.html?bbox=-97.2883,32.7232,-97.0883,32.9232&layer=mapnik&marker=32.8232,-97.1883"
       width="100%" height="220" style="border:0;display:block;" loading="lazy" allowfullscreen=""
       title="Hurst, Texas, location map" data-wmtd-frame="location.map" data-wmtd-kind="map"></iframe>
+<noscript><p class="kc-map-fallback"><a href="https://www.openstreetmap.org/export/embed.html?bbox=-97.2883,32.7232,-97.0883,32.9232&layer=mapnik&marker=32.8232,-97.1883">Open Hurst, Texas, location map on OpenStreetMap</a></p></noscript>
   </div>
 
   <p>Hurst sits in the heart of the Mid-Cities corridor, that stretch of Tarrant County between Dallas and Fort Worth that outsiders often underestimate and locals quietly love. Sandwiched between Bedford and North Richland Hills, with Euless to the south, Hurst covers roughly 10 square miles and sits directly on Highway 183, one of the most important commute arteries in North Tarrant County. That highway is the key to understanding why Hurst works so well for working families: DFW International Airport is about 8 miles east, Downtown Fort Worth is 14 miles west, and Las Colinas and Irving's major employer corridor are about 10 miles in the other direction.</p>
@@ -1291,17 +1313,17 @@ gtag('consent','default',{
     </div>
     <div class="kc-card kc-card--navy" style="text-align:center;">
       <h4 style="margin-bottom:0.5rem;">Average Sale Price</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="hurst" data-field="sfr_avg_price">$422K</span></p>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="hurst" data-field="sfr_avg_price">$424K</span></p>
       <p style="font-size:0.78rem;color:#666;margin:0;">12-month rolling avg · single-family</p>
     </div>
     <div class="kc-card kc-card--navy" style="text-align:center;">
       <h4 style="margin-bottom:0.5rem;">Price per Sq Ft</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="hurst" data-field="sfr_median_price_per_sqft">$198</span></p>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="hurst" data-field="sfr_median_price_per_sqft">$199</span></p>
       <p style="font-size:0.78rem;color:#666;margin:0;">Median · 12-month rolling</p>
     </div>
     <div class="kc-card kc-card--navy" style="text-align:center;">
       <h4 style="margin-bottom:0.5rem;">Sale to Original List</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="hurst" data-field="sfr_pct_of_original_price">97.5%</span></p>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="hurst" data-field="sfr_pct_of_original_price">97.6%</span></p>
       <p style="font-size:0.78rem;color:#666;margin:0;">12-month rolling · share of original list price</p>
     </div>
     <div class="kc-card kc-card--navy" style="text-align:center;">
@@ -1321,11 +1343,11 @@ gtag('consent','default',{
     </div>
     <div class="kc-card kc-card--navy" style="text-align:center;">
       <h4 style="margin-bottom:0.5rem;">Closed Sales</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="hurst" data-field="sfr_closed_sales_12mo">411</span></p>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="hurst" data-field="sfr_closed_sales_12mo">412</span></p>
       <p style="font-size:0.78rem;color:#666;margin:0;">12-month total · single-family</p>
     </div>
   </div>
-  <p>A few more numbers worth knowing if you are weighing an offer in Hurst. Over the trailing 12 months, single-family homes sold for a median of <span class="kc-blog-live" data-suburb="hurst" data-field="sfr_median_price">$367K</span> and an average of <span class="kc-blog-live" data-suburb="hurst" data-field="sfr_avg_price">$422K</span>, which works out to about <span class="kc-blog-live" data-suburb="hurst" data-field="sfr_median_price_per_sqft">$198</span> per square foot. Homes here sold for roughly <span class="kc-blog-live" data-suburb="hurst" data-field="sfr_pct_of_original_price">97.5%</span> of their original list price, which gives you a sense of how much room buyers have typically had to negotiate. As of the latest data, about <span class="kc-blog-live" data-suburb="hurst" data-field="sfr_inventory">73</span> single-family homes were actively listed. These are NTREIS figures (the price metrics are 12-month rolling, inventory is current active supply), and your own price per square foot and negotiating room will vary by neighborhood, age of home, and finish level.</p>
+  <p>A few more numbers worth knowing if you are weighing an offer in Hurst. Over the trailing 12 months, single-family homes sold for a median of <span class="kc-blog-live" data-suburb="hurst" data-field="sfr_median_price">$367K</span> and an average of <span class="kc-blog-live" data-suburb="hurst" data-field="sfr_avg_price">$424K</span>, which works out to about <span class="kc-blog-live" data-suburb="hurst" data-field="sfr_median_price_per_sqft">$199</span> per square foot. Homes here sold for roughly <span class="kc-blog-live" data-suburb="hurst" data-field="sfr_pct_of_original_price">97.6%</span> of their original list price, which gives you a sense of how much room buyers have typically had to negotiate. As of the latest data, about <span class="kc-blog-live" data-suburb="hurst" data-field="sfr_inventory">73</span> single-family homes were actively listed. These are NTREIS figures (the price metrics are 12-month rolling, inventory is current active supply), and your own price per square foot and negotiating room will vary by neighborhood, age of home, and finish level.</p>
   <!-- KC-NTREIS-CARDS:END -->
   <p style="font-size:0.8rem;color:#888;margin-top:-1rem;margin-bottom:1.5rem;">Source: NTREIS via 10K Research · All figures are 12-month rolling periods · Updated <span id="kc-mkt-updated">April 2026</span></p>
   <!-- KC-DEMAND:START  demand read + price-driver narrative, baked by tools/generate-tier-bands.cjs; #kc-market-demand verdict refreshes live -->
@@ -2054,12 +2076,19 @@ document.querySelectorAll('.kc-jumpnav-list a').forEach(function(a) {
 (function(){
   var maps=document.querySelectorAll('iframe.kc-lazy-map[data-src]');
   if(!maps.length)return;
+  function load(f){
+    f.src=f.getAttribute('data-src');
+    f.removeAttribute('data-src');
+  }
+  if(!('IntersectionObserver' in window)){
+    maps.forEach(load);
+    return;
+  }
   var io=new IntersectionObserver(function(entries,obs){
     entries.forEach(function(e){
       if(!e.isIntersecting)return;
       var f=e.target;
-      f.src=f.getAttribute('data-src');
-      f.removeAttribute('data-src');
+      load(f);
       obs.unobserve(f);
     });
   },{rootMargin:'200px'});

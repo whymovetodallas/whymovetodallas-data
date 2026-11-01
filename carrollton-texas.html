@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-wmtd-contract-version="1" data-wmtd-page-family="suburb" data-wmtd-entity-id="place:carrollton-tx" data-wmtd-build-id="sha256:8831e6fbf3be2a08c1a4d82930520aacfe96e803af8e87d043b807f8589e7fa0">
+<html lang="en" data-wmtd-contract-version="1" data-wmtd-page-family="suburb" data-wmtd-entity-id="place:carrollton-tx" data-wmtd-build-id="sha256:4114225073a32c03f958cd98661a6195cc06cbcbff99c4247ed6f4b266948b03">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -294,6 +294,7 @@ gtag('consent','default',{
        - Hamburger menu on mobile (< 768px)
      ═══════════════════════════════════════════════════════════════ -->
 
+<a class="kc-skip-link" href="#main-content">Skip to main content</a>
 <header id="kc-site-header" role="banner">
 
   <!-- Top bar: social icons -->
@@ -422,13 +423,30 @@ gtag('consent','default',{
 
   // Hamburger toggle
   if (burger && menu) {
+    function closeMenu() {
+      burger.setAttribute('aria-expanded', 'false');
+      burger.setAttribute('aria-label', 'Open menu');
+      menu.hidden = true;
+      hdr.classList.remove('kc-menu-open');
+    }
+
     burger.addEventListener('click', function () {
       var isOpen = burger.getAttribute('aria-expanded') === 'true';
-      burger.setAttribute('aria-expanded', String(!isOpen));
-      menu.hidden = isOpen;
-      hdr.classList.toggle('kc-menu-open', !isOpen);
-      // Force solid background when menu is open
-      if (!isOpen) hdr.classList.add('kc-scrolled');
+      if (isOpen) {
+        closeMenu();
+      } else {
+        burger.setAttribute('aria-expanded', 'true');
+        burger.setAttribute('aria-label', 'Close menu');
+        menu.hidden = false;
+        hdr.classList.add('kc-menu-open', 'kc-scrolled');
+      }
+    });
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && burger.getAttribute('aria-expanded') === 'true') {
+        closeMenu();
+        burger.focus();
+      }
     });
   }
 
@@ -441,7 +459,7 @@ gtag('consent','default',{
 }());
 </script>
 
-<main class="kc-page-body">
+<main id="main-content" class="kc-page-body">
 <!-- Schema: pages/suburbs/carrollton-texas-schema.html → Page Settings → Advanced → Page Header Code Injection -->
 
 <!-- ── STYLES — DO NOT EDIT — identical across all suburb pages ─────────── -->
@@ -461,13 +479,16 @@ gtag('consent','default',{
 
 <!-- 2. HERO -->
 <section class="kc-hero">
-  <img src="/images/carrollton-hero.webp"
+  <picture class="kc-hero-picture">
+  <source media="(max-width: 768px)" srcset="/images/carrollton-hero-mobile.webp">
+<img src="/images/carrollton-hero.webp"
        alt="Carrollton, Texas"
        class="kc-hero-img"
        width="1920" height="700"
        fetchpriority="high"
        loading="eager"
        decoding="async">
+</picture>
   <div class="kc-hero-inner">
     <p class="kc-hero-location">Dallas &amp; Denton County · Texas · DFW Metroplex</p>
     <h1>Living in Carrollton, Texas</h1>
@@ -660,6 +681,7 @@ gtag('consent','default',{
       loading="lazy"
       allowfullscreen=""
       title="Carrollton, Texas, location map" data-wmtd-frame="location.map" data-wmtd-kind="map"></iframe>
+<noscript><p class="kc-map-fallback"><a href="https://www.openstreetmap.org/export/embed.html?bbox=-96.9903,32.8537,-96.7903,33.0537&layer=mapnik&marker=32.9537,-96.8903">Open Carrollton, Texas, location map on OpenStreetMap</a></p></noscript>
   </div>
 
   <p>Carrollton sits <strong>roughly 20 miles north of Downtown Dallas</strong> and about <strong>35 miles northeast of Fort Worth</strong>, straddling <strong>Dallas and Denton County</strong> (with a small slice of Collin County in the northeast corner). The city is threaded by I-35E running north-south through its heart, President George Bush Turnpike (SH-190) cutting east-west across the north side, and Sam Rayburn Tollway (SH-121) giving fast access west toward DFW Airport. It borders Farmers Branch and Addison to the south, Coppell to the west, and Lewisville and The Colony to the north.</p>
@@ -1262,7 +1284,7 @@ gtag('consent','default',{
     </div>
     <div class="kc-card kc-card--navy" style="text-align:center;">
       <h4 style="margin-bottom:0.5rem;">Days on Market</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="carrollton" data-field="sfr_days_on_market">24 days</span></p>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="carrollton" data-field="sfr_days_on_market">25 days</span></p>
       <p style="font-size:0.78rem;color:#666;margin:0;">Median · 12-month rolling</p>
     </div>
     <div class="kc-card kc-card--navy" style="text-align:center;">
@@ -1277,7 +1299,7 @@ gtag('consent','default',{
     </div>
     <div class="kc-card kc-card--navy" style="text-align:center;">
       <h4 style="margin-bottom:0.5rem;">Closed Sales</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="carrollton" data-field="sfr_closed_sales_12mo">1,066</span></p>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="carrollton" data-field="sfr_closed_sales_12mo">1,067</span></p>
       <p style="font-size:0.78rem;color:#666;margin:0;">12-month total · single-family</p>
     </div>
   </div>
@@ -1937,12 +1959,19 @@ document.querySelectorAll('.kc-jumpnav-list a').forEach(function(a) {
 (function(){
   var maps=document.querySelectorAll('iframe.kc-lazy-map[data-src]');
   if(!maps.length)return;
+  function load(f){
+    f.src=f.getAttribute('data-src');
+    f.removeAttribute('data-src');
+  }
+  if(!('IntersectionObserver' in window)){
+    maps.forEach(load);
+    return;
+  }
   var io=new IntersectionObserver(function(entries,obs){
     entries.forEach(function(e){
       if(!e.isIntersecting)return;
       var f=e.target;
-      f.src=f.getAttribute('data-src');
-      f.removeAttribute('data-src');
+      load(f);
       obs.unobserve(f);
     });
   },{rootMargin:'200px'});

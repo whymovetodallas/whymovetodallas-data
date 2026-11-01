@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-wmtd-contract-version="1" data-wmtd-page-family="site" data-wmtd-entity-id="site:dfw-relocation-guide-landing" data-wmtd-build-id="sha256:8831e6fbf3be2a08c1a4d82930520aacfe96e803af8e87d043b807f8589e7fa0">
+<html lang="en" data-wmtd-contract-version="1" data-wmtd-page-family="site" data-wmtd-entity-id="site:dfw-relocation-guide-landing" data-wmtd-build-id="sha256:4114225073a32c03f958cd98661a6195cc06cbcbff99c4247ed6f4b266948b03">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -266,6 +266,7 @@ gtag('consent','default',{
        - Hamburger menu on mobile (< 768px)
      ═══════════════════════════════════════════════════════════════ -->
 
+<a class="kc-skip-link" href="#main-content">Skip to main content</a>
 <header id="kc-site-header" role="banner">
 
   <!-- Top bar: social icons -->
@@ -394,13 +395,30 @@ gtag('consent','default',{
 
   // Hamburger toggle
   if (burger && menu) {
+    function closeMenu() {
+      burger.setAttribute('aria-expanded', 'false');
+      burger.setAttribute('aria-label', 'Open menu');
+      menu.hidden = true;
+      hdr.classList.remove('kc-menu-open');
+    }
+
     burger.addEventListener('click', function () {
       var isOpen = burger.getAttribute('aria-expanded') === 'true';
-      burger.setAttribute('aria-expanded', String(!isOpen));
-      menu.hidden = isOpen;
-      hdr.classList.toggle('kc-menu-open', !isOpen);
-      // Force solid background when menu is open
-      if (!isOpen) hdr.classList.add('kc-scrolled');
+      if (isOpen) {
+        closeMenu();
+      } else {
+        burger.setAttribute('aria-expanded', 'true');
+        burger.setAttribute('aria-label', 'Close menu');
+        menu.hidden = false;
+        hdr.classList.add('kc-menu-open', 'kc-scrolled');
+      }
+    });
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && burger.getAttribute('aria-expanded') === 'true') {
+        closeMenu();
+        burger.focus();
+      }
     });
   }
 
@@ -413,7 +431,6 @@ gtag('consent','default',{
 }());
 </script>
 
-<main class="kc-page-body">
 <!--
 =================================================================
   WHY MOVE TO DALLAS — Lead Magnet Landing Page
@@ -476,7 +493,6 @@ gtag('consent','default',{
 
 <!-- ══════════════════════════════════════════════════════════  STYLES  ══ -->
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Jost:wght@400;600;700&display=swap');
 
 .kc-guide-lp *, .kc-guide-lp *::before, .kc-guide-lp *::after {
   box-sizing: border-box; margin: 0; padding: 0;
@@ -742,7 +758,7 @@ gtag('consent','default',{
 /* ── Form trust line ─────────────────────────────────────────────────── */
 .kc-lp-form-trust {
   display:flex; align-items:center; justify-content:center;
-  gap:.35rem; font-size:.72rem; color:#999; margin-top:.75rem;
+  gap:.35rem; font-size:.72rem; color:#666; margin-top:.75rem;
   text-align:center; line-height:1.45;
   width:100%; clear:both; /* always below ML's internal floats */
   box-sizing:border-box;
@@ -974,7 +990,7 @@ gtag('consent','default',{
   </div>
 
   <!-- ── MAIN 2-COL ─────────────────────────────────────────────────── -->
-  <main class="kc-lp-main" id="main-content">
+  <main class="kc-lp-main kc-page-body" id="main-content">
 
     <!-- LEFT: Content -->
     <article>
@@ -1143,7 +1159,7 @@ gtag('consent','default',{
                style="display:block;padding:.85rem 1.25rem;background:var(--gold);color:#fff;font-family:'Jost',sans-serif;font-weight:700;font-size:.92rem;border-radius:6px;text-decoration:none;margin-bottom:.6rem;">
               Schedule a Free Relocation Call →
             </a>
-            <p style="font-size:.78rem;color:#999;margin:.9rem 0 .5rem;text-transform:uppercase;letter-spacing:.07em;font-weight:700;">While you wait, explore:</p>
+            <p style="font-size:.78rem;color:#666;margin:.9rem 0 .5rem;text-transform:uppercase;letter-spacing:.07em;font-weight:700;">While you wait, explore:</p>
             <div style="display:grid;grid-template-columns:1fr 1fr;gap:.5rem;margin-bottom:.6rem;">
               <a href="/dallas-fort-worth-suburbs" style="display:block;padding:.65rem .75rem;background:var(--ivory);border:1px solid var(--stone);border-radius:7px;text-decoration:none;color:var(--navy);font-size:.78rem;font-weight:600;line-height:1.4;">DFW Suburb Profiles →</a>
               <a href="/dfw-school-districts" style="display:block;padding:.65rem .75rem;background:var(--ivory);border:1px solid var(--stone);border-radius:7px;text-decoration:none;color:var(--navy);font-size:.78rem;font-weight:600;line-height:1.4;">School District Guide →</a>
@@ -1315,7 +1331,6 @@ gtag('consent','default',{
 }());
 </script>
 
-</main>
 <!-- ═══════════════════════════════════════════════════════════════
      SITE FOOTER — whymovetodallas.com
      Injected into every page by build.js via wrapInShell().
@@ -1430,12 +1445,19 @@ gtag('consent','default',{
 (function(){
   var maps=document.querySelectorAll('iframe.kc-lazy-map[data-src]');
   if(!maps.length)return;
+  function load(f){
+    f.src=f.getAttribute('data-src');
+    f.removeAttribute('data-src');
+  }
+  if(!('IntersectionObserver' in window)){
+    maps.forEach(load);
+    return;
+  }
   var io=new IntersectionObserver(function(entries,obs){
     entries.forEach(function(e){
       if(!e.isIntersecting)return;
       var f=e.target;
-      f.src=f.getAttribute('data-src');
-      f.removeAttribute('data-src');
+      load(f);
       obs.unobserve(f);
     });
   },{rootMargin:'200px'});

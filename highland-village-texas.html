@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-wmtd-contract-version="1" data-wmtd-page-family="suburb" data-wmtd-entity-id="place:highland-village-tx" data-wmtd-build-id="sha256:8831e6fbf3be2a08c1a4d82930520aacfe96e803af8e87d043b807f8589e7fa0">
+<html lang="en" data-wmtd-contract-version="1" data-wmtd-page-family="suburb" data-wmtd-entity-id="place:highland-village-tx" data-wmtd-build-id="sha256:4114225073a32c03f958cd98661a6195cc06cbcbff99c4247ed6f4b266948b03">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -297,6 +297,7 @@ gtag('consent','default',{
        - Hamburger menu on mobile (< 768px)
      ═══════════════════════════════════════════════════════════════ -->
 
+<a class="kc-skip-link" href="#main-content">Skip to main content</a>
 <header id="kc-site-header" role="banner">
 
   <!-- Top bar: social icons -->
@@ -425,13 +426,30 @@ gtag('consent','default',{
 
   // Hamburger toggle
   if (burger && menu) {
+    function closeMenu() {
+      burger.setAttribute('aria-expanded', 'false');
+      burger.setAttribute('aria-label', 'Open menu');
+      menu.hidden = true;
+      hdr.classList.remove('kc-menu-open');
+    }
+
     burger.addEventListener('click', function () {
       var isOpen = burger.getAttribute('aria-expanded') === 'true';
-      burger.setAttribute('aria-expanded', String(!isOpen));
-      menu.hidden = isOpen;
-      hdr.classList.toggle('kc-menu-open', !isOpen);
-      // Force solid background when menu is open
-      if (!isOpen) hdr.classList.add('kc-scrolled');
+      if (isOpen) {
+        closeMenu();
+      } else {
+        burger.setAttribute('aria-expanded', 'true');
+        burger.setAttribute('aria-label', 'Close menu');
+        menu.hidden = false;
+        hdr.classList.add('kc-menu-open', 'kc-scrolled');
+      }
+    });
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && burger.getAttribute('aria-expanded') === 'true') {
+        closeMenu();
+        burger.focus();
+      }
     });
   }
 
@@ -444,7 +462,7 @@ gtag('consent','default',{
 }());
 </script>
 
-<main class="kc-page-body">
+<main id="main-content" class="kc-page-body">
 <!-- Schema: pages/suburbs/highland-village-texas-schema.html → Page Settings → Advanced → Page Header Code Injection -->
 <div class="kc-suburb">
 
@@ -459,13 +477,16 @@ gtag('consent','default',{
 
 <!-- 2: HERO -->
 <section class="kc-hero">
-  <img src="/images/highland-village-hero.webp"
+  <picture class="kc-hero-picture">
+  <source media="(max-width: 768px)" srcset="/images/highland-village-hero-mobile.webp">
+<img src="/images/highland-village-hero.webp"
        alt="Highland Village, Texas"
        class="kc-hero-img"
        width="1920" height="700"
        fetchpriority="high"
        loading="eager"
        decoding="async">
+</picture>
   <div class="kc-hero-inner">
     <p class="kc-hero-location">Denton County · Lake Lewisville · Small-Town Luxury</p>
     <h1>Living in Highland Village, Texas</h1>
@@ -635,6 +656,7 @@ gtag('consent','default',{
       loading="lazy"
       allowfullscreen=""
       title="Highland Village, Texas, location map" data-wmtd-frame="location.map" data-wmtd-kind="map"></iframe>
+<noscript><p class="kc-map-fallback"><a href="https://www.openstreetmap.org/export/embed.html?bbox=-97.1558,32.9918,-96.9558,33.1918&layer=mapnik&marker=33.0918,-97.0558">Open Highland Village, Texas, location map on OpenStreetMap</a></p></noscript>
   </div>
 
   <p>Highland Village sits <strong>about 32 miles northwest of Downtown Dallas</strong> and roughly <strong>40 miles northeast of Downtown Fort Worth</strong>, entirely in <strong>Denton County</strong>. FM 407 is the primary east-west corridor through the city, connecting to I-35E (south toward Lewisville and Dallas) and FM 1171 (east toward Flower Mound and Frisco). Lake Lewisville forms the city's northern boundary.</p>
@@ -1745,12 +1767,19 @@ gtag('consent','default',{
 (function(){
   var maps=document.querySelectorAll('iframe.kc-lazy-map[data-src]');
   if(!maps.length)return;
+  function load(f){
+    f.src=f.getAttribute('data-src');
+    f.removeAttribute('data-src');
+  }
+  if(!('IntersectionObserver' in window)){
+    maps.forEach(load);
+    return;
+  }
   var io=new IntersectionObserver(function(entries,obs){
     entries.forEach(function(e){
       if(!e.isIntersecting)return;
       var f=e.target;
-      f.src=f.getAttribute('data-src');
-      f.removeAttribute('data-src');
+      load(f);
       obs.unobserve(f);
     });
   },{rootMargin:'200px'});

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-wmtd-contract-version="1" data-wmtd-page-family="blog" data-wmtd-entity-id="article:moving-from-seattle-to-dallas-texas" data-wmtd-build-id="sha256:8831e6fbf3be2a08c1a4d82930520aacfe96e803af8e87d043b807f8589e7fa0">
+<html lang="en" data-wmtd-contract-version="1" data-wmtd-page-family="blog" data-wmtd-entity-id="article:moving-from-seattle-to-dallas-texas" data-wmtd-build-id="sha256:4114225073a32c03f958cd98661a6195cc06cbcbff99c4247ed6f4b266948b03">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -88,6 +88,9 @@ gtag('consent','default',{
 </script>
 <link rel="stylesheet" href="/css/global.css">
 <link rel="stylesheet" href="/css/suburb.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="alternate" type="application/rss+xml" title="Why Move to Dallas | DFW Family Relocation" href="/feed.xml">
 </head>
 <body>
@@ -101,6 +104,7 @@ gtag('consent','default',{
        - Hamburger menu on mobile (< 768px)
      ═══════════════════════════════════════════════════════════════ -->
 
+<a class="kc-skip-link" href="#main-content">Skip to main content</a>
 <header id="kc-site-header" role="banner">
 
   <!-- Top bar: social icons -->
@@ -229,13 +233,30 @@ gtag('consent','default',{
 
   // Hamburger toggle
   if (burger && menu) {
+    function closeMenu() {
+      burger.setAttribute('aria-expanded', 'false');
+      burger.setAttribute('aria-label', 'Open menu');
+      menu.hidden = true;
+      hdr.classList.remove('kc-menu-open');
+    }
+
     burger.addEventListener('click', function () {
       var isOpen = burger.getAttribute('aria-expanded') === 'true';
-      burger.setAttribute('aria-expanded', String(!isOpen));
-      menu.hidden = isOpen;
-      hdr.classList.toggle('kc-menu-open', !isOpen);
-      // Force solid background when menu is open
-      if (!isOpen) hdr.classList.add('kc-scrolled');
+      if (isOpen) {
+        closeMenu();
+      } else {
+        burger.setAttribute('aria-expanded', 'true');
+        burger.setAttribute('aria-label', 'Close menu');
+        menu.hidden = false;
+        hdr.classList.add('kc-menu-open', 'kc-scrolled');
+      }
+    });
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && burger.getAttribute('aria-expanded') === 'true') {
+        closeMenu();
+        burger.focus();
+      }
     });
   }
 
@@ -258,6 +279,7 @@ gtag('consent','default',{
     <span class="kc-post-hero-byline-text"><span class="kc-post-hero-byline-name">Kristen Carpentier · Licensed Texas Realtor®</span><span class="kc-post-hero-byline-meta">October 4, 2026 · 19 min read</span></span>
   </div>
 </header>
+<span id="main-content" tabindex="-1"></span>
 <main class="kc-body"><article data-wmtd-frame="article.body" data-wmtd-kind="section">
   <p class="kc-quick kc-blog-quick-answer"><strong>Quick answer:</strong> Washington and Texas both skip a broad wage income tax in 2026, so the move is decided by housing and recurring address level costs. Seattle and Dallas home prices differ substantially, but Texas property tax, homeowners insurance, electricity, tolls, and any special district obligation must be priced for the actual home. Compare one specific Seattle address against one specific DFW address, not two statewide averages.</p>
 
@@ -367,7 +389,7 @@ gtag('consent','default',{
     <thead><tr><th scope="col">Community</th><th scope="col">Current median</th><th scope="col">School check</th><th scope="col">Worksite and housing filter</th><th scope="col">Homes</th></tr></thead>
     <tbody>
       <tr><th scope="row"><a href="/mckinney-texas">McKinney</a></th><td><span class="kc-blog-live" data-suburb="mckinney" data-field="sfr_median_price">$502K</span></td><td>Niche <span class="kc-blog-live" data-suburb="mckinney" data-field="isd_grade">A</span>; verify split zones</td><td>Compare for a northern or remote work setup, a historic core, newer communities, and a broad price range. Test any central commute.</td><td><a class="kc-idx-link" href="https://kristencarpentier.expportal.com/mckinney-texas-homes-for-sale" target="_blank" rel="noopener">View homes</a></td></tr>
-      <tr><th scope="row"><a href="/allen-texas">Allen</a></th><td><span class="kc-blog-live" data-suburb="allen" data-field="sfr_median_price">$513K</span></td><td>Niche <span class="kc-blog-live" data-suburb="allen" data-field="isd_grade">A+</span>; verify campus</td><td>Compare for a compact northern city and jobs around Allen, Plano, or Richardson. Central Dallas still requires a route test.</td><td><a class="kc-idx-link" href="https://kristencarpentier.expportal.com/allen-texas-homes-for-sale" target="_blank" rel="noopener">View homes</a></td></tr>
+      <tr><th scope="row"><a href="/allen-texas">Allen</a></th><td><span class="kc-blog-live" data-suburb="allen" data-field="sfr_median_price">$514K</span></td><td>Niche <span class="kc-blog-live" data-suburb="allen" data-field="isd_grade">A+</span>; verify campus</td><td>Compare for a compact northern city and jobs around Allen, Plano, or Richardson. Central Dallas still requires a route test.</td><td><a class="kc-idx-link" href="https://kristencarpentier.expportal.com/allen-texas-homes-for-sale" target="_blank" rel="noopener">View homes</a></td></tr>
       <tr><th scope="row"><a href="/plano-texas">Plano</a></th><td><span class="kc-blog-live" data-suburb="plano" data-field="sfr_median_price">$528K</span></td><td>Niche <span class="kc-blog-live" data-suburb="plano" data-field="isd_grade">A</span>; verify split zones</td><td>Compare for established housing and jobs around Legacy, Plano, or Richardson. It is more central than the other northern choices here.</td><td><a class="kc-idx-link" href="https://kristencarpentier.expportal.com/plano-texas-homes-for-sale" target="_blank" rel="noopener">View homes</a></td></tr>
       <tr><th scope="row"><a href="/frisco-texas">Frisco</a></th><td><span class="kc-blog-live" data-suburb="frisco" data-field="sfr_median_price">$673K</span></td><td>Niche <span class="kc-blog-live" data-suburb="frisco" data-field="isd_grade">A+</span>; verify split zones</td><td>Compare for newer housing and a north DFW worksite. Do not choose it by school district name alone.</td><td><a class="kc-idx-link" href="https://kristencarpentier.expportal.com/frisco-texas-homes-for-sale" target="_blank" rel="noopener">View homes</a></td></tr>
       <tr><th scope="row"><a href="/prosper-texas">Prosper</a></th><td><span class="kc-blog-live" data-suburb="prosper" data-field="sfr_median_price">$842K</span></td><td>Niche <span class="kc-blog-live" data-suburb="prosper" data-field="isd_grade">A</span>; verify campus</td><td>Compare when newer construction and a larger budget matter and the worksite is northern or remote. Central job centers increase the commute tradeoff.</td><td><a class="kc-idx-link" href="https://kristencarpentier.expportal.com/prosper-texas-homes-for-sale" target="_blank" rel="noopener">View homes</a></td></tr>

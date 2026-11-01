@@ -12,6 +12,8 @@
 :root {
   --navy:     #1F2D3D;
   --gold:     #B08D57;
+  --gold-text:#775C34;
+  --text-muted:#666666;
   --ivory:    #F7F4EE;
   --stone:    #C8C1B6;
   --charcoal: #232323;
@@ -30,6 +32,20 @@
    Base Reset
    ───────────────────────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; }
+
+.kc-skip-link {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  z-index: 2147483647;
+  padding: 0.65rem 1rem;
+  border-radius: 4px;
+  background: var(--white);
+  color: var(--navy);
+  font-weight: 700;
+  transform: translateY(-160%);
+}
+.kc-skip-link:focus { transform: translateY(0); }
 
 body {
   margin: 0;
@@ -233,7 +249,7 @@ body > *:not(#kc-site-header) { scroll-margin-top: var(--header-total-h); }
   font-weight: 500;
   letter-spacing: 0.07em;
   text-transform: uppercase;
-  color: #fff;
+  color: var(--navy);
   background: var(--gold);
   border: 1px solid var(--gold);
   padding: 8px 18px;
@@ -303,7 +319,7 @@ body > *:not(#kc-site-header) { scroll-margin-top: var(--header-total-h); }
 .kc-mobile-menu .kc-mobile-cta {
   margin: 12px 20px 4px;
   background: var(--gold);
-  color: #fff;
+  color: var(--navy);
   text-align: center;
   padding: 12px;
   border-radius: 4px;
@@ -586,6 +602,11 @@ body > *:not(#kc-site-header) { scroll-margin-top: var(--header-total-h); }
 .kc-yt-facade {
   position: absolute; inset: 0; cursor: pointer; background: #000;
   display: flex; align-items: center; justify-content: center;
+  border: 0; padding: 0; color: inherit; text-decoration: none;
+}
+.kc-yt-facade:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: -5px;
 }
 .kc-yt-facade img {
   width: 100%; height: 100%; object-fit: cover; opacity: .85;

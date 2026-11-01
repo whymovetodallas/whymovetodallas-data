@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-wmtd-contract-version="1" data-wmtd-page-family="blog" data-wmtd-entity-id="article:dallas-lake-life-custom-home-tour-3-million-dollar-home" data-wmtd-build-id="sha256:8831e6fbf3be2a08c1a4d82930520aacfe96e803af8e87d043b807f8589e7fa0">
+<html lang="en" data-wmtd-contract-version="1" data-wmtd-page-family="blog" data-wmtd-entity-id="article:dallas-lake-life-custom-home-tour-3-million-dollar-home" data-wmtd-build-id="sha256:4114225073a32c03f958cd98661a6195cc06cbcbff99c4247ed6f4b266948b03">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -533,6 +533,11 @@ gtag('consent','default',{
   ]
 }
 </script>
+<link rel="preload" as="image" href="/images/heath-hero-mobile.webp" fetchpriority="high" media="(max-width: 768px)">
+<link rel="preload" as="image" href="/images/heath-hero.webp" fetchpriority="high" media="(min-width: 769px)">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="alternate" type="application/rss+xml" title="Why Move to Dallas | DFW Family Relocation" href="/feed.xml">
 </head>
 <body>
@@ -546,6 +551,7 @@ gtag('consent','default',{
        - Hamburger menu on mobile (< 768px)
      ═══════════════════════════════════════════════════════════════ -->
 
+<a class="kc-skip-link" href="#main-content">Skip to main content</a>
 <header id="kc-site-header" role="banner">
 
   <!-- Top bar: social icons -->
@@ -674,13 +680,30 @@ gtag('consent','default',{
 
   // Hamburger toggle
   if (burger && menu) {
+    function closeMenu() {
+      burger.setAttribute('aria-expanded', 'false');
+      burger.setAttribute('aria-label', 'Open menu');
+      menu.hidden = true;
+      hdr.classList.remove('kc-menu-open');
+    }
+
     burger.addEventListener('click', function () {
       var isOpen = burger.getAttribute('aria-expanded') === 'true';
-      burger.setAttribute('aria-expanded', String(!isOpen));
-      menu.hidden = isOpen;
-      hdr.classList.toggle('kc-menu-open', !isOpen);
-      // Force solid background when menu is open
-      if (!isOpen) hdr.classList.add('kc-scrolled');
+      if (isOpen) {
+        closeMenu();
+      } else {
+        burger.setAttribute('aria-expanded', 'true');
+        burger.setAttribute('aria-label', 'Close menu');
+        menu.hidden = false;
+        hdr.classList.add('kc-menu-open', 'kc-scrolled');
+      }
+    });
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && burger.getAttribute('aria-expanded') === 'true') {
+        closeMenu();
+        burger.focus();
+      }
     });
   }
 
@@ -697,6 +720,7 @@ gtag('consent','default',{
 <!-- Reading progress bar -->
 <div id="kc-read-progress" role="progressbar" aria-hidden="true"></div>
 
+<span id="main-content" tabindex="-1"></span>
 <main class="kc-page-body" id="kc-post-top">
 
   <!-- ── Hero ────────────────────────────────────────────────────────── -->
@@ -727,12 +751,17 @@ gtag('consent','default',{
   </header>
 
   <!-- ── Featured image ───────────────────────────────────────────── -->
-  <img src="https://whymovetodallas.com/images/blog/1706632788842-1XU20Z10YQ80Z3CMV97V-Heath-Texas-Background.png"
+  <picture class="kc-hero-picture">
+  <source media="(max-width: 768px)" srcset="/images/heath-hero-mobile.webp">
+<img src="/images/heath-hero.webp"
        alt="Dallas Lake Life at It’s Best! $3.4 Million Custom Home Tour"
        class="kc-post-feat-img"
        loading="eager"
-       width="1200" height="480"
+       fetchpriority="high"
+       decoding="async"
+       width="2500" height="1500"
        onerror="this.style.display='none'">
+</picture>
 
   <!-- ── Article body ─────────────────────────────────────────────────── -->
   <article class="kc-post-body" itemscope itemtype="https://schema.org/BlogPosting" data-wmtd-frame="article.body" data-wmtd-kind="section">

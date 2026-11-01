@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-wmtd-contract-version="1" data-wmtd-page-family="suburb" data-wmtd-entity-id="place:grand-prairie-tx" data-wmtd-build-id="sha256:8831e6fbf3be2a08c1a4d82930520aacfe96e803af8e87d043b807f8589e7fa0">
+<html lang="en" data-wmtd-contract-version="1" data-wmtd-page-family="suburb" data-wmtd-entity-id="place:grand-prairie-tx" data-wmtd-build-id="sha256:4114225073a32c03f958cd98661a6195cc06cbcbff99c4247ed6f4b266948b03">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -294,6 +294,7 @@ gtag('consent','default',{
        - Hamburger menu on mobile (< 768px)
      ═══════════════════════════════════════════════════════════════ -->
 
+<a class="kc-skip-link" href="#main-content">Skip to main content</a>
 <header id="kc-site-header" role="banner">
 
   <!-- Top bar: social icons -->
@@ -422,13 +423,30 @@ gtag('consent','default',{
 
   // Hamburger toggle
   if (burger && menu) {
+    function closeMenu() {
+      burger.setAttribute('aria-expanded', 'false');
+      burger.setAttribute('aria-label', 'Open menu');
+      menu.hidden = true;
+      hdr.classList.remove('kc-menu-open');
+    }
+
     burger.addEventListener('click', function () {
       var isOpen = burger.getAttribute('aria-expanded') === 'true';
-      burger.setAttribute('aria-expanded', String(!isOpen));
-      menu.hidden = isOpen;
-      hdr.classList.toggle('kc-menu-open', !isOpen);
-      // Force solid background when menu is open
-      if (!isOpen) hdr.classList.add('kc-scrolled');
+      if (isOpen) {
+        closeMenu();
+      } else {
+        burger.setAttribute('aria-expanded', 'true');
+        burger.setAttribute('aria-label', 'Close menu');
+        menu.hidden = false;
+        hdr.classList.add('kc-menu-open', 'kc-scrolled');
+      }
+    });
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && burger.getAttribute('aria-expanded') === 'true') {
+        closeMenu();
+        burger.focus();
+      }
     });
   }
 
@@ -441,7 +459,7 @@ gtag('consent','default',{
 }());
 </script>
 
-<main class="kc-page-body">
+<main id="main-content" class="kc-page-body">
 <!-- Grand Prairie, TX — Body Source File
      whymovetodallas.com | Kristen Carpentier, TREC #760457
      Build: node build.js → dist/grand-prairie-texas.html
@@ -467,13 +485,16 @@ gtag('consent','default',{
      SECTION 2: HERO
      ═══════════════════════════════ -->
 <section class="kc-hero" aria-label="Grand Prairie hero">
-  <img src="/images/grand-prairie-hero.webp"
+  <picture class="kc-hero-picture">
+  <source media="(max-width: 768px)" srcset="/images/grand-prairie-hero-mobile.webp">
+<img src="/images/grand-prairie-hero.webp"
        alt="Grand Prairie, Texas"
        class="kc-hero-img"
        width="1920" height="700"
        fetchpriority="high"
        loading="eager"
        decoding="async">
+</picture>
   <div class="kc-hero-inner">
     <p class="kc-hero-location">Dallas &amp; Tarrant Counties · DFW Metroplex</p>
     <h1>Living in Grand Prairie, Texas</h1>
@@ -657,6 +678,7 @@ gtag('consent','default',{
       data-src="https://www.openstreetmap.org/export/embed.html?bbox=-97.0978,32.646,-96.8978,32.846&layer=mapnik&marker=32.746,-96.9978"
       width="100%" height="220" style="border:0;display:block;" loading="lazy" allowfullscreen=""
       title="Grand Prairie, Texas, location map" data-wmtd-frame="location.map" data-wmtd-kind="map"></iframe>
+<noscript><p class="kc-map-fallback"><a href="https://www.openstreetmap.org/export/embed.html?bbox=-97.0978,32.646,-96.8978,32.846&layer=mapnik&marker=32.746,-96.9978">Open Grand Prairie, Texas, location map on OpenStreetMap</a></p></noscript>
 
     <p>Grand Prairie occupies a rare position in the DFW Metroplex, wedged squarely between Dallas and Fort Worth along Highway 360 and SH-161, it offers one of the shortest access radii to either downtown of any city in the metro. That central location, combined with immediate proximity to DFW International Airport (less than 10 miles from most neighborhoods), makes it a natural landing spot for families on tight relocation timelines, frequent travelers, and anyone who works along the Highway 360 or SH-161 corridor.</p>
 
@@ -1382,7 +1404,7 @@ gtag('consent','default',{
     </div>
     <div class="kc-card kc-card--navy" style="text-align:center;">
       <h4 style="margin-bottom:0.5rem;">Closed Sales</h4>
-      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="grand-prairie" data-field="sfr_closed_sales_12mo">1,154</span></p>
+      <p style="font-size:1.6rem;font-weight:700;color:var(--navy);font-family:'Cormorant Garamond',serif;margin:0.25rem 0;"><span class="kc-blog-live" data-suburb="grand-prairie" data-field="sfr_closed_sales_12mo">1,155</span></p>
       <p style="font-size:0.78rem;color:#666;margin:0;">12-month total · single-family</p>
     </div>
   </div>
@@ -2082,12 +2104,19 @@ gtag('consent','default',{
 (function(){
   var maps=document.querySelectorAll('iframe.kc-lazy-map[data-src]');
   if(!maps.length)return;
+  function load(f){
+    f.src=f.getAttribute('data-src');
+    f.removeAttribute('data-src');
+  }
+  if(!('IntersectionObserver' in window)){
+    maps.forEach(load);
+    return;
+  }
   var io=new IntersectionObserver(function(entries,obs){
     entries.forEach(function(e){
       if(!e.isIntersecting)return;
       var f=e.target;
-      f.src=f.getAttribute('data-src');
-      f.removeAttribute('data-src');
+      load(f);
       obs.unobserve(f);
     });
   },{rootMargin:'200px'});

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-wmtd-contract-version="1" data-wmtd-page-family="blog" data-wmtd-entity-id="article:moving-from-phoenix-to-dallas-texas" data-wmtd-build-id="sha256:8831e6fbf3be2a08c1a4d82930520aacfe96e803af8e87d043b807f8589e7fa0">
+<html lang="en" data-wmtd-contract-version="1" data-wmtd-page-family="blog" data-wmtd-entity-id="article:moving-from-phoenix-to-dallas-texas" data-wmtd-build-id="sha256:4114225073a32c03f958cd98661a6195cc06cbcbff99c4247ed6f4b266948b03">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -268,6 +268,9 @@ gtag('consent','default',{
   ]
 }
 </script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="alternate" type="application/rss+xml" title="Why Move to Dallas | DFW Family Relocation" href="/feed.xml">
 </head>
 <body>
@@ -281,6 +284,7 @@ gtag('consent','default',{
        - Hamburger menu on mobile (< 768px)
      ═══════════════════════════════════════════════════════════════ -->
 
+<a class="kc-skip-link" href="#main-content">Skip to main content</a>
 <header id="kc-site-header" role="banner">
 
   <!-- Top bar: social icons -->
@@ -409,13 +413,30 @@ gtag('consent','default',{
 
   // Hamburger toggle
   if (burger && menu) {
+    function closeMenu() {
+      burger.setAttribute('aria-expanded', 'false');
+      burger.setAttribute('aria-label', 'Open menu');
+      menu.hidden = true;
+      hdr.classList.remove('kc-menu-open');
+    }
+
     burger.addEventListener('click', function () {
       var isOpen = burger.getAttribute('aria-expanded') === 'true';
-      burger.setAttribute('aria-expanded', String(!isOpen));
-      menu.hidden = isOpen;
-      hdr.classList.toggle('kc-menu-open', !isOpen);
-      // Force solid background when menu is open
-      if (!isOpen) hdr.classList.add('kc-scrolled');
+      if (isOpen) {
+        closeMenu();
+      } else {
+        burger.setAttribute('aria-expanded', 'true');
+        burger.setAttribute('aria-label', 'Close menu');
+        menu.hidden = false;
+        hdr.classList.add('kc-menu-open', 'kc-scrolled');
+      }
+    });
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && burger.getAttribute('aria-expanded') === 'true') {
+        closeMenu();
+        burger.focus();
+      }
     });
   }
 
@@ -431,6 +452,7 @@ gtag('consent','default',{
 
 <div id="kc-read-progress" role="progressbar" aria-hidden="true"></div>
 
+<span id="main-content" tabindex="-1"></span>
 <main class="kc-page-body" id="kc-post-top">
 
   <header class="kc-post-hero">
@@ -559,7 +581,7 @@ gtag('consent','default',{
           <tr><td><a href="/frisco-texas">Frisco</a></td><td><span class="kc-blog-live" data-suburb="frisco" data-field="sfr_median_price">$673K</span></td><td>Compare newer planned communities with established sections, HOA costs, and lot size</td><td>Map Legacy, Plano, or Frisco offices first; test any Las Colinas or downtown trip at your required arrival time</td><td>Niche district grade: <span class="kc-blog-live" data-suburb="frisco" data-field="isd_grade">A+</span>; verify district and campus by address</td></tr>
           <tr><td><a href="/prosper-texas">Prosper</a></td><td><span class="kc-blog-live" data-suburb="prosper" data-field="sfr_median_price">$842K</span></td><td>Compare newer homes and larger lots, then add HOA and any MUD or PID</td><td>Test the complete route for every in-office day, especially beyond the north DFW employment nodes</td><td>Niche district grade: <span class="kc-blog-live" data-suburb="prosper" data-field="isd_grade">A</span>; verify district and campus by address</td></tr>
           <tr><td><a href="/mckinney-texas">McKinney</a></td><td><span class="kc-blog-live" data-suburb="mckinney" data-field="sfr_median_price">$502K</span></td><td>Compare the established core with newer communities and different lot sizes</td><td>Map Plano, Legacy, Frisco, and <a href="/richardson-texas">Richardson</a> separately; a hybrid schedule can change the acceptable radius</td><td>Niche district grade: <span class="kc-blog-live" data-suburb="mckinney" data-field="isd_grade">A</span>; split zoning makes the address check essential</td></tr>
-          <tr><td><a href="/allen-texas">Allen</a></td><td><span class="kc-blog-live" data-suburb="allen" data-field="sfr_median_price">$513K</span></td><td>Compare established housing, renovation needs, and lot size against East Valley alternatives</td><td>Test Plano, Richardson, and Legacy offices; price toll use if the fastest route depends on it</td><td>Niche district grade: <span class="kc-blog-live" data-suburb="allen" data-field="isd_grade">A+</span>; verify the assigned campus</td></tr>
+          <tr><td><a href="/allen-texas">Allen</a></td><td><span class="kc-blog-live" data-suburb="allen" data-field="sfr_median_price">$514K</span></td><td>Compare established housing, renovation needs, and lot size against East Valley alternatives</td><td>Test Plano, Richardson, and Legacy offices; price toll use if the fastest route depends on it</td><td>Niche district grade: <span class="kc-blog-live" data-suburb="allen" data-field="isd_grade">A+</span>; verify the assigned campus</td></tr>
           <tr><td><a href="/flower-mound-texas">Flower Mound</a></td><td><span class="kc-blog-live" data-suburb="flower-mound" data-field="sfr_median_price">$630K</span></td><td>Compare established neighborhoods, tree cover, lot size, and renovation level</td><td>Map DFW Airport and Las Colinas access, then test any Plano or Dallas office separately</td><td>Niche district grade: <span class="kc-blog-live" data-suburb="flower-mound" data-field="isd_grade">A</span>; district boundaries vary by address</td></tr>
           <tr><td><a href="/argyle-texas">Argyle</a></td><td><span class="kc-blog-live" data-suburb="argyle" data-field="sfr_median_price">$578K</span></td><td>Compare acreage, newer communities, total tax rate, and any district assessments</td><td>Test DFW Airport, Fort Worth, and north DFW routes for the actual office schedule</td><td>Niche district grade: <span class="kc-blog-live" data-suburb="argyle" data-field="isd_grade">A+</span>; verify district and campus by address</td></tr>
         </tbody>

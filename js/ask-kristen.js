@@ -52,7 +52,7 @@
     ".ak-msg{max-width:85%;padding:10px 13px;border-radius:14px;font-size:14px;line-height:1.5;white-space:pre-wrap;word-wrap:break-word;}" +
     ".ak-bot{background:#fff;color:var(--ak-char);border:1px solid var(--ak-stone);border-bottom-left-radius:4px;align-self:flex-start;}" +
     ".ak-user{background:var(--ak-navy);color:#fff;border-bottom-right-radius:4px;align-self:flex-end;}" +
-    ".ak-msg a{color:var(--ak-gold);font-weight:600;}" +
+    ".ak-msg a{color:#775C34;font-weight:600;}" +
     ".ak-user a{color:#fff;}" +
     "#ak-starters{display:flex;flex-wrap:wrap;gap:7px;padding:0 16px 8px;}" +
     ".ak-chip{background:#fff;border:1px solid var(--ak-stone);color:var(--ak-navy);font-size:12.5px;padding:7px 11px;" +

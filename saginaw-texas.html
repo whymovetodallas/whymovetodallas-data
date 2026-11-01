@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-wmtd-contract-version="1" data-wmtd-page-family="suburb" data-wmtd-entity-id="place:saginaw-tx" data-wmtd-build-id="sha256:8831e6fbf3be2a08c1a4d82930520aacfe96e803af8e87d043b807f8589e7fa0">
+<html lang="en" data-wmtd-contract-version="1" data-wmtd-page-family="suburb" data-wmtd-entity-id="place:saginaw-tx" data-wmtd-build-id="sha256:4114225073a32c03f958cd98661a6195cc06cbcbff99c4247ed6f4b266948b03">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -310,6 +310,7 @@ gtag('consent','default',{
        - Hamburger menu on mobile (< 768px)
      ═══════════════════════════════════════════════════════════════ -->
 
+<a class="kc-skip-link" href="#main-content">Skip to main content</a>
 <header id="kc-site-header" role="banner">
 
   <!-- Top bar: social icons -->
@@ -438,13 +439,30 @@ gtag('consent','default',{
 
   // Hamburger toggle
   if (burger && menu) {
+    function closeMenu() {
+      burger.setAttribute('aria-expanded', 'false');
+      burger.setAttribute('aria-label', 'Open menu');
+      menu.hidden = true;
+      hdr.classList.remove('kc-menu-open');
+    }
+
     burger.addEventListener('click', function () {
       var isOpen = burger.getAttribute('aria-expanded') === 'true';
-      burger.setAttribute('aria-expanded', String(!isOpen));
-      menu.hidden = isOpen;
-      hdr.classList.toggle('kc-menu-open', !isOpen);
-      // Force solid background when menu is open
-      if (!isOpen) hdr.classList.add('kc-scrolled');
+      if (isOpen) {
+        closeMenu();
+      } else {
+        burger.setAttribute('aria-expanded', 'true');
+        burger.setAttribute('aria-label', 'Close menu');
+        menu.hidden = false;
+        hdr.classList.add('kc-menu-open', 'kc-scrolled');
+      }
+    });
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && burger.getAttribute('aria-expanded') === 'true') {
+        closeMenu();
+        burger.focus();
+      }
     });
   }
 
@@ -457,7 +475,7 @@ gtag('consent','default',{
 }());
 </script>
 
-<main class="kc-page-body">
+<main id="main-content" class="kc-page-body">
 <!-- ============================================================
   WHY MOVE TO DALLAS — Suburb Page: Saginaw, Texas
   Slug: saginaw-texas
@@ -485,13 +503,16 @@ gtag('consent','default',{
 
 <!-- ── 2. HERO ───────────────────────────────────────────────────────────── -->
 <section class="kc-hero">
-  <img src="/images/saginaw-hero.webp"
+  <picture class="kc-hero-picture">
+  <source media="(max-width: 768px)" srcset="/images/saginaw-hero-mobile.webp">
+<img src="/images/saginaw-hero.webp"
        alt="Saginaw, Texas"
        class="kc-hero-img"
        width="1920" height="700"
        fetchpriority="high"
        loading="eager"
        decoding="async">
+</picture>
   <div class="kc-hero-inner">
     <p class="kc-hero-location">Tarrant County · Northwest Fort Worth Metro</p>
     <h1>Living in Saginaw, Texas</h1>
@@ -666,6 +687,7 @@ gtag('consent','default',{
       loading="lazy"
       allowfullscreen=""
       title="Saginaw, Texas, location map" data-wmtd-frame="location.map" data-wmtd-kind="map"></iframe>
+<noscript><p class="kc-map-fallback"><a href="https://www.openstreetmap.org/export/embed.html?bbox=-97.4636,32.7596,-97.2636,32.9596&layer=mapnik&marker=32.8596,-97.3636">Open Saginaw, Texas, location map on OpenStreetMap</a></p></noscript>
   </div>
 
   <p style="margin-top:1.5rem;">Saginaw sits in northwestern Tarrant County, about 8 miles north of downtown Fort Worth at the intersection of Interstate 35W and Business Highway 287. That location is its defining asset: close enough to Fort Worth's employment base to commute comfortably, yet far enough removed to feel like a genuine small city with its own identity. The I-35W corridor connects residents south to Fort Worth's medical district, hospital row, and Lockheed Martin, and north to the booming AllianceTexas employment corridor, home to Amazon, BNSF Railway, and hundreds of logistics and industrial employers. NAS Fort Worth JRB (Carswell) is approximately 4 miles southeast, making Saginaw a natural fit for military families on PCS orders.</p>
@@ -1845,12 +1867,19 @@ gtag('consent','default',{
 (function(){
   var maps=document.querySelectorAll('iframe.kc-lazy-map[data-src]');
   if(!maps.length)return;
+  function load(f){
+    f.src=f.getAttribute('data-src');
+    f.removeAttribute('data-src');
+  }
+  if(!('IntersectionObserver' in window)){
+    maps.forEach(load);
+    return;
+  }
   var io=new IntersectionObserver(function(entries,obs){
     entries.forEach(function(e){
       if(!e.isIntersecting)return;
       var f=e.target;
-      f.src=f.getAttribute('data-src');
-      f.removeAttribute('data-src');
+      load(f);
       obs.unobserve(f);
     });
   },{rootMargin:'200px'});

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-wmtd-contract-version="1" data-wmtd-page-family="site" data-wmtd-entity-id="site:find-your-dfw-suburb" data-wmtd-build-id="sha256:8831e6fbf3be2a08c1a4d82930520aacfe96e803af8e87d043b807f8589e7fa0">
+<html lang="en" data-wmtd-contract-version="1" data-wmtd-page-family="site" data-wmtd-entity-id="site:find-your-dfw-suburb" data-wmtd-build-id="sha256:4114225073a32c03f958cd98661a6195cc06cbcbff99c4247ed6f4b266948b03">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -203,6 +203,7 @@ gtag('consent','default',{
        - Hamburger menu on mobile (< 768px)
      ═══════════════════════════════════════════════════════════════ -->
 
+<a class="kc-skip-link" href="#main-content">Skip to main content</a>
 <header id="kc-site-header" role="banner">
 
   <!-- Top bar: social icons -->
@@ -331,13 +332,30 @@ gtag('consent','default',{
 
   // Hamburger toggle
   if (burger && menu) {
+    function closeMenu() {
+      burger.setAttribute('aria-expanded', 'false');
+      burger.setAttribute('aria-label', 'Open menu');
+      menu.hidden = true;
+      hdr.classList.remove('kc-menu-open');
+    }
+
     burger.addEventListener('click', function () {
       var isOpen = burger.getAttribute('aria-expanded') === 'true';
-      burger.setAttribute('aria-expanded', String(!isOpen));
-      menu.hidden = isOpen;
-      hdr.classList.toggle('kc-menu-open', !isOpen);
-      // Force solid background when menu is open
-      if (!isOpen) hdr.classList.add('kc-scrolled');
+      if (isOpen) {
+        closeMenu();
+      } else {
+        burger.setAttribute('aria-expanded', 'true');
+        burger.setAttribute('aria-label', 'Close menu');
+        menu.hidden = false;
+        hdr.classList.add('kc-menu-open', 'kc-scrolled');
+      }
+    });
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && burger.getAttribute('aria-expanded') === 'true') {
+        closeMenu();
+        burger.focus();
+      }
     });
   }
 
@@ -350,7 +368,7 @@ gtag('consent','default',{
 }());
 </script>
 
-<main class="kc-page-body">
+<main id="main-content" class="kc-page-body">
 <!-- Schema: pages/find-your-dfw-suburb-schema.html → injected into <head> by build.js -->
 <!--
   ════════════════════════════════════════════════════════════════════
@@ -420,8 +438,8 @@ gtag('consent','default',{
 .lvm-btn:disabled{opacity:.4;cursor:not-allowed;transform:none;}
 .lvm-btn--ghost{background:transparent;color:var(--lvm-navy);}
 .lvm-btn--ghost:hover{background:var(--lvm-ivory);}
-.lvm-btn--gold{background:var(--lvm-gold);border-color:var(--lvm-gold);}
-.lvm-btn--gold:hover{background:#9d7c4a;}
+.lvm-btn--gold{background:var(--lvm-gold);border-color:var(--lvm-gold);color:var(--lvm-navy);}
+.lvm-btn--gold:hover,.lvm-btn--gold:focus-visible,.lvm-btn--gold:active{background:#BFA16E;border-color:#BFA16E;}
 .lvm-nav{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:1.8rem;}
 
 /* lever ranking */
@@ -488,7 +506,7 @@ gtag('consent','default',{
 .lvm-match-name .meta{font-size:.84rem;color:#777;margin:.15rem 0 0;}
 .lvm-fit{flex:0 0 auto;text-align:center;}
 .lvm-fit b{display:block;font-size:1.35rem;color:var(--lvm-gold);font-weight:700;line-height:1;}
-.lvm-fit span{font-size:.66rem;text-transform:uppercase;letter-spacing:.1em;color:#999;}
+.lvm-fit span{font-size:.66rem;text-transform:uppercase;letter-spacing:.1em;color:#666;}
 .lvm-why{padding:6px 22px 4px;font-size:.95rem;line-height:1.62;color:#3a3a3a;}
 .lvm-tier{margin:6px 22px 2px;padding:8px 12px;background:var(--lvm-ivory);border-left:3px solid var(--lvm-gold);
   border-radius:6px;font-size:.9rem;line-height:1.5;color:#3a3a3a;}
@@ -524,13 +542,13 @@ gtag('consent','default',{
 .lvm-gate-row{display:flex;gap:10px;}
 .lvm-gate-row input{flex:1;min-width:0;}
 @media (max-width:420px){.lvm-gate-row{flex-direction:column;}}
-.lvm-gate-fine{font-size:.74rem;color:#999;margin:.8rem auto 0;max-width:420px;line-height:1.4;}
+.lvm-gate-fine{font-size:.74rem;color:#666;margin:.8rem auto 0;max-width:420px;line-height:1.4;}
 .lvm-secondary{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin:8px 0 0;}
 .lvm-disclaimer{font-size:.8rem;color:#8a8a8a;line-height:1.55;border-top:1px solid var(--lvm-line);
   margin:30px 0 0;padding:18px 0 0;}
 .lvm-disclaimer a{color:var(--lvm-gold);}
 .lvm-restart{text-align:center;margin:18px 0 0;}
-.lvm-restart button{background:none;border:none;color:#999;font-size:.82rem;text-decoration:underline;cursor:pointer;font-family:inherit;}
+.lvm-restart button{background:none;border:none;color:#666;font-size:.82rem;text-decoration:underline;cursor:pointer;font-family:inherit;}
 
 /* loading / error */
 .lvm-status{text-align:center;padding:50px 0;color:#777;font-size:.95rem;}
@@ -1344,11 +1362,11 @@ gtag('consent','default',{
       '<form class="lvm-gate-form" id="lvmLeadForm">'+
         '<input type="text" id="lvmCompany" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;">'+
         '<div class="lvm-gate-row">'+
-          '<input type="text" id="lvmFirst" placeholder="First name" autocomplete="given-name" required>'+
-          '<input type="text" id="lvmLast" placeholder="Last name" autocomplete="family-name" required>'+
+          '<input type="text" id="lvmFirst" placeholder="First name" aria-label="First name" autocomplete="given-name" required>'+
+          '<input type="text" id="lvmLast" placeholder="Last name" aria-label="Last name" autocomplete="family-name" required>'+
         '</div>'+
-        '<input type="email" id="lvmEmail" placeholder="Email address" autocomplete="email" required>'+
-        '<input type="tel" id="lvmPhone" placeholder="Phone (optional)" autocomplete="tel" inputmode="tel">'+
+        '<input type="email" id="lvmEmail" placeholder="Email address" aria-label="Email address" autocomplete="email" required>'+
+        '<input type="tel" id="lvmPhone" placeholder="Phone (optional)" aria-label="Phone number (optional)" autocomplete="tel" inputmode="tel">'+
         '<button type="submit" class="lvm-btn lvm-btn--gold" style="width:100%;">Email me my full report</button>'+
       '</form>'+
       '<p class="lvm-gate-fine">No spam, your report plus occasional DFW relocation tips from Kristen. Unsubscribe anytime.</p>'+
@@ -1476,7 +1494,7 @@ gtag('consent','default',{
     <span style="display:block;font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#B08D57;margin-bottom:.7rem;">Next Free Tool</span>
     <h2 style="font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:clamp(1.8rem,4vw,2.6rem);color:#fff;line-height:1.15;margin:0 0 .8rem;">Found your suburbs? Now run the real numbers</h2>
     <p style="font-size:1.05rem;line-height:1.65;color:#cdc6ba;max-width:560px;margin:0 auto 1.8rem;">The Cost Calculator shows what your budget actually buys in each one, plus the Texas costs that go up: property tax, home insurance, and summer electricity. An honest picture before you tour. Free, about two minutes.</p>
-    <a href="/dallas-cost-of-living-calculator" style="display:inline-block;background:#B08D57;color:#fff;font-weight:600;font-size:.85rem;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;padding:15px 34px;border-radius:6px;">Open the Cost Calculator &rarr;</a>
+    <a href="/dallas-cost-of-living-calculator" style="display:inline-block;background:#B08D57;color:#1F2D3D;font-weight:600;font-size:.85rem;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;padding:15px 34px;border-radius:6px;">Open the Cost Calculator &rarr;</a>
   </div>
 </section>
 
@@ -1595,12 +1613,19 @@ gtag('consent','default',{
 (function(){
   var maps=document.querySelectorAll('iframe.kc-lazy-map[data-src]');
   if(!maps.length)return;
+  function load(f){
+    f.src=f.getAttribute('data-src');
+    f.removeAttribute('data-src');
+  }
+  if(!('IntersectionObserver' in window)){
+    maps.forEach(load);
+    return;
+  }
   var io=new IntersectionObserver(function(entries,obs){
     entries.forEach(function(e){
       if(!e.isIntersecting)return;
       var f=e.target;
-      f.src=f.getAttribute('data-src');
-      f.removeAttribute('data-src');
+      load(f);
       obs.unobserve(f);
     });
   },{rootMargin:'200px'});

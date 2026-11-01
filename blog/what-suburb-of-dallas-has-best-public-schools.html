@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-wmtd-contract-version="1" data-wmtd-page-family="blog" data-wmtd-entity-id="article:what-suburb-of-dallas-has-best-public-schools" data-wmtd-build-id="sha256:8831e6fbf3be2a08c1a4d82930520aacfe96e803af8e87d043b807f8589e7fa0">
+<html lang="en" data-wmtd-contract-version="1" data-wmtd-page-family="blog" data-wmtd-entity-id="article:what-suburb-of-dallas-has-best-public-schools" data-wmtd-build-id="sha256:4114225073a32c03f958cd98661a6195cc06cbcbff99c4247ed6f4b266948b03">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -366,6 +366,9 @@ gtag('consent','default',{
   ]
 }
 </script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="alternate" type="application/rss+xml" title="Why Move to Dallas | DFW Family Relocation" href="/feed.xml">
 </head>
 <body>
@@ -379,6 +382,7 @@ gtag('consent','default',{
        - Hamburger menu on mobile (< 768px)
      ═══════════════════════════════════════════════════════════════ -->
 
+<a class="kc-skip-link" href="#main-content">Skip to main content</a>
 <header id="kc-site-header" role="banner">
 
   <!-- Top bar: social icons -->
@@ -507,13 +511,30 @@ gtag('consent','default',{
 
   // Hamburger toggle
   if (burger && menu) {
+    function closeMenu() {
+      burger.setAttribute('aria-expanded', 'false');
+      burger.setAttribute('aria-label', 'Open menu');
+      menu.hidden = true;
+      hdr.classList.remove('kc-menu-open');
+    }
+
     burger.addEventListener('click', function () {
       var isOpen = burger.getAttribute('aria-expanded') === 'true';
-      burger.setAttribute('aria-expanded', String(!isOpen));
-      menu.hidden = isOpen;
-      hdr.classList.toggle('kc-menu-open', !isOpen);
-      // Force solid background when menu is open
-      if (!isOpen) hdr.classList.add('kc-scrolled');
+      if (isOpen) {
+        closeMenu();
+      } else {
+        burger.setAttribute('aria-expanded', 'true');
+        burger.setAttribute('aria-label', 'Close menu');
+        menu.hidden = false;
+        hdr.classList.add('kc-menu-open', 'kc-scrolled');
+      }
+    });
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && burger.getAttribute('aria-expanded') === 'true') {
+        closeMenu();
+        burger.focus();
+      }
     });
   }
 
@@ -530,6 +551,7 @@ gtag('consent','default',{
 <!-- Reading progress bar -->
 <div id="kc-read-progress" role="progressbar" aria-hidden="true"></div>
 
+<span id="main-content" tabindex="-1"></span>
 <main class="kc-page-body" id="kc-post-top">
 
   <!-- ── Hero ────────────────────────────────────────────────────────── -->
@@ -617,7 +639,7 @@ gtag('consent','default',{
           <tr><td><a href="/highland-park-texas">Highland Park</a></td><td>Highland Park ISD</td><td><span class="kc-blog-live" data-suburb="highland-park" data-field="isd_grade">A+</span></td><td>A · 96</td><td><span class="kc-blog-live" data-suburb="highland-park" data-field="sfr_median_price">$3.7M</span></td><td>~12 min</td></tr>
           <tr><td><a href="/southlake-texas">Southlake</a></td><td>Carroll ISD</td><td><span class="kc-blog-live" data-suburb="southlake" data-field="isd_grade">A+</span></td><td>A · 95</td><td><span class="kc-blog-live" data-suburb="southlake" data-field="sfr_median_price">$1.4M</span></td><td>~30 min</td></tr>
           <tr><td><a href="/frisco-texas">Frisco</a></td><td>Frisco ISD</td><td><span class="kc-blog-live" data-suburb="frisco" data-field="isd_grade">A+</span></td><td>A</td><td><span class="kc-blog-live" data-suburb="frisco" data-field="sfr_median_price">$673K</span></td><td>~30 min</td></tr>
-          <tr><td><a href="/allen-texas">Allen</a></td><td>Allen ISD</td><td><span class="kc-blog-live" data-suburb="allen" data-field="isd_grade">A+</span></td><td>A · 91</td><td><span class="kc-blog-live" data-suburb="allen" data-field="sfr_median_price">$513K</span></td><td>~30 min</td></tr>
+          <tr><td><a href="/allen-texas">Allen</a></td><td>Allen ISD</td><td><span class="kc-blog-live" data-suburb="allen" data-field="isd_grade">A+</span></td><td>A · 91</td><td><span class="kc-blog-live" data-suburb="allen" data-field="sfr_median_price">$514K</span></td><td>~30 min</td></tr>
           <tr><td><a href="/mckinney-texas">McKinney</a></td><td>McKinney ISD</td><td><span class="kc-blog-live" data-suburb="mckinney" data-field="isd_grade">A</span></td><td>B · 88</td><td><span class="kc-blog-live" data-suburb="mckinney" data-field="sfr_median_price">$502K</span></td><td>~38 min</td></tr>
           <tr><td><a href="/plano-texas">Plano</a></td><td>Plano ISD</td><td><span class="kc-blog-live" data-suburb="plano" data-field="isd_grade">A</span></td><td>B · 82</td><td><span class="kc-blog-live" data-suburb="plano" data-field="sfr_median_price">$528K</span></td><td>~25 min</td></tr>
         </tbody>
@@ -651,7 +673,7 @@ gtag('consent','default',{
 
       <h2 id="academics-value">Top academics for the money: Frisco and Allen</h2>
       <p>This is where most relocating families I work with actually land — and for good reason. <a href="/frisco-texas">Frisco ISD</a> is the largest district in Texas to earn an A in the 2024-25 TEA ratings — 56 of its 75 rated campuses scored an A — carries an A+ Niche grade, and built its reputation on a deliberate small-high-school model that keeps campuses from becoming overwhelming. With a median home price around <span class="kc-blog-live" data-suburb="frisco" data-field="sfr_median_price">$673K</span> and a <span class="kc-blog-live" data-suburb="frisco" data-field="market_condition" data-fmt="lower">balanced</span> market, Frisco delivers top-tier academics alongside modern amenities, dining, and youth sports at a scale few suburbs match.</p>
-      <p><a href="/allen-texas">Allen ISD</a> may be the best pure value on this list. It earned an A from TEA with a score of 91 — among the strongest of any district its size in Texas — and an A+ Niche grade, yet its median home price of about <span class="kc-blog-live" data-suburb="allen" data-field="sfr_median_price">$513K</span> sits well below Frisco. Allen's single-high-school model produces a powerful sense of community, and its campuses regularly post 9- and 10-out-of-10 GreatSchools ratings. Families who hit Frisco's price ceiling very often find their answer here.</p>
+      <p><a href="/allen-texas">Allen ISD</a> may be the best pure value on this list. It earned an A from TEA with a score of 91 — among the strongest of any district its size in Texas — and an A+ Niche grade, yet its median home price of about <span class="kc-blog-live" data-suburb="allen" data-field="sfr_median_price">$514K</span> sits well below Frisco. Allen's single-high-school model produces a powerful sense of community, and its campuses regularly post 9- and 10-out-of-10 GreatSchools ratings. Families who hit Frisco's price ceiling very often find their answer here.</p>
       <div class="kc-blog-callout">
         <div class="kc-blog-callout-label">Kristen's Take</div>
         <p>If you want the broadest range of homes, amenities, and an A-rated district at scale, Frisco is the safe, well-rounded choice. If you want nearly identical academics for meaningfully less money — and a tighter, one-town feel — Allen is the suburb I point budget-minded families toward first.</p>

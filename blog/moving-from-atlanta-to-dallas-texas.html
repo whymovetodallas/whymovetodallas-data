@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-wmtd-contract-version="1" data-wmtd-page-family="blog" data-wmtd-entity-id="article:moving-from-atlanta-to-dallas-texas" data-wmtd-build-id="sha256:8831e6fbf3be2a08c1a4d82930520aacfe96e803af8e87d043b807f8589e7fa0">
+<html lang="en" data-wmtd-contract-version="1" data-wmtd-page-family="blog" data-wmtd-entity-id="article:moving-from-atlanta-to-dallas-texas" data-wmtd-build-id="sha256:4114225073a32c03f958cd98661a6195cc06cbcbff99c4247ed6f4b266948b03">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -102,6 +102,9 @@ gtag('consent','default',{
 </script>
 <link rel="stylesheet" href="/css/global.css">
 <link rel="stylesheet" href="/css/suburb.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="alternate" type="application/rss+xml" title="Why Move to Dallas | DFW Family Relocation" href="/feed.xml">
 </head>
 <body>
@@ -115,6 +118,7 @@ gtag('consent','default',{
        - Hamburger menu on mobile (< 768px)
      ═══════════════════════════════════════════════════════════════ -->
 
+<a class="kc-skip-link" href="#main-content">Skip to main content</a>
 <header id="kc-site-header" role="banner">
 
   <!-- Top bar: social icons -->
@@ -243,13 +247,30 @@ gtag('consent','default',{
 
   // Hamburger toggle
   if (burger && menu) {
+    function closeMenu() {
+      burger.setAttribute('aria-expanded', 'false');
+      burger.setAttribute('aria-label', 'Open menu');
+      menu.hidden = true;
+      hdr.classList.remove('kc-menu-open');
+    }
+
     burger.addEventListener('click', function () {
       var isOpen = burger.getAttribute('aria-expanded') === 'true';
-      burger.setAttribute('aria-expanded', String(!isOpen));
-      menu.hidden = isOpen;
-      hdr.classList.toggle('kc-menu-open', !isOpen);
-      // Force solid background when menu is open
-      if (!isOpen) hdr.classList.add('kc-scrolled');
+      if (isOpen) {
+        closeMenu();
+      } else {
+        burger.setAttribute('aria-expanded', 'true');
+        burger.setAttribute('aria-label', 'Close menu');
+        menu.hidden = false;
+        hdr.classList.add('kc-menu-open', 'kc-scrolled');
+      }
+    });
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && burger.getAttribute('aria-expanded') === 'true') {
+        closeMenu();
+        burger.focus();
+      }
     });
   }
 
@@ -272,6 +293,7 @@ gtag('consent','default',{
     <span class="kc-post-hero-byline-text"><span class="kc-post-hero-byline-name">Kristen Carpentier · Licensed Texas Realtor®</span><span class="kc-post-hero-byline-meta">October 12, 2026 · 10 min read</span></span>
   </div>
 </header>
+<span id="main-content" tabindex="-1"></span>
 <main class="kc-body"><article data-wmtd-frame="article.body" data-wmtd-kind="section">
   <p class="kc-blog-quick-answer"><strong>Quick answer:</strong> Moving from Atlanta to Dallas-Fort Worth does not guarantee lower housing costs or a tax saving. Texas currently has no individual income tax, while property-tax bills depend on local taxing units, exemptions, and the property. Compare current housing data on the same basis, confirm school assignment by address, and model the full monthly cost for specific homes before deciding.</p>
   <div class="kc-video-wrap kc-yt-facade" role="button" tabindex="0" aria-label="Play Dallas Relocation Guide: How to Choose the Right DFW Suburb" data-video-id="twWIP6QUTWE"><img src="/images/dallas-relocation-guide-thumb.webp" alt="Dallas relocation guide video thumbnail: choose a DFW suburb by schools, commute, budget, and lifestyle" width="1280" height="720" fetchpriority="high"><span class="kc-yt-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"></path></svg></span></div>
@@ -322,7 +344,7 @@ gtag('consent','default',{
       <tr><td><a href="/wylie-texas">Wylie</a></td><td><span class="kc-blog-live" data-suburb="wylie" data-field="sfr_median_price">$436K</span></td><td><span class="kc-blog-live" data-suburb="wylie" data-field="sfr_price_per_sqft">$186/sq ft</span></td><td>Wylie ISD</td><td><span class="kc-blog-live" data-suburb="wylie" data-field="isd_grade">A+</span></td><td><a class="kc-idx-link" href="https://kristencarpentier.expportal.com/search/Wylie,-TX" target="_blank" rel="noopener">View homes</a></td></tr>
       <tr><td><a href="/melissa-texas">Melissa</a></td><td><span class="kc-blog-live" data-suburb="melissa" data-field="sfr_median_price">$442K</span></td><td><span class="kc-blog-live" data-suburb="melissa" data-field="sfr_price_per_sqft">$181/sq ft</span></td><td>Melissa ISD</td><td><span class="kc-blog-live" data-suburb="melissa" data-field="isd_grade">A</span></td><td><a class="kc-idx-link" href="https://kristencarpentier.expportal.com/melissa-texas-homes-for-sale" target="_blank" rel="noopener">View homes</a></td></tr>
       <tr><td><a href="/mckinney-texas">McKinney</a></td><td><span class="kc-blog-live" data-suburb="mckinney" data-field="sfr_median_price">$502K</span></td><td><span class="kc-blog-live" data-suburb="mckinney" data-field="sfr_price_per_sqft">$206/sq ft</span></td><td>McKinney ISD</td><td><span class="kc-blog-live" data-suburb="mckinney" data-field="isd_grade">A</span></td><td><a class="kc-idx-link" href="https://kristencarpentier.expportal.com/mckinney-texas-homes-for-sale" target="_blank" rel="noopener">View homes</a></td></tr>
-      <tr><td><a href="/allen-texas">Allen</a></td><td><span class="kc-blog-live" data-suburb="allen" data-field="sfr_median_price">$513K</span></td><td><span class="kc-blog-live" data-suburb="allen" data-field="sfr_price_per_sqft">$210/sq ft</span></td><td>Allen ISD</td><td><span class="kc-blog-live" data-suburb="allen" data-field="isd_grade">A+</span></td><td><a class="kc-idx-link" href="https://kristencarpentier.expportal.com/allen-texas-homes-for-sale" target="_blank" rel="noopener">View homes</a></td></tr>
+      <tr><td><a href="/allen-texas">Allen</a></td><td><span class="kc-blog-live" data-suburb="allen" data-field="sfr_median_price">$514K</span></td><td><span class="kc-blog-live" data-suburb="allen" data-field="sfr_price_per_sqft">$210/sq ft</span></td><td>Allen ISD</td><td><span class="kc-blog-live" data-suburb="allen" data-field="isd_grade">A+</span></td><td><a class="kc-idx-link" href="https://kristencarpentier.expportal.com/allen-texas-homes-for-sale" target="_blank" rel="noopener">View homes</a></td></tr>
       <tr><td><a href="/frisco-texas">Frisco</a></td><td><span class="kc-blog-live" data-suburb="frisco" data-field="sfr_median_price">$673K</span></td><td><span class="kc-blog-live" data-suburb="frisco" data-field="sfr_price_per_sqft">$231/sq ft</span></td><td>Frisco ISD</td><td><span class="kc-blog-live" data-suburb="frisco" data-field="isd_grade">A+</span></td><td><a class="kc-idx-link" href="https://kristencarpentier.expportal.com/frisco-texas-homes-for-sale" target="_blank" rel="noopener">View homes</a></td></tr>
     </tbody>
   </table>

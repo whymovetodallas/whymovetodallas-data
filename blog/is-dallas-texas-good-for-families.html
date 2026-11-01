@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-wmtd-contract-version="1" data-wmtd-page-family="blog" data-wmtd-entity-id="article:is-dallas-texas-good-for-families" data-wmtd-build-id="sha256:8831e6fbf3be2a08c1a4d82930520aacfe96e803af8e87d043b807f8589e7fa0">
+<html lang="en" data-wmtd-contract-version="1" data-wmtd-page-family="blog" data-wmtd-entity-id="article:is-dallas-texas-good-for-families" data-wmtd-build-id="sha256:4114225073a32c03f958cd98661a6195cc06cbcbff99c4247ed6f4b266948b03">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -386,6 +386,9 @@ gtag('consent','default',{
   ]
 }
 </script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="alternate" type="application/rss+xml" title="Why Move to Dallas | DFW Family Relocation" href="/feed.xml">
 </head>
 <body>
@@ -399,6 +402,7 @@ gtag('consent','default',{
        - Hamburger menu on mobile (< 768px)
      ═══════════════════════════════════════════════════════════════ -->
 
+<a class="kc-skip-link" href="#main-content">Skip to main content</a>
 <header id="kc-site-header" role="banner">
 
   <!-- Top bar: social icons -->
@@ -527,13 +531,30 @@ gtag('consent','default',{
 
   // Hamburger toggle
   if (burger && menu) {
+    function closeMenu() {
+      burger.setAttribute('aria-expanded', 'false');
+      burger.setAttribute('aria-label', 'Open menu');
+      menu.hidden = true;
+      hdr.classList.remove('kc-menu-open');
+    }
+
     burger.addEventListener('click', function () {
       var isOpen = burger.getAttribute('aria-expanded') === 'true';
-      burger.setAttribute('aria-expanded', String(!isOpen));
-      menu.hidden = isOpen;
-      hdr.classList.toggle('kc-menu-open', !isOpen);
-      // Force solid background when menu is open
-      if (!isOpen) hdr.classList.add('kc-scrolled');
+      if (isOpen) {
+        closeMenu();
+      } else {
+        burger.setAttribute('aria-expanded', 'true');
+        burger.setAttribute('aria-label', 'Close menu');
+        menu.hidden = false;
+        hdr.classList.add('kc-menu-open', 'kc-scrolled');
+      }
+    });
+
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && burger.getAttribute('aria-expanded') === 'true') {
+        closeMenu();
+        burger.focus();
+      }
     });
   }
 
@@ -550,6 +571,7 @@ gtag('consent','default',{
 <!-- Reading progress bar -->
 <div id="kc-read-progress" role="progressbar" aria-hidden="true"></div>
 
+<span id="main-content" tabindex="-1"></span>
 <main class="kc-page-body" id="kc-post-top">
 
   <!-- ── Hero ────────────────────────────────────────────────────────── -->
@@ -657,7 +679,7 @@ gtag('consent','default',{
         </thead>
         <tbody>
           <tr><td><a href="/mckinney-texas">McKinney</a></td><td><span class="kc-blog-live" data-suburb="mckinney" data-field="sfr_median_price">$502K</span></td><td><span class="kc-blog-live" data-suburb="mckinney" data-field="isd_grade">A</span></td><td>~1.9%</td><td>~40 min</td></tr>
-          <tr><td><a href="/allen-texas">Allen</a></td><td><span class="kc-blog-live" data-suburb="allen" data-field="sfr_median_price">$513K</span></td><td><span class="kc-blog-live" data-suburb="allen" data-field="isd_grade">A+</span></td><td>~1.9%</td><td>~35 min</td></tr>
+          <tr><td><a href="/allen-texas">Allen</a></td><td><span class="kc-blog-live" data-suburb="allen" data-field="sfr_median_price">$514K</span></td><td><span class="kc-blog-live" data-suburb="allen" data-field="isd_grade">A+</span></td><td>~1.9%</td><td>~35 min</td></tr>
           <tr><td><a href="/plano-texas">Plano</a></td><td><span class="kc-blog-live" data-suburb="plano" data-field="sfr_median_price">$528K</span></td><td><span class="kc-blog-live" data-suburb="plano" data-field="isd_grade">A</span></td><td>~1.8%</td><td>~30 min</td></tr>
           <tr><td><a href="/flower-mound-texas">Flower Mound</a></td><td><span class="kc-blog-live" data-suburb="flower-mound" data-field="sfr_median_price">$630K</span></td><td><span class="kc-blog-live" data-suburb="flower-mound" data-field="isd_grade">A</span></td><td>~1.9%</td><td>~35 min</td></tr>
           <tr><td><a href="/frisco-texas">Frisco</a></td><td><span class="kc-blog-live" data-suburb="frisco" data-field="sfr_median_price">$673K</span></td><td><span class="kc-blog-live" data-suburb="frisco" data-field="isd_grade">A+</span></td><td>~1.8%</td><td>~35 min</td></tr>
@@ -675,7 +697,7 @@ gtag('consent','default',{
         <div class="kc-blog-bar-row">
           <span class="kc-blog-bar-label">Allen</span>
           <div class="kc-blog-bar-track"><div class="kc-blog-bar-fill kc-blog-bar-live" data-suburb="allen" data-field="sfr_median_price" style="width:76%"></div></div>
-          <span class="kc-blog-bar-val kc-blog-live" data-suburb="allen" data-field="sfr_median_price">$513K</span>
+          <span class="kc-blog-bar-val kc-blog-live" data-suburb="allen" data-field="sfr_median_price">$514K</span>
         </div>
         <div class="kc-blog-bar-row">
           <span class="kc-blog-bar-label">Plano</span>
@@ -734,7 +756,7 @@ gtag('consent','default',{
         <div class="kc-blog-vs-card kc-blog-vs-card--alt">
           <h3>Allen</h3>
           <ul>
-            <li>Median home: <strong><span class="kc-blog-live" data-suburb="allen" data-field="sfr_median_price">$513K</span></strong></li>
+            <li>Median home: <strong><span class="kc-blog-live" data-suburb="allen" data-field="sfr_median_price">$514K</span></strong></li>
             <li>School district: <strong>Allen ISD · <span class="kc-blog-live" data-suburb="allen" data-field="isd_grade">A+</span></strong></li>
             <li>Best for: <strong>value, tight community, single-district town feel</strong></li>
           </ul>
@@ -813,7 +835,7 @@ gtag('consent','default',{
       <p>Yes, Dallas is family-friendly — though most families gravitate to the suburbs. Beyond schools and sports, you get the Perot Museum, the Dallas Zoo and Arboretum, and the Fort Worth museum district, plus suburb-level amenities like Frisco's sports complexes and Flower Mound's trail network. A long warm-weather season makes outdoor weekends easy.</p>
 
       <h3>How much does a family home cost in the DFW suburbs?</h3>
-      <p>It varies widely by suburb. As of the latest NTREIS data, the median single-family home runs roughly <span class="kc-blog-live" data-suburb="mckinney" data-field="sfr_median_price">$502K</span> in McKinney, <span class="kc-blog-live" data-suburb="allen" data-field="sfr_median_price">$513K</span> in Allen, <span class="kc-blog-live" data-suburb="plano" data-field="sfr_median_price">$528K</span> in Plano, <span class="kc-blog-live" data-suburb="flower-mound" data-field="sfr_median_price">$630K</span> in Flower Mound, and <span class="kc-blog-live" data-suburb="frisco" data-field="sfr_median_price">$673K</span> in Frisco, with Southlake well above $1M. Newer master-planned communities skew higher.</p>
+      <p>It varies widely by suburb. As of the latest NTREIS data, the median single-family home runs roughly <span class="kc-blog-live" data-suburb="mckinney" data-field="sfr_median_price">$502K</span> in McKinney, <span class="kc-blog-live" data-suburb="allen" data-field="sfr_median_price">$514K</span> in Allen, <span class="kc-blog-live" data-suburb="plano" data-field="sfr_median_price">$528K</span> in Plano, <span class="kc-blog-live" data-suburb="flower-mound" data-field="sfr_median_price">$630K</span> in Flower Mound, and <span class="kc-blog-live" data-suburb="frisco" data-field="sfr_median_price">$673K</span> in Frisco, with Southlake well above $1M. Newer master-planned communities skew higher.</p>
 
       <h2>The Bottom Line for Your Family</h2>
       <p>So — is Dallas, Texas good for families? Yes, genuinely, especially if you focus your search on the northern suburbs where the schools, the housing, and the family infrastructure all line up. It's not paradise; the heat, the driving, and the property taxes are real. But for families who want strong schools, room to grow, and a community that shows up for its kids, DFW is one of the easiest places in the country to say yes to. The only real work left is choosing the right suburb — and that's exactly what I'm here for.</p>
