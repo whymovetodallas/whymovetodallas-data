@@ -12,7 +12,7 @@
     <copyright>Copyright 2026 Kristen Carpentier / Social Agent Group</copyright>
     <managingEditor>Kristen@whymovetodallas.com (Kristen Carpentier)</managingEditor>
     <webMaster>Kristen@whymovetodallas.com (Kristen Carpentier)</webMaster>
-    <lastBuildDate>Sat, 31 Oct 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 00:00:00 +0000</lastBuildDate>
     <ttl>1440</ttl>
     <atom:link href="https://whymovetodallas.com/feed.xml" rel="self" type="application/rss+xml" />
     <image>
@@ -20,6 +20,17 @@
       <title>Why Move to Dallas</title>
       <link>https://whymovetodallas.com</link>
     </image>
+
+  <item>
+    <title><![CDATA[Buying a House in Dallas From Out of State]]></title>
+    <link>https://whymovetodallas.com/blog/buying-a-house-in-dallas-from-out-of-state</link>
+    <guid isPermaLink="true">https://whymovetodallas.com/blog/buying-a-house-in-dallas-from-out-of-state</guid>
+    <pubDate>Fri, 06 Nov 2026 00:00:00 +0000</pubDate>
+    <description><![CDATA[Buying a house in Dallas from out of state? Check five records before you offer: disclosure and flood map, tax bill, HOA, school zoning, and the drive.]]></description>
+      <category>Market and Buying</category>
+      <enclosure url="https://whymovetodallas.com/images/blog/buying-a-house-in-dallas-from-out-of-state-og.png" type="image/png" length="0" />
+      <media:content url="https://whymovetodallas.com/images/blog/buying-a-house-in-dallas-from-out-of-state-og.png" medium="image" />
+  </item>
 
   <item>
     <title><![CDATA[Buying a Home in McKinney? Check Maps]]></title>
@@ -558,17 +569,6 @@
       <category>City Comparisons</category>
       <enclosure url="https://whymovetodallas.com/images/blog/1739738959889-T9L5GF0UEQ4MFHE571ME-Living-in-Frisco-Texas.jpg" type="image/jpeg" length="0" />
       <media:content url="https://whymovetodallas.com/images/blog/1739738959889-T9L5GF0UEQ4MFHE571ME-Living-in-Frisco-Texas.jpg" medium="image" />
-  </item>
-
-  <item>
-    <title><![CDATA[Moving to Texas: Is Dallas or Houston Right for You?]]></title>
-    <link>https://whymovetodallas.com/blog/moving-to-texas-is-dallas-or-houston-right-for-you</link>
-    <guid isPermaLink="true">https://whymovetodallas.com/blog/moving-to-texas-is-dallas-or-houston-right-for-you</guid>
-    <pubDate>Sat, 08 Mar 2025 00:00:00 +0000</pubDate>
-    <description><![CDATA[Dallas VS Houston: Discover the detailed differences between living in Dallas and Houston, Texas. Compare jobs, cost of living, schools, safety, entertainm]]></description>
-      <category>City Comparisons</category>
-      <enclosure url="https://i.ytimg.com/vi/C45fqaAP-w0/maxresdefault.jpg" type="image/jpeg" length="0" />
-      <media:content url="https://i.ytimg.com/vi/C45fqaAP-w0/maxresdefault.jpg" medium="image" />
   </item>
 
   </channel>
