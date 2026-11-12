@@ -12,7 +12,7 @@
     <copyright>Copyright 2026 Kristen Carpentier / Social Agent Group</copyright>
     <managingEditor>Kristen@whymovetodallas.com (Kristen Carpentier)</managingEditor>
     <webMaster>Kristen@whymovetodallas.com (Kristen Carpentier)</webMaster>
-    <lastBuildDate>Fri, 06 Nov 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 00:00:00 +0000</lastBuildDate>
     <ttl>1440</ttl>
     <atom:link href="https://whymovetodallas.com/feed.xml" rel="self" type="application/rss+xml" />
     <image>
@@ -20,6 +20,17 @@
       <title>Why Move to Dallas</title>
       <link>https://whymovetodallas.com</link>
     </image>
+
+  <item>
+    <title><![CDATA[Buying a House With an HOA in Texas: Rules, Costs and Fit]]></title>
+    <link>https://whymovetodallas.com/blog/buying-a-house-with-an-hoa-texas</link>
+    <guid isPermaLink="true">https://whymovetodallas.com/blog/buying-a-house-with-an-hoa-texas</guid>
+    <pubDate>Thu, 12 Nov 2026 00:00:00 +0000</pubDate>
+    <description><![CDATA[Buying a house with an HOA in Texas? Compare rules, dues, shared amenities and deadlines, and use a practical checklist of documents to review before you buy.]]></description>
+      <category>Market and Buying</category>
+      <enclosure url="https://whymovetodallas.com/images/blog/buying-a-house-with-an-hoa-texas-og.png" type="image/png" length="0" />
+      <media:content url="https://whymovetodallas.com/images/blog/buying-a-house-with-an-hoa-texas-og.png" medium="image" />
+  </item>
 
   <item>
     <title><![CDATA[Buying a House in Dallas From Out of State]]></title>
@@ -558,17 +569,6 @@
       <category>Suburb Guide</category>
       <enclosure url="https://whymovetodallas.com/images/blog/4439cf2f-2dea-4ecb-86f7-47c2b1f0419e-Flower-Mound-Average-Commute-Time-vs-US-average.jpg" type="image/jpeg" length="0" />
       <media:content url="https://whymovetodallas.com/images/blog/4439cf2f-2dea-4ecb-86f7-47c2b1f0419e-Flower-Mound-Average-Commute-Time-vs-US-average.jpg" medium="image" />
-  </item>
-
-  <item>
-    <title><![CDATA[Dallas, Texas Suburbs You Should Consider for Your Family]]></title>
-    <link>https://whymovetodallas.com/blog/dallas-texas-suburbs-you-may-want-to-consider-in-2025-</link>
-    <guid isPermaLink="true">https://whymovetodallas.com/blog/dallas-texas-suburbs-you-may-want-to-consider-in-2025-</guid>
-    <pubDate>Sat, 12 Jul 2025 00:00:00 +0000</pubDate>
-    <description><![CDATA[Find your ideal Dallas suburb in 2025-whether you want lakeside living, luxury homes, top schools, or tech-friendly communities across DFW.]]></description>
-      <category>Suburb Guide</category>
-      <enclosure url="https://i.ytimg.com/vi/E0p6R0BZ_7k/maxresdefault.jpg" type="image/jpeg" length="0" />
-      <media:content url="https://i.ytimg.com/vi/E0p6R0BZ_7k/maxresdefault.jpg" medium="image" />
   </item>
 
   </channel>
