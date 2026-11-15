@@ -1,13 +1,13 @@
 {
   "_meta": {
-    "last_updated": "2026-11-08T02:39:41.373Z",
+    "last_updated": "2026-11-15T15:19:40.744Z",
     "sources": [
       "Census ACS 2023",
       "WalkScore (2026-06-21)",
-      "NTREIS (2026-11-01)",
-      "Niche ISD (2026-06-21)",
+      "NTREIS (2026-11-15)",
+      "Niche ISD (2026-11-08)",
       "Google Places (2026-05-19)",
-      "Niche City (2026-06-21)",
+      "Niche City (2026-11-08)",
       "TEA Accountability 2024-2025"
     ],
     "suburbs_total": 71,
@@ -61,7 +61,7 @@
         "sfr_pct_of_original_price": 96.9,
         "sfr_days_on_market": 27.1,
         "sfr_months_supply": 3.5,
-        "sfr_inventory": 19.3,
+        "sfr_inventory": 19,
         "sfr_closed_sales_12mo": 65,
         "market_condition": "balanced",
         "condo_median_price": 252766.7,
@@ -113,7 +113,7 @@
       "schools": {
         "isd_name": "Carrollton-Farmers Branch ISD",
         "overall_grade": "B+",
-        "academics_grade": "B",
+        "academics_grade": "B+",
         "college_prep_grade": "A",
         "good_for_families": "A",
         "niche_url": "https://www.niche.com/k12/d/carrollton-farmers-branch-independent-school-district-tx/",
@@ -124,7 +124,7 @@
       "quiz": {
         "sfr_median_price": 627187.5,
         "overall_isd_grade": 10,
-        "academics_isd_grade": 9,
+        "academics_isd_grade": 10,
         "pct_households_with_children": 12.2,
         "walk_score": 38,
         "transit_score": null,
@@ -190,7 +190,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -227,14 +227,14 @@
         "ws_link": "https://www.walkscore.com/score/Allen-TX/lat=33.1032/lng=-96.6706/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 514443.8,
-        "sfr_avg_price": 562705.8,
+        "sfr_median_price": 514652.1,
+        "sfr_avg_price": 562742.6,
         "sfr_median_price_per_sqft": 209.3,
         "sfr_pct_of_original_price": 96.6,
-        "sfr_days_on_market": 32.5,
+        "sfr_days_on_market": 32.7,
         "sfr_months_supply": 3,
-        "sfr_inventory": 255.3,
-        "sfr_closed_sales_12mo": 993,
+        "sfr_inventory": 255.4,
+        "sfr_closed_sales_12mo": 994,
         "market_condition": "balanced",
         "condo_median_price": 380898.3,
         "condo_closed_sales_12mo": 13,
@@ -254,10 +254,10 @@
             "label": "Typical",
             "min": 400000,
             "max": 699999,
-            "median_sale_price": 513350,
+            "median_sale_price": 513558,
             "price_per_sqft": 203.3,
-            "sqft": 2525,
-            "closed_sales": 529
+            "sqft": 2526,
+            "closed_sales": 530
           },
           "moveup": {
             "label": "Move-up",
@@ -282,7 +282,7 @@
       "schools": {
         "isd_name": "Allen ISD",
         "overall_grade": "A+",
-        "academics_grade": "A",
+        "academics_grade": "A+",
         "college_prep_grade": "A+",
         "good_for_families": "A+",
         "niche_url": "https://www.niche.com/k12/d/allen-independent-school-district-tx/",
@@ -291,9 +291,9 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 514443.8,
+        "sfr_median_price": 514652.1,
         "overall_isd_grade": 13,
-        "academics_isd_grade": 12,
+        "academics_isd_grade": 13,
         "pct_households_with_children": 42.4,
         "walk_score": 67,
         "transit_score": null,
@@ -359,7 +359,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -396,14 +396,14 @@
         "ws_link": "https://www.walkscore.com/score/Anna-TX/lat=33.3526/lng=-96.5472/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 347957.8,
-        "sfr_avg_price": 385730.8,
+        "sfr_median_price": 347789,
+        "sfr_avg_price": 385622.9,
         "sfr_median_price_per_sqft": 162.3,
         "sfr_pct_of_original_price": 91.7,
         "sfr_days_on_market": 56.8,
         "sfr_months_supply": 6.1,
-        "sfr_inventory": 419.7,
-        "sfr_closed_sales_12mo": 823,
+        "sfr_inventory": 419.6,
+        "sfr_closed_sales_12mo": 824,
         "market_condition": "buyer",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -414,10 +414,10 @@
             "label": "Starter",
             "min": 0,
             "max": 399999,
-            "median_sale_price": 324441,
+            "median_sale_price": 324445,
             "price_per_sqft": 163.1,
             "sqft": 1989,
-            "closed_sales": 596
+            "closed_sales": 597
           },
           "typical": {
             "label": "Typical",
@@ -441,19 +441,18 @@
       },
       "schools": {
         "isd_name": "Anna ISD",
-        "overall_grade": "B-",
+        "overall_grade": "B",
         "academics_grade": "B",
-        "college_prep_grade": "B+",
+        "college_prep_grade": "A-",
         "good_for_families": "B",
         "niche_url": "https://www.niche.com/k12/d/anna-independent-school-district-tx/",
         "tea_rating": "C",
         "tea_year": "2024-2025",
-        "split_isd": false,
-        "niche_city_schools_grade": "B"
+        "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 347957.8,
-        "overall_isd_grade": 8,
+        "sfr_median_price": 347789,
+        "overall_isd_grade": 9,
         "academics_isd_grade": 9,
         "pct_households_with_children": 49.5,
         "walk_score": 31,
@@ -520,7 +519,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -557,14 +556,14 @@
         "ws_link": "https://www.walkscore.com/score/Argyle-TX/lat=33.1268/lng=-97.1836/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 571500,
-        "sfr_avg_price": 715151.4,
-        "sfr_median_price_per_sqft": 208.2,
+        "sfr_median_price": 570250,
+        "sfr_avg_price": 714588.5,
+        "sfr_median_price_per_sqft": 208.1,
         "sfr_pct_of_original_price": 95,
         "sfr_days_on_market": 57.5,
         "sfr_months_supply": 5.2,
-        "sfr_inventory": 191,
-        "sfr_closed_sales_12mo": 425,
+        "sfr_inventory": 191.2,
+        "sfr_closed_sales_12mo": 426,
         "market_condition": "balanced",
         "condo_median_price": 288991,
         "condo_closed_sales_12mo": 1,
@@ -584,10 +583,10 @@
             "label": "Typical",
             "min": 400000,
             "max": 699999,
-            "median_sale_price": 496194,
-            "price_per_sqft": 193.8,
-            "sqft": 2560,
-            "closed_sales": 216
+            "median_sale_price": 496152,
+            "price_per_sqft": 193.5,
+            "sqft": 2564,
+            "closed_sales": 217
           },
           "moveup": {
             "label": "Move-up",
@@ -633,7 +632,7 @@
         ]
       },
       "quiz": {
-        "sfr_median_price": 571500,
+        "sfr_median_price": 570250,
         "overall_isd_grade": 13,
         "academics_isd_grade": 13,
         "pct_households_with_children": 39,
@@ -701,7 +700,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "estimate"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -738,14 +737,14 @@
         "ws_link": "https://www.walkscore.com/score/Arlington-TX/lat=32.7357/lng=-97.1081/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 334147.3,
-        "sfr_avg_price": 368228.4,
+        "sfr_median_price": 334234.8,
+        "sfr_avg_price": 368467,
         "sfr_median_price_per_sqft": 177.8,
-        "sfr_pct_of_original_price": 97,
-        "sfr_days_on_market": 31,
+        "sfr_pct_of_original_price": 97.1,
+        "sfr_days_on_market": 31.1,
         "sfr_months_supply": 3.1,
-        "sfr_inventory": 732.8,
-        "sfr_closed_sales_12mo": 2699,
+        "sfr_inventory": 733.5,
+        "sfr_closed_sales_12mo": 2713,
         "market_condition": "balanced",
         "condo_median_price": 139850,
         "condo_closed_sales_12mo": 107,
@@ -756,19 +755,19 @@
             "label": "Starter",
             "min": 0,
             "max": 399999,
-            "median_sale_price": 302658,
-            "price_per_sqft": 176.1,
-            "sqft": 1719,
-            "closed_sales": 1926
+            "median_sale_price": 302779,
+            "price_per_sqft": 176.2,
+            "sqft": 1718,
+            "closed_sales": 1933
           },
           "typical": {
             "label": "Typical",
             "min": 400000,
             "max": 699999,
-            "median_sale_price": 467871,
+            "median_sale_price": 468621,
             "price_per_sqft": 180.3,
-            "sqft": 2595,
-            "closed_sales": 690
+            "sqft": 2599,
+            "closed_sales": 697
           },
           "moveup": {
             "label": "Move-up",
@@ -794,16 +793,15 @@
         "isd_name": "Arlington ISD",
         "overall_grade": "B",
         "academics_grade": "B-",
-        "college_prep_grade": "A-",
+        "college_prep_grade": "A",
         "good_for_families": "B+",
         "niche_url": "https://www.niche.com/k12/d/arlington-independent-school-district-tx/",
         "tea_rating": "C",
         "tea_year": "2024-2025",
-        "split_isd": false,
-        "niche_city_schools_grade": "B"
+        "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 334147.3,
+        "sfr_median_price": 334234.8,
         "overall_isd_grade": 9,
         "academics_isd_grade": 8,
         "pct_households_with_children": 34.6,
@@ -871,7 +869,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -908,14 +906,14 @@
         "ws_link": "https://www.walkscore.com/score/Aubrey-TX/lat=33.3029/lng=-96.9836/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 331581.8,
-        "sfr_avg_price": 375029.4,
-        "sfr_median_price_per_sqft": 168.4,
+        "sfr_median_price": 331478.9,
+        "sfr_avg_price": 375112.3,
+        "sfr_median_price_per_sqft": 168.5,
         "sfr_pct_of_original_price": 95.1,
-        "sfr_days_on_market": 45,
+        "sfr_days_on_market": 44.7,
         "sfr_months_supply": 5.5,
-        "sfr_inventory": 456.7,
-        "sfr_closed_sales_12mo": 1078,
+        "sfr_inventory": 456.3,
+        "sfr_closed_sales_12mo": 1086,
         "market_condition": "balanced",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -926,19 +924,19 @@
             "label": "Starter",
             "min": 0,
             "max": 399999,
-            "median_sale_price": 307812,
+            "median_sale_price": 307685,
             "price_per_sqft": 164.4,
             "sqft": 1872,
-            "closed_sales": 788
+            "closed_sales": 792
           },
           "typical": {
             "label": "Typical",
             "min": 400000,
             "max": 699999,
-            "median_sale_price": 483963,
-            "price_per_sqft": 172.7,
-            "sqft": 2802,
-            "closed_sales": 255
+            "median_sale_price": 484909,
+            "price_per_sqft": 173.3,
+            "sqft": 2798,
+            "closed_sales": 259
           },
           "moveup": {
             "label": "Move-up",
@@ -953,8 +951,8 @@
       },
       "schools": {
         "isd_name": "Aubrey ISD",
-        "overall_grade": "B",
-        "academics_grade": "B+",
+        "overall_grade": "B-",
+        "academics_grade": "B",
         "college_prep_grade": "B+",
         "good_for_families": "B+",
         "niche_url": "https://www.niche.com/k12/d/aubrey-independent-school-district-tx/",
@@ -963,9 +961,9 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 331581.8,
-        "overall_isd_grade": 9,
-        "academics_isd_grade": 10,
+        "sfr_median_price": 331478.9,
+        "overall_isd_grade": 8,
+        "academics_isd_grade": 9,
         "pct_households_with_children": 39.3,
         "walk_score": 41,
         "transit_score": null,
@@ -1031,7 +1029,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -1068,14 +1066,14 @@
         "ws_link": "https://www.walkscore.com/score/Azle-TX/lat=32.8957/lng=-97.5447/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 344716,
-        "sfr_avg_price": 412427.7,
-        "sfr_median_price_per_sqft": 192.9,
+        "sfr_median_price": 345132.7,
+        "sfr_avg_price": 412894.2,
+        "sfr_median_price_per_sqft": 193.2,
         "sfr_pct_of_original_price": 97,
         "sfr_days_on_market": 50.1,
         "sfr_months_supply": 4.4,
-        "sfr_inventory": 209.2,
-        "sfr_closed_sales_12mo": 541,
+        "sfr_inventory": 209.1,
+        "sfr_closed_sales_12mo": 542,
         "market_condition": "balanced",
         "condo_median_price": 300500,
         "condo_closed_sales_12mo": 1,
@@ -1095,10 +1093,10 @@
             "label": "Typical",
             "min": 400000,
             "max": 699999,
-            "median_sale_price": 529804,
-            "price_per_sqft": 223.1,
-            "sqft": 2375,
-            "closed_sales": 165
+            "median_sale_price": 531054,
+            "price_per_sqft": 223,
+            "sqft": 2381,
+            "closed_sales": 166
           },
           "moveup": {
             "label": "Move-up",
@@ -1122,9 +1120,9 @@
       },
       "schools": {
         "isd_name": "Azle ISD",
-        "overall_grade": "B",
+        "overall_grade": "B-",
         "academics_grade": "B",
-        "college_prep_grade": "A-",
+        "college_prep_grade": "B+",
         "good_for_families": "B",
         "niche_url": "https://www.niche.com/k12/d/azle-independent-school-district-tx/",
         "tea_rating": "C",
@@ -1132,8 +1130,8 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 344716,
-        "overall_isd_grade": 9,
+        "sfr_median_price": 345132.7,
+        "overall_isd_grade": 8,
         "academics_isd_grade": 9,
         "pct_households_with_children": 37.3,
         "walk_score": 52,
@@ -1200,7 +1198,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -1237,14 +1235,14 @@
         "ws_link": "https://www.walkscore.com/score/Bedford-TX/lat=32.844/lng=-97.1431/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 395251.9,
-        "sfr_avg_price": 414200.3,
-        "sfr_median_price_per_sqft": 207.1,
-        "sfr_pct_of_original_price": 98.2,
-        "sfr_days_on_market": 21.4,
+        "sfr_median_price": 395043.6,
+        "sfr_avg_price": 413722.5,
+        "sfr_median_price_per_sqft": 207,
+        "sfr_pct_of_original_price": 98.1,
+        "sfr_days_on_market": 21.6,
         "sfr_months_supply": 2.3,
-        "sfr_inventory": 87.6,
-        "sfr_closed_sales_12mo": 442,
+        "sfr_inventory": 87.3,
+        "sfr_closed_sales_12mo": 443,
         "market_condition": "seller",
         "condo_median_price": 241035.8,
         "condo_closed_sales_12mo": 12,
@@ -1255,10 +1253,10 @@
             "label": "Starter",
             "min": 0,
             "max": 399999,
-            "median_sale_price": 341129,
-            "price_per_sqft": 206.9,
+            "median_sale_price": 340917,
+            "price_per_sqft": 206.7,
             "sqft": 1649,
-            "closed_sales": 227
+            "closed_sales": 228
           },
           "typical": {
             "label": "Typical",
@@ -1290,11 +1288,10 @@
         "niche_url": "https://www.niche.com/k12/d/hurst-euless-bedford-independent-school-district-tx/",
         "tea_rating": "B",
         "tea_year": "2024-2025",
-        "split_isd": false,
-        "niche_city_schools_grade": "A"
+        "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 395251.9,
+        "sfr_median_price": 395043.6,
         "overall_isd_grade": 13,
         "academics_isd_grade": 12,
         "pct_households_with_children": 26.7,
@@ -1339,7 +1336,7 @@
       },
       "scores": {
         "family_score": 75,
-        "value_score": 86,
+        "value_score": 87,
         "sub_scores": {
           "education": 88,
           "safety": 77,
@@ -1362,7 +1359,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -1399,14 +1396,14 @@
         "ws_link": "https://www.walkscore.com/score/Burleson-TX/lat=32.5421/lng=-97.3208/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 349937.9,
-        "sfr_avg_price": 393429,
+        "sfr_median_price": 350187.9,
+        "sfr_avg_price": 394535.6,
         "sfr_median_price_per_sqft": 174.2,
         "sfr_pct_of_original_price": 96.2,
         "sfr_days_on_market": 39.3,
         "sfr_months_supply": 3.6,
-        "sfr_inventory": 278.8,
-        "sfr_closed_sales_12mo": 950,
+        "sfr_inventory": 279,
+        "sfr_closed_sales_12mo": 952,
         "market_condition": "balanced",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -1426,10 +1423,10 @@
             "label": "Typical",
             "min": 400000,
             "max": 699999,
-            "median_sale_price": 480824,
+            "median_sale_price": 480553,
             "price_per_sqft": 177.2,
-            "sqft": 2713,
-            "closed_sales": 280
+            "sqft": 2712,
+            "closed_sales": 281
           },
           "moveup": {
             "label": "Move-up",
@@ -1444,18 +1441,18 @@
             "label": "Luxury",
             "min": 1000000,
             "max": null,
-            "median_sale_price": 1284375,
-            "price_per_sqft": 293.8,
-            "sqft": 4372,
-            "closed_sales": 22
+            "median_sale_price": 1303125,
+            "price_per_sqft": 270.5,
+            "sqft": 4817,
+            "closed_sales": 23
           }
         }
       },
       "schools": {
         "isd_name": "Burleson ISD",
-        "overall_grade": "B+",
+        "overall_grade": "A-",
         "academics_grade": "B+",
-        "college_prep_grade": "A-",
+        "college_prep_grade": "A",
         "good_for_families": "B+",
         "niche_url": "https://www.niche.com/k12/d/burleson-independent-school-district-tx/",
         "tea_rating": "B",
@@ -1463,8 +1460,8 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 349937.9,
-        "overall_isd_grade": 10,
+        "sfr_median_price": 350187.9,
+        "overall_isd_grade": 11,
         "academics_isd_grade": 10,
         "pct_households_with_children": 42.6,
         "walk_score": 75,
@@ -1531,7 +1528,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -1568,28 +1565,28 @@
         "ws_link": "https://www.walkscore.com/score/Carrollton-TX/lat=32.9537/lng=-96.8903/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 418939.6,
-        "sfr_avg_price": 465962.8,
-        "sfr_median_price_per_sqft": 215,
+        "sfr_median_price": 418568.8,
+        "sfr_avg_price": 465435.8,
+        "sfr_median_price_per_sqft": 215.2,
         "sfr_pct_of_original_price": 97,
-        "sfr_days_on_market": 24.8,
+        "sfr_days_on_market": 24.9,
         "sfr_months_supply": 2.8,
-        "sfr_inventory": 245.5,
-        "sfr_closed_sales_12mo": 1040,
+        "sfr_inventory": 245.8,
+        "sfr_closed_sales_12mo": 1046,
         "market_condition": "seller",
         "condo_median_price": 216354.2,
         "condo_closed_sales_12mo": 32,
         "condo_days_on_market": 66.8,
-        "condo_months_supply": 10.3,
+        "condo_months_supply": 10.5,
         "tiers": {
           "starter": {
             "label": "Starter",
             "min": 0,
             "max": 399999,
-            "median_sale_price": 346290,
-            "price_per_sqft": 213,
-            "sqft": 1626,
-            "closed_sales": 446
+            "median_sale_price": 346298,
+            "price_per_sqft": 213.2,
+            "sqft": 1624,
+            "closed_sales": 450
           },
           "typical": {
             "label": "Typical",
@@ -1598,7 +1595,7 @@
             "median_sale_price": 488037,
             "price_per_sqft": 213.2,
             "sqft": 2289,
-            "closed_sales": 496
+            "closed_sales": 498
           },
           "moveup": {
             "label": "Move-up",
@@ -1623,7 +1620,7 @@
       "schools": {
         "isd_name": "Carrollton-Farmers Branch ISD",
         "overall_grade": "B+",
-        "academics_grade": "B",
+        "academics_grade": "B+",
         "college_prep_grade": "A",
         "good_for_families": "A",
         "niche_url": "https://www.niche.com/k12/d/carrollton-farmers-branch-independent-school-district-tx/",
@@ -1646,13 +1643,12 @@
             "grade": "B",
             "pct": 5
           }
-        ],
-        "niche_city_schools_grade": "A+"
+        ]
       },
       "quiz": {
-        "sfr_median_price": 418939.6,
+        "sfr_median_price": 418568.8,
         "overall_isd_grade": 10,
-        "academics_isd_grade": 9,
+        "academics_isd_grade": 10,
         "pct_households_with_children": 30.2,
         "walk_score": 82,
         "transit_score": 33,
@@ -1695,7 +1691,7 @@
       },
       "scores": {
         "family_score": 76,
-        "value_score": 90,
+        "value_score": 91,
         "sub_scores": {
           "education": 89,
           "safety": 80,
@@ -1718,7 +1714,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -1755,14 +1751,14 @@
         "ws_link": "https://www.walkscore.com/score/Cedar-Hill-TX/lat=32.5885/lng=-96.9561/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 333721.9,
-        "sfr_avg_price": 394997.4,
-        "sfr_median_price_per_sqft": 163.4,
+        "sfr_median_price": 333559.4,
+        "sfr_avg_price": 394948,
+        "sfr_median_price_per_sqft": 163.6,
         "sfr_pct_of_original_price": 97.1,
-        "sfr_days_on_market": 29.6,
+        "sfr_days_on_market": 28.8,
         "sfr_months_supply": 3.8,
-        "sfr_inventory": 152.8,
-        "sfr_closed_sales_12mo": 478,
+        "sfr_inventory": 153.3,
+        "sfr_closed_sales_12mo": 482,
         "market_condition": "balanced",
         "condo_median_price": 134562.5,
         "condo_closed_sales_12mo": 2,
@@ -1773,10 +1769,10 @@
             "label": "Starter",
             "min": 0,
             "max": 399999,
-            "median_sale_price": 303656,
-            "price_per_sqft": 162.2,
-            "sqft": 1872,
-            "closed_sales": 336
+            "median_sale_price": 303498,
+            "price_per_sqft": 162.3,
+            "sqft": 1870,
+            "closed_sales": 339
           },
           "typical": {
             "label": "Typical",
@@ -1791,10 +1787,10 @@
             "label": "Move-up",
             "min": 700000,
             "max": 999999,
-            "median_sale_price": 790483,
-            "price_per_sqft": 196,
-            "sqft": 4033,
-            "closed_sales": 28
+            "median_sale_price": 783921,
+            "price_per_sqft": 192.6,
+            "sqft": 4070,
+            "closed_sales": 29
           },
           "luxury": {
             "label": "Luxury",
@@ -1810,19 +1806,18 @@
       },
       "schools": {
         "isd_name": "Cedar Hill ISD",
-        "overall_grade": "C",
+        "overall_grade": "C+",
         "academics_grade": "C+",
         "college_prep_grade": "B",
         "good_for_families": "B+",
         "niche_url": "https://www.niche.com/k12/d/cedar-hill-independent-school-district-tx/",
         "tea_rating": "C",
         "tea_year": "2024-2025",
-        "split_isd": false,
-        "niche_city_schools_grade": "C"
+        "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 333721.9,
-        "overall_isd_grade": 6,
+        "sfr_median_price": 333559.4,
+        "overall_isd_grade": 7,
         "academics_isd_grade": 7,
         "pct_households_with_children": 37.5,
         "walk_score": 68,
@@ -1889,7 +1884,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -1926,14 +1921,14 @@
         "ws_link": "https://www.walkscore.com/score/Celina-TX/lat=33.3254/lng=-96.7855/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 512311.9,
-        "sfr_avg_price": 580104.2,
+        "sfr_median_price": 511353.6,
+        "sfr_avg_price": 579022.8,
         "sfr_median_price_per_sqft": 185.3,
         "sfr_pct_of_original_price": 90.6,
-        "sfr_days_on_market": 68.4,
+        "sfr_days_on_market": 68.3,
         "sfr_months_supply": 6.6,
-        "sfr_inventory": 928.5,
-        "sfr_closed_sales_12mo": 1709,
+        "sfr_inventory": 928.8,
+        "sfr_closed_sales_12mo": 1720,
         "market_condition": "buyer",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -1944,19 +1939,19 @@
             "label": "Starter",
             "min": 0,
             "max": 399999,
-            "median_sale_price": 357764,
+            "median_sale_price": 357556,
             "price_per_sqft": 173.8,
-            "sqft": 2058,
-            "closed_sales": 406
+            "sqft": 2057,
+            "closed_sales": 411
           },
           "typical": {
             "label": "Typical",
             "min": 400000,
             "max": 699999,
-            "median_sale_price": 526508,
-            "price_per_sqft": 179.9,
+            "median_sale_price": 526209,
+            "price_per_sqft": 179.8,
             "sqft": 2927,
-            "closed_sales": 992
+            "closed_sales": 997
           },
           "moveup": {
             "label": "Move-up",
@@ -1971,10 +1966,10 @@
             "label": "Luxury",
             "min": 1000000,
             "max": null,
-            "median_sale_price": 1333567,
-            "price_per_sqft": 304,
-            "sqft": 4387,
-            "closed_sales": 120
+            "median_sale_price": 1328483,
+            "price_per_sqft": 303.8,
+            "sqft": 4373,
+            "closed_sales": 121
           }
         }
       },
@@ -1982,7 +1977,7 @@
         "isd_name": "Celina ISD",
         "overall_grade": "B+",
         "academics_grade": "A-",
-        "college_prep_grade": "B+",
+        "college_prep_grade": "A-",
         "good_for_families": "A+",
         "niche_url": "https://www.niche.com/k12/d/celina-independent-school-district-tx/",
         "tea_rating": "B",
@@ -2002,7 +1997,7 @@
         ]
       },
       "quiz": {
-        "sfr_median_price": 512311.9,
+        "sfr_median_price": 511353.6,
         "overall_isd_grade": 10,
         "academics_isd_grade": 11,
         "pct_households_with_children": 55.3,
@@ -2070,7 +2065,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -2107,14 +2102,14 @@
         "ws_link": "https://www.walkscore.com/score/Cleburne-TX/lat=32.3499/lng=-97.3842/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 284967.3,
-        "sfr_avg_price": 310751.9,
+        "sfr_median_price": 284842.3,
+        "sfr_avg_price": 310551.8,
         "sfr_median_price_per_sqft": 160.2,
         "sfr_pct_of_original_price": 96.1,
         "sfr_days_on_market": 59.8,
         "sfr_months_supply": 4.5,
-        "sfr_inventory": 305.7,
-        "sfr_closed_sales_12mo": 813,
+        "sfr_inventory": 306.3,
+        "sfr_closed_sales_12mo": 820,
         "market_condition": "balanced",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -2125,10 +2120,10 @@
             "label": "Starter",
             "min": 0,
             "max": 399999,
-            "median_sale_price": 273809,
-            "price_per_sqft": 156.6,
-            "sqft": 1748,
-            "closed_sales": 701
+            "median_sale_price": 273848,
+            "price_per_sqft": 156.8,
+            "sqft": 1746,
+            "closed_sales": 708
           },
           "typical": {
             "label": "Typical",
@@ -2154,16 +2149,15 @@
         "isd_name": "Cleburne ISD",
         "overall_grade": "B-",
         "academics_grade": "B-",
-        "college_prep_grade": "B+",
+        "college_prep_grade": "A-",
         "good_for_families": "A-",
         "niche_url": "https://www.niche.com/k12/d/cleburne-independent-school-district-tx/",
         "tea_rating": "C",
         "tea_year": "2024-2025",
-        "split_isd": false,
-        "niche_city_schools_grade": "B-"
+        "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 284967.3,
+        "sfr_median_price": 284842.3,
         "overall_isd_grade": 8,
         "academics_isd_grade": 8,
         "pct_households_with_children": 36.2,
@@ -2208,7 +2202,7 @@
       },
       "scores": {
         "family_score": 65,
-        "value_score": 87,
+        "value_score": 88,
         "sub_scores": {
           "education": 77,
           "safety": 77,
@@ -2231,7 +2225,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -2269,13 +2263,13 @@
       },
       "market": {
         "sfr_median_price": 1010958.3,
-        "sfr_avg_price": 1209072.4,
-        "sfr_median_price_per_sqft": 276.4,
+        "sfr_avg_price": 1206652.2,
+        "sfr_median_price_per_sqft": 276,
         "sfr_pct_of_original_price": 97.1,
-        "sfr_days_on_market": 20.1,
+        "sfr_days_on_market": 20.3,
         "sfr_months_supply": 2.4,
-        "sfr_inventory": 66.8,
-        "sfr_closed_sales_12mo": 310,
+        "sfr_inventory": 66.9,
+        "sfr_closed_sales_12mo": 311,
         "market_condition": "seller",
         "condo_median_price": 467795.8,
         "condo_closed_sales_12mo": 11,
@@ -2296,10 +2290,10 @@
             "label": "Typical",
             "min": 400000,
             "max": 699999,
-            "median_sale_price": 604577,
-            "price_per_sqft": 249.6,
-            "sqft": 2422,
-            "closed_sales": 40
+            "median_sale_price": 601973,
+            "price_per_sqft": 246.7,
+            "sqft": 2440,
+            "closed_sales": 41
           },
           "moveup": {
             "label": "Move-up",
@@ -2418,7 +2412,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -2455,14 +2449,14 @@
         "ws_link": "https://www.walkscore.com/score/Coppell-TX/lat=32.9543/lng=-97.015/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 634104.2,
-        "sfr_avg_price": 719907.3,
+        "sfr_median_price": 633062.5,
+        "sfr_avg_price": 718382.7,
         "sfr_median_price_per_sqft": 258.8,
-        "sfr_pct_of_original_price": 97.8,
-        "sfr_days_on_market": 21.1,
+        "sfr_pct_of_original_price": 97.7,
+        "sfr_days_on_market": 21.2,
         "sfr_months_supply": 2.7,
-        "sfr_inventory": 77.8,
-        "sfr_closed_sales_12mo": 336,
+        "sfr_inventory": 78.3,
+        "sfr_closed_sales_12mo": 337,
         "market_condition": "seller",
         "condo_median_price": 248375,
         "condo_closed_sales_12mo": 6,
@@ -2473,10 +2467,10 @@
             "label": "Starter",
             "min": 0,
             "max": 399999,
-            "median_sale_price": 363096,
-            "price_per_sqft": 251.2,
-            "sqft": 1445,
-            "closed_sales": 26
+            "median_sale_price": 362679,
+            "price_per_sqft": 250.3,
+            "sqft": 1449,
+            "closed_sales": 27
           },
           "typical": {
             "label": "Typical",
@@ -2536,7 +2530,7 @@
         ]
       },
       "quiz": {
-        "sfr_median_price": 634104.2,
+        "sfr_median_price": 633062.5,
         "overall_isd_grade": 13,
         "academics_isd_grade": 13,
         "pct_households_with_children": 41.7,
@@ -2604,7 +2598,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -2641,14 +2635,14 @@
         "ws_link": "https://www.walkscore.com/score/Corinth-TX/lat=33.1454/lng=-97.0641/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 428019.8,
-        "sfr_avg_price": 452732.7,
-        "sfr_median_price_per_sqft": 180.4,
-        "sfr_pct_of_original_price": 95.9,
-        "sfr_days_on_market": 47.9,
+        "sfr_median_price": 428394.8,
+        "sfr_avg_price": 453191.7,
+        "sfr_median_price_per_sqft": 180.7,
+        "sfr_pct_of_original_price": 95.8,
+        "sfr_days_on_market": 48,
         "sfr_months_supply": 3.3,
         "sfr_inventory": 108.9,
-        "sfr_closed_sales_12mo": 360,
+        "sfr_closed_sales_12mo": 365,
         "market_condition": "balanced",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -2659,19 +2653,19 @@
             "label": "Starter",
             "min": 0,
             "max": 399999,
-            "median_sale_price": 350876,
+            "median_sale_price": 351710,
             "price_per_sqft": 184.1,
-            "sqft": 1906,
-            "closed_sales": 140
+            "sqft": 1910,
+            "closed_sales": 142
           },
           "typical": {
             "label": "Typical",
             "min": 400000,
             "max": 699999,
-            "median_sale_price": 489608,
-            "price_per_sqft": 177.5,
-            "sqft": 2758,
-            "closed_sales": 205
+            "median_sale_price": 488983,
+            "price_per_sqft": 177.6,
+            "sqft": 2753,
+            "closed_sales": 208
           },
           "moveup": {
             "label": "Move-up",
@@ -2723,7 +2717,7 @@
         ]
       },
       "quiz": {
-        "sfr_median_price": 428019.8,
+        "sfr_median_price": 428394.8,
         "overall_isd_grade": 9,
         "academics_isd_grade": 9,
         "pct_households_with_children": 37,
@@ -2791,7 +2785,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -2828,14 +2822,14 @@
         "ws_link": "https://www.walkscore.com/score/Crandall-TX/lat=32.6335/lng=-96.4633/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 264326.5,
-        "sfr_avg_price": 266703.3,
-        "sfr_median_price_per_sqft": 146.4,
-        "sfr_pct_of_original_price": 95.7,
-        "sfr_days_on_market": 34.5,
+        "sfr_median_price": 264346,
+        "sfr_avg_price": 266454.9,
+        "sfr_median_price_per_sqft": 146.3,
+        "sfr_pct_of_original_price": 95.6,
+        "sfr_days_on_market": 34.3,
         "sfr_months_supply": 3.3,
-        "sfr_inventory": 227.4,
-        "sfr_closed_sales_12mo": 786,
+        "sfr_inventory": 228.4,
+        "sfr_closed_sales_12mo": 794,
         "market_condition": "balanced",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -2846,10 +2840,10 @@
             "label": "Starter",
             "min": 0,
             "max": 399999,
-            "median_sale_price": 262717,
-            "price_per_sqft": 146,
-            "sqft": 1799,
-            "closed_sales": 770
+            "median_sale_price": 262768,
+            "price_per_sqft": 145.8,
+            "sqft": 1802,
+            "closed_sales": 778
           },
           "typical": {
             "label": "Typical",
@@ -2864,8 +2858,8 @@
       },
       "schools": {
         "isd_name": "Crandall ISD",
-        "overall_grade": "C+",
-        "academics_grade": "B-",
+        "overall_grade": "C",
+        "academics_grade": "C+",
         "college_prep_grade": "B+",
         "good_for_families": "C+",
         "niche_url": "https://www.niche.com/k12/d/crandall-independent-school-district-tx/",
@@ -2874,9 +2868,9 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 264326.5,
-        "overall_isd_grade": 7,
-        "academics_isd_grade": 8,
+        "sfr_median_price": 264346,
+        "overall_isd_grade": 6,
+        "academics_isd_grade": 7,
         "pct_households_with_children": 41.3,
         "walk_score": 30,
         "transit_score": null,
@@ -2942,7 +2936,7 @@
           "shopping_total_suburbs": 65,
           "population_source": null
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -2979,17 +2973,17 @@
         "ws_link": "https://www.walkscore.com/score/Dallas-TX/lat=32.7767/lng=-96.797/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 505697.6,
-        "sfr_avg_price": 757683.1,
-        "sfr_median_price_per_sqft": 246.8,
+        "sfr_median_price": 504860.1,
+        "sfr_avg_price": 757563.8,
+        "sfr_median_price_per_sqft": 246.6,
         "sfr_pct_of_original_price": 96,
-        "sfr_days_on_market": 29.4,
+        "sfr_days_on_market": 29.3,
         "sfr_months_supply": 4.4,
-        "sfr_inventory": 2816.8,
-        "sfr_closed_sales_12mo": 7397,
+        "sfr_inventory": 2820.8,
+        "sfr_closed_sales_12mo": 7451,
         "market_condition": "balanced",
         "condo_median_price": 275350.3,
-        "condo_closed_sales_12mo": 1458,
+        "condo_closed_sales_12mo": 1465,
         "condo_days_on_market": 52.8,
         "condo_months_supply": 8.9,
         "tiers": {
@@ -2997,45 +2991,45 @@
             "label": "Starter",
             "min": 0,
             "max": 399999,
-            "median_sale_price": 262888,
-            "price_per_sqft": 174,
-            "sqft": 1511,
-            "closed_sales": 2982
+            "median_sale_price": 262721,
+            "price_per_sqft": 173.8,
+            "sqft": 1512,
+            "closed_sales": 3010
           },
           "typical": {
             "label": "Typical",
             "min": 400000,
             "max": 699999,
-            "median_sale_price": 545333,
-            "price_per_sqft": 261.3,
+            "median_sale_price": 545167,
+            "price_per_sqft": 261.2,
             "sqft": 2087,
-            "closed_sales": 1757
+            "closed_sales": 1761
           },
           "moveup": {
             "label": "Move-up",
             "min": 700000,
             "max": 999999,
-            "median_sale_price": 812002,
-            "price_per_sqft": 319.9,
-            "sqft": 2538,
-            "closed_sales": 1086
+            "median_sale_price": 812417,
+            "price_per_sqft": 320.8,
+            "sqft": 2532,
+            "closed_sales": 1099
           },
           "luxury": {
             "label": "Luxury",
             "min": 1000000,
             "max": null,
-            "median_sale_price": 1567875,
-            "price_per_sqft": 422.7,
-            "sqft": 3709,
-            "closed_sales": 1572
+            "median_sale_price": 1568000,
+            "price_per_sqft": 423,
+            "sqft": 3707,
+            "closed_sales": 1581
           }
         }
       },
       "schools": {
         "isd_name": "Dallas ISD",
         "overall_grade": "B",
-        "academics_grade": "B-",
-        "college_prep_grade": "B+",
+        "academics_grade": "B",
+        "college_prep_grade": "A-",
         "good_for_families": "B-",
         "niche_url": "https://www.niche.com/k12/d/dallas-independent-school-district-tx/",
         "tea_rating": "B",
@@ -3043,9 +3037,9 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 505697.6,
+        "sfr_median_price": 504860.1,
         "overall_isd_grade": 9,
-        "academics_isd_grade": 8,
+        "academics_isd_grade": 9,
         "pct_households_with_children": 28.1,
         "walk_score": 93,
         "transit_score": 84,
@@ -3111,7 +3105,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -3148,14 +3142,14 @@
         "ws_link": "https://www.walkscore.com/score/Denton-TX/lat=33.2148/lng=-97.1331/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 362525.3,
-        "sfr_avg_price": 403737.8,
+        "sfr_median_price": 362442,
+        "sfr_avg_price": 403724.8,
         "sfr_median_price_per_sqft": 186.5,
         "sfr_pct_of_original_price": 95.2,
-        "sfr_days_on_market": 49.4,
+        "sfr_days_on_market": 49.6,
         "sfr_months_supply": 4.3,
-        "sfr_inventory": 638.8,
-        "sfr_closed_sales_12mo": 1790,
+        "sfr_inventory": 638.9,
+        "sfr_closed_sales_12mo": 1798,
         "market_condition": "balanced",
         "condo_median_price": 211218.8,
         "condo_closed_sales_12mo": 6,
@@ -3166,28 +3160,28 @@
             "label": "Starter",
             "min": 0,
             "max": 399999,
-            "median_sale_price": 323437,
-            "price_per_sqft": 184.7,
-            "sqft": 1751,
-            "closed_sales": 1136
+            "median_sale_price": 323999,
+            "price_per_sqft": 184.8,
+            "sqft": 1753,
+            "closed_sales": 1142
           },
           "typical": {
             "label": "Typical",
             "min": 400000,
             "max": 699999,
-            "median_sale_price": 463824,
+            "median_sale_price": 463364,
             "price_per_sqft": 186.1,
-            "sqft": 2492,
-            "closed_sales": 566
+            "sqft": 2490,
+            "closed_sales": 567
           },
           "moveup": {
             "label": "Move-up",
             "min": 700000,
             "max": 999999,
-            "median_sale_price": 799646,
-            "price_per_sqft": 274.3,
-            "sqft": 2915,
-            "closed_sales": 59
+            "median_sale_price": 798729,
+            "price_per_sqft": 273.1,
+            "sqft": 2925,
+            "closed_sales": 60
           },
           "luxury": {
             "label": "Luxury",
@@ -3204,7 +3198,7 @@
         "isd_name": "Denton ISD",
         "overall_grade": "A-",
         "academics_grade": "B+",
-        "college_prep_grade": "A",
+        "college_prep_grade": "A+",
         "good_for_families": "B+",
         "niche_url": "https://www.niche.com/k12/d/denton-independent-school-district-tx/",
         "tea_rating": "B",
@@ -3212,7 +3206,7 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 362525.3,
+        "sfr_median_price": 362442,
         "overall_isd_grade": 11,
         "academics_isd_grade": 10,
         "pct_households_with_children": 27.5,
@@ -3280,7 +3274,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -3317,14 +3311,14 @@
         "ws_link": "https://www.walkscore.com/score/DeSoto-TX/lat=32.5896/lng=-96.8572/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 346145.6,
-        "sfr_avg_price": 369914.2,
-        "sfr_median_price_per_sqft": 149.7,
+        "sfr_median_price": 346562.3,
+        "sfr_avg_price": 369977.1,
+        "sfr_median_price_per_sqft": 149.8,
         "sfr_pct_of_original_price": 97.1,
-        "sfr_days_on_market": 37.9,
+        "sfr_days_on_market": 38.3,
         "sfr_months_supply": 4.9,
-        "sfr_inventory": 181.9,
-        "sfr_closed_sales_12mo": 419,
+        "sfr_inventory": 182.4,
+        "sfr_closed_sales_12mo": 420,
         "market_condition": "balanced",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -3335,10 +3329,10 @@
             "label": "Starter",
             "min": 0,
             "max": 399999,
-            "median_sale_price": 302496,
-            "price_per_sqft": 144.9,
-            "sqft": 2088,
-            "closed_sales": 283
+            "median_sale_price": 303117,
+            "price_per_sqft": 145,
+            "sqft": 2090,
+            "closed_sales": 284
           },
           "typical": {
             "label": "Typical",
@@ -3373,19 +3367,18 @@
       },
       "schools": {
         "isd_name": "DeSoto ISD",
-        "overall_grade": "C",
+        "overall_grade": "C-",
         "academics_grade": "C",
-        "college_prep_grade": "B-",
+        "college_prep_grade": "C+",
         "good_for_families": "B-",
         "niche_url": "https://www.niche.com/k12/d/desoto-independent-school-district-tx/",
         "tea_rating": "C",
         "tea_year": "2024-2025",
-        "split_isd": false,
-        "niche_city_schools_grade": "C"
+        "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 346145.6,
-        "overall_isd_grade": 6,
+        "sfr_median_price": 346562.3,
+        "overall_isd_grade": 5,
         "academics_isd_grade": 6,
         "pct_households_with_children": 31.5,
         "walk_score": 71,
@@ -3452,7 +3445,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -3489,14 +3482,14 @@
         "ws_link": "https://www.walkscore.com/score/Double-Oak-TX/lat=33.0617/lng=-97.1217/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 913125,
-        "sfr_avg_price": 949367.8,
-        "sfr_median_price_per_sqft": 295.9,
-        "sfr_pct_of_original_price": 97.7,
-        "sfr_days_on_market": 29.7,
+        "sfr_median_price": 925000,
+        "sfr_avg_price": 955228.8,
+        "sfr_median_price_per_sqft": 294.6,
+        "sfr_pct_of_original_price": 97.1,
+        "sfr_days_on_market": 30.3,
         "sfr_months_supply": 3.4,
-        "sfr_inventory": 12.5,
-        "sfr_closed_sales_12mo": 49,
+        "sfr_inventory": 12.3,
+        "sfr_closed_sales_12mo": 51,
         "market_condition": "balanced",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -3536,10 +3529,10 @@
             "label": "Luxury",
             "min": 1000000,
             "max": null,
-            "median_sale_price": 1302792,
-            "price_per_sqft": 338.8,
-            "sqft": 3845,
-            "closed_sales": 15
+            "median_sale_price": 1300125,
+            "price_per_sqft": 336.5,
+            "sqft": 3864,
+            "closed_sales": 17
           }
         }
       },
@@ -3567,7 +3560,7 @@
         ]
       },
       "quiz": {
-        "sfr_median_price": 913125,
+        "sfr_median_price": 925000,
         "overall_isd_grade": 12,
         "academics_isd_grade": 12,
         "pct_households_with_children": 32.7,
@@ -3611,7 +3604,7 @@
       },
       "scores": {
         "family_score": 80,
-        "value_score": 59,
+        "value_score": 58,
         "sub_scores": {
           "education": 89,
           "safety": 87,
@@ -3634,7 +3627,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "estimate"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -3671,14 +3664,14 @@
         "ws_link": "https://www.walkscore.com/score/Duncanville-TX/lat=32.6518/lng=-96.9083/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 300420.8,
-        "sfr_avg_price": 310959.9,
-        "sfr_median_price_per_sqft": 160.8,
+        "sfr_median_price": 299441.7,
+        "sfr_avg_price": 309715.8,
+        "sfr_median_price_per_sqft": 161.4,
         "sfr_pct_of_original_price": 96.3,
-        "sfr_days_on_market": 29.9,
+        "sfr_days_on_market": 30.3,
         "sfr_months_supply": 3.6,
-        "sfr_inventory": 73.8,
-        "sfr_closed_sales_12mo": 241,
+        "sfr_inventory": 73.3,
+        "sfr_closed_sales_12mo": 246,
         "market_condition": "balanced",
         "condo_median_price": 172190,
         "condo_closed_sales_12mo": 2,
@@ -3689,19 +3682,19 @@
             "label": "Starter",
             "min": 0,
             "max": 399999,
-            "median_sale_price": 288304,
-            "price_per_sqft": 160.7,
-            "sqft": 1794,
-            "closed_sales": 208
+            "median_sale_price": 287742,
+            "price_per_sqft": 161.7,
+            "sqft": 1779,
+            "closed_sales": 212
           },
           "typical": {
             "label": "Typical",
             "min": 400000,
             "max": 699999,
-            "median_sale_price": 446688,
-            "price_per_sqft": 151.8,
-            "sqft": 2943,
-            "closed_sales": 31
+            "median_sale_price": 446083,
+            "price_per_sqft": 152.6,
+            "sqft": 2923,
+            "closed_sales": 32
           },
           "moveup": {
             "label": "Move-up",
@@ -3727,19 +3720,18 @@
       },
       "schools": {
         "isd_name": "Duncanville ISD",
-        "overall_grade": "B-",
+        "overall_grade": "C+",
         "academics_grade": "C+",
         "college_prep_grade": "A-",
         "good_for_families": "B",
         "niche_url": "https://www.niche.com/k12/d/duncanville-independent-school-district-tx/",
         "tea_rating": "C",
         "tea_year": "2024-2025",
-        "split_isd": false,
-        "niche_city_schools_grade": "C+"
+        "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 300420.8,
-        "overall_isd_grade": 8,
+        "sfr_median_price": 299441.7,
+        "overall_isd_grade": 7,
         "academics_isd_grade": 7,
         "pct_households_with_children": 36.1,
         "walk_score": 83,
@@ -3806,7 +3798,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -3843,14 +3835,14 @@
         "ws_link": "https://www.walkscore.com/score/Euless-TX/lat=32.8371/lng=-97.0822/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 384689.2,
-        "sfr_avg_price": 399263.1,
-        "sfr_median_price_per_sqft": 213.9,
-        "sfr_pct_of_original_price": 97.4,
-        "sfr_days_on_market": 22.7,
+        "sfr_median_price": 384939.2,
+        "sfr_avg_price": 399864.6,
+        "sfr_median_price_per_sqft": 213.5,
+        "sfr_pct_of_original_price": 97.5,
+        "sfr_days_on_market": 22.6,
         "sfr_months_supply": 2.4,
-        "sfr_inventory": 78.4,
-        "sfr_closed_sales_12mo": 384,
+        "sfr_inventory": 78.1,
+        "sfr_closed_sales_12mo": 387,
         "market_condition": "seller",
         "condo_median_price": 279975,
         "condo_closed_sales_12mo": 2,
@@ -3861,19 +3853,19 @@
             "label": "Starter",
             "min": 0,
             "max": 399999,
-            "median_sale_price": 306571,
-            "price_per_sqft": 214,
-            "sqft": 1433,
-            "closed_sales": 201
+            "median_sale_price": 306487,
+            "price_per_sqft": 214.2,
+            "sqft": 1431,
+            "closed_sales": 202
           },
           "typical": {
             "label": "Typical",
             "min": 400000,
             "max": 699999,
-            "median_sale_price": 464685,
-            "price_per_sqft": 214.3,
-            "sqft": 2168,
-            "closed_sales": 171
+            "median_sale_price": 465206,
+            "price_per_sqft": 214,
+            "sqft": 2174,
+            "closed_sales": 173
           },
           "moveup": {
             "label": "Move-up",
@@ -3906,11 +3898,10 @@
         "niche_url": "https://www.niche.com/k12/d/hurst-euless-bedford-independent-school-district-tx/",
         "tea_rating": "B",
         "tea_year": "2024-2025",
-        "split_isd": false,
-        "niche_city_schools_grade": "A+"
+        "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 384689.2,
+        "sfr_median_price": 384939.2,
         "overall_isd_grade": 13,
         "academics_isd_grade": 12,
         "pct_households_with_children": 32,
@@ -3978,7 +3969,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -4021,7 +4012,7 @@
         "sfr_pct_of_original_price": 95.1,
         "sfr_days_on_market": 50.5,
         "sfr_months_supply": 4,
-        "sfr_inventory": 47.6,
+        "sfr_inventory": 47.4,
         "sfr_closed_sales_12mo": 142,
         "market_condition": "balanced",
         "condo_median_price": null,
@@ -4147,7 +4138,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -4184,14 +4175,14 @@
         "ws_link": "https://www.walkscore.com/score/Farmers-Branch-TX/lat=32.9293/lng=-96.8996/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 435575,
-        "sfr_avg_price": 531447,
-        "sfr_median_price_per_sqft": 243.3,
+        "sfr_median_price": 435783.3,
+        "sfr_avg_price": 531951.7,
+        "sfr_median_price_per_sqft": 243.1,
         "sfr_pct_of_original_price": 95.8,
         "sfr_days_on_market": 32.1,
         "sfr_months_supply": 3.2,
-        "sfr_inventory": 64.4,
-        "sfr_closed_sales_12mo": 230,
+        "sfr_inventory": 64.7,
+        "sfr_closed_sales_12mo": 234,
         "market_condition": "balanced",
         "condo_median_price": 245700,
         "condo_closed_sales_12mo": 26,
@@ -4202,19 +4193,19 @@
             "label": "Starter",
             "min": 0,
             "max": 399999,
-            "median_sale_price": 322054,
-            "price_per_sqft": 219.6,
+            "median_sale_price": 321325,
+            "price_per_sqft": 219.1,
             "sqft": 1467,
-            "closed_sales": 105
+            "closed_sales": 106
           },
           "typical": {
             "label": "Typical",
             "min": 400000,
             "max": 699999,
-            "median_sale_price": 503247,
-            "price_per_sqft": 245.8,
-            "sqft": 2047,
-            "closed_sales": 72
+            "median_sale_price": 505122,
+            "price_per_sqft": 244.9,
+            "sqft": 2063,
+            "closed_sales": 75
           },
           "moveup": {
             "label": "Move-up",
@@ -4240,7 +4231,7 @@
       "schools": {
         "isd_name": "Carrollton-Farmers Branch ISD",
         "overall_grade": "B+",
-        "academics_grade": "B",
+        "academics_grade": "B+",
         "college_prep_grade": "A",
         "good_for_families": "A",
         "niche_url": "https://www.niche.com/k12/d/carrollton-farmers-branch-independent-school-district-tx/",
@@ -4249,9 +4240,9 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 435575,
+        "sfr_median_price": 435783.3,
         "overall_isd_grade": 10,
-        "academics_isd_grade": 9,
+        "academics_isd_grade": 10,
         "pct_households_with_children": 27.3,
         "walk_score": 49,
         "transit_score": 42,
@@ -4288,12 +4279,12 @@
       },
       "amenities": null,
       "scores": {
-        "family_score": 64,
+        "family_score": 70,
         "value_score": 85,
         "sub_scores": {
-          "education": 82,
-          "safety": 72,
-          "family_community": 44,
+          "education": 84,
+          "safety": 77,
+          "family_community": 52,
           "commute": 61,
           "market_stability": 100
         },
@@ -4312,7 +4303,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -4350,13 +4341,13 @@
       },
       "market": {
         "sfr_median_price": 381748.7,
-        "sfr_avg_price": 397618.3,
-        "sfr_median_price_per_sqft": 169.2,
+        "sfr_avg_price": 397890.5,
+        "sfr_median_price_per_sqft": 169.4,
         "sfr_pct_of_original_price": 94.2,
         "sfr_days_on_market": 63.5,
-        "sfr_months_supply": 4.9,
-        "sfr_inventory": 177.8,
-        "sfr_closed_sales_12mo": 388,
+        "sfr_months_supply": 4.8,
+        "sfr_inventory": 177.4,
+        "sfr_closed_sales_12mo": 390,
         "market_condition": "balanced",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -4367,19 +4358,19 @@
             "label": "Starter",
             "min": 0,
             "max": 399999,
-            "median_sale_price": 332736,
+            "median_sale_price": 332903,
             "price_per_sqft": 163.3,
-            "sqft": 2038,
-            "closed_sales": 228
+            "sqft": 2039,
+            "closed_sales": 229
           },
           "typical": {
             "label": "Typical",
             "min": 400000,
             "max": 699999,
             "median_sale_price": 476704,
-            "price_per_sqft": 175,
-            "sqft": 2724,
-            "closed_sales": 154
+            "price_per_sqft": 175.8,
+            "sqft": 2712,
+            "closed_sales": 155
           },
           "moveup": {
             "label": "Move-up",
@@ -4407,7 +4398,7 @@
         "isd_name": "Rockwall ISD",
         "overall_grade": "A",
         "academics_grade": "A",
-        "college_prep_grade": "A",
+        "college_prep_grade": "A+",
         "good_for_families": "A",
         "niche_url": "https://www.niche.com/k12/d/rockwall-independent-school-district-tx/",
         "tea_rating": "B",
@@ -4459,14 +4450,14 @@
         "osm_fetch_date": "2026-05-19"
       },
       "scores": {
-        "family_score": 71,
+        "family_score": 72,
         "value_score": 98,
         "sub_scores": {
           "education": 88,
           "safety": 87,
           "family_community": 54,
           "commute": 36,
-          "market_stability": 97
+          "market_stability": 98
         },
         "amenity_ranks": {
           "parks_count": 16,
@@ -4483,7 +4474,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -4520,14 +4511,14 @@
         "ws_link": "https://www.walkscore.com/score/Flower-Mound-TX/lat=33.0146/lng=-97.0964/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 638500,
-        "sfr_avg_price": 759051.8,
+        "sfr_median_price": 640229.2,
+        "sfr_avg_price": 759894.3,
         "sfr_median_price_per_sqft": 234.3,
         "sfr_pct_of_original_price": 97.4,
         "sfr_days_on_market": 25.2,
         "sfr_months_supply": 2.8,
-        "sfr_inventory": 215.8,
-        "sfr_closed_sales_12mo": 914,
+        "sfr_inventory": 216,
+        "sfr_closed_sales_12mo": 919,
         "market_condition": "seller",
         "condo_median_price": 1524375,
         "condo_closed_sales_12mo": 0,
@@ -4550,25 +4541,25 @@
             "median_sale_price": 546934,
             "price_per_sqft": 225.7,
             "sqft": 2423,
-            "closed_sales": 467
+            "closed_sales": 469
           },
           "moveup": {
             "label": "Move-up",
             "min": 700000,
             "max": 999999,
-            "median_sale_price": 799271,
-            "price_per_sqft": 238.5,
-            "sqft": 3351,
-            "closed_sales": 211
+            "median_sale_price": 799896,
+            "price_per_sqft": 238.8,
+            "sqft": 3350,
+            "closed_sales": 212
           },
           "luxury": {
             "label": "Luxury",
             "min": 1000000,
             "max": null,
-            "median_sale_price": 1376371,
-            "price_per_sqft": 313.9,
-            "sqft": 4385,
-            "closed_sales": 153
+            "median_sale_price": 1380538,
+            "price_per_sqft": 314.7,
+            "sqft": 4387,
+            "closed_sales": 155
           }
         }
       },
@@ -4606,7 +4597,7 @@
         ]
       },
       "quiz": {
-        "sfr_median_price": 638500,
+        "sfr_median_price": 640229.2,
         "overall_isd_grade": 12,
         "academics_isd_grade": 12,
         "pct_households_with_children": 40.7,
@@ -4674,7 +4665,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -4711,14 +4702,14 @@
         "ws_link": "https://www.walkscore.com/score/Forney-TX/lat=32.7474/lng=-96.4697/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 317742.1,
-        "sfr_avg_price": 340854.7,
+        "sfr_median_price": 317638.3,
+        "sfr_avg_price": 340563.8,
         "sfr_median_price_per_sqft": 151,
         "sfr_pct_of_original_price": 93.9,
         "sfr_days_on_market": 58.3,
         "sfr_months_supply": 5.6,
-        "sfr_inventory": 807.8,
-        "sfr_closed_sales_12mo": 1572,
+        "sfr_inventory": 809.3,
+        "sfr_closed_sales_12mo": 1583,
         "market_condition": "balanced",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -4732,16 +4723,16 @@
             "median_sale_price": 294138,
             "price_per_sqft": 149.4,
             "sqft": 1969,
-            "closed_sales": 1193
+            "closed_sales": 1202
           },
           "typical": {
             "label": "Typical",
             "min": 400000,
             "max": 699999,
-            "median_sale_price": 451970,
+            "median_sale_price": 451641,
             "price_per_sqft": 158.6,
-            "sqft": 2850,
-            "closed_sales": 370
+            "sqft": 2848,
+            "closed_sales": 372
           },
           "moveup": {
             "label": "Move-up",
@@ -4767,7 +4758,7 @@
       },
       "schools": {
         "isd_name": "Forney ISD",
-        "overall_grade": "B",
+        "overall_grade": "B-",
         "academics_grade": "B",
         "college_prep_grade": "A-",
         "good_for_families": "B+",
@@ -4777,8 +4768,8 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 317742.1,
-        "overall_isd_grade": 9,
+        "sfr_median_price": 317638.3,
+        "overall_isd_grade": 8,
         "academics_isd_grade": 9,
         "pct_households_with_children": 48.8,
         "walk_score": 49,
@@ -4845,7 +4836,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -4882,14 +4873,14 @@
         "ws_link": "https://www.walkscore.com/score/Fort-Worth-TX/lat=32.7555/lng=-97.3308/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 336386.1,
-        "sfr_avg_price": 395772.8,
-        "sfr_median_price_per_sqft": 174.3,
+        "sfr_median_price": 336328.6,
+        "sfr_avg_price": 395430.8,
+        "sfr_median_price_per_sqft": 174.2,
         "sfr_pct_of_original_price": 96.7,
         "sfr_days_on_market": 36.4,
         "sfr_months_supply": 3.9,
-        "sfr_inventory": 3426.6,
-        "sfr_closed_sales_12mo": 10518,
+        "sfr_inventory": 3429,
+        "sfr_closed_sales_12mo": 10609,
         "market_condition": "balanced",
         "condo_median_price": 280718.8,
         "condo_closed_sales_12mo": 200,
@@ -4900,19 +4891,19 @@
             "label": "Starter",
             "min": 0,
             "max": 399999,
-            "median_sale_price": 302563,
+            "median_sale_price": 302285,
             "price_per_sqft": 169.4,
-            "sqft": 1786,
-            "closed_sales": 7432
+            "sqft": 1784,
+            "closed_sales": 7501
           },
           "typical": {
             "label": "Typical",
             "min": 400000,
             "max": 699999,
             "median_sale_price": 483376,
-            "price_per_sqft": 182.4,
-            "sqft": 2650,
-            "closed_sales": 2428
+            "price_per_sqft": 182.3,
+            "sqft": 2652,
+            "closed_sales": 2447
           },
           "moveup": {
             "label": "Move-up",
@@ -4921,23 +4912,23 @@
             "median_sale_price": 792542,
             "price_per_sqft": 242.3,
             "sqft": 3271,
-            "closed_sales": 392
+            "closed_sales": 394
           },
           "luxury": {
             "label": "Luxury",
             "min": 1000000,
             "max": null,
-            "median_sale_price": 1429354,
-            "price_per_sqft": 359.3,
-            "sqft": 3978,
-            "closed_sales": 266
+            "median_sale_price": 1428313,
+            "price_per_sqft": 359,
+            "sqft": 3979,
+            "closed_sales": 267
           }
         }
       },
       "schools": {
         "isd_name": "Fort Worth ISD",
         "overall_grade": "B-",
-        "academics_grade": "C+",
+        "academics_grade": "B-",
         "college_prep_grade": "B+",
         "good_for_families": "B",
         "niche_url": "https://www.niche.com/k12/d/fort-worth-independent-school-district-tx/",
@@ -4978,9 +4969,9 @@
         ]
       },
       "quiz": {
-        "sfr_median_price": 336386.1,
+        "sfr_median_price": 336328.6,
         "overall_isd_grade": 8,
-        "academics_isd_grade": 7,
+        "academics_isd_grade": 8,
         "pct_households_with_children": 36.1,
         "walk_score": 87,
         "transit_score": 67,
@@ -5046,7 +5037,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -5083,14 +5074,14 @@
         "ws_link": "https://www.walkscore.com/score/Frisco-TX/lat=33.1507/lng=-96.8236/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 668213.8,
-        "sfr_avg_price": 801430.5,
-        "sfr_median_price_per_sqft": 228.7,
+        "sfr_median_price": 667380.5,
+        "sfr_avg_price": 800874.6,
+        "sfr_median_price_per_sqft": 228.6,
         "sfr_pct_of_original_price": 95.6,
         "sfr_days_on_market": 37.5,
         "sfr_months_supply": 4.6,
-        "sfr_inventory": 836.3,
-        "sfr_closed_sales_12mo": 2140,
+        "sfr_inventory": 835.3,
+        "sfr_closed_sales_12mo": 2148,
         "market_condition": "balanced",
         "condo_median_price": 711976.5,
         "condo_closed_sales_12mo": 4,
@@ -5101,37 +5092,37 @@
             "label": "Starter",
             "min": 0,
             "max": 399999,
-            "median_sale_price": 366493,
-            "price_per_sqft": 224.9,
+            "median_sale_price": 366497,
+            "price_per_sqft": 224.8,
             "sqft": 1630,
-            "closed_sales": 185
+            "closed_sales": 186
           },
           "typical": {
             "label": "Typical",
             "min": 400000,
             "max": 699999,
-            "median_sale_price": 535366,
-            "price_per_sqft": 215.9,
-            "sqft": 2480,
-            "closed_sales": 975
+            "median_sale_price": 535616,
+            "price_per_sqft": 215.8,
+            "sqft": 2482,
+            "closed_sales": 979
           },
           "moveup": {
             "label": "Move-up",
             "min": 700000,
             "max": 999999,
-            "median_sale_price": 805396,
+            "median_sale_price": 808730,
             "price_per_sqft": 221.6,
-            "sqft": 3634,
-            "closed_sales": 561
+            "sqft": 3650,
+            "closed_sales": 563
           },
           "luxury": {
             "label": "Luxury",
             "min": 1000000,
             "max": null,
-            "median_sale_price": 1310634,
-            "price_per_sqft": 313.7,
-            "sqft": 4178,
-            "closed_sales": 419
+            "median_sale_price": 1310654,
+            "price_per_sqft": 314.3,
+            "sqft": 4170,
+            "closed_sales": 420
           }
         }
       },
@@ -5164,7 +5155,7 @@
         ]
       },
       "quiz": {
-        "sfr_median_price": 668213.8,
+        "sfr_median_price": 667380.5,
         "overall_isd_grade": 13,
         "academics_isd_grade": 13,
         "pct_households_with_children": 47.3,
@@ -5232,7 +5223,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -5269,19 +5260,19 @@
         "ws_link": "https://www.walkscore.com/score/Garland-TX/lat=32.9126/lng=-96.6389/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 305008.3,
-        "sfr_avg_price": 326551.6,
-        "sfr_median_price_per_sqft": 175.7,
+        "sfr_median_price": 304808.3,
+        "sfr_avg_price": 326389.3,
+        "sfr_median_price_per_sqft": 175.6,
         "sfr_pct_of_original_price": 96,
         "sfr_days_on_market": 31.1,
         "sfr_months_supply": 3.8,
-        "sfr_inventory": 522.3,
-        "sfr_closed_sales_12mo": 1639,
+        "sfr_inventory": 522.8,
+        "sfr_closed_sales_12mo": 1644,
         "market_condition": "balanced",
         "condo_median_price": 128245.8,
         "condo_closed_sales_12mo": 26,
         "condo_days_on_market": 104.5,
-        "condo_months_supply": 10.6,
+        "condo_months_supply": 10.9,
         "tiers": {
           "starter": {
             "label": "Starter",
@@ -5290,7 +5281,7 @@
             "median_sale_price": 283806,
             "price_per_sqft": 174.8,
             "sqft": 1624,
-            "closed_sales": 1300
+            "closed_sales": 1306
           },
           "typical": {
             "label": "Typical",
@@ -5321,11 +5312,10 @@
         "niche_url": "https://www.niche.com/k12/d/garland-independent-school-district-tx/",
         "tea_rating": "B",
         "tea_year": "2024-2025",
-        "split_isd": false,
-        "niche_city_schools_grade": "B+"
+        "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 305008.3,
+        "sfr_median_price": 304808.3,
         "overall_isd_grade": 11,
         "academics_isd_grade": 10,
         "pct_households_with_children": 37.9,
@@ -5393,7 +5383,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -5430,14 +5420,14 @@
         "ws_link": "https://www.walkscore.com/score/Grand-Prairie-TX/lat=32.746/lng=-96.9978/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 356596.1,
-        "sfr_avg_price": 373148.4,
-        "sfr_median_price_per_sqft": 172.6,
+        "sfr_median_price": 356591.9,
+        "sfr_avg_price": 372902.4,
+        "sfr_median_price_per_sqft": 172.7,
         "sfr_pct_of_original_price": 97.3,
-        "sfr_days_on_market": 26.8,
+        "sfr_days_on_market": 26.9,
         "sfr_months_supply": 3.3,
-        "sfr_inventory": 307.9,
-        "sfr_closed_sales_12mo": 1145,
+        "sfr_inventory": 308.9,
+        "sfr_closed_sales_12mo": 1159,
         "market_condition": "balanced",
         "condo_median_price": 143408.3,
         "condo_closed_sales_12mo": 7,
@@ -5448,19 +5438,19 @@
             "label": "Starter",
             "min": 0,
             "max": 399999,
-            "median_sale_price": 315683,
-            "price_per_sqft": 175.5,
-            "sqft": 1799,
-            "closed_sales": 753
+            "median_sale_price": 315975,
+            "price_per_sqft": 175.7,
+            "sqft": 1798,
+            "closed_sales": 764
           },
           "typical": {
             "label": "Typical",
             "min": 400000,
             "max": 699999,
-            "median_sale_price": 472709,
-            "price_per_sqft": 167.8,
-            "sqft": 2817,
-            "closed_sales": 368
+            "median_sale_price": 472710,
+            "price_per_sqft": 168,
+            "sqft": 2814,
+            "closed_sales": 371
           },
           "moveup": {
             "label": "Move-up",
@@ -5519,11 +5509,10 @@
             "grade": "B-",
             "pct": 2
           }
-        ],
-        "niche_city_schools_grade": "B"
+        ]
       },
       "quiz": {
-        "sfr_median_price": 356596.1,
+        "sfr_median_price": 356591.9,
         "overall_isd_grade": 9,
         "academics_isd_grade": 9,
         "pct_households_with_children": 39.1,
@@ -5591,7 +5580,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -5628,18 +5617,18 @@
         "ws_link": "https://www.walkscore.com/score/Grapevine-TX/lat=32.9343/lng=-97.078/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 605574.3,
-        "sfr_avg_price": 685270.3,
-        "sfr_median_price_per_sqft": 260.2,
+        "sfr_median_price": 606407.6,
+        "sfr_avg_price": 683964.1,
+        "sfr_median_price_per_sqft": 260.8,
         "sfr_pct_of_original_price": 98.1,
-        "sfr_days_on_market": 20.7,
-        "sfr_months_supply": 2.3,
-        "sfr_inventory": 85.7,
-        "sfr_closed_sales_12mo": 438,
+        "sfr_days_on_market": 20.4,
+        "sfr_months_supply": 2.2,
+        "sfr_inventory": 85.3,
+        "sfr_closed_sales_12mo": 441,
         "market_condition": "seller",
-        "condo_median_price": 432166.7,
-        "condo_closed_sales_12mo": 7,
-        "condo_days_on_market": 51,
+        "condo_median_price": 431541.7,
+        "condo_closed_sales_12mo": 8,
+        "condo_days_on_market": 51.1,
         "condo_months_supply": 6.9,
         "tiers": {
           "starter": {
@@ -5656,18 +5645,18 @@
             "min": 400000,
             "max": 699999,
             "median_sale_price": 548554,
-            "price_per_sqft": 256.2,
-            "sqft": 2141,
-            "closed_sales": 274
+            "price_per_sqft": 256.5,
+            "sqft": 2139,
+            "closed_sales": 275
           },
           "moveup": {
             "label": "Move-up",
             "min": 700000,
             "max": 999999,
-            "median_sale_price": 824156,
-            "price_per_sqft": 265.4,
-            "sqft": 3105,
-            "closed_sales": 100
+            "median_sale_price": 821906,
+            "price_per_sqft": 266.5,
+            "sqft": 3084,
+            "closed_sales": 102
           },
           "luxury": {
             "label": "Luxury",
@@ -5692,7 +5681,7 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 605574.3,
+        "sfr_median_price": 606407.6,
         "overall_isd_grade": 13,
         "academics_isd_grade": 13,
         "pct_households_with_children": 28.2,
@@ -5743,7 +5732,7 @@
           "safety": 80,
           "family_community": 63,
           "commute": 61,
-          "market_stability": 95
+          "market_stability": 93
         },
         "amenity_ranks": {
           "parks_count": 35,
@@ -5760,7 +5749,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -5797,14 +5786,14 @@
         "ws_link": "https://www.walkscore.com/score/Haslet-TX/lat=32.9679/lng=-97.3467/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 490061.4,
-        "sfr_avg_price": 546623.8,
-        "sfr_median_price_per_sqft": 191.6,
+        "sfr_median_price": 498728.9,
+        "sfr_avg_price": 548854.2,
+        "sfr_median_price_per_sqft": 191.7,
         "sfr_pct_of_original_price": 96.4,
         "sfr_days_on_market": 56.5,
         "sfr_months_supply": 4.4,
         "sfr_inventory": 152.1,
-        "sfr_closed_sales_12mo": 433,
+        "sfr_closed_sales_12mo": 437,
         "market_condition": "balanced",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -5824,19 +5813,19 @@
             "label": "Typical",
             "min": 400000,
             "max": 699999,
-            "median_sale_price": 523895,
-            "price_per_sqft": 195.3,
-            "sqft": 2683,
-            "closed_sales": 199
+            "median_sale_price": 526427,
+            "price_per_sqft": 194.8,
+            "sqft": 2702,
+            "closed_sales": 201
           },
           "moveup": {
             "label": "Move-up",
             "min": 700000,
             "max": 999999,
-            "median_sale_price": 792490,
-            "price_per_sqft": 232.3,
-            "sqft": 3411,
-            "closed_sales": 84
+            "median_sale_price": 790820,
+            "price_per_sqft": 229.3,
+            "sqft": 3449,
+            "closed_sales": 86
           },
           "luxury": {
             "label": "Luxury",
@@ -5870,11 +5859,10 @@
             "grade": "A-",
             "pct": 40
           }
-        ],
-        "niche_city_schools_grade": "A-"
+        ]
       },
       "quiz": {
-        "sfr_median_price": 490061.4,
+        "sfr_median_price": 498728.9,
         "overall_isd_grade": 11,
         "academics_isd_grade": 10,
         "pct_households_with_children": 37.3,
@@ -5942,7 +5930,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "estimate"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -5979,19 +5967,19 @@
         "ws_link": "https://www.walkscore.com/score/Heath-TX/lat=32.8346/lng=-96.4683/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 758964.6,
-        "sfr_avg_price": 901496.8,
-        "sfr_median_price_per_sqft": 221.1,
-        "sfr_pct_of_original_price": 93.3,
-        "sfr_days_on_market": 74,
+        "sfr_median_price": 759797.9,
+        "sfr_avg_price": 902480.9,
+        "sfr_median_price_per_sqft": 221.3,
+        "sfr_pct_of_original_price": 93.4,
+        "sfr_days_on_market": 73.9,
         "sfr_months_supply": 7.7,
         "sfr_inventory": 160.5,
-        "sfr_closed_sales_12mo": 281,
+        "sfr_closed_sales_12mo": 282,
         "market_condition": "buyer",
         "condo_median_price": 314901,
         "condo_closed_sales_12mo": 2,
         "condo_days_on_market": 52.4,
-        "condo_months_supply": 1.7,
+        "condo_months_supply": 1.6,
         "tiers": {
           "starter": {
             "label": "Starter",
@@ -6024,10 +6012,10 @@
             "label": "Luxury",
             "min": 1000000,
             "max": null,
-            "median_sale_price": 1556875,
-            "price_per_sqft": 292.2,
-            "sqft": 5328,
-            "closed_sales": 86
+            "median_sale_price": 1538958,
+            "price_per_sqft": 289.2,
+            "sqft": 5321,
+            "closed_sales": 87
           }
         }
       },
@@ -6035,7 +6023,7 @@
         "isd_name": "Rockwall ISD",
         "overall_grade": "A",
         "academics_grade": "A",
-        "college_prep_grade": "A",
+        "college_prep_grade": "A+",
         "good_for_families": "A",
         "niche_url": "https://www.niche.com/k12/d/rockwall-independent-school-district-tx/",
         "tea_rating": "B",
@@ -6043,7 +6031,7 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 758964.6,
+        "sfr_median_price": 759797.9,
         "overall_isd_grade": 12,
         "academics_isd_grade": 12,
         "pct_households_with_children": 41.2,
@@ -6111,7 +6099,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -6154,13 +6142,13 @@
         "sfr_pct_of_original_price": 93.7,
         "sfr_days_on_market": 52.9,
         "sfr_months_supply": 4.1,
-        "sfr_inventory": 26.8,
+        "sfr_inventory": 27,
         "sfr_closed_sales_12mo": 85,
         "market_condition": "balanced",
-        "condo_median_price": 1298750,
-        "condo_closed_sales_12mo": 12,
-        "condo_days_on_market": 36.5,
-        "condo_months_supply": 3.2,
+        "condo_median_price": 1286766.7,
+        "condo_closed_sales_12mo": 14,
+        "condo_days_on_market": 35.7,
+        "condo_months_supply": 3.1,
         "tiers": {
           "moveup": {
             "label": "Move-up",
@@ -6185,7 +6173,7 @@
       },
       "schools": {
         "isd_name": "Highland Park ISD",
-        "overall_grade": "A+",
+        "overall_grade": "A",
         "academics_grade": "A+",
         "college_prep_grade": "A+",
         "good_for_families": "A+",
@@ -6196,7 +6184,7 @@
       },
       "quiz": {
         "sfr_median_price": 3874394.3,
-        "overall_isd_grade": 13,
+        "overall_isd_grade": 12,
         "academics_isd_grade": 13,
         "pct_households_with_children": 36.5,
         "walk_score": 43,
@@ -6263,7 +6251,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -6300,8 +6288,8 @@
         "ws_link": "https://www.walkscore.com/score/Highland-Village-TX/lat=33.0918/lng=-97.0558/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 613613.1,
-        "sfr_avg_price": 683320.2,
+        "sfr_median_price": 611629.8,
+        "sfr_avg_price": 681062.3,
         "sfr_median_price_per_sqft": 219.9,
         "sfr_pct_of_original_price": 97.3,
         "sfr_days_on_market": 24.4,
@@ -6328,19 +6316,19 @@
             "label": "Typical",
             "min": 400000,
             "max": 699999,
-            "median_sale_price": 539771,
-            "price_per_sqft": 218,
-            "sqft": 2476,
-            "closed_sales": 123
+            "median_sale_price": 538521,
+            "price_per_sqft": 218.3,
+            "sqft": 2467,
+            "closed_sales": 124
           },
           "moveup": {
             "label": "Move-up",
             "min": 700000,
             "max": 999999,
-            "median_sale_price": 824229,
-            "price_per_sqft": 218.6,
-            "sqft": 3770,
-            "closed_sales": 54
+            "median_sale_price": 817354,
+            "price_per_sqft": 218.3,
+            "sqft": 3744,
+            "closed_sales": 53
           },
           "luxury": {
             "label": "Luxury",
@@ -6365,7 +6353,7 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 613613.1,
+        "sfr_median_price": 611629.8,
         "overall_isd_grade": 12,
         "academics_isd_grade": 12,
         "pct_households_with_children": 43.6,
@@ -6433,7 +6421,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -6470,19 +6458,19 @@
         "ws_link": "https://www.walkscore.com/score/Hurst-TX/lat=32.8232/lng=-97.1883/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 365631.1,
-        "sfr_avg_price": 416274.4,
-        "sfr_median_price_per_sqft": 199.1,
+        "sfr_median_price": 365922.8,
+        "sfr_avg_price": 416054.3,
+        "sfr_median_price_per_sqft": 199.2,
         "sfr_pct_of_original_price": 97.7,
-        "sfr_days_on_market": 23.9,
+        "sfr_days_on_market": 24.1,
         "sfr_months_supply": 2.1,
         "sfr_inventory": 73.3,
-        "sfr_closed_sales_12mo": 403,
+        "sfr_closed_sales_12mo": 404,
         "market_condition": "seller",
         "condo_median_price": 177523.3,
         "condo_closed_sales_12mo": 6,
         "condo_days_on_market": 42.5,
-        "condo_months_supply": 2.2,
+        "condo_months_supply": 2.3,
         "tiers": {
           "starter": {
             "label": "Starter",
@@ -6497,10 +6485,10 @@
             "label": "Typical",
             "min": 400000,
             "max": 699999,
-            "median_sale_price": 475225,
-            "price_per_sqft": 208.5,
-            "sqft": 2279,
-            "closed_sales": 129
+            "median_sale_price": 474854,
+            "price_per_sqft": 208.9,
+            "sqft": 2273,
+            "closed_sales": 130
           },
           "moveup": {
             "label": "Move-up",
@@ -6532,11 +6520,10 @@
         "niche_url": "https://www.niche.com/k12/d/hurst-euless-bedford-independent-school-district-tx/",
         "tea_rating": "B",
         "tea_year": "2024-2025",
-        "split_isd": false,
-        "niche_city_schools_grade": "A"
+        "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 365631.1,
+        "sfr_median_price": 365922.8,
         "overall_isd_grade": 13,
         "academics_isd_grade": 12,
         "pct_households_with_children": 31.1,
@@ -6604,7 +6591,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -6641,37 +6628,37 @@
         "ws_link": "https://www.walkscore.com/score/Irving-TX/lat=32.814/lng=-96.9489/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 388685.4,
-        "sfr_avg_price": 486456.9,
-        "sfr_median_price_per_sqft": 208.9,
+        "sfr_median_price": 388364.6,
+        "sfr_avg_price": 484712.5,
+        "sfr_median_price_per_sqft": 208.8,
         "sfr_pct_of_original_price": 96.3,
-        "sfr_days_on_market": 28.4,
+        "sfr_days_on_market": 28.3,
         "sfr_months_supply": 4,
-        "sfr_inventory": 301.9,
-        "sfr_closed_sales_12mo": 888,
+        "sfr_inventory": 302.1,
+        "sfr_closed_sales_12mo": 897,
         "market_condition": "balanced",
-        "condo_median_price": 228710.4,
-        "condo_closed_sales_12mo": 118,
-        "condo_days_on_market": 47.2,
-        "condo_months_supply": 7.3,
+        "condo_median_price": 229606.3,
+        "condo_closed_sales_12mo": 119,
+        "condo_days_on_market": 47.5,
+        "condo_months_supply": 7.4,
         "tiers": {
           "starter": {
             "label": "Starter",
             "min": 0,
             "max": 399999,
-            "median_sale_price": 305083,
+            "median_sale_price": 304667,
             "price_per_sqft": 197.3,
-            "sqft": 1546,
-            "closed_sales": 460
+            "sqft": 1544,
+            "closed_sales": 466
           },
           "typical": {
             "label": "Typical",
             "min": 400000,
             "max": 699999,
-            "median_sale_price": 507438,
-            "price_per_sqft": 214.8,
-            "sqft": 2362,
-            "closed_sales": 286
+            "median_sale_price": 508479,
+            "price_per_sqft": 214.3,
+            "sqft": 2373,
+            "closed_sales": 289
           },
           "moveup": {
             "label": "Move-up",
@@ -6696,19 +6683,18 @@
       "schools": {
         "isd_name": "Irving ISD",
         "overall_grade": "B-",
-        "academics_grade": "C+",
-        "college_prep_grade": "B+",
+        "academics_grade": "B-",
+        "college_prep_grade": "A-",
         "good_for_families": "A-",
         "niche_url": "https://www.niche.com/k12/d/irving-independent-school-district-tx/",
         "tea_rating": "C",
         "tea_year": "2024-2025",
-        "split_isd": false,
-        "niche_city_schools_grade": "B+"
+        "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 388685.4,
+        "sfr_median_price": 388364.6,
         "overall_isd_grade": 8,
-        "academics_isd_grade": 7,
+        "academics_isd_grade": 8,
         "pct_households_with_children": 36.7,
         "walk_score": 80,
         "transit_score": 51,
@@ -6774,7 +6760,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -6812,36 +6798,36 @@
       },
       "market": {
         "sfr_median_price": 677704.2,
-        "sfr_avg_price": 771803.8,
+        "sfr_avg_price": 771002.6,
         "sfr_median_price_per_sqft": 235.3,
-        "sfr_pct_of_original_price": 97.2,
-        "sfr_days_on_market": 25.6,
+        "sfr_pct_of_original_price": 97.1,
+        "sfr_days_on_market": 25.5,
         "sfr_months_supply": 3,
-        "sfr_inventory": 140.8,
-        "sfr_closed_sales_12mo": 598,
+        "sfr_inventory": 140,
+        "sfr_closed_sales_12mo": 602,
         "market_condition": "balanced",
-        "condo_median_price": 549145.8,
-        "condo_closed_sales_12mo": 4,
-        "condo_days_on_market": 44.7,
+        "condo_median_price": 554354.1,
+        "condo_closed_sales_12mo": 5,
+        "condo_days_on_market": 40,
         "condo_months_supply": 1.6,
         "tiers": {
           "starter": {
             "label": "Starter",
             "min": 0,
             "max": 399999,
-            "median_sale_price": 327100,
-            "price_per_sqft": 214.7,
-            "sqft": 1524,
-            "closed_sales": 66
+            "median_sale_price": 325992,
+            "price_per_sqft": 214.3,
+            "sqft": 1521,
+            "closed_sales": 68
           },
           "typical": {
             "label": "Typical",
             "min": 400000,
             "max": 699999,
-            "median_sale_price": 578988,
-            "price_per_sqft": 215.8,
-            "sqft": 2683,
-            "closed_sales": 242
+            "median_sale_price": 579196,
+            "price_per_sqft": 216.1,
+            "sqft": 2680,
+            "closed_sales": 243
           },
           "moveup": {
             "label": "Move-up",
@@ -6856,10 +6842,10 @@
             "label": "Luxury",
             "min": 1000000,
             "max": null,
-            "median_sale_price": 1308394,
-            "price_per_sqft": 288.2,
-            "sqft": 4540,
-            "closed_sales": 110
+            "median_sale_price": 1305894,
+            "price_per_sqft": 286.4,
+            "sqft": 4560,
+            "closed_sales": 111
           }
         }
       },
@@ -6955,7 +6941,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -6992,14 +6978,14 @@
         "ws_link": "https://www.walkscore.com/score/Lancaster-TX/lat=32.5921/lng=-96.7561/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 280341.3,
-        "sfr_avg_price": 282968.8,
-        "sfr_median_price_per_sqft": 151.3,
-        "sfr_pct_of_original_price": 97.5,
-        "sfr_days_on_market": 30.3,
+        "sfr_median_price": 278820.4,
+        "sfr_avg_price": 283006.5,
+        "sfr_median_price_per_sqft": 151,
+        "sfr_pct_of_original_price": 97.6,
+        "sfr_days_on_market": 30.6,
         "sfr_months_supply": 4,
-        "sfr_inventory": 99.8,
-        "sfr_closed_sales_12mo": 282,
+        "sfr_inventory": 99.5,
+        "sfr_closed_sales_12mo": 287,
         "market_condition": "balanced",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -7010,19 +6996,19 @@
             "label": "Starter",
             "min": 0,
             "max": 399999,
-            "median_sale_price": 276852,
-            "price_per_sqft": 150.5,
-            "sqft": 1840,
-            "closed_sales": 269
+            "median_sale_price": 275331,
+            "price_per_sqft": 150.3,
+            "sqft": 1832,
+            "closed_sales": 273
           },
           "typical": {
             "label": "Typical",
             "min": 400000,
             "max": 699999,
-            "median_sale_price": 461512,
-            "price_per_sqft": 179.3,
-            "sqft": 2574,
-            "closed_sales": 13
+            "median_sale_price": 459428,
+            "price_per_sqft": 177.3,
+            "sqft": 2591,
+            "closed_sales": 14
           },
           "moveup": {
             "label": "Move-up",
@@ -7058,7 +7044,7 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 280341.3,
+        "sfr_median_price": 278820.4,
         "overall_isd_grade": 8,
         "academics_isd_grade": 7,
         "pct_households_with_children": 41.6,
@@ -7097,12 +7083,12 @@
       },
       "amenities": null,
       "scores": {
-        "family_score": 53,
+        "family_score": 58,
         "value_score": 88,
         "sub_scores": {
-          "education": 74,
-          "safety": 69,
-          "family_community": 58,
+          "education": 76,
+          "safety": 73,
+          "family_community": 61,
           "commute": 43,
           "market_stability": 100
         },
@@ -7121,7 +7107,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -7158,14 +7144,14 @@
         "ws_link": "https://www.walkscore.com/score/Lantana-TX/lat=33.0893/lng=-97.1311/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 635583.3,
-        "sfr_avg_price": 687288.9,
+        "sfr_median_price": 634541.7,
+        "sfr_avg_price": 686746.5,
         "sfr_median_price_per_sqft": 197.4,
-        "sfr_pct_of_original_price": 97.7,
-        "sfr_days_on_market": 29.9,
+        "sfr_pct_of_original_price": 97.6,
+        "sfr_days_on_market": 29.4,
         "sfr_months_supply": 2.5,
-        "sfr_inventory": 35.9,
-        "sfr_closed_sales_12mo": 172,
+        "sfr_inventory": 35.8,
+        "sfr_closed_sales_12mo": 173,
         "market_condition": "seller",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -7186,10 +7172,10 @@
             "label": "Typical",
             "min": 400000,
             "max": 699999,
-            "median_sale_price": 553854,
+            "median_sale_price": 553354,
             "price_per_sqft": 186.3,
-            "sqft": 2973,
-            "closed_sales": 105
+            "sqft": 2970,
+            "closed_sales": 106
           },
           "moveup": {
             "label": "Move-up",
@@ -7235,7 +7221,7 @@
         ]
       },
       "quiz": {
-        "sfr_median_price": 635583.3,
+        "sfr_median_price": 634541.7,
         "overall_isd_grade": 13,
         "academics_isd_grade": 13,
         "pct_households_with_children": 55.3,
@@ -7303,7 +7289,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -7340,14 +7326,14 @@
         "ws_link": "https://www.walkscore.com/score/Lavon-TX/lat=33.031/lng=-96.4432/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 340508,
-        "sfr_avg_price": 364930,
-        "sfr_median_price_per_sqft": 162.3,
+        "sfr_median_price": 340715.1,
+        "sfr_avg_price": 364925.8,
+        "sfr_median_price_per_sqft": 162.2,
         "sfr_pct_of_original_price": 94.1,
-        "sfr_days_on_market": 77.9,
+        "sfr_days_on_market": 77.4,
         "sfr_months_supply": 3.6,
-        "sfr_inventory": 227.7,
-        "sfr_closed_sales_12mo": 688,
+        "sfr_inventory": 227.6,
+        "sfr_closed_sales_12mo": 692,
         "market_condition": "balanced",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -7361,7 +7347,7 @@
             "median_sale_price": 319668,
             "price_per_sqft": 161.7,
             "sqft": 1977,
-            "closed_sales": 502
+            "closed_sales": 506
           },
           "typical": {
             "label": "Typical",
@@ -7406,7 +7392,7 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 340508,
+        "sfr_median_price": 340715.1,
         "overall_isd_grade": 7,
         "academics_isd_grade": 7,
         "pct_households_with_children": 51,
@@ -7445,12 +7431,12 @@
       },
       "amenities": null,
       "scores": {
-        "family_score": 64,
-        "value_score": 96,
+        "family_score": 53,
+        "value_score": 95,
         "sub_scores": {
-          "education": 83,
-          "safety": 79,
-          "family_community": 76,
+          "education": 77,
+          "safety": null,
+          "family_community": 74,
           "commute": 25,
           "market_stability": 100
         },
@@ -7469,8 +7455,8 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
-        "data_completeness": "full"
+        "computed_date": "2026-11-15T15:19:40.724Z",
+        "data_completeness": "partial"
       }
     },
     "lewisville": {
@@ -7507,13 +7493,13 @@
       },
       "market": {
         "sfr_median_price": 401125,
-        "sfr_avg_price": 479268.5,
+        "sfr_avg_price": 479134.7,
         "sfr_median_price_per_sqft": 212.1,
         "sfr_pct_of_original_price": 97.3,
-        "sfr_days_on_market": 25.6,
+        "sfr_days_on_market": 25.4,
         "sfr_months_supply": 3,
-        "sfr_inventory": 193.5,
-        "sfr_closed_sales_12mo": 758,
+        "sfr_inventory": 193.6,
+        "sfr_closed_sales_12mo": 760,
         "market_condition": "balanced",
         "condo_median_price": 330232.2,
         "condo_closed_sales_12mo": 12,
@@ -7524,19 +7510,19 @@
             "label": "Starter",
             "min": 0,
             "max": 399999,
-            "median_sale_price": 331917,
+            "median_sale_price": 332103,
             "price_per_sqft": 208.3,
-            "sqft": 1593,
-            "closed_sales": 363
+            "sqft": 1594,
+            "closed_sales": 364
           },
           "typical": {
             "label": "Typical",
             "min": 400000,
             "max": 699999,
-            "median_sale_price": 465881,
-            "price_per_sqft": 207.4,
-            "sqft": 2246,
-            "closed_sales": 288
+            "median_sale_price": 466499,
+            "price_per_sqft": 207.3,
+            "sqft": 2250,
+            "closed_sales": 289
           },
           "moveup": {
             "label": "Move-up",
@@ -7638,7 +7624,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -7675,14 +7661,14 @@
         "ws_link": "https://www.walkscore.com/score/Little-Elm-TX/lat=33.1629/lng=-96.9375/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 395664.7,
-        "sfr_avg_price": 427558,
+        "sfr_median_price": 395998,
+        "sfr_avg_price": 427196.7,
         "sfr_median_price_per_sqft": 175,
-        "sfr_pct_of_original_price": 93.8,
-        "sfr_days_on_market": 57.4,
+        "sfr_pct_of_original_price": 93.9,
+        "sfr_days_on_market": 56.8,
         "sfr_months_supply": 5.2,
-        "sfr_inventory": 492.1,
-        "sfr_closed_sales_12mo": 1022,
+        "sfr_inventory": 492,
+        "sfr_closed_sales_12mo": 1031,
         "market_condition": "balanced",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -7693,19 +7679,19 @@
             "label": "Starter",
             "min": 0,
             "max": 399999,
-            "median_sale_price": 337813,
+            "median_sale_price": 338499,
             "price_per_sqft": 173.7,
-            "sqft": 1945,
-            "closed_sales": 535
+            "sqft": 1949,
+            "closed_sales": 540
           },
           "typical": {
             "label": "Typical",
             "min": 400000,
             "max": 699999,
-            "median_sale_price": 489568,
-            "price_per_sqft": 174.6,
-            "sqft": 2804,
-            "closed_sales": 461
+            "median_sale_price": 488735,
+            "price_per_sqft": 174.5,
+            "sqft": 2801,
+            "closed_sales": 465
           },
           "moveup": {
             "label": "Move-up",
@@ -7720,8 +7706,8 @@
       },
       "schools": {
         "isd_name": "Little Elm ISD",
-        "overall_grade": "B-",
-        "academics_grade": "B-",
+        "overall_grade": "B",
+        "academics_grade": "B+",
         "college_prep_grade": "A",
         "good_for_families": "A",
         "niche_url": "https://www.niche.com/k12/d/little-elm-independent-school-district-tx/",
@@ -7747,9 +7733,9 @@
         ]
       },
       "quiz": {
-        "sfr_median_price": 395664.7,
-        "overall_isd_grade": 8,
-        "academics_isd_grade": 8,
+        "sfr_median_price": 395998,
+        "overall_isd_grade": 9,
+        "academics_isd_grade": 10,
         "pct_households_with_children": 51.4,
         "walk_score": 45,
         "transit_score": null,
@@ -7815,7 +7801,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -7858,7 +7844,7 @@
         "sfr_pct_of_original_price": 94.2,
         "sfr_days_on_market": 64.4,
         "sfr_months_supply": 5.4,
-        "sfr_inventory": 67.8,
+        "sfr_inventory": 68.2,
         "sfr_closed_sales_12mo": 143,
         "market_condition": "balanced",
         "condo_median_price": null,
@@ -7985,7 +7971,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -8022,14 +8008,14 @@
         "ws_link": "https://www.walkscore.com/score/Mansfield-TX/lat=32.5632/lng=-97.1411/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 481558.3,
-        "sfr_avg_price": 501259.5,
-        "sfr_median_price_per_sqft": 182.7,
+        "sfr_median_price": 481766.7,
+        "sfr_avg_price": 501340.9,
+        "sfr_median_price_per_sqft": 182.6,
         "sfr_pct_of_original_price": 95.8,
-        "sfr_days_on_market": 42.9,
+        "sfr_days_on_market": 43,
         "sfr_months_supply": 3.4,
         "sfr_inventory": 317.8,
-        "sfr_closed_sales_12mo": 1058,
+        "sfr_closed_sales_12mo": 1063,
         "market_condition": "balanced",
         "condo_median_price": 429789.5,
         "condo_closed_sales_12mo": 8,
@@ -8040,28 +8026,28 @@
             "label": "Starter",
             "min": 0,
             "max": 399999,
-            "median_sale_price": 337933,
+            "median_sale_price": 337350,
             "price_per_sqft": 179,
-            "sqft": 1888,
-            "closed_sales": 322
+            "sqft": 1885,
+            "closed_sales": 323
           },
           "typical": {
             "label": "Typical",
             "min": 400000,
             "max": 699999,
-            "median_sale_price": 520408,
-            "price_per_sqft": 182.1,
-            "sqft": 2858,
-            "closed_sales": 628
+            "median_sale_price": 520283,
+            "price_per_sqft": 181.9,
+            "sqft": 2860,
+            "closed_sales": 631
           },
           "moveup": {
             "label": "Move-up",
             "min": 700000,
             "max": 999999,
-            "median_sale_price": 758671,
-            "price_per_sqft": 197.2,
-            "sqft": 3847,
-            "closed_sales": 88
+            "median_sale_price": 755963,
+            "price_per_sqft": 197.5,
+            "sqft": 3828,
+            "closed_sales": 89
           },
           "luxury": {
             "label": "Luxury",
@@ -8086,7 +8072,7 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 481558.3,
+        "sfr_median_price": 481766.7,
         "overall_isd_grade": 12,
         "academics_isd_grade": 11,
         "pct_households_with_children": 44.5,
@@ -8154,7 +8140,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -8191,46 +8177,46 @@
         "ws_link": "https://www.walkscore.com/score/McKinney-TX/lat=33.1972/lng=-96.6397/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 507690.5,
-        "sfr_avg_price": 552411.8,
-        "sfr_median_price_per_sqft": 205.5,
+        "sfr_median_price": 507883.6,
+        "sfr_avg_price": 552429.3,
+        "sfr_median_price_per_sqft": 205.9,
         "sfr_pct_of_original_price": 95.1,
-        "sfr_days_on_market": 43,
+        "sfr_days_on_market": 42.8,
         "sfr_months_supply": 3.6,
-        "sfr_inventory": 994.3,
-        "sfr_closed_sales_12mo": 3057,
+        "sfr_inventory": 992.3,
+        "sfr_closed_sales_12mo": 3082,
         "market_condition": "balanced",
         "condo_median_price": 423166.7,
         "condo_closed_sales_12mo": 34,
         "condo_days_on_market": 52.7,
-        "condo_months_supply": 3.8,
+        "condo_months_supply": 3.7,
         "tiers": {
           "starter": {
             "label": "Starter",
             "min": 0,
             "max": 399999,
-            "median_sale_price": 351575,
-            "price_per_sqft": 193.5,
-            "sqft": 1817,
-            "closed_sales": 701
+            "median_sale_price": 351783,
+            "price_per_sqft": 193.3,
+            "sqft": 1820,
+            "closed_sales": 706
           },
           "typical": {
             "label": "Typical",
             "min": 400000,
             "max": 699999,
-            "median_sale_price": 526319,
-            "price_per_sqft": 201.8,
+            "median_sale_price": 526861,
+            "price_per_sqft": 202,
             "sqft": 2608,
-            "closed_sales": 1863
+            "closed_sales": 1880
           },
           "moveup": {
             "label": "Move-up",
             "min": 700000,
             "max": 999999,
-            "median_sale_price": 795678,
-            "price_per_sqft": 224.4,
-            "sqft": 3546,
-            "closed_sales": 368
+            "median_sale_price": 797137,
+            "price_per_sqft": 224.5,
+            "sqft": 3551,
+            "closed_sales": 371
           },
           "luxury": {
             "label": "Luxury",
@@ -8282,7 +8268,7 @@
         ]
       },
       "quiz": {
-        "sfr_median_price": 507690.5,
+        "sfr_median_price": 507883.6,
         "overall_isd_grade": 12,
         "academics_isd_grade": 12,
         "pct_households_with_children": 42.8,
@@ -8350,7 +8336,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -8387,14 +8373,14 @@
         "ws_link": "https://www.walkscore.com/score/Melissa-TX/lat=33.2843/lng=-96.57/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 440580.7,
-        "sfr_avg_price": 471563.5,
-        "sfr_median_price_per_sqft": 180.6,
+        "sfr_median_price": 439747.3,
+        "sfr_avg_price": 471130.9,
+        "sfr_median_price_per_sqft": 180.8,
         "sfr_pct_of_original_price": 94.7,
         "sfr_days_on_market": 49.8,
         "sfr_months_supply": 5.1,
-        "sfr_inventory": 177.4,
-        "sfr_closed_sales_12mo": 403,
+        "sfr_inventory": 177.5,
+        "sfr_closed_sales_12mo": 406,
         "market_condition": "balanced",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -8406,18 +8392,18 @@
             "min": 0,
             "max": 399999,
             "median_sale_price": 350729,
-            "price_per_sqft": 183.3,
-            "sqft": 1913,
-            "closed_sales": 134
+            "price_per_sqft": 183.1,
+            "sqft": 1916,
+            "closed_sales": 136
           },
           "typical": {
             "label": "Typical",
             "min": 400000,
             "max": 699999,
-            "median_sale_price": 477211,
+            "median_sale_price": 477940,
             "price_per_sqft": 176.8,
-            "sqft": 2699,
-            "closed_sales": 245
+            "sqft": 2703,
+            "closed_sales": 246
           },
           "moveup": {
             "label": "Move-up",
@@ -8432,19 +8418,18 @@
       },
       "schools": {
         "isd_name": "Melissa ISD",
-        "overall_grade": "A",
+        "overall_grade": "A+",
         "academics_grade": "A",
         "college_prep_grade": "A",
         "good_for_families": "A+",
         "niche_url": "https://www.niche.com/k12/d/melissa-independent-school-district-tx/",
         "tea_rating": "A",
         "tea_year": "2024-2025",
-        "split_isd": false,
-        "niche_city_schools_grade": "A+"
+        "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 440580.7,
-        "overall_isd_grade": 12,
+        "sfr_median_price": 439747.3,
+        "overall_isd_grade": 13,
         "academics_isd_grade": 12,
         "pct_households_with_children": 58.4,
         "walk_score": 32,
@@ -8511,7 +8496,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -8548,46 +8533,46 @@
         "ws_link": "https://www.walkscore.com/score/Mesquite-TX/lat=32.7668/lng=-96.5992/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 282020.8,
-        "sfr_avg_price": 294468.8,
-        "sfr_median_price_per_sqft": 161.1,
+        "sfr_median_price": 282104.2,
+        "sfr_avg_price": 295173.5,
+        "sfr_median_price_per_sqft": 161.2,
         "sfr_pct_of_original_price": 95.6,
-        "sfr_days_on_market": 39.3,
+        "sfr_days_on_market": 39.5,
         "sfr_months_supply": 4.4,
-        "sfr_inventory": 514.5,
-        "sfr_closed_sales_12mo": 1347,
+        "sfr_inventory": 514.8,
+        "sfr_closed_sales_12mo": 1363,
         "market_condition": "balanced",
         "condo_median_price": 130993.8,
         "condo_closed_sales_12mo": 1,
         "condo_days_on_market": 31.6,
-        "condo_months_supply": 1.4,
+        "condo_months_supply": 1.5,
         "tiers": {
           "starter": {
             "label": "Starter",
             "min": 0,
             "max": 399999,
-            "median_sale_price": 271113,
-            "price_per_sqft": 158.9,
-            "sqft": 1706,
-            "closed_sales": 1193
+            "median_sale_price": 271154,
+            "price_per_sqft": 159.1,
+            "sqft": 1704,
+            "closed_sales": 1206
           },
           "typical": {
             "label": "Typical",
             "min": 400000,
             "max": 699999,
             "median_sale_price": 476835,
-            "price_per_sqft": 169.3,
-            "sqft": 2817,
-            "closed_sales": 147
+            "price_per_sqft": 168.3,
+            "sqft": 2833,
+            "closed_sales": 149
           },
           "moveup": {
             "label": "Move-up",
             "min": 700000,
             "max": 999999,
-            "median_sale_price": 746441,
-            "price_per_sqft": 188.7,
-            "sqft": 3956,
-            "closed_sales": 6,
+            "median_sale_price": 748316,
+            "price_per_sqft": 190.1,
+            "sqft": 3936,
+            "closed_sales": 7,
             "low_confidence": true
           }
         }
@@ -8601,11 +8586,10 @@
         "niche_url": "https://www.niche.com/k12/d/mesquite-independent-school-district-tx/",
         "tea_rating": "B",
         "tea_year": "2024-2025",
-        "split_isd": false,
-        "niche_city_schools_grade": "B"
+        "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 282020.8,
+        "sfr_median_price": 282104.2,
         "overall_isd_grade": 9,
         "academics_isd_grade": 9,
         "pct_households_with_children": 38.7,
@@ -8673,7 +8657,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -8710,14 +8694,14 @@
         "ws_link": "https://www.walkscore.com/score/Midlothian-TX/lat=32.4824/lng=-97.0058/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 489646.7,
-        "sfr_avg_price": 519155.6,
+        "sfr_median_price": 489230,
+        "sfr_avg_price": 519077.4,
         "sfr_median_price_per_sqft": 189.4,
         "sfr_pct_of_original_price": 95.3,
-        "sfr_days_on_market": 65.1,
+        "sfr_days_on_market": 65.3,
         "sfr_months_supply": 4.5,
-        "sfr_inventory": 372,
-        "sfr_closed_sales_12mo": 937,
+        "sfr_inventory": 370.7,
+        "sfr_closed_sales_12mo": 939,
         "market_condition": "balanced",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -8737,10 +8721,10 @@
             "label": "Typical",
             "min": 400000,
             "max": 699999,
-            "median_sale_price": 505228,
-            "price_per_sqft": 184.6,
-            "sqft": 2737,
-            "closed_sales": 624
+            "median_sale_price": 505227,
+            "price_per_sqft": 184.7,
+            "sqft": 2735,
+            "closed_sales": 626
           },
           "moveup": {
             "label": "Move-up",
@@ -8766,7 +8750,7 @@
         "isd_name": "Midlothian ISD",
         "overall_grade": "A-",
         "academics_grade": "A-",
-        "college_prep_grade": "A-",
+        "college_prep_grade": "A",
         "good_for_families": "A-",
         "niche_url": "https://www.niche.com/k12/d/midlothian-independent-school-district-tx/",
         "tea_rating": "B",
@@ -8774,7 +8758,7 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 489646.7,
+        "sfr_median_price": 489230,
         "overall_isd_grade": 11,
         "academics_isd_grade": 11,
         "pct_households_with_children": 48,
@@ -8842,7 +8826,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -8885,7 +8869,7 @@
         "sfr_pct_of_original_price": 95.7,
         "sfr_days_on_market": 41,
         "sfr_months_supply": 4.3,
-        "sfr_inventory": 56.6,
+        "sfr_inventory": 56.3,
         "sfr_closed_sales_12mo": 169,
         "market_condition": "balanced",
         "condo_median_price": null,
@@ -9025,7 +9009,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -9063,13 +9047,13 @@
       },
       "market": {
         "sfr_median_price": 390391.7,
-        "sfr_avg_price": 439859.8,
-        "sfr_median_price_per_sqft": 199.8,
+        "sfr_avg_price": 439613.3,
+        "sfr_median_price_per_sqft": 199.3,
         "sfr_pct_of_original_price": 98,
-        "sfr_days_on_market": 22,
+        "sfr_days_on_market": 22.1,
         "sfr_months_supply": 2.8,
-        "sfr_inventory": 170.7,
-        "sfr_closed_sales_12mo": 712,
+        "sfr_inventory": 170.4,
+        "sfr_closed_sales_12mo": 716,
         "market_condition": "seller",
         "condo_median_price": 274799.5,
         "condo_closed_sales_12mo": 1,
@@ -9083,25 +9067,25 @@
             "median_sale_price": 308373,
             "price_per_sqft": 189.8,
             "sqft": 1625,
-            "closed_sales": 374
+            "closed_sales": 376
           },
           "typical": {
             "label": "Typical",
             "min": 400000,
             "max": 699999,
-            "median_sale_price": 497913,
-            "price_per_sqft": 210,
-            "sqft": 2371,
-            "closed_sales": 263
+            "median_sale_price": 497288,
+            "price_per_sqft": 209.8,
+            "sqft": 2370,
+            "closed_sales": 264
           },
           "moveup": {
             "label": "Move-up",
             "min": 700000,
             "max": 999999,
-            "median_sale_price": 780238,
+            "median_sale_price": 779271,
             "price_per_sqft": 222.3,
-            "sqft": 3510,
-            "closed_sales": 70
+            "sqft": 3505,
+            "closed_sales": 71
           },
           "luxury": {
             "label": "Luxury",
@@ -9117,7 +9101,7 @@
       },
       "schools": {
         "isd_name": "Birdville ISD",
-        "overall_grade": "B+",
+        "overall_grade": "A-",
         "academics_grade": "B+",
         "college_prep_grade": "A",
         "good_for_families": "B-",
@@ -9136,12 +9120,11 @@
             "grade": "A",
             "pct": 20
           }
-        ],
-        "niche_city_schools_grade": "A"
+        ]
       },
       "quiz": {
         "sfr_median_price": 390391.7,
-        "overall_isd_grade": 10,
+        "overall_isd_grade": 11,
         "academics_isd_grade": 10,
         "pct_households_with_children": 30.8,
         "walk_score": 36,
@@ -9208,7 +9191,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -9246,13 +9229,13 @@
       },
       "market": {
         "sfr_median_price": 581248,
-        "sfr_avg_price": 653197.8,
+        "sfr_avg_price": 655140.1,
         "sfr_median_price_per_sqft": 201.3,
         "sfr_pct_of_original_price": 93.6,
         "sfr_days_on_market": 64.3,
         "sfr_months_supply": 5.3,
-        "sfr_inventory": 180.7,
-        "sfr_closed_sales_12mo": 405,
+        "sfr_inventory": 180.9,
+        "sfr_closed_sales_12mo": 407,
         "market_condition": "balanced",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -9272,10 +9255,10 @@
             "label": "Typical",
             "min": 400000,
             "max": 699999,
-            "median_sale_price": 536679,
-            "price_per_sqft": 190.7,
-            "sqft": 2814,
-            "closed_sales": 260
+            "median_sale_price": 536308,
+            "price_per_sqft": 190.3,
+            "sqft": 2818,
+            "closed_sales": 261
           },
           "moveup": {
             "label": "Move-up",
@@ -9290,10 +9273,10 @@
             "label": "Luxury",
             "min": 1000000,
             "max": null,
-            "median_sale_price": 1271854,
-            "price_per_sqft": 320.1,
-            "sqft": 3973,
-            "closed_sales": 43
+            "median_sale_price": 1275104,
+            "price_per_sqft": 321.8,
+            "sqft": 3962,
+            "closed_sales": 44
           }
         }
       },
@@ -9394,7 +9377,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -9431,14 +9414,14 @@
         "ws_link": "https://www.walkscore.com/score/Plano-TX/lat=33.0198/lng=-96.6989/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 529943.8,
-        "sfr_avg_price": 619817.5,
+        "sfr_median_price": 529527.1,
+        "sfr_avg_price": 619577.2,
         "sfr_median_price_per_sqft": 217.2,
         "sfr_pct_of_original_price": 96.7,
-        "sfr_days_on_market": 28.7,
-        "sfr_months_supply": 3.1,
-        "sfr_inventory": 567.8,
-        "sfr_closed_sales_12mo": 2183,
+        "sfr_days_on_market": 28.6,
+        "sfr_months_supply": 3,
+        "sfr_inventory": 567.1,
+        "sfr_closed_sales_12mo": 2192,
         "market_condition": "balanced",
         "condo_median_price": 239377.1,
         "condo_closed_sales_12mo": 71,
@@ -9452,7 +9435,7 @@
             "median_sale_price": 347533,
             "price_per_sqft": 200.9,
             "sqft": 1730,
-            "closed_sales": 453
+            "closed_sales": 455
           },
           "typical": {
             "label": "Typical",
@@ -9461,7 +9444,7 @@
             "median_sale_price": 523121,
             "price_per_sqft": 214,
             "sqft": 2444,
-            "closed_sales": 1211
+            "closed_sales": 1217
           },
           "moveup": {
             "label": "Move-up",
@@ -9476,10 +9459,10 @@
             "label": "Luxury",
             "min": 1000000,
             "max": null,
-            "median_sale_price": 1322417,
-            "price_per_sqft": 311.7,
-            "sqft": 4243,
-            "closed_sales": 206
+            "median_sale_price": 1331625,
+            "price_per_sqft": 311.4,
+            "sqft": 4276,
+            "closed_sales": 207
           }
         }
       },
@@ -9507,7 +9490,7 @@
         ]
       },
       "quiz": {
-        "sfr_median_price": 529943.8,
+        "sfr_median_price": 529527.1,
         "overall_isd_grade": 12,
         "academics_isd_grade": 12,
         "pct_households_with_children": 32.8,
@@ -9575,7 +9558,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -9612,14 +9595,14 @@
         "ws_link": "https://www.walkscore.com/score/Princeton-TX/lat=33.1818/lng=-96.4997/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 300210.2,
-        "sfr_avg_price": 305053.2,
-        "sfr_median_price_per_sqft": 153,
-        "sfr_pct_of_original_price": 94.5,
-        "sfr_days_on_market": 39.3,
+        "sfr_median_price": 299902.9,
+        "sfr_avg_price": 304512.7,
+        "sfr_median_price_per_sqft": 152.8,
+        "sfr_pct_of_original_price": 94.6,
+        "sfr_days_on_market": 39.1,
         "sfr_months_supply": 3.5,
-        "sfr_inventory": 652.5,
-        "sfr_closed_sales_12mo": 2309,
+        "sfr_inventory": 654.7,
+        "sfr_closed_sales_12mo": 2324,
         "market_condition": "balanced",
         "condo_median_price": 288666.7,
         "condo_closed_sales_12mo": 0,
@@ -9630,38 +9613,37 @@
             "label": "Starter",
             "min": 0,
             "max": 399999,
-            "median_sale_price": 290007,
-            "price_per_sqft": 154.2,
-            "sqft": 1881,
-            "closed_sales": 2077
+            "median_sale_price": 288809,
+            "price_per_sqft": 154.1,
+            "sqft": 1874,
+            "closed_sales": 2090
           },
           "typical": {
             "label": "Typical",
             "min": 400000,
             "max": 699999,
-            "median_sale_price": 421222,
+            "median_sale_price": 420888,
             "price_per_sqft": 137.9,
-            "sqft": 3055,
-            "closed_sales": 220
+            "sqft": 3052,
+            "closed_sales": 222
           }
         }
       },
       "schools": {
         "isd_name": "Princeton ISD",
         "overall_grade": "B+",
-        "academics_grade": "B+",
-        "college_prep_grade": "A-",
+        "academics_grade": "B",
+        "college_prep_grade": "A",
         "good_for_families": "B",
         "niche_url": "https://www.niche.com/k12/d/princeton-independent-school-district-tx/",
         "tea_rating": "B",
         "tea_year": "2024-2025",
-        "split_isd": false,
-        "niche_city_schools_grade": "B+"
+        "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 300210.2,
+        "sfr_median_price": 299902.9,
         "overall_isd_grade": 10,
-        "academics_isd_grade": 10,
+        "academics_isd_grade": 9,
         "pct_households_with_children": 49.7,
         "walk_score": 61,
         "transit_score": null,
@@ -9727,7 +9709,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -9764,14 +9746,14 @@
         "ws_link": "https://www.walkscore.com/score/Prosper-TX/lat=33.2362/lng=-96.8012/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 831391.7,
-        "sfr_avg_price": 922970.3,
+        "sfr_median_price": 832725,
+        "sfr_avg_price": 923418.6,
         "sfr_median_price_per_sqft": 235.8,
         "sfr_pct_of_original_price": 93.1,
-        "sfr_days_on_market": 63.6,
+        "sfr_days_on_market": 63.8,
         "sfr_months_supply": 6.1,
-        "sfr_inventory": 385.4,
-        "sfr_closed_sales_12mo": 727,
+        "sfr_inventory": 386.7,
+        "sfr_closed_sales_12mo": 730,
         "market_condition": "buyer",
         "condo_median_price": 588000,
         "condo_closed_sales_12mo": 2,
@@ -9791,35 +9773,35 @@
             "label": "Typical",
             "min": 400000,
             "max": 699999,
-            "median_sale_price": 600875,
-            "price_per_sqft": 208.4,
-            "sqft": 2883,
-            "closed_sales": 177
+            "median_sale_price": 601255,
+            "price_per_sqft": 208.1,
+            "sqft": 2889,
+            "closed_sales": 178
           },
           "moveup": {
             "label": "Move-up",
             "min": 700000,
             "max": 999999,
-            "median_sale_price": 834952,
-            "price_per_sqft": 229.7,
-            "sqft": 3635,
-            "closed_sales": 302
+            "median_sale_price": 835161,
+            "price_per_sqft": 229.8,
+            "sqft": 3634,
+            "closed_sales": 303
           },
           "luxury": {
             "label": "Luxury",
             "min": 1000000,
             "max": null,
-            "median_sale_price": 1273304,
-            "price_per_sqft": 295.2,
-            "sqft": 4313,
-            "closed_sales": 219
+            "median_sale_price": 1272831,
+            "price_per_sqft": 294.8,
+            "sqft": 4318,
+            "closed_sales": 220
           }
         }
       },
       "schools": {
         "isd_name": "Prosper ISD",
-        "overall_grade": "A",
-        "academics_grade": "A",
+        "overall_grade": "A+",
+        "academics_grade": "A+",
         "college_prep_grade": "A+",
         "good_for_families": "A+",
         "niche_url": "https://www.niche.com/k12/d/prosper-independent-school-district-tx/",
@@ -9840,9 +9822,9 @@
         ]
       },
       "quiz": {
-        "sfr_median_price": 831391.7,
-        "overall_isd_grade": 12,
-        "academics_isd_grade": 12,
+        "sfr_median_price": 832725,
+        "overall_isd_grade": 13,
+        "academics_isd_grade": 13,
         "pct_households_with_children": 57.7,
         "walk_score": 40,
         "transit_score": null,
@@ -9908,7 +9890,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -9945,14 +9927,14 @@
         "ws_link": "https://www.walkscore.com/score/Richardson-TX/lat=32.9483/lng=-96.7299/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 475116.3,
-        "sfr_avg_price": 539446.3,
-        "sfr_median_price_per_sqft": 226.7,
+        "sfr_median_price": 475478.8,
+        "sfr_avg_price": 540130.1,
+        "sfr_median_price_per_sqft": 226.8,
         "sfr_pct_of_original_price": 96.8,
-        "sfr_days_on_market": 26.4,
+        "sfr_days_on_market": 26.5,
         "sfr_months_supply": 2.9,
-        "sfr_inventory": 228.4,
-        "sfr_closed_sales_12mo": 906,
+        "sfr_inventory": 228.3,
+        "sfr_closed_sales_12mo": 911,
         "market_condition": "seller",
         "condo_median_price": 214464.8,
         "condo_closed_sales_12mo": 33,
@@ -9972,19 +9954,19 @@
             "label": "Typical",
             "min": 400000,
             "max": 699999,
-            "median_sale_price": 502549,
-            "price_per_sqft": 223.8,
-            "sqft": 2246,
-            "closed_sales": 530
+            "median_sale_price": 503211,
+            "price_per_sqft": 223.9,
+            "sqft": 2247,
+            "closed_sales": 534
           },
           "moveup": {
             "label": "Move-up",
             "min": 700000,
             "max": 999999,
-            "median_sale_price": 786313,
-            "price_per_sqft": 265.6,
-            "sqft": 2961,
-            "closed_sales": 97
+            "median_sale_price": 786229,
+            "price_per_sqft": 264.8,
+            "sqft": 2969,
+            "closed_sales": 98
           },
           "luxury": {
             "label": "Luxury",
@@ -10001,16 +9983,15 @@
         "isd_name": "Richardson ISD",
         "overall_grade": "A-",
         "academics_grade": "B+",
-        "college_prep_grade": "A",
+        "college_prep_grade": "A+",
         "good_for_families": "A+",
         "niche_url": "https://www.niche.com/k12/d/richardson-independent-school-district-tx/",
         "tea_rating": "C",
         "tea_year": "2024-2025",
-        "split_isd": false,
-        "niche_city_schools_grade": "A"
+        "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 475116.3,
+        "sfr_median_price": 475478.8,
         "overall_isd_grade": 11,
         "academics_isd_grade": 10,
         "pct_households_with_children": 28.3,
@@ -10078,7 +10059,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -10121,7 +10102,7 @@
         "sfr_pct_of_original_price": 96.8,
         "sfr_days_on_market": 42.6,
         "sfr_months_supply": 3.6,
-        "sfr_inventory": 37.8,
+        "sfr_inventory": 38.1,
         "sfr_closed_sales_12mo": 126,
         "market_condition": "balanced",
         "condo_median_price": null,
@@ -10245,7 +10226,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -10282,46 +10263,46 @@
         "ws_link": "https://www.walkscore.com/score/Rockwall-TX/lat=32.929/lng=-96.4597/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 535409.6,
-        "sfr_avg_price": 569835.6,
-        "sfr_median_price_per_sqft": 188.8,
+        "sfr_median_price": 536205.8,
+        "sfr_avg_price": 568806.4,
+        "sfr_median_price_per_sqft": 188.7,
         "sfr_pct_of_original_price": 93.8,
-        "sfr_days_on_market": 60.3,
+        "sfr_days_on_market": 60.5,
         "sfr_months_supply": 5.4,
-        "sfr_inventory": 397.8,
-        "sfr_closed_sales_12mo": 902,
+        "sfr_inventory": 398.6,
+        "sfr_closed_sales_12mo": 914,
         "market_condition": "balanced",
-        "condo_median_price": 256454.2,
-        "condo_closed_sales_12mo": 26,
-        "condo_days_on_market": 73.4,
-        "condo_months_supply": 11.7,
+        "condo_median_price": 252162.5,
+        "condo_closed_sales_12mo": 27,
+        "condo_days_on_market": 74.3,
+        "condo_months_supply": 11.6,
         "tiers": {
           "starter": {
             "label": "Starter",
             "min": 0,
             "max": 399999,
-            "median_sale_price": 330199,
-            "price_per_sqft": 172.3,
-            "sqft": 1916,
-            "closed_sales": 237
+            "median_sale_price": 330032,
+            "price_per_sqft": 171.9,
+            "sqft": 1920,
+            "closed_sales": 240
           },
           "typical": {
             "label": "Typical",
             "min": 400000,
             "max": 699999,
-            "median_sale_price": 554075,
-            "price_per_sqft": 185.7,
-            "sqft": 2984,
-            "closed_sales": 482
+            "median_sale_price": 555413,
+            "price_per_sqft": 185.9,
+            "sqft": 2988,
+            "closed_sales": 488
           },
           "moveup": {
             "label": "Move-up",
             "min": 700000,
             "max": 999999,
-            "median_sale_price": 789544,
-            "price_per_sqft": 211.8,
-            "sqft": 3728,
-            "closed_sales": 152
+            "median_sale_price": 786752,
+            "price_per_sqft": 210.7,
+            "sqft": 3734,
+            "closed_sales": 155
           },
           "luxury": {
             "label": "Luxury",
@@ -10338,7 +10319,7 @@
         "isd_name": "Rockwall ISD",
         "overall_grade": "A",
         "academics_grade": "A",
-        "college_prep_grade": "A",
+        "college_prep_grade": "A+",
         "good_for_families": "A",
         "niche_url": "https://www.niche.com/k12/d/rockwall-independent-school-district-tx/",
         "tea_rating": "B",
@@ -10346,7 +10327,7 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 535409.6,
+        "sfr_median_price": 536205.8,
         "overall_isd_grade": 12,
         "academics_isd_grade": 12,
         "pct_households_with_children": 40,
@@ -10414,7 +10395,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -10451,14 +10432,14 @@
         "ws_link": "https://www.walkscore.com/score/Rowlett-TX/lat=32.9029/lng=-96.5636/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 377672.1,
-        "sfr_avg_price": 403906.3,
-        "sfr_median_price_per_sqft": 172.4,
-        "sfr_pct_of_original_price": 95.8,
+        "sfr_median_price": 377526.3,
+        "sfr_avg_price": 403536.2,
+        "sfr_median_price_per_sqft": 172.2,
+        "sfr_pct_of_original_price": 95.7,
         "sfr_days_on_market": 43.1,
         "sfr_months_supply": 5,
-        "sfr_inventory": 310.5,
-        "sfr_closed_sales_12mo": 734,
+        "sfr_inventory": 311.3,
+        "sfr_closed_sales_12mo": 737,
         "market_condition": "balanced",
         "condo_median_price": 318750,
         "condo_closed_sales_12mo": 1,
@@ -10469,19 +10450,19 @@
             "label": "Starter",
             "min": 0,
             "max": 399999,
-            "median_sale_price": 321156,
-            "price_per_sqft": 172,
+            "median_sale_price": 320740,
+            "price_per_sqft": 171.8,
             "sqft": 1867,
-            "closed_sales": 440
+            "closed_sales": 442
           },
           "typical": {
             "label": "Typical",
             "min": 400000,
             "max": 699999,
-            "median_sale_price": 471121,
-            "price_per_sqft": 171.5,
-            "sqft": 2747,
-            "closed_sales": 268
+            "median_sale_price": 472288,
+            "price_per_sqft": 171.4,
+            "sqft": 2755,
+            "closed_sales": 269
           },
           "moveup": {
             "label": "Move-up",
@@ -10515,11 +10496,10 @@
             "grade": "A",
             "pct": 20
           }
-        ],
-        "niche_city_schools_grade": "B+"
+        ]
       },
       "quiz": {
-        "sfr_median_price": 377672.1,
+        "sfr_median_price": 377526.3,
         "overall_isd_grade": 11,
         "academics_isd_grade": 10,
         "pct_households_with_children": 37.8,
@@ -10587,7 +10567,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -10624,14 +10604,14 @@
         "ws_link": "https://www.walkscore.com/score/Royse-City-TX/lat=32.9754/lng=-96.3322/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 324304.3,
-        "sfr_avg_price": 363498.8,
-        "sfr_median_price_per_sqft": 154,
+        "sfr_median_price": 324558.5,
+        "sfr_avg_price": 363754.6,
+        "sfr_median_price_per_sqft": 154.1,
         "sfr_pct_of_original_price": 93.4,
         "sfr_days_on_market": 73.4,
         "sfr_months_supply": 6.6,
-        "sfr_inventory": 471.9,
-        "sfr_closed_sales_12mo": 842,
+        "sfr_inventory": 471.8,
+        "sfr_closed_sales_12mo": 848,
         "market_condition": "buyer",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -10642,19 +10622,19 @@
             "label": "Starter",
             "min": 0,
             "max": 399999,
-            "median_sale_price": 296969,
-            "price_per_sqft": 149.2,
+            "median_sale_price": 297052,
+            "price_per_sqft": 149.3,
             "sqft": 1990,
-            "closed_sales": 632
+            "closed_sales": 637
           },
           "typical": {
             "label": "Typical",
             "min": 400000,
             "max": 699999,
-            "median_sale_price": 471427,
-            "price_per_sqft": 180.4,
-            "sqft": 2613,
-            "closed_sales": 173
+            "median_sale_price": 473971,
+            "price_per_sqft": 178.9,
+            "sqft": 2649,
+            "closed_sales": 174
           },
           "moveup": {
             "label": "Move-up",
@@ -10669,8 +10649,8 @@
       },
       "schools": {
         "isd_name": "Royse City ISD",
-        "overall_grade": "B+",
-        "academics_grade": "B+",
+        "overall_grade": "B",
+        "academics_grade": "B",
         "college_prep_grade": "A-",
         "good_for_families": "B+",
         "niche_url": "https://www.niche.com/k12/d/royse-city-independent-school-district-tx/",
@@ -10679,9 +10659,9 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 324304.3,
-        "overall_isd_grade": 10,
-        "academics_isd_grade": 10,
+        "sfr_median_price": 324558.5,
+        "overall_isd_grade": 9,
+        "academics_isd_grade": 9,
         "pct_households_with_children": 41.4,
         "walk_score": 63,
         "transit_score": null,
@@ -10747,7 +10727,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -10785,13 +10765,13 @@
       },
       "market": {
         "sfr_median_price": 444833.3,
-        "sfr_avg_price": 470371.3,
+        "sfr_avg_price": 469953.9,
         "sfr_median_price_per_sqft": 184.8,
         "sfr_pct_of_original_price": 95.7,
-        "sfr_days_on_market": 41.3,
+        "sfr_days_on_market": 41.5,
         "sfr_months_supply": 4.3,
-        "sfr_inventory": 91,
-        "sfr_closed_sales_12mo": 259,
+        "sfr_inventory": 90.8,
+        "sfr_closed_sales_12mo": 261,
         "market_condition": "balanced",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -10802,19 +10782,19 @@
             "label": "Starter",
             "min": 0,
             "max": 399999,
-            "median_sale_price": 338790,
-            "price_per_sqft": 191.3,
-            "sqft": 1771,
-            "closed_sales": 91
+            "median_sale_price": 335540,
+            "price_per_sqft": 190.9,
+            "sqft": 1758,
+            "closed_sales": 92
           },
           "typical": {
             "label": "Typical",
             "min": 400000,
             "max": 699999,
             "median_sale_price": 502542,
-            "price_per_sqft": 181.8,
-            "sqft": 2764,
-            "closed_sales": 149
+            "price_per_sqft": 181.9,
+            "sqft": 2763,
+            "closed_sales": 150
           },
           "moveup": {
             "label": "Move-up",
@@ -10840,7 +10820,7 @@
       "schools": {
         "isd_name": "Wylie ISD",
         "overall_grade": "A+",
-        "academics_grade": "A",
+        "academics_grade": "A+",
         "college_prep_grade": "A+",
         "good_for_families": "A",
         "niche_url": "https://www.niche.com/k12/d/wylie-independent-school-district-wylie-tx/",
@@ -10858,13 +10838,12 @@
             "grade": "A+",
             "pct": 40
           }
-        ],
-        "niche_city_schools_grade": "B+"
+        ]
       },
       "quiz": {
         "sfr_median_price": 444833.3,
         "overall_isd_grade": 13,
-        "academics_isd_grade": 12,
+        "academics_isd_grade": 13,
         "pct_households_with_children": 39.8,
         "walk_score": 51,
         "transit_score": null,
@@ -10930,7 +10909,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -10967,14 +10946,14 @@
         "ws_link": "https://www.walkscore.com/score/Saginaw-TX/lat=32.8596/lng=-97.3636/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 300458.3,
-        "sfr_avg_price": 305660,
-        "sfr_median_price_per_sqft": 165.3,
-        "sfr_pct_of_original_price": 97.2,
+        "sfr_median_price": 300541.7,
+        "sfr_avg_price": 306355.5,
+        "sfr_median_price_per_sqft": 165.5,
+        "sfr_pct_of_original_price": 97.3,
         "sfr_days_on_market": 24.3,
         "sfr_months_supply": 2.9,
         "sfr_inventory": 62.3,
-        "sfr_closed_sales_12mo": 249,
+        "sfr_closed_sales_12mo": 250,
         "market_condition": "seller",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -10986,9 +10965,9 @@
             "min": 0,
             "max": 399999,
             "median_sale_price": 294500,
-            "price_per_sqft": 165.2,
-            "sqft": 1783,
-            "closed_sales": 226
+            "price_per_sqft": 165.3,
+            "sqft": 1782,
+            "closed_sales": 227
           },
           "typical": {
             "label": "Typical",
@@ -11020,11 +10999,10 @@
         "niche_url": "https://www.niche.com/k12/d/eagle-mountain-saginaw-independent-school-district-tx/",
         "tea_rating": "C",
         "tea_year": "2024-2025",
-        "split_isd": false,
-        "niche_city_schools_grade": "A-"
+        "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 300458.3,
+        "sfr_median_price": 300541.7,
         "overall_isd_grade": 11,
         "academics_isd_grade": 10,
         "pct_households_with_children": 37.1,
@@ -11092,7 +11070,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -11135,7 +11113,7 @@
         "sfr_pct_of_original_price": 96.6,
         "sfr_days_on_market": 16.7,
         "sfr_months_supply": 3.8,
-        "sfr_inventory": 126.1,
+        "sfr_inventory": 126.4,
         "sfr_closed_sales_12mo": 391,
         "market_condition": "balanced",
         "condo_median_price": 667276.1,
@@ -11252,7 +11230,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -11289,14 +11267,14 @@
         "ws_link": "https://www.walkscore.com/score/The-Colony-TX/lat=33.0918/lng=-96.8883/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 434020,
-        "sfr_avg_price": 529372.4,
-        "sfr_median_price_per_sqft": 218.1,
+        "sfr_median_price": 435228.3,
+        "sfr_avg_price": 530861.2,
+        "sfr_median_price_per_sqft": 218.3,
         "sfr_pct_of_original_price": 96.2,
-        "sfr_days_on_market": 35,
+        "sfr_days_on_market": 34.9,
         "sfr_months_supply": 3.2,
-        "sfr_inventory": 128.8,
-        "sfr_closed_sales_12mo": 471,
+        "sfr_inventory": 128.7,
+        "sfr_closed_sales_12mo": 472,
         "market_condition": "balanced",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -11316,10 +11294,10 @@
             "label": "Typical",
             "min": 400000,
             "max": 699999,
-            "median_sale_price": 519173,
-            "price_per_sqft": 220.6,
-            "sqft": 2353,
-            "closed_sales": 165
+            "median_sale_price": 518844,
+            "price_per_sqft": 220.3,
+            "sqft": 2355,
+            "closed_sales": 166
           },
           "moveup": {
             "label": "Move-up",
@@ -11334,10 +11312,10 @@
             "label": "Luxury",
             "min": 1000000,
             "max": null,
-            "median_sale_price": 1210208,
-            "price_per_sqft": 316.2,
-            "sqft": 3827,
-            "closed_sales": 37
+            "median_sale_price": 1212083,
+            "price_per_sqft": 317.4,
+            "sqft": 3819,
+            "closed_sales": 38
           }
         }
       },
@@ -11365,7 +11343,7 @@
         ]
       },
       "quiz": {
-        "sfr_median_price": 434020,
+        "sfr_median_price": 435228.3,
         "overall_isd_grade": 12,
         "academics_isd_grade": 12,
         "pct_households_with_children": 29.8,
@@ -11433,7 +11411,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -11470,14 +11448,14 @@
         "ws_link": "https://www.walkscore.com/score/Trophy-Club-TX/lat=33.0032/lng=-97.1797/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 779520.8,
-        "sfr_avg_price": 829429,
-        "sfr_median_price_per_sqft": 249.7,
+        "sfr_median_price": 785229.2,
+        "sfr_avg_price": 830212.3,
+        "sfr_median_price_per_sqft": 248.5,
         "sfr_pct_of_original_price": 96.8,
-        "sfr_days_on_market": 21.9,
+        "sfr_days_on_market": 22.3,
         "sfr_months_supply": 2.2,
-        "sfr_inventory": 38.7,
-        "sfr_closed_sales_12mo": 194,
+        "sfr_inventory": 38.9,
+        "sfr_closed_sales_12mo": 196,
         "market_condition": "seller",
         "condo_median_price": 650000,
         "condo_closed_sales_12mo": 0,
@@ -11498,19 +11476,19 @@
             "label": "Typical",
             "min": 400000,
             "max": 699999,
-            "median_sale_price": 562708,
-            "price_per_sqft": 229.6,
-            "sqft": 2451,
-            "closed_sales": 67
+            "median_sale_price": 569333,
+            "price_per_sqft": 229.3,
+            "sqft": 2483,
+            "closed_sales": 68
           },
           "moveup": {
             "label": "Move-up",
             "min": 700000,
             "max": 999999,
-            "median_sale_price": 841958,
-            "price_per_sqft": 247.6,
-            "sqft": 3400,
-            "closed_sales": 72
+            "median_sale_price": 841750,
+            "price_per_sqft": 246.3,
+            "sqft": 3418,
+            "closed_sales": 73
           },
           "luxury": {
             "label": "Luxury",
@@ -11542,7 +11520,7 @@
         ]
       },
       "quiz": {
-        "sfr_median_price": 779520.8,
+        "sfr_median_price": 785229.2,
         "overall_isd_grade": 11,
         "academics_isd_grade": 11,
         "pct_households_with_children": 42.6,
@@ -11610,7 +11588,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -11647,14 +11625,14 @@
         "ws_link": "https://www.walkscore.com/score/University-Park-TX/lat=32.851/lng=-96.7952/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 3067370.8,
-        "sfr_avg_price": 3691427.1,
-        "sfr_median_price_per_sqft": 722.8,
+        "sfr_median_price": 3070391.7,
+        "sfr_avg_price": 3685469.9,
+        "sfr_median_price_per_sqft": 721.9,
         "sfr_pct_of_original_price": 96.1,
-        "sfr_days_on_market": 30.3,
+        "sfr_days_on_market": 31.9,
         "sfr_months_supply": 3.2,
-        "sfr_inventory": 43.1,
-        "sfr_closed_sales_12mo": 142,
+        "sfr_inventory": 42.9,
+        "sfr_closed_sales_12mo": 145,
         "market_condition": "balanced",
         "condo_median_price": 745279.3,
         "condo_closed_sales_12mo": 21,
@@ -11685,16 +11663,16 @@
             "label": "Luxury",
             "min": 1000000,
             "max": null,
-            "median_sale_price": 3075704,
-            "price_per_sqft": 725.5,
-            "sqft": 4239,
-            "closed_sales": 141
+            "median_sale_price": 3078725,
+            "price_per_sqft": 724.6,
+            "sqft": 4249,
+            "closed_sales": 144
           }
         }
       },
       "schools": {
         "isd_name": "Highland Park ISD",
-        "overall_grade": "A+",
+        "overall_grade": "A",
         "academics_grade": "A+",
         "college_prep_grade": "A+",
         "good_for_families": "A+",
@@ -11704,8 +11682,8 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 3067370.8,
-        "overall_isd_grade": 13,
+        "sfr_median_price": 3070391.7,
+        "overall_isd_grade": 12,
         "academics_isd_grade": 13,
         "pct_households_with_children": 49.4,
         "walk_score": 61,
@@ -11772,7 +11750,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -11809,14 +11787,14 @@
         "ws_link": "https://www.walkscore.com/score/Waxahachie-TX/lat=32.3868/lng=-96.8486/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 423259.3,
-        "sfr_avg_price": 467481,
-        "sfr_median_price_per_sqft": 182.9,
+        "sfr_median_price": 423467.3,
+        "sfr_avg_price": 467698.4,
+        "sfr_median_price_per_sqft": 183,
         "sfr_pct_of_original_price": 96.7,
-        "sfr_days_on_market": 46.2,
+        "sfr_days_on_market": 46.4,
         "sfr_months_supply": 4.6,
-        "sfr_inventory": 435.5,
-        "sfr_closed_sales_12mo": 1186,
+        "sfr_inventory": 434.9,
+        "sfr_closed_sales_12mo": 1189,
         "market_condition": "balanced",
         "condo_median_price": null,
         "condo_closed_sales_12mo": 0,
@@ -11827,19 +11805,19 @@
             "label": "Starter",
             "min": 0,
             "max": 399999,
-            "median_sale_price": 324692,
+            "median_sale_price": 324901,
             "price_per_sqft": 174.7,
-            "sqft": 1859,
-            "closed_sales": 520
+            "sqft": 1860,
+            "closed_sales": 521
           },
           "typical": {
             "label": "Typical",
             "min": 400000,
             "max": 699999,
-            "median_sale_price": 496487,
+            "median_sale_price": 497394,
             "price_per_sqft": 184.8,
-            "sqft": 2687,
-            "closed_sales": 571
+            "sqft": 2692,
+            "closed_sales": 573
           },
           "moveup": {
             "label": "Move-up",
@@ -11863,8 +11841,8 @@
       },
       "schools": {
         "isd_name": "Waxahachie ISD",
-        "overall_grade": "A-",
-        "academics_grade": "B+",
+        "overall_grade": "B+",
+        "academics_grade": "B",
         "college_prep_grade": "A",
         "good_for_families": "A-",
         "niche_url": "https://www.niche.com/k12/d/waxahachie-independent-school-district-tx/",
@@ -11873,9 +11851,9 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 423259.3,
-        "overall_isd_grade": 11,
-        "academics_isd_grade": 10,
+        "sfr_median_price": 423467.3,
+        "overall_isd_grade": 10,
+        "academics_isd_grade": 9,
         "pct_households_with_children": 38.4,
         "walk_score": 77,
         "transit_score": null,
@@ -11941,7 +11919,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -11983,8 +11961,8 @@
         "sfr_median_price_per_sqft": 685.6,
         "sfr_pct_of_original_price": 87.9,
         "sfr_days_on_market": 127.3,
-        "sfr_months_supply": 14,
-        "sfr_inventory": 39,
+        "sfr_months_supply": 14.1,
+        "sfr_inventory": 39.1,
         "sfr_closed_sales_12mo": 30,
         "market_condition": "buyer",
         "condo_median_price": null,
@@ -12110,7 +12088,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "estimate"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     },
@@ -12147,14 +12125,14 @@
         "ws_link": "https://www.walkscore.com/score/Wylie-TX/lat=33.0151/lng=-96.5388/?utm_source=whymovetodallas.com&utm_medium=ws_api&utm_campaign=ws_api"
       },
       "market": {
-        "sfr_median_price": 432683.3,
-        "sfr_avg_price": 455946.2,
-        "sfr_median_price_per_sqft": 185.1,
+        "sfr_median_price": 434433.3,
+        "sfr_avg_price": 456150,
+        "sfr_median_price_per_sqft": 185.2,
         "sfr_pct_of_original_price": 95.8,
-        "sfr_days_on_market": 44.2,
+        "sfr_days_on_market": 45.2,
         "sfr_months_supply": 4.4,
-        "sfr_inventory": 259.3,
-        "sfr_closed_sales_12mo": 686,
+        "sfr_inventory": 259,
+        "sfr_closed_sales_12mo": 689,
         "market_condition": "balanced",
         "condo_median_price": 269500,
         "condo_closed_sales_12mo": 0,
@@ -12174,10 +12152,10 @@
             "label": "Typical",
             "min": 400000,
             "max": 699999,
-            "median_sale_price": 511486,
+            "median_sale_price": 510128,
             "price_per_sqft": 185.5,
-            "sqft": 2757,
-            "closed_sales": 373
+            "sqft": 2750,
+            "closed_sales": 376
           },
           "moveup": {
             "label": "Move-up",
@@ -12203,7 +12181,7 @@
       "schools": {
         "isd_name": "Wylie ISD",
         "overall_grade": "A+",
-        "academics_grade": "A",
+        "academics_grade": "A+",
         "college_prep_grade": "A+",
         "good_for_families": "A",
         "niche_url": "https://www.niche.com/k12/d/wylie-independent-school-district-wylie-tx/",
@@ -12212,9 +12190,9 @@
         "split_isd": false
       },
       "quiz": {
-        "sfr_median_price": 432683.3,
+        "sfr_median_price": 434433.3,
         "overall_isd_grade": 13,
-        "academics_isd_grade": 12,
+        "academics_isd_grade": 13,
         "pct_households_with_children": 51.6,
         "walk_score": 59,
         "transit_score": null,
@@ -12280,7 +12258,7 @@
           "shopping_total_suburbs": 65,
           "population_source": "census"
         },
-        "computed_date": "2026-11-01T15:18:38.314Z",
+        "computed_date": "2026-11-15T15:19:40.724Z",
         "data_completeness": "full"
       }
     }
