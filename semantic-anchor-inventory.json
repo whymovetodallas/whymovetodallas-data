@@ -1222,7 +1222,7 @@
       "distHtmlPath": "dist/dallas-cost-of-living-calculator.html",
       "canonicalEntityId": "calculator:dallas-cost-of-living",
       "pageFamily": "calculator",
-      "pageSha256": "968a906b9943365325f180a7a1c1fd9bd14634ec8511632c265180d873aac893"
+      "pageSha256": "a0418c18f8a4a8349ff68cc334496ee8223279768c600845369044e8bcae1859"
     },
     {
       "distHtmlPath": "dist/dallas-fort-worth-suburbs.html",
@@ -11819,7 +11819,7 @@
       "contractVersion": "1",
       "distHtmlPath": "dist/dallas-cost-of-living-calculator.html",
       "selector": "[data-wmtd-frame=\"calculator.inputs\"]",
-      "pageSha256": "968a906b9943365325f180a7a1c1fd9bd14634ec8511632c265180d873aac893",
+      "pageSha256": "a0418c18f8a4a8349ff68cc334496ee8223279768c600845369044e8bcae1859",
       "buildId": "sha256:17956b38ccc57785eb49b1991cc779470f3c52c64062055a39d50eef18a916d1"
     },
     {
@@ -11831,7 +11831,7 @@
       "contractVersion": "1",
       "distHtmlPath": "dist/dallas-cost-of-living-calculator.html",
       "selector": "[data-wmtd-frame=\"calculator.results\"]",
-      "pageSha256": "968a906b9943365325f180a7a1c1fd9bd14634ec8511632c265180d873aac893",
+      "pageSha256": "a0418c18f8a4a8349ff68cc334496ee8223279768c600845369044e8bcae1859",
       "buildId": "sha256:17956b38ccc57785eb49b1991cc779470f3c52c64062055a39d50eef18a916d1"
     },
     {
